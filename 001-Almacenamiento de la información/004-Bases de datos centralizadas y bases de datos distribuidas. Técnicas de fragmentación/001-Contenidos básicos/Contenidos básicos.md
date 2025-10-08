@@ -1,0 +1,13 @@
+En el vasto mundo de la informática, los sistemas de almacenamiento de datos desempeñan un papel crucial, ya sea para pequeñas aplicaciones o para las más complejas. En esta subunidad didáctica, nos adentramos en dos tipos fundamentales de bases de datos: las centralizadas y las distribuidas, así como las técnicas de fragmentación que utilizan estas últimas.
+
+Las bases de datos centralizadas son aquellas donde todos los datos se almacenan en un único servidor. Este modelo es ideal para aplicaciones pequeñas o medianas, ya que facilita la gestión y el acceso a los datos. Sin embargo, su principal desventaja radica en la limitación del rendimiento cuando el volumen de datos aumenta, lo que puede llevar a problemas de congestión.
+
+Por otro lado, las bases de datos distribuidas son sistemas donde los datos se almacenan en varios servidores interconectados. Este modelo ofrece una mayor escalabilidad y capacidad para manejar grandes volúmenes de información, pero también introduce complejidades en la gestión y el mantenimiento del sistema.
+
+La fragmentación es una técnica utilizada en bases de datos distribuidas para mejorar el rendimiento y la eficiencia. Consiste en dividir los datos en partes más pequeñas que se almacenan en diferentes servidores o nodos. Esta estrategia permite que cada servidor maneje un conjunto limitado de datos, lo que reduce la carga y aumenta la velocidad de acceso.
+
+La fragmentación puede realizarse de varias maneras, como por rango (donde los datos se distribuyen según un criterio numérico), por hash (donde los datos se asignan a servidores basándose en una función hash) o por lista (donde los datos se distribuyen según una lista predefinida). Cada método tiene sus ventajas y desventajas, dependiendo de la naturaleza de los datos y las necesidades del sistema.
+
+Es importante destacar que la fragmentación no es una solución panacurra. Su implementación requiere un análisis cuidadoso del diseño del sistema y consideraciones sobre el rendimiento, la consistencia y la replicación de datos. Además, debe tenerse en cuenta que la fragmentación puede complicar ciertas operaciones, como las consultas complejas o los reportes.
+
+En resumen, las bases de datos centralizadas y distribuidas son dos modelos fundamentales para almacenar información digital. La fragmentación es una técnica valiosa para optimizar el rendimiento en sistemas distribuidos, pero su implementación debe ser cuidadosa y considerada dentro del contexto general del sistema. Comprender estos conceptos es crucial para diseñar y gestionar eficientemente bases de datos en entornos modernos.

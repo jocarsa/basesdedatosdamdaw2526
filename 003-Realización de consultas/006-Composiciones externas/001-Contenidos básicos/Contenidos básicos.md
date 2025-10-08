@@ -1,0 +1,17 @@
+En el mundo digital actual, la capacidad de realizar consultas complejas es una habilidad fundamental para cualquier profesional que trabaje con bases de datos. En esta subunidad didáctica, nos adentramos en el fascinante mundo de las composiciones externas, un concepto esencial para optimizar y mejorar la eficiencia de nuestras búsquedas en los sistemas de información.
+
+Las composiciones externas son una técnica avanzada que permite combinar dos o más consultas SQL en una sola consulta. Esta práctica no solo simplifica el código, sino que también puede aumentar significativamente la velocidad de ejecución al reducir el número de accesos a la base de datos. En este contexto, es crucial entender cómo funcionan y cuándo aplicarlas para obtener los mejores resultados.
+
+La primera parte de esta subunidad se centra en la comprensión teórica de las composiciones externas. Aprenderemos sobre los diferentes tipos de composiciones que existen, como las composiciones internas y las composiciones externas propias. Cada tipo tiene sus propias ventajas y desventajas, y conocer cómo elegir el más adecuado para una consulta específica es un paso crucial en la optimización del rendimiento.
+
+A medida que avanzamos, nos sumergimos en ejemplos prácticos de composiciones externas. Estos ejemplos no solo demuestran cómo se aplican las teorías aprendidas, sino que también proporcionan una visión real de cómo estas técnicas pueden ser utilizadas en situaciones reales. A través de estos ejemplos, los estudiantes podrán experimentar la eficiencia y simplicidad que ofrece el uso de composiciones externas.
+
+La subunidad también aborda los desafíos asociados con las composiciones externas. Es importante entender cómo manejar problemas como la redundancia de datos y la complejidad del código, especialmente cuando se combinan múltiples consultas. Además, aprenderemos sobre técnicas para optimizar estas consultas y reducir su tiempo de ejecución.
+
+Además de las composiciones externas propias, esta subunidad también explora el uso de subconsultas en el contexto de las composiciones externas. Las subconsultas son una herramienta poderosa que permite realizar búsquedas más complejas dentro de una consulta principal. Aprender cómo integrar subconsultas con composiciones externas nos proporcionará un conjunto completo de técnicas para resolver problemas de búsqueda en bases de datos.
+
+La importancia de la optimización no se puede subestimar cuando se trata de consultas complejas. En esta subunidad, dedicamos tiempo a discutir estrategias y técnicas para optimizar las composiciones externas. Aprenderemos sobre el uso de índices, la selección de columnas adecuadas en las cláusulas SELECT, y cómo evitar los problemas comunes que pueden surgir durante la optimización.
+
+Finalmente, esta subunidad concluye con una reflexión sobre el papel de las composiciones externas en el desarrollo de aplicaciones. Aprenderemos cómo estas técnicas pueden mejorar la eficiencia y la escalabilidad de nuestras aplicaciones, y cómo son cruciales para mantener un buen rendimiento en sistemas de información modernos.
+
+En resumen, esta subunidad didáctica es una valiosa introducción a las composiciones externas, ofreciendo tanto conocimientos teóricos como ejemplos prácticos. A través de su estudio, los estudiantes adquirirán habilidades cruciales para optimizar y mejorar la eficiencia de sus consultas en bases de datos, preparándolos para enfrentar desafíos más complejos en el futuro.

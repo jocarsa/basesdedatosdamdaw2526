@@ -1,0 +1,13 @@
+Las bases de datos no relacionales son una alternativa a las tradicionales basadas en relaciones que han ganado popularidad en los últimos años. Estas bases de datos se caracterizan por su capacidad para manejar y almacenar tipos de datos complejos y heterogéneos, ofreciendo un alto nivel de escalabilidad y flexibilidad.
+
+La principal ventaja de las bases de datos no relacionales radica en su diseño flexible, que permite representar y almacenar datos de manera más natural y eficiente. A diferencia de las bases de datos relacionales, que utilizan una estructura tabular con filas y columnas, las bases de datos no relacionales pueden organizar los datos en documentos, grafos o columnas, lo que les hace ideales para aplicaciones que requieren un alto nivel de personalización y adaptabilidad.
+
+Un ejemplo destacado de la flexibilidad de las bases de datos no relacionales es su capacidad para manejar datos JSON. Este formato de datos es ampliamente utilizado en el mundo web debido a su simplicidad y facilidad de uso, lo que permite a las bases de datos no relacionales almacenar y recuperar información de manera eficiente.
+
+Además, las bases de datos no relacionales son conocidas por su alta escalabilidad horizontal. Esto significa que pueden manejar grandes volúmenes de datos distribuidos en múltiples servidores, lo que les hace ideales para aplicaciones web y móviles con un alto nivel de tráfico.
+
+Otra ventaja importante de las bases de datos no relacionales es su capacidad para manejar transacciones complejas. A diferencia de las bases de datos relacionales, que utilizan un modelo ACID (Atomicidad, Consistencia, Isolación, Durabilidad), las bases de datos no relacionales pueden utilizar diferentes modelos de consistencia y atomicidad, lo que les permite optimizar el rendimiento en aplicaciones con altos niveles de concurrencia.
+
+Sin embargo, es importante tener en cuenta que las bases de datos no relacionales también tienen sus desventajas. A diferencia de las bases de datos relacionales, que ofrecen una alta consistencia y confiabilidad, las bases de datos no relacionales pueden experimentar inconsistencias temporales o incluso perdida de datos en casos de fallos.
+
+En resumen, las bases de datos no relacionales son una alternativa poderosa a las tradicionales basadas en relaciones. Su capacidad para manejar y almacenar datos de manera flexible y eficiente, su alta escalabilidad horizontal y su capacidad para manejar transacciones complejas hacen que sean ideales para aplicaciones web y móviles con un alto nivel de tráfico y personalización. Sin embargo, es importante tener en cuenta sus desventajas y elegir el tipo de base de datos adecuada según las necesidades específicas del proyecto.

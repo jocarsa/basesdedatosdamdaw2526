@@ -1,0 +1,13 @@
+La programación de bases de datos es una disciplina que combina conocimientos de informática con habilidades matemáticas para crear sistemas eficientes y seguros para almacenar, recuperar y gestionar grandes cantidades de información. En esta subunidad, nos adentramos en el concepto fundamental de lenguaje de programación (LDP) dentro del contexto de las bases de datos.
+
+El LDP es un conjunto de reglas sintácticas y semánticas que permite a los desarrolladores crear instrucciones que interactúan con la base de datos. Este lenguaje es el medio mediante el cual se manipulan los datos, desde su inserción hasta su eliminación y modificación. Es una herramienta poderosa para automatizar tareas repetitivas y optimizar el acceso a la información.
+
+El LDP no es un lenguaje de programación tradicional como C++ o Java, sino que es específico para las operaciones en bases de datos. Algunos ejemplos populares incluyen SQL (Structured Query Language) para bases de datos relacionales y PL/SQL (Procedural Language/SQL) para Oracle. Estos lenguajes ofrecen una sintaxis especializada que facilita la manipulación de los datos almacenados en la base de datos.
+
+La importancia del LDP radica en su capacidad para realizar operaciones complejas con solo unas pocas líneas de código. Por ejemplo, con un comando SQL simple como `SELECT * FROM tabla`, se puede recuperar toda la información de una tabla específica. Sin embargo, el poder real del LDP se demuestra cuando se utilizan estructuras más avanzadas como las subconsultas y los procedimientos almacenados.
+
+Además del lenguaje de programación, es crucial entender cómo se organizan y gestionan los datos dentro de la base de datos. Esto implica conocer conceptos como claves primarias, índices y restricciones de validación. Estos elementos son fundamentales para garantizar la integridad y eficiencia del sistema.
+
+La programación de bases de datos también aborda el tema de las transacciones. Una transacción es una serie de operaciones que se ejecutan como un bloque único, asegurando que todas las operaciones sean exitosas o ninguna tenga lugar. Esto es crucial para mantener la consistencia y coherencia de los datos en sistemas empresariales.
+
+En resumen, el LDP es una herramienta esencial para cualquier desarrollador de bases de datos. Permite a los profesionales crear soluciones eficientes y seguras que manejen grandes volúmenes de información. A través del estudio de este lenguaje, se adquiere un conocimiento profundo sobre cómo interactuar con las bases de datos, lo que es fundamental para el desarrollo de aplicaciones informáticas modernas.

@@ -1,0 +1,12 @@
+id_pedido,cliente,email,producto,cantidad,total
+1,Laura González,laura.gonzalez@example.com,Portátil Basic 14p,1,499.99
+2,Carlos Pérez,carlos.perez@example.com,Ratón Inalámbrico,2,39.90
+3,Marta López,marta.lopez@example.com,Monitor 24p Full HD,1,129.00
+4,Andrés Ruiz,andres.ruiz@example.com,Teclado Mecánico RGB,1,59.90
+5,Elena Morales,elena.morales@example.com,Auriculares Gaming,2,91.00
+6,Javier Serrano,javier.serrano@example.com,Impresora Multifunción,1,89.99
+7,Patricia Vidal,patricia.vidal@example.com,Smartwatch Fit,1,99.99
+8,Hugo Fernández,hugo.fernandez@example.com,Disco Duro Externo 1TB,3,177.00
+9,Natalia Costa,natalia.costa@example.com,Altavoz Bluetooth,2,70.00
+10,Óscar Ramos,oscar.ramos@example.com,Silla Ergonómica,1,149.00
+
