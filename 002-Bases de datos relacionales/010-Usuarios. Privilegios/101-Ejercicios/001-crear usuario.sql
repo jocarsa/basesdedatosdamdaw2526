@@ -18,7 +18,7 @@ MAX_UPDATES_PER_HOUR 0
 MAX_USER_CONNECTIONS 0;
 
 -- dale acceso a la base de datos empresadam
-GRANT ALL PRIVILEGES ON `[tubasededatos]`.* 
+GRANT ALL PRIVILEGES ON [tubasededatos].* 
 TO '[tunombredeusuario]'@'[tuservidor]';
 
 -- recarga la tabla de privilegios
