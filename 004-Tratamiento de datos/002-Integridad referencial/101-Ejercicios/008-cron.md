@@ -1,3 +1,0 @@
-crontab -e
-
-
