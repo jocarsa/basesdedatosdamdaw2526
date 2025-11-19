@@ -9,7 +9,7 @@ cursor.execute('''SELECT
                   color
                   FROM productos
                   GROUP BY color
-                  ORDER BY color ASC;''')  
+                  ORDER BY numero ASC;''')  
 filas = cursor.fetchall()
 cantidades = []
 etiquetas = []
