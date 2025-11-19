@@ -1,4 +1,5 @@
 import mysql.connector 
+import matplotlib.pyplot as pt
 conexion = mysql.connector.connect(
   host="localhost",user="clientes",password="Clientes123$",database="clientes"
 )                                      
@@ -17,3 +18,5 @@ for fila in filas:
   etiquetas.append(fila[1])
 print(cantidades)
 print(etiquetas)
+pt.pie(cantidades)
+pt.show()
