@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Backoffice</title>
+    <meta charset="utf-8">
+    <style>
+      body{font-family:sans-serif;background:aliceblue;}
+      header{width:100%;background:indigo;padding:20px;color:white;}
+      section{
+        margin:auto;display:grid;gap:20px;
+        grid-template-columns:repeat(5,100fr);
+      	padding:20px;
+      }
+      article{border:1px solid indigo;padding:20px;background:white;
+        border-radius:20px;display:flex;gap:20px;align-items:center;}
+      .imagen{width:100px;height:100px;background:lightgrey;border-radius:5px;
+      overflow:hidden;
+      }
+      article img{width:100%;}
+    </style>
+  </head>
+  <body>
+    <header><h1>Gestión de escuela</h1></header>
+    <main>
+      <section>
+        {% for linea in datos:%}
+        	<article>
+            <div class="imagen">
+            	<img src="static/josevicente.jpg">
+            </div>
+            <div class="texto">
+              <p>Asignatura: {{linea['Nombre de la asignatura']}}</p>
+              <p>Nombre: {{linea['Nombre del alumno']}}</p>
+              <p>Apellidos: {{linea['Apellidos del alumno']}}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </section>    
+    </main>
+  </body>
+</html>
