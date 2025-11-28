@@ -1,0 +1,211 @@
+{
+  "formas": [
+    {
+      "id": "forma-1",
+      "tipo": "entity",
+      "left": "452.35px",
+      "top": "193.925px",
+      "width": "",
+      "height": "",
+      "entityName": "Rueda",
+      "properties": [
+        {
+          "id": "prop-1",
+          "name": "id"
+        },
+        {
+          "id": "prop-2",
+          "name": "color"
+        }
+      ]
+    },
+    {
+      "id": "forma-2",
+      "tipo": "entity",
+      "left": "180.241px",
+      "top": "158.275px",
+      "width": "",
+      "height": "",
+      "entityName": "Llanta",
+      "properties": [
+        {
+          "id": "prop-3",
+          "name": "id"
+        }
+      ]
+    },
+    {
+      "id": "forma-3",
+      "tipo": "entity",
+      "left": "181.442px",
+      "top": "277.042px",
+      "width": "",
+      "height": "",
+      "entityName": "Neumatico",
+      "properties": [
+        {
+          "id": "prop-4",
+          "name": "id"
+        }
+      ]
+    },
+    {
+      "id": "forma-4",
+      "tipo": "entity",
+      "left": "451.617px",
+      "top": "68.0833px",
+      "width": "",
+      "height": "",
+      "entityName": "Chasis",
+      "properties": [
+        {
+          "id": "prop-5",
+          "name": "id"
+        },
+        {
+          "id": "prop-9",
+          "name": "grosor"
+        }
+      ]
+    },
+    {
+      "id": "forma-5",
+      "tipo": "entity",
+      "left": "453.45px",
+      "top": "326.079px",
+      "width": "",
+      "height": "",
+      "entityName": "Motor",
+      "properties": [
+        {
+          "id": "prop-6",
+          "name": "id"
+        },
+        {
+          "id": "prop-10",
+          "name": "cilindrada"
+        }
+      ]
+    },
+    {
+      "id": "forma-6",
+      "tipo": "entity",
+      "left": "454.113px",
+      "top": "446.758px",
+      "width": "",
+      "height": "",
+      "entityName": "Chapa",
+      "properties": [
+        {
+          "id": "prop-7",
+          "name": "id"
+        },
+        {
+          "id": "prop-11",
+          "name": "color"
+        }
+      ]
+    },
+    {
+      "id": "forma-7",
+      "tipo": "entity",
+      "left": "778.45px",
+      "top": "246.75px",
+      "width": "",
+      "height": "",
+      "entityName": "Coche",
+      "properties": [
+        {
+          "id": "prop-8",
+          "name": "id"
+        }
+      ]
+    }
+  ],
+  "flechas": [
+    {
+      "desde": {
+        "shapeId": "forma-2",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-1",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "doble",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-3",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-1",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "doble",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-4",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-7",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "doble",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-1",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-7",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "doble",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-5",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-7",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "doble",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-6",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-7",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "doble",
+      "estilo": "straight"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="387.3375122070311" height="201.9374938964843" viewBox="0 0 387.3375122070311 201.9374938964843">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-rect" x="130.9375122070312" y="40" width="119.99999999999994" height="39.99999999999998" rx="4" ry="4" />
+<text x="190.93751220703118" y="63.999999999999986" text-anchor="middle">Entidades</text>
+<rect class="shape-rect" x="40" y="121.93749389648434" width="119.99999999999994" height="39.99999999999998" rx="4" ry="4" />
+<text x="99.99999999999997" y="145.93749389648434" text-anchor="middle">Python</text>
+<rect class="shape-rect" x="227.33751220703118" y="121.42499389648432" width="119.99999999999994" height="39.99999999999998" rx="4" ry="4" />
+<text x="287.3375122070312" y="145.42499389648432" text-anchor="middle">SQL</text>
+<path class="conn" d="M 168.74071123532536 80 L 122.19680097170584 121.93749389648431" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 214.61574548330344 80 L 263.65927893075894 121.42499389648432" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 159.99999999999994 141.77335165055752 L 227.33751220703118 141.58913614241112" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+</svg>

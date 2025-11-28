@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="898.2125854492186" height="561.0750007629393" viewBox="0 0 898.2125854492186 561.0750007629393">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-entity" x="312.1124776204427" y="165.84999084472656" width="220.0000508626302" height="102.40000406901041" />
+<line x1="312.1124776204427" y1="192.250010172526" x2="532.1125284830729" y2="192.250010172526" stroke="#e5e7eb" stroke-width="1"/>
+<text x="422.1125030517578" y="183.8500061035156" text-anchor="middle">Rueda</text>
+<text x="407.4375" y="212.24999491373694">id</text>
+<text x="407.4375" y="236.250010172526">color</text>
+<rect class="shape-entity" x="40" y="130.187505086263" width="219.99997456868488" height="79.99999999999999" />
+<line x1="40" y1="156.5875116984049" x2="259.9999745686849" y2="156.5875116984049" stroke="#e5e7eb" stroke-width="1"/>
+<text x="149.99998728434244" y="148.1875076293945" text-anchor="middle">Llanta</text>
+<text x="144.68748474121094" y="176.58750915527344">id</text>
+<rect class="shape-entity" x="41.20000203450522" y="248.96250406901038" width="220.00002543131507" height="79.99999999999999" />
+<line x1="41.20000203450522" y1="275.3625233968098" x2="261.2000274658203" y2="275.3625233968098" stroke="#e5e7eb" stroke-width="1"/>
+<text x="151.20001475016275" y="266.96251932779944" text-anchor="middle">Neumatico</text>
+<text x="145.88751220703125" y="295.3625335693359">id</text>
+<rect class="shape-entity" x="311.3749694824218" y="40" width="219.99999999999997" height="102.40000406901041" />
+<line x1="311.3749694824218" y1="66.40000661214192" x2="531.3749694824218" y2="66.40000661214192" stroke="#e5e7eb" stroke-width="1"/>
+<text x="421.3749694824218" y="58.00000254313151" text-anchor="middle">Chasis</text>
+<text x="402.3749898274739" y="86.40000406901042">id</text>
+<text x="402.3749898274739" y="110.40000661214192">grosor</text>
+<rect class="shape-entity" x="313.2125345865885" y="297.9999796549479" width="219.99997456868488" height="102.40002314249674" />
+<line x1="313.2125345865885" y1="324.3999989827473" x2="533.2125091552734" y2="324.3999989827473" stroke="#e5e7eb" stroke-width="1"/>
+<text x="423.2125218709309" y="315.99999491373694" text-anchor="middle">Motor</text>
+<text x="394.9625244140625" y="344.4000091552734">id</text>
+<text x="394.9625244140625" y="368.3999989827473">cilindrada</text>
+<rect class="shape-entity" x="313.8749694824218" y="418.67497762044263" width="219.99999999999997" height="102.40002314249674" />
+<line x1="313.8749694824218" y1="445.0750223795572" x2="533.8749694824218" y2="445.0750223795572" stroke="#e5e7eb" stroke-width="1"/>
+<text x="423.8749694824218" y="436.6750183105468" text-anchor="middle">Chapa</text>
+<text x="409.2000427246094" y="465.07503255208326">id</text>
+<text x="409.2000427246094" y="489.0750223795572">color</text>
+<rect class="shape-entity" x="638.2125854492186" y="218.6750030517578" width="219.99999999999997" height="80.00004450480142" />
+<line x1="638.2125854492186" y1="245.07500171661374" x2="858.2125854492186" y2="245.07500171661374" stroke="#e5e7eb" stroke-width="1"/>
+<text x="748.2125854492186" y="236.6750079790751" text-anchor="middle">Coche</text>
+<text x="742.9000447591145" y="265.0750071207682">id</text>
+<path class="conn" d="M 259.99997456868493 189.13140793028094 L 312.11247762044275 198.10608346564447" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 261.2000274658203 259.7634915211494 L 312.11247762044275 246.24900880240727" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 521.294863659771 142.40000406901038 L 670.1501277981833 218.6750030517578" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 532.1125284830729 231.09094187764543 L 638.2125854492186 244.634079551924" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 533.2125091552733 318.5607815266541 L 638.2125854492186 289.3142385454983" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 502.50230153695827 418.67497762044263 L 686.784961991522 298.6750475565592" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+</svg>
