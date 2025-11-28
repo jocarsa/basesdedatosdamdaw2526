@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="579.1125210848719" height="230.4000022194602" viewBox="0 0 579.1125210848719 230.4000022194602">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-entity" x="40" y="40" width="219.9999999999999" height="150.40000221946016" />
+<line x1="40" y1="66.39999909834428" x2="259.9999999999999" y2="66.39999909834428" stroke="#e5e7eb" stroke-width="1"/>
+<text x="149.99999999999994" y="57.99999705227939" text-anchor="middle">Cliente</text>
+<text x="123.89999944513491" y="86.39999250932172">id</text>
+<text x="123.89999944513491" y="110.39998696067113">nombre</text>
+<text x="123.89999944513491" y="134.4000013524835">apellidos</text>
+<text x="123.89999944513491" y="158.40000360662282">email</text>
+<rect class="shape-entity" x="319.11247946999276" y="40.40000221946022" width="220.00004161487917" height="126.39999389648432" />
+<line x1="319.11247946999276" y1="66.8000013178045" x2="539.1125210848719" y2="66.8000013178045" stroke="#e5e7eb" stroke-width="1"/>
+<text x="429.11250027743233" y="58.39999927173961" text-anchor="middle">Pedido</text>
+<text x="401.2124827991831" y="86.80000860040838">id</text>
+<text x="401.2124827991831" y="110.80000305175778">fecha</text>
+<text x="401.2124827991831" y="134.8000061728737">cliente_id</text>
+<path class="conn" d="M 198.08751106262196 83.54555782524136 L 379.2124938964842 129.6544326206759" marker-end="url(#arrow-end)" />
+</svg>
