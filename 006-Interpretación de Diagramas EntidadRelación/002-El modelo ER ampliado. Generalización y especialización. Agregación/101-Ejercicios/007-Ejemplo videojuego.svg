@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="774.3874931335446" height="352.38752365112293" viewBox="0 0 774.3874931335446 352.38752365112293">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-entity" x="249.72501754760734" y="40" width="219.99999999999991" height="150.39999961853022" />
+<line x1="249.72501754760734" y1="66.39999628067017" x2="469.72501754760725" y2="66.39999628067017" stroke="#e5e7eb" stroke-width="1"/>
+<text x="359.7250175476073" y="57.99999499320984" text-anchor="middle">Npc</text>
+<text x="346.1875190734862" y="86.39999294281003">id</text>
+<text x="346.1875190734862" y="110.39999389648435">posx</text>
+<text x="346.1875190734862" y="134.39999961853025">posy</text>
+<text x="346.1875190734862" y="158.39999580383295">posz</text>
+<rect class="shape-entity" x="40" y="232.387523651123" width="220.00001907348624" height="79.99999999999997" />
+<line x1="40" y1="258.7875032424926" x2="260.0000190734862" y2="258.7875032424926" stroke="#e5e7eb" stroke-width="1"/>
+<text x="150.0000095367431" y="250.38749361038202" text-anchor="middle">Soldado</text>
+<text x="144.68752288818357" y="278.78750228881825">id</text>
+<rect class="shape-entity" x="273.1374931335448" y="232.387523651123" width="219.99999999999991" height="79.99999999999997" />
+<line x1="273.1374931335448" y1="258.7875032424926" x2="493.1374931335447" y2="258.7875032424926" stroke="#e5e7eb" stroke-width="1"/>
+<text x="383.13749313354475" y="250.38749361038202" text-anchor="middle">Francotirador</text>
+<text x="377.8250160217284" y="278.78750228881825">id</text>
+<rect class="shape-entity" x="514.3874931335447" y="225.512523651123" width="219.99999999999991" height="79.99999999999997" />
+<line x1="514.3874931335447" y1="251.91250324249262" x2="734.3874931335446" y2="251.91250324249262" stroke="#e5e7eb" stroke-width="1"/>
+<text x="624.3874931335447" y="243.51249361038202" text-anchor="middle">Ingeniero</text>
+<text x="619.0749778747556" y="271.9125022888183">id</text>
+<path class="conn" d="M 259.3905878362377 190.39999961853022 L 203.36938717815516 232.38752365112293" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 370.92576755985533 190.39999961853022 L 377.17964736723775 232.38752365112293" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 469.7250175476073 177.6734486274205 L 553.9575731717495 225.51252365112293" marker-end="url(#arrow-end)" />
+</svg>
