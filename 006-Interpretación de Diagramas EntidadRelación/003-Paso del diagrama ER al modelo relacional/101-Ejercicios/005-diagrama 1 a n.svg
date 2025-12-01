@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="594.5749865080179" height="230.40000513980254" viewBox="0 0 594.5749865080179 230.40000513980254">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-entity" x="40" y="49.94999935752469" width="219.99999999999991" height="126.3999778346011" />
+<line x1="40" y1="76.34998723080282" x2="259.9999999999999" y2="76.34998723080282" stroke="#e5e7eb" stroke-width="1"/>
+<text x="149.99999999999994" y="67.94999152735659" text-anchor="middle">Cliente</text>
+<text x="123.89999871504932" y="96.3499900416324">id</text>
+<text x="123.89999871504932" y="120.34998522306742">nombre</text>
+<text x="123.89999871504932" y="144.34998843544406">apellidos</text>
+<rect class="shape-entity" x="334.57498650801796" y="40" width="219.99999999999991" height="150.40000513980257" />
+<line x1="334.57498650801796" y1="66.39999991969059" x2="554.5749865080179" y2="66.39999991969059" stroke="#e5e7eb" stroke-width="1"/>
+<text x="444.5749865080179" y="57.999998193038145" text-anchor="middle">Telefono</text>
+<text x="416.6749942177219" y="86.39999871504935">id</text>
+<text x="416.6749942177219" y="110.40000192742596">id_cliente</text>
+<text x="416.6749942177219" y="134.4000051398026">tipo</text>
+<text x="416.6749942177219" y="158.399992290296">numero</text>
+<path class="conn" d="M 198.08750855295273 92.65752189851477 L 394.67501991673515 106.09245902799887" marker-end="url(#arrow-end)" />
+</svg>

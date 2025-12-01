@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640.0000381469724" height="392.1999979019164" viewBox="0 0 640.0000381469724 392.1999979019164">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-entity" x="202.73750305175776" y="40" width="219.99999999999991" height="126.4000034332275" />
+<line x1="202.73750305175776" y1="66.39999389648435" x2="422.7375030517577" y2="66.39999389648435" stroke="#e5e7eb" stroke-width="1"/>
+<text x="312.7375030517577" y="57.99999618530272" text-anchor="middle">Persona</text>
+<text x="286.63751983642567" y="86.39999651908873">id</text>
+<text x="286.63751983642567" y="110.4000082015991">nombre</text>
+<text x="286.63751983642567" y="134.4000043869018">apellidos</text>
+<rect class="shape-entity" x="40" y="249.8000001907348" width="220.00001907348624" height="102.39999771118161" />
+<line x1="40" y1="276.1999869346618" x2="260.0000190734862" y2="276.1999869346618" stroke="#e5e7eb" stroke-width="1"/>
+<text x="150.0000095367431" y="267.79999279975885" text-anchor="middle">Alumno</text>
+<text x="139.3125381469726" y="296.1999979019164">id</text>
+<text x="139.3125381469726" y="320.20001316070545">NIA</text>
+<rect class="shape-entity" x="380.0000381469725" y="246.0500001907348" width="219.99999999999991" height="102.39999771118161" />
+<line x1="380.0000381469725" y1="272.4499869346618" x2="600.0000381469724" y2="272.4499869346618" stroke="#e5e7eb" stroke-width="1"/>
+<text x="490.00003814697243" y="264.04999279975885" text-anchor="middle">Profesor</text>
+<text x="456.5625610351561" y="292.4499979019164">id</text>
+<text x="456.5625610351561" y="316.45001316070545">asignaturas</text>
+<path class="conn" d="M 260.74048582044645 166.40000343322748 L 192.12417330931197 249.80000019073475" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 370.4700084703164 166.40000343322754 L 443.22940316163266 246.05000019073475" marker-end="url(#arrow-end)" />
+</svg>

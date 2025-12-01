@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="581.9124908447263" height="254.40000915527332" viewBox="0 0 581.9124908447263 254.40000915527332">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-entity" x="40" y="40" width="219.99999999999991" height="174.40000915527335" />
+<line x1="40" y1="66.39999198913573" x2="259.9999999999999" y2="66.39999198913573" stroke="#e5e7eb" stroke-width="1"/>
+<text x="149.99999999999994" y="57.99999523162841" text-anchor="middle">Cliente</text>
+<text x="123.76249694824219" y="86.39999389648435">id</text>
+<text x="123.76249694824219" y="110.39998626708982">nombre</text>
+<text x="123.76249694824219" y="134.3999862670898">apellidos</text>
+<text x="123.76249694824219" y="158.3999862670898">email</text>
+<text x="123.76249694824219" y="182.3999862670898">direccion</text>
+<rect class="shape-entity" x="321.91249084472645" y="54.12499999999997" width="219.99999999999991" height="126.40000152587885" />
+<line x1="321.91249084472645" y1="80.5249919891357" x2="541.9124908447263" y2="80.5249919891357" stroke="#e5e7eb" stroke-width="1"/>
+<text x="431.9124908447264" y="72.12499141693112" text-anchor="middle">DNINIE</text>
+<text x="404.0124969482421" y="100.52498626708982">id</text>
+<text x="404.0124969482421" y="124.52498626708979">id_cliente</text>
+<text x="404.0124969482421" y="148.5249862670898">DNINIE</text>
+<path class="conn" d="M 198.22499084472656 83.28989837803101 L 382.0124969482421 119.63508178554312" marker-end="url(#arrow-end)" />
+</svg>
