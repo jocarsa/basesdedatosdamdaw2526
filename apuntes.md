@@ -67,6 +67,9 @@
   - [Elementos de las bases de datos no relacionales](#elementos-de-las-bases-de-datos-no-relacionales)
   - [Sistemas gestores de bases de datos no relacionales](#sistemas-gestores-de-bases-de-datos-no-relacionales)
   - [Herramientas de los sistemas gestores de bases de datos no relacionales para la gestión de la información almacenada](#herramientas-de-los-sistemas-gestores-de-bases-de-datos-no-relacionales-para-la-gestion-de-la-informacion-almacenada)
+- [Proyectos](#proyectos)
+  - [Login](#login)
+  - [CRUD](#crud)
 - [.git](#git)
   - [branches](#branches)
   - [hooks](#hooks)
@@ -115,25 +118,39 @@
 
 El archivo **empresa.md** en esta carpeta de ejercicios está diseñado para que los estudiantes se familiaricen con la estructura básica de una base de datos relacional, centrándose específicamente en el modelo entidad-relación. En este contexto, se trabajan conceptos fundamentales como las entidades (en este caso, "Cliente") y sus atributos (como DNI, nombre, apellidos y email). El objetivo principal es comprender cómo se representa una entidad en un sistema de gestión de bases de datos relacionales y qué tipo de información se almacena asociada a cada entidad. Este ejercicio ayuda a desarrollar las competencias necesarias para modelar datos y entender la importancia de definir correctamente los tipos de datos en el diseño de una base de datos.
 
-### empresa
+### Actividades propuestas
 
-#### Explicación
+### Actividad 1: Crear una Tabla en MySQL
+**Descripción:** Los estudiantes deben crear una tabla llamada `Clientes` basándose en la estructura proporcionada. Se espera que aprendan a definir columnas con tipos de datos específicos y las restricciones necesarias para cada columna.
 
-Este fragmento de código está escrito en Markdown y describe el diseño inicial de una base de datos relacionada con una empresa. Específicamente, muestra cómo se estructura la tabla "Cliente" que contiene información básica sobre los clientes registrados en la base de datos.
+### Actividad 2: Insertar Datos en la Tabla
+**Descripción:** Los estudiantes deben insertar varios registros en la tabla `Clientes`. Esta actividad les ayudará a entender cómo introducir datos en una base de datos relacionales usando SQL.
 
-En esta tabla, cada cliente tiene cuatro campos o atributos: 'dni', 'nombre', 'apellidos' y 'email'. Cada uno de estos campos está definido como tipo 'varchar', lo que significa que pueden contener texto variable, es decir, cadenas de caracteres con un tamaño flexible. Esto es importante porque permite almacenar diferentes tipos de información textuales para cada cliente, adaptándose a la diversidad de datos que se pueden ingresar.
+### Actividad 3: Consultas Básicas con SELECT
+**Descripción:** Los estudiantes deben escribir consultas que seleccionen y muestren todos los campos de la tabla `Clientes`. Aprenderán a formular instrucciones SELECT para recuperar información almacenada en la base de datos.
 
-Esta estructura es fundamental en bases de datos relacionales porque define claramente qué tipo de información se va a guardar y cómo estará organizada dentro del sistema, permitiendo así una gestión eficiente de los datos.
+### Actividad 4: Filtros con WHERE
+**Descripción:** Los estudiantes tendrán que crear consultas utilizando cláusulas WHERE para filtrar y mostrar registros específicos basados en ciertos criterios (por ejemplo, clientes con un email específico). Aprenderán a buscar información relevante dentro de una base de datos.
 
-```markdown
-Empresa
+### Actividad 5: Ordenación de Datos
+**Descripción:** Los estudiantes deben escribir consultas que ordenen los resultados por nombre o apellidos. Esta actividad les enseñará cómo utilizar la cláusula ORDER BY para organizar registros en un formato específico.
 
-Cliente
--dni - varchar
--nombre - varchar
--apellidos - varchar
--email - varchar
-```
+### Actividad 6: Crear una Relación entre Tablas
+**Descripción:** Introducirán la idea de relaciones entre tablas, creando una nueva tabla y relacionándola con `Clientes`. Aprenderán a definir llaves foráneas para establecer vínculos lógicos.
+
+### Actividad 7: Consultas JOIN
+**Descripción:** Los estudiantes deben escribir consultas JOIN para combinar datos de múltiples tablas. Esta actividad les permitirá entender cómo recuperar información que involucra relaciones entre distintas entidades en una base de datos.
+
+### Actividad 8: Agregar Restricciones Únicas
+**Descripción:** Los estudiantes añadirán restricciones únicas para asegurar que no haya duplicados en ciertos campos, como el DNI o el correo electrónico. Aprenderán a implementar restricciones de integridad referencial y única.
+
+### Actividad 9: Actualización de Datos
+**Descripción:** Los estudiantes deben actualizar registros existentes en la tabla `Clientes`. Esta actividad les enseñará cómo utilizar la instrucción UPDATE para modificar datos ya almacenados.
+
+### Actividad 10: Eliminación de Datos con DELETE
+**Descripción:** A través de esta actividad, los estudiantes aprenderán a eliminar registros específicos de una base de datos utilizando sentencias SQL. Se centrarán en entender cuándo y cómo utilizar la instrucción DELETE sin comprometer la integridad de la información.
+
+Estas actividades están diseñadas para que los estudiantes se familiaricen con el manejo básico de bases de datos relacionales, desde la creación y administración hasta las operaciones CRUD (Crear, Leer, Actualizar, Borrar).
 
 
 <a id="terminologia-del-modelo-relacional"></a>
@@ -143,128 +160,31 @@ Cliente
 
 Esta carpeta contiene ejercicios que te guiarán a través del manejo básico de bases de datos relacionales utilizando MySQL. Los temas principales incluyen la instalación y configuración inicial de MySQL, cómo ingresar al gestor de bases de datos como superusuario, listar las bases de datos existentes, crear una nueva base de datos y seleccionarla para su uso posterior. A través de estos ejercicios, practicarás competencias esenciales en administración de bases de datos, como la creación y gestión de estructuras de datos y el uso eficiente del comando line interface de MySQL.
 
-### terminologia
-
-#### Explicación
-
-Este fragmento de código es una representación visual en formato Markdown que explica los componentes principales de un sistema de gestión de bases de datos relacionales, usando MySQL como ejemplo. La estructura principal se organiza alrededor del motor de base de datos y luego desglosa cada parte para mostrar cómo están compuestas las bases de datos, tablas, columnas, registros, claves primarias, claves externas o foráneas, y restricciones.
-
-El propósito es ilustrar la jerarquía entre estos elementos: el motor de base de datos MySQL gestiona varias bases de datos, cada una con múltiples tablas. Cada tabla está compuesta por columnas que definen los tipos de datos almacenados en ella (por ejemplo, texto, número), y registros o filas que contienen valores específicos para esas columnas. Las claves primarias son únicas dentro de cada tabla y ayudan a identificar de manera única cada fila; las claves externas se usan para vincular datos entre tablas distintas. Finalmente, hay restricciones que definen reglas adicionales sobre cómo los datos pueden ser ingresados o modificados en la base de datos.
-
-Esta estructura es fundamental en el diseño y uso de bases de datos relacionales porque permite organizar grandes volúmenes de información de manera lógica y coherente, facilitando consultas precisas y operaciones eficientes.
-
-```markdown
-Motor de bases de datos (MySQL)
-  - Base de datos
-    - Tablas
-      -Columnas
-      -Registros,filas,tuplas
-      -Claves primarias (propias de la tabla)
-      -Claves externas / foráneas (relacionan con otras tablas)
-      -Restricciones
-    - Tablas
-      -Columnas
-      -Registros,filas,tuplas
-      -Claves primarias (propias de la tabla)
-      -Claves externas / foráneas (relacionan con otras tablas)
-      -Restricciones
-    - Tablas
-      -Columnas
-      -Registros,filas,tuplas
-      -Claves primarias (propias de la tabla)
-      -Claves externas / foráneas (relacionan con otras tablas)
-      -Restricciones
-  - Base de datos
-    - Tablas
-      -Columnas
-      -Registros,filas,tuplas
-      -Claves primarias (propias de la tabla)
-      -Claves externas / foráneas (relacionan con otras tablas)
-      -Restricciones
-    - Tablas
-      -Columnas
-      -Registros,filas,tuplas
-      -Claves primarias (propias de la tabla)
-      -Claves externas / foráneas (relacionan con otras tablas)
-      -Restricciones
-    - Tablas
-      -Columnas
-      -Registros,filas,tuplas
-      -Claves primarias (propias de la tabla)
-      -Claves externas / foráneas (relacionan con otras tablas)
-      -Restricciones
-```
-
-### comandos de instalación de MySQL
-
-#### Explicación
-
-Este fragmento de código proporciona instrucciones para los estudiantes sobre cómo instalar MySQL en una máquina virtual. Primero, se explica cómo abrir un terminal usando la combinación de teclas Control + Alt + T. Luego, el comando `sudo apt install mysql-server` se utiliza para instalar el servidor MySQL. Aquí, `sudo` indica que se ejecuta con privilegios administrativos (superusuario), `apt` es el sistema usado en Debian Linux para manejar la instalación de software, y `mysql-server` es el paquete específico que se está instalando.
-
-Después de instalar MySQL, es importante asegurar su configuración inicial mediante la ejecución del comando `sudo mysql_secure_installation`. Este script ayuda a proteger la instalación recién creada de MySQL contra amenazas potenciales al cambiar las contraseñas por defecto y realizar otras configuraciones importantes.
-
-Este proceso es crucial para estudiantes que necesitan un entorno seguro y funcional en el cual aprender y trabajar con bases de datos relacionales, especialmente cuando están empezando a familiarizarse con la administración y seguridad de MySQL.
-
-```markdown
-En la máquina virtual:
-
-Control + Alt + T: Abrir un terminal
-
-sudo apt install mysql-server
-
-sudo = super user do = el superusuario va a hacer algo
-apt = gestor de paquetes de Debian Linux
-install = operación de instalar
-mysql-server = el paquete a instalar
-
-Una vez que lo tenéis, aseguramos la instalación:
-
-Ejecutad:
-sudo mysql_secure_installation
-```
-
-### Entrar en el gestor de bases de datos
-
-#### Explicación
-
-Este código proporciona instrucciones para abrir una terminal en tu sistema operativo y acceder al gestor de bases de datos MySQL utilizando un usuario específico, generalmente con privilegios administrativos. Primero, se usa la palabra clave `sudo`, que permite ejecutar comandos como superusuario o administrador del sistema, lo cual es necesario para tener acceso a recursos del sistema que están restringidos. Luego, se escribe `mysql -u root -p`, donde `-u` indica el nombre de usuario con el que deseas iniciar sesión en MySQL (en este caso, "root"), y `-p` solicita que introduzcas la contraseña correspondiente para ese usuario.
-
-Es importante poder acceder al gestor de bases de datos de esta manera para gestionar correctamente las bases de datos relacionales. Si no estás seguro del nombre de usuario con el que te has registrado en tu sistema, puedes ejecutar el comando `whoami` desde la terminal y esto te mostrará el nombre de usuario actualmente activo.
-
-```markdown
-Abrimos terminal:
-
-sudo mysql -u root -p 
-
-sudo = el superusuario va a hacer algo
-mysql = ejecutamos mysql
--u = quiero entrar con un usuario
-root = el nombre del usuario con el cual quiero entrar
--p = y pídeme la contraseña
-
-Si no recordáis cuál el vuestro nombre de usuario:
-whoami
-```
-
 ### Listar bases de datos
+<small>Creado: 2025-10-08 13:21</small>
 
 #### Explicación
 
-El comando `SHOW DATABASES;` en SQL sirve para mostrar una lista de todas las bases de datos que existen actualmente en el servidor de la base de datos donde estás trabajando. Este comando es muy útil cuando necesitas conocer cuáles son los nombres y cuántas bases de datos están disponibles en tu entorno, ya sea local o en un servidor remoto. Es fundamental para gestionar adecuadamente tus recursos de base de datos y entender cómo está estructurado el espacio de trabajo donde estás desarrollando o administrando aplicaciones que usan bases de datos.
+Este fragmento de código SQL ejecuta una instrucción llamada `SHOW DATABASES;`. Su función es listar todas las bases de datos que existen en el servidor MySQL actual. Cuando un usuario ejecuta esta sentencia, obtiene una lista con los nombres de cada base de datos disponible en ese momento, lo cual puede ser útil para ver qué bases de datos están presentes antes de seleccionar una específica o para verificar la existencia de una base de datos particular.
+
+Esta instrucción es importante porque ayuda a gestionar y organizar tus bases de datos. Por ejemplo, si estás trabajando con múltiples proyectos que utilizan diferentes bases de datos, `SHOW DATABASES;` te permite ver rápidamente cuáles están disponibles para seleccionar y utilizar en tu trabajo actual.
+
+`004-Listar bases de datos.sql`
 
 ```sql
 SHOW DATABASES;
 ```
 
 ### crear nueva base de datos
+<small>Creado: 2025-10-08 13:27</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para crear una nueva base de datos llamada `empresadam`. La línea `CREATE DATABASE empresadam;` es la instrucción que indica al sistema gestor de bases de datos (DBMS) que debe crear una nueva base de datos con ese nombre. Cuando ejecutas esta consulta en un entorno como MySQL o PostgreSQL, el DBMS comprueba si ya existe una base de datos con ese nombre y, si no lo hace, crea la estructura necesaria para almacenar datos bajo este nombre.
+Este fragmento de código SQL se utiliza para crear una nueva base de datos en un sistema de gestión de bases de datos relacional, como MySQL. En este caso, el comando `CREATE DATABASE empresadam;` crea una base de datos con el nombre "empresadam". El mensaje "Query OK, 1 row affected (0,01 sec)" indica que la consulta se ejecutó correctamente y tuvo un impacto en el sistema, creando una nueva fila en los registros de la base de datos.
 
-La parte `Query OK, 1 row affected (0,01 sec)` indica que la consulta se ha ejecutado correctamente y que el sistema ha añadido una entrada a su registro interno correspondiente a esta acción. El tiempo de ejecución es muy corto, ya que crear una base de datos vacía no requiere mucha operación.
+Además, las instrucciones al final del archivo son para ayudar a los estudiantes con acciones comunes en la terminal. Por ejemplo, `Control+C` es utilizado para detener o interrumpir una acción que está en curso si se ha quedado atascada o se ejecuta demasiado lentamente. Las teclas de acceso rápido para copiar (`Control + Mayusculas + C`) y pegar (`Control + Mayusculas + V`) texto en la terminal también son útiles cuando necesitas transferir comandos largos o complejos entre diferentes aplicaciones sin tener que teclearlos manualmente.
 
-Las notas al final del fragmento proporcionan instrucciones útiles sobre cómo manejar la terminal desde la cual estás ejecutando estos comandos SQL: `Control+C` se usa para detener cualquier proceso en ejecución, y los atajos de teclado `Control + Mayúsula + C` y `Control + Mayúsula + V` son útiles para copiar y pegar texto dentro del terminal. Estas pautas ayudan a evitar errores comunes cuando se trabaja con la línea de comandos, lo que es especialmente importante al manejar datos sensibles o estructuras complejas en una base de datos.
+`005-crear nueva base de datos.sql`
 
 ```sql
 CREATE DATABASE empresadam;
@@ -277,10 +197,13 @@ Pegar = Control + Mayusculas + V
 ```
 
 ### uso la base de datos
+<small>Creado: 2025-10-08 13:27</small>
 
 #### Explicación
 
-Este fragmento de código SQL es utilizado para seleccionar una base de datos específica con la que deseamos trabajar. La línea `USE empresadam;` indica al sistema que debe establecer como contexto actual la base de datos llamada "empresadam". Esto significa que cualquier consulta o operación subsecuente será aplicada a esta base de datos en particular, permitiendo realizar acciones sobre sus tablas y datos. Es crucial para asegurar que estás trabajando en el espacio correcto antes de empezar a crear, leer, actualizar o eliminar registros.
+Este fragmento de código SQL sirve para seleccionar una base de datos específica llamada `empresadam` dentro de un sistema de gestión de bases de datos relacional como MySQL. La instrucción `USE empresadam;` indica al gestor de bases de datos que todos los comandos subsecuentes se deben ejecutar en el contexto de esta base de datos. Cuando ejecutas este comando, estás preparando tu entorno para trabajar con la estructura y los datos almacenados dentro de `empresadam`. Esto es crucial porque sin seleccionar una base de datos específica, no puedes realizar operaciones como crear tablas, insertar datos o consultar registros en ella.
+
+`006-uso la base de datos.sql`
 
 ```sql
 USE empresadam;
@@ -289,6 +212,42 @@ Database changed
 
 Con este comando, entramos efectivamente en la base de datos
 ```
+
+### Actividades propuestas
+
+### Actividades Propuestas para Estudiantes de Formación Profesional
+
+1. **Instalación y Configuración del Motor MySQL**
+   - **Descripción:** El estudiante debe seguir los pasos descritos en el archivo `002-comandos de instalación de MySQL.md` para instalar MySQL en su máquina virtual. Asegúrate de completar la configuración segura utilizando el comando `sudo mysql_secure_installation`. Este ejercicio permitirá a los estudiantes entender cómo se gestiona un entorno de desarrollo con herramientas de línea de comandos.
+
+2. **Acceder al Gestor de Bases de Datos**
+   - **Descripción:** Los estudiantes deben aprender a acceder al sistema MySQL utilizando el comando `sudo mysql -u root -p`. También deben conocer cómo verificar su nombre de usuario actual usando el comando `whoami`. Este ejercicio les ayuda a familiarizarse con los comandos básicos y la seguridad en la línea de comandos.
+
+3. **Listado de Bases de Datos Disponibles**
+   - **Descripción:** A través del archivo `004-listar bases de datos.sql`, el estudiante debe ejecutar un comando SQL simple para listar todas las bases de datos presentes en su entorno MySQL. Esto permitirá a los estudiantes visualizar y comprender la estructura básica de una base de datos.
+
+4. **Creación de Bases de Datos**
+   - **Descripción:** Siguiendo el ejemplo dado en `005-crear nueva base de datos.sql`, los estudiantes deben crear una base de datos llamada `empresadam`. Este ejercicio es fundamental para entender la creación y uso efectivo de bases de datos en MySQL.
+
+5. **Uso de Bases de Datos**
+   - **Descripción:** Utilizando el comando SQL descrito en `006-uso la base de datos.sql`, los estudiantes deben seleccionar una base de datos específica para trabajar (por ejemplo, empresadam). Este ejercicio les enseña cómo utilizar y navegar entre diferentes bases de datos.
+
+6. **Terminología del Modelo Relacional**
+   - **Descripción:** Los alumnos deberán familiarizarse con la terminología básica descrita en `001-terminologia.md`, que incluye conceptos como tablas, columnas, registros (tuplas), claves primarias y foráneas. Este ejercicio es crucial para entender el lenguaje de las bases de datos relacionales.
+
+7. **Creación de Tablas Simples**
+   - **Descripción:** Basándose en la información proporcionada sobre terminología, los estudiantes deben crear una tabla simple con al menos tres columnas y definir claves primarias. Este ejercicio ayuda a practicar las habilidades de creación y gestión de tablas.
+
+8. **Consulta Básica en MySQL**
+   - **Descripción:** Los alumnos deben realizar consultas SQL básicas para seleccionar todos los registros de una tabla recién creada. Esto permitirá consolidar sus conocimientos sobre cómo interactuar con la base de datos y entender el lenguaje de consulta.
+
+9. **Añadir Restricciones a Tablas**
+   - **Descripción:** Basándose en `001-terminologia.md`, los estudiantes deberán añadir restricciones (como unique, not null) a sus tablas para mejorar la integridad de los datos. Este ejercicio les ayuda a entender cómo mantener la calidad y consistencia de información.
+
+10. **Borrado y Creación de Bases de Datos**
+    - **Descripción:** Finalmente, los estudiantes deben aprender a borrar una base de datos existente (usando el comando SQL DROP DATABASE) y luego recrearla para practicar todo lo que han aprendido en este módulo. Esto les permite entender la importancia del control y mantenimiento de las bases de datos.
+
+Estas actividades proporcionan una secuencia lógica desde la instalación hasta la manipulación avanzada, garantizando que los estudiantes ganen confianza y competencia con MySQL.
 
 
 <a id="tipos-de-datos"></a>
@@ -299,17 +258,23 @@ Con este comando, entramos efectivamente en la base de datos
 Esta carpeta contiene ejercicios fundamentales para comprender los tipos de datos y cómo trabajar con tablas en una base de datos relacional utilizando SQL. En estos ejercicios, se exploran diferentes tipos de datos como VARCHAR, TEXT e INT, así como DATE, que son esenciales para la definición correcta de columnas en una tabla. Además, se practican operaciones básicas CRUD (Crear, Leer, Actualizar y Borrar) sobre un conjunto de registros, lo que ayuda a familiarizarse con los comandos INSERT, SELECT, UPDATE y DELETE en SQL. Estos ejercicios son clave para desarrollar las habilidades necesarias para gestionar datos eficazmente en bases de datos relacionales.
 
 ### Tipos de datos
+<small>Creado: 2025-10-08 13:33</small>
 
 #### Explicación
 
-Este fragmento de código es una descripción sencilla de algunos tipos de datos comunes en SQL, el lenguaje utilizado para trabajar con bases de datos relacionales. Cada línea indica cómo se representa un tipo específico de dato en SQL y qué tipo de información almacena:
+Este fragmento de código no es realmente un código SQL ejecutable, sino más bien una lista de comentarios que describen diferentes tipos de datos que se utilizan en bases de datos relacionales. Estos son los principales tipos mencionados:
 
-- `INT` se utiliza para almacenar números enteros sin decimales.
-- `VARCHAR` es usado para guardar texto corto, como nombres o descripciones breves.
-- `TEXT` almacena cadenas largas, ideales para párrafos extensos o documentos completos.
-- `DATE` guarda fechas en un formato específico.
+1. **INT**: Representa el tipo de dato para números enteros. En SQL, cuando deseas almacenar un número sin decimales (como 42 o -30), usas INT. Es útil para identificar claves primarias, contar elementos o guardar valores que no necesiten precisiones fraccionarias.
 
-Estos tipos de datos son fundamentales porque te permiten definir adecuadamente las columnas de tus tablas según el tipo de información que van a contener. Esto es crucial para garantizar la integridad y eficiencia de tu base de datos, ya que ayuda a organizar correctamente los datos y facilita realizar consultas precisas.
+2. **VARCHAR**: Este tipo de dato se utiliza para almacenar texto corto como nombres o direcciones. La palabra VARCHAR significa "cadena variable", lo que indica que puedes especificar el tamaño máximo del campo, pero solo usarás tanto espacio como el contenido requiera.
+
+3. **TEXT**: Similar a VARCHAR, pero diseñado para textos largos, como descripciones detalladas o párrafos extensos. Es ideal cuando necesitas almacenar mucha información en texto sin la limitación de un tamaño fijo como en VARCHAR.
+
+4. **DATE**: Este tipo de dato se usa para almacenar fechas en formato estándar (AAAA-MM-DD). Es útil cuando quieres mantener una columna en tu tabla solo con datos de fecha, sin necesidad de guardar horas o minutos.
+
+Estos tipos de datos son fundamentales al momento de crear tablas en SQL y elegir el tipo adecuado ayuda a optimizar el rendimiento de la base de datos.
+
+`001-Tipos de datos.sql`
 
 ```sql
 INT = Número entero
@@ -319,14 +284,19 @@ DATE = Fecha
 ```
 
 ### Crear una tabla en la base de datos
+<small>Creado: 2025-10-08 14:08</small>
 
 #### Explicación
 
-Este fragmento de código SQL muestra cómo crear una nueva tabla en una base de datos y verificar que la tabla ha sido creada correctamente. Primero, el comando `SHOW TABLES;` se utiliza para listar todas las tablas existentes en la base de datos actual. En este caso, inicialmente no hay ninguna tabla (se indica con "Empty set").
+Este fragmento de código SQL muestra cómo crear una tabla en una base de datos y verificar que la tabla ha sido creada correctamente. En primer lugar, se ejecuta el comando `SHOW TABLES;`, lo cual lista todas las tablas existentes en la base de datos actual. Como resultado, inicialmente no hay ninguna tabla (se menciona "Empty set", lo que significa que no había tablas antes).
 
-Luego, se ejecuta el comando `CREATE TABLE clientes (...)`, que crea una nueva tabla llamada 'clientes' con cuatro columnas: dni, nombre, apellidos y email. Cada columna tiene un tipo de dato VARCHAR, lo que significa que almacena texto variable en longitud. Las especificaciones entre paréntesis indican la longitud máxima permitida para cada campo (por ejemplo, el DNI puede tener hasta 9 caracteres).
+Luego, se crea una nueva tabla llamada `clientes` utilizando el comando `CREATE TABLE`. Esta tabla tiene cuatro columnas: `dni`, `nombre`, `apellidos` y `email`. Cada columna es de tipo VARCHAR, que permite almacenar texto. Las diferentes longitudes especificadas (por ejemplo, 9 para DNI y 50 para nombre) indican el número máximo de caracteres que cada campo puede contener.
 
-Después de crear la tabla, se vuelve a ejecutar `SHOW TABLES;` y ahora aparece 'clientes' en la lista, confirmando que la tabla ha sido creada con éxito. Este proceso es crucial porque te permite organizar los datos y estructurar correctamente tu base de datos para almacenar información sobre clientes, facilitando consultas y análisis posteriores.
+Finalmente, después de crear la tabla, se ejecuta nuevamente `SHOW TABLES;` para confirmar que la nueva tabla `clientes` ahora aparece en la lista. Esto demuestra que el comando CREATE TABLE fue exitoso y la estructura de la tabla ha sido creada correctamente en la base de datos.
+
+Este código es importante porque muestra cómo crear una estructura básica para almacenar información sobre clientes, permitiendo así a un sistema gestionar datos como nombres, apellidos, DNI y correo electrónico de los clientes.
+
+`002-Crear una tabla en la base de datos.sql`
 
 ```sql
 SHOW TABLES;
@@ -354,14 +324,17 @@ mysql>
 ```
 
 ### comandos basicos CRUD
+<small>Creado: 2025-10-08 13:53</small>
 
 #### Explicación
 
-Este fragmento de código SQL muestra ejemplos básicos del ciclo CRUD (Crear, Leer, Actualizar y Eliminar) para manejar datos en una base de datos relacional. Primero, se inserta un nuevo registro en la tabla "clientes" con información sobre un cliente identificado por su DNI, nombre completo y dirección de correo electrónico.
+Este fragmento de código SQL realiza operaciones básicas sobre una tabla llamada `clientes`. Primero, se inserta un nuevo registro en la tabla con los detalles de un cliente específico que incluye su número de identificación (DNI), nombre, apellidos y correo electrónico. Luego, para verificar que el registro ha sido añadido correctamente, se ejecuta una consulta SELECT que muestra todos los registros existentes en la tabla `clientes`. 
 
-Luego, mediante el comando `SELECT`, se consulta toda la información de los clientes almacenados en la tabla, mostrando únicamente el único registro que acabamos de insertar. A continuación, se realiza una actualización del registro existente para cambiar el DNI y después los apellidos del cliente cuyo nombre es 'Jose Vicente'. Finalmente, se elimina ese mismo registro basándose en su nuevo número de DNI.
+Después, se actualiza la información del cliente recién agregado. Primero, se cambia su DNI a '11111111A' y después, los apellidos son cambiados a 'Garcia Lopez', siempre especificando que el cambio debe aplicarse al registro donde el nombre es 'Jose Vicente'. Finalmente, se elimina completamente la entrada del cliente de la tabla `clientes` basándose en su nuevo DNI '11111111A'.
 
-Estos comandos son fundamentales porque permiten gestionar la información almacenada en una base de datos, asegurando que los datos sean precisos y actualizados conforme a las necesidades del negocio o proyecto.
+Estas operaciones básicas (Crear, Leer, Actualizar y Eliminar), conocidas como CRUD en el contexto de bases de datos, son fundamentales para manipular datos en una base de datos relacional.
+
+`003-comandos basicos CRUD.sql`
 
 ```sql
 -- Create
@@ -403,6 +376,35 @@ DELETE FROM clientes
 WHERE dni = '11111111A';
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Identificar Tipos de Datos en SQL
+**Descripción:** Los estudiantes deben identificar y clasificar los tipos de datos utilizados en ejemplos de consultas SQL, como INT, VARCHAR, TEXT y DATE. Se pretende que comprendan la diferencia entre estos tipos de datos y su uso adecuado en contextos reales.
+
+### Actividad 2: Creación de Tablas
+**Descripción:** Los estudiantes deben crear una tabla similar a la del ejercicio con campos específicos para almacenar información de clientes, empleados u otra entidad. Se espera que diseñen esquemas de base de datos acordes al tipo de dato requerido.
+
+### Actividad 3: Insersión de Datos
+**Descripción:** Los estudiantes tendrán que insertar registros nuevos en una tabla existente utilizando las instrucciones INSERT INTO. Se busca que comprendan cómo introducir correctamente datos de diferentes tipos (texto, enteros, fechas).
+
+### Actividad 4: Consulta Básica de Datos
+**Descripción:** A través de ejemplos proporcionados, los estudiantes deben aprender a consultar y visualizar el contenido completo o parcial de una tabla utilizando SELECT. Se espera que entiendan cómo se relacionan las columnas con la información insertada.
+
+### Actividad 5: Actualización de Registros
+**Descripción:** Los alumnos deberán realizar actualizaciones en registros existentes dentro de una base de datos usando UPDATE, cambiando el valor de un campo determinado. Se pretende que comprendan los criterios necesarios para especificar qué y cómo modificar.
+
+### Actividad 6: Borrado de Datos
+**Descripción:** Los estudiantes practicarán la eliminación de registros específicos en una tabla con DELETE, basándose en condiciones dadas como cláusulas WHERE. Se espera que dominen los comandos para eliminar datos de manera segura y controlada.
+
+### Actividad 7: Consulta Condicional
+**Descripción:** Los estudiantes aprenderán a realizar consultas más complejas utilizando operadores condicionales (como =, !=, >) en SELECT junto con WHERE. Se busca que comprendan cómo filtrar registros basándose en condiciones específicas.
+
+### Actividad 8: Uso de JOIN para Consultas
+**Descripción:** En esta actividad, los alumnos deben combinar datos de múltiples tablas usando operaciones SQL como INNER JOIN o LEFT JOIN, aprendiendo así a consultar información que está distribuida entre varias tablas relacionadas.
+
+### Actividad 9: Crear y Usar Funciones en Consultas
+**Descripción:** Los estudiantes aprenderán a utilizar funciones integradas en SQL (como COUNT(), AVG(), MAX()) para realizar cálculos sobre los datos almacenados, permitiendo un análisis más profundo de las bases de datos.
+
 
 <a id="claves-primarias"></a>
 ## Claves primarias
@@ -411,32 +413,24 @@ WHERE dni = '11111111A';
 
 En esta carpeta de ejercicios, trabajaremos con conceptos fundamentales de bases de datos relacionales y la creación de claves primarias en SQL. Los archivos proporcionan una guía práctica para iniciar sesión en MySQL, explorar estructuras de base de datos existentes y modificar tablas añadiendo columnas clave primarias. A través de estos ejercicios, los estudiantes aprenderán a manipular bases de datos y entenderán la importancia de las claves primarias para garantizar la integridad de los datos en un sistema de gestión de bases de datos relacionales.
 
-### iniciar sesion
-
-#### Explicación
-
-Este fragmento de código proporciona instrucciones sobre cómo abrir una terminal y cómo acceder a la base de datos MySQL usando el usuario raíz. Primero, se indica que para abrir la terminal en sistemas basados en Unix (como Linux), debes presionar las teclas "Control", "Alt" y "T" al mismo tiempo. Luego, se muestra el comando `sudo mysql -u root -p`, que es utilizado para iniciar una sesión con MySQL utilizando el usuario administrador (`root`). Al ejecutar este comando, se solicitará la contraseña del usuario `root`. Es importante acceder como `root` o un usuario con privilegios similares cuando necesitas realizar tareas de gestión y configuración en la base de datos.
-
-```markdown
-Terminal:
-Control + Alt + T
-
-sudo mysql -u root -p
-```
-
 ### entrar en la base de datos
+<small>Creado: 2025-10-13 10:34</small>
 
 #### Explicación
 
-Este fragmento de código SQL te permite interactuar con una base de datos para obtener información sobre sus estructuras y contenido. Primero, el comando `SHOW DATABASES;` lista todos los nombres de las bases de datos que están disponibles en tu servidor de MySQL o MariaDB.
+Este fragmento de código SQL te ayuda a navegar y entender la estructura de una base de datos específica. Primero, el comando `SHOW DATABASES;` muestra todas las bases de datos disponibles en tu servidor de base de datos actual. Esto es útil para ver qué bases de datos están presentes antes de seleccionar una.
 
-Luego, se utiliza el comando `USE empresadam;`, lo cual es crucial porque establece la base de datos actual para todas las consultas y operaciones subsiguientes. En este caso, la base de datos seleccionada es llamada "empresadam".
+Luego, el comando `USE empresadam;` te permite cambiar a la base de datos llamada "empresadam". Al hacer esto, todos los comandos SQL que siguen se aplican a esta base de datos en particular.
 
-Después de eso, ejecutas `SHOW TABLES;` que mostrará todos los nombres de las tablas dentro de la base de datos "empresadam". Esto te ayuda a entender qué información está almacenada en esta base de datos.
+Después, `SHOW TABLES;` muestra todas las tablas dentro de la base de datos seleccionada. Esto te da una idea general sobre qué tipo de información contiene esa base de datos.
 
-Finalmente, el comando `SELECT * FROM clientes;` recupera todas las filas y columnas de la tabla llamada 'clientes'. Y el comando `DESCRIBE clientes;` proporciona detalles sobre los campos (columnas) que componen la tabla 'clientes', como sus tipos de datos, longitud y cualquier restricción asociada.
+El comando `SELECT * FROM clientes;` es utilizado para mostrar todos los registros (registros individuales de datos) en la tabla llamada "clientes". Este comando es muy útil cuando necesitas ver todos los datos guardados en esta tabla sin especificar columnas específicas.
 
-Estos comandos son fundamentales para explorar una base de datos existente y entender su estructura y contenido. Es importante familiarizarse con ellos ya que te permitirán navegar y manipular tus bases de datos de manera efectiva.
+Finalmente, `DESCRIBE clientes;` proporciona detalles sobre el diseño interno de la tabla "clientes", mostrando cómo están estructuradas las columnas (campos) y qué tipo de datos cada columna contiene. Esto es importante para entender cómo se organiza la información en la base de datos.
+
+Este conjunto de comandos es una buena introducción a cómo interactuar con bases de datos y tablas específicas usando SQL, especialmente cuando estás empezando a trabajar con un nuevo entorno o proyecto.
+
+`002-entrar en la base de datos.sql`
 
 ```sql
 SHOW DATABASES;
@@ -451,16 +445,25 @@ DESCRIBE clientes;
 ```
 
 ### crear clave primaria
+<small>Creado: 2025-10-13 10:57</small>
 
 #### Explicación
 
-El código SQL que has proporcionado tiene varias partes importantes. Primero, crea una nueva columna llamada `identificador` en la tabla `clientes`, que se convierte en la clave primaria de la tabla y automáticamente genera números enteros únicos cada vez que se inserta un nuevo registro (esto es gracias a las palabras clave `AUTO_INCREMENT`). Esta columna se añade al principio de la estructura de la tabla.
+Este fragmento de código SQL está diseñado para modificar una tabla existente llamada `clientes`, añadiendo una nueva columna que actúa como clave primaria. La operación se divide en varios pasos:
 
-Luego, el código ejecuta comandos para describir cómo ahora está configurada la tabla `clientes` después de agregar esta nueva columna. A continuación, realiza varias inserciones de datos en la tabla. Cada inserción incluye un valor `NULL` en la posición correspondiente a la columna `identificador`, permitiendo que el sistema SQL genere automáticamente el número único para esa fila.
+1. **Añadir la clave primaria**: El comando `ALTER TABLE clientes ADD COLUMN identificador INT AUTO_INCREMENT PRIMARY KEY FIRST;` agrega una nueva columna a la tabla `clientes`. Esta columna se llama `identificador`, es del tipo entero (`INT`) y tiene el atributo `AUTO_INCREMENT`, lo que significa que cada vez que se inserta un nuevo registro, esta columna generará automáticamente un valor único incremental. La palabra clave `PRIMARY KEY` indica que esta columna será la clave primaria de la tabla, lo cual garantiza que todos los valores en ella sean únicos y no nulos.
 
-En una de las inserciones, intenta asignar manualmente el valor 2 como clave primaria, pero esto genera un error porque ya existe un registro con ese identificador en la tabla y las claves primarias deben ser únicas. Este ejemplo demuestra cómo las restricciones de clave primaria ayudan a mantener la integridad de los datos, evitando duplicaciones.
+2. **Verificar la estructura**: Después de añadir la columna, el comando `DESCRIBE clientes;` se usa para mostrar la estructura actualizada de la tabla, incluyendo la nueva columna `identificador`.
 
-En resumen, este código muestra cómo agregar una columna para crear una clave primaria que asegura la unicidad y la integridad de los datos en una tabla de base de datos.
+3. **Insertar datos**: Se insertan varios registros en la tabla utilizando el comando `INSERT INTO clientes VALUES(...)`. Cuando se inserta un nuevo registro sin especificar un valor para la clave primaria (es decir, se usa `NULL`), el motor de base de datos automáticamente proporcionará y almacenará el siguiente número incremental en la columna `identificador`.
+
+4. **Manejo de duplicados**: El código muestra un intento fallido de insertar un registro con un valor explícito para la clave primaria que ya existe (`2`). Esto genera un error porque las claves primarias deben ser únicas.
+
+5. **Ejemplos adicionales**: Se proporcionan más ejemplos de inserción, incluyendo uno con un correo electrónico incorrecto, pero el código principal no muestra cómo se maneja este caso en la base de datos y solo es indicativo del tipo de datos que podrían insertarse.
+
+Este fragmento es importante porque demuestra cómo implementar una clave primaria autoincremental para garantizar la unicidad y el ordenamiento automático de registros en una tabla. Es fundamental para mantener la integridad de los datos en sistemas de gestión de bases de datos relacionales.
+
+`003-crear clave primaria.sql`
 
 ```sql
 ALTER TABLE clientes
@@ -535,6 +538,38 @@ VALUES(
 SELECT * FROM clientes;
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Conexión a MySQL y Creación de Sesión
+**Descripción:** Los estudiantes deben iniciar sesión en el servidor MySQL usando los comandos adecuados. Se espera que comprendan cómo acceder al terminal y conectarse como administrador para realizar las tareas propuestas.
+
+### Actividad 2: Explorar Base de Datos EmpresadAM
+**Descripción:** Los alumnos deben ejecutar consultas SQL básicas para visualizar los datos presentes en la base de datos 'empresadam'. Se pretende que familiaricen con el uso del comando `SHOW DATABASES`, así como seleccionar y explorar tablas específicas.
+
+### Actividad 3: Modificación de Tabla Clientes
+**Descripción:** Los estudiantes deben agregar una columna identificadora a la tabla clientes utilizando el comando `ALTER TABLE`. Se espera que comprendan cómo definir claves primarias con auto-incremento para mejorar la gestión de datos.
+
+### Actividad 4: Análisis de Descripción Tabla Clientes
+**Descripción:** Los estudiantes deben ejecutar un comando SQL para describir la estructura actual de la tabla clientes. Se espera que comprendan cómo interpretar los resultados del comando `DESCRIBE` y reconozcan la importancia de las claves primarias.
+
+### Actividad 5: Inserción Correcta en Tabla Clientes
+**Descripción:** Los alumnos deben insertar nuevos registros en la tabla clientes, asegurándose de que se sigan correctamente los principios de integridad referencial (clave primaria). Se espera que comprendan las implicaciones de usar `NULL` para auto-incremento y cómo evitar inserciones duplicadas.
+
+### Actividad 6: Resolución Problemas Inserción
+**Descripción:** Los estudiantes deben identificar y resolver los errores producidos al intentar insertar registros con valores no válidos en la clave primaria. Se espera que aprendan a manejar las restricciones de integridad referencial.
+
+### Actividad 7: Consultas Avanzadas Tabla Clientes
+**Descripción:** Los alumnos deben realizar consultas más complejas basándose en los datos almacenados en la tabla clientes, incluyendo filtros y ordenación. Se espera que mejoren sus habilidades en SQL para manipular y recuperar datos de una base de datos.
+
+### Actividad 8: Validación Datos Inserción
+**Descripción:** Los estudiantes deben validar manualmente las inserciones realizadas para asegurar que cumplen con los requisitos establecidos por la clave primaria. Se espera que comprendan cómo mantener la consistencia y integridad de una base de datos.
+
+### Actividad 9: Creación Script Automatización
+**Descripción:** Los alumnos deben escribir un script SQL que automatice las tareas realizadas en actividades anteriores, incluyendo conexión a la base de datos, creación de tablas con claves primarias y inserción de datos. Se espera que mejoren sus habilidades en scripting para facilitar el manejo de bases de datos.
+
+### Actividad 10: Documentación Proceso
+**Descripción:** Los estudiantes deben redactar una breve documentación sobre los comandos SQL utilizados, las estructuras de tablas modificadas y cualquier problema resuelto. Se espera que desarrollen habilidades de comunicación técnica para explicar procesos y resultados a otros miembros del equipo o a clientes potenciales.
+
 
 <a id="restricciones-de-validacion"></a>
 ## Restricciones de validación
@@ -544,16 +579,17 @@ SELECT * FROM clientes;
 Este conjunto de ejercicios se centra en la implementación y manejo de restricciones de validación en bases de datos relacionales utilizando SQL. Los estudiantes aprenderán a crear tablas con restricciones que aseguran la integridad de los datos, como comprobar formatos válidos para correos electrónicos y DNI/NIE, así como establecer límites numéricos. Se practicarán conceptos clave tales como el uso del comando `ALTER TABLE` para añadir restricciones `CHECK`, cómo lidiar con inserciones fallidas debido a violaciones de estas restricciones, y la importancia de mantener una estructura de datos consistente. Además, se explorará cómo manejar tablas existentes modificando o eliminando restricciones, así como técnicas para vaciar y restaurar bases de datos.
 
 ### situacion
+<small>Creado: 2025-10-15 13:01</small>
 
 #### Explicación
 
-Este código SQL es una serie de comandos que se utilizan para interactuar con una base de datos MySQL. Primero, el usuario inicia sesión en la base de datos como administrador (`root`), solicitando la contraseña al hacerlo. Luego, muestra todas las bases de datos disponibles en el servidor usando `SHOW DATABASES;`. Después, selecciona específicamente la base de datos llamada `empresadam` con el comando `USE empresadam;`.
+Este fragmento de código SQL está diseñado para trabajar con una base de datos en un entorno MySQL. Comienza accediendo a la base de datos con privilegios de administrador, luego muestra las bases de datos disponibles y selecciona una llamada `empresadam`. Después, se muestran las tablas que contiene esta base de datos y se describe específicamente la tabla `clientes`, mostrando sus columnas. Finalmente, se inserta un nuevo registro en la tabla `clientes` proporcionando valores para cada columna.
 
-Para entender mejor la estructura y los datos de esta base de datos, se ejecutan dos comandos más: `SHOW TABLES;`, que lista todas las tablas en la base de datos actual, y `DESCRIBE clientes;`, que proporciona detalles sobre la tabla llamada "clientes", incluyendo el nombre de cada columna y su tipo de dato. Finalmente, se realiza una consulta para mostrar todos los registros existentes en la tabla "clientes" con `SELECT * FROM clientes;`.
+El comando `INSERT INTO clientes VALUES(...)` añade una nueva fila a la tabla `clientes`. En este caso, el primer valor es `NULL`, lo que significa que la base de datos asignará automáticamente un identificador único (ID) para esta entrada. Los otros valores representan los campos del DNI, nombre, apellidos y alguna otra información del cliente.
 
-El último comando es un `INSERT INTO` que añade un nuevo registro a la tabla "clientes". Este inserta datos específicos en cada columna de la tabla. Es importante notar que el primer valor es `NULL`, lo cual generalmente implica que la primera columna (probablemente una clave primaria o ID autoincremental) dejará que MySQL asigne automáticamente un valor.
+Este código es útil para entender cómo interactuar con una base de datos relacional desde MySQL y cómo se realizan inserciones en tablas específicas. Es importante notar que el valor `NULL` en la primera posición asume que la columna correspondiente (probablemente un ID) está configurada como AUTO_INCREMENT, permitiendo a la base de datos manejar automáticamente esta información.
 
-Este fragmento de código es fundamental para entender cómo se accede y manipula información en una base de datos relacional, especialmente cuando trabajas con MySQL.
+`001-situacion.sql`
 
 ```sql
 sudo mysql -u root -p
@@ -578,14 +614,19 @@ INSERT INTO clientes VALUES(
 ```
 
 ### intento sanear parte 1
+<small>Creado: 2025-10-15 13:28</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para mejorar la integridad y validez de los datos en una base de datos, específicamente en la tabla llamada "clientes". En primer lugar, el código intenta añadir una restricción (llamada comprobar_email) a la tabla clientes que asegura que todos los registros tengan un campo email válido según ciertas reglas. Estas reglas especifican que el formato del email debe cumplir con lo que se conoce como "expresiones regulares", es decir, tiene que tener una estructura específica para ser considerado correcto (por ejemplo, antes y después de la @ deben haber caracteres alfanuméricos).
+Este fragmento de código SQL está diseñado para mejorar la integridad de los datos en una tabla llamada `clientes`, asegurando que todos los registros tengan un formato correcto para el campo `email`. En primer lugar, se intenta agregar una restricción (llamada `comprobar_email`) a la tabla `clientes` utilizando una expresión regular (`REGEXP`) que verifica si el valor del campo `email` cumple con el patrón típico de un correo electrónico. Esta expresión regular asegura que cada correo electrónico contenga caracteres alfanuméricos y símbolos permitidos antes y después del signo '@', seguido por una dirección dominio válida.
 
-Sin embargo, cuando intenta añadir esta restricción por primera vez, se encuentra con registros existentes en la tabla "clientes" cuyas columnas email no cumplen con el formato requerido. Para resolver este problema, el código elimina esos registros problemáticos, específicamente aquellos con los identificadores 4 y 5.
+Sin embargo, hay un problema en la implementación: el código intenta agregar la restricción dos veces. La primera vez fallará porque ya existe un registro que no cumple con la nueva restricción (en este caso, los registros con `identificador = 4` y `identificador = 5`). Para resolver esto, se eliminan manualmente estos registros problemáticos antes de intentar agregar nuevamente la restricción.
 
-Finalmente, después de eliminar estos registros inadecuados, se vuelve a intentar añadir la restricción comprobar_email al final del script. Luego, se realiza una inserción de prueba en la tabla clientes con un email que no cumple con el formato especificado en la nueva restricción. Como resultado, esta operación falla y devuelve un error porque viola la nueva regla de validación (check constraint), lo cual es correcto ya que la función de la restricción es precisamente prevenir inserciones o actualizaciones no válidas para garantizar la calidad de los datos en la tabla.
+Después de asegurarse de que todos los registros cumplan con la nueva restricción, se realiza una prueba insertando un nuevo registro en la tabla `clientes`. Sin embargo, el código final muestra que aún hay un error porque el valor proporcionado para `email` no satisface la expresión regular establecida. Esto subraya la importancia de verificar cuidadosamente los datos antes y después de aplicar restricciones para mantener la consistencia en la base de datos.
+
+Esta práctica es crucial en desarrollo de bases de datos, ya que ayuda a prevenir problemas futuros como inserciones o actualizaciones incorrectas.
+
+`002-intento sanear parte 1.sql`
 
 ```sql
 ALTER TABLE clientes
@@ -616,16 +657,19 @@ ERROR 3819 (HY000): Check constraint 'comprobar_email' is violated.
 ```
 
 ### comprobar dni
+<small>Creado: 2025-10-15 13:17</small>
 
 #### Explicación
 
-Este código SQL está añadiendo una restricción a la tabla llamada `clientes` para verificar que el campo `dni`, que almacena números de identificación, cumpla con los formatos válidos tanto para DNI (Documento Nacional de Identidad) como para NIE (Número de Identificación de Extranjero). La restricción se llama `comprobar_dni_nie_letra`.
+Este fragmento de código SQL añade una restricción a la tabla `clientes` para asegurar que el campo `dni`, que almacena los números de identificación personal, cumpla con ciertos requisitos específicos. Esta restricción se llama `comprobar_dni_nie_letra`.
 
-Primero, el código verifica si la entrada es un DNI. Un DNI válido consta de 8 dígitos seguidos por una letra mayúscula o minúscula. Luego, comprueba que la letra coincide con el resto del número mediante una fórmula específica: convierte los primeros 8 dígitos a un entero y obtiene el módulo 23 de ese número para indexar en una cadena estática ('TRWAGMYFPDXBNJZSQVHLCKE') que contiene las letras válidas según la posición.
+La restricción comprueba dos cosas principales:
+1. **DNI:** Verifica si la cadena del DNI tiene 8 dígitos seguidos por una letra mayúscula y si esta letra es válida según el algoritmo que verifica la última letra basada en los primeros 8 dígitos.
+2. **NIE:** Asegura que la cadena del NIE comience con 'X', 'Y' o 'Z' (que representan distintas categorías de identificación), tenga 7 dígitos y una letra mayúscula al final, y verifica también si esta letra es correcta según el mismo tipo de algoritmo que para los DNI.
 
-Después, si no es un DNI, verifica si se trata de un NIE. Un NIE comienza con la letra X, Y o Z (mayúscula o minúscula), seguida de 7 dígitos y una letra al final. La verificación incluye convertir el prefijo en '0', '1' o '2' según sea 'X', 'Y' o 'Z', respectivamente, y luego usar la misma fórmula que para el DNI para verificar la letra.
+Esta restricción es importante porque asegura la integridad y validez de los datos almacenados en la tabla `clientes`, garantizando que los números de identificación sean formatos válidos reconocidos por las normativas españolas.
 
-Esta restricción es importante porque garantiza que cualquier entrada de DNI o NIE almacenada en la tabla `clientes` cumpla con los patrones y cálculos específicos requeridos por las leyes españolas, asegurando así la integridad de los datos.
+`003-comprobar dni.sql`
 
 ```sql
 ALTER TABLE clientes
@@ -663,16 +707,17 @@ ALTER TABLE clientes
 ```
 
 ### mucho peligro
+<small>Creado: 2025-10-15 13:28</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para asegurar que la tabla llamada `clientes` tenga una columna `dni` (Documento Nacional de Identidad) o `nie` (Número de Identificación de Extranjero) con los formatos correctos y válidos. El código primero borra todos los registros existentes en la tabla `clientes` para garantizar un entorno limpio antes de aplicar una nueva restricción.
+Este fragmento de código SQL tiene como objetivo mejorar la integridad y validez de los datos en una base de datos. Comienza borrando todos los registros de la tabla "clientes" para asegurarse de que se empieza con un estado limpio, lo cual es útil cuando estás probando nuevas restricciones o cambios.
 
-Luego, se añade una restricción de validación (`ALTER TABLE`) que utiliza la cláusula `CHECK`. Esta restricción comprobará dos cosas: primero, si el campo `dni` cumple con el formato de un DNI español (8 dígitos seguidos por una letra) y segunda, si cumple con el formato de un NIE (que puede comenzar con 'X', 'Y' o 'Z', seguido de 7 dígitos más una letra).
+Luego, el código verifica si la tabla está vacía tras eliminar los registros mediante una consulta `SELECT * FROM clientes`.
 
-La verificación incluye dos partes importantes: asegurar que la cadena corresponde al patrón correcto usando `REGEXP` y verificar que la letra sea válida basándose en los primeros 8 dígitos del número. Esto último se hace comparando el resto calculado con una tabla específica de letras para DNI/NIE.
+Finalmente, se añade una nueva restricción a la tabla "clientes" llamada "comprobar_dni_nie_letra". Esta restricción usa un `CHECK` para asegurar que cada registro tenga un DNI o NIE válido. El DNI debe tener 8 dígitos seguidos de una letra, mientras que el NIE puede comenzar con 'X', 'Y' o 'Z', seguir con 7 dígitos y terminar con una letra. La restricción también verifica que la última letra del DNI o NIE sea correcta según un cálculo específico basado en los números anteriores, lo cual es importante para garantizar que ningún valor incorrecto se almacene en la base de datos.
 
-Esta validación es crucial porque asegura que todos los registros futuros insertados en la tabla `clientes` tendrán un campo `dni` o `nie` correcto, lo cual ayuda a prevenir errores y garantiza la integridad de los datos.
+`004-mucho peligro.sql`
 
 ```sql
 DELETE FROM clientes;     -- Esto es lo carga todo
@@ -714,12 +759,19 @@ ALTER TABLE clientes
 ```
 
 ### inserciones fallidas
+<small>Creado: 2025-10-15 13:32</small>
 
 #### Explicación
 
-Este fragmento de código SQL muestra dos intentos fallidos para insertar datos en una tabla llamada `clientes`. En la base de datos, se han establecido restricciones de validación que impiden que ciertos tipos de datos sean aceptados. El primer intento de inserción es para un registro con un DNI '12345678A', pero el sistema devuelve un error indicando que una restricción llamada `comprobar_dni_nie_letra` ha sido violada, lo que sugiere que la letra del DNI no cumple con las reglas de validación establecidas. En el segundo intento, se inserta otro registro con un email incorrecto 'correoincorrecto', y aquí la restricción `comprobar_email` detecta que el formato del correo electrónico es inválido y evita su inserción en la base de datos.
+Este fragmento de código SQL intenta insertar dos registros en la tabla `clientes`. La primera inserción trata de añadir un nuevo cliente con los datos proporcionados, incluyendo un DNI válido y una dirección de correo electrónico correcta. Sin embargo, al realizar la segunda inserción, se encuentran problemas:
 
-Estas restricciones son importantes porque aseguran que los datos almacenados cumplan con ciertos criterios de integridad, como tener un DNI o NIE correctamente formado y una dirección de email válida. De esta manera, se mantiene la calidad y fiabilidad de la información en la base de datos.
+1. En la primera línea después del intento de inserción, se muestra un error que indica que una restricción de validación llamada `comprobar_dni_nie_letra` ha sido violada. Esto significa que el sistema tiene configurado un conjunto de reglas para verificar que los DNI/NIE (identificadores de ciudadanos españoles) estén correctamente formados, y '12345678Z' no cumple con estas reglas.
+
+2. En la segunda inserción, después del intento de insertar una dirección de correo electrónico incorrecta ('correoincorrecto'), se muestra otro error debido a que otra restricción de validación llamada `comprobar_email` ha sido violada. Esta restricción asegura que cualquier registro en la tabla debe contener un formato de correo electrónico válido.
+
+Estas restricciones son importantes porque mantienen la integridad de los datos, garantizando que todos los registros cumplan con las reglas definidas para cada campo (como el formato correcto del DNI/NIE y la dirección de correo electrónico). Esto previene la inserción de información incorrecta o inconsistente en la base de datos.
+
+`005-inserciones fallidas.sql`
 
 ```sql
 INSERT INTO clientes VALUES(
@@ -744,14 +796,15 @@ ERROR 3819 (HY000): Check constraint 'comprobar_email' is violated.
 ```
 
 ### insercion correcta
+<small>Creado: 2025-10-15 13:36</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para insertar un nuevo registro en la tabla llamada "clientes". La línea `INSERT INTO clientes VALUES` indica que vamos a añadir una nueva fila a esta tabla. El valor `NULL` representa el identificador automático del cliente, lo cual es común cuando la base de datos maneja automáticamente los números de ID para asegurar que cada entrada sea única.
+Este código SQL se utiliza para insertar un nuevo registro en la tabla llamada `clientes`. En este contexto, cada columna de la tabla recibe un valor que especifica información sobre el cliente. La primera columna recibirá un valor `NULL`, lo cual generalmente indica que el campo es una clave primaria y autoincremental, por lo que el sistema gestionará automáticamente asignarle un número único a este nuevo registro.
 
-Los valores '12345678Z', 'Jose Vicente Carratala Sanchis' y 'info@jocarsa.com' corresponden a los campos DNI (o NIF), nombre completo y correo electrónico del cliente, respectivamente. Es importante que estos datos coincidan con el orden de las columnas definidas en la tabla "clientes" para evitar errores.
+Los valores restantes corresponden al DNI del cliente ('12345678Z'), su nombre completo ('Jose Vicente Carratala Sanchis') y una dirección de correo electrónico ('info@jocarsa.com'). Este comando es importante porque permite agregar nuevos clientes a la base de datos, asegurando que se mantenga un registro actualizado y completo de todos los usuarios registrados.
 
-Esta operación es crucial porque permite añadir nuevos clientes al sistema de manera eficiente y segura, asegurando que todos los campos necesarios estén presentes y correctos según lo especificado por las restricciones de validación de la base de datos.
+`006-insercion correcta.sql`
 
 ```sql
 INSERT INTO clientes VALUES(
@@ -764,16 +817,17 @@ INSERT INTO clientes VALUES(
 ```
 
 ### Revisar estructura de tabla
+<small>Creado: 2025-10-15 13:51</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para manipular la estructura de una tabla llamada `clientes` en una base de datos relacional. En primer lugar, el comando `DESCRIBE clientes;` muestra cómo está actualmente configurada la tabla, incluyendo las columnas que contiene y sus tipos de datos.
+Este fragmento de código SQL está trabajando con una tabla llamada `clientes` y realiza varias operaciones para modificar su estructura. Primero, se muestra la descripción actual de la tabla utilizando el comando `DESCRIBE clientes`. Luego, intenta agregar una nueva columna llamada `direccion` a la tabla `clientes`, pero después inmediatamente elimina esta columna con `DROP COLUMN direccion`.
 
-Luego, el código intenta añadir una nueva columna llamada `direccion` a la tabla `clientes`, usando el comando `ALTER TABLE`. Después de hacer esto, vuelve a describir la tabla para confirmar que se ha agregado correctamente. Sin embargo, inmediatamente después, intenta eliminar esta misma columna recién añadida con el comando `DROP COLUMN`.
+Después de estas operaciones, hay un intento de renombrar la columna `dni` a `dninie`, pero se produce un error que indica que no puede renombrarse la columna `dni` porque está siendo utilizada en una restricción llamada `comprobar_dni_nie_letra`. Finalmente, el código intenta eliminar esta restricción con `ALTER TABLE clientes DROP CONSTRAINT comprobar_dni_nie_letra`.
 
-Finalmente, hay un intento de renombrar una columna existente llamada `dni` a `dninie`, pero SQL devuelve un error que indica que no puede realizar este cambio debido a la presencia de una restricción (constraint) llamada 'comprobar_dni_nie_letra' que depende del nombre de la columna `dni`. Para solucionar esto, se intenta eliminar esta restricción con el comando `DROP CONSTRAINT`.
+Este código es importante para demostrar cómo SQL gestiona las dependencias entre columnas y restricciones en una base de datos. Es útil entender este flujo para aprender a manejar cambios estructurales sin romper la integridad de los datos existentes en tu tabla.
 
-Este código es importante porque demuestra cómo agregar y quitar columnas de una tabla en SQL, así como cómo las restricciones pueden afectar a estas modificaciones estructurales.
+`007-Revisar estructura de tabla.sql`
 
 ```sql
 DESCRIBE clientes;
@@ -798,10 +852,17 @@ DROP CONSTRAINT comprobar_dni_nie_letra;
 ```
 
 ### nueva restriccion
+<small>Creado: 2025-10-15 13:47</small>
 
 #### Explicación
 
-Este fragmento de código SQL está añadiendo una restricción a la tabla llamada `clientes` para verificar que el campo `dninie`, que almacena tanto DNI como NIE, cumpla con los formatos correctos y las letras correspondientes. La restricción se denomina `comprobar_dni_nie_letra`. Primero, verifica si la cadena encaja en el patrón de un DNI estándar (8 dígitos seguidos por una letra) o si es un NIE (inicia con X, Y o Z seguido de 7 dígitos y finaliza con una letra). En cada caso, también comprueba que la última letra coincide con la letra calculada automáticamente basándose en los dígitos precedentes según el algoritmo oficial español para calcular esta letra. Esto garantiza que solo se introduzcan valores válidos para DNI o NIE en la base de datos, asegurando así la integridad de los datos relacionados con la identificación del cliente.
+Este fragmento de código SQL añade una restricción a la tabla `clientes` para asegurar que el campo `dninie`, que almacena tanto DNI como NIE, cumpla con un formato y validación específicos. La restricción se denomina `comprobar_dni_nie_letra`.
+
+La función principal de esta restricción es verificar dos cosas: primero, que el número de identificación (DNI o NIE) sigue la estructura correcta en términos de longitud y tipo de caracteres; segundo, que la letra final del DNI o NIE sea la correcta según los cálculos matemáticos específicos. Para un DNI, esto implica comprobar que el primer carácter es una letra entre A y Z (en mayúsculas) que se calcula basándose en los primeros 8 dígitos del número. Para un NIE, la estructura incluye inicialmente la letra X, Y o Z seguida de otros caracteres numéricos y una letra final que también debe cumplir ciertas condiciones matemáticas.
+
+Esta restricción es importante porque garantiza que los datos almacenados en el campo `dninie` sean válidos y estén formateados correctamente. Esto ayuda a prevenir errores en las operaciones de la base de datos y asegura una mayor precisión en la información sobre los clientes.
+
+`008-nueva restriccion.sql`
 
 ```sql
 ALTER TABLE clientes
@@ -839,18 +900,19 @@ ALTER TABLE clientes
 ```
 
 ### Vaciar y truncar
+<small>Creado: 2025-10-15 14:02</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para demostrar cómo vaciar y eliminar una tabla en una base de datos. Primero, el comando `DELETE FROM clientes` elimina todos los registros existentes en la tabla "clientes", manteniendo así misma la estructura de la tabla sin cambiar sus restricciones ni atributos.
+Este fragmento de código SQL está diseñado para demostrar cómo vaciar y eliminar una tabla en una base de datos relacional. Comienza borrando todos los registros de la tabla `clientes` utilizando el comando `DELETE FROM clientes;`. Luego, inserta un nuevo registro en la tabla con algunos valores específicos usando `INSERT INTO clientes VALUES(...)`. A continuación, selecciona todos los registros que quedan en la tabla para mostrar el resultado actual.
 
-Luego, se inserta un nuevo registro en la tabla con algunos valores específicos, incluyendo un valor nulo que normalmente sería el identificador automático de la base de datos. Después de esta inserción, se consulta (`SELECT * FROM clientes`) para ver los registros actuales en la tabla.
+Después del primer conjunto de operaciones, se utiliza el comando `TRUNCATE TABLE clientes;` para vaciar completamente la tabla, pero a diferencia del comando DELETE, TRUNCATE elimina todas las filas sin poder revertirlas y libera los espacios utilizados por esas filas. Luego vuelve a insertar un registro en la tabla.
 
-A continuación, el comando `TRUNCATE TABLE clientes` es utilizado para eliminar rápidamente todos los datos de la tabla "clientes". La diferencia principal con `DELETE` es que `TRUNCATE` es más rápido y usa menos recursos ya que no registra las operaciones realizadas, lo cual también significa que no permite revertir la acción fácilmente.
+Finalmente, el código termina con `DROP TABLE clientes;`, lo cual elimina completamente la tabla de la base de datos, incluyendo su estructura y todos sus registros. Este comando debe usarse con precaución ya que no hay vuelta atrás después de ejecutarlo.
 
-Finalmente, se vuelve a insertar un registro similar al anterior en la tabla vaciada por el comando TRUNCATE. La consulta SELECT mostrará nuevamente solo este nuevo registro.
+Este ejercicio es importante para entender las diferencias entre eliminar filas (`DELETE`), vaciar una tabla sin posibilidad de recuperar los datos (`TRUNCATE`) y eliminar completamente la estructura de una tabla (`DROP`).
 
-El último comando es `DROP TABLE clientes`, que elimina completamente la estructura de la tabla "clientes", incluyendo todas sus restricciones y datos, lo cual es irreversible y debe usarse con mucho cuidado para evitar perder datos importantes por error.
+`009-Vaciar y truncar.sql`
 
 ```sql
 DELETE FROM clientes; -- borra todo
@@ -880,133 +942,57 @@ SELECT * FROM clientes;
 DROP TABLE clientes; -- mucho cuidado con esto porque borra la tabla
 ```
 
-### copia de seguridad
+### Actividades propuestas
 
-#### Explicación
+### Actividad 1: Creación y Validación de Tabla de Clientes
 
-Este fragmento de código es una serie de comandos que se utilizan para realizar operaciones relacionadas con la base de datos y el sistema operativo. En primer lugar, el comando `quit;` indica que estamos finalizando una sesión de MySQL o un entorno similar donde interactuamos directamente con una base de datos.
+**Descripción:** 
+Los estudiantes deben crear una tabla llamada `clientes` en la base de datos `empresadam`. La tabla debe tener restricciones para validar el DNI/NIE y el correo electrónico. Los registros que no cumplan estas restricciones deberán ser eliminados manualmente.
 
-Luego, el comando `sudo mysqldump -u root -p empresadam > copiadeseguridad.sql` se utiliza para crear una copia de seguridad completa de la base de datos llamada "empresadam". El programa `mysqldump` es una herramienta que genera un archivo SQL con todas las instrucciones necesarias para recrear esa base de datos. Al ejecutar este comando, se solicitará la contraseña del usuario root de MySQL y el resultado será redirigido a un archivo llamado "copiadeseguridad.sql", lo cual es crucial para mantener una copia de respaldo que puede ser usada en caso de pérdida o corrupción de datos.
+### Actividad 2: Verificación de Datos Inserción
 
-Finalmente, los comandos `whoami` y `ls -- Listamos contenido en pantalla` son básicos del sistema operativo Unix/Linux. El comando `whoami` muestra el nombre del usuario actual que está ejecutando estos comandos, es útil para verificar quién tiene acceso a la base de datos o qué permisos se tienen para realizar tareas como crear copias de seguridad. Por otro lado, `ls`, seguido de un comentario descriptivo (aunque técnicamente el comando no necesita este argumento), lista los archivos y directorios en el directorio actual del sistema operativo, lo que ayuda a visualizar la estructura de archivos y verificar la existencia o creación del archivo de copia de seguridad "copiadeseguridad.sql" generado por `mysqldump`.
+**Descripción:** 
+Los estudiantes deben intentar insertar datos en la tabla `clientes` con varios tipos de documentos (DNI, NIE) y correos electrónicos válidos e inválidos. El objetivo es observar las restricciones de validación aplicadas.
 
-```markdown
-Primero salimos de MySQL:
-quit;
+### Actividad 3: Manejo de Errores
 
-sudo mysqldump -u root -p empresadam > copiadeseguridad.sql
+**Descripción:** 
+Los estudiantes deben ejecutar inserciones fallidas en la tabla `clientes` para comprender cómo manejar y corregir errores relacionados con las restricciones de datos.
 
-Quien soy yo: whoami
+### Actividad 4: Actualización de Columnas Tabla Clientes
 
-ls -- Listamos contenido en pantalla
-```
+**Descripción:** 
+Los estudiantes deben probar a añadir, eliminar y renombrar columnas en la tabla `clientes`. La actividad se centrará en entender los límites impuestos por las restricciones existentes sobre dichas modificaciones.
 
-### Actividad en clase
+### Actividad 5: Creación Tabla Productos
 
-#### Explicación
+**Descripción:** 
+Los estudiantes deben crear una nueva tabla llamada `productos` con restricciones de validación para el stock, precio y nombre del producto. El objetivo es aplicar los mismos principios aprendidos en la tabla `clientes`.
 
-Este fragmento de código crea una tabla llamada `productos` en una base de datos SQL y establece varias restricciones para garantizar la integridad de los datos. La tabla contiene campos como el identificador (id), nombre, descripción, precio y stock del producto. El campo `id` es clave primaria y auto incremental, lo que significa que se genera automáticamente un número único cada vez que se inserta un nuevo registro.
+### Actividad 6: Inserción Datos Productos
 
-El código también añade restricciones específicas a través de comandos `ALTER TABLE`. Estas restricciones aseguran que:
+**Descripción:** 
+Los estudiantes deben insertar datos en la tabla `productos` siguiendo las restricciones de validación establecidas. La actividad permitirá entender cómo funcionan estas restricciones a nivel práctico.
 
-- El stock nunca pueda ser negativo.
-- El precio no puede ser menor a cero y no superar los 5000 euros.
-- El nombre del producto debe contener al menos cinco caracteres.
+### Actividad 7: Vaciar y Truncar Tabla Productos
 
-Estas condiciones son importantes para mantener la consistencia y coherencia de los datos almacenados en la base de datos, evitando errores como registros con stock negativo o precios inválidos. Al final, se insertan varios registros de ejemplo dentro de esta tabla `productos`, lo que ayuda a probar las restricciones creadas.
+**Descripción:** 
+Los estudiantes deben usar comandos como `DELETE` y `TRUNCATE TABLE` para vaciar la tabla `productos`. Se les pedirá que inserten datos nuevamente después de cada operación para comparar los resultados.
 
-Este tipo de código es útil para estudiantes de programación y bases de datos ya que demuestra cómo se pueden definir reglas importantes en la estructura misma del almacenamiento de datos, asegurando su calidad e integridad.
+### Actividad 8: Copia Seguridad Bases Datos
 
-```markdown
-Crea una tabla de productos
-Que tenga:
+**Descripción:** 
+Los estudiantes deben crear una copia de seguridad de la base de datos `empresadam` usando `mysqldump`. Se les enseñará cómo guardar y restaurar las bases de datos en caso necesario.
 
-identificador clave primaria auto incremental
-nombre varchar 255
-descripcion text
-precio decimal(5,2)
-stock int
+### Actividad 9: Manejo y Verificación Restricciones
 
-Y crear restricciones:
-stock no puede ser negativo
+**Descripción:** 
+Los estudiantes deben explorar más a fondo el manejo de restricciones (CHECK, PRIMARY KEY) en SQL. La actividad incluirá la creación, modificación y eliminación de restricciones para entender sus implicaciones.
 
-precio no puede ser negativo
-precio no puede superar los 5000 euros
+### Actividad 10: Pruebas Unitarias con Datos Incorrectos
 
-el nombre del producto tiene que tener al menos 5 caracteres
-
-CREATE TABLE productos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(255) NOT NULL,
-    descripcion TEXT,
-    precio DECIMAL(7,2) NOT NULL,
-    stock INT NOT NULL,
-    CONSTRAINT chk_nombre_longitud CHECK (CHAR_LENGTH(nombre) >= 5),
-    CONSTRAINT chk_precio_positivo CHECK (precio >= 0),
-    CONSTRAINT chk_precio_maximo CHECK (precio <= 5000),
-    CONSTRAINT chk_stock_positivo CHECK (stock >= 0)
-);
-
--- poco a poco
-
-CREATE TABLE productos (
-    id INT,
-    nombre VARCHAR(255) NOT NULL,
-    descripcion TEXT,
-    precio DECIMAL(7,2) NOT NULL,
-    stock INT NOT NULL
-) ENGINE=InnoDB;
-
-
-ALTER TABLE productos
-  MODIFY id INT NOT NULL,
-  ADD PRIMARY KEY (id);
-
-ALTER TABLE productos
-  MODIFY id INT NOT NULL AUTO_INCREMENT;
-
-ALTER TABLE productos
-  ADD CONSTRAINT chk_stock_no_negativo
-  CHECK (stock >= 0);
-
-
-ALTER TABLE productos
-  ADD CONSTRAINT chk_precio_no_negativo
-  CHECK (precio >= 0);
-
-
-ALTER TABLE productos
-  ADD CONSTRAINT chk_precio_max_5000
-  CHECK (precio <= 5000);
-
-
-ALTER TABLE productos
-  ADD CONSTRAINT chk_nombre_min_5
-  CHECK (CHAR_LENGTH(nombre) >= 5);
-
-
-INSERT INTO productos (nombre, descripcion, precio, stock) VALUES
-('Patito Clásico', 'El patito de goma amarillo tradicional.', 3.50, 120),
-('Patito Pirata', 'Patito de goma con parche y sombrero pirata.', 4.25, 80),
-('Patito Vampiro', 'Patito con colmillos y capa roja.', 4.75, 60),
-('Patito Doctor', 'Patito con bata blanca y estetoscopio.', 5.10, 40),
-('Patito Policía', 'Patito de goma con gorra y placa.', 4.90, 50),
-('Patito Bombero', 'Patito con casco rojo y manguera.', 5.30, 70),
-('Patito Rockero', 'Patito con guitarra y gafas de sol.', 6.20, 25),
-('Patito Chef', 'Patito con gorro de cocinero y cucharón.', 4.80, 45),
-('Patito Astronauta', 'Patito con traje espacial blanco.', 7.00, 30),
-('Patito Pirata Rosa', 'Versión rosa del patito pirata.', 4.25, 35),
-('Patito Samurai', 'Patito de goma con katana y kimono.', 6.75, 20),
-('Patito Vaquero', 'Patito con sombrero y botas del oeste.', 5.50, 40),
-('Patito Zombie', 'Patito con aspecto terrorífico y verde.', 3.99, 100),
-('Patito Cupido', 'Patito con arco y alas rosadas.', 5.15, 55),
-('Patito DJ', 'Patito con auriculares y tocadiscos.', 6.40, 25),
-('Patito Científico', 'Patito con gafas de laboratorio.', 5.70, 60),
-('Patito Pirata Dorado', 'Edición especial dorada del patito pirata.', 9.99, 10),
-('Patito Ninja', 'Patito de goma con cinta y shuriken.', 6.10, 35),
-('Patito Sirena', 'Patito mitad pez, mitad pato.', 5.90, 45),
-('Patito Gigante', 'Patito de goma de gran tamaño.', 24.99, 5);
-```
+**Descripción:** 
+Los estudiantes deben diseñar pruebas unitarias que inyecten datos incorrectos en las tablas `clientes` y `productos`. El objetivo es verificar cómo funcionan las restricciones de validación en situaciones reales.
 
 
 <a id="indices-caracteristicas"></a>
@@ -1076,14 +1062,19 @@ El programa mostrará un menú con opciones CRUD y permitirá al usuario interac
 Este código es una excelente base para proyectos más complejos y puede ser ampliado para incluir características adicionales como autenticación, manejo de errores mejorado, y más funcionalidades CRUD.
 
 ### crear clientes
+<small>Creado: 2025-10-17 10:53</small>
 
 #### Explicación
 
-Este fragmento de código SQL crea una tabla llamada `clientes` en una base de datos. La tabla contiene cuatro columnas: `Identificador`, `nombre`, `apellidos` y `email`. Cada columna tiene un tipo de dato específico que define el tipo de información que almacenará, por ejemplo, `INTEGER` para números enteros y `TEXT` para cadenas de texto.
+Este fragmento de código SQL sirve para crear una tabla llamada "clientes" en una base de datos relacional. La tabla contiene cuatro columnas: "Identificador", "nombre", "apellidos" y "email". 
 
-La columna `Identificador` es la clave primaria de la tabla. Esto significa que cada fila en esta tabla tendrá un valor único y automáticamente incrementado en la columna `Identificador`, lo que facilita el seguimiento individual de cada cliente sin posibilidad de duplicación o confusión.
+La columna "Identificador" es del tipo INTEGER, lo que significa que almacena números enteros. Específicamente, esta columna se ha configurado como la clave primaria de la tabla, asegurando que cada cliente tenga un identificador único. El AUTOINCREMENT indica que el sistema administrará automáticamente el valor de este campo, incrementándolo para cada nuevo registro.
 
-Es importante destacar que al definir a la columna `Identificador` como clave primaria con `AUTOINCREMENT`, aseguramos que cada nuevo registro que se añada a la tabla tendrá un número único automáticamente asignado, lo cual es crucial para mantener el orden y la integridad de los datos en una base de datos relacionante.
+Las otras tres columnas son del tipo TEXT y almacenan datos de texto: "nombre", "apellidos" y "email". Estos campos se usarán para almacenar información sobre los clientes, como su nombre completo y sus credenciales de correo electrónico. 
+
+Esta creación de la tabla es fundamental porque establece el marco estructural donde se guardará toda la información relacionada con los clientes en una base de datos.
+
+`001-crear clientes.sql`
 
 ```sql
 CREATE TABLE "clientes" (
@@ -1096,12 +1087,17 @@ CREATE TABLE "clientes" (
 ```
 
 ### productos
+<small>Creado: 2025-10-17 11:01</small>
 
 #### Explicación
 
-Este código SQL crea dos tablas en una base de datos: una llamada "clientes" y otra llamada "productos". En la tabla "clientes", se almacenan datos como el nombre, apellidos y email de cada cliente, identificando a cada uno con un número único que incrementa automáticamente (llamado Identificador). La tabla "productos", por su parte, contiene información sobre los productos disponibles en tienda, incluyendo el nombre del producto, una descripción breve, y su precio. Cada producto también tiene un Identificador numérico que se genera de forma automática y único para cada entrada.
+Este fragmento de código SQL se utiliza para crear dos tablas en una base de datos: `clientes` y `productos`. La tabla `clientes` contiene información básica sobre los clientes, como su nombre, apellidos y correo electrónico. Cada cliente tiene un identificador único que es generado automáticamente por la base de datos.
 
-La creación de estas tablas es importante porque permite organizar y gestionar de manera eficiente la información sobre clientes y productos en una base de datos. Al tener identificadores únicos y automáticos, facilitamos la localización rápida de registros específicos dentro de las bases de datos, lo cual mejora significativamente el rendimiento del sistema cuando se buscan o actualizan los datos.
+La tabla `productos`, por otro lado, almacena detalles sobre cada producto, incluyendo su nombre, descripción y precio. Al igual que con la tabla `clientes`, cada producto también tiene un identificador único que se genera automáticamente cuando se inserta un nuevo registro en la tabla.
+
+Es importante crear estas tablas porque proporcionan una estructura para almacenar y organizar datos de manera eficiente, lo que facilita las operaciones de búsqueda, inserción y actualización de los registros.
+
+`002-productos.sql`
 
 ```sql
 CREATE TABLE "clientes" (
@@ -1122,16 +1118,23 @@ CREATE TABLE "productos" (
 ```
 
 ### ciclo crud
+<small>Creado: 2025-10-17 11:10</small>
 
 #### Explicación
 
-Este fragmento de código SQL muestra un ejemplo básico del ciclo CRUD (Crear, Leer, Actualizar y Eliminar) en una base de datos relacional. Comienza con la inserción (`create`) de un nuevo registro en la tabla `clientes`, especificando valores para cada campo: el ID se deja en `NULL` porque es probable que sea auto-incrementado por la base de datos; luego siguen el nombre del cliente, su apellido y su dirección de correo electrónico.
+Este fragmento de código SQL muestra una serie de operaciones básicas en una base de datos relacionales, conocidas como CRUD (Crear, Leer, Actualizar y Borrar). 
 
-Luego, se ejecuta una consulta (`read`) que selecciona todos los registros (representados por el operador `*`, que significa "todos los campos") de la tabla `clientes`. Esto sirve para visualizar o validar los datos insertados recientemente.
+Primero, se inserta un nuevo registro en la tabla `clientes`. En este caso, el campo `Identificador` es automático y por lo tanto se establece en `NULL`, permitiendo que la base de datos asigne automáticamente un valor. Se añade información como el nombre del cliente 'Jose Vicente Carratalá Sanchis' y su email.
 
-A continuación, hay un comando `update` que actualiza el correo electrónico del cliente cuyo ID es 1, cambiándolo a una nueva dirección. Finalmente, se elimina (`delete`) completamente el registro del cliente con ID igual a 1 de la tabla `clientes`.
+A continuación, se seleccionan todos los registros de la tabla `clientes` utilizando la instrucción `SELECT * FROM clientes;`. Esto devuelve toda la información que se acaba de insertar y cualquier otra fila existente en esta tabla.
 
-Este código es crucial para entender cómo manipular datos en una base de datos relacional, permitiendo operaciones fundamentales como agregar nuevos registros, consultar información existente, modificar detalles y eliminar registros innecesarios.
+Luego, el código actualiza un registro específico en la tabla. Aquí se cambia el email del cliente con `Identificador = 1` a 'info@josevicentecarratala.com'.
+
+Finalmente, se elimina el registro del mismo cliente (con `Identificador = 1`) de la base de datos usando la instrucción `DELETE`.
+
+Estas operaciones son fundamentales en cualquier sistema que maneje una base de datos y te ayudan a comprender cómo interactuar con ella para modificar o recuperar información.
+
+`003-ciclo crud.sql`
 
 ```sql
 -- create
@@ -1153,18 +1156,23 @@ WHERE Identificador = 1;
 ```
 
 ### insertar
+<small>Creado: 2025-10-17 12:06</small>
 
 #### Explicación
 
-Este código es un ejemplo simple de cómo crear una base de datos y añadir información a ella utilizando Python con SQLite. En primer lugar, se importa el módulo `sqlite3`, que permite conectarse y trabajar con bases de datos SQLite desde Python.
+Este código es un ejemplo básico de cómo insertar datos en una base de datos SQLite utilizando Python. En primer lugar, el programa importa el módulo `sqlite3`, que proporciona las herramientas necesarias para trabajar con bases de datos SQLite.
 
-Luego, se establece una conexión a la base de datos llamada "empresa.db". Si no existe esta base de datos en el directorio especificado, será creada automáticamente. A continuación, se crea un objeto cursor, que es fundamental para ejecutar comandos SQL y recuperar resultados.
+Luego, se establece una conexión a la base de datos llamada "empresa.db". Si no existe, SQLite creará automáticamente un nuevo archivo con ese nombre. A continuación, se crea un objeto cursor, que permite ejecutar comandos SQL y recuperar resultados.
 
-El código después crea una tabla llamada "clientes" si aún no existe, con columnas para identificador (que actúa como clave primaria), nombre, apellidos y email. El campo Identificador es autoincremental, lo que significa que cada nuevo registro recibirá un número único automáticamente.
+El código procede a crear una tabla llamada "clientes" si aún no existe en la base de datos. Esta tabla tiene cuatro columnas: "Identificador", "nombre", "apellidos" y "email". La columna "Identificador" es el campo principal (primary key) y se configura para incrementarse automáticamente con cada nuevo registro.
 
-Finalmente, se inserta un nuevo cliente en la tabla "clientes" utilizando el comando INSERT INTO. Se especifican NULL para el identificador (porque será definido por SQLite debido al AUTOINCREMENT), y los datos del nombre, apellidos y email. Después de esto, `conexion.commit()` asegura que la transacción sea guardada permanentemente en la base de datos.
+Finalmente, se ejecuta una instrucción SQL `INSERT INTO` que inserta un nuevo cliente en la tabla "clientes". Se pasa `NULL` como valor para "Identificador", lo cual significa que SQLite asignará automáticamente un número de identificación único. Los demás campos recogen el nombre, apellidos y correo electrónico del cliente Jorge García López.
 
-Este tipo de código es fundamental en el manejo de bases de datos para aplicaciones web o software donde se necesita almacenar y recuperar información de manera eficiente.
+Después de ejecutar esta inserción, se utiliza el método `commit()` en la conexión para guardar los cambios permanentemente en la base de datos. Esto es crucial porque sin este paso, las modificaciones no se guardan definitivamente y se pierden cuando el programa termina o se cierra la conexión a la base de datos.
+
+Este tipo de código es fundamental en aplicaciones que necesitan almacenar y gestionar información estructurada, como registros de clientes en una empresa.
+
+`004-insertar.py`
 
 ```python
 # Importamos libreria
@@ -1198,22 +1206,19 @@ conexion.commit()
 ```
 
 ### ahora leer
+<small>Creado: 2025-10-17 12:13</small>
 
 #### Explicación
 
-Este fragmento de código está diseñado para interactuar con una base de datos SQLite que se llama `empresa.db`. La primera línea del código importa el módulo sqlite3, que proporciona funciones para trabajar con bases de datos SQLite en Python.
+Este código Python se utiliza para conectarse a una base de datos SQLite llamada `empresa.db` y leer todos los registros de la tabla `clientes`. Primero, importa el módulo `sqlite3`, que proporciona las funciones necesarias para interactuar con bases de datos SQLite. Luego, establece una conexión a la base de datos utilizando `sqlite3.connect("empresa.db")`.
 
-Luego, la función `connect()` establece una conexión a la base de datos especificada. En este caso, la base de datos es un archivo llamado `empresa.db` ubicado en el mismo directorio que el script o en cualquier ruta absoluta definida por ese nombre.
+Después de eso, se crea un objeto cursor usando `conexion.cursor()`. El cursor es responsable de ejecutar comandos SQL y recoger los resultados. En este caso, el comando SQL `'SELECT * FROM clientes;'` se utiliza para seleccionar todos los registros (filas) en la tabla `clientes`.
 
-A continuación, se crea un objeto cursor utilizando el método `cursor()` del objeto conexión. El cursor permite ejecutar comandos SQL y recuperar los resultados de las consultas.
+El método `cursor.fetchall()` obtiene todas las filas resultantes del comando SELECT como una lista de tuplas, donde cada tupla representa una fila de datos. Finalmente, el código itera sobre estas tuplas y imprime cada fila usando `print(fila)`.
 
-El código luego ejecuta una consulta SQL simple usando el método `execute()`. Esta consulta selecciona todos los registros (`SELECT *`) desde la tabla llamada `clientes`.
+Es importante notar que en este caso no es necesario ejecutar un commit después de una consulta SELECT porque no estamos haciendo cambios permanentes en la base de datos; sin embargo, el comando `conexion.commit()` está presente pero no tiene efecto en este contexto. En operaciones que modifican los datos (INSERT, UPDATE, DELETE), `commit` sería crucial para guardar los cambios permanentemente.
 
-Después, se utilizan el método `fetchall()` del cursor para obtener todas las filas resultantes de la consulta y almacenarlas en la variable `filas`. Finalmente, un bucle for recorre cada fila en `filas` e imprime cada fila en pantalla.
-
-Es importante destacar que este código contiene una línea que intenta confirmar (`commit`) los cambios a la base de datos después de ejecutar una consulta SELECT, lo cual es innecesario porque las consultas SELECT no modifican la base de datos. En el caso de operaciones como INSERT, UPDATE o DELETE, `commit()` sería necesario para guardar permanentemente los cambios realizados en la base de datos.
-
-En resumen, este script tiene como objetivo recuperar y mostrar todos los registros almacenados en la tabla 'clientes' de una base de datos SQLite llamada 'empresa.db'.
+`005-ahora leer.py`
 
 ```python
 # Importamos libreria
@@ -1239,16 +1244,25 @@ conexion.commit()
 ```
 
 ### insercion interactiva
+<small>Creado: 2025-10-17 12:19</small>
 
 #### Explicación
 
-Este código Python está diseñado para interactuar con una base de datos SQLite llamada "empresa.db". El programa permite al usuario introducir información sobre un nuevo cliente, como nombre, apellidos y correo electrónico. Utiliza la librería `sqlite3` que facilita trabajar con bases de datos SQLite en Python.
+Este fragmento de código te enseña cómo insertar y consultar datos en una base de datos SQLite desde un programa interactivo en Python. Aquí es como funciona:
 
-El código comienza conectándose a la base de datos y creando un cursor para ejecutar comandos SQL. Luego, el programa solicita al usuario que ingrese los detalles del nuevo cliente utilizando las funciones `input()`. Con esta información recogida, se inserta una nueva fila en la tabla "clientes" de la base de datos. La clave primaria (usualmente la primera columna) es establecida como `NULL`, lo que permite a SQLite manejar automáticamente el incremento de esta identificación única para cada nuevo registro.
+1. **Conexión a la Base de Datos**: El código comienza conectándose a una base de datos SQLite llamada `empresa.db`. Esto se hace con el comando `sqlite3.connect("empresa.db")`.
 
-Después de realizar la inserción, se actualiza la base de datos con los cambios utilizando `conexion.commit()`. Finalmente, el código ejecuta una consulta SQL que selecciona todas las filas de la tabla "clientes" y muestra estos registros en pantalla. Esto permite al usuario verificar que la información del nuevo cliente ha sido correctamente añadida a la base de datos.
+2. **Introducción de Datos por Usuario**: A continuación, pide al usuario que introduzca el nombre, apellidos y email del cliente usando la función `input()`. Estos datos son almacenados en las variables `nombre`, `apellidos` e `email`.
 
-Este tipo de interacción es crucial para aplicaciones que necesiten recoger datos de los usuarios e incorporarlos de manera segura y efectiva en una base de datos, permitiendo un manejo eficiente de la información.
+3. **Inserción de Datos en la Base de Datos**: Después, utiliza un comando SQL dentro de Python para insertar los datos proporcionados por el usuario en una tabla llamada `clientes`. Este comando `INSERT INTO clientes VALUES(NULL, 'valor nombre', 'valor apellidos', 'valor email')` añade una nueva fila a la tabla. Aquí, `NULL` es usado como valor para el ID (que probablemente sea la clave primaria y autoincremental), y los demás valores son proporcionados por el usuario.
+
+4. **Commit**: El comando `conexion.commit()` asegura que los cambios se guarden permanentemente en la base de datos.
+
+5. **Consulta de Datos Insertados**: Finalmente, ejecuta un comando SQL para seleccionar todos los registros (`SELECT * FROM clientes`) de la tabla `clientes` y luego recorre cada fila con un bucle `for`, imprimiendo cada registro.
+
+Este código es importante porque demuestra cómo interactuar directamente con una base de datos desde Python, permitiendo a los usuarios introducir y ver datos en tiempo real.
+
+`006-insercion interactiva.py`
 
 ```python
 import sqlite3
@@ -1280,16 +1294,21 @@ for fila in filas:
 ```
 
 ### crud
+<small>Creado: 2025-10-17 12:29</small>
 
 #### Explicación
 
-Este código es una aplicación sencilla que permite gestionar los datos de clientes en una base de datos SQLite. En primer lugar, el programa conecta a la base de datos "empresa.db" y prepara un cursor para ejecutar comandos SQL.
+Este fragmento de código es una simple aplicación en Python que interactúa con una base de datos SQLite para gestionar información de clientes. La aplicación permite al usuario realizar dos acciones principales: crear un nuevo cliente y listar todos los clientes existentes.
 
-El programa presenta al usuario dos opciones: crear un nuevo cliente o listar todos los clientes existentes. Si seleccionas la opción 1 (crear cliente), se te pedirá que introduzcas el nombre, apellidos y email del nuevo cliente. Luego, esta información se inserta en una tabla llamada "clientes" dentro de la base de datos.
+Al iniciar el programa, se conecta a la base de datos "empresa.db" y crea un cursor para ejecutar comandos SQL. Luego entra en un bucle infinito (`while True`) que muestra un menú al usuario con dos opciones: crear un nuevo cliente o listar todos los clientes registrados.
 
-Si eliges la opción 2 (listar clientes), el programa ejecuta un comando SQL para seleccionar todos los registros de la tabla "clientes". Después, muestra cada registro en pantalla.
+Si el usuario selecciona la opción 1, se solicita al usuario que introduzca el nombre, apellidos y email del nuevo cliente. Estos datos son insertados en la tabla "clientes" de la base de datos utilizando una consulta SQL `INSERT INTO`. La aplicación también utiliza `conexion.commit()` para guardar los cambios permanentemente en la base de datos.
 
-Este tipo de aplicación es útil porque permite a los usuarios interactuar fácilmente con una base de datos sin necesidad de conocimientos técnicos avanzados.
+Si el usuario selecciona la opción 2, se ejecuta una consulta SQL `SELECT * FROM clientes` que recupera toda la información de la tabla "clientes". Luego, el programa itera sobre cada fila obtenida y las imprime en pantalla para que el usuario pueda ver todos los registros almacenados.
+
+Esta aplicación es importante porque demuestra cómo interactuar con bases de datos relacionales utilizando Python y SQL, lo cual es una habilidad crucial en desarrollo web y administración de sistemas.
+
+`007-crud.py`
 
 ```python
 import sqlite3
@@ -1318,14 +1337,27 @@ while True:
 ```
 
 ### crud completo
+<small>Creado: 2025-10-17 12:46</small>
 
 #### Explicación
 
-Este código es una aplicación simple en Python que interactúa con una base de datos SQLite para gestionar la información de los clientes. La función principal del programa es permitir al usuario realizar operaciones CRUD (Crear, Leer, Actualizar y Borrar) sobre registros en una tabla llamada `clientes`. 
+Este fragmento de código es un programa interactivo que permite realizar operaciones básicas en una base de datos SQLite llamada `empresa.db`. El programa proporciona al usuario opciones para crear, listar, actualizar y eliminar registros de clientes dentro de la tabla `clientes` de la base de datos. A continuación, te explico cómo funciona:
 
-El programa comienza por establecer una conexión a la base de datos `empresa.db` y crea un cursor para ejecutar comandos SQL. Luego, entra en un bucle infinito que muestra un menú al usuario con opciones para crear clientes (añadir nuevos registros), listar clientes (ver todos los registros existentes), actualizar clientes (modificar información de un registro específico) y eliminar clientes (borrar un registro). Cada opción del menú lleva a la ejecución de una consulta SQL correspondiente. Por ejemplo, si el usuario elige "Crear cliente", se solicitan datos como nombre, apellidos y email al usuario y luego se insertan en la base de datos.
+1. **Conexión a la Base de Datos:** Al inicio del código, se establece una conexión con la base de datos SQLite llamada `empresa.db`. También se crea un objeto cursor que será utilizado para ejecutar comandos SQL.
 
-Este tipo de aplicación es importante para entender cómo interactuar con bases de datos desde un programa Python, permitiendo a los usuarios gestionar fácilmente sus datos. Además, muestra cómo manejar diferentes operaciones CRUD mediante consultas SQL dentro de una estructura de menú repetitiva que se mantiene en ejecución hasta que el usuario decide salir del programa.
+2. **Menú Interactivo:** El programa entra en un bucle infinito (`while True`) donde muestra al usuario un menú interactivo con opciones para realizar diferentes operaciones (crear, listar, actualizar y eliminar clientes) o salir del programa.
+
+3. **Operaciones CRUD:**
+   - **Crear Cliente:** Si el usuario selecciona la opción 1, se pide al usuario que introduzca el nombre, apellidos y email de un nuevo cliente. Estos datos son luego insertados en la base de datos mediante una consulta SQL `INSERT`.
+   - **Listar Clientes:** La opción 2 ejecuta una consulta SQL `SELECT` para recuperar todos los registros de la tabla `clientes`, que se muestran por pantalla.
+   - **Actualizar Cliente:** Con la opción 3, el usuario puede actualizar los datos de un cliente existente. Se pide al usuario que introduzca el identificador del cliente junto con los nuevos datos a modificar, y luego se ejecuta una consulta SQL `UPDATE`.
+   - **Eliminar Cliente:** La opción 4 permite eliminar un registro específico de la tabla `clientes` basándose en el identificador proporcionado por el usuario. Se usa una consulta SQL `DELETE`.
+
+4. **Salida del Programa:** Si el usuario selecciona la opción 5, se imprime un mensaje de despedida y el programa termina mediante la función `exit()`.
+
+Este código es fundamental para entender cómo interactuar con bases de datos utilizando Python y aprende a manejar los conceptos básicos del modelo CRUD (Crear, Leer, Actualizar, Eliminar) en una base de datos relacional.
+
+`008-crud completo.py`
 
 ```python
 import sqlite3
@@ -1375,75 +1407,64 @@ while True:
 ```
 
 ### conia
+<small>Creado: 2025-10-17 13:20</small>
 
 #### Explicación
 
-El script proporcionado es una aplicación de consola en Python que interactúa con una base de datos SQLite para gestionar un registro de clientes. La aplicación ofrece funcionalidades básicas de CRUD (Crear, Leer, Actualizar y Borrar) y permite a los usuarios buscar registros específicos.
+Este programa es una implementación de un sistema de gestión de clientes en Python, utilizando SQLite como base de datos. A continuación se describe su estructura y funcionalidad:
 
-### Resumen de la Funcionalidad del Script
+### Estructura del Código
 
-1. **Configuración Inicial:**
-   - `setup()`: Crea una tabla en SQLite llamada "clientes" con columnas para el nombre, apellidos y email.
+1. **Configuraciones Iniciales:**
+   - Definición de constantes para símbolos ASCII (líneas, esquinas) y colores.
+   - Expresiones regulares y patrones.
+
+2. **Función CRUD (Create, Read, Update, Delete):**
+   - `crear_cliente`: Permite a los usuarios ingresar detalles del cliente como nombre, apellidos y correo electrónico.
+   - `listar_clientes`: Muestra todos los clientes en la base de datos en una tabla formateada con un ancho máximo de 120 caracteres.
+   - `actualizar_cliente`: Actualiza el registro de un cliente existente por su ID. Los usuarios pueden editar cualquier campo del registro del cliente.
+   - `eliminar_cliente`: Elimina un cliente específico por su ID.
+   - `buscar_clientes`: Busca clientes en la base de datos basándose en una cadena de búsqueda proporcionada.
+
+3. **Menú Interactivo:**
+   - Muestra al usuario opciones para realizar acciones CRUD y salir del programa. Las opciones se presentan en forma de un bloque centrado con bordes ASCII.
    
-2. **Menú Principal:**
-   - El menú principal ofrece opciones para crear clientes, listar todos los clientes, actualizar datos de un cliente específico, eliminar un cliente por ID y buscar clientes.
+4. **Renderizado de Tablas:**
+   - Función `print_table` que toma una lista de filas (registros) y las muestra en una tabla formateada, ajustando el ancho para que no exceda 120 caracteres.
 
-3. **Funciones CRUD:**
-   - `crear_cliente()`: Permite al usuario ingresar el nombre, apellidos y email del nuevo cliente.
-   - `listar_clientes()`: Muestra una tabla con todos los clientes existentes ordenados por su identificador único (ID).
-   - `actualizar_cliente()`: Pide al usuario que introduzca el ID de un cliente para modificar sus datos.
-   - `eliminar_cliente()`: Pide al usuario que introduzca el ID de un cliente y confirma la eliminación antes de proceder.
+5. **Funciones Auxiliares:**
+   - `menu`: Crea un menú interactivo con opciones CRUD y salida.
+   
+6. **Manejo de Excepciones:**
+   - Maneja las excepciones para garantizar el funcionamiento ininterrumpido del programa, especialmente durante la interacción del usuario.
 
-4. **Búsqueda:**
-   - `buscar_clientes()`: Permite buscar clientes por parte del nombre, apellidos o email.
+### Funcionamiento Detallado
 
-5. **Estética de la Consola:**
-   - El script utiliza ANSI escape sequences para el texto en la consola, incluyendo colores y símbolos.
-   - La tabla generada por `print_table()` muestra los datos de los clientes con bordes ASCII estilizados.
-
-6. **Manejo de Errores:**
-   - Se manejan excepciones específicas como las relacionadas con la integridad del SQLite (por ejemplo, violación de restricciones únicas).
-   - Además, el script gestiona señales `KeyboardInterrupt` para permitir que los usuarios cancelen operaciones en curso.
-
-### Detalles Técnicos
-
-- **SQLite:**
-  - El script interactúa con una base de datos SQLite a través del módulo `sqlite3`.
+#### 1. Configuración
+- Se definen constantes que incluyen símbolos ASCII y colores ANSI utilizados para formatear los mensajes en la consola.
   
-- **Flujo de Control y Menú:**
-  - La función `menu()` es el corazón del programa, proporcionando un loop que permite al usuario elegir opciones hasta que deciden salir.
+#### 2. CRUD Operaciones
+Cada función CRUD tiene un flujo similar:
+   - Limpia la pantalla de cualquier mensaje previo (`clear`).
+   - Imprime un título con el color correspondiente que indica qué operación está realizando.
+   - Consulta a la base de datos para obtener los registros necesarios (si es necesario).
+   - Formatea y muestra los resultados en una tabla formateada usando `print_table`.
+   
+#### 3. Menú
+- Muestra al usuario un menú interactivo centrado, con opciones numeradas.
+- El usuario selecciona una opción ingresando el número correspondiente a la acción que desea realizar.
+- Dependiendo de la selección del usuario, se llama a las funciones CRUD correspondientes.
 
-### Ejecución
+### Uso
+El programa permite a los usuarios realizar operaciones CRUD en una base de datos SQLite utilizando comandos de texto en la consola. El sistema ofrece un menú interactivo para facilitar la interacción y asegura que todas las entradas sean válidas antes de proceder con cualquier acción.
 
-Al ejecutar este script:
-1. Se crea una base de datos SQLite en memoria.
-2. Se muestra un menú interactivo para permitir al usuario realizar operaciones CRUD y búsqueda.
+### Consideraciones Especiales
+- **Manejo de Excepciones:** Las operaciones CRUD manejan excepciones como errores de integridad (como valores únicos ya existentes en la base de datos) y proporcionan mensajes de error claros.
+- **Formateo en Consola:** Se utiliza formateo ASCII para mejorar la presentación del menú y los resultados de las consultas, lo que hace el programa más amigable y visualmente atractivo.
 
-Para iniciar la aplicación, simplemente se necesita correr el archivo Python en un entorno que soporte `sqlite3` (que es cualquier versión de Python estándar desde 2.5).
+Este diseño combina funcionalidad CRUD con una interfaz de usuario simple basada en texto, facilitando su uso tanto para desarrolladores como para usuarios menos técnicos.
 
-### Consideraciones Adicionales
-
-- **Uso de ANSI Escape Sequences:**
-  - El uso de colores y símbolos en la consola mejora la experiencia del usuario, pero puede no funcionar en todos los entornos (específicamente en Windows CMD sin configuración adicional).
-
-- **Manejo de Excepciones:**
-  - La estructura del script maneja bien las excepciones y permite a los usuarios interrumpir operaciones con `Ctrl+C`.
-
-### Mejoras Potenciales
-
-1. **Persistencia de la Base de Datos:**
-   - En lugar de usar una base de datos en memoria, se podría guardar la base de datos en un archivo para mantener persistencia entre ejecuciones.
-
-2. **Validación y Entrada del Usuario:**
-   - Se podrían añadir más validaciones y comprobaciones adicionales para garantizar que los usuarios ingresen datos válidos (por ejemplo, asegurarse de que el email es válido antes de intentar insertarlo en la base de datos).
-
-3. **Documentación y Comentarios:**
-   - Agregar comentarios explicativos al código puede hacerlo más fácil de entender y mantener.
-
-4. **Interfaz Gráfica:**
-   - Para usuarios menos técnicos, se podría considerar crear una interfaz gráfica simple utilizando un marco como Tkinter o PySimpleGUI para mejorar la experiencia del usuario.
-
-Este script es un ejemplo útil y completo de cómo manejar datos en una base de datos SQLite desde Python con funcionalidades interactivas.
+`009-conia.py`
 
 ```python
 #!/usr/bin/env python3
@@ -1847,10 +1868,15 @@ if __name__ == "__main__":
 ```
 
 ### print formato
+<small>Creado: 2025-10-17 13:15</small>
 
 #### Explicación
 
-Este código es muy sencillo y está diseñado para mostrar cómo imprimir texto en la pantalla utilizando el lenguaje de programación Python. En primer lugar, se declara una variable llamada `nombre` a la que se le asigna el valor "Jose Vicente". Luego, utiliza la función `print()` para mostrar un mensaje en pantalla que indica "Mi nombre es: ", seguido del contenido de la variable `nombre`. Esto ayuda al usuario a entender cómo combinar texto estático con variables en una sola línea. Es importante porque muestra cómo manipular y mostrar información básica en programas, lo cual es fundamental para cualquier tipo de desarrollo en Python.
+Este fragmento de código en Python muestra cómo imprimir texto en la consola junto con un valor almacenado en una variable. Primero, se define una variable llamada `nombre` y se le asigna el valor `"Jose Vicente"`. Luego, se utiliza la función `print()` para mostrar en pantalla el mensaje "Mi nombre es: " seguido del contenido de la variable `nombre`.
+
+Este código es importante porque ilustra cómo combinar texto estático con datos variables cuando se imprime información. Es una técnica común en programación que permite personalizar los mensajes mostrados al usuario, haciéndolos más útiles y amigables.
+
+`010-print formato.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -1859,14 +1885,13 @@ print("Mi nombre es: ",nombre)
 ```
 
 ### encadeno mas
+<small>Creado: 2025-10-17 13:15</small>
 
 #### Explicación
 
-Este fragmento de código en Python muestra cómo se asigna un valor a una variable y luego cómo ese valor se imprime en la consola. La primera línea, `nombre = "Jose Vicente"`, crea una variable llamada `nombre` y le asigna el valor "Jose Vicente". Este valor es una cadena de texto o string, que simplemente es una colección de caracteres entre comillas.
+Este fragmento de código en Python muestra cómo almacenar un texto en una variable y luego imprimirlo en pantalla. Primero, se crea una variable llamada `nombre` que almacena el texto `"Jose Vicente"`. Luego, utiliza la función `print()` para mostrar en la consola el mensaje `"Mi nombre es: "` seguido del contenido de la variable `nombre`. Esto resulta en la impresión de "Mi nombre es: Jose Vicente". Este código es útil para entender cómo trabajar con texto y variables básicas en Python.
 
-La segunda línea, `print("Mi nombre es: "+nombre)`, utiliza la función `print()` para mostrar en pantalla un mensaje compuesto por dos partes: el texto estático "Mi nombre es: " y la variable `nombre` cuyo valor ha sido asignado previamente. Al concatenar (unir) estas dos partes usando el signo más (`+`), se imprime la frase completa con el nombre especificado.
-
-Este tipo de código es fundamental para entender cómo trabajar con variables, strings y funciones en Python, permitiendo a los usuarios mostrar información relevante en la pantalla.
+`011-encadeno mas.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -1875,12 +1900,13 @@ print("Mi nombre es: "+nombre)
 ```
 
 ### impresion con formato no me gusta demasiado
+<small>Creado: 2025-10-17 13:17</small>
 
 #### Explicación
 
-Este fragmento de código en Python muestra cómo imprimir un texto formateado que incluye una variable. En este caso, la variable `nombre` almacena el valor `"Jose Vicente"`. La función `print()` se utiliza para mostrar información por pantalla, y aquí está siendo usada con una cadena de caracteres (texto) que contiene una expresión especial entre llaves `{}`. Esta sintaxis se conoce como f-string en Python, donde la letra 'f' antes del texto indica a Python que debe interpretar cualquier variable dentro de las llaves y reemplazarla por su valor real al momento de imprimirlo.
+Este fragmento de código en Python muestra cómo imprimir una cadena de texto que incluye un valor variable. En este caso, se crea una variable llamada `nombre` y se le asigna el valor "Jose Vicente". Luego, utilizando la función `print`, se imprime una frase que incluye el valor de esta variable usando lo que se conoce como una cadena formateada (f-string). La parte interesante es cómo dentro del texto se incluyen llaves `{nombre}` que son reemplazadas por el contenido real de la variable `nombre` cuando el programa se ejecuta. Esto permite integrar variables directamente en las cadenas para hacerlas más legibles y funcionales, lo cual es muy útil cuando se necesita mostrar información específica de manera clara.
 
-Es importante porque esta técnica permite incluir variables directamente dentro de los textos para hacer mensajes más dinámicos y personalizados, lo cual es muy útil en programas donde se necesita mostrar información que cambia según diferentes situaciones o datos.
+`012-impresion con formato no me gusta demasiado.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -1888,26 +1914,22 @@ nombre = "Jose Vicente"
 print(f"Mi nombre es: {nombre}")
 ```
 
-### ASCII y ANSI
-
-#### Explicación
-
-Este fragmento de código no es realmente un bloque ejecutable, sino más bien una nota o comentario que describe diferentes tipos de caracteres y su uso. En este contexto, ANSI se refiere a secuencias de escape que permiten cambiar el formato del texto en la consola, como el color o el estilo (cursiva, negrita). Por otro lado, ASCII incluye los caracteres especiales más antiguos, como símbolos y signos de puntuación no alfanuméricos. También menciona que se pueden usar emojis para añadir expresividad y diversidad visual a la salida en la consola o en archivos markdown, aunque estos no son parte del estándar ASCII ni ANSI estrictamente hablando. Este tipo de información es útil cuando estás trabajando con formateo de texto en sistemas de línea de comandos o documentación técnica para mejorar su legibilidad y atractivo visual.
-
-```markdown
-ANSI = Caracteres de escape en la consola para estilizar
-ASCII = Caracteres especiales (predecesores de los emoji)
-
-Tambien se pueden usar EMOJI
-```
-
 ### demotkinter
+<small>Creado: 2025-10-17 12:31</small>
 
 #### Explicación
 
-Este código es una pequeña aplicación en Python que utiliza la biblioteca `tkinter` para crear una ventana gráfica sencilla. En el primer paso, se importa la biblioteca `tkinter` con el alias `tk`, lo cual facilita escribir menos código más adelante. Luego, se crea un objeto llamado `ventana` de tipo `Tk()`. Este objeto representa la ventana principal que aparecerá cuando el programa se ejecute. Finalmente, el método `mainloop()` comienza el bucle principal del programa gráfico, lo que mantiene la aplicación en ejecución y permite interactuar con la ventana recién creada hasta que se cierra.
+Este fragmento de código es una introducción básica al uso de la biblioteca `tkinter` en Python para crear interfaces gráficas de usuario (GUI por sus siglas en inglés). El código crea una ventana vacía y la mantiene abierta hasta que el usuario decida cerrarla.
 
-Este código es importante porque demuestra cómo iniciar un proyecto de interfaz gráfica de usuario básica en Python utilizando `tkinter`. Sin este llamado a `mainloop()`, la ventana no permanecería abierta lo suficiente como para permitir cualquier interacción antes de cerrarse automáticamente.
+1. La línea `import tkinter as tk` importa la biblioteca `tkinter`, que es la biblioteca estándar de Python para crear interfaces gráficas, y le asigna un alias más corto, `tk`.
+
+2. `ventana = tk.Tk()` crea una instancia del objeto principal de la aplicación, que es la ventana raíz o "root window". En este caso, se guarda en la variable `ventana`.
+
+3. Finalmente, `ventana.mainloop()` inicia el bucle principal de la interfaz gráfica. Este bucle es necesario porque maneja los eventos del usuario (como clics y entradas) y actualiza continuamente la ventana para reflejar cualquier cambio que estos eventos causen.
+
+Este código es importante porque establece las bases para crear aplicaciones con una interfaz gráfica en Python, permitiendo a los usuarios interactuar de manera visual con tu programa.
+
+`demotkinter.py`
 
 ```python
 import tkinter as tk
@@ -1917,6 +1939,99 @@ ventana = tk.Tk()
 ventana.mainloop()
 ```
 
+### Actividades propuestas
+
+El código que has proporcionado es un script en Python diseñado para gestionar una base de datos simple utilizando SQLite. Este script incluye características como colores, símbolos ASCII y emojis para mejorar la experiencia del usuario mientras interactúa con el menú y realiza operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en la base de datos.
+
+### Resumen del Código
+
+1. **Configuración Inicial:**
+   - Importa las bibliotecas necesarias (`sqlite3`, `time`, `sys`, `datetime`).
+   - Define colores y símbolos ASCII para estilizar el texto.
+   - Crea una base de datos SQLite si no existe.
+
+2. **Funciones CRUD:**
+   - `crear_cliente()`: Permite al usuario crear un nuevo cliente en la base de datos.
+   - `listar_clientes()`: Muestra todos los clientes existentes en la base de datos.
+   - `actualizar_cliente()`: Permite al usuario actualizar información de un cliente existente.
+   - `eliminar_cliente()`: Permite al usuario eliminar un cliente de la base de datos.
+   - `buscar_clientes()`: Busca clientes basándose en una consulta.
+
+3. **Función Principal (`menu()`):**
+   - Muestra un menú interactivo con opciones para realizar operaciones CRUD y salir del programa.
+   - Usa símbolos ASCII para dar estilo al menú.
+
+4. **Interacción Con el Usuario:**
+   - Utiliza `prompt` para solicitar información al usuario de manera interactiva, proporcionando mensajes en color y formato amigable.
+
+### Detalles Importantes
+
+- **Estilización con ANSI:** El código utiliza caracteres especiales ANSI (como `\033[1m`, `\033[96m`, etc.) para colorear el texto en la consola.
+  
+  Por ejemplo:
+  ```python
+  BOLD = "\033[1m"
+  BLUE = "\033[94m"
+  GREEN = "\033[92m"
+  YELLOW = "\033[93m"
+  RED = "\033[91m"
+  CYAN = "\033[96m"
+  END = "\033[0m"
+  
+  print(f"{BOLD}{BLUE}📋 Listado de clientes{RESET}\n")
+  ```
+
+- **Símbolos ASCII:** Para dar un estilo más atractivo, el código utiliza símbolos ASCII como cajas y líneas horizontales para dibujar elementos visuales en la consola.
+
+  Por ejemplo:
+  ```python
+  TL = "┌"
+  TR = "┐"
+  BL = "└"
+  BR = "┘"
+  HZ = "─"
+  VT = "│"
+  TJ_T = "┬"
+  TJ_B = "┴"
+  TJ_L = "├"
+  TJ_R = "┤"
+  CROSS = "┼"
+
+  def line_top():
+      parts = [TL]
+      for i, cw in enumerate(widths):
+          parts.append(HZ * (cw + 2))
+          parts.append(TJ_T if i < ncols-1 else TR)
+      return "".join(parts)
+
+  def line_mid():
+      parts = [TJ_L]
+      for i, cw in enumerate(widths):
+          parts.append(HZ * (cw + 2))
+          parts.append(CROSS if i < ncols-1 else TJ_R)
+      return "".join(parts)
+  
+  def line_bottom():
+      parts = [BL]
+      for i, cw in enumerate(widths):
+          parts.append(HZ * (cw + 2))
+          parts.append(TJ_B if i < ncols-1 else BR)
+      return "".join(parts)
+  ```
+
+### Ejecución del Script
+
+Para ejecutar este script:
+1. Asegúrate de tener instalado `sqlite3` en tu entorno Python.
+2. Guarda el archivo con un nombre apropiado, por ejemplo `client_manager.py`.
+3. Ejecuta el archivo desde la terminal o CMD.
+
+```sh
+python client_manager.py
+```
+
+Este script proporcionará una interfaz interactiva para gestionar una base de datos simple de clientes.
+
 
 <a id="el-valor-null"></a>
 ## El valor NULL
@@ -1925,41 +2040,20 @@ ventana.mainloop()
 
 Esta carpeta contiene ejercicios que te introducirán al concepto del valor NULL en bases de datos relacionales, específicamente enfocados en MySQL y SQL. Los problemas trabajan con la creación y manipulación de una tabla llamada "pedidos", permitiéndote entender cómo manejar campos vacíos o sin información desde un punto de vista práctico y conceptual. A través de estos ejercicios, practicarás habilidades esenciales como el uso del comando SQL para crear tablas, así como la importancia de considerar NULL en tus estructuras de datos para evitar errores y asegurar una gestión eficiente de información.
 
-### puesta en situacion
-
-#### Explicación
-
-Este fragmento de código es una serie de comandos utilizados para interactuar con MySQL, un sistema de gestión de bases de datos relacionales. En primer lugar, se ejecuta el comando `sudo mysql -u root -p`, lo que te permite iniciar sesión en la base de datos utilizando el usuario administrador (root) y solicitándote que ingreses la contraseña cuando se te pida.
-
-Una vez dentro del entorno MySQL, los siguientes comandos permiten explorar la estructura de las bases de datos existentes. El comando `SHOW DATABASES;` lista todas las bases de datos disponibles en el servidor MySQL, mientras que `USE empresadam;` selecciona una base de datos específica llamada "empresadam" para trabajar con ella.
-
-Finalmente, se utiliza el comando `SHOW TABLES;` para mostrar todas las tablas que están dentro de la base de datos "empresadam". Este conjunto de comandos es crucial para cualquier persona que necesite administrar o examinar los datos almacenados en MySQL, ya que proporciona una forma sencilla y directa de ver qué bases de datos y tablas existen en el servidor.
-
-```markdown
-# Entrar a MySQL
-sudo mysql -u root -p
-
-# Mostrar las bases de datos
-SHOW DATABASES;
-
-# Usar la base de datos
-USE empresadam;
-
-# Mostrar las tablas
-SHOW TABLES;
-```
-
 ### Tabla de pedidos
+<small>Creado: 2025-10-20 10:29</small>
 
 #### Explicación
 
-Este fragmento de código SQL crea una tabla llamada `pedidos` en una base de datos relacional. La instrucción `CREATE TABLE` es utilizada para definir y crear la estructura de esta tabla, especificando los nombres y tipos de datos que tendrán las columnas dentro de ella.
+Este código SQL crea una nueva tabla en una base de datos llamada `pedidos`. La tabla tiene tres columnas: `numerodepedido`, `cliente` y `producto`.
 
-La tabla `pedidos` tiene tres columnas: `numerodepedido`, `cliente` y `producto`. Cada una de estas columnas está definida con un tipo de dato específico: `VARCHAR(20)` para el número de pedido, lo cual indica que puede contener texto con hasta 20 caracteres; `VARCHAR(50)` para el cliente, permitiendo nombres más largos; y `VARCHAR(255)` para el producto, que podría ser una descripción más extensa del artículo comprado.
+Cada columna tiene un tipo de dato específico. Por ejemplo, `numerodepedido` es del tipo VARCHAR(20), lo que significa que puede contener hasta 20 caracteres alfanuméricos. Las otras dos columnas, `cliente` y `producto`, son también VARCHAR pero con capacidades para almacenar más texto (50 y 255 caracteres respectivamente).
 
-La especificación `NOT NULL` después de cada tipo de dato significa que es obligatorio proporcionar un valor para estas columnas en cada fila de la tabla. Esto asegura que no haya filas con valores desconocidos o ausentes en estos campos, lo cual es importante para mantener la integridad y precisión de los datos guardados en la base de datos.
+El modificador NOT NULL asegura que estas columnas no pueden quedar vacías cuando se inserta un nuevo registro en la tabla. Esto significa que siempre deberás proporcionar valores para `numerodepedido`, `cliente` y `producto` cada vez que intentes añadir una nueva fila a esta tabla.
 
-Este código es fundamental al inicio del diseño de una base de datos para almacenar información sobre pedidos realizados por clientes.
+Esta estructura es importante porque ayuda a mantener la integridad de los datos, asegurando que no haya pedidos sin información clave asociada.
+
+`002-Tabla de pedidos.sql`
 
 ```sql
 CREATE TABLE pedidos (
@@ -1968,6 +2062,40 @@ CREATE TABLE pedidos (
   producto VARCHAR(255) NOT NULL
 );
 ```
+
+### Actividades propuestas
+
+1. **Conexión a MySQL y Bases de Datos**
+   - Descripción: Los estudiantes deben conectarse al servidor MySQL utilizando las credenciales proporcionadas en el archivo `puesta en situación`. Luego, deberán listar todas las bases de datos disponibles para familiarizarse con la interfaz.
+   - Objetivo: Aprender a iniciar sesión en MySQL y conocer cómo visualizar las bases de datos existentes.
+
+2. **Selección de Base de Datos EmpresadAM**
+   - Descripción: Los alumnos deben seleccionar la base de datos `empresadam` para trabajar dentro del contexto específico proporcionado.
+   - Objetivo: Aprender a cambiar el esquema actual en MySQL y conocer cómo navegar entre diferentes bases de datos.
+
+3. **Creación e Inspección de Tabla de Pedidos**
+   - Descripción: Los estudiantes deben crear una tabla llamada `pedidos` tal como se muestra en el archivo SQL, y luego verificar que la tabla ha sido creada correctamente mostrando las tablas disponibles.
+   - Objetivo: Practicar la creación de tablas y aprender a inspeccionar la estructura actual de una base de datos.
+
+4. **Descripción de Columnas en Tabla Pedidos**
+   - Descripción: Los estudiantes deben describir el esquema de las columnas dentro de la tabla `pedidos`, incluyendo tipos de datos, restricciones y otras características.
+   - Objetivo: Familiarizarse con los comandos para ver detalles sobre una tabla específica.
+
+5. **Insertar Datos en Tabla Pedidos**
+   - Descripción: Los alumnos deben insertar varios registros ficticios en la tabla `pedidos`, asegurándose de respetar las restricciones definidas.
+   - Objetivo: Aprender a trabajar con datos reales y entender el valor de las restricciones NOT NULL.
+
+6. **Consulta Básica sobre Tabla Pedidos**
+   - Descripción: Los estudiantes deben realizar una consulta SELECT simple para recuperar todos los registros en la tabla `pedidos`.
+   - Objetivo: Aprender a ejecutar consultas básicas y obtener información desde una base de datos.
+
+7. **Añadir Columna con Valor NULL Permitido**
+   - Descripción: Los alumnos deben modificar la estructura de la tabla `pedidos` para añadir una nueva columna que permita valores NULL.
+   - Objetivo: Aprender a manejar la inclusión de columnas con posibilidad de valores no proporcionados.
+
+8. **Actualizar Registro y Valorar NULL**
+   - Descripción: Los estudiantes deben actualizar un registro existente en la tabla `pedidos`, experimentando específicamente con la asignación de valores NULL.
+   - Objetivo: Familiarizarse con las actualizaciones de registros que incluyen campos con valores permitidos como NULL.
 
 
 <a id="claves-ajenas"></a>
@@ -1978,18 +2106,17 @@ CREATE TABLE pedidos (
 En esta carpeta de ejercicios, trabajaremos con la creación y manejo de bases de datos relacionales en SQL, centrándonos específicamente en el concepto de claves ajenas (foreign keys). Los estudiantes aprenderán cómo crear tablas para almacenar información sobre personas y sus correos electrónicos, añadir identificadores únicos para cada registro y establecer relaciones entre estas tablas utilizando claves foráneas. Además, se practicará la inserción de datos en las tablas relacionadas y la realización de consultas que combinan registros de múltiples tablas mediante el uso de joins. Este conjunto de ejercicios es fundamental para entender cómo mantener la integridad referencial en bases de datos relacional avanzadas.
 
 ### crear tabla personas
+<small>Creado: 2025-10-22 12:55</small>
 
 #### Explicación
 
-Este código SQL se usa para gestionar una base de datos en MySQL. Primero, el usuario ejecuta un comando desde la línea de comandos (`sudo mysql -u root -p`) que le permite entrar a la base de datos como administrador y luego establecer una contraseña.
+Este fragmento de código SQL te guía a través del proceso de crear una base de datos y luego establecer una tabla en ella. Primero, se utiliza el comando `sudo mysql -u root -p` para acceder al servidor MySQL con permisos administrativos y pedir la contraseña. Luego, se crea una nueva base de datos llamada "ejemploclaves" usando el comando `CREATE DATABASE`. Posteriormente, se selecciona esta base de datos recién creada con el comando `USE`.
 
-Después, se crea una nueva base de datos llamada `ejemploclaves`. Luego, selecciona esta base de datos para trabajar en ella con el comando `USE ejemploclaves`.
+El código procede a crear una tabla llamada "personas", que inicialmente tiene dos campos: uno para el nombre y otro para los apellidos. Ambos campos son del tipo texto (VARCHAR), lo que significa que pueden contener cadenas de caracteres. A continuación, se añade un campo nuevo a la tabla "personas" utilizando el comando `ALTER TABLE`. Este nuevo campo se llama "identificador", es de tipo INT (número entero) y tiene las propiedades AUTO_INCREMENT y PRIMARY KEY. Esto significa que cada vez que se inserta una nueva fila en esta tabla, este campo generará automáticamente un número único como identificador para esa persona.
 
-El siguiente paso es crear una tabla llamada `personas`, que inicialmente tiene dos columnas: `nombre` y `apellidos`, donde se almacenan respectivamente el nombre y los apellidos de las personas.
+Finalmente, el comando `SHOW TABLES;` muestra todas las tablas existentes en la base de datos actual, permitiendo así verificar que la tabla "personas" ha sido creada correctamente. Este procedimiento es fundamental para organizar y gestionar los registros de personas de manera eficiente en una base de datos relacional.
 
-Luego, el código añade una columna nueva a la tabla `personas`. Esta columna se llama `identificador` y es del tipo INT (número entero). La característica especial de esta columna es que se configura como "AUTO_INCREMENT", lo que significa que MySQL automáticamente asignará un número único para cada nuevo registro en la tabla, comenzando desde 1. Además, se establece como la clave primaria (`PRIMARY KEY`), lo cual garantiza que cada persona tenga un identificador único y que no haya duplicados.
-
-Finalmente, el comando `SHOW TABLES;` se usa para mostrar todas las tablas existentes en la base de datos actual, confirmando así que la tabla `personas` ha sido creada correctamente. Esto es importante porque ayuda a los desarrolladores a verificar rápidamente que sus operaciones han tenido éxito y a mantener un control sobre el diseño de la base de datos.
+`001-crear tabla personas.sql`
 
 ```sql
 sudo mysql -u root -p
@@ -2013,16 +2140,17 @@ SHOW TABLES;
 ```
 
 ### tabla emails
+<small>Creado: 2025-10-22 12:57</small>
 
 #### Explicación
 
-Este fragmento de código SQL sirve para crear una tabla llamada `emails` en una base de datos y luego modificarla agregándole un nuevo campo. 
+Este fragmento de código SQL tiene como objetivo crear una tabla llamada `emails` en una base de datos y luego mejorarla para que tenga un identificador único para cada registro. 
 
-Primero, se crea la tabla `emails` con dos columnas: `direccion`, que almacena direcciones de correo electrónico como cadenas de texto de hasta 50 caracteres, y `persona`, que guarda nombres o identificadores de personas como cadenas de texto más largas (hasta 255 caracteres).
+En primer lugar, se crea la tabla `emails` con dos columnas: `direccion`, que almacena direcciones de correo electrónico (de hasta 50 caracteres), y `persona`, que almacena nombres o identificadores de personas (hasta 255 caracteres). Luego, mediante el comando `ALTER TABLE`, se agrega una nueva columna llamada `identificador` a la tabla. Esta nueva columna es un número entero que incrementa automáticamente con cada nuevo registro (`INT AUTO_INCREMENT`) y además es definida como la clave primaria de la tabla (es decir, asegura que cada valor en esta columna sea único e indispensable para identificar de manera única cada fila). La columna `identificador` se coloca al principio de las columnas existentes en la tabla con la opción `FIRST`.
 
-Luego, el código modifica la tabla añadiendo una nueva columna llamada `identificador` con tipo de dato INT. Esta columna tiene un valor AUTO_INCREMENT, lo que significa que cada vez que se inserte un nuevo registro en la tabla, el número en esta columna aumentará automáticamente en uno. La columna también es definida como PRIMARY KEY, lo cual hace única e indispensable para identificar de manera única cada fila en la tabla.
+Este código es importante porque proporciona una estructura básica y funcional a la tabla `emails`, permitiendo que cada correo electrónico tenga un registro único e identificable, lo cual será útil para realizar consultas más complejas en el futuro.
 
-Finalmente, con `SHOW TABLES;` se muestran todos los nombres de las tablas que existen en la base de datos actual. Esto puede ser útil para verificar que la tabla `emails` ha sido creada correctamente y que la modificación ha tenido éxito.
+`002-tabla emails.sql`
 
 ```sql
 -- crear tabla emails
@@ -2041,14 +2169,21 @@ SHOW TABLES;
 ```
 
 ### crear clave ajena
+<small>Creado: 2025-10-22 13:06</small>
 
 #### Explicación
 
-Este código SQL se encarga de modificar la tabla llamada `emails` para establecer una relación con otra tabla llamada `personas`. Primero, cambia el tipo de dato de la columna `persona` en la tabla `emails` a un valor entero (`INT`). Luego, crea una clave ajena (foreign key) que vincula la columna `persona` de la tabla `emails` con la columna `identificador` de la tabla `personas`. Esto significa que cada valor en la columna `persona` debe existir también como un valor en la columna `identificador` de la tabla `personas`.
+Este código SQL tiene dos partes principales: primero, cambia el tipo de una columna y luego establece una relación entre dos tablas mediante la creación de una clave ajena.
 
-La declaración `ON DELETE CASCADE` y `ON UPDATE CASCADE` indica que si se elimina o actualiza un registro en la tabla `personas`, la base de datos automáticamente eliminará o actualizará los registros relacionados en la tabla `emails`. Esto asegura que las referencias entre tablas siempre sean consistentes, evitando datos órfenes (registros sin asociación).
+En primer lugar, se modifica la columna `persona` en la tabla `emails`, cambiando su tipo a `INT`. Esto es importante porque necesitamos que esta columna sea del mismo tipo que el identificador en la tabla `personas`, para poder establecer una relación entre ambas tablas.
 
-Finalmente, el código muestra todas las tablas existentes en la base de datos actual con el comando `SHOW TABLES;`, aunque este último paso no está directamente relacionado con la creación y configuración de la clave ajena.
+Luego, se crea una clave ajena (foreign key) llamada `fk_emails_personas` en la tabla `emails`. Esta clave ajena vincula la columna `persona` de la tabla `emails` con la columna `identificador` de la tabla `personas`. Esto significa que cada valor en la columna `persona` debe existir como un valor en la columna `identificador` de la tabla `personas`.
+
+Además, se especifican las acciones `ON DELETE CASCADE` y `ON UPDATE CASCADE`, lo cual indica que cuando una persona (en la tabla `personas`) es eliminada o actualizada, también se deben eliminar o actualizar los registros correspondientes en la tabla `emails`. Esto ayuda a mantener la consistencia entre ambas tablas.
+
+Por último, el código muestra las tablas existentes en la base de datos para verificar que todo ha sido ejecutado correctamente.
+
+`003-crear clave ajena.sql`
 
 ```sql
 -- Paso 1: cambiar el tipo de columna
@@ -2073,14 +2208,19 @@ SHOW TABLES;
 ```
 
 ### inserto una persona
+<small>Creado: 2025-10-22 13:12</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para interactuar con una base de datos, específicamente con la tabla llamada `personas`. La primera línea del código inserta un nuevo registro en esta tabla. Aquí es importante notar que el primer valor insertado es `NULL`, lo cual indica que el campo correspondiente (probablemente la clave primaria o ID) se generará automáticamente por la base de datos, ya sea porque está configurada para autoincrementarse o porque utiliza un tipo de dato como AUTO_INCREMENT en MySQL.
+Este código SQL realiza varias operaciones importantes en una base de datos, principalmente enfocadas en la inserción de datos y el manejo de tablas. En primer lugar, se inserta un nuevo registro en la tabla `personas`. Aquí, el campo primero es el identificador (usualmente autoincremental), que se deja como `NULL` para permitir que la base de datos asigne automáticamente un valor único. Luego siguen el nombre y los apellidos del individuo ('Jose Vicente' y 'Carratalá Sanchis', respectivamente).
 
-Después del comando `INSERT`, hay una línea comentada (`--Borrar una tabla`) que indica cómo borrar toda la información de la tabla `personas`. Esto es útil cuando se desea limpiar los datos anteriores antes de realizar nuevas inserciones o pruebas. Sin embargo, debes tener cuidado al ejecutar esta instrucción ya que eliminará todos los registros de esa tabla.
+A continuación, el código incluye una línea para eliminar la tabla `personas`, lo cual se comenta con dos guiones (`--`) para indicar que esta acción está deshabilitada. Esta línea es útil si necesitas empezar de nuevo y crear nuevamente la tabla.
 
-Finalmente, el código incluye dos comandos: `SELECT * FROM personas;` y `DESCRIBE personas;`. El primero se usa para recuperar todas las filas existentes en la tabla `personas`, lo cual es útil para verificar si la inserción del registro anterior ha sido exitosa. Por otro lado, el comando `DESCRIBE personas;` proporciona una descripción de los campos y sus tipos de datos que componen la estructura de esta tabla, ayudando a entender mejor cómo está organizada dicha información.
+Finalmente, después del comando para borrar la tabla (que no se ejecuta debido a los dos guiones), hay dos comandos: `SELECT * FROM personas;` que muestra todos los registros en la tabla `personas`, y `DESCRIBE personas;` que proporciona información sobre el diseño de la tabla, incluyendo nombres de columnas y sus tipos de datos. Estos comandos son útiles para verificar cómo se ve la tabla después de insertar un nuevo registro.
+
+Este fragmento es crucial en los ejercicios relacionados con claves ajenas ya que muestra cómo manejar registros en tablas relacionadas, siendo importante entender el flujo desde la inserción hasta la consulta.
+
+`004-inserto una persona.sql`
 
 ```sql
 INSERT INTO personas VALUES(
@@ -2098,14 +2238,13 @@ DESCRIBE personas;
 ```
 
 ### inserto un email
+<small>Creado: 2025-10-22 13:20</small>
 
 #### Explicación
 
-Este fragmento de código SQL está insertando nuevos registros en una tabla llamada `emails`. Cada registro contiene tres campos: el ID del correo electrónico, la dirección del correo y un identificador para asociar el email con un usuario o entidad específica.
+Este fragmento de código SQL se utiliza para insertar nuevos registros en una tabla llamada `emails`. Cada instrucción `INSERT INTO` agrega un nuevo correo electrónico a la base de datos. La primera columna de la tabla, que probablemente es una clave primaria (automáticamente generada porque el valor es `NULL`), recibe un valor automáticamente generado por la base de datos. Las dos siguientes columnas reciben el valor del correo electrónico y un número que podría ser un identificador para otra tabla relacionada, como una tabla `personas`. Este código es importante porque permite añadir información específica sobre los correos electrónicos asociados a diferentes personas o entidades en la base de datos.
 
-En cada línea `INSERT INTO`, se añade una nueva fila a la tabla. El primer valor (`NULL`) que aparece indica que el ID de esta entrada será asignado automáticamente por la base de datos (es decir, es un campo auto-incremental). Los correos electrónicos 'info@jocarsa.com', 'info@josevicentecarratala.com' y 'jocarsa2@gmail.com' se insertan con el mismo identificador externo (1), lo que sugiere que pertenecen al mismo usuario o entidad. Sin embargo, la dirección 'inventado' se asocia con un identificador diferente (2).
-
-Este código es importante porque ayuda a entender cómo se manejan las relaciones entre diferentes tablas en una base de datos relacional, especialmente cuando se utiliza claves foráneas para vincular registros entre sí.
+`005-inserto un email.sql`
 
 ```sql
 INSERT INTO emails VALUES(
@@ -2135,32 +2274,72 @@ INSERT INTO emails VALUES(
 ```
 
 ### Selecciono los emails
+<small>Creado: 2025-10-22 13:22</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para recuperar todos los datos de la tabla llamada `emails`. La instrucción `SELECT *` indica que se deben seleccionar todas las columnas y filas disponibles en esa tabla. En otras palabras, este comando te permitirá ver toda la información guardada en la tabla `emails`, lo cual es útil cuando deseas tener un vistazo general a los datos o verificar su contenido completo. Es importante destacar que debes estar seguro de qué contiene exactamente esta tabla antes de ejecutar este código para evitar sobrecargar tu sistema con demasiados resultados, especialmente si la tabla tiene muchos registros.
+Este fragmento de código SQL selecciona todos los registros de la tabla llamada `emails`. La instrucción `SELECT *` indica que se deben recuperar todas las columnas y filas disponibles en esta tabla. Al ejecutar este comando, obtendrás una lista completa con toda la información almacenada actualmente en la tabla `emails`, lo cual es útil para revisar los datos existentes o verificar el estado de los registros antes de realizar modificaciones.
+
+`006-Selecciono los emails.sql`
 
 ```sql
 SELECT * FROM emails;
 ```
 
 ### peticion cruzada
+<small>Creado: 2025-10-22 13:25</small>
 
 #### Explicación
 
-Este fragmento de código SQL realiza una operación llamada "JOIN" que une dos tablas, `emails` y `personas`, basándose en un criterio específico. La finalidad es obtener información de ambas tablas juntas para proporcionar un conjunto de datos más completo.
+Este fragmento de código SQL realiza una operación llamada "JOIN" con un tipo específico llamado "LEFT JOIN". Lo que hace es combinar dos tablas, en este caso las tablas `emails` y `personas`, basándose en una relación definida entre ellas. En este ejemplo, la relación se establece a través de la columna `persona` en la tabla `emails` y la columna `Identificador` en la tabla `personas`.
 
-La instrucción `LEFT JOIN` asegura que se incluyen todos los registros de la tabla `emails`, incluso si no hay correspondencia en la tabla `personas`. Esto significa que, aunque algunos registros de `emails` pueden no tener una persona asociada (por ejemplo, si el campo `persona` está vacío o no existe un identificador coincidente en `personas.Identificador`), estos registros aún aparecerán en los resultados.
+La importancia del LEFT JOIN es que incluye todas las filas de la tabla izquierda (en este caso, `emails`) incluso si no hay correspondencia en la tabla derecha (`personas`). Esto significa que obtendrás una lista completa de todos los emails junto con cualquier información asociada a ellas desde la tabla `personas`, pero también incluirá registros donde no haya un match en `personas`.
 
-El criterio de combinación se especifica después del `ON`: aquí, las filas donde la columna `persona` de la tabla `emails` coincide con el valor de la columna `Identificador` de la tabla `personas` serán las que se combinen. Esto permite vincular a cada correo electrónico con los datos personales correspondientes.
+Esta consulta es útil cuando se desea obtener toda la información disponible sobre los correos electrónicos, incluso para aquellos que aún no tienen una persona asignada (por ejemplo, nuevos emails sin registrar su dueño).
 
-Esta consulta es importante porque facilita obtener información cruzada entre dos tablas relacionadas, lo que puede ser útil para analizar y presentar datos más detallados sobre los usuarios de un sistema.
+`007-peticion cruzada.sql`
 
 ```sql
 SELECT * FROM emails
 LEFT JOIN personas
 ON emails.persona = personas.Identificador;
 ```
+
+### Actividades propuestas
+
+### Actividad 1: Creación de Tablas Básicas
+
+**Descripción:** Crea dos tablas en una base de datos SQL llamada `ejemploclaves`: una para almacenar información sobre personas (con campos como nombre y apellidos) y otra para guardar direcciones de correo electrónico asociadas a estas personas. El objetivo es que los estudiantes se familiaricen con la creación de estructuras de datos básicas en SQL.
+
+### Actividad 2: Añadir Claves Primarias
+
+**Descripción:** Modifica las tablas creadas anteriormente añadiendo una clave primaria (`identificador`) a cada tabla. Esta actividad ayuda a los estudiantes a comprender el concepto y la importancia de las claves primarias en la normalización de bases de datos.
+
+### Actividad 3: Crear Relaciones entre Tablas
+
+**Descripción:** Establece una relación (clave ajena) entre las tablas `emails` y `personas`. Debes modificar el tipo de dato de la columna `persona` en la tabla `emails`, para que apunte a la clave primaria (`identificador`) de la tabla `personas`.
+
+### Actividad 4: Insertar Datos en Tabla Persona
+
+**Descripción:** Inserción manual de un registro en la tabla `personas`. Los estudiantes deben aprender cómo insertar datos y también como utilizar las cláusulas ON DELETE CASCADE para manejar eliminaciones en cascada, aunque esta parte puede ser opcional.
+
+### Actividad 5: Insertar Datos en Tabla Email
+
+**Descripción:** Añade varios registros a la tabla `emails` asociados con los identificadores de personas que ya están registradas. Los estudiantes deben aprender cómo insertar múltiples entradas y cómo manejar correctamente las referencias cruzadas entre tablas.
+
+### Actividad 6: Consultas Básicas
+
+**Descripción:** Escribe consultas SQL para seleccionar todos los registros de la tabla `emails`. Este ejercicio permite a los alumnos entender cómo recuperar datos almacenados en una base de datos.
+
+### Actividad 7: Consultas Cruzadas (JOIN)
+
+**Descripción:** Realiza un JOIN entre las tablas `emails` y `personas` para obtener información completa de personas con sus correos electrónicos asociados. Esto ayuda a los estudiantes a comprender cómo se relacionan diferentes tablas en una base de datos.
+
+### Actividad 8: Manejo de Errores
+
+**Descripción:** Identifica errores potenciales que podrían ocurrir al insertar un email sin tener previamente registrada la persona correspondiente. Propón soluciones para evitar estos problemas, como validaciones o consultas previas a las inserciones.
+
+Estas actividades están diseñadas para proporcionar una comprensión sólida de cómo crear y manipular bases de datos relacionales en SQL, especialmente con respecto al manejo de claves primarias y ajenas.
 
 
 <a id="vistas"></a>
@@ -2173,14 +2352,19 @@ En esta sesión de ejercicios, te centrarás en la creación y utilización de v
 Al completar este ejercicio, mejorarás tus habilidades en la manipulación de relaciones entre tablas mediante JOINs y comprenderás mejor cómo las vistas pueden ser utilizadas para presentar datos de manera más accesible y segura.
 
 ### crear vista
+<small>Creado: 2025-10-22 13:33</small>
 
 #### Explicación
 
-Este fragmento de código SQL te enseña cómo crear y usar vistas, que son entidades importantes en la administración de bases de datos relacionales. En primer lugar, el código crea una vista llamada `personas_correos` utilizando la sentencia `CREATE VIEW`. Esta vista combina información desde dos tablas: `emails` y `personas`, a través de un JOIN (en este caso, LEFT JOIN), que une los registros donde `emails.persona` es igual a `personas.Identificador`.
+Este fragmento de código SQL está creando y utilizando vistas en una base de datos relacional. Una vista es como un almacenamiento persistente de una consulta que puede ser consultada como si fuera una tabla real.
 
-La consulta SELECT dentro del CREATE VIEW selecciona campos específicos como el identificador único (`identificador`) y la dirección de correo electrónico (`direccion`) desde la tabla `emails`, junto con los nombres y apellidos de las personas desde la tabla `personas`. Una vez que se ha creado esta vista, el código muestra cómo acceder a ella utilizando un simple SELECT * FROM personas_correos. Esta consulta te proporciona una lista de todos los registros en la vista como si fuera una tabla normal.
+En primer lugar, el código crea una vista llamada `personas_correos`. Esta vista combina información de dos tablas: `emails` y `personas`. La consulta selecciona el identificador único de cada persona desde la tabla `personas`, junto con su correo electrónico desde la tabla `emails`, además del nombre y apellidos de las personas. Utiliza una operación `LEFT JOIN` para asegurar que todos los registros de la tabla `personas` se incluyan en el resultado, incluso si no tienen un correo electrónico asociado.
 
-Crear vistas es útil porque permite simplificar consultas complejas y repetitivas, facilitando así su uso y mantenimiento para otras partes del sistema o usuarios que trabajan con datos. En este caso, en lugar de escribir la consulta larga cada vez que se necesiten los correos electrónicos de las personas, simplemente puedes consultar `personas_correos`.
+Después de crear la vista, el código ejecuta una consulta `SELECT * FROM personas_correos;`. Esta línea de código nos permite visualizar o trabajar con la información recopilada en la vista `personas_correos` como si fuera una tabla real. Esto es útil porque simplifica la consulta a los datos combinados sin necesidad de repetir la misma lógica cada vez que se requiera esta información.
+
+Crear y utilizar vistas puede ser muy útil para agrupar consultas complejas o frecuentes en una base de datos, facilitando así el trabajo con grandes cantidades de datos.
+
+`001-crear vista.sql`
 
 ```sql
 CREATE VIEW personas_correos AS
@@ -2199,6 +2383,38 @@ ON emails.persona = personas.Identificador;
 SELECT * FROM personas_correos; -- se comporta como una tabla
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Creación de Vistas Simples
+**Descripción:** Diseña y crea un conjunto de vistas en SQL que permitan obtener información combinada de dos o más tablas relacionadas. Asegúrate de incluir al menos tres campos diferentes por vista para practicar la combinación de datos.
+
+### Actividad 2: Consultas con Vistas
+**Descripción:** Desarrolla consultas utilizando las vistas que has creado en la actividad anterior. Las consultas deben permitir filtrar y obtener datos específicos de tus vistas, mejorando así tu habilidad para extraer información relevante desde conjuntos de datos combinados.
+
+### Actividad 3: Actualización y Mantenimiento de Vistas
+**Descripción:** Trabaja en la actualización y mantenimiento de las vistas que has creado. Aprende a modificar esas vistas si el diseño original requiere ajustes, e incluye consultas que demuestran cómo mantener la integridad de los datos.
+
+### Actividad 4: Uso de Condicionales en Vistas
+**Descripción:** Crea una vista nueva que utilice cláusulas condicionales (por ejemplo, CASE) para presentar información calculada basándose en condiciones establecidas por ti. Esta actividad te ayudará a comprender cómo incorporar lógica avanzada dentro de las vistas.
+
+### Actividad 5: Creación de Vistas con Agregaciones
+**Descripción:** Diseña una vista que haga uso de funciones de agregación (como COUNT, SUM) para proporcionar un resumen estadístico de los datos. Asegúrate de incluir al menos dos campos en la vista y de utilizar una función de agregación distinta.
+
+### Actividad 6: Vistas con Búsquedas Condicionalmente Orientadas
+**Descripción:** Crea una vista que permita realizar búsquedas condicionales basándose en un parámetro proporcionado. Por ejemplo, diseñar la vista para filtrar registros dependiendo de los valores seleccionados por el usuario.
+
+### Actividad 7: Comparación entre Consultas y Vistas
+**Descripción:** Realiza una comparativa entre realizar consultas directamente a las tablas y hacerlo mediante vistas que ya hayas creado. Discute los beneficios y desventajas de cada enfoque en términos de eficiencia y facilidad de mantenimiento.
+
+### Actividad 8: Documentación de Procesos
+**Descripción:** Redacta una guía breve sobre cómo crear, mantener y utilizar vistas en SQL para tus compañeros. Incluye ejemplos prácticos y explicaciones claras de los conceptos clave para ayudarles a entender mejor este aspecto de la base de datos.
+
+### Actividad 9: Modificación de Vistas Existentes
+**Descripción:** Toma una vista existente en la carpeta o que hayas creado previamente, y modifícala para adaptarse a nuevas necesidades. Esto podría implicar añadir más columnas, cambiar las condiciones de un JOIN, etc.
+
+### Actividad 10: Introducción de Vistas Embebidas
+**Descripción:** Explora el uso de vistas dentro de otras consultas SQL, es decir, utilizar una vista como si fuera una tabla en otra consulta. Aprende cómo la estructura jerárquica de las vistas puede permitirte obtener resultados muy complejos a partir de datos básicos.
+
 
 <a id="usuarios-privilegios"></a>
 ## Usuarios. Privilegios
@@ -2208,14 +2424,13 @@ SELECT * FROM personas_correos; -- se comporta como una tabla
 En esta carpeta, encontrarás dos ejercicios fundamentales relacionados con la gestión de usuarios y privilegios en bases de datos MySQL. El primer ejercicio te enseñará cómo crear un nuevo usuario en una base de datos y concederle los permisos necesarios para acceder a ella. Aprenderás a utilizar comandos SQL como `CREATE USER`, `GRANT` y `ALTER USER`. En el segundo ejercicio, aprenderás a consultar la lista de usuarios existentes en tu sistema utilizando consultas SQL sobre la base de datos `mysql.user`. Estos ejercicios te ayudarán a dominar aspectos importantes de seguridad y administración de bases de datos relacionales.
 
 ### crear usuario
+<small>Creado: 2025-10-24 10:57</small>
 
 #### Explicación
 
-Este código SQL se utiliza para crear un nuevo usuario en una base de datos y otorgarle permisos específicos. Primero, el código crea un usuario con nombre y contraseña especificados por ti, reemplazando `[tunombredeusuario]` y `[tucontraseña]`. Luego, le permite al usuario conectarse a la base de datos sin ningún límite en cuanto a consultas por hora o conexiones simultáneas. Esto se hace para maximizar la flexibilidad del nuevo usuario.
+Este código SQL se utiliza para crear un nuevo usuario en una base de datos MySQL y otorgarle los permisos necesarios. Primero, crea el usuario especificando su nombre y servidor (que generalmente es 'localhost') y establece una contraseña. Luego, le permite al usuario conectarse a cualquier base de datos con el comando `GRANT USAGE`. Después, se eliminan todos los límites impuestos por defecto para este nuevo usuario usando la sentencia `ALTER USER`, permitiéndole realizar un número ilimitado de consultas y conexiones. Finalmente, otorga al usuario acceso completo a una base de datos específica (en este caso, 'empresadam') con el comando `GRANT ALL PRIVILEGES`. El último paso es ejecutar `FLUSH PRIVILEGES` para asegurar que los cambios se reflejen inmediatamente en la base de datos. Este proceso es crucial para gestionar adecuadamente las cuentas y permisos en un sistema de bases de datos, manteniendo así el control sobre quién puede acceder a qué información.
 
-Finalmente, el código otorga todos los privilegios necesarios para que este usuario pueda interactuar con una base de datos específica llamada `[tubasededatos]`. La instrucción `FLUSH PRIVILEGES` asegura que estos cambios sean aplicados inmediatamente sin tener que reiniciar el servidor MySQL.
-
-Este proceso es crucial porque permite controlar quién puede acceder a la base de datos y qué acciones pueden realizar, manteniendo así la seguridad y organización del sistema.
+`001-crear usuario.sql`
 
 ```sql
 -- crea usuario nuevo con contraseña
@@ -2246,20 +2461,51 @@ FLUSH PRIVILEGES;
 ```
 
 ### Mostrar usuarios en el sistema
+<small>Creado: 2025-10-24 10:54</small>
 
 #### Explicación
 
-Este código SQL sirve para consultar información sobre los usuarios registrados en una base de datos MySQL. En primer lugar, el comando `SELECT User, Host FROM mysql.user;` selecciona específicamente dos columnas: "User" y "Host". Estas columnas proporcionan la identificación del usuario (nombre del usuario) y la dirección desde donde se conecta (puede ser un nombre de host o 'localhost' para conexiones locales). 
+Este fragmento de código SQL está diseñado para mostrar información sobre los usuarios que tienen acceso al sistema de bases de datos. En la primera consulta, `SELECT User, Host FROM mysql.user;`, se seleccionan solo dos columnas específicas: "User" y "Host". Esto significa que el resultado te mostrará qué nombres de usuario (User) pueden conectarse a la base de datos desde qué host o servidor (Host). Es una forma concisa de ver quién tiene acceso y desde dónde.
 
-El segundo comando, `SELECT * FROM mysql.user;`, hace una selección completa mostrando todas las columnas disponibles en la tabla "mysql.user". Esto incluye información adicional como permisos y configuraciones específicas del usuario. Ambos comandos se usan comúnmente en tareas de administración de bases de datos para entender quién tiene acceso al sistema y qué tipos de privilegios tienen.
+La segunda consulta, `SELECT * FROM mysql.user;`, es más detallada. Aquí se utilizan los asteriscos (\*) para indicar que se deben seleccionar todas las columnas disponibles en la tabla "mysql.user". Esto proporciona una vista completa de todos los datos relacionados con cada usuario del sistema, incluyendo detalles adicionales como sus privilegios y configuraciones.
 
-Es importante tener cuidado con estos comandos, ya que la manipulación inadecuada de usuarios puede comprometer la seguridad o funcionamiento del servidor MySQL.
+Ambas consultas son útiles para administradores de bases de datos porque te permiten tener un resumen claro de los usuarios registrados y sus permisos en el sistema.
+
+`002-Mostrar usuarios en el sistema.sql`
 
 ```sql
 SELECT User, Host FROM mysql.user;
 
 SELECT * FROM mysql.user;
 ```
+
+### Actividades propuestas
+
+### Actividad 1: Creación de Usuarios SQL
+**Descripción:** Crea un nuevo usuario con privilegios limitados en una base de datos específica. El objetivo es que los estudiantes aprendan a gestionar usuarios y sus permisos básicos.
+
+### Actividad 2: Modificación de Contraseñas
+**Descripción:** Cambia la contraseña de un usuario existente, asegurándote de cumplir con los requisitos mínimos de seguridad (longitud, caracteres especiales). Esta actividad ayuda a entender cómo mantener la seguridad en el manejo de usuarios.
+
+### Actividad 3: Otorgar Privilegios Específicos
+**Descripción:** Asigna a un usuario privilegios específicos para ciertas tablas dentro de una base de datos. Esto permite que los estudiantes comprendan cómo otorgar acceso controlado en lugar del acceso completo.
+
+### Actividad 4: Deshabilitar Restricciones Temporalmente
+**Descripción:** Elimina las restricciones temporales (como límites de consultas por hora) para un usuario específico. La actividad busca enseñar a los estudiantes cómo configurar entornos más flexibles cuando sea necesario.
+
+### Actividad 5: Consulta de Usuarios y Privilegios
+**Descripción:** Ejecuta una consulta SQL para listar todos los usuarios registrados en el sistema junto con sus privilegios. Esta actividad permite que los estudiantes vean cómo se visualiza la información del usuario desde un punto de vista administrativo.
+
+### Actividad 6: Análisis de Privilegios
+**Descripción:** Identifica y documenta los privilegios actuales de varios usuarios en una base de datos específica. La meta es permitir a los estudiantes entender cómo configurar correctamente las políticas de acceso para mantener la seguridad.
+
+### Actividad 7: Restricción de Acceso Remoto
+**Descripción:** Configura un nuevo usuario que solo pueda acceder desde un host específico, demostrando cómo limitar el acceso remoto basado en necesidades de seguridad.
+
+### Actividad 8: Auditoría de Privilegios Existentes
+**Descripción:** Realiza una auditoría de los privilegios actuales asignados a cada usuario y propone mejoras para mejorar la seguridad o eficiencia del sistema. Esta actividad ayuda a desarrollar habilidades críticas de análisis y mejora continua.
+
+Estas actividades están diseñadas para permitir que los estudiantes exploren diferentes aspectos del manejo de usuarios y privilegios en bases de datos relacionales, adaptándose a su nivel actual y preparándolos para situaciones más avanzadas.
 
 
 <a id="lenguaje-de-descripcion-de-datos-ddl"></a>
@@ -2278,20 +2524,34 @@ SELECT * FROM mysql.user;
 Esta carpeta contiene ejercicios básicos que te ayudarán a familiarizarte con los fundamentos del lenguaje Python. Los problemas abordan conceptos como la impresión en pantalla, el uso y manipulación de variables, entrada de datos por parte del usuario, tipos de datos y operaciones aritméticas y de comparación. También exploras cómo realizar cálculos más complejos, como calcular impuestos e IVA a partir de una base imponible proporcionada por el usuario. A través de estos ejercicios, mejorarás tus habilidades en la sintaxis básica del lenguaje, manejo de datos y capacidad para resolver problemas mediante programación.
 
 ### Holamundo
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código es muy simple y sirve como una introducción básica al lenguaje de programación Python. Lo que hace este código es imprimir en la pantalla el texto "Hola mundo desde Python". Esto se logra usando la función `print()`, que toma un argumento, en este caso una cadena de texto entre comillas, y muestra esa información por consola o terminal. Es importante porque esta práctica, conocida como "Hola Mundo", es comúnmente utilizada para verificar que el entorno de programación está configurado correctamente y puede ejecutar scripts Python sin problemas.
+Este código es muy sencillo y comúnmente se usa como el primer programa que escriben los estudiantes al aprender una nueva lengua de programación. Lo que hace este fragmento es imprimir en la pantalla la frase "Hola mundo desde Python". 
+
+La función `print()` en Python se utiliza para mostrar texto o datos en la consola. En este caso, entre paréntesis, tenemos las comillas dobles que contienen el mensaje que queremos mostrar: `"Hola mundo desde Python"`. Cuando ejecutas este código, simplemente ves ese texto escrito en la salida de tu programa.
+
+Este ejercicio es importante porque te familiariza con cómo se estructuran los programas en Python y cómo interactúan estos con el usuario mostrando información. Es una base fundamental para aprender a programar en esta lengua.
+
+`001-Holamundo.py`
 
 ```python
 print("Hola mundo desde Python")
 ```
 
 ### variables
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código es muy sencillo y pertenece al inicio de un programa en Python. Se utilizan dos líneas para declarar e inicializar variables: una variable llamada `nombre` que contiene el texto `"Jose Vicente"` y otra variable llamada `edad` que tiene asignado el número entero `47`. Estas líneas permiten almacenar información que luego puede ser usada o modificada en otras partes del código. En este caso, la variable `nombre` guarda un nombre de persona como cadena de texto, mientras que `edad` almacena una edad como dato numérico. Es importante entender cómo declarar y asignar valores a variables para poder manejar correctamente los datos en cualquier programa que se desarrolle.
+Este fragmento de código está inicializando dos variables en Python. La primera línea crea una variable llamada `nombre` y le asigna el valor `"Jose Vicente"`, que es un texto o cadena de caracteres (string). La segunda línea hace lo mismo pero para una variable llamada `edad`, a la cual se le asigna el número entero `47`. 
+
+Este tipo de código es importante porque muestra cómo almacenar información básica sobre una persona en variables, lo que es fundamental cuando trabajas con datos personales o cualquier otra información estructurada. Es útil entender cómo diferenciar entre datos de texto (strings) y números enteros (integers) para poder manejarlos correctamente en tus programas.
+
+En este contexto del curso de bases de datos relacionales, aprender a trabajar con variables es una base fundamental para más adelante poder interactuar con sistemas de gestión de bases de datos que guardan información similar.
+
+`002-variables.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -2299,10 +2559,13 @@ edad = 47
 ```
 
 ### salidas
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código Python muestra cómo imprimir texto y una variable en la pantalla. Primero, se crea una variable llamada `nombre` que almacena el valor `"Jose Vicente"`. Luego, utilizando la función `print()`, se imprime un mensaje compuesto por dos partes: una cadena de texto estática "Mi nombre es" seguida del contenido de la variable `nombre`. Esto resulta en la impresión de "Mi nombre es Jose Vicente". Este tipo de código es importante porque te permite mostrar información relevante al usuario o guardar rastros de lo que hace tu programa, lo cual es útil para depuración y para proporcionar retroalimentación a los usuarios.
+Este código Python se utiliza para mostrar un ejemplo simple de cómo imprimir texto en la pantalla. La primera línea crea una variable llamada `nombre` y le asigna el valor `"Jose Vicente"`. En la segunda línea, el programa usa la función `print()` para mostrar en la consola o pantalla una frase que indica "Mi nombre es", seguida del contenido de la variable `nombre`, que en este caso es "Jose Vicente". Esto demuestra cómo se pueden combinar texto estático y variables en una misma salida para proporcionar información más completa y legible.
+
+`003-salidas.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -2310,14 +2573,15 @@ print("Mi nombre es",nombre)
 ```
 
 ### variar una variable
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código Python cambia el valor de la variable `nombre` en dos ocasiones y muestra estos cambios utilizando la función `print()`. Al principio, se asigna a la variable `nombre` el valor `"Jose Vicente"`, lo que significa que esta variable almacena este nombre específico. Luego, el programa imprime un mensaje que incluye el texto "Mi nombre es" seguido del contenido de la variable `nombre`.
+Este código Python cambia el valor de una variable llamada `nombre` y muestra diferentes mensajes en la pantalla. Al principio, se asigna a `nombre` el valor "Jose Vicente" y luego se imprime un mensaje que incluye ese nombre. Después, el código cambia el valor de `nombre` a "Juan" y vuelve a imprimir otro mensaje con este nuevo nombre.
 
-Después, en una segunda línea de código, se cambia el valor de la variable `nombre` a `"Juan"`, lo cual significa que ahora esta misma variable almacena este nuevo nombre. De inmediato después de cambiar el valor, se imprime nuevamente un mensaje similar, pero con el nuevo valor de la variable.
+La importancia de este fragmento radica en mostrar cómo las variables pueden ser modificadas durante la ejecución del programa, permitiendo almacenar diferentes datos en el mismo espacio de memoria. Esto es fundamental para programación ya que permite crear programas más flexibles y dinámicos.
 
-Este fragmento es importante porque demuestra cómo las variables pueden ser modificadas durante la ejecución del programa y cómo esos cambios afectan a otras partes del código que dependen de ellas. Es una introducción básica al concepto de la mutabilidad de las variables en Python, lo cual es fundamental para entender cómo funcionan los programas más complejos.
+`004-variar una variable.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -2328,12 +2592,21 @@ print("Mi nombre es",nombre)
 ```
 
 ### identificadores permitidos
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código está mostrando ejemplos de cómo nombrar variables en Python, especialmente enfocándose en los nombres válidos y no válidos según las reglas del lenguaje. En este caso, `nombre` y `nombre2` son ejemplos correctos de cómo se deben llamar las variables; estos siguen la convención de utilizar letras minúsculas y, si es necesario, guiones bajos para separar palabras en el nombre de una variable (por ejemplo, `mi_variable`). La línea que comienza con `#` está comentada, lo que significa que Python no la interpreta como código activo. En este caso, muestra un intento de nombrar una variable con un número al principio (`2nombre`), lo cual es inválido en Python porque los nombres de las variables deben comenzar con una letra o un guion bajo.
+Este fragmento de código en Python muestra ejemplos de cómo nombrar variables correctamente y cuáles son las reglas que debes seguir al dar nombres a tus variables. En primer lugar, el código define tres variables llamadas `nombre`, `nombre2` y `nombre_completo`. Estas variables almacenan cadenas de texto como "Jose" o "Jose Vicente", que representan nombres.
 
-El último ejemplo, `nombreCompleto`, demuestra que aunque se pueden usar mayúsculas dentro del nombre de la variable (conocido como camel case) y es aceptado por el lenguaje, no es la convención recomendada en Python. La mejor práctica para nombrar variables largas sería usar guiones bajos para separar palabras, como `nombre_completo`. Además, el código también muestra dos intentos de nombre que incluyen espacios y guiones, ambos de los cuales son inválidos ya que los nombres de las variables en Python no pueden contener estos caracteres.
+Es importante destacar algunas reglas:
+- Los nombres de las variables no pueden comenzar con un número. Por ejemplo, la línea comentada `# 2nombre = "Jose Vicente"` es incorrecta porque comienza con un número.
+- No puedes usar guiones medios ( `-` ) en medio del nombre de una variable como se muestra en la línea `#nombre-completo = "Jose Vicente"`.
+- Espacios en blanco no están permitidos en los nombres de las variables. La línea comentada `#nombre completo = "Jose Vicente"` es un ejemplo incorrecto debido al espacio entre "nombre" y "completo".
+- Aunque la línea `nombreCompleto = "Jose Vicente"` es gramaticalmente correcta (es decir, el nombre de la variable está compuesto por múltiples palabras sin espacios), se recomienda usar guiones bajos para mejorar la legibilidad del código. Por ejemplo, sería mejor escribirlo como `nombre_completo = "Jose Vicente"`.
+
+Estas reglas son fundamentales para evitar errores y para que el código sea fácil de leer tanto para ti como para otros programadores.
+
+`005-identificadores permitidos.py`
 
 ```python
 nombre = "Jose"
@@ -2346,14 +2619,19 @@ nombreCompleto = "Jose Vicente" # Es legal pero no se recomienda
 ```
 
 ### comentarios
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código está compuesto por dos tipos diferentes de comentarios en Python. Los comentarios son bloques de texto que el programa no ejecuta pero que ayudan al desarrollador a entender mejor el código. En primer lugar, hay un comentario de una sola línea que comienza con el símbolo numeral (#). Este tipo de comentario se utiliza para anotar líneas individuales o explicar rápidamente su propósito.
+Este fragmento de código en Python muestra dos formas diferentes de escribir comentarios: uno de una sola línea y otro que ocupa varias líneas. Los comentarios son bloques de texto que no se ejecutan como parte del programa, pero ayudan a los programadores a entender el propósito o la funcionalidad del código adjunto.
 
-Además, hay un bloque de comentarios multilinea encerrado entre triples comillas ("""). Este tipo de comentario es útil cuando necesitas proporcionar una explicación más detallada sobre cómo funciona cierto segmento del código. Puedes escribir varias líneas dentro de este bloque para dar contexto adicional o documentar partes complejas del programa.
+En primer lugar, hay un comentario simple que comienza con el signo numeral (#). Todo lo que sigue después del # en esa línea es ignorado por Python y está destinado solo a ser leído por humanos para proporcionar información sobre ese punto específico del código.
 
-Ambos tipos de comentarios son importantes porque facilitan la colaboración entre programadores y ayudan a mantener el código limpio y fácil de entender, especialmente cuando se trabajan en proyectos grandes o a largo plazo.
+A continuación, se muestra cómo escribir comentarios multilínea utilizando tres comillas simples (') al inicio y al final. Esto permite que el comentario ocupe varias líneas y es útil cuando necesitas explicar algo en detalle o documentar partes más complejas de tu programa. Estos bloques largos de texto también son ignorados por Python durante la ejecución del código, pero son cruciales para mantener un código limpio y fácil de entender.
+
+El uso correcto de comentarios es importante porque facilita el trabajo en equipo, ayuda a recordar lo que cada parte del código hace, y puede ser útil si regresas al programa después de un tiempo sin trabajar en él.
+
+`006-comentarios.py`
 
 ```python
 # Esto es un comentario de una única línea
@@ -2366,10 +2644,15 @@ Ambos tipos de comentarios son importantes porque facilitan la colaboración ent
 ```
 
 ### Explicacion del codigo
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-En este fragmento de código, estás declarando e inicializando una variable llamada `edad` con un valor específico. El identificador `edad`, en este caso, actúa como un contenedor donde guardas información para usarla después en tu programa. La línea `= 47` es lo que se llama una declaración de asignación, donde le estás diciendo a Python que el valor del número entero 47 debe almacenarse en la variable `edad`. Es importante entender esto porque te permite manipular y trabajar con datos numéricos dentro de tus programas, permitiéndote realizar cálculos o tomar decisiones basadas en valores como este.
+Este fragmento de código establece una variable llamada `edad` y le asigna el valor numérico `47`. En términos simples, estás creando un contenedor en la memoria del computador etiquetado como `edad`, y colocas dentro del contenedor el número `47`. El símbolo `=` se utiliza para decirle a Python que el nombre de la variable (`edad`) debe estar asociada con el valor específico proporcionado, que en este caso es `47`.
+
+Es importante entender esto porque las variables permiten almacenar datos que pueden ser utilizados y modificados posteriormente en tu programa. En este ejemplo, si necesitas hacer algún cálculo o comparación usando la edad de alguien, tendrás un valor numérico accesible a través del identificador `edad`.
+
+`007-Explicacion del codigo.py`
 
 ```python
 edad = 47
@@ -2379,10 +2662,21 @@ edad = 47
 ```
 
 ### Tipos de datos
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código está creando variables en Python y asignándoles diferentes tipos de datos básicos que son muy comunes en la programación. La variable `nombre` almacena el texto "Jose Vicente", lo que significa que es una cadena o string, algo que se utiliza para guardar letras, palabras u oraciones. La variable `edad` contiene el número 47, por lo que es un entero (int), ideal para representar valores numéricos sin decimales como edades o cantidades enteras. La variable `altura`, con el valor 1.78, es un decimal o float, utilizado cuando necesitas almacenar números con parte fraccionaria, tales como medidas de altura o peso. Por último, la variable `vivo` tiene asignado el valor booleano `True`. Este tipo de dato solo puede tener dos valores: `True` (verdadero) o `False` (falso), y es muy útil para representar estados binarios como sí/no, encendido/apagado u otros escenarios que requieren una decisión simple entre dos opciones.
+Este fragmento de código en Python se utiliza para declarar variables y asignarles diferentes tipos de datos. La primera línea declara una variable llamada `nombre` e inicializa esta con el valor `"Jose Vicente"`, que es un tipo de dato cadena (string) utilizado para almacenar texto.
+
+La segunda línea crea una variable llamada `edad` y le asigna el número entero `47`. Este es un ejemplo de cómo se manejan datos numéricos enteros en Python, útiles para contar o indexar cosas que ocurren de manera incremental sin fracciones o decimales.
+
+En la tercera línea, la variable `altura` recibe como valor el número decimal `1.78`. Este tipo de dato se llama flotante (float) y es útil cuando necesitas representar números con punto decimal para medir cantidades inexactas o que pueden tener varios dígitos después del punto.
+
+Finalmente, la última línea declara una variable llamada `vivo` y le asigna el valor booleano `True`. Los valores booleanos (`True` y `False`) son fundamentales en programación para representar situaciones lógicas o de estado binario (sí/no, verdadero/falso).
+
+Cada uno de estos tipos de datos juega un papel crucial en la creación y manipulación de información dentro del programa.
+
+`008-Tipos de datos.py`
 
 ```python
 nombre = "Jose Vicente" # Cadena
@@ -2392,10 +2686,17 @@ vivo = True # Booleano
 ```
 
 ### Entradas
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código en Python solicita al usuario que ingrese su nombre y luego muestra ese nombre por pantalla. En la primera línea, `input()` se utiliza para pedirle al usuario que introduzca un dato, en este caso, su nombre, cuando le aparece el mensaje "Dime tu nombre:". El valor ingresado por el usuario se guarda en la variable `nombre`. Luego, con la función `print()`, el programa muestra en pantalla el mensaje "Tu nombre es: " seguido del contenido de la variable `nombre`, que es lo que el usuario ha introducido previamente. Este tipo de código es fundamental para interactuar con los usuarios y recoger información que puede ser utilizada más adelante en otros programas o procesos.
+Este código te ayuda a interactuar con el usuario para obtener su nombre y luego mostrarlo en la pantalla. En primer lugar, la línea `nombre = input("Dime tu nombre: ")` muestra un mensaje al usuario que le pide que introduzca su nombre. Todo lo que el usuario escriba se guardará en la variable llamada `nombre`. La función `input()` es muy útil para recoger datos desde teclado.
+
+Luego, con la línea `print("Tu nombre es: ",nombre)`, el programa muestra por pantalla un mensaje junto con el valor que el usuario ha introducido anteriormente. Esto demuestra cómo puedes usar la información ingresada en tu código y manipularla o mostrarla según sea necesario.
+
+Este tipo de interacción básica entre el programa y el usuario es fundamental en programación, ya que permite crear aplicaciones más dinámicas y personalizadas.
+
+`009-Entradas.py`
 
 ```python
 nombre = input("Dime tu nombre: ")
@@ -2403,10 +2704,15 @@ print("Tu nombre es: ",nombre)
 ```
 
 ### Entrada y problema
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código en Python pide al usuario que ingrese su edad y luego muestra una frase con el doble de esa edad. Primero, la línea `edad = input("Dime tu edad: ")` espera a que el usuario introduzca un número y lo guarde como texto (cadena) en la variable llamada `edad`. Luego, la línea `print("El doble de tu edad es: "+edad)` muestra por pantalla una frase seguida del valor guardado en `edad`. Sin embargo, esta última línea no calcula el doble de la edad; simplemente imprime la misma edad que se introdujo. Para calcular realmente el doble de la edad, tendríamos que convertir la entrada de texto a un número entero y multiplicarlo por dos antes de imprimirlo.
+Este código en Python solicita al usuario que ingrese su edad y luego muestra un mensaje con el doble de esa edad. La función `input()` se utiliza para pedirle al usuario que introduzca su edad a través del teclado, y el valor ingresado se guarda en la variable `edad`. A continuación, el código imprime una frase que indica "El doble de tu edad es: ", seguida del contenido almacenado en la variable `edad`.
+
+Sin embargo, hay un detalle importante: si ingresas un número como tu edad, realmente estás guardando esa entrada como texto (string) debido a cómo funciona la función `input()`. Para calcular el doble de la edad, tendrías que convertir ese texto numérico en un número (por ejemplo, usando `int()`), hacer la operación matemática y luego imprimirlo nuevamente. Actualmente, simplemente estás mostrando la cadena ingresada sin realizar ningún cálculo.
+
+`010-Entrada y problema.py`
 
 ```python
 edad = input("Dime tu edad: ")
@@ -2414,10 +2720,17 @@ print("El doble de tu edad es: "+edad)
 ```
 
 ### Cambio de tipo de dato
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código te pide que ingreses tu edad y luego realiza cálculos sencillos con ese dato. Primero, el programa te pregunta cuántos años tienes utilizando `input`, lo cual guarda la respuesta como un texto (una cadena de caracteres). Luego, convierte esa cadena en un número entero usando `int()`. Esto es importante porque necesitamos hacer operaciones matemáticas con tu edad y no se pueden realizar con texto. Después multiplica ese número por dos para obtener el doble de tu edad. Finalmente, muestra por pantalla el resultado del cálculo pero aquí hay un error: cuando intenta imprimir el resultado, usa `print` sin convertir la variable a una cadena de caracteres primero. Para arreglar esto, deberías cambiar la última línea a `print("El doble de tu edad es: " + str(doble))`. Esto asegura que el número se convierta en texto antes de ser mostrado junto con la frase.
+Este código te pide a ti, como usuario, que introduzcas tu edad y luego realiza algunas operaciones con ese dato. Primero, se guarda la respuesta que introduces en una variable llamada `edad`. Sin embargo, lo interesante viene después, cuando el programa transforma esa entrada (que es un texto o cadena de caracteres) en un número entero para poder hacer cálculos matemáticos.
+
+La línea `entero = int(edad)` es crucial porque convierte la edad que has introducido desde teclado en un número real. Esto permite al código multiplicar ese número por dos y guardar el resultado en otra variable llamada `doble`. Finalmente, imprime una frase con el doble de tu edad usando la función `print()`, pero aquí hay un pequeño problema: cuando intenta imprimir `doble` directamente junto a texto, dará error porque no se puede concatenar números y cadenas sin convertir primero el número. Para solucionarlo, es necesario usar `str(doble)` para cambiar `doble` de nuevo a una cadena antes de mostrarlo en pantalla.
+
+Este ejercicio demuestra cómo los tipos de datos son importantes en programación y cómo debes manejar cuidadosamente la conversión entre cadenas y números cuando realices cálculos.
+
+`011-Cambio de tipo de dato.py`
 
 ```python
 # Le pregunto al usuario por su edad
@@ -2431,12 +2744,17 @@ print("El doble de tu edad es: "+doble)
 ```
 
 ### literales
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código Python está asignando valores específicos a dos variables llamadas `nombre` y `edad`. En la primera línea, se le asigna a la variable `nombre` una cadena de texto que dice "Jose Vicente". Una cadena en programación, también conocida como string o literal de caracteres, es simplemente un conjunto de caracteres encerrados entre comillas. En este caso, el valor `"Jose Vicente"` es lo que se conoce como un literal de tipo cadena.
+Este fragmento de código en Python establece dos variables con valores literales. La primera variable se llama `nombre` y le asigna la cadena "Jose Vicente", que es un texto entre comillas. Este texto es lo que llamamos un literal de cadena, ya que representa directamente el valor que deseas almacenar.
 
-En la segunda parte del código, la variable `edad` recibe el valor numérico 47, que en Python es un número entero o int (de integer). Los números enteros son literales que representan valores matemáticos sin decimales. Estas variables y sus asignaciones son fundamentales porque permiten almacenar datos específicos para ser utilizados en operaciones más adelante en el programa, como imprimir información sobre una persona, realizar cálculos basados en su edad, etc.
+La segunda variable se llama `edad` y le asigna el número 47, que es un literal de tipo entero. Un literal de este tipo simplemente es un número sin comillas que representa una cantidad numérica exacta.
+
+Estos literales son importantes porque permiten inicializar variables con valores específicos desde el principio del programa, lo cual es útil para definir datos iniciales o configuraciones básicas en tu código.
+
+`012-literales.py`
 
 ```python
 nombre = "Jose Vicente"
@@ -2447,14 +2765,13 @@ edad = 47
 ```
 
 ### constantes
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código es una introducción sencilla al concepto de variables en Python y cómo pueden cambiar sus valores a lo largo del programa. Comienza definiendo una variable llamada `PI` y le asigna el valor numérico 3.1415, que es un aproximado común del número pi. Luego imprime este valor para mostrar qué contiene la variable en ese momento.
+Este código te muestra cómo trabajar con una constante en Python, aunque en realidad no existe un tipo de dato específico para las constantes en este lenguaje. La variable `PI` se inicializa con el valor aproximado del número Pi (3.1415). Luego, se imprime el valor actual de `PI`. A continuación, el valor de `PI` es cambiado a 4 y vuelve a imprimirse para demostrar que las "constantes" en Python pueden ser modificadas, a diferencia de lo que ocurre en algunos otros lenguajes. Al final del código, se proporciona una recomendación sobre la convención de nombrar variables: usar mayúsculas para simular constantes y minúsculas para variables regulares, aunque esto es puramente una cuestión de estilo y no impide que el valor de las "constantes" cambie.
 
-Después, el código cambia el valor de `PI` a 4 y vuelve a imprimirlo. Esto demuestra que las variables son dinámicas y pueden tener sus valores modificados durante la ejecución del programa. Al final del código, hay un comentario que sugiere cómo debería nombrarse una constante (con mayúsculas) y una variable (con minúsculas), aunque en este ejemplo `PI` cambia su valor, lo cual contradice la idea de una constante.
-
-Este fragmento es importante porque muestra no solo cómo se declaran y modifican variables, sino también que los nombres de las variables tienen convenciones específicas para indicar si son constantes o no, aunque en Python no existen realmente las constantes como tales; simplemente es una convención entre programadores.
+`013-constantes.py`
 
 ```python
 PI = 3.1415
@@ -2469,14 +2786,13 @@ print("PI vale",PI)
 ```
 
 ### Diferencia
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código comienza definiendo una constante llamada `PI` y le asigna el valor numérico 3.1416, que es una aproximación del número π (pi). Sin embargo, en la segunda línea se reasigna a `PI` el valor "unnumero", lo cual cambia su tipo de dato a cadena de texto o string.
+Este fragmento de código Python está trabajando con la asignación y reasignación de valores a una variable llamada `PI`. Al principio, se establece que `PI` es una constante, lo cual generalmente significa que su valor debería permanecer inalterado. En este caso, inicialmente se le asigna el valor numérico 3.1416, que es una aproximación del número matemático π (pi). Sin embargo, en la segunda línea, `PI` se vuelve a asignar con el valor "unnumero", que es una cadena de texto. Esto demuestra cómo, incluso cuando se dice que una variable es una constante, en Python sigue siendo posible cambiar su valor. Aunque esto no es típico ni recomendado para una constante real, ilustra la flexibilidad del tipo de datos en Python y cómo las convenciones sobre el uso de constantes pueden ser importantes pero no inamovibles desde un punto de vista técnico.
 
-Es importante entender que aunque inicialmente `PI` fue declarada como un valor numérico con significado matemático (pi), en programación una variable puede cambiar su contenido y tipo durante la ejecución del programa. Sin embargo, este cambio podría afectar el funcionamiento correcto del código si se espera que `PI` mantenga siempre su valor numérico.
-
-Esta práctica no es recomendada para constantes matemáticas o valores fijos en un programa porque rompe la idea de que una constante debe mantener un valor inmutable durante toda la ejecución.
+`014-Diferencia.py`
 
 ```python
 
@@ -2489,14 +2805,23 @@ PI = "unnumero"
 ```
 
 ### operadores aritmeticos
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código es un ejemplo básico de operaciones aritméticas en Python. Cada línea del código realiza una operación matemática diferente usando los operadores básicos que ya conoces: suma, resta, multiplicación, división y módulo (que da el resto de la división).
+Este fragmento de código en Python muestra cómo se utilizan los operadores aritméticos básicos para realizar diferentes tipos de cálculos. El programa imprime el resultado de cinco operaciones: suma, resta, multiplicación, división y módulo (resto de la división). Cada línea ejecuta una operación matemática diferente entre los números 4 y 3:
 
-La primera línea `print(4+3)` simplemente suma 4 y 3, dando como resultado 7. La segunda línea `print(4-3)` resta 3 de 4, lo que resulta en 1. Luego, `print(4*3)` multiplica 4 por 3 para obtener 12. Después, `print(4/3)` divide 4 entre 3 y devuelve un número decimal (1.3333). Por último, la línea `print(4%3)` usa el operador de módulo que te da el resto de dividir 4 por 3, resultando en 1.
+1. La primera línea `print(4+3)` suma los dos números y muestra el resultado en la pantalla.
+2. La segunda línea `print(4-3)` resta el segundo número del primero y también imprime el resultado.
+3. La tercera línea `print(4*3)` multiplica ambos números y presenta el producto.
+4. La cuarta línea `print(4/3)` divide el primer número por el segundo, dando como resultado un valor flotante que representa la división exacta.
+5. Finalmente, `print(4%3)` calcula el resto de dividir 4 entre 3 y muestra este valor.
 
-Estas operaciones son fundamentales porque aparecen constantemente cuando programamos, ya sea para calcular precios, procesar datos o resolver cualquier problema matemático dentro del código.
+Estos operadores son fundamentales en cualquier programa que requiera realizar cálculos matemáticos o manipular datos numéricos. Su uso permite la realización de tareas como calcular precios con impuestos, determinar el tiempo restante hasta una fecha específica, etc., lo cual es crucial para muchas aplicaciones.
+
+ÚLTIMO PÁRRAFO: En comparación con el archivo previo, este código cambia completamente de enfoque, dejando atrás los conceptos de constantes y literales para explorar la aritmética básica con operadores en Python. Esto representa un paso adelante hacia la manipulación directa de datos numéricos y la realización de cálculos más complejos.
+
+`014-operadores aritmeticos.py`
 
 ```python
 print(4+3)
@@ -2507,15 +2832,17 @@ print(4%3)
 ```
 
 ### operadores de comparacion
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código muestra cómo funcionan los operadores de comparación en Python. Los operadores como `<`, `<=`, `>`, `>=`, `==` y `!=` permiten comparar dos valores numéricos para determinar si una relación específica entre ellos es verdadera o falsa. Cada línea del código compara el número 4 con el número 3 usando uno de estos operadores.
+Este fragmento de código utiliza operadores de comparación en Python para verificar diferentes relaciones entre los números 4 y 3. Cada línea del código compara estos dos números usando un operador diferente: menor que (`<`), menor o igual que (`<=`), mayor que (`>`), mayor o igual que (`>=`), igualdad (`==`), y no igual a (`!=`). 
 
-- La primera línea, `print(4 < 3)`, comprueba si 4 es menor que 3 y devuelve `False` porque no lo es.
-- Las siguientes líneas hacen comparaciones similares pero con otros operadores. Por ejemplo, `print(4 > 3)` devuelve `True` porque 4 es mayor que 3.
+Cuando ejecutas este código, Python evalúa cada comparación y devuelve `True` si la condición es cierta, o `False` en caso contrario. Por ejemplo, la primera línea `print(4 < 3)` comprueba si 4 es menor que 3; como esto no es cierto, el resultado será `False`.
 
-Estos operadores son fundamentales en programación ya que permiten tomar decisiones basadas en condiciones y son la base para estructuras de control como condicionales (`if`, `elif`, `else`) y bucles.
+Estos operadores de comparación son fundamentales para controlar el flujo de programas más complejos y tomar decisiones basadas en condiciones específicas. Son especialmente útiles cuando se necesitan realizar cálculos condicionales o filtrar información según criterios determinados.
+
+`015-operadores de comparacion.py`
 
 ```python
 print(4 < 3)
@@ -2527,14 +2854,21 @@ print(4 != 3)
 ```
 
 ### operadores arimeticos abreviados
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código en Python muestra cómo se pueden modificar el valor de una variable llamada `edad` utilizando diferentes operaciones aritméticas. En primer lugar, se define que la edad es igual a 47 años. Luego, se realizan varias operaciones para aumentar y disminuir este valor, así como multiplicarlo y dividirlo.
+Este fragmento de código en Python muestra cómo modificar el valor de una variable usando operadores aritméticos y sus formas abreviadas. La variable `edad` inicialmente se establece en 47. Luego, se realizan varias operaciones para aumentar o disminuir su valor.
 
-El código utiliza dos formas de realizar estas operaciones: una forma larga (como `edad = edad + 2`) y otra más abreviada utilizando operadores aritméticos combinados (como `edad += 2`). Estos operadores combina la asignación con una operación matemática, lo que hace el código más conciso y legible. Por ejemplo, en lugar de escribir `edad = edad + 2`, se puede usar simplemente `edad += 2` para lograr el mismo resultado.
+Primero, se suma 2 a la edad utilizando dos métodos: primero con una operación tradicional (`edad = edad + 2`) y luego con un operador abreviado (`edad += 2`). Esto hace que el valor de `edad` incremente en 2 unidades. 
 
-Estas técnicas son muy útiles en programación porque permiten cambiar fácilmente los valores de las variables sin tener que repetir su nombre constantemente. Esto no solo hace que el código sea más corto, sino también más claro y menos propenso a errores tipográficos.
+Después, se resta 2 unidades de `edad`, nuevamente usando la forma larga (`edad = edad - 2`) y luego la forma abreviada (`edad -= 2`). Finalmente, se duplica el valor actual de `edad` con ambas técnicas: multiplicación tradicional (`edad = edad * 2`) y operador abreviado (`edad *= 2`).
+
+Por último, se divide `edad` por 2 usando la misma técnica: primero la forma larga (`edad = edad / 2`) y luego el operador abreviado (`edad /= 2`). 
+
+El objetivo de este código es demostrar cómo los operadores aritméticos abreviados simplifican las instrucciones de programación, haciéndolas más concisas y legibles.
+
+`016-operadores arimeticos abreviados.py`
 
 ```python
 edad = 47
@@ -2553,16 +2887,19 @@ edad /= 2
 ```
 
 ### operadores booleanos
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código en Python utiliza operadores booleanos, que son esenciales para la programación ya que nos permiten combinar condiciones y evaluar expresiones lógicas. Los operadores específicos utilizados aquí son `and` y `or`. 
+Este fragmento de código en Python utiliza operadores booleanos para evaluar y comparar diferentes expresiones. Los operadores booleanos `and` y `or` se utilizan para combinar varias condiciones, donde `and` requiere que todas las condiciones sean verdaderas para que el resultado sea verdadero, mientras que `or` solo necesita una condición verdadera para dar un resultado verdadero.
 
-En las primeras dos líneas del código, se usan operadores `and`, lo cual significa que todas las comparaciones deben ser verdaderas para que el resultado final sea `True`. Por ejemplo, en la línea `print(4 == 4 and 3 == 3 and 2 == 2)`, todos los números son iguales a sí mismos, por lo tanto, todo se evalúa como verdadero y el código imprimirá un resultado `True`.
+En el código, se comparan números usando operadores de igualdad (`==`) en combinación con estos operadores booleanos. Por ejemplo, la primera línea `print(4 == 4 and 3 == 3 and 2 == 2)` evalúa cada condición individualmente y luego combina sus resultados utilizando el operador `and`. Como todas las condiciones son verdaderas (`4 es igual a 4`, `3 es igual a 3`, `2 es igual a 2`), la expresión completa es verdadera, lo que imprime un valor `True`.
 
-En las líneas que siguen, se usan operadores `or`. Con este operador, solo es necesario que una de las comparaciones sea verdadera para que el resultado final del conjunto sea `True`. Por ejemplo, en la línea `print(4 == 4 or 3 == 2 or 2 == 1)`, aunque dos de las comparaciones son falsas (`3 == 2` y `2 == 1`), una es verdadera (`4 == 4`), por lo que el resultado final será `True`.
+Por otro lado, en una línea como `print(4 == 4 or 3 == 2 or 2 == 1)`, el primer y tercer comparador son falsos (`3 no es igual a 2` y `2 no es igual a 1`), pero el primer comparador (`4 es igual a 4`) es verdadero, por lo que la expresión completa se evalúa como verdadera gracias al operador `or`.
 
-Este tipo de operadores booleanos te permiten hacer evaluaciones complejas dentro de tu código, como verificar condiciones múltiples antes de tomar decisiones o ejecutar bloques de código específicos.
+Este tipo de ejercicios ayuda a entender cómo combinar múltiples condiciones lógicas y a predecir los resultados basados en las reglas del lenguaje de programación.
+
+`017-operadores booleanos.py`
 
 ```python
 print(4 == 4 and 3 == 3 and 2 == 2)
@@ -2574,10 +2911,17 @@ print(4 == 3 or 3 == 2 or 2 == 1)
 ```
 
 ### Ejercicio1-Calculadora de impuestos
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este código es la descripción inicial o encabezado (también conocido como docstring) de un programa escrito en Python que se llama "Calculadora de Impuestos". La versión del programa es v0.1 y ha sido creada por Jose Vicente Carratalá. El propósito principal del programa es permitir al usuario ingresar una cantidad base imponible, es decir, el precio original antes de que se le aplique un impuesto como el IVA (Impuesto sobre Valor Añadido). Con esa base imponible, el programa calcula cuánto sería el IVA aplicado y qué sería la cantidad total después del impuesto. Este tipo de programas son útiles para entender cómo funcionan los cálculos fiscales básicos en contextos comerciales o personales, ayudando a los usuarios a gestionar mejor sus finanzas.
+Este código es la descripción de un programa en Python llamado "Calculadora de Impuestos". El objetivo del programa es calcular el IVA (Impuesto sobre Valor Añadido) para una cantidad dada, conocida como base imponible, y luego mostrar tanto el monto del IVA como el total después de aplicar el impuesto. La versión actual es la v0.1, desarrollada por Jose Vicente Carratalá.
+
+El programa interactúa con el usuario para solicitar que introduzca una cantidad base (sin incluir el IVA). Posteriormente, calcula cuánto sería el IVA sobre esa cantidad y muestra tanto ese valor como la suma total después de añadir el IVA. Este tipo de herramienta es útil para comprender cómo se aplica el impuesto en transacciones comerciales o compras personales.
+
+Es importante destacar que este código es una plantilla o guía, ya que no contiene toda la lógica del programa; falta el código que realmente hace las operaciones matemáticas y muestra los resultados al usuario.
+
+`018-Ejercicio1-Calculadora de impuestos.py`
 
 ```python
 '''
@@ -2588,16 +2932,17 @@ Este código es la descripción inicial o encabezado (también conocido como doc
 ```
 
 ### Calculadora
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código es el inicio de un programa sencillo en Python que sirve para calcular impuestos sobre una factura. El programa está diseñado para pedir al usuario que introduzca la cantidad sin IVA (base imponible) y luego realizar cálculos para determinar cuánto sería el IVA y cuánto sería el total de la factura.
+Este fragmento de código es el comienzo de un programa en Python que actúa como una simple calculadora para calcular impuestos. El objetivo principal del programa es solicitar al usuario que introduzca la base imponible de una factura y, posteriormente, calcular el IVA y el total de la factura.
 
-En las primeras líneas, se crean tres variables: `base_imponible`, `total_iva` e `total_factura`. Estas variables van a almacenar los valores que introduzca el usuario y los resultados de los cálculos. Posteriormente, hay un comentario indicando dónde irían las funciones o clases del programa, pero en este punto solo se pide al usuario que ingrese la base imponible mediante una función `input()`.
+El código inicializa tres variables: `base_imponible`, `total_iva` y `total_factura`. Estas variables almacenarán respectivamente el monto sin impuestos, el valor del IVA y el total a pagar. Luego, utiliza la función `input()` para pedir al usuario que introduzca el valor de la base imponible.
 
-El uso de variables es crucial para almacenar datos temporalmente durante la ejecución del programa y poder realizar operaciones matemáticas sobre ellos. La importancia radica en proporcionar a los usuarios un medio fácil y rápido para calcular impuestos, lo que les ahorrará tiempo al hacer cálculos manuales.
+Es importante notar que este código es solo el inicio del programa; faltarían las partes donde se calcula el IVA y el total de la factura, así como posiblemente funciones o clases adicionales mencionadas en el comentario ("Aquí pondría las funciones/clases").
 
-Es importante notar que el código aún no realiza los cálculos para determinar el IVA ni suma este valor a la base imponible para obtener el total de la factura. Ese sería el siguiente paso en la implementación de esta calculadora de impuestos.
+`019-Calculadora.py`
 
 ```python
 '''
@@ -2620,16 +2965,19 @@ base_imponible = input("Introduce la base imponible de la factura: ")
 ```
 
 ### Calculadora
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este fragmento de código es un programa en Python que sirve como una simple calculadora para calcular impuestos basándose en la base imponible. El objetivo del programa es recibir una entrada del usuario, que representa el monto antes del impuesto (base imponible), y luego calcular tanto el IVA (Impuesto al Valor Agregado) como el total de la factura incluyendo el IVA.
+Este código es un programa sencillo en Python que sirve como una calculadora básica para calcular impuestos. Su objetivo principal es permitir al usuario ingresar una cantidad llamada "base imponible" y luego, basándose en esta entrada, calcular el IVA (Impuesto sobre Valor Añadido) y la totalidad del importe de la factura.
 
-El código comienza con un bloque de comentarios que proporciona detalles sobre el propósito del programa, su versión y autor. A continuación, se declaran tres variables: `base_imponible`, `total_iva` y `total_factura`. Estas variables son utilizadas para almacenar los valores relacionados con la base imponible antes del impuesto, el monto del IVA calculado y el total de la factura respectivamente.
+El programa comienza definiendo tres variables: `base_imponible`, que es donde se almacenará la cantidad introducida por el usuario; `total_iva`, que probablemente será usada para guardar el valor del IVA calculado; y `total_factura`, que guardará el total de la factura una vez sumados la base imponible y el IVA.
 
-El programa muestra al usuario mensajes en pantalla que indican qué acción se está realizando (como introducir la base imponible) y solicita al usuario que ingrese el valor de la base imponible mediante la función `input()`. Este valor ingresado por el usuario será utilizado posteriormente para calcular tanto el IVA como el total de la factura.
+Después, muestra al usuario algunos mensajes en pantalla que proporcionan información sobre el propósito del programa y le pide que introduzca la base imponible de la factura. Estos mensajes se muestran usando la función `print()`, que es comúnmente utilizada para mostrar texto o resultados en la consola.
 
-Es importante notar que, aunque se declaran variables para almacenar el total del IVA y el total de la factura, este fragmento no incluye la lógica para realizar los cálculos. La parte donde irían las funciones o clases necesarias está etiquetada como "Aquí pondría las funciones/clases", lo que sugiere que en una versión completa del programa estas se añadirían aquí para completar el funcionamiento de la calculadora de impuestos.
+Este tipo de código es fundamental porque enseña a los estudiantes cómo interactuar con el usuario para recoger datos, almacenarlos y prepararse para realizar cálculos más adelante. Es un primer paso hacia programas más complejos donde se necesiten operaciones matemáticas basadas en la entrada del usuario.
+
+`020-Calculadora.py`
 
 ```python
 '''
@@ -2655,14 +3003,17 @@ base_imponible = input("Introduce la base imponible de la factura: ")
 ```
 
 ### Calculo de IVA
+<small>Creado: 2025-10-31 10:18</small>
 
 #### Explicación
 
-Este programa en Python sirve como una simple calculadora de impuestos para calcular el IVA y el total de una factura basándose en la base imponible que introduce el usuario. El código comienza pidiendo al usuario que ingrese el valor de la base imponible de la factura, que se convierte a un número decimal (float) porque los valores monetarios generalmente incluyen decimales.
+Este programa en Python es una sencilla calculadora de impuestos que permite al usuario introducir el monto base de una factura y calcular tanto el IVA como el total de la misma. El código comienza por declarar tres variables para almacenar la base imponible, el importe del IVA y el total de la factura.
 
-Luego, el programa calcula el IVA aplicando una tasa del 21% sobre la base imponible y lo almacena en la variable `total_iva`. Posteriormente, se suma esta cantidad a la base imponible para obtener el total de la factura que se guarda en la variable `total_factura`.
+El programa solicita al usuario que ingrese la base imponible mediante la función `input()`, convirtiendo esa entrada en un número de punto flotante con `float()` ya que los montos monetarios pueden contener decimales. Luego, calcula el IVA aplicando una tasa del 21% (0.21) a la base imponible y suma este valor al monto original para obtener el total.
 
-Finalmente, el programa muestra por pantalla el IVA calculado y el total de la factura. Este tipo de script es útil en contextos comerciales o financieros donde es necesario calcular rápidamente el impuesto sobre una venta o un servicio para determinar los costos finales que deben ser cobrados al cliente.
+Finalmente, muestra en pantalla tanto el importe del IVA como el total de la factura utilizando la función `print()`. Este tipo de programa es útil para entender cómo realizar cálculos simples en Python y cómo interactuar con el usuario a través de entradas y salidas.
+
+`021-Calculo de IVA.py`
 
 ```python
 '''
@@ -2697,6 +3048,38 @@ print("El IVA de la factura es: ",total_iva)
 print("El total de la factura es: ",total_factura)
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Saludo Personalizado
+**Descripción:** Crea un programa que pida al usuario su nombre y luego salude personalmente al usuario utilizando un mensaje similar a "Hola, [nombre]". Se espera que los alumnos aprendan cómo solicitar datos de entrada del usuario y cómo imprimir mensajes personalizados.
+
+### Actividad 2: Cálculo de Edad en Años Futuros
+**Descripción:** Elabora un programa que permita al usuario ingresar su edad actual y luego calcule cuántos años tendrá dentro de 5 años. Los estudiantes deben aprender a realizar operaciones matemáticas básicas con variables.
+
+### Actividad 3: Conversión de Unidades
+**Descripción:** Diseña un código que convierta una temperatura dada en grados Celsius a Fahrenheit y viceversa, dependiendo del valor ingresado por el usuario. Esta actividad ayudará a los estudiantes a comprender la conversión entre tipos de datos.
+
+### Actividad 4: Verificación de Número Par o Impar
+**Descripción:** Los estudiantes deben crear un programa que tome un número como entrada y determine si es par o impar, mostrando el resultado en pantalla. Esta actividad se enfoca en operadores aritméticos y condicionales.
+
+### Actividad 5: Gestión de Notas Estudiantiles
+**Descripción:** Desarrolla una aplicación sencilla que pida al usuario ingresar una nota (por ejemplo, de un examen) y luego determine si la nota es aprobatoria (más del 50%) o no. Los alumnos aprenderán sobre comparaciones lógicas.
+
+### Actividad 6: Calculadora Básica con Menú
+**Descripción:** Diseña una calculadora básica que permita al usuario seleccionar entre operaciones matemáticas básicas (suma, resta, multiplicación y división). El objetivo es mejorar la comprensión de las estructuras condicionales y bucles.
+
+### Actividad 7: Generador de Contraseñas
+**Descripción:** Los estudiantes deben crear un programa que genere una contraseña segura basada en ciertos criterios (por ejemplo, longitud, incluir números, letras mayúsculas y minúsculas). Esta actividad se centra en la manipulación de cadenas y generación aleatoria.
+
+### Actividad 8: Cálculo del IVA de Varias Facturas
+**Descripción:** Se pide desarrollar un programa que permita calcular el IVA para múltiples facturas, tomando cada base imponible ingresada por el usuario. La actividad reforzará la manipulación y cálculos con números.
+
+### Actividad 9: Verificación de Números Primos
+**Descripción:** Los alumnos deben crear un programa que determine si un número ingresado es primo o no, implementando una función auxiliar para realizar la comprobación. Esta tarea mejora las habilidades en estructuras condicionales y bucles.
+
+### Actividad 10: Tabla de Multiplicar
+**Descripción:** Desarrolla un programa que genera e imprime una tabla de multiplicar hasta cierto número (por ejemplo, hasta el 10). Los estudiantes aprenderán a usar ciclos anidados para generar patrones numéricos.
+
 
 <a id="simulacro-examen"></a>
 ## Simulacro examen
@@ -2705,170 +3088,39 @@ print("El total de la factura es: ",total_factura)
 
 Este conjunto de ejercicios está diseñado para que los estudiantes practiquen la creación y gestión de una base de datos relacional en MySQL, utilizando un modelo de datos comúnmente usado en aplicaciones web como blogs. Los alumnos aprenderán a crear tablas con claves primarias, establecer relaciones entre tablas mediante claves foráneas, realizar operaciones JOIN para combinar datos de diferentes tablas y crear vistas para simplificar consultas complejas. Además, se practicarán los permisos de acceso necesarios para gestionar usuarios en la base de datos.
 
-### enunciado
+### Actividades propuestas
 
-#### Explicación
+### Actividades Propuestas
 
-Este fragmento de código es en realidad más un enunciado para un examen que un bloque de código propiamente dicho, pero te lo explico como si fuera un guía para programar la base de datos de un blog sencillo. En este caso, se solicita crear una base de datos y sus tablas asociadas para gestionar un blog en el que los usuarios pueden publicar entradas y autores pueden escribir noticias.
+1. **Creación de Base de Datos y Tablas**
+   - **Descripción:** Los estudiantes deberán crear una base de datos llamada "blog" con las tablas "autores" e "entradas". Se espera que aprendan a definir campos con tipos de datos apropiados, incluyendo claves primarias.
 
-La primera parte del texto define dos entidades principales: Autores y Entradas (también conocidas como noticias). La tabla "Autores" almacena información sobre cada autor, incluyendo su nombre, apellidos y email. Por otro lado, la tabla "Entradas" contiene detalles de las publicaciones realizadas por los autores, como el título, fecha, imagen y texto de la entrada, además del identificador único que vincula a un autor específico (relación 1 a N).
+2. **Relaciones entre Tablas**
+   - **Descripción:** Los estudiantes deben establecer una relación 1:n entre la tabla "entradas" y "autores", utilizando una clave foránea en "entradas". Aprenderán a definir y gestionar relaciones entre tablas.
 
-El objetivo es crear tablas en una base de datos donde cada tabla tenga su clave primaria (identificador único para cada registro) y establecer una relación entre las entradas y los autores. Además, se pide crear una "vista" que combina la información de ambas tablas usando un LEFT JOIN para asegurar que todas las entradas estén incluidas en la vista, incluso aquellas sin autor asociado.
+3. **Consulta de Datos con INNER JOIN**
+   - **Descripción:** Se pide que los estudiantes escriban consultas SQL para obtener datos combinados de ambas tablas usando `INNER JOIN`. Esto les enseñará cómo unir dos tablas en una consulta.
 
-Este tipo de ejercicio es importante porque ayuda a comprender cómo relacionar datos entre diferentes entidades y cómo manipular estas relaciones a través de consultas SQL.
+4. **Creación y Modificación de Claves Primarias**
+   - **Descripción:** Los estudiantes deben practicar la creación y modificación de claves primarias, añadiendo o cambiando columnas para que sean clave principal automática.
 
-```markdown
-Ejemplo "blog":
-Prerrequisito: Modelo de datos común
-Blog.entradas: Identificador PK, titulo, autor FK, fecha, imagen, texto
-Blog.autores: Identificador PK, nombre, apellidos, email
+5. **Inserción de Datos en Tablas Relacionadas**
+   - **Descripción:** Se les pedirá insertar registros en ambas tablas "autores" e "entradas", asegurándose de mantener la integridad referencial entre ellas.
 
-Examen de bases de datos (base de datos del blog):
-Entra: crear base de datos, crear tabla, crear clave primaria, crear clave foranea, crear vista, permisos de acceso
-Enunciado: Crea la base de datos de un blog. Tendrá dos tablas: Autores y entradas (noticias). Crea tablas y campos. Ambas tablas con clave primaria. Entradas tendrá un campo FK hacia autores (relación de 1 a n). Crea un left join de entradas y autores. Crea una vista. Crea un usuario con permisos.
-```
+6. **Consulta con LEFT JOIN y Vista Personalizada**
+   - **Descripción:** Los estudiantes deben crear una vista que combine datos de "entradas" y "autores" utilizando `LEFT JOIN`. Aprenderán a crear vistas en SQL para simplificar consultas complejas.
 
-### Examen paso a paso
+7. **Creación de Usuarios con Permisos Específicos**
+   - **Descripción:** Este ejercicio implica la creación de un usuario MySQL que tenga permisos específicos sobre las tablas y vistas creadas anteriormente, enseñando a gestionar permisos de acceso en una base de datos.
 
-#### Explicación
+8. **Validación y Pruebas de Integridad Relacional**
+   - **Descripción:** Los estudiantes deben realizar pruebas para asegurar la integridad referencial entre las tablas, utilizando comandos SQL como `CHECK` y `ALTER TABLE`.
 
-Este fragmento de código te guía a través del proceso de creación y manipulación de bases de datos relacionales en MySQL. Comienza por iniciar sesión en la base de datos MySQL como administrador (root) e, inmediatamente después, crea una nueva base de datos llamada `blog2`. Luego, te mueves dentro de esta base de datos y procedes a crear una tabla llamada `autores` que almacenará información sobre los autores del blog. Inicialmente intentas definir la estructura de la tabla pero encuentras problemas en la creación de un identificador único para cada autor (primary key). Solucionas este problema añadiendo una columna `Identificador` con la propiedad `AUTO_INCREMENT`, lo que permite a MySQL generar automáticamente números únicos incrementales para cada nuevo registro.
+9. **Optimización de Consultas con Índices**
+   - **Descripción:** Aprenderán a crear índices en sus tablas y a optimizar consultas para mejorar el rendimiento de la base de datos.
 
-Una vez resuelto el problema del primary key, insertas un ejemplo de registro en la tabla `autores`. Posteriormente, creas otra tabla llamada `entradas` para almacenar las entradas del blog. Esta tabla incluye una columna que actúa como clave foránea (`id_autor`) referenciando a la tabla `autores`, lo que establece una relación entre los autores y sus respectivas entradas.
-
-El código continúa con el ajuste de tipos de datos para mejorar la integridad relacional, seguido de la inserción de un ejemplo en la tabla `entradas`. Finalmente, se realiza una consulta cruzada (`JOIN`) que combina información de ambas tablas (`entradas` y `autores`) para mostrar los detalles de las entradas junto con los nombres de sus autores. Esta operación es muy útil en aplicaciones web donde necesitas mostrar el nombre del autor junto a cada entrada.
-
-Para facilitar la consulta de estos datos combinados, se crea una vista llamada `vista_entradas` que encapsula la consulta cruzada realizada anteriormente, permitiendo así un acceso más fácil y directo a los detalles de las entradas y sus autores en el futuro. Este proceso es crucial para entender cómo estructurar y manipular datos relacionales efectivamente en MySQL, especialmente cuando se trabaja con bases de datos de aplicaciones web como blogs o foros.
-
-```markdown
-Iniciando sesión en MySQL
-sudo mysql -u root -p
-
-Creo la base de datos
-CREATE DATABASE blog2;
-
-Nos aseguramos de que se ha creado:
-SHOW DATABASES;
-
-Nos tenemos que meter en la base de datos:
-USE blog2;
-
-Creamos una tabla
-CREATE TABLE autores(
-  Identificador INT(10),
-  nombre VARCHAR(100),
-  apellidos VARCHAR(100),
-  email VARCHAR(100)
-);
-
-O bien sin identificador:
-CREATE TABLE autores(
-  nombre VARCHAR(100),
-  apellidos VARCHAR(100),
-  email VARCHAR(100)
-);
-
-O bien con Primary key desde el principio:
-opcion 1:
-CREATE TABLE autores (
-  Identificador INT AUTO_INCREMENT PRIMARY KEY,
-  nombre VARCHAR(100),
-  apellidos VARCHAR(100),
-  email VARCHAR(100)
-);
-
-opcion 2:
-CREATE TABLE autores (
-  Identificador INT AUTO_INCREMENT,
-  nombre VARCHAR(100),
-  apellidos VARCHAR(100),
-  email VARCHAR(100),
-  PRIMARY KEY (Identificador)
-);
-
-
-Miramos que hemos creado bien
-SHOW TABLES;
-
-Quiero tirar la columna Identificador para crearla bien
-ALTER TABLE autores DROP Identificador;
-
-Ahora creo columna
-ALTER TABLE autores ADD COLUMN Identificador INT auto_increment PRIMARY KEY FIRST;
-
-Vamos a ver qué es lo que se ha hecho
-DESCRIBE autores;
-
-Ahora quiero insertar un autor de prueba:
-INSERT INTO autores VALUES(
-  NULL,
-  'Jose Vicente',
-  'Carratala',
-  'info@jocarsa.com'
-);
-
-Me aseguro
-SELECT * FROM autores;
-
-Creo la tabla de entradas:
-CREATE TABLE entradas (
-  Identificador INT AUTO_INCREMENT,
-  titulo VARCHAR(100),
-  fecha VARCHAR(100),
-  imagen VARCHAR(100),
-  id_autor VARCHAR(100),
-  contenido TEXT,
-  PRIMARY KEY (Identificador)
-);
-
-Primero comprobamos la existencia de la tabla
-SHOW TABLES;
-
-Describimos:
-DESCRIBE entradas;
-
-Creamos una foreign key
-ALTER TABLE entradas  
-ADD CONSTRAINT autores_a_entradas  
-FOREIGN KEY (id_autor)  
-REFERENCES autores(Identificador) 
-ON DELETE CASCADE 
-ON UPDATE CASCADE;
-
-Cambiamos tipo de datos
-ALTER TABLE entradas 
-MODIFY COLUMN id_autor INT;
-
-Insertamos una entrada
-INSERT INTO entradas VALUES(
-  NULL,
-  'Titulo de la primera entrada',
-  '2025-11-03',
-  'imagen.jpg',
-  1,
-  'Este es el contenido de la primera entrada'
-); 
-SELECT * FROM entradas;
-
-Peticion cruzada
-SELECT 
-entradas.titulo,entradas.fecha,entradas.imagen,entradas.contenido,
-autores.nombre,autores.apellidos 
-FROM entradas
-LEFT JOIN autores
-ON entradas.id_autor = autores.Identificador;
-
-Por ultimo creamos una vista
-CREATE VIEW vista_entradas AS 
-SELECT 
-entradas.titulo,entradas.fecha,entradas.imagen,entradas.contenido,
-autores.nombre,autores.apellidos 
-FROM entradas
-LEFT JOIN autores
-ON entradas.id_autor = autores.Identificador;
-
-SELECT * FROM vista_entradas;
-```
+10. **Documentación de Ejecución de Comandos SQL**
+    - **Descripción:** Los estudiantes deben documentar cada paso que han seguido durante la creación de la base de datos, tablas relacionadas y vistas utilizando comentarios en sus archivos .sql o un documento markdown separado. Esto les enseñará a mantener registros precisos de su trabajo para futuras referencias.
 
 
 <a id="simulacro-examen-miercoles"></a>
@@ -2879,16 +3131,21 @@ SELECT * FROM vista_entradas;
 Esta carpeta contiene una serie de ejercicios diseñados para practicar los fundamentos del manejo de bases de datos relacionales utilizando SQL. Los estudiantes aprenderán a crear y gestionar tablas, insertar registros, establecer relaciones entre tablas mediante claves foráneas, realizar consultas complejas incluyendo joins y la creación de vistas para facilitar el acceso a los datos combinados. Asimismo, se incluye un ejercicio sobre la administración de usuarios y privilegios en una base de datos MySQL, lo cual es crucial para entender cómo controlar el acceso a las bases de datos y asegurar sus datos.
 
 ### crear tablas
+<small>Creado: 2025-11-05 12:53</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para crear una base de datos y dos tablas relacionadas dentro de ella. Primero, crea una base de datos llamada `portafolioceac`. Luego, selecciona esta base de datos para trabajar con ella.
+Este fragmento de código SQL se utiliza para crear una base de datos llamada `portafolioceac` y dos tablas dentro de ella: `Piezas` y `Categorias`. 
 
-A continuación, el código define dos tablas: `Piezas` y `Categorias`. La tabla `Piezas` tiene campos como `Identificador`, que es un número entero único (auto_increment) que sirve como clave principal; `titulo`, `descripcion`, `imagen`, `url`, todos ellos son cadenas de texto con diferentes tamaños máximos, y `id_categoria`, una referencia a la tabla `Categorias`.
+Primero, la instrucción `CREATE DATABASE portafolioceac;` crea una nueva base de datos con el nombre especificado. Luego, se utiliza `USE portafolioceac;` para seleccionar esta base de datos recién creada como la que se utilizará en las siguientes operaciones.
 
-La tabla `Categorias` también tiene un campo `Identificador` único (auto_increment) como clave principal, junto con campos `titulo` y `descripcion`. Este diseño permite almacenar información sobre piezas individuales de arte o trabajo en la tabla `Piezas` y asociarlas a categorías generales definidas en la tabla `Categorias`.
+La tabla `Piezas` almacena información sobre diferentes piezas o elementos del portafolio, donde cada fila representa una pieza individual. La columna `Identificador` es una clave primaria autoincremental que garantiza que cada pieza tenga un número único. Las columnas adicionales como `titulo`, `descripcion`, `imagen`, y `url` contienen información descriptiva sobre la pieza, mientras que `id_categoria` se refiere a la categoría a la cual pertenece esa pieza.
 
-Este código es fundamental porque establece la estructura básica para una base de datos que podría albergar información detallada sobre un portafolio de trabajos creativos, permitiendo organizar piezas en diferentes categorías.
+La tabla `Categorias` almacena información sobre las diferentes categorías en las que se pueden clasificar las piezas. Cada fila representa una categoría única y tiene un identificador autoincremental como clave primaria, además de columnas para el título y descripción de la categoría.
+
+Estas tablas permiten organizar y gestionar eficazmente información relacionada con diferentes elementos del portafolio en base a categorías definidas.
+
+`001-crear tablas.sql`
 
 ```sql
 CREATE DATABASE portafolioceac;
@@ -2913,16 +3170,19 @@ CREATE TABLE Categorias(
 ```
 
 ### insertar
+<small>Creado: 2025-11-05 12:54</small>
 
 #### Explicación
 
-Este código SQL está insertando dos nuevos registros en las tablas `Categorias` y `Piezas` de una base de datos relacionales. La función principal del comando `INSERT INTO` es añadir un nuevo registro a la tabla especificada.
+Este fragmento de código SQL se utiliza para insertar datos en dos tablas diferentes llamadas `Categorias` y `Piezas`. 
 
-En el primer bloque, se inserta un valor en la tabla `Categorias`. El primer campo (`NULL`) indica que se dejará que la base de datos asigne automáticamente un identificador único para esta nueva categoría. Los campos restantes son 'General' y una descripción 'Esta es la categoria general'. Esto establece una categoría básica llamada "General" en la base de datos.
+En primer lugar, el código agrega una nueva fila a la tabla `Categorias`, asignando un valor `NULL` que automáticamente generará un ID único (si está configurado así), 'General' como nombre de categoría y una descripción. Esto establece una categoría base en tu sistema.
 
-En el segundo bloque, se inserta información en la tabla `Piezas`. Similarmente, comienza con `NULL` para permitir que la base de datos asigne un ID. Los campos restantes incluyen el nombre 'Primera pieza', una descripción, un nombre de archivo ('josevicente.jpg'), una URL y finalmente '1' que probablemente se refiere al identificador de categoría (aunque depende del diseño específico de la base de datos). Este comando añade detalles sobre la primera pieza en la tabla `Piezas`.
+Luego, se inserta una nueva pieza en la tabla `Piezas`. De nuevo, el valor `NULL` para el primer campo indica que se generará automáticamente un ID único para esta pieza. La función INSERT continua añadiendo detalles sobre la pieza como su nombre y descripción, una imagen asociada (en este caso 'josevicente.jpg'), un enlace web y finalmente, se especifica que pertenece a la categoría con el ID 1, que es probablemente la categoría 'General' que acabamos de insertar.
 
-Estos comandos son fundamentales para poblar una base de datos con datos iniciales o nuevos registros durante el desarrollo y pruebas.
+Estos comandos son fundamentales para poblar una base de datos con datos iniciales o de prueba antes de proceder a más complejas operaciones como consultas y relaciones entre diferentes tablas.
+
+`002-insertar.sql`
 
 ```sql
 INSERT INTO Categorias VALUES(
@@ -2942,14 +3202,17 @@ INSERT INTO Piezas VALUES(
 ```
 
 ### fk
+<small>Creado: 2025-11-05 12:55</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para modificar una tabla existente llamada `Piezas`. Específicamente, está añadiendo una restricción que relaciona la tabla `Piezas` con otra tabla llamada `Categorias`. La restricción es un tipo especial llamado "Foreign Key" (clave foránea), lo cual garantiza que los valores en la columna `id_categoria` de la tabla `Piezas` correspondan a valores válidos presentes en la columna `identificador` de la tabla `Categorias`.
+Este fragmento de código SQL se utiliza para modificar una tabla llamada `Piezas`. En concreto, está añadiendo una restricción conocida como clave foránea, que es un tipo de vínculo entre dos tablas en una base de datos relacional. La nueva restricción se llama `fk_piezas_categorias` y conecta la tabla `Piezas` con la tabla `Categorias`. Específicamente, esta restricción vincula la columna `id_categoria` de la tabla `Piezas` con la columna `identificador` de la tabla `Categorias`.
 
-La parte importante aquí son las cláusulas `ON DELETE CASCADE` y `ON UPDATE CASCADE`. Estas indican que si se elimina o se actualiza un registro en la tabla `Categorias`, también se deben eliminar o actualizar automáticamente los registros correspondientes en la tabla `Piezas`. Esto es útil para mantener la integridad de los datos entre las dos tablas, asegurando que no haya referencias a categorías inexistentes y que todas las piezas siempre estén asociadas con categorías válidas.
+El objetivo principal es asegurar que cada valor en la columna `id_categoria` de la tabla `Piezas` corresponda a un valor existente en la columna `identificador` de la tabla `Categorias`. Esto ayuda a mantener la integridad referencial de los datos, lo que significa que no podrás tener una pieza que pertenezca a una categoría inexistente.
 
-En resumen, este código establece una relación entre las tablas `Piezas` y `Categorias`, asegurando la coherencia de los datos al mantener relaciones consistentes incluso cuando se realizan cambios en las categorías.
+Además, el código incluye dos opciones adicionales: `ON DELETE CASCADE` y `ON UPDATE CASCADE`. La opción `ON DELETE CASCADE` indica que si se elimina un registro en la tabla `Categorias`, también se eliminarán automáticamente los registros relacionados en la tabla `Piezas`. De manera similar, `ON UPDATE CASCADE` significa que si el valor de `identificador` en la tabla `Categorias` cambia, el valor correspondiente en la columna `id_categoria` de la tabla `Piezas` será actualizado automáticamente. Esto ayuda a mantener los datos consistentes y coherentes entre ambas tablas.
+
+`003-fk.sql`
 
 ```sql
 ALTER TABLE Piezas
@@ -2960,12 +3223,15 @@ ON UPDATE CASCADE;
 ```
 
 ### selecciones
+<small>Creado: 2025-11-05 12:55</small>
 
 #### Explicación
 
-Este fragmento de código SQL consta de dos sentencias `SELECT`, cada una seleccionando todos los registros de dos tablas diferentes llamadas `Categorias` y `Piezas`. La primera sentencia recupera toda la información disponible en la tabla `Categorias`, lo que incluye detalles sobre todas las categorías que hay en el sistema, como por ejemplo, nombres de categoría o descripciones. La segunda sentencia hace lo mismo pero para la tabla `Piezas`, trayendo todos los datos relacionados con las piezas del inventario.
+Este fragmento de código SQL está compuesto por dos consultas simples que seleccionan todos los registros de las tablas "Categorias" y "Piezas". La primera consulta, `SELECT * FROM Categorias;`, recupera toda la información de todas las filas en la tabla "Categorias", lo que significa que obtendrás una lista completa de todas las categorías registradas. De manera similar, la segunda consulta, `SELECT * FROM Piezas;`, hace lo mismo pero con la tabla "Piezas", proporcionando así un listado completo de todas las piezas almacenadas en el sistema.
 
-Estas consultas son útiles cuando se necesita un vistazo rápido a toda la información que contiene cada una de estas tablas, permitiendo al usuario entender cómo están estructuradas y qué tipos de datos contienen. Es importante destacar que el uso del asterisco (`*`) significa que se recuperan todas las columnas de ambas tablas, lo cual es conveniente para un primer vistazo pero puede no ser la mejor práctica si solo necesitas ciertas columnas específicas, ya que podría afectar el rendimiento en bases de datos muy grandes.
+Estas consultas son útiles para entender completamente los datos que se almacenan en estas tablas sin hacer suposiciones. Es importante conocer qué información contiene cada una de ellas antes de realizar operaciones más complejas o análisis relacionados con categorías y piezas en la base de datos.
+
+`004-selecciones.sql`
 
 ```sql
 SELECT * FROM Categorias;
@@ -2974,14 +3240,15 @@ SELECT * FROM Piezas;
 ```
 
 ### left join
+<small>Creado: 2025-11-05 12:57</small>
 
 #### Explicación
 
-Este fragmento de código SQL realiza una operación llamada "left join" entre dos tablas, `Piezas` y `Categorías`. En esta consulta, el objetivo es combinar todas las filas de la tabla `Piezas` con las correspondientes filas de la tabla `Categorías`, basándose en el campo `id_categoria` de la tabla `Piezas` que se relaciona con el campo `Identificador` de la tabla `Categorías`.
+Este fragmento de código SQL realiza una operación llamada "left join" entre dos tablas, que en este caso se llaman `Piezas` y `Categorias`. La función principal del left join es combinar filas de ambas tablas basándose en el criterio especificado: la columna `id_categoria` en la tabla `Piezas` debe coincidir con la columna `Identificador` en la tabla `Categorias`.
 
-Lo importante aquí es que, al hacer un left join, si una pieza no tiene correspondencia en la tabla `Categorías`, esta pieza aún aparecerá en el resultado final. Sin embargo, las columnas que normalmente serían llenadas por datos de la tabla `Categorías` tendrán valores nulos (NULL) para esas filas sin coincidencia.
+En otras palabras, este código selecciona todas las columnas (representado por el asterisco *) de ambas tablas pero garantiza que todas las filas de la tabla `Piezas` aparezcan en los resultados, incluso si no hay un correspondiente en la tabla `Categorias`. Esto es útil cuando queremos asegurarnos de no perder información sobre piezas que aún no han sido clasificadas en alguna categoría.
 
-Esta operación es útil cuando necesitas obtener toda la información disponible sobre las piezas, incluyendo sus categorías si estas existen. De esta manera, puedes tener una vista completa del estado actual de tus datos en ambas tablas relacionadas.
+`005-left join.sql`
 
 ```sql
 SELECT 
@@ -2992,16 +3259,17 @@ ON Piezas.id_categoria = Categorias.Identificador;
 ```
 
 ### ahora creo la vista
+<small>Creado: 2025-11-05 12:59</small>
 
 #### Explicación
 
-Este código SQL está compuesto por dos partes. Primero, se crea una vista llamada `piezas_y_categorias`. Una vista en SQL es como una tabla virtual que almacena los resultados de una consulta. En este caso, la vista combina información de dos tablas: `Piezas` y `Categorias`, usando un `JOIN` para conectar registros que comparten una relación basada en el campo `id_categoria`.
+Este código SQL crea una vista llamada `piezas_y_categorias` que combina información de dos tablas: `Piezas` y `Categorias`. Una vista en SQL es como una tabla virtual que permite simplificar consultas complejas mostrando los datos de manera más amigable. En este caso, la consulta realiza un `LEFT JOIN` entre las tablas `Piezas` y `Categorias`, lo cual significa que todos los registros de la tabla `Piezas` se incluirán en el resultado, junto con cualquier información relacionada desde la tabla `Categorias`. Si una pieza no tiene ninguna categoría asociada (es decir, su campo `id_categoria` es nulo), la vista aún mostrará esa pieza pero con valores nulos para los campos de la categoría.
 
-La parte del código que crea la vista selecciona datos específicos de ambas tablas, incluyendo los títulos (`titulo`) y descripciones (`descripcion`) de categorías e piezas, así como la imagen (`imagen`) y URL asociadas a las piezas. Este proceso une registros de `Piezas` con sus correspondientes categorías utilizando un `LEFT JOIN`, lo que significa que todos los datos de la tabla `Piezas` se incluyen en el resultado, incluso si no tienen una categoría asignada.
+La segunda parte del código (`SELECT * FROM piezas_y_categorias;`) simplemente selecciona todos los datos de esta nueva vista recién creada. Esto permite a los desarrolladores y usuarios trabajar con una representación simplificada y precalculada de los datos, facilitando la consulta y el análisis sin tener que escribir la compleja consulta SQL cada vez.
 
-La segunda parte del código es simplemente una consulta (`SELECT * FROM piezas_y_categorias;`) para ver el contenido de esta nueva vista recién creada. Esta acción permite a un usuario o desarrollador acceder fácilmente a los datos combinados sin tener que escribir la compleja consulta SQL cada vez.
+Esta técnica es muy útil cuando se necesita mostrar información relacionada entre diferentes tablas en un formato más accesible y coherente para las consultas frecuentes.
 
-La importancia de este código radica en su capacidad para simplificar y organizar información compleja en una estructura más accesible, facilitando el análisis y manipulación de datos relacionados entre tablas.
+`006-ahora creo la vista.sql`
 
 ```sql
 CREATE VIEW piezas_y_categorias AS 
@@ -3020,14 +3288,17 @@ SELECT * FROM piezas_y_categorias;
 ```
 
 ### usuario
+<small>Creado: 2025-11-05 13:02</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para crear y configurar un nuevo usuario en una base de datos MySQL. El proceso comienza creando un nuevo usuario llamado 'portafolioceac' con una contraseña especificada, permitiendo así que este usuario acceda a la base de datos desde el servidor local (localhost). Luego, mediante el comando `GRANT USAGE`, se otorgan los mínimos privilegios necesarios para que el usuario exista en el sistema pero no pueda realizar acciones restrictivas sin más permisos.
+Este fragmento de código SQL se utiliza para crear un nuevo usuario en una base de datos MySQL y asignarle permisos específicos. En primer lugar, el código crea un nuevo usuario llamado 'portafolioceac' con la contraseña 'portafolioceac', permitiendo que este usuario acceda a cualquier recurso desde localhost. Luego, se eliminan todos los límites asociados al usuario recién creado, lo que significa que no habrá restricciones en el número de consultas por hora o conexiones simultáneas.
 
-A continuación, con el comando `ALTER USER`, se eliminan todos los límites de acceso y uso del usuario 'portafolioceac', permitiéndole hacer prácticamente cualquier cosa dentro de las bases de datos para las que tenga privilegios. Finalmente, se otorgan a este usuario todos los privilegios en una base de datos específica llamada `portafolioceac`, lo que significa que el usuario puede realizar operaciones como crear tablas, insertar datos y modificar estructuras dentro de esa base de datos.
+Finalmente, se conceden todos los privilegios sobre la base de datos 'portafolioceac' a este nuevo usuario. Esto incluye operaciones como crear tablas, insertar datos y modificar registros dentro de esa base de datos específica. Al final del proceso, el comando `FLUSH PRIVILEGES` se utiliza para recargar las reglas de privilegios en la memoria del servidor MySQL, asegurando que los cambios sean efectivos inmediatamente.
 
-El comando `FLUSH PRIVILEGES` al final es importante porque actualiza las reglas de acceso en memoria sin necesidad de reiniciar el servidor MySQL, asegurando que los cambios se apliquen inmediatamente. Esto es crucial para garantizar la seguridad y funcionalidad correcta del sistema de gestión de bases de datos.
+Este tipo de script es crucial cuando se necesita administrar usuarios y sus permisos en un entorno de desarrollo o producción, garantizando que cada usuario tenga el acceso exacto necesario para realizar su trabajo sin comprometer la seguridad del sistema.
+
+`007-usuario.sql`
 
 ```sql
 -- crea usuario nuevo con contraseña
@@ -3056,6 +3327,48 @@ TO 'portafolioceac'@'localhost';
 -- recarga la tabla de privilegios
 FLUSH PRIVILEGES;
 ```
+
+### Actividades propuestas
+
+### Actividad 1: Creación de Tablas Básicas
+
+**Descripción:** Los estudiantes deben crear una base de datos y dos tablas, `Categorias` y `Piezas`, utilizando SQL. Este ejercicio les permitirá entender cómo definir esquemas en bases de datos relacionales.
+
+### Actividad 2: Inserción de Datos
+
+**Descripción:** En esta actividad, los alumnos deberán insertar un conjunto mínimo de registros en las tablas creadas en la actividad anterior para practicar con consultas `INSERT`.
+
+### Actividad 3: Creación de Restricciones de Llave Foránea (FK)
+
+**Descripción:** Los estudiantes deben añadir una restricción de clave foránea entre las tablas `Piezas` y `Categorias`. Esta actividad ayuda a comprender la importancia de mantener la integridad referencial en bases de datos.
+
+### Actividad 4: Consultas Básicas
+
+**Descripción:** Los alumnos deben ejecutar consultas SQL para seleccionar todos los registros de ambas tablas. Esto les permitirá familiarizarse con las operaciones básicas de consulta SELECT y cómo recuperar información almacenada.
+
+### Actividad 5: Operación JOIN
+
+**Descripción:** Se solicita a los estudiantes que realicen un `LEFT JOIN` entre las tablas `Piezas` y `Categorias`. Esta actividad ilustra cómo combinar datos desde múltiples tablas en una sola consulta.
+
+### Actividad 6: Creación de Vistas
+
+**Descripción:** Los alumnos deben crear una vista llamada `piezas_y_categorias` que combine información de ambas tablas utilizando un `LEFT JOIN`. Esta actividad enseña a los estudiantes cómo simplificar consultas complejas y reutilizar resultados.
+
+### Actividad 7: Administración de Usuarios en MySQL
+
+**Descripción:** Los estudiantes deben crear un nuevo usuario con privilegios limitados, similar al script proporcionado. Esto permitirá aprender sobre la gestión de usuarios y permisos dentro del sistema MySQL.
+
+### Actividad 8: Modificación de Límites de Usuario
+
+**Descripción:** En esta actividad, los alumnos deberán modificar los límites para el usuario recién creado (por ejemplo, cambiar limitaciones en consultas por hora). Esto ayuda a entender cómo ajustar y gestionar los recursos de un servidor MySQL.
+
+### Actividad 9: Consulta Avanzada con JOIN
+
+**Descripción:** Se propone crear una consulta que combine información de varias tablas utilizando `JOIN` para resolver problemas más complejos, lo cual ayudará a los estudiantes a practicar consultas SQL avanzadas y optimización de rendimiento.
+
+### Actividad 10: Modificación e Inserción de Datos
+
+**Descripción:** Los alumnos deben modificar y añadir registros en las tablas existentes utilizando `UPDATE` y `INSERT`. Esto les permitirá entender cómo mantener datos actualizados en una base de datos.
 
 
 <a id="examen-final"></a>
@@ -3066,16 +3379,13 @@ FLUSH PRIVILEGES;
 En esta carpeta, encontrarás una serie de ejercicios que te ayudarán a familiarizarte con el manejo básico y avanzado de bases de datos relacionales utilizando SQL. Los ejercicios inician con la creación de una base de datos y dos tablas interrelacionadas: "Piezas" y "Categorias". A continuación, trabajas con inserción de datos y definición de relaciones entre las tablas mediante claves foráneas. También practicas consultas que involucran unir múltiples tablas para obtener información completa sobre registros relacionados, además de la creación de vistas para facilitar ciertas consultas frecuentes. Por último, aprendes a gestionar usuarios y privilegios en el sistema de bases de datos, lo cual es fundamental para la seguridad y administración adecuada del entorno de desarrollo.
 
 ### crear tablas
+<small>Creado: 2025-11-10 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL sirve para crear una base de datos y dos tablas relacionadas dentro de ella. Primero, se crea la base de datos llamada `portafolioceac`. Luego, se selecciona esta base de datos para que todos los comandos subsiguientes trabajen con ella.
+Este fragmento de código SQL crea una base de datos llamada `portafolioceac` y luego establece esta base de datos como la activa para trabajar con ella. Después, se definen dos tablas: `Piezas` y `Categorias`. La tabla `Piezas` almacena información sobre diferentes piezas (como títulos, descripciones, imágenes, URLs y categorías a las que pertenecen), mientras que la tabla `Categorias` guarda los detalles de las distintas categorías (títulos y descripciones). Cada tabla tiene una columna `Identificador` como clave primaria autoincremental, lo que garantiza que cada registro tenga un identificador único. Esto es importante para organizar y relacionar datos en una base de datos relacional.
 
-La primera tabla creada es `Piezas`, que tiene varios campos: un identificador único que autoincrementa automáticamente (esto ayuda a asegurarse de que cada pieza tenga un ID diferente y único), título, descripción, imagen y URL. Además, esta tabla incluye una referencia a la tabla `Categorias` con el campo `id_categoria`.
-
-La segunda tabla creada es `Categorias`, que almacena información sobre las diferentes categorías en los campos `Identificador`, `titulo` y `descripcion`. El identificador de cada categoría también se autoincrementa automáticamente para garantizar la unicidad.
-
-Esta estructura permite organizar datos relacionados entre piezas y sus respectivas categorías, facilitando la gestión y búsqueda de información en una base de datos.
+`001-crear tablas.sql`
 
 ```sql
 CREATE DATABASE portafolioceac;
@@ -3100,14 +3410,17 @@ CREATE TABLE Categorias(
 ```
 
 ### insertar
+<small>Creado: 2025-11-10 08:14</small>
 
 #### Explicación
 
-Este código SQL está realizando inserciones en dos tablas diferentes llamadas `Categorias` y `Piezas`. En la tabla `Categorias`, se añade un nuevo registro que especifica una categoría con el nombre 'General' y proporciona una descripción breve para ella. Importante es que el campo `ID` de esta tabla, que generalmente actúa como clave primaria, está configurado en modo AUTO_INCREMENT (representada por `NULL`), lo que significa que la base de datos automáticamente asignará un valor único a este campo.
+Este fragmento de código SQL está realizando inserciones en dos tablas diferentes: `Categorias` y `Piezas`. La primera parte del código inserta un nuevo registro en la tabla `Categorias`, donde el primer valor `NULL` se refiere al campo ID que probablemente es una clave primaria con autoincremento. Luego, se especifican los valores para el nombre de la categoría (`'General'`) y su descripción (`'Esta es la categoria general'`). Esto significa que estamos creando una nueva categoría en la base de datos llamada "General".
 
-Luego, en la tabla `Piezas`, se inserta una nueva fila con detalles sobre una pieza específica. Este registro incluye el nombre de la pieza ("Primera pieza"), su descripción ("Esta es la descripcion de la primera pieza"), una imagen asociada (con el nombre del archivo 'josevicente.jpg'), un enlace web ('https://jocarsa.com') y finalmente, un valor que probablemente hace referencia a la tabla `Categorias` para vincular esta pieza con la categoría general creada anteriormente. De nuevo, se asume que el campo `ID` de la tabla `Piezas` también está en modo AUTO_INCREMENT.
+La segunda parte del código realiza una inserción similar pero esta vez en la tabla `Piezas`. Aquí también vemos el valor `NULL` para un ID probablemente autoincrementado. Los siguientes valores son: el nombre de la pieza (`'Primera pieza'`), su descripción (`'Esta es la descripcion de la primera pieza'`), una imagen asociada (`'josevicente.jpg'`) y un enlace (`https://jocarsa.com`). Finalmente, se especifica `1`, que probablemente hace referencia a un ID o código de categoría, relacionando esta pieza con la categoría "General" insertada anteriormente.
 
-Este tipo de inserciones es crucial en sistemas administrativos y comerciales basados en bases de datos para registrar nuevos artículos, categorías o cualquier otro tipo de entidad relevante dentro del sistema.
+Estos comandos son importantes porque permiten poblar la base de datos con información inicial y demostrar cómo funcionan las relaciones entre diferentes tablas (como categorías y piezas) en una base de datos relacional.
+
+`002-insertar.sql`
 
 ```sql
 INSERT INTO Categorias VALUES(
@@ -3127,12 +3440,17 @@ INSERT INTO Piezas VALUES(
 ```
 
 ### fk
+<small>Creado: 2025-11-10 08:14</small>
 
 #### Explicación
 
-Este código SQL se utiliza para modificar una tabla existente llamada `Piezas`. Específicamente, está añadiendo una nueva restricción de clave foránea que vincula la columna `id_categoria` en la tabla `Piezas` con la columna `identificador` en la tabla `Categorias`. Esto establece una relación entre las dos tablas: cada pieza tiene que pertenecer a una categoría específica, ya que `id_categoria` debe ser un valor válido de `identificador` en la tabla `Categorias`.
+Este código SQL añade una restricción de clave foránea a la tabla llamada `Piezas`. La función principal es establecer una relación entre las tablas `Piezas` y `Categorias`, asegurando que cada pieza pertenezca a una categoría válida. Específicamente, la columna `id_categoria` en la tabla `Piezas` se vincula con la columna `identificador` de la tabla `Categorias`. 
 
-La parte crucial es el uso de `ON DELETE CASCADE` y `ON UPDATE CASCADE`. Estos son comandos que controlan cómo se manejan los cambios (borrado o actualización) en las tablas relacionadas. En este caso, si una categoría se elimina (`ON DELETE`) o su identificador cambia (`ON UPDATE`) en la tabla `Categorias`, la base de datos realizará automáticamente acciones similares en cualquier pieza que esté asociada con esa categoría en la tabla `Piezas`. Esto ayuda a mantener la integridad y consistencia de los datos entre las dos tablas.
+La cláusula `ON DELETE CASCADE` indica que si se elimina un registro de la tabla `Categorias`, todas las filas relacionadas en `Piezas` también serán eliminadas automáticamente. De manera similar, `ON UPDATE CASCADE` asegura que si el identificador (clave primaria) de una categoría cambia, la misma modificación será aplicada a todos los registros correspondientes en la tabla `Piezas`.
+
+Esta restricción es crucial para mantener la integridad referencial y coherencia entre las tablas relacionadas, evitando datos inconsistentes o huérfanos en tu base de datos.
+
+`003-fk.sql`
 
 ```sql
 ALTER TABLE Piezas
@@ -3143,12 +3461,17 @@ ON UPDATE CASCADE;
 ```
 
 ### selecciones
+<small>Creado: 2025-11-10 08:14</small>
 
 #### Explicación
 
-Este código SQL consta de dos sentencias SELECT que sirven para obtener información de dos tablas diferentes en una base de datos. La primera instrucción `SELECT * FROM Categorias;` recupera todos los registros y todas las columnas de la tabla llamada "Categorias". Esto significa que obtendrás toda la información almacenada en esa tabla, que probablemente contiene detalles sobre categorías relacionadas con piezas o productos.
+El código que has proporcionado contiene dos consultas SQL sencillas. La primera consulta `SELECT * FROM Categorias;` selecciona todos los datos de la tabla llamada "Categorias". Esto significa que obtendrás toda la información almacenada en esa tabla, mostrando cada fila y columna.
 
-La segunda sentencia, `SELECT * FROM Piezas;`, hace lo mismo pero para la tabla "Piezas". Esta consulta devolverá todos los datos de esta tabla también. Estas dos consultas son útiles cuando necesitas ver el contenido completo de estas tablas para comprobar sus valores actuales o realizar análisis con esos datos. Son fundamentales en cualquier trabajo con bases de datos, ya que te permiten acceder rápidamente a toda la información almacenada en ellas.
+La segunda consulta, `SELECT * FROM Piezas;`, hace lo mismo pero para una tabla diferente llamada "Piezas". También devuelve todas las filas y columnas de esta tabla.
+
+Estos comandos son útiles cuando necesitas revisar o comprender la estructura de tus tablas y el tipo de datos que contienen. Es importante en el desarrollo y mantenimiento de bases de datos, ya que te permiten ver qué información estás almacenando y cómo se organiza.
+
+`004-selecciones.sql`
 
 ```sql
 SELECT * FROM Categorias;
@@ -3157,14 +3480,17 @@ SELECT * FROM Piezas;
 ```
 
 ### left join
+<small>Creado: 2025-11-10 08:14</small>
 
 #### Explicación
 
-Este código SQL realiza una operación llamada "left join" entre dos tablas, en este caso `Piezas` y `Categorias`. Lo que hace es combinar todos los registros de la tabla `Piezas` con los registros correspondientes de la tabla `Categorías`, basándose en el campo `id_categoria` de la tabla `Piezas` y el campo `Identificador` de la tabla `Categorías`.
+Este fragmento de código SQL realiza una operación llamada "left join" entre dos tablas, `Piezas` y `Categorias`. El objetivo es combinar todos los registros de la tabla `Piezas` con los registros de la tabla `Categorias`, siempre que coincidan en el campo `id_categoria` de `Piezas` y `Identificador` de `Categorias`.
 
-El propósito principal del left join es asegurar que se incluyan todas las piezas en el resultado, incluso si no tienen una correspondencia en la tabla de categorías. Esto significa que si una pieza no tiene categoría asignada (es decir, su campo `id_categoria` no coincide con ningún valor en `Identificador`), esta pieza aún aparecerá en el resultado del query, pero los campos de la tabla `Categorías` serán `NULL`.
+El `left join` asegura que todas las filas de la tabla izquierda (en este caso, `Piezas`) se incluyan en los resultados, incluso si no hay un match en la tabla derecha (`Categorias`). Esto significa que si una pieza no tiene asociada ninguna categoría, el resultado mostrará esa pieza con valores nulos para los campos de `Categorias`.
 
-Esta consulta es importante porque ayuda a entender la relación entre las piezas y sus categorías sin perder información sobre las piezas que no tienen una categoría asignada o para las que no existe un registro correspondiente.
+Esta consulta es importante porque permite obtener información completa sobre las piezas y sus posibles categorías, facilitando así un análisis más detallado del catálogo o inventario en una base de datos.
+
+`005-left join.sql`
 
 ```sql
 SELECT 
@@ -3175,14 +3501,19 @@ ON Piezas.id_categoria = Categorias.Identificador;
 ```
 
 ### ahora creo la vista
+<small>Creado: 2025-11-10 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL está creando una vista llamada `piezas_y_categorias` que combina información de dos tablas, `Categorias` y `Piezas`. La vista selecciona detalles como el título y la descripción tanto de las piezas como de sus respectivas categorías. También incluye los datos de imagen y URL asociados a cada pieza.
+Este fragmento de código SQL se encarga de crear una vista llamada `piezas_y_categorias` en la base de datos. Una vista en SQL es como un alias para una consulta compleja que puede ser utilizada como si fuera una tabla real, lo cual facilita el acceso a los datos consolidados desde diferentes tablas relacionadas.
 
-El código utiliza una cláusula `LEFT JOIN`, lo que significa que todas las filas de la tabla `Piezas` aparecerán en el resultado, incluso si no hay coincidencias en la tabla `Categorias`. Esto puede ser útil para casos donde algunas piezas pueden no tener categorías asignadas.
+La primera parte del código crea esta vista seleccionando información tanto de la tabla `Piezas` como de la tabla `Categorias`. Se utiliza un `LEFT JOIN`, lo que significa que todos los registros de la tabla `Piezas` serán incluidos en el resultado, y se añadirá información de la tabla `Categorias` donde haya correspondencia entre `id_categoria` (en `Piezas`) e `Identificador` (en `Categorias`). Si no hay coincidencias, los campos de `Categorias` tendrán valores nulos.
 
-Finalmente, al seleccionar `* FROM piezas_y_categorias`, se están mostrando todos los datos de la vista recién creada. Esta consulta es importante porque permite a los usuarios acceder fácilmente a una combinación predefinida de información sobre las piezas y sus categorías sin tener que escribir una consulta compleja cada vez.
+La segunda parte del código es una consulta simple que selecciona todos los datos de la vista recién creada (`piezas_y_categorias`), mostrándolos en pantalla. Esto permite a cualquier persona que tenga acceso a esta base de datos obtener rápidamente un resumen combinado de las piezas y sus categorías asociadas sin necesidad de escribir una consulta compleja cada vez.
+
+Esta operación es importante porque simplifica el proceso de análisis y visualización de la información relacionada entre dos tablas, permitiendo a los desarrolladores y administradores de base de datos trabajar con conjuntos de datos más grandes y complicados de manera más eficiente.
+
+`006-ahora creo la vista.sql`
 
 ```sql
 CREATE VIEW piezas_y_categorias AS 
@@ -3201,16 +3532,15 @@ SELECT * FROM piezas_y_categorias;
 ```
 
 ### usuario
+<small>Creado: 2025-11-10 08:14</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para crear un nuevo usuario en una base de datos MySQL y otorgarle permisos específicos. En primer lugar, crea el usuario 'portafolioceac' con una contraseña que debe especificarse al momento del registro. Luego, le permite acceso básico a este usuario usando la sentencia `GRANT USAGE`, lo cual es necesario para establecer los siguientes límites y configuraciones.
+Este fragmento de código SQL te enseña cómo crear un nuevo usuario en MySQL y otorgarle permisos para acceder a una base de datos específica. Primero, crea un usuario llamado 'portafolioceac' con la contraseña 'portafolioceac'. Luego, le permite al usuario acceso general a todas las bases de datos del servidor con el comando `GRANT USAGE`, pero sin ningún privilegio específico. A continuación, se eliminan los límites por defecto para este usuario en cuanto a consultas y conexiones permitidas durante un cierto periodo de tiempo, lo que significa que el usuario puede realizar operaciones ilimitadas.
 
-A continuación, se modifica el usuario recién creado para quitar cualquier restricción que pueda tener en cuanto al número de consultas o conexiones permitidas. Esto se logra con la instrucción `ALTER USER`. Es importante hacer esto si deseamos que el usuario tenga acceso completo a una base de datos sin restricciones.
+Finalmente, el código otorga al usuario 'portafolioceac' todos los privilegios sobre todas las tablas dentro de la base de datos llamada 'portafolioceac'. Esto incluye permisos para hacer prácticamente cualquier cosa en esa base de datos, como crear tablas, insertar datos, actualizar y eliminar. Para que estos cambios en los privilegios surtan efecto inmediatamente, se ejecuta el comando `FLUSH PRIVILEGES`. Este código es importante porque permite la gestión segura y controlada del acceso a las bases de datos para diferentes usuarios según sus necesidades específicas.
 
-Finalmente, se le otorgan todos los privilegios disponibles sobre todas las tablas en la base de datos 'portafolioceac' al usuario recién creado. Esto significa que el usuario podrá realizar cualquier operación permitida por MySQL en esa base de datos específica. La última línea `FLUSH PRIVILEGES` sirve para forzar a MySQL a cargar nuevamente los privilegios, asegurando que todos los cambios hechos sean efectivos inmediatamente.
-
-Este proceso es fundamental cuando se necesita gestionar usuarios y sus accesos en bases de datos para mantener la seguridad y controlar quién puede hacer qué con los datos.
+`007-usuario.sql`
 
 ```sql
 -- crea usuario nuevo con contraseña
@@ -3239,6 +3569,32 @@ TO 'portafolioceac'@'localhost';
 -- recarga la tabla de privilegios
 FLUSH PRIVILEGES;
 ```
+
+### Actividades propuestas
+
+1. **Crear una Base de Datos y Tablas**
+   - Descripción: Los estudiantes deben crear una base de datos llamada "mi_portafolio" y dos tablas relacionadas, una para "Categorias" y otra para "Piezas". Este ejercicio les ayudará a entender cómo se estructuran las bases de datos relativas al tema.
+
+2. **Inserción de Datos**
+   - Descripción: Los estudiantes deben insertar registros en las tablas creadas anteriormente con al menos un registro en cada tabla, demostrando su comprensión sobre la inserción de datos y cómo mantener relaciones entre entidades.
+
+3. **Creación de Claves Foráneas**
+   - Descripción: Este ejercicio requiere que los estudiantes añadan una clave foránea a la tabla "Piezas" referenciada en la columna "id_categoria". Ayudará a entender las relaciones entre tablas y cómo se mantienen estas relaciones con claves foráneas.
+
+4. **Consultas Básicas**
+   - Descripción: Los estudiantes deben escribir consultas SELECT simples para recuperar todos los registros de ambas tablas que han creado, lo que les permitirá familiarizarse con las consultas básicas en SQL y la estructura de sus propias tablas.
+
+5. **Join LEFT**
+   - Descripción: En este ejercicio se pide a los estudiantes realizar un JOIN LEFT entre las dos tablas para recuperar todos los datos relacionados, incluyendo aquellos sin relación directa (registros huérfanos en "Piezas"). Esto les permitirá entender cómo funcionan las relaciones y joins.
+
+6. **Creación de Vistas**
+   - Descripción: Los estudiantes deben crear una vista que combine información desde ambas tablas usando un JOIN LEFT, similar al ejercicio anterior pero esta vez almacenando el resultado como una vista persistente para consultarlo fácilmente en el futuro.
+
+7. **Manejo de Usuarios y Privilegios**
+   - Descripción: Este ejercicio les guía a través del proceso de creación de un nuevo usuario SQL y la asignación de privilegios adecuados, mostrando cómo administrar usuarios y permisos dentro de MySQL para una gestión eficiente de la base de datos.
+
+8. **Manipulación Compleja de Datos**
+   - Descripción: Se pide a los estudiantes que realicen modificaciones en las tablas existentes (insert, update, delete) basadas en ciertas condiciones, ayudándoles a familiarizarse con cómo cambiar y actualizar la información en una base de datos.
 
 
 
@@ -3253,16 +3609,19 @@ FLUSH PRIVILEGES;
 Esta carpeta contiene una serie de ejercicios SQL diseñados para familiarizarte con las operaciones básicas sobre bases de datos relacionales. En concreto, trabajaremos con la tabla `clientes`, donde aprenderás a realizar selecciones (proyección) y ordenación de registros. Los ejercicios te guiarán desde consultas simples que recuperan todos los campos hasta aquellas más complejas que requieren especificar columnas individuales, alias para las columnas y ordenaciones ascendentes o descendentes según uno o dos criterios. A través de estos ejercicios, desarrollarás competencias esenciales en SQL como la capacidad para formular consultas precisas y comprender los resultados obtenidos.
 
 ### creo una base de datos
+<small>Creado: 2025-11-14 10:25</small>
 
 #### Explicación
 
-Este fragmento de código SQL sirve para crear una base de datos y tablas en un servidor MySQL. Comienza por la creación de una nueva base de datos llamada `clientes`. Luego, selecciona esta base de datos usando el comando `USE clientes`, lo que establece el contexto para todas las operaciones siguientes.
+Este fragmento de código SQL se utiliza para crear y llenar una base de datos simple llamada `clientes`. Primero, el comando `CREATE DATABASE clientes;` crea la nueva base de datos si no existe ya. Luego, con `USE clientes;`, nos aseguramos de que estamos trabajando en esta base de datos específica.
 
-A continuación, se define una tabla también llamada `clientes` con tres columnas: `nombre`, `apellidos` y `edad`. Estas columnas almacenan información sobre los nombres (como "Juan"), apellidos (como "Lopez") y edades de diferentes clientes. La columna `nombre` y `apellidos` son del tipo VARCHAR, lo que significa que pueden contener texto de longitud variable, mientras que la columna `edad` es del tipo INT para almacenar números enteros.
+A continuación, se define una tabla llamada `clientes` que tiene tres columnas: `nombre`, `apellidos` y `edad`. Cada columna almacena información diferente sobre los clientes registrados. Por ejemplo, `nombre` guarda el nombre del cliente como un texto (VARCHAR), mientras que `edad` es un número entero (INT).
 
-Finalmente, el código agrega registros (filas) a la tabla `clientes`. Cada registro contiene un nombre, apellidos y edad. Por ejemplo, se inserta en la base de datos que Juan Lopez tiene 45 años, Javier Martinez tiene 46 años, y así sucesivamente para una lista más larga de clientes.
+Finalmente, se insertan varios registros en la tabla `clientes`. Cada registro contiene una combinación de nombre, apellidos y edad para diferentes personas. Estos datos permiten almacenar información sobre los clientes en la base de datos.
 
-Este proceso es crucial para almacenar y organizar información en una base de datos, permitiendo a las empresas o entidades gestionar datos de sus clientes de manera estructurada.
+Este tipo de script es importante porque nos ayuda a configurar un entorno de prueba con datos ficticios que podemos utilizar para practicar consultas SQL básicas, como seleccionar registros o ordenarlos según ciertos criterios.
+
+`001-creo una base de datos.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3314,20 +3673,30 @@ INSERT INTO clientes VALUES ("Irene","Serrano",27);
 ```
 
 ### select super sencillo
+<small>Creado: 2025-11-14 10:26</small>
 
 #### Explicación
 
-Este fragmento de código SQL es una consulta muy básica que se utiliza para recuperar toda la información de una tabla llamada `clientes`. Cuando ejecutas esta sentencia, el sistema te devuelve todas las filas y columnas de la tabla `clientes`, lo que significa que obtendrás todos los registros almacenados en ella. Es importante porque permite a los desarrolladores o administradores de bases de datos tener un panorama general de toda la información guardada en esa tabla específica sin necesidad de especificar detalles adicionales como las columnas individuales o condiciones de búsqueda. Esto es especialmente útil durante el análisis inicial o cuando se necesita una vista completa del contenido de la tabla para entender su estructura y los datos que contiene.
+Este fragmento de código SQL es muy simple pero fundamental. La instrucción `SELECT * FROM clientes;` sirve para seleccionar todas las filas y todas las columnas de la tabla llamada "clientes". En otras palabras, esta consulta te permite ver todos los registros que contiene esa tabla en su totalidad. Es una forma rápida de revisar el contenido de la tabla sin tener que especificar cada columna individualmente. Esta consulta es especialmente útil cuando estás empezando a trabajar con una nueva base de datos y deseas familiarizarte rápidamente con sus datos.
+
+`002-select super sencillo.sql`
 
 ```sql
 SELECT * FROM clientes;
 ```
 
 ### select nombrando columnas
+<small>Creado: 2025-11-14 10:27</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para seleccionar información específica de una tabla llamada `clientes`. La consulta toma tres columnas concretas (`nombre`, `apellidos` y `edad`) del conjunto total de datos disponibles en la tabla. Al especificar estas columnas, el resultado de la consulta mostrará solo los nombres, apellidos y edades de los clientes registrados en la base de datos, omitiendo cualquier otra información que no se haya pedido explícitamente. Esto es útil cuando necesitas una vista clara y concisa del conjunto de datos, lo que facilita su análisis y visualización.
+Este fragmento de código SQL selecciona tres columnas específicas de la tabla llamada `clientes`. Las columnas que se eligen son `nombre`, `apellidos` y `edad`. El comando `SELECT` es utilizado para extraer datos del sistema de gestión de bases de datos, mientras que la cláusula `FROM clientes` indica que los datos deben ser recogidos de la tabla llamada `clientes`.
+
+Esta consulta es importante porque permite obtener un conjunto específico de información sin incluir todas las columnas disponibles en la tabla. Esto ayuda a mantener el resultado del query limpio y relevante, evitando cualquier dato no necesario que podría complicar la interpretación de los resultados.
+
+En resumen, este código te proporcionará una lista de nombres, apellidos y edades de todos los registros existentes en la tabla `clientes`.
+
+`003-select nombrando columnas.sql`
 
 ```sql
 SELECT 
@@ -3342,10 +3711,15 @@ clientes;
 ```
 
 ### solo algunas columnas
+<small>Creado: 2025-11-14 10:28</small>
 
 #### Explicación
 
-Este fragmento de código SQL selecciona información específica de una base de datos. Específicamente, el comando `SELECT` indica que queremos extraer ciertos datos del conjunto de registros llamado "clientes". En este caso, sólo se solicitan las columnas "nombre" y "apellidos", es decir, únicamente obtendremos los nombres y apellidos de todos los clientes registrados en la tabla. Esto es útil cuando necesitas un listado simplificado que incluya solamente esos dos campos, permitiendo una mejor visualización o procesamiento del nombre completo de cada cliente sin sobrecargar el resultado con otros datos innecesarios.
+Este fragmento de código SQL selecciona solo dos columnas, el nombre y los apellidos, de la tabla llamada "clientes". La sentencia `SELECT` indica que queremos extraer datos del sistema de gestión de bases de datos. Al especificar sólo `nombre` y `apellidos`, estamos indicando que deseamos recuperar solo estas dos columnas para cada registro en la tabla "clientes".
+
+Esta consulta es importante porque nos permite obtener información específica sin tener que recoger toda la data disponible, lo cual puede ser muy útil cuando queremos mostrar o procesar solamente ciertos aspectos de los datos, como un listado de clientes con sus nombres y apellidos.
+
+`004-solo algunas columnas.sql`
 
 ```sql
 SELECT 
@@ -3359,10 +3733,13 @@ clientes;
 ```
 
 ### proyeccion
+<small>Creado: 2025-11-14 10:30</small>
 
 #### Explicación
 
-Este fragmento de código SQL es una consulta que selecciona y renombra ciertos datos de la tabla llamada `clientes`. La instrucción `SELECT` indica que queremos extraer información específica, en este caso, el nombre, apellidos y edad de los clientes registrados. Al utilizar `AS 'Nombre del cliente'`, `AS 'Apellidos del cliente'` y `AS 'Edad del cliente'`, se está dando un alias a cada columna, lo que significa que en lugar de mostrar simplemente "nombre", "apellidos" y "edad" en la salida, las columnas aparecerán con etiquetas más descriptivas. Esto es especialmente útil para mejorar la legibilidad del resultado cuando otros usuarios o tú mismo necesiten revisar los datos en el futuro.
+Este código SQL selecciona específicamente tres columnas de la tabla `clientes`: `nombre`, `apellidos` y `edad`. La función `SELECT` es fundamental en SQL para extraer datos de una base de datos. En este caso, no solo se obtienen los valores de estas tres columnas, sino que también se les da un nombre más descriptivo al momento de mostrarlos: 'Nombre del cliente', 'Apellidos del cliente' y 'Edad del cliente'. Esto es útil para hacer el resultado de la consulta más legible y comprensible cuando alguien ve los datos en una interfaz o archivo, ya que las etiquetas son mucho más informativas que simplemente "nombre", "apellidos" y "edad".
+
+`005-proyeccion.sql`
 
 ```sql
 SELECT 
@@ -3377,10 +3754,15 @@ clientes;
 ```
 
 ### ordenacion alfabetica ascendiente por defecto
+<small>Creado: 2025-11-14 10:32</small>
 
 #### Explicación
 
-Este fragmento de código SQL sirve para seleccionar información específica de una tabla llamada `clientes` y ordenarla alfabéticamente según la columna `apellidos`. En primer lugar, el comando `SELECT` extrae las columnas `nombre`, `apellidos` y `edad` del conjunto de datos, renombrándolas como 'Nombre del cliente', 'Apellidos del cliente' y 'Edad del cliente' respectivamente para mejorar su legibilidad. Luego, la cláusula `FROM clientes` indica que los datos a seleccionar provienen de la tabla llamada `clientes`. Finalmente, el comando `ORDER BY apellidos` ordena todos los registros de la consulta en orden alfabético ascendente basado en la columna `apellidos`, lo que facilita la búsqueda y visualización de nombres de clientes. Este tipo de consulta es útil para presentar información de manera estructurada y fácil de entender, especialmente cuando se requiere un listado ordenado de personas o entidades.
+Este fragmento de código SQL selecciona información específica de una tabla llamada `clientes`. La consulta obtiene los nombres, apellidos y edades de los clientes en la base de datos. Utiliza el comando `SELECT` para especificar las columnas que se quieren recuperar, renombrándolas de manera más descriptiva con el uso de `AS`, lo cual es útil para hacer entender mejor qué representan cada columna en el resultado.
+
+Lo interesante de esta consulta es la ordenación alfabética ascendente por defecto de los apellidos. La cláusula `ORDER BY apellidos` asegura que los resultados se muestren primero según las entradas alfabéticamente más bajas (A, B, C...), y luego en secuencia hasta el final del alfabeto. Esto facilita la lectura de registros relacionados entre sí por apellido, lo cual es especialmente útil para listas telefónicas o directorios de clientes.
+
+`006-ordenacion alfabetica ascendiente por defecto.sql`
 
 ```sql
 SELECT 
@@ -3398,10 +3780,13 @@ apellidos;
 ```
 
 ### ascendiente explicito
+<small>Creado: 2025-11-14 10:33</small>
 
 #### Explicación
 
-Este fragmento de código SQL es una consulta que selecciona y organiza información de la tabla llamada `clientes`. La consulta toma tres columnas específicas (`nombre`, `apellidos` y `edad`) y les da un alias más descriptivo: 'Nombre del cliente', 'Apellidos del cliente' y 'Edad del cliente'. Esto hace que los resultados sean más claros y fáciles de leer. Después de seleccionar estas columnas, el código ordena todos los registros en la tabla `clientes` por la columna `apellidos` en orden ascendente (de A a Z). Esta consulta es importante porque permite obtener una lista completa de clientes organizada alfabéticamente según sus apellidos, lo que facilita la búsqueda y el análisis de datos.
+Este fragmento de código SQL realiza una consulta en la base de datos para seleccionar y ordenar información sobre los clientes. La consulta extrae tres columnas específicas (nombre, apellidos y edad) de la tabla llamada "clientes". Además, da un nombre amigable a cada columna usando `AS` para que sean más descriptivas: 'Nombre del cliente', 'Apellidos del cliente' y 'Edad del cliente'. Finalmente, ordena el resultado por los apellidos de manera ascendente, lo cual significa que la lista resultante comenzará con los clientes cuyos apellidos empiezan con las letras más iniciales del alfabeto y seguirá en orden alfabético hasta llegar a las últimas. Esta consulta es útil cuando se necesita presentar información sobre los clientes de manera organizada y legible.
+
+`007-ascendiente explicito.sql`
 
 ```sql
 SELECT 
@@ -3419,14 +3804,17 @@ apellidos ASC;
 ```
 
 ### descendiente
+<small>Creado: 2025-11-14 10:35</small>
 
 #### Explicación
 
-Este fragmento de código SQL selecciona información específica de una tabla llamada `clientes`. El objetivo es mostrar el nombre, apellidos y edad de los clientes en la base de datos. La cláusula `AS` se utiliza para renombrar las columnas resultantes, por ejemplo, `nombre AS 'Nombre del cliente'`, lo que hace que la salida sea más descriptiva y fácil de entender.
+Este fragmento de código SQL selecciona información específica de una tabla llamada `clientes`. En concreto, el código extrae los nombres, apellidos y edades de todos los clientes registrados en la base de datos. Utiliza alias para hacer más clara la descripción de las columnas, por ejemplo, cambia "nombre" a "Nombre del cliente", lo que facilita entender rápidamente qué información está siendo consultada.
 
-Después de seleccionar las columnas necesarias, el código indica que debe tomar los datos desde la tabla `clientes`. Finalmente, se ordena el resultado en orden descendente (`DESC`) según la columna `apellidos`, lo que significa que los clientes con apellidos más altos alfabéticamente aparecerán primero. Esto es útil para organizar una lista de clientes por apellido de forma rápida y clara.
+Lo importante es que después de seleccionar estos datos, el código ordena el resultado en orden descendente según los apellidos de los clientes. Esto significa que la lista final mostrará primero las personas cuyos apellidos empiezan con letras más adelante del alfabeto y luego seguirá descendiendo hasta llegar a aquellos cuyos apellidos comienzan con letras iniciales.
 
-En resumen, este código ayuda a visualizar un listado bien organizado de los clientes según su apellido en orden descendente, facilitando la lectura y el análisis de datos en bases de datos grandes o complejas.
+Este tipo de consulta es útil cuando necesitas organizar información para presentarla de manera que sea fácil de leer o analizar, por ejemplo, en informes donde se requiere un orden específico basado en ciertos criterios como los apellidos.
+
+`008-descendiente.sql`
 
 ```sql
 SELECT 
@@ -3444,12 +3832,19 @@ apellidos DESC;
 ```
 
 ### descendiente por edad
+<small>Creado: 2025-11-14 10:36</small>
 
 #### Explicación
 
-Este fragmento de código SQL es una consulta que selecciona información específica de una tabla llamada `clientes`. La consulta toma tres columnas de la tabla (`nombre`, `apellidos` y `edad`) y les da nombres amigables para hacer más fácil su comprensión en el resultado final (por ejemplo, `nombre AS 'Nombre del cliente'`). Esto significa que en lugar de ver simplemente "nombre", verás "Nombre del cliente" en la salida.
+Este fragmento de código SQL te permite seleccionar información específica de una tabla llamada `clientes`. En concreto, el código extrae los nombres, apellidos y edades de todos los clientes registrados en esa tabla. La parte clave aquí es que esta consulta no solo recoge datos, sino que también organiza la lista según un criterio: ordena a los clientes por edad en sentido descendente, lo cual significa que aparecen primero las personas más mayores.
 
-Después de seleccionar estas columnas con sus nombres amigables, el código ordena los resultados por la columna `edad` en orden descendente (`ORDER BY edad DESC`). Esto asegura que todos los clientes aparecerán listados desde el más viejo hasta el más joven. Esta consulta es útil cuando necesitas ver una lista de clientes clasificados por su edad, empezando con las personas mayores y terminando con las más jóvenes.
+La cláusula `SELECT` se utiliza para especificar qué columnas deseamos recuperar. En este caso, renombramos las columnas de salida usando la palabra clave `AS` para hacerlas más descriptivas y fáciles de entender en el resultado final (por ejemplo, `edad AS 'Edad del cliente'`). A continuación, con la cláusula `FROM`, indicamos que queremos obtener esta información de una tabla llamada `clientes`.
+
+Finalmente, la línea `ORDER BY edad DESC;` indica cómo debemos ordenar los resultados. Aquí estamos especificando que deseamos ver a los clientes más mayores primero en la lista. El término `DESC` se usa para indicar un orden descendente, es decir, del mayor al menor.
+
+Este tipo de consulta es útil cuando necesitas presentar información de manera organizada y fácil de leer, especialmente cuando estás trabajando con grandes cantidades de datos y quieres destacar ciertos patrones o tendencias.
+
+`009-descendiente por edad.sql`
 
 ```sql
 SELECT 
@@ -3467,12 +3862,15 @@ edad DESC;
 ```
 
 ### ordenacion por dos columnas
+<small>Creado: 2025-11-14 10:37</small>
 
 #### Explicación
 
-Este fragmento de código SQL selecciona información específica de la tabla llamada "clientes". El objetivo es obtener el nombre, apellidos y edad de cada cliente en un formato amigable. Por ejemplo, en lugar de simplemente mostrar "nombre", el resultado muestra "Nombre del cliente" para hacer más legible la salida.
+Este fragmento de código SQL está realizando una consulta en la base de datos para seleccionar información específica de una tabla llamada `clientes`. La consulta selecciona tres columnas: el nombre, los apellidos y la edad del cliente. Estas columnas se renombran en el resultado de la consulta para hacerlas más descriptivas, usando alias como 'Nombre del cliente', 'Apellidos del cliente' y 'Edad del cliente'.
 
-Después de seleccionar los datos requeridos, se ordenan estos registros primero por la columna "edad" en orden descendente (de mayor a menor edad), y si varias personas tienen la misma edad, entonces se ordena entre ellas según sus apellidos en orden ascendente (de A a Z). Esto garantiza que las personas más mayores aparecen al principio de la lista, y para aquellas del mismo grupo de edad, estarán ordenadas por su apellido.
+Lo importante aquí es que después de seleccionar las columnas, el código ordena los resultados primero por la edad (columna `edad`) de forma descendente (`DESC`), lo que significa que aparecerán primero los clientes más viejos. Si dos o más clientes tienen la misma edad, entonces se ordenará alfabéticamente por apellidos (columna `apellidos`) en orden ascendente (`ASC`). Esto asegura un orden claro y lógico en el resultado de la consulta, permitiendo a quien consulte esta información obtener una lista bien estructurada de los clientes.
+
+`010-ordenacion por dos columnas.sql`
 
 ```sql
 SELECT 
@@ -3489,6 +3887,40 @@ ORDER BY
 edad DESC,apellidos ASC;
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Crear y Rellenar una Base de Datos Similares
+- **Descripción:** Los estudiantes deben crear una base de datos similar a la proporcionada en el archivo `001` y rellenarla con al menos 20 registros. Se espera que aprendan cómo crear una tabla, definir columnas e insertar datos.
+
+### Actividad 2: Consulta Básica
+- **Descripción:** Los estudiantes deben escribir un script SQL similar al archivo `002` para seleccionar todos los registros de la base de datos recién creada. Esto ayudará a familiarizarlos con cómo obtener información completa desde una tabla.
+
+### Actividad 3: Nombrando Columnas en Consultas
+- **Descripción:** Basándose en el archivo `005`, los estudiantes deben realizar una consulta que muestre todos los registros pero nombrando las columnas de forma más descriptiva. Esto enseña cómo personalizar la presentación de datos.
+
+### Actividad 4: Proyección Selectiva
+- **Descripción:** Los estudiantes deben modificar el script del archivo `006` para seleccionar solo el nombre y los apellidos, pero no la edad. Se pretende que aprendan a filtrar columnas específicas en consultas SQL.
+
+### Actividad 5: Ordenación Ascendente por Defecto
+- **Descripción:** Los estudiantes deben copiar y ejecutar una consulta similar al archivo `006`, pero ajustándola para ordenar los registros de forma ascendente por el apellido. Se busca que entiendan cómo funciona la cláusula ORDER BY sin especificar ASC.
+
+### Actividad 6: Ordenación Ascendente Explícita
+- **Descripción:** Basándose en `007`, los estudiantes deben escribir una consulta para ordenar de forma ascendente por apellido, pero esta vez especificando explícitamente la cláusula `ASC`. Se espera que comprendan la diferencia entre ordenaciones implícitas y explícitas.
+
+### Actividad 7: Ordenación Descendente
+- **Descripción:** A partir del archivo `008`, los estudiantes deben crear una consulta para ordenar todos los registros por apellido de forma descendente. Esto les enseña cómo especificar la dirección de ordenación en SQL.
+
+### Actividad 8: Ordenación por Edad Descendente
+- **Descripción:** Utilizando el ejemplo del archivo `009`, los estudiantes deben realizar una consulta que ordene a todos los clientes por edad, mostrando primero a las personas mayores. Esto les permite comprender cómo ordenar registros basándose en diferentes criterios.
+
+### Actividad 9: Ordenación Múltiple
+- **Descripción:** Los estudiantes deben copiar y adaptar la consulta del archivo `010` para crear una que ordene los datos primero por edad de forma descendente y luego, dentro de cada grupo de edad, por apellido en orden ascendente. Se pretende enseñarles cómo manejar ordenaciones complejas con múltiples criterios.
+
+### Actividad 10: Consulta Avanzada (Proyección + Ordenación)
+- **Descripción:** Los estudiantes deben combinar conceptos aprendidos hasta ahora para crear una consulta que seleccione solo el nombre y apellido de los clientes, nombrando las columnas adecuadamente y ordenándolas primero por edad descendente y luego por apellido ascendente. Esto les ayuda a integrar diferentes aspectos del manejo de datos en SQL.
+
+Estas actividades están diseñadas para ayudar a los estudiantes a dominar conceptos básicos y avanzados de consultas SQL, preparándolos para proyectos más complejos en el futuro.
+
 
 <a id="operadores-operadores-de-comparacion-operadores-logicos"></a>
 ## Operadores. Operadores de comparación. Operadores lógicos
@@ -3498,14 +3930,23 @@ edad DESC,apellidos ASC;
 En esta carpeta, trabajaremos con diferentes tipos de operadores en SQL para realizar consultas más avanzadas en una base de datos. Iniciamos mostrando cómo conectarse y visualizar información básica sobre los clientes. Luego, nos adentraremos en el uso de operadores aritméticos para realizar cálculos sencillos basados en los datos existentes en la tabla de clientes. Seguidamente, exploraremos los operadores de comparación para filtrar registros según ciertas condiciones y luego les daremos un alias descriptivo a estos resultados. Finalmente, aprenderemos a combinar condiciones utilizando el operador lógico AND para refinar aún más nuestros criterios de búsqueda en las consultas SQL. Estos ejercicios te ayudarán a desarrollar habilidades cruciales en la manipulación y análisis de datos mediante la utilización de diferentes tipos de operadores en SQL.
 
 ### login en la base de datos
+<small>Creado: 2025-11-17 10:25</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para trabajar con una base de datos llamada `clientes`. La primera línea `USE clientes;` indica a la herramienta MySQL que debe utilizar esta base de datos específica para cualquier consulta o operación que siga.
+Este fragmento de código SQL está diseñado para trabajar con una base de datos llamada `clientes`. El objetivo principal es seleccionar y mostrar información desde la tabla `clientes`.
 
-La siguiente parte del código, `SELECT nombre FROM clientes;`, es una consulta que busca en la tabla `clientes` y muestra solo los nombres (columna `nombre`) de todos los registros que contiene esa tabla. Esto puede ser útil si quieres obtener una lista rápida de todos los nombres de clientes sin detalles adicionales.
+Primero, el comando `USE clientes;` cambia la base de datos actual a 'clientes', lo que significa que todas las consultas siguientes se ejecutarán en esta base de datos específica.
 
-Finalmente, `SELECT * FROM clientes;` hace algo muy similar pero más completo: devuelve todas las columnas y filas de la tabla `clientes`. Esto te dará toda la información que haya almacenada en esta tabla, lo cual es útil para una vista general completa del conjunto de datos.
+El código luego contiene dos sentencias SELECT:
+
+1. La primera sentencia `SELECT nombre FROM clientes;` selecciona solo los nombres de todos los registros presentes en la tabla `clientes`. Esto devuelve una lista de nombres sin mostrar ninguna otra información del registro.
+
+2. La segunda sentencia `SELECT * FROM clientes;` es similar, pero esta vez selecciona todas las columnas (`*` es un atajo que significa "todas las columnas") de todos los registros en la tabla `clientes`. Esto proporcionará una vista completa de toda la información almacenada en la tabla.
+
+Estos comandos son útiles para entender cómo estructurar y recuperar datos desde una base de datos, lo cual es fundamental cuando se trabaja con sistemas que dependen de bases de datos para gestionar y presentar información.
+
+`001-login en la base de datos.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3520,14 +3961,21 @@ FROM clientes;
 ```
 
 ### operadores aritmeticos
+<small>Creado: 2025-11-17 10:26</small>
 
 #### Explicación
 
-Este código SQL es una serie de consultas que realizan operaciones aritméticas básicas sobre el campo `edad` en la base de datos llamada `clientes`. Cada consulta selecciona los campos `nombre`, `apellidos` y realiza una operación matemática con el valor del campo `edad`. 
+Este fragmento de código SQL muestra cómo realizar operaciones aritméticas básas sobre un campo en una base de datos. En este caso, se trabaja con el campo `edad` de la tabla `clientes`. El objetivo es mostrar cómo sumar, restar, multiplicar y dividir el valor del campo `edad` por 500.
 
-En la primera consulta, se suma 500 al valor de `edad`; en la segunda, se resta 500; en la tercera, se multiplica por 500; y finalmente, en la cuarta, se divide entre 500. Estas operaciones permiten manipular los datos existentes de diferentes maneras para obtener resultados específicos o simplemente entender cómo funcionan las expresiones aritméticas en SQL.
+Primero, se selecciona la base de datos `clientes` usando la instrucción `USE clientes;`.
 
-Este tipo de ejercicios es importante porque ayuda a comprender cómo integrar cálculos matemáticos directamente en consultas SQL, lo que es útil para realizar análisis dinámico y transformaciones de datos sin necesidad de hacerlo fuera del sistema de gestión de bases de datos.
+Luego, se ejecutan cuatro consultas SELECT separadas. Cada una muestra los nombres y apellidos de todos los clientes junto con el resultado de realizar una operación aritmética (suma, resta, multiplicación o división) sobre su edad por 500.
+
+Estas operaciones son importantes porque demuestran cómo manipular datos dentro de consultas SQL para generar información útil. Por ejemplo, si quisiéramos calcular un bono basado en la antigüedad (edad), podríamos usar multiplicación como se muestra aquí.
+
+En resumen, el código ilustra cómo realizar cálculos simples con campos numéricos en una base de datos SQL, lo cual es fundamental para muchas aplicaciones de bases de datos.
+
+`002-operadores aritmeticos.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3560,14 +4008,13 @@ FROM clientes;
 ```
 
 ### comparacion
+<small>Creado: 2025-11-17 10:29</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para realizar una consulta en una base de datos llamada `clientes`. La primera línea, aunque no es parte del código SQL propiamente dicho, indica cómo acceder a la base de datos MySQL desde la terminal utilizando el comando `sudo mysql -u root -p`, lo que permite al usuario conectarse como administrador (`root`) y luego entrar con una contraseña.
+Este fragmento de código SQL tiene como objetivo seleccionar información de una base de datos específica y realizar una comparación simple con los datos obtenidos. Primero, el comando `USE clientes;` indica que estamos trabajando con la base de datos llamada "clientes". Luego, se ejecuta una consulta `SELECT` que recupera cuatro columnas: `nombre`, `apellidos` e `edad` del conjunto de datos en la tabla "clientes", y además incluye una columna adicional que es el resultado de la comparación `edad < 30`. Esta última columna simplemente mostrará un valor `TRUE` o `FALSE` para cada fila, dependiendo de si la edad del registro es menor a 30 años o no. Este tipo de consulta es útil cuando se necesita filtrar o analizar los datos basándose en ciertas condiciones.
 
-La consulta en sí selecciona información de la tabla `clientes`. Específicamente, esta consulta devuelve los nombres, apellidos y edades de todos los registros en la tabla. Además, incluye una columna adicional que simplemente indica si la edad de cada cliente es menor a 30 años o no, devolviendo un valor booleano (`TRUE` o `FALSE`). 
-
-Esta técnica es útil para filtrar y categorizar datos rápidamente sin tener que crear nuevas columnas en la base de datos. En este caso, ayuda a identificar fácilmente cuáles son los clientes menores de 30 años basándose directamente en el valor de la columna `edad`.
+`003-comparacion.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3583,14 +4030,17 @@ FROM clientes;
 ```
 
 ### ponemos alias
+<small>Creado: 2025-11-17 10:30</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para ayudarte a entender cómo seleccionar información y agregar alias en una base de datos. En primer lugar, el comando `USE clientes;` indica que estás trabajando con la base de datos llamada "clientes". Luego, se ejecuta una consulta SELECT que extrae los campos 'nombre', 'apellidos' y 'edad' del mismo conjunto de datos "clientes".
+Este fragmento de código SQL es una consulta que selecciona información y realiza un cálculo simple sobre los datos en una base de datos. La consulta comienza con el comando `USE clientes;`, lo cual indica que estamos trabajando con la base de datos llamada "clientes". 
 
-Lo interesante es el último campo seleccionado: `edad < 30 AS '¿es menor de 30 años?'`. Aquí, estás creando un alias para una expresión booleana que evalúa si la edad del cliente es menor a 30. Si la edad es menor a 30, esta columna devolverá "1", y "0" en caso contrario. El alias '¿es menor de 30 años?' hace que el resultado sea más legible al mostrar directamente si un cliente cumple esa condición.
+La parte principal de la consulta usa el comando `SELECT` para extraer cuatro columnas de la tabla: 'nombre', 'apellidos' y 'edad'. Además, crea una nueva columna en los resultados de la consulta usando la expresión `edad < 30 AS '¿es menor de 30 años?'`. Esta nueva columna será un valor booleano que indica si cada persona es menor de 30 años. Si la condición es verdadera (la persona tiene menos de 30 años), el resultado será "1", y si es falsa, será "0". 
 
-Este tipo de consulta es útil cuando necesitas filtrar o clasificar datos basándote en ciertas condiciones, facilitando así la interpretación y análisis de los resultados de manera inmediata.
+Esta consulta es útil para entender cómo combinar consultas simples con lógica básica en SQL, permitiendo a los usuarios obtener información adicional o filtrada directamente desde la base de datos.
+
+`004-ponemos alias.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3606,16 +4056,19 @@ FROM clientes;
 ```
 
 ### operador logico and
+<small>Creado: 2025-11-17 10:32</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para seleccionar información específica desde una base de datos llamada "clientes". El objetivo es extraer los nombres, apellidos y edades de los registros, pero con un enfoque adicional en categorizar las edades utilizando operadores lógicos.
+Este fragmento de código SQL está diseñado para mostrar cómo se pueden utilizar operadores lógicos y condicionales en una consulta. La consulta selecciona información de la tabla llamada `clientes`, específicamente el nombre, apellidos y edad de los clientes.
 
-Primero, el código establece que debemos trabajar con la base de datos "clientes" usando la instrucción `USE clientes;`.
+El código utiliza expresiones con operadores lógicos como `&&` (que es equivalente a `AND`) para crear condiciones adicionales basadas en la edad del cliente. Crea tres columnas virtuales: 'Menor de 30 años', 'Entre 30 y 40 años' y 'Mayor de 40 años'. Estas columnas muestran un valor verdadero (1) o falso (0) dependiendo si la condición correspondiente se cumple para cada cliente.
 
-Luego, se ejecuta una consulta SELECT que selecciona columnas específicas y añade condiciones para clasificar la edad en diferentes rangos. Por ejemplo, se utiliza la condición `edad < 30 AS 'Menor de 30 años'` para etiquetar a los clientes menores de 30 años, y el operador lógico `&&` combinado con `edad >= 30 && edad < 40 AS 'Entre 30 y 40años'` para identificar a aquellos que tienen entre 30 y 39 años. Esto ayuda en la interpretación inmediata de los resultados, facilitando su análisis.
+Por ejemplo, la columna 'Menor de 30 años' será 1 si el cliente tiene menos de 30 años y 0 en caso contrario. De esta manera, puedes entender fácilmente cuántos clientes caen en diferentes rangos de edad sin tener que hacer cálculos adicionales fuera del contexto de la base de datos.
 
-Este tipo de consulta es importante porque permite categorizar rápidamente los datos según ciertos criterios, lo cual puede ser útil tanto para reportes como para realizar análisis más detallados sobre el perfil demográfico de los clientes.
+Esta consulta es útil porque permite una rápida visualización y análisis de los datos según ciertos criterios, facilitando la toma de decisiones basada en el perfil demográfico de los clientes.
+
+`005-operador logico and.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3632,6 +4085,38 @@ edad > 40 AS 'Mayor de 40 años'
 FROM clientes;
 ```
 
+### Actividades propuestas
+
+1. **Consulta básica sobre la tabla `clientes`**
+   - Descripción: Los estudiantes deben realizar consultas SELECT simples para obtener información básica del usuario. Se espera que entiendan cómo acceder a una base de datos y consultar tablas específicas.
+
+2. **Operaciones aritméticas con edades**
+   - Descripción: Los alumnos deberán aplicar operadores aritméticos en el campo `edad` para modificar sus valores en la consulta, ayudándolos a comprender cómo se pueden manipular los datos de forma sencilla.
+
+3. **Uso de operadores de comparación**
+   - Descripción: Se requiere que los estudiantes filtren registros usando condiciones de comparación (como < o >) para seleccionar solo ciertos tipos de filas basándose en el valor de la edad, lo que les enseñará a filtrar datos según criterios específicos.
+
+4. **Aplicando alias a consultas**
+   - Descripción: Los estudiantes deben agregar columnas con un alias significativo utilizando AS para mejorar la legibilidad y claridad del resultado de las consultas, aprendiendo cómo dar nombres descriptivos a los resultados de consulta.
+
+5. **Uso combinado de operadores lógicos AND**
+   - Descripción: Se les pedirá que combinen condiciones usando el operador AND en una única sentencia SELECT para filtrar registros según múltiples criterios simultáneamente, enseñándoles a manipular datos complejos.
+
+6. **Comparación y clasificación de clientes por grupos etarios**
+   - Descripción: Los alumnos deben crear consultas que agrupen los clientes en diferentes categorías basándose en su edad usando operadores lógicos y de comparación, mejorando sus habilidades para segmentar datos según rangos específicos.
+
+7. **Validación del registro en la base de datos**
+   - Descripción: Los estudiantes deben implementar una consulta que valide el acceso a un usuario determinado en función de su nombre o id proporcionados por parámetro, familiarizándose con cómo manejar operaciones de autenticación básica en SQL.
+
+8. **Comparativa multi-criterio entre clientes**
+   - Descripción: Se les pide crear una consulta que compare múltiples campos (como edad y residencia) para identificar patrones o coincidencias dentro del conjunto de datos, potenciando sus habilidades analíticas con SQL.
+
+9. **Ejecución de consultas dinámicas basadas en parámetros**
+   - Descripción: Los estudiantes deben crear una consulta que permita la entrada de parámetros para personalizar las condiciones de búsqueda y filtrado en tiempo real, mejorando su habilidad para manejar entradas variables en SQL.
+
+10. **Implementación de consultas con subconsultas simples**
+    - Descripción: Se les pide implementar una consulta que incluya subconsultas para obtener información adicional basada en los resultados de otra consulta previa, introduciendo conceptos más avanzados como la manipulación de datos anidados.
+
 
 <a id="consultas-de-resumen"></a>
 ## Consultas de resumen
@@ -3643,14 +4128,21 @@ Esta carpeta contiene una serie de ejercicios que te ayudarán a familiarizarte 
 A través de estos ejercicios, adquirirás competencias esenciales en el manejo de datos y obtendrás una visión práctica de cómo se integran diferentes lenguajes para trabajar con información almacenada en bases de datos.
 
 ### entramos y pedimos
+<small>Creado: 2025-11-17 10:37</small>
 
 #### Explicación
 
-Este código SQL está diseñado para trabajar con una base de datos en un entorno de servidor, específicamente para mostrar todos los registros de la tabla llamada "clientes". En primer lugar, el comando `-- sudo mysql -u root -p` es utilizado en la línea de comandos para iniciar sesión en MySQL como usuario root y se te pedirá que ingreses tu contraseña. Esto no es parte del código SQL propiamente dicho, sino una instrucción para acceder al sistema.
+Este fragmento de código SQL tiene dos partes claramente definidas. Primero, la línea que comienza con `-- sudo mysql -u root -p` es un comando para acceder a la base de datos MySQL como usuario root y solicitar una contraseña. Esto no es parte del código SQL propiamente dicho, sino una instrucción en línea de comandos para iniciar sesión en el servidor de bases de datos.
 
-Luego, el comando `USE clientes;` selecciona la base de datos llamada "clientes", estableciendo esta como la base de datos activa donde se realizarán las consultas subsiguientes. Esto es importante porque sin este comando, SQL no sabría cuál es la base de datos en la que debemos trabajar.
+La segunda parte del código, que sí está escrito en SQL, hace lo siguiente: 
 
-Finalmente, el comando `SELECT * FROM clientes;` recupera todos los registros y columnas de la tabla "clientes". Aquí, el asterisco (*) funciona como un comodín para indicar a SQL que debe devolver todas las columnas disponibles en esa tabla. Este comando es útil cuando necesitas obtener una visión rápida y completa de lo que contiene la tabla "clientes" sin especificar columnas individuales.
+- La línea `USE clientes;` selecciona la base de datos llamada "clientes". Esto significa que todas las consultas SQL que sigan se ejecutarán dentro de esta base de datos específica.
+  
+- La consulta `SELECT * FROM clientes;` extrae todos los datos de la tabla llamada "clientes" en la base de datos actual. Aquí, el asterisco (*) es un comodín que indica que se deben seleccionar todas las columnas y filas disponibles en esa tabla.
+
+Este código es útil cuando necesitas ver toda la información almacenada en una tabla específica para revisarla o analizarla. Es importante tener cuidado con este tipo de consulta, especialmente en bases de datos grandes, ya que puede devolver mucha información a la vez.
+
+`001-entramos y pedimos.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3663,10 +4155,13 @@ FROM clientes;
 ```
 
 ### resumen con conteo
+<small>Creado: 2025-11-17 10:38</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para contar el número total de registros en la tabla `clientes` basándose en la columna `nombre`. Primero, se usa la instrucción `USE clientes;` para seleccionar la base de datos llamada "clientes", lo que permite que las consultas siguientes actúen sobre esta base de datos específica. Luego, la consulta principal `SELECT COUNT(nombre) FROM clientes;` cuenta el número de entradas en la columna `nombre` de la tabla `clientes`. Esto es útil para obtener una idea rápida del tamaño o la cantidad de registros existentes en esa tabla, lo que puede ser crucial para la administración y el análisis de datos.
+Este fragmento de código SQL te ayuda a entender cuántos registros hay en una tabla específica. Primero, la línea `USE clientes;` indica que estás trabajando con una base de datos llamada "clientes". Luego, el comando `SELECT COUNT(nombre) FROM clientes;` cuenta cuántas filas tienen un valor en la columna 'nombre' dentro de la tabla 'clientes'. Es importante destacar que esta consulta te proporciona el número total de entradas donde se ha especificado algún nombre, lo cual es útil para saber cuántos clientes tienes registrados con nombres en tu base de datos.
+
+`002-resumen con conteo.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3679,10 +4174,13 @@ FROM clientes;
 ```
 
 ### cliente mas joven
+<small>Creado: 2025-11-17 10:40</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para realizar una consulta en una base de datos específica y obtener un valor resumen. Primero, la línea `USE clientes;` indica que se va a trabajar con la base de datos llamada "clientes". A continuación, el comando `SELECT MIN(edad) FROM clientes;` selecciona el valor mínimo (el más bajo) de la columna "edad" en la tabla "clientes". Esto significa que el código está buscando determinar cuál es la edad mínima registrada para los clientes en esa base de datos. Esta consulta es útil, por ejemplo, para identificar al cliente más joven registrado en el sistema o simplemente para obtener información estadística sobre las edades de los clientes.
+Este fragmento de código SQL está diseñado para seleccionar el cliente más joven en una base de datos. Primero, la línea `USE clientes;` indica que estamos trabajando con una base de datos específica llamada "clientes". Luego, la consulta `SELECT MIN(edad) FROM clientes;` busca y devuelve la edad mínima registrada en la tabla "clientes", es decir, el valor más bajo de la columna "edad". Esto ayuda a identificar cuál es la menor edad entre todos los registros de clientes almacenados en esa tabla. Es importante para entender quién es el cliente más joven en tu base de datos, lo que puede ser útil para análisis demográficos o para ofertas personalizadas dirigidas a ese grupo de edad.
+
+`003-cliente mas joven.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3695,12 +4193,13 @@ FROM clientes;
 ```
 
 ### cliente joven identificado
+<small>Creado: 2025-11-17 10:43</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para seleccionar la información del cliente más joven en una base de datos llamada `clientes`. Primero, se establece que debes estar utilizando la base de datos `clientes` con el comando `USE clientes;`. Luego, el SELECT indica que deseas recuperar tres columnas específicas: nombre, apellidos y edad de la tabla `clientes`. El ORDER BY edad ASC asegura que los registros estén ordenados en orden ascendente según la edad. Finalmente, LIMIT 1 garantiza que solo se devuelva una fila, es decir, el cliente más joven.
+Este fragmento de código SQL busca encontrar al cliente más joven registrado en una base de datos. Primero, selecciona la base de datos llamada "clientes" con el comando `USE clientes;`. Luego, ejecuta una consulta que selecciona los nombres, apellidos y edades de todos los registros en la tabla "clientes". La cláusula `ORDER BY edad ASC` ordena estos registros por edad en orden ascendente (del más joven al más viejo). Finalmente, la instrucción `LIMIT 1` asegura que solo se devuelva el primer registro de esta lista ordenada, es decir, el cliente con la menor edad. Este tipo de consulta es útil cuando necesitas identificar rápidamente a un individuo específico basado en una característica como la edad.
 
-Este tipo de consulta es útil cuando necesitas obtener información rápida sobre un aspecto específico del conjunto de datos, como identificar al cliente más joven para promociones o estudios demográficos.
+`004-cliente joven identificado.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3717,10 +4216,17 @@ LIMIT 1;
 ```
 
 ### cliente mas viejo identificado
+<small>Creado: 2025-11-17 10:44</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para obtener información sobre el cliente más viejo en una base de datos. Primero, la línea `USE clientes;` indica que estamos trabajando con la base de datos llamada "clientes". Luego, el comando `SELECT nombre, apellidos, edad FROM clientes ORDER BY edad DESC LIMIT 1;` selecciona los nombres, apellidos y edades de todos los clientes en la tabla "clientes", pero ordena estos registros por la columna "edad" en orden descendente (de mayor a menor) y limita el resultado a solo una fila. Esto significa que el código devuelve únicamente el nombre, apellido y edad del cliente más viejo en la base de datos. Este tipo de consulta es útil cuando necesitas identificar rápidamente al cliente con la mayor edad registrada para análisis o reportes especiales.
+Este fragmento de código SQL selecciona la información del cliente que tiene la mayor edad en una base de datos llamada `clientes`. La consulta comienza por utilizar la base de datos `clientes` con el comando `USE clientes;`.
+
+Luego, se realiza una selección (`SELECT`) de los campos `nombre`, `apellidos` y `edad` desde la tabla `clientes`. El ordenamiento descendente por la columna `edad` (`ORDER BY edad DESC`) asegura que el cliente más viejo aparezca en la parte superior del resultado. Finalmente, se limita el resultado a solo una fila con el comando `LIMIT 1`, lo que significa que solo obtendrás los datos del cliente más anciano de todos.
+
+Esta consulta es útil cuando necesitas identificar rápidamente al cliente más mayor registrado en tu base de datos para propósitos de análisis o reporte.
+
+`005-cliente mas viejo identificado.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3737,12 +4243,13 @@ LIMIT 1;
 ```
 
 ### funcion de promedio
+<small>Creado: 2025-11-17 10:45</small>
 
 #### Explicación
 
-Este fragmento de código SQL realiza una consulta sencilla en una base de datos para calcular el promedio de las edades registradas en la tabla `clientes`. Primero, el comando `USE clientes;` indica al sistema que queremos trabajar con la base de datos llamada `clientes`.
+Este fragmento de código SQL se utiliza para calcular el promedio de la edad de todos los registros en una tabla llamada `clientes`. Primero, la línea `USE clientes;` indica que estamos seleccionando la base de datos "clientes" para trabajar con ella. Luego, la consulta `SELECT AVG(edad) FROM clientes;` calcula y muestra la media (promedio) de todas las edades registradas en la tabla `clientes`. Esta es una forma sencilla pero muy útil de obtener un resumen estadístico rápido de los datos almacenados en tu base de datos.
 
-La consulta principal es `SELECT AVG(edad) FROM clientes;`, donde `AVG()` es una función integrada de SQL utilizada para calcular el promedio de los valores en un campo específico. En este caso, se está calculando el promedio de las edades (`edad`) que están almacenadas en la tabla `clientes`. Este tipo de consulta es útil cuando necesitas obtener estadísticas rápidas y resumidas sobre los datos guardados en tu base de datos, como saber la edad media de tus clientes.
+`006-funcion de promedio.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3755,19 +4262,19 @@ FROM clientes;
 ```
 
 ### redondeos
+<small>Creado: 2025-11-17 10:47</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para trabajar con una base de datos llamada `clientes`, específicamente con la columna `edad`. El objetivo es calcular el promedio de edad (`AVG(eded)`) y luego redondear ese valor usando diferentes funciones: `ROUND()`, `FLOOR()` y `CEIL()`.
+Este fragmento de código SQL contiene tres consultas que realizan cálculos diferentes sobre la columna `edad` en una tabla llamada `clientes`. Cada consulta calcula el promedio de las edades, pero lo redondea de manera distinta:
 
-Primero, se selecciona la base de datos `clientes` con el comando `USE clientes;`.
+1. La primera consulta utiliza la función `ROUND(AVG(edad))`, que calcula el promedio de todas las edades en la tabla y luego redondea ese número al entero más cercano.
+2. La segunda consulta usa `FLOOR(AVG(edad))`. Esta función devuelve el mayor número entero menor o igual al promedio de las edades, es decir, siempre redondea hacia abajo.
+3. Finalmente, la tercera consulta aplica `CEIL(AVG(edad))`, que calcula el promedio y luego redondea hacia arriba, dando como resultado el menor número entero mayor o igual al promedio.
 
-Luego, hay tres consultas que realizan operaciones similares pero con resultados ligeramente diferentes:
-1. La primera consulta utiliza `ROUND(AVG(edad))`, lo cual redondea al entero más cercano el promedio de las edades en la tabla.
-2. La segunda consulta usa `FLOOR(AVG(edad))`, que devuelve el mayor número entero menor o igual al promedio, es decir, siempre redondeará hacia abajo.
-3. Finalmente, la tercera consulta aplica `CEIL(AVG(edad))`, lo cual redondea al siguiente entero más cercano si hay un decimal en el promedio, redondeando siempre hacia arriba.
+Estas consultas son útiles cuando se necesita presentar un valor numérico más legible o simplificado basado en el promedio de edades, dependiendo del contexto específico en que se utilicen.
 
-Estas consultas son útiles cuando necesitas presentar datos numéricos de manera más manejable o conforme a ciertas reglas de negocio, como informes que requieren valores enteros sin decimales.
+`007-redondeos.sql`
 
 ```sql
 -- sudo mysql -u root -p
@@ -3788,18 +4295,15 @@ FROM clientes;
 ```
 
 ### conecto a bases de datos
+<small>Creado: 2025-11-17 10:49</small>
 
 #### Explicación
 
-Este fragmento de código en Python se utiliza para conectarse a una base de datos MySQL y ejecutar una consulta SQL que calcula la edad promedio redondeada hacia abajo de todos los registros en una tabla llamada "clientes". 
+Este código python se utiliza para conectarse a una base de datos MySQL y realizar una consulta que calcula la edad promedio redondeada hacia abajo de todos los registros en una tabla llamada "clientes". Primero, el programa importa la función `mysql.connector` necesaria para gestionar la conexión con la base de datos. Luego establece una conexión a la base de datos especificando el host (localhost), usuario, contraseña y nombre de la base de datos. Una vez que se ha establecido la conexión, se crea un objeto cursor que permite ejecutar comandos SQL en la base de datos.
 
-Primero, el código importa el módulo `mysql.connector` para poder establecer la conexión con la base de datos. Luego, crea una conexión usando las credenciales proporcionadas (en este caso, se conecta a un servidor local) y especificando la base de datos "clientes".
+El código ejecuta una consulta SQL que calcula la edad promedio (`AVG(edad)`) de todos los clientes registrados en la tabla y luego redondea este valor hacia abajo utilizando la función `FLOOR()`. Finalmente, recoge todas las filas devueltas por esta consulta y las imprime en la consola. Este tipo de consulta es útil para obtener un resumen rápido y fácil de entender de los datos almacenados en una base de datos, como el promedio de edad general de los clientes registrados.
 
-Una vez que está conectado, el código crea un objeto cursor que permite ejecutar comandos SQL en la base de datos. En este caso, se ejecuta una consulta que calcula la media de las edades (`AVG(edad)`) y luego redondea hacia abajo al número entero más cercano con `FLOOR()`. 
-
-Finalmente, el resultado de esta consulta es obtenido usando `fetchall()`, lo que devuelve todas las filas del resultado en forma de una lista de tuplas. Este resultado se imprime para visualizar los datos devueltos por la base de datos.
-
-Esta práctica es importante porque permite realizar cálculos y obtener resúmenes estadísticos directamente desde los datos almacenados en bases de datos, lo cual es fundamental en el análisis de datos e informática empresarial.
+`008-conecto a bases de datos.py`
 
 ```python
 import mysql.connector 
@@ -3824,14 +4328,15 @@ print(filas)
 ```
 
 ### graficas
+<small>Creado: 2025-11-17 10:59</small>
 
 #### Explicación
 
-Este fragmento de código está utilizando la biblioteca `matplotlib` en Python para crear y mostrar un gráfico circular (también conocido como gráfico de pizza) basado en datos proporcionados. La primera línea del código importa la función `pie` desde el submódulo `pyplot` de `matplotlib`, que es comúnmente referenciada como `pt`.
+Este código es una pequeña pieza que utiliza la biblioteca `matplotlib` en Python para crear un gráfico de pastel (también conocido como gráfico circular o pie chart). Primero, el código importa la función `pyplot`, generalmente referida como `pt`, desde la biblioteca `matplotlib`. Luego, se crea un gráfico de pastel utilizando los datos proporcionados en una lista: `[40, 30, 20, 10]`. Estos números representan las proporciones que cada sector del gráfico ocupará. Finalmente, el método `pt.show()` muestra la imagen del gráfico al usuario.
 
-Enseguida, se llama a la función `pt.pie()` con una lista que contiene cuatro números: [40, 30, 20, 10]. Estos números representan los porcentajes o proporciones de cada sector en el gráfico circular. Finalmente, la llamada a `pt.show()` renderiza y muestra el gráfico en una ventana emergente.
+Este tipo de gráficos es útil para visualizar rápidamente cómo se distribuyen los datos en partes proporcionales, lo cual puede ser especialmente relevante cuando trabajas con bases de datos y necesitas representar porcentajes o proporciones.
 
-Este tipo de código es importante porque permite visualizar fácilmente datos que se distribuyen como porcentajes totales, ayudando así a entender rápidamente las proporciones entre diferentes categorías.
+`009-graficas.py`
 
 ```python
 # pip3 install matplotlib --break-system-packages
@@ -3840,6 +4345,40 @@ import matplotlib.pyplot as pt
 pt.pie([40, 30, 20, 10])
 pt.show()
 ```
+
+### Actividades propuestas
+
+### Actividad 1: Resumen de Datos Básicos
+**Descripción:** Los estudiantes deben ejecutar consultas SQL para obtener un resumen básico de los datos de la tabla `clientes`. Se espera que identifiquen cuántos clientes hay en total y qué edad tiene el cliente más joven.
+
+### Actividad 2: Consulta de Conteo
+**Descripción:** Los alumnos deberán realizar una consulta SQL para contar el número de registros (clientes) existentes en la base de datos. Este ejercicio les permitirá entender cómo obtener estadísticas básicas del contenido de una tabla.
+
+### Actividad 3: Encuentra al Cliente más Joven
+**Descripción:** En esta actividad, los estudiantes tendrán que ejecutar una consulta SQL para determinar el cliente con menor edad registrado en la base de datos. El objetivo es practicar consultas que retornen valores mínimos.
+
+### Actividad 4: Identificar al Cliente Más Viejo
+**Descripción:** Se pide a los alumnos crear una consulta SQL que identifique al cliente más mayor, mostrando su nombre y apellidos junto con la edad. Esta práctica les ayudará a entender cómo ordenar y filtrar registros basándose en un criterio específico.
+
+### Actividad 5: Promedio de Edades
+**Descripción:** Los estudiantes deberán escribir una consulta que calcule el promedio de edades de todos los clientes registrados en la base de datos. Esto les permitirá familiarizarse con las funciones agregadas para calcular estadísticas descriptivas.
+
+### Actividad 6: Redondeo de Promedios
+**Descripción:** Basándose en la actividad anterior, se pide a los estudiantes que redondeen el promedio de edades utilizando las funciones `ROUND`, `FLOOR` y `CEIL`. Este ejercicio les enseñará cómo manipular resultados numéricos.
+
+### Actividad 7: Conexión con Python
+**Descripción:** Los alumnos deben conectar su entorno de desarrollo a la base de datos MySQL empleando el módulo `mysql.connector` de Python. Se espera que realicen una consulta para obtener y mostrar en pantalla el promedio redondeado de edades.
+
+### Actividad 8: Generar Gráficos
+**Descripción:** Utilizando matplotlib, los estudiantes deben crear un gráfico circular (pie chart) con datos ficticios que representan porcentajes. Esta actividad les permitirá combinar sus habilidades en programación y visualización de datos.
+
+### Actividad 9: Consultas Combinadas
+**Descripción:** Se pide a los alumnos que creen una consulta SQL combinada que retorne tanto el promedio de edades como la edad del cliente más joven. Este ejercicio les ayudará a comprender cómo combinar consultas y obtener múltiples resultados en un solo paso.
+
+### Actividad 10: Consulta Compleja con Filtrado
+**Descripción:** Los estudiantes deben diseñar una consulta SQL que filtre los clientes menores de edad y luego devuelva el promedio de sus edades. Esto les permitirá practicar el uso de condiciones en consultas, así como funciones agregadas.
+
+Estas actividades están diseñadas para ayudar a los alumnos a familiarizarse con las operaciones básicas de SQL, la manipulación de datos y cómo combinar estos conocimientos con programación en Python.
 
 
 <a id="agrupamiento-de-registros"></a>
@@ -3850,16 +4389,19 @@ pt.show()
 Este conjunto de ejercicios se centra en el agrupamiento y resumen de registros utilizando SQL y Python. Los estudiantes aprenderán a crear consultas que permitan contar, clasificar e incluso ordenar datos según diferentes criterios como color o categoría de productos. Además, se practicará la conexión entre un programa Python y una base de datos MySQL para visualizar los resultados en gráficos. Estos ejercicios refuerzan habilidades esenciales como la manipulación de bases de datos y el análisis de datos mediante técnicas de agrupamiento y representación gráfica.
 
 ### Ir conectando poco a poco
+<small>Creado: 2025-11-19 12:50</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para permitirte interactuar con una base de datos MySQL llamada `clientes`. Primero, la línea `sudo mysql -u root -p` te permite iniciar sesión en el servidor MySQL utilizando el usuario administrador (root) y te pedirá que introduzcas la contraseña. Es importante tener cuidado al utilizar `sudo` ya que se requiere privilegios de superusuario.
+Este código SQL está diseñado para ayudarte a conectarte a una base de datos y visualizar toda la información de una tabla específica. Primero, el comando `sudo mysql -u root -p` se utiliza para iniciar sesión en el servidor MySQL con privilegios del administrador (root) y te pedirá que ingreses la contraseña. Esto es importante si necesitas acceso a funciones o bases de datos que requieren permisos elevados.
 
-Una vez conectado, la sentencia `USE clientes;` selecciona la base de datos llamada `clientes`, lo que significa que todas las operaciones SQL siguientes se ejecutarán sobre esta base de datos específica. 
+Después de ingresar la contraseña, el comando `USE clientes;` selecciona una base de datos llamada "clientes". Al hacer esto, todas las consultas SQL siguientes se aplicarán a esta base de datos específica.
 
-Finalmente, `SELECT * FROM clientes;` es una consulta que recupera todos los registros y columnas de la tabla `clientes`. Esto te permite ver toda la información almacenada en esa tabla para verificar su contenido o realizar análisis.
+Finalmente, el comando `SELECT * FROM clientes;` recupera todos los registros y campos de la tabla "clientes" dentro de la base de datos que acabas de seleccionar. Esto te permite ver toda la información almacenada en esa tabla, lo cual es útil para comprobar o analizar los datos existentes.
 
-Este tipo de código es fundamental cuando comienzas a trabajar con bases de datos, ya que te ayuda a entender cómo acceder, seleccionar y visualizar tus datos.
+Este fragmento es fundamental al inicio del proceso de trabajo con bases de datos ya que establece tu sesión y define el contexto de la base de datos en la que trabajarás.
+
+`001-Ir conectando poco a poco.sql`
 
 ```sql
 sudo mysql -u root -p
@@ -3870,19 +4412,22 @@ SELECT * FROM clientes;
 ```
 
 ### tabla de productos
+<small>Creado: 2025-11-19 12:54</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para crear una nueva tabla en una base de datos llamada "productos". La tabla contiene varias columnas que almacenan diferentes tipos de información sobre los productos:
+Este fragmento de código SQL crea una tabla llamada `productos` en una base de datos. La tabla tiene varias columnas que almacenan diferentes tipos de información sobre los productos: 
 
-- `nombre`: Guarda el nombre del producto como texto (VARCHAR) con un límite máximo de 255 caracteres.
-- `precio`: Almacena el precio del producto en formato decimal, permitiendo números antes y después del punto decimal para representar cantidades monetarias precisas. La notación `(10,2)` indica que se pueden usar hasta 10 dígitos en total, de los cuales 2 serán después del punto decimal.
-- `categoria`: Registra la categoría a la cual pertenece el producto como texto (VARCHAR) con un límite máximo de 255 caracteres.
-- `peso`: Almacena el peso del producto también en formato decimal, con las mismas especificaciones que el precio.
-- `stock`: Indica cuántos productos están disponibles en inventario, utilizando un número entero (INT).
-- `color`: Guarda el color del producto como texto limitado a 100 caracteres.
+- `nombre`: Almacena el nombre del producto y es un texto con un límite de 255 caracteres.
+- `precio`: Guarda el precio del producto, y es un número decimal con dos dígitos después del punto para representar las decenas de centavo o euros.
+- `categoria`: Contiene la categoría a la que pertenece el producto, también como texto pero limitado a 255 caracteres.
+- `peso`: Almacena el peso del producto en kilogramos y es un número decimal con dos dígitos después del punto para representar las fracciones de kilogramo.
+- `stock`: Indica cuántas unidades del producto están disponibles, y es un número entero.
+- `color`: Guarda el color principal del producto como texto limitado a 100 caracteres.
 
-Esta tabla es importante porque organiza la información sobre los productos de una manera estructurada y permite realizar operaciones de consulta, inserción, actualización y eliminación de datos relacionados con estos artículos.
+Esta tabla es fundamental porque permite organizar toda la información relacionada con los productos en una estructura clara y ordenada.
+
+`002-tabla de productos.sql`
 
 ```sql
 CREATE TABLE productos(
@@ -3896,12 +4441,17 @@ CREATE TABLE productos(
 ```
 
 ### inserciones
+<small>Creado: 2025-11-19 12:57</small>
 
 #### Explicación
 
-Este fragmento de código SQL está realizando inserciones en una tabla llamada `productos`. Cada línea dentro del bloque VALUES agrega un nuevo registro a la tabla con información específica sobre cada producto. Los campos que se llenan para cada producto son: nombre, precio, categoría, peso, stock y color. Por ejemplo, el primer producto es una "Laptop Ultrafina" de la categoría Electrónica, cuyo precio es 899.99 euros, pesa 1.20 kg, tiene un stock inicial de 10 unidades y su color es negro.
+Este fragmento de código SQL está realizando una inserción masiva en la tabla `productos`. Cada fila entre paréntesis representa un nuevo registro que se inserta en la base de datos. La estructura del comando `INSERT INTO` especifica primero el nombre de la tabla (`productos`) y luego dentro de paréntesis, las columnas donde los valores irán ubicados: `nombre`, `precio`, `categoria`, `peso`, `stock` y `color`.
 
-Este tipo de consulta es importante porque permite poblar una base de datos con datos reales o simulados para pruebas o demostraciones. Además, ayuda a los desarrolladores a probar las funcionalidades del sistema antes de lanzarlo en producción, asegurando que todas las operaciones CRUD (Crear, Leer, Actualizar y Borrar) funcionen correctamente.
+Después del punto y coma (;), se indica una lista de valores entre paréntesis separados por comas. Cada conjunto de paréntesis corresponde a un nuevo producto, con sus características específicas como el nombre, precio, categoría, peso, cantidad en stock y color.
+
+Esta operación es crucial para inicializar la base de datos con información relevante o para cargar una gran cantidad de datos rápidamente. En este caso específico, está añadiendo una variedad de productos que van desde tecnología hasta ropa, muebles, herramientas y artículos de papelería, dando a la tabla `productos` una muestra representativa del tipo de datos que normalmente se manejarían en un sistema de gestión de inventario o comercio electrónico.
+
+`003-inserciones.sql`
 
 ```sql
 INSERT INTO productos (nombre, precio, categoria, peso, stock, color) VALUES
@@ -3955,16 +4505,13 @@ INSERT INTO productos (nombre, precio, categoria, peso, stock, color) VALUES
 ```
 
 ### agrupamiento
+<small>Creado: 2025-11-19 13:00</small>
 
 #### Explicación
 
-Este código SQL sirve para contar cuántos registros hay en la tabla `productos` y, además, agrupar estos registros según el campo `color`. 
+Este código SQL está diseñado para trabajar con una tabla llamada `productos` y muestra cómo obtener información agrupada basándose en el campo `color`. En la primera consulta, se utiliza la función `COUNT()` para contar cuántos registros existen en total sin considerar el color específico. Sin embargo, la segunda consulta es más detallada: aquí se cuenta cuántos productos hay por cada color diferente, y luego agrupa los resultados por el campo `color`. Esto significa que obtendrás una lista donde cada fila te dirá cuántos productos tienen un cierto color. Es importante porque ayuda a entender la distribución de colores en tu inventario de productos, lo cual puede ser útil para análisis de ventas o planificación de stock.
 
-En primer lugar, el código ejecuta una consulta que cuenta todas las ocurrencias del campo `color`, sin importar qué valor tenga. Esta consulta te dice simplemente cuántas filas (registros) tiene la tabla en total.
-
-Luego, hay otra consulta que no solo cuenta los registros por color, sino que también agrupa los resultados según el valor específico de cada registro en el campo `color`. Esto significa que obtendrás una lista con cada uno de los colores diferentes presentes en la tabla y cuántas veces aparece cada uno. Esta segunda consulta es muy útil cuando necesitas saber no solo cuántos productos hay en total, sino también cómo están distribuidos según su color.
-
-Este tipo de consultas son importantes porque te permiten obtener un resumen rápido y claro de los datos almacenados en la base de datos, lo que puede ser crucial para el análisis y toma de decisiones.
+`004-agrupamiento.sql`
 
 ```sql
 SELECT COUNT(color)
@@ -3976,22 +4523,21 @@ GROUP BY color;
 ```
 
 ### ademas ordenamos
+<small>Creado: 2025-11-19 13:03</small>
 
 #### Explicación
 
-Este código SQL está diseñado para realizar consultas sobre una tabla llamada `productos`. La primera consulta:
+Este código SQL te ayuda a entender la distribución de colores en una tabla llamada `productos`. En el primer bloque, estás contando cuántos registros existen en total para cualquier color, sin distinguir entre ellos. Esto devuelve un solo número que representa el total de productos, independientemente del color.
 
-`SELECT COUNT(color) FROM productos;`
+En el segundo bloque, el código se vuelve más específico y realiza una consulta mucho más detallada:
 
-cuenta cuántos registros existen en total en la columna `color`, proporcionando un resumen general de los datos. Sin embargo, esta consulta no nos dice nada específico sobre cada color individual.
+1. **Contar colores**: Primero, cuentas la cantidad de productos para cada color distinto (`COUNT(color)`).
+2. **Agrupar por color**: Luego agrupas estos conteos según los diferentes colores existentes en la tabla (`GROUP BY color`), lo que significa que obtendrás una fila separada para cada color con el número de productos asociados a ese color.
+3. **Ordenar alfabéticamente**: Finalmente, ordenas estos resultados por el nombre del color en orden ascendente (`ORDER BY color ASC`), es decir, los colores aparecerán en orden alfabético.
 
-La segunda consulta:
+Esta consulta es útil para ver cuántos productos hay de cada color y cómo se distribuyen entre ellos. Te proporciona un resumen claro sobre la diversidad y cantidad de productos por color en tu tabla `productos`.
 
-`SELECT COUNT(color),color FROM productos GROUP BY color ORDER BY color ASC;`
-
-es más detallada y útil. Primero, selecciona tanto el número de ocurrencias del campo `color` como los valores específicos del color en la tabla `productos`. Luego agrupa estos resultados por cada valor único de `color`, permitiendo así ver cuántos productos hay para cada color individualmente. Finalmente, ordena estos grupos alfabéticamente (ASC) según el nombre del color, lo que facilita la lectura y comprensión de los datos.
-
-Esta consulta es importante porque nos proporciona una visión clara sobre la distribución de colores en la base de datos `productos`, permitiendo entender qué colores son más comunes o menos comunes en el inventario.
+`005-ademas ordenamos.sql`
 
 ```sql
 SELECT COUNT(color)
@@ -4004,20 +4550,17 @@ ORDER BY color ASC;
 ```
 
 ### proyecciones
+<small>Creado: 2025-11-19 13:04</small>
 
 #### Explicación
 
-Este código SQL sirve para analizar los colores de los productos en una base de datos. En la primera consulta, `SELECT COUNT(color) FROM productos;`, el programa cuenta cuántos registros (productos) existen con un valor de color especificado. Sin embargo, esta consulta es incompleta y se añade un comentario diciendo "resumen", lo que probablemente indica que falta alguna información o contexto.
+Este código SQL está realizando consultas en una base de datos que contiene información sobre productos. La primera consulta, `SELECT COUNT(color) FROM productos`, cuenta cuántos registros existen para cada valor del campo "color" en la tabla "productos", pero no especifica qué color corresponde a cada conteo, solo da un resumen total de todos los colores.
 
-La segunda consulta, `SELECT COUNT(color) AS numero, color FROM productos GROUP BY color ORDER BY color ASC;`, es más completa y útil para entender la distribución de colores en la tabla `productos`. Aquí, el código realiza dos cosas principales:
+La segunda consulta es más detallada. Primero, utiliza `COUNT(color) AS numero` para contar cuántos productos hay por cada color y etiqueta este resultado como "numero". Luego, selecciona también el campo "color" junto con la cuenta. Con `GROUP BY color`, agrupa los resultados según cada valor único del campo "color", lo que significa que obtendrás una fila por cada distinto color presente en tu tabla de productos. Finalmente, ordena estos grupos alfabéticamente ascendente (`ORDER BY color ASC`) para facilitar la lectura y comprensión de los datos.
 
-1. **Contar productos por color**: Selecciona el número total de productos que tienen cada uno de los colores disponibles (usando `COUNT(color)`), y etiqueta este conteo como "numero" con `AS numero`.
-   
-2. **Mostrar la lista de colores junto a sus conteos**: La consulta también selecciona explícitamente el campo `color` para mostrar qué color corresponde a cada conteo.
+Estas consultas son útiles cuando se desea obtener un resumen rápido del inventario basado en el color o entender qué colores tienen más productos asociados.
 
-La parte crucial es que esta consulta utiliza una cláusula `GROUP BY`, lo cual agrupa los resultados por cada distinta instancia del campo "color". Esto significa que obtendrás un registro por cada tipo de color en la tabla, con el número total de productos de ese mismo color. Finalmente, se ordenan alfabéticamente ascendente (`ORDER BY color ASC`) para facilitar la lectura y comprensión de los resultados.
-
-Esta consulta es importante porque proporciona una visión rápida sobre cómo están distribuidos los colores entre los productos en tu base de datos, lo que puede ser útil tanto para análisis como para toma de decisiones relacionadas con inventario o marketing.
+`006-proyecciones.sql`
 
 ```sql
 SELECT COUNT(color)
@@ -4032,12 +4575,21 @@ ORDER BY color ASC;
 ```
 
 ### plantilla python mysql
+<small>Creado: 2025-11-19 13:07</small>
 
 #### Explicación
 
-Este código Python se encarga de conectarse a una base de datos MySQL y realizar una consulta para calcular la edad promedio de los registros en una tabla llamada `clientes`, redondeando el resultado hacia abajo al número entero más cercano. Primero, importa el módulo `mysql.connector` que permite establecer la conexión con la base de datos. Luego, se crea una conexión a la base de datos utilizando las credenciales especificadas (en este caso, un servidor local, usuario "clientes", contraseña "Clientes123$", y la base de datos "clientes"). A continuación, se obtiene un cursor que permite ejecutar consultas SQL. En esta ocasión, la consulta selecciona el promedio de los valores en la columna `edad` de la tabla `clientes`, utilizando la función `FLOOR` para redondear el número resultante hacia abajo. Finalmente, se recuperan todas las filas del resultado y se imprimen.
+Este código Python conecta a una base de datos MySQL y ejecuta una consulta para calcular la edad promedio redondeada hacia abajo de todos los registros en la tabla "clientes". 
 
-Este código es importante porque muestra cómo interactuar con una base de datos MySQL desde Python, ejecutar consultas SQL complejas y manipular los resultados obtenidos, lo cual es fundamental en aplicaciones que requieren acceso a bases de datos para almacenar o recuperar información.
+Primero, el programa importa el módulo `mysql.connector` que es necesario para establecer la conexión con la base de datos. Luego, crea una conexión a la base de datos usando parámetros como host (localhost), usuario y contraseña, además de especificar la base de datos "clientes".
+
+Una vez conectado, se crea un objeto cursor que permite enviar comandos SQL a la base de datos y recibir los resultados. En este caso, el comando SQL selecciona el valor promedio de la columna 'edad' en la tabla 'clientes', utilizando la función `AVG()` para calcular el promedio y `FLOOR()` para redondear hacia abajo al entero más cercano.
+
+Finalmente, el programa recupera todas las filas resultantes de la consulta con `cursor.fetchall()`, almacenándolas en la variable `filas`. Estos datos se imprimen en pantalla con `print(filias)`, mostrando así el resultado del cálculo promedio redondeado hacia abajo.
+
+Este código es útil para obtener estadísticas como la edad promedio de los clientes registrados, que puede ser información valiosa para análisis y toma de decisiones.
+
+`007-plantilla python mysql.py`
 
 ```python
 import mysql.connector 
@@ -4062,16 +4614,17 @@ print(filas)
 ```
 
 ### adapto a mi peticion
+<small>Creado: 2025-11-19 13:09</small>
 
 #### Explicación
 
-Este código es una secuencia de instrucciones en Python que conecta a un programa con una base de datos MySQL y realiza una consulta para contar cuántos productos hay de cada color. Primero, el código importa la biblioteca `mysql.connector` que permite establecer una conexión con una base de datos MySQL. Luego, se crea esta conexión especificando los detalles necesarios como el host (localhost), usuario, contraseña y nombre de la base de datos.
+Este fragmento de código en Python se conecta a una base de datos MySQL y ejecuta una consulta SQL para obtener información agrupada sobre los colores de productos. Primero, el código establece una conexión con la base de datos usando el módulo `mysql.connector`. Luego, crea un cursor que permite interactuar con la base de datos.
 
-Una vez conectado, se crea un objeto cursor a través del método `.cursor()` en la conexión. Este objeto cursor es usado para ejecutar comandos SQL mediante el método `execute()`. En este caso, la consulta selecciona el número total de productos de cada color (usando la función COUNT) y agrupa los resultados por el campo 'color', ordenándolos alfabéticamente en orden ascendente.
+La consulta SQL selecciona dos cosas: el número de veces que aparece cada color (`COUNT(color) AS numero`) y los colores en sí mismos. Esta consulta se agrupa por el campo "color" para contar cuántas filas hay para cada color diferente en la tabla "productos". Además, ordena los resultados alfabéticamente por el color.
 
-Finalmente, se obtienen todas las filas devueltas por la consulta con `cursor.fetchall()` y luego estas filas son impresas en la consola utilizando `print(filas)`.
+Finalmente, el código recoge todas las filas devueltas por la consulta y las imprime. Esto te permite ver cuántos productos hay de cada color en la base de datos, lo que puede ser útil para análisis de inventario o informes sobre tendencias de colores.
 
-Este código es importante porque muestra cómo interactuar con bases de datos desde Python para realizar operaciones complejas como agrupar y contar registros, lo que es una habilidad fundamental para el desarrollo web y aplicaciones basadas en bases de datos.
+`008-adapto a mi peticion.py`
 
 ```python
 import mysql.connector 
@@ -4096,14 +4649,19 @@ print(filas)
 ```
 
 ### creo dos listas
+<small>Creado: 2025-11-19 13:14</small>
 
 #### Explicación
 
-Este código Python conecta a una base de datos MySQL y realiza una consulta para contar cuántos productos hay de cada color en la tabla `productos`. La conexión se establece con los detalles del servidor (`localhost`), usuario, contraseña y nombre de la base de datos. Una vez que se ha establecido la conexión, el código ejecuta una consulta SQL que agrupa los registros por el campo `color`, cuenta cuántos productos hay en cada grupo (usando la función COUNT) y ordena estos grupos alfabéticamente.
+Este código Python se conecta a una base de datos MySQL llamada "clientes" y realiza una consulta para contar la cantidad de productos por cada color disponible. Primero, establece una conexión con la base de datos utilizando el módulo `mysql.connector`. Luego, crea un cursor para ejecutar consultas SQL.
 
-Después de ejecutar esta consulta, el resultado es almacenado en la variable `filas`. El siguiente bucle for recorre estas filas, separando los resultados para obtener las cantidades de productos y sus colores correspondientes, que se añaden a dos listas diferentes: `cantidades` y `etiquetas`, respectivamente. Finalmente, el código imprime ambas listas en la consola.
+La consulta selecciona el número total de productos para cada 'color' desde la tabla 'productos', agrupa los resultados por 'color' y ordena alfabéticamente estos colores en orden ascendente. Esto significa que obtendrás una lista donde cada registro indica cuántos productos hay de un determinado color.
 
-Esta técnica es útil cuando necesitas analizar datos agrupados de una base de datos para generar reportes o gráficos que muestran cómo se distribuyen ciertos atributos entre los registros de tu tabla. En este caso específico, permite visualizar cuántos productos hay de cada color en el inventario.
+Después, el código recorre todas las filas devueltas por la consulta para llenar dos listas: `cantidades`, que almacena los conteos (número de productos), y `etiquetas`, que almacena los nombres de los colores. Finalmente, imprime ambas listas.
+
+Este tipo de agrupamiento es importante porque permite analizar fácilmente la distribución de productos por categorías específicas en este caso el color, facilitando la toma de decisiones sobre inventario o marketing basada en datos precisos.
+
+`009-creo dos listas.py`
 
 ```python
 import mysql.connector 
@@ -4128,16 +4686,17 @@ print(etiquetas)
 ```
 
 ### grafica
+<small>Creado: 2025-11-19 13:19</small>
 
 #### Explicación
 
-Este código es una pequeña herramienta de Python que realiza consultas en una base de datos MySQL y genera un gráfico circular (también conocido como gráfica de pastel) para visualizar los resultados. 
+Este código Python realiza una consulta en una base de datos MySQL y genera un gráfico circular (también conocido como gráfico de pastel) basado en los resultados obtenidos. La consulta selecciona el número total de productos por cada color único, agrupándolos y ordenándolos alfabéticamente según el color.
 
-Primero, el programa se conecta a la base de datos "clientes" ubicada en el servidor local usando las credenciales proporcionadas. Luego, ejecuta una consulta SQL que cuenta cuántos productos hay de cada color y ordena estos colores alfabéticamente. La información recogida es almacenada en un objeto llamado `filas`.
+El código comienza conectándose a la base de datos MySQL que tiene un esquema llamado "clientes". A continuación, ejecuta una consulta SQL para contar cuántos productos hay de cada color en la tabla "productos", agrupando los resultados por color y ordenándolos alfabéticamente. Los resultados se almacenan en dos listas: `cantidades` (que contiene el número total de productos de cada color) y `etiquetas` (que contiene los nombres de los colores).
 
-Después, con un bucle for, el código separa los datos en dos listas: `cantidades`, donde se guardan las cantidades de productos por color, y `etiquetas`, que contiene los nombres de los colores. Finalmente, utiliza la biblioteca `matplotlib` para crear una gráfica circular basada en estas listas.
+Finalmente, el código utiliza la biblioteca Matplotlib para dibujar un gráfico circular mostrando las cantidades almacenadas en `cantidades`. Este tipo de gráfico es útil para visualizar rápidamente cómo se distribuyen los productos por color.
 
-Esta pieza de código es importante porque permite a los usuarios visualizar fácilmente datos complejos extraídos de una base de datos en un formato gráfico que es más sencillo de entender.
+`010-grafica.py`
 
 ```python
 import mysql.connector 
@@ -4165,16 +4724,21 @@ pt.show()
 ```
 
 ### etiquetas
+<small>Creado: 2025-11-19 13:21</small>
 
 #### Explicación
 
-Este código Python realiza una consulta a una base de datos MySQL para contar el número de productos por cada color y luego grafica estos resultados en forma de un círculo dividido (también conocido como gráfico circular o "pie chart") utilizando la biblioteca `matplotlib`. 
+Este fragmento de código en Python se encarga de conectar a una base de datos MySQL y realizar una consulta para contar cuántos productos hay de cada color. Luego, el resultado de esta consulta se utiliza para crear un gráfico circular (también conocido como "gráfico de pizza") que muestra la cantidad de productos agrupados por su color.
 
-Primero, el programa conecta a una base de datos MySQL llamada "clientes" usando las credenciales proporcionadas. A continuación, ejecuta una consulta SQL que cuenta cuántos productos hay para cada color y los ordena alfabéticamente por nombre de color.
+Primero, establece una conexión con la base de datos usando los detalles proporcionados y luego ejecuta una consulta SQL que cuenta cuántos registros hay en la tabla `productos` para cada distinto valor del campo `color`, ordenando el resultado alfabéticamente. Los resultados de esta consulta se guardan en la variable `filas`.
 
-Luego, recopila estos resultados en dos listas: `cantidades`, que contiene el número de productos para cada color, y `etiquetas`, que contiene los nombres de los colores. Finalmente, utiliza la biblioteca `matplotlib` para dibujar un gráfico circular basado en estas listas.
+Después, recorre todas las filas obtenidas y separa los datos en dos listas: `cantidades` que contiene los conteos y `etiquetas` que guarda cada color asociado a esos conteos.
 
-Este tipo de código es útil cuando se necesita analizar datos almacenados en una base de datos y visualizarlos de manera fácil de entender para usuarios no técnicos.
+Finalmente, utiliza matplotlib para dibujar un gráfico circular (pie chart) con la información recolectada. Este tipo de gráfico es útil para visualizar rápidamente las proporciones entre diferentes categorías en este caso los colores de los productos y su cantidad respectiva en la base de datos.
+
+Este código combina conceptos clave como la manipulación de bases de datos, el procesamiento de consultas SQL y la representación gráfica de resultados. Es importante entender cada paso porque te permite visualizar fácilmente datos complejos que podrían ser difíciles de leer si sólo estuvieran en forma de números puros.
+
+`011-etiquetas.py`
 
 ```python
 import mysql.connector 
@@ -4202,16 +4766,15 @@ pt.show()
 ```
 
 ### ordeno por numero
+<small>Creado: 2025-11-19 13:23</small>
 
 #### Explicación
 
-Este código está diseñado para realizar consultas en una base de datos MySQL y luego visualizar los resultados utilizando la librería `matplotlib`. En primer lugar, el código establece una conexión a la base de datos llamada "clientes" con las credenciales proporcionadas. Luego, ejecuta una consulta SQL que cuenta cuántos productos tienen cada color y ordena estos conteos en forma ascendente.
+Este código Python realiza una consulta a una base de datos MySQL para contar cuántos productos hay en total por cada color y luego crea un gráfico circular (también conocido como gráfico de pastel) con esa información. Primero, el programa se conecta a la base de datos "clientes" que tiene una tabla llamada "productos". La consulta SQL ejecutada cuenta cuántos productos hay para cada color, agrupa los resultados por color y ordena las cantidades en orden ascendente.
 
-La consulta SQL selecciona el número de registros (productos) por cada color (`COUNT(color) AS numero`) y también obtiene el nombre del color (`color`). El resultado se agrupa según los colores diferentes (`GROUP BY color`), lo que significa que la consulta genera un recuento para cada grupo de productos con el mismo color. Finalmente, estos resultados se ordenan en función del número ascendente.
+Después de obtener los resultados de la consulta, el código almacena la cantidad de productos (llamada 'numero') y sus respectivos colores en dos listas diferentes: `cantidades` y `etiquetas`. Finalmente, utiliza la biblioteca Matplotlib para crear un gráfico circular mostrando las cantidades de cada color. Este tipo de visualización es útil para entender fácilmente qué color tiene más productos disponibles y cuáles tienen menos.
 
-Después de ejecutar esta consulta y obtener las filas resultantes, el código crea dos listas: `cantidades`, que almacena los conteos de productos por color, y `etiquetas`, que contiene los nombres de los colores. Estas listas se utilizan para generar un gráfico circular (también conocido como "gráfico de pastel") con la función `pt.pie()` de matplotlib, donde las cantidades representan el tamaño del sector en función del número de productos y las etiquetas son los nombres de los colores. Al final, `pt.show()` muestra el gráfico interactivo al usuario.
-
-Este tipo de código es importante porque permite a los usuarios entender fácilmente datos cuantitativos complejos visualmente, como la distribución de productos por color en una base de datos.
+`012-ordeno por numero.py`
 
 ```python
 import mysql.connector 
@@ -4239,14 +4802,17 @@ pt.show()
 ```
 
 ### descendiente
+<small>Creado: 2025-11-19 13:24</small>
 
 #### Explicación
 
-Este código Python realiza consultas en una base de datos MySQL para contar y clasificar los productos según su color. Primero, el programa se conecta a la base de datos "clientes" usando credenciales específicas. Luego, ejecuta una consulta SQL que cuenta cuántos productos hay de cada color, agrupa estos resultados por colores diferentes y ordena las cantidades en orden descendente.
+Este código Python se conecta a una base de datos MySQL y ejecuta una consulta para obtener información sobre los colores de los productos en la tabla `productos`. La consulta cuenta el número de ocurrencias de cada color, agrupa los resultados por color y luego ordena estos grupos de forma descendente basada en la cantidad.
 
-Después de obtener los resultados de la consulta, el código almacena estas cantidades y etiquetas (colores) en dos listas separadas. Finalmente, utiliza la biblioteca matplotlib para crear un gráfico circular que muestra visualmente cuántos productos hay de cada color, lo cual es útil para analizar las tendencias de ventas o preferencias de los clientes.
+El código recorre las filas devueltas por la consulta para crear dos listas: una que almacena las cantidades (número de productos con el mismo color) y otra que almacena las etiquetas correspondientes (los nombres de los colores). Finalmente, utiliza la biblioteca `matplotlib` para generar un gráfico circular (también conocido como "gráfico de pastel") que representa visualmente estas cantidades. El resultado es una representación gráfica clara de cuántos productos hay en la base de datos para cada color, ordenados desde el más común hasta el menos común.
 
-Este tipo de análisis es importante porque ayuda a comprender qué productos son más populares según su atributo de color, lo que puede ser crucial para la toma de decisiones en marketing y gestión de inventario.
+Este tipo de análisis es útil cuando se quiere entender rápidamente las proporciones o distribuciones dentro de un conjunto de datos, como por ejemplo saber qué colores son los más populares entre los productos disponibles.
+
+`013-descendiente.py`
 
 ```python
 import mysql.connector 
@@ -4274,16 +4840,19 @@ pt.show()
 ```
 
 ### categorias
+<small>Creado: 2025-11-19 13:48</small>
 
 #### Explicación
 
-Este código realiza una consulta a una base de datos MySQL para contar cuántos productos hay en cada categoría y luego grafica estos resultados en forma de un círculo (gráfico de pastel) usando la biblioteca `matplotlib`. 
+Este fragmento de código es una parte del proyecto que trabaja con bases de datos y visualización de datos en Python. El objetivo principal es contar cuántos productos hay en la base de datos para cada categoría y luego representar estos conteos gráficamente usando un diagrama de pastel (pie chart).
 
-Primero, el programa conecta a una base de datos local llamada "clientes" con las credenciales proporcionadas. Luego, ejecuta una consulta SQL que cuenta cuántos productos hay en cada categoría y ordena los resultados de forma descendente por número. Esta información se almacena en dos listas: `cantidades` y `etiquetas`, donde `cantidades` contiene el número de productos para cada categoría y `etiquetas` las etiquetas correspondientes (nombres de las categorías).
+El código comienza conectándose a una base de datos MySQL que tiene información sobre productos, específicamente desde una tabla llamada "productos". La conexión se establece utilizando las credenciales proporcionadas (host, usuario, contraseña y nombre de la base de datos). A continuación, se ejecuta una consulta SQL que cuenta el número de productos en cada categoría. Esta consulta utiliza la cláusula `GROUP BY` para agrupar los productos por su categoría y luego ordena estos grupos por cantidad de forma descendente (`ORDER BY numero DESC`). Esto significa que las categorías con más productos aparecerán primero.
 
-Finalmente, el programa utiliza `matplotlib` para crear un gráfico circular que muestra la distribución de los productos por categoría. Este tipo de visualización es muy útil para comprender rápidamente cuáles son las categorías más populares o con mayor número de productos en la base de datos.
+Después, el código recorre todas las filas resultantes de la consulta, almacenando en dos listas separadas: `cantidades` para los conteos y `etiquetas` para las etiquetas (nombres) de cada categoría. Finalmente, utiliza Matplotlib para crear un gráfico circular o "pie chart" que muestra visualmente qué proporción del total de productos pertenece a cada categoría. El método `pt.show()` se encarga de mostrar el gráfico en pantalla.
 
-Este código es importante porque combina el acceso a bases de datos, manipulación de datos y representación gráfica, lo que es una habilidad fundamental en desarrollo web y análisis de datos.
+Este tipo de análisis es útil porque proporciona una rápida visión sobre la distribución de los productos dentro de diferentes categorías, lo cual puede ser valioso para entender mejor las tendencias y hacer decisiones basadas en datos.
+
+`014-categorias.py`
 
 ```python
 import mysql.connector 
@@ -4311,16 +4880,17 @@ pt.show()
 ```
 
 ### por stock
+<small>Creado: 2025-11-19 13:49</small>
 
 #### Explicación
 
-Este código Python realiza una consulta en una base de datos MySQL y luego genera un gráfico circular con los resultados. La conexión a la base de datos se establece mediante el uso del módulo `mysql.connector`, especificando detalles como el host, usuario, contraseña y nombre de la base de datos. Luego, se crea un objeto cursor para ejecutar consultas SQL.
+Este fragmento de código en Python se encarga de realizar una consulta a una base de datos MySQL para agrupar y contar registros según su stock, luego grafica esta información usando la biblioteca `matplotlib`. Primero, el programa conecta a la base de datos "clientes" utilizando las credenciales proporcionadas. A continuación, ejecuta una consulta SQL que cuenta cuántos productos tienen cada cantidad específica en stock (usando la columna `stock`), agrupa los resultados por estas cantidades y ordena los resultados de manera descendente basada en el número total de productos con esa cantidad en stock.
 
-La consulta seleccionada cuenta cuántos productos tienen cada tipo de stock (por ejemplo, 'bajo', 'medio', 'alto') y ordena los resultados en función del número total en forma descendente. Esto ayuda a identificar rápidamente qué niveles de stock son más comunes o problemáticos.
+Después de obtener los datos desde la base de datos, el código recorre las filas del resultado para separar la información en dos listas: `cantidades`, que almacena cuántos productos tienen cada cantidad específica de stock, y `etiquetas`, que contiene estas cantidades. Finalmente, imprime ambas listas y genera un gráfico circular (también conocido como gráfico de pastel) utilizando las dos listas creadas para visualizar cuántos productos existen con cada cantidad en stock.
 
-Después de ejecutar la consulta, el código recorre las filas devueltas para separar las cantidades (número de productos) y los valores de stock correspondientes. Finalmente, utiliza matplotlib para crear un gráfico circular que visualiza estos datos, lo cual es muy útil para mostrar rápidamente cómo se distribuyen los diferentes niveles de stock en la base de datos.
+Este tipo de código es importante porque permite a los usuarios entender fácilmente datos complejos a través de representaciones visuales, facilitando la toma de decisiones y el análisis.
 
-Este tipo de análisis es crucial para gestionar el inventario y tomar decisiones sobre reabastecimiento o ajuste del stock.
+`015-por stock.py`
 
 ```python
 import mysql.connector 
@@ -4348,14 +4918,17 @@ pt.show()
 ```
 
 ### grafico de barra
+<small>Creado: 2025-11-19 13:50</small>
 
 #### Explicación
 
-Este código es una pieza de un programa en Python que realiza varias tareas para mostrar información gráficamente. En primer lugar, el código se conecta a una base de datos MySQL local llamada "clientes" usando las credenciales proporcionadas. Luego, ejecuta una consulta SQL compleja que cuenta la cantidad de productos con diferentes niveles de stock y los ordena por la cantidad descendente.
+Este código Python realiza una consulta a una base de datos MySQL para contar cuántos productos tienen cada nivel de stock y luego genera un gráfico de barras con esa información. Primero, el programa establece una conexión con la base de datos "clientes" en el servidor local usando las credenciales proporcionadas. Luego, ejecuta una consulta SQL que cuenta el número de productos para cada valor único de 'stock' en la tabla 'productos', agrupándolos por niveles de stock y ordenando los resultados en orden descendente según la cantidad.
 
-La consulta recupera dos tipos de información: el número total de productos para cada nivel de stock (que llamamos "numero") y el valor del stock en sí mismo. Estos datos se almacenan en una lista llamada `filas`. Luego, el código itera a través de estas filas para separar la cantidad y las etiquetas correspondientes, guardándolas en dos listas diferentes: `cantidades` y `etiquetas`.
+Después de obtener los datos desde la base de datos, se recorren las filas del resultado con un bucle `for`, separando el número de productos (la cuenta) y el nivel de stock para almacenarlos respectivamente en dos listas: `cantidades` y `etiquetas`. Finalmente, se imprime cada lista para verificar los datos antes de generar un gráfico de barras usando la biblioteca Matplotlib. El gráfico muestra la cantidad de productos con diferentes niveles de stock, permitiendo visualizar fácilmente cuáles son los niveles más comunes.
 
-Finalmente, utiliza la biblioteca `matplotlib` para crear un gráfico de barras basado en los datos recopilados. La altura de cada barra es fija (30 unidades), pero el ancho de las barras se determina por la cantidad de productos para cada nivel de stock almacenada en `cantidades`. El resultado final es un gráfico visual que muestra cuántos productos hay para diferentes niveles de stock, permitiendo una rápida interpretación sobre los patrones de inventario.
+Este tipo de código es útil en situaciones donde se necesita representar visualmente datos obtenidos desde una base de datos para facilitar el análisis y la toma de decisiones.
+
+`016-grafico de barra.py`
 
 ```python
 import mysql.connector 
@@ -4383,14 +4956,17 @@ pt.show()
 ```
 
 ### colores
+<small>Creado: 2025-11-19 14:02</small>
 
 #### Explicación
 
-Este código Python realiza una serie de tareas que permiten visualizar la cantidad de productos agrupados por categoría en un gráfico circular. Primero, el programa establece una conexión a una base de datos MySQL llamada "clientes" usando las credenciales proporcionadas y ejecuta una consulta SQL para contar cuántos productos hay en cada categoría. La consulta devuelve dos columnas: 'numero', que es la cuenta del número de productos por categoría, y 'categoria', que es el nombre de la categoría.
+Este código Python realiza una consulta en una base de datos MySQL para contar el número de productos en cada categoría y luego muestra estos datos en un gráfico circular o "gráfico de pizza". La consulta SQL selecciona la cantidad de productos (contados) por cada categoría del conjunto de datos 'productos' y los ordena de forma descendente según la cantidad.
 
-Luego, el código recorre todas las filas devueltas por la consulta y separa los valores en dos listas diferentes: 'cantidades' para almacenar los números de conteo y 'etiquetas' para almacenar los nombres de las categorías. Finalmente, se crea un gráfico circular (gráfico pie) que muestra el número de productos en cada categoría usando las listas creadas, con colores específicos asignados a cada categoría.
+Después, el código recorre las filas resultantes para separar los números y etiquetas en dos listas distintas llamadas `cantidades` y `etiquetas`. Finalmente, utiliza la biblioteca `matplotlib.pyplot` para crear un gráfico circular con estos datos. Se especifican tres colores ('red', 'green', 'blue') pero el número real de colores utilizados será igual al número de categorías encontradas en la consulta.
 
-Esta pieza de código es importante porque combina la manipulación y extracción de datos desde una base de datos MySQL con la visualización de esos datos mediante gráficos, lo que ayuda a entender rápidamente cuántos productos hay en diferentes categorías. Esto puede ser útil para análisis de inventario o para tomar decisiones sobre stock y ventas.
+Este tipo de visualización es útil para comprender rápidamente cuál es la categoría más popular o menos popular en términos de cantidad de productos.
+
+`017-colores.py`
 
 ```python
 import mysql.connector 
@@ -4418,6 +4994,76 @@ pt.pie(cantidades,labels=etiquetas,colors=colores)
 pt.show()
 ```
 
+### Actividades propuestas
+
+### Actividad 1: Consulta Básica de Productos
+
+**Descripción:** Realiza una consulta SQL para obtener todos los registros de la tabla `productos`. Asegúrate de entender cómo se estructuran las consultas y familiarízate con el uso de SELECT en MySQL.
+
+---
+
+### Actividad 2: Crear Tabla de Productos
+
+**Descripción:** Escribe un script en Python que conecte a una base de datos MySQL e inserte varios registros en la tabla `productos`. Aprenderás cómo crear tablas y realizar inserciones utilizando SQL desde Python.
+
+---
+
+### Actividad 3: Conteo de Colores
+
+**Descripción:** Utiliza SQL para contar cuántos productos hay en cada color. Luego, ejecuta el script proporcionado que muestra la información por consola. Aprenderás a usar GROUP BY y COUNT.
+
+---
+
+### Actividad 4: Ordenar por Color
+
+**Descripción:** Modifica tu consulta de la actividad anterior para ordenar los resultados por color (ASC). Familiarízate con el uso de ORDER BY en consultas SQL.
+
+---
+
+### Actividad 5: Proyecciones y Alias
+
+**Descripción:** Ajusta tu script Python para que use alias en las columnas de resultado. Esto te ayudará a entender cómo renombrar resultados utilizando AS en SQL.
+
+---
+
+### Actividad 6: Creación de Listas con Cantidad y Color
+
+**Descripción:** Utiliza Python para crear dos listas, una con la cantidad (numero) y otra con los colores. Familiarízate con el manejo de datos entre MySQL y Python.
+
+---
+
+### Actividad 7: Generar Gráfica de Pastel
+
+**Descripción:** Añade código a tu script Python para generar un gráfico de pastel basado en la cantidad y color de productos. Aprenderás a combinar SQL con bibliotecas de visualización como Matplotlib.
+
+---
+
+### Actividad 8: Ordenar Gráfica por Cantidad
+
+**Descripción:** Modifica el código del gráfico de pastel para ordenarlo según la cantidad (numero) en lugar del color. Esto te ayudará a entender cómo filtrar y ordenar datos antes de su visualización.
+
+---
+
+### Actividad 9: Consulta Descendente
+
+**Descripción:** Escribe una consulta SQL que cuente los productos por categoría, pero esta vez órdenala en forma descendente (DESC). Familiarízate con el uso del ORDER BY DESC en consultas SQL.
+
+---
+
+### Actividad 10: Visualización de Categorías
+
+**Descripción:** Ajusta tu script Python para que genere un gráfico de barras mostrando la cantidad de productos por categoría. Esto te ayudará a visualizar datos categorizados y entender cómo representarlos en distintos tipos de gráficos.
+
+---
+
+### Actividad 11: Estilización del Gráfico
+
+**Descripción:** Finalmente, añade colores personalizados al gráfico generado en las actividades anteriores. Aprenderás cómo utilizar diferentes opciones de estilización con Matplotlib para mejorar la presentación de tus datos.
+
+---
+
+Estas actividades te permitirán adquirir una comprensión sólida tanto de SQL como de Python, y cómo integrar ambas tecnologías para manipular y visualizar datos eficazmente.
+
 
 <a id="composiciones-internas"></a>
 ## Composiciones internas
@@ -4431,16 +5077,13 @@ A continuación, se exploran diferentes aspectos del uso de SQL mediante conexio
 Estos problemas practican competencias clave como la creación y manejo de una base de datos SQL, el uso de un framework web (Flask), y la integración entre estos elementos para crear servicios web básicos.
 
 ### creo base de datos
+<small>Creado: 2025-11-24 10:32</small>
 
 #### Explicación
 
-Este fragmento de código SQL sirve para crear una base de datos y dos tablas importantes dentro de ella: `clientes` y `productos`. Primero, el código verifica si la base de datos llamada `tiendaclase` ya existe, y en caso de no existir, la crea. Luego, se selecciona esa base de datos para trabajar con ella.
+Este fragmento de código SQL se utiliza para crear una base de datos llamada `tiendaclase` y dos tablas dentro de ella: `clientes` y `productos`. La tabla `clientes` almacena información sobre los clientes, incluyendo un identificador único (`id`), su nombre, correo electrónico (que debe ser único), teléfono y fecha de registro. Por otro lado, la tabla `productos` contiene detalles sobre los productos disponibles en la tienda, tales como el nombre del producto, una descripción, precio y cantidad en stock. El código también incluye inserciones de datos de prueba para ambas tablas: tres clientes con diferentes nombres, correos electrónicos y números de teléfono; así como tres productos con detalles específicos como nombre, descripción, precio y existencias en inventario. Este tipo de consulta es fundamental para establecer una base de datos funcional que pueda ser utilizada para gestionar información relacionada con un negocio o tienda virtual.
 
-La tabla `clientes` almacena información sobre los clientes, incluyendo un ID único que se genera automáticamente (`AUTO_INCREMENT`), el nombre del cliente, su correo electrónico (que debe ser único y no nulo), el número de teléfono opcional, y la fecha en la que se registró como cliente.
-
-Por otro lado, la tabla `productos` contiene detalles sobre los productos disponibles en una tienda. Cada producto tiene un ID único automático, un nombre, una descripción detallada (`TEXT` permite textos largos), el precio del producto (con hasta dos decimales para mostrar centavos o céntimos) y la cantidad disponible en stock.
-
-Finalmente, se añaden algunos datos de prueba a ambas tablas para simular clientes reales y productos disponibles en una tienda. Este código es fundamental porque establece la estructura necesaria para almacenar información sobre los clientes y los productos, permitiendo así gestionar la relación entre ellos en un sistema de gestión de ventas o inventario.
+`001-creo base de datos.sql`
 
 ```sql
 -- Crear base de datos
@@ -4481,14 +5124,15 @@ VALUES
 ```
 
 ### creamos usuario con permisos
+<small>Creado: 2025-11-24 10:35</small>
 
 #### Explicación
 
-Este código SQL se utiliza para crear un nuevo usuario en una base de datos y asignarle los permisos necesarios. Primero, crea el usuario llamado 'tiendaclase' con una contraseña específica ('Tiendaclase123$') que tiene acceso desde localhost (el mismo servidor donde está la base de datos). Luego, se le otorga un nivel básico de acceso al usuario utilizando el comando GRANT USAGE, lo cual permite al usuario conectarse a la base de datos sin darle permisos adicionales sobre cualquier tabla o conjunto de datos. A continuación, se eliminan todos los límites impuestos al nuevo usuario para que pueda realizar consultas y operaciones ilimitadas en cuanto a número y frecuencia.
+Este fragmento de código SQL tiene como objetivo crear un nuevo usuario en una base de datos MySQL y otorgarle ciertos permisos para acceder a ella. Primero, se crea el usuario 'tiendaclase' con la contraseña 'Tiendaclase123$'. Luego, se permite al usuario tener acceso desde el localhost (el mismo servidor donde está instalada la base de datos). A continuación, se eliminan los límites por defecto del usuario para permitir una mayor flexibilidad en cuanto a consultas y conexiones. Finalmente, se otorga a este nuevo usuario todos los privilegios sobre todas las tablas que pertenecen al esquema 'tiendaclase', lo que significa que podrá realizar cualquier operación (lectura, escritura, modificación) dentro de esta base de datos específica. La instrucción `FLUSH PRIVILEGES` actualiza la configuración del sistema para aplicar los cambios recién hechos en los privilegios.
 
-Finalmente, el código otorga a este usuario un acceso completo (todas las posibles acciones) sobre la base de datos llamada 'tiendaclase'. Esto incluye permisos para leer, escribir y modificar cualquier dato dentro de esa base de datos. El último comando FLUSH PRIVILEGES asegura que los cambios en los privilegios se recarguen inmediatamente, permitiendo al usuario utilizar sus nuevos permisos sin necesidad de reiniciar el servidor o desconectar e iniciar sesión nuevamente.
+Este proceso es crucial porque asegura que cada usuario tenga acceso solo a las partes necesarias de la base de datos, manteniendo así la seguridad y controlando el uso eficiente de recursos.
 
-Este tipo de procedimiento es importante cuando estás configurando un entorno de desarrollo o pruebas donde necesitas usuarios con acceso limitado a ciertas bases de datos para proteger la seguridad del sistema y asegurar que los desarrolladores trabajen en su propio espacio de trabajo sin interferir accidentalmente con otros.
+`002-creamos usuario con permisos.sql`
 
 ```sql
 -- crea usuario nuevo con contraseña
@@ -4519,10 +5163,15 @@ FLUSH PRIVILEGES;
 ```
 
 ### ver los usuarios del sistema
+<small>Creado: 2025-11-24 10:37</small>
 
 #### Explicación
 
-Este fragmento de código SQL es una consulta simple que se utiliza para recuperar información específica de la base de datos MySQL. La consulta `SELECT User, Host FROM mysql.user;` busca en la tabla llamada `mysql.user`, que almacena detalles sobre los usuarios del sistema de bases de datos MySQL. El objetivo aquí es obtener dos columnas específicas: `User` y `Host`. La columna `User` contiene el nombre de usuario, mientras que `Host` indica desde qué host (o máquina) puede conectarse ese usuario. Esta consulta es útil para administradores de sistemas que necesitan ver quiénes tienen acceso a la base de datos y desde dónde pueden acceder a ella, lo que ayuda en la gestión de usuarios y permisos.
+Este fragmento de código SQL es una consulta que selecciona información específica sobre los usuarios del sistema en un servidor MySQL. La consulta busca las columnas "User" y "Host" desde la tabla "mysql.user". Esto significa que el resultado mostrará los nombres de usuario junto con la dirección IP o nombre del host desde donde estos usuarios pueden conectarse al servidor.
+
+Es importante porque te permite conocer quién tiene acceso a tu base de datos y desde dónde pueden conectarse. Esta información es útil para la gestión y seguridad del sistema, ya que puedes revisar qué cuentas existen y cómo se han configurado sus accesos.
+
+`003-ver los usuarios del sistema.sql`
 
 ```sql
 SELECT User, Host 
@@ -4530,14 +5179,17 @@ FROM mysql.user;
 ```
 
 ### nos conectamos a mysql
+<small>Creado: 2025-11-24 10:40</small>
 
 #### Explicación
 
-Este código es un ejemplo básico de cómo conectarse a una base de datos MySQL y ejecutar una consulta para obtener todos los registros de la tabla "clientes". Comenzamos importando el módulo `mysql.connector`, que nos proporciona las herramientas necesarias para interactuar con bases de datos MySQL. Luego, creamos una conexión a la base de datos utilizando nuestras credenciales (nombre del host, usuario, contraseña y nombre de la base de datos). Una vez establecida la conexión, creamos un objeto cursor que se utilizará para ejecutar comandos SQL.
+Este fragmento de código en Python se encarga de conectarse a una base de datos MySQL y realizar una consulta sencilla para recuperar todos los registros de la tabla llamada `clientes`. Primero, el programa importa la biblioteca `mysql.connector`, que proporciona funciones para interactuar con bases de datos MySQL. Luego, crea una conexión a la base de datos especificando el host (en este caso, "localhost"), usuario ("tiendaclase"), contraseña y la base de datos deseada ("tiendaclase").
 
-El código ejecuta una consulta SELECT * FROM clientes; que recupera todos los registros de la tabla "clientes". Este comando devuelve todas las filas (registros) y columnas (campos) disponibles en esa tabla. Finalmente, el resultado es almacenado en la variable `filas` y se imprime.
+Una vez establecida la conexión, se crea un objeto cursor que permite ejecutar comandos SQL. En este caso, se utiliza para ejecutar una consulta SELECT que recupera todos los registros de la tabla `clientes`. Los resultados de esta consulta se almacenan en la variable `filas` mediante el método `fetchall()`, que obtiene todas las filas resultantes de la última consulta realizada.
 
-Este tipo de código es crucial para cualquier aplicación que necesite interactuar con una base de datos MySQL, ya que permite a los desarrolladores acceder a los datos almacenados y manipularlos según sea necesario.
+Finalmente, el programa imprime en pantalla el contenido del objeto `filas`, lo cual mostrará todos los registros obtenidos desde la tabla `clientes`. Este tipo de código es fundamental para interactuar con bases de datos y extraer información relevante para su uso o visualización en aplicaciones web o sistemas informáticos.
+
+`004-nos conectamos a mysql.py`
 
 ```python
 import mysql.connector 
@@ -4558,18 +5210,26 @@ print(filas)
 ```
 
 ### ahora ponemos flask
+<small>Creado: 2025-11-24 10:50</small>
 
 #### Explicación
 
-Este fragmento de código es una aplicación simple en Python que utiliza Flask para crear un servicio web y MySQL Connector para interactuar con una base de datos MySQL. El objetivo principal del código es proporcionar una API (interface de programación de aplicaciones) que, cuando se accede a la URL `http://127.0.0.1:5000/clientes`, devuelve un listado en formato JSON de todos los registros presentes en la tabla "clientes" de la base de datos "tiendaclase".
+Este fragmento de código es una aplicación sencilla en Python que utiliza Flask para crear un servidor web que puede ser accedido desde un navegador web o aplicaciones cliente. La función principal del código es conectarse a una base de datos MySQL y devolver todos los registros de la tabla llamada "clientes".
 
-El código comienza importando las bibliotecas necesarias y estableciendo una conexión a la base de datos MySQL que se encuentra en el servidor local (`localhost`). La aplicación Flask, llamada `app`, es configurada para responder a solicitudes HTTP.
+1. **Conexión con la Base de Datos:** El código inicia creando una conexión con una base de datos MySQL local utilizando las credenciales proporcionadas (usuario 'tiendaclase' y contraseña 'Tiendaclase123$'). La base de datos que se va a utilizar es "tiendaclase".
 
-La función `inicio()` se ejecuta cada vez que un usuario accede a la URL `/clientes`. Dentro de esta función, se crea un cursor (un objeto utilizado para interactuar con la base de datos) y se ejecuta una consulta SQL básica que selecciona todos los registros de la tabla "clientes". Los resultados obtenidos por la consulta son almacenados en `filas` y luego convertidos a formato JSON antes de ser devueltos al usuario.
+2. **Configuración del Servidor Web:** A continuación, se crea una instancia de Flask, un micro framework web muy popular en Python para crear aplicaciones web sencillas y rápidas.
 
-Finalmente, el código incluye una declaración que asegura que la aplicación solo se ejecute cuando el archivo es ejecutado directamente (no importado como módulo), lo cual permite iniciar el servidor Flask en modo depuración. Esto facilita el desarrollo y pruebas de las funciones web implementadas.
+3. **Ruta y Función Handler:** La aplicación define una ruta ('/clientes') que, cuando es accedida desde un navegador o cliente HTTP, ejecutará la función `inicio()`. Dentro de esta función:
+   - Se crea un cursor para interactuar con la base de datos.
+   - Se realiza una consulta SQL básica para obtener todos los registros de la tabla 'clientes'.
+   - Los resultados obtenidos se convierten en una estructura JSON utilizando `json.dumps()` y luego son devueltos al cliente que ha solicitado estos datos.
 
-Este tipo de configuración es fundamental para desarrollar aplicaciones que interactúan con bases de datos y necesitan proporcionar acceso a los datos a través de una API web, permitiendo así la integración con otras aplicaciones o interfaces web.
+4. **Ejecución del Servidor:** Finalmente, el código ejecuta el servidor Flask con la opción debug habilitada para facilitar el desarrollo durante las pruebas.
+
+Este tipo de aplicación es útil cuando se necesita acceder a información almacenada en una base de datos desde un entorno web o aplicaciones que consumen servicios web (APIs).
+
+`005-ahora ponemos flask.py`
 
 ```python
 import mysql.connector 
@@ -4599,19 +5259,23 @@ if __name__ == "__main__":
 ```
 
 ### creamos segundo endpoint
+<small>Creado: 2025-11-24 10:58</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo simple de una aplicación web en Python que utiliza Flask y MySQL para interactuar con una base de datos. La aplicación tiene dos endpoints (puntos de entrada) principales: uno para obtener información sobre clientes y otro para listar las tablas presentes en la base de datos.
+Este fragmento de código es una parte de un proyecto que utiliza Flask para crear endpoints (puntos finales) en un servidor web, los cuales interactúan con una base de datos MySQL. El objetivo principal es proporcionar información sobre la estructura y contenido de una base de datos específica a través de consultas web.
 
-Primero, se establece una conexión a la base de datos MySQL usando el módulo `mysql.connector`. Luego, se crea una instancia del objeto Flask que manejará nuestras rutas web. Hay dos rutas definidas:
+El código comienza estableciendo una conexión a una base de datos MySQL local usando las credenciales especificadas (usuario: `tiendaclase`, contraseña: `Tiendaclase123$` y base de datos: `tiendaclase`). Luego, crea una aplicación Flask (`app = Flask(__name__)`) que es la encargada de manejar las solicitudes web entrantes.
 
-1. La ruta `/clientes` ejecuta una consulta SQL para seleccionar todos los registros de la tabla "clientes" y devuelve estos resultados en formato JSON.
-2. La ruta `/tablas` ejecuta otra consulta que lista todas las tablas del esquema actual, convierte estas tablas a un formato listado y luego devuelve este resultado también en JSON.
+El código define dos endpoints importantes mediante decoradores `@app.route()`. El primer endpoint `/clientes` ejecuta una consulta SQL para obtener todos los registros de la tabla `clientes` y devuelve estos datos en formato JSON. Esto permite a cualquier cliente web que acceda a esta URL obtener un listado completo de los clientes registrados en la base de datos.
 
-Finalmente, el bloque `if __name__ == "__main__":` asegura que la aplicación solo se ejecute si el script Python es ejecutado directamente (y no importado como módulo por otro archivo). Con `app.run(debug=True)`, estamos iniciando nuestro servidor Flask en modo de depuración, lo cual facilita mucho el desarrollo y pruebas iniciales.
+El segundo endpoint `/tablas` muestra una lista de todas las tablas existentes en la misma base de datos, volviendo a usar un cursor para ejecutar una consulta que muestra las tablas disponibles (`SHOW TABLES`). Los resultados se procesan y devuelven como una lista JSON con solo los nombres de las tablas.
 
-Este tipo de código es importante porque permite a los desarrolladores crear servicios web que pueden proporcionar datos estructurados (como JSON) fácilmente accesibles desde otras aplicaciones o navegadores web.
+Al final, el bloque `if __name__ == "__main__":` asegura que la aplicación Flask se inicie únicamente cuando el script sea ejecutado directamente (no importado como módulo en otro lugar). La opción `app.run(debug=True)` indica a Flask que ejecute el servidor web en modo de depuración, lo cual es útil durante el desarrollo para facilitar la detección y corrección de errores.
+
+Este código es importante porque permite acceder de forma programática a los datos almacenados en una base de datos MySQL desde un entorno web, proporcionando así una interfaz entre bases de datos y aplicaciones web.
+
+`006-creamos segundo endpoint.py`
 
 ```python
 import mysql.connector 
@@ -4652,18 +5316,27 @@ if __name__ == "__main__":
 ```
 
 ### endpoint principal
+<small>Creado: 2025-11-24 11:14</small>
 
 #### Explicación
 
-Este código es una aplicación web simple hecha con Flask en Python que se conecta a una base de datos MySQL para mostrar información sobre clientes y tablas. Primero, importamos las bibliotecas necesarias: `mysql.connector` para manejar la conexión a la base de datos, `Flask` para crear nuestra aplicación web, y `json` para convertir los resultados en formato JSON.
+Este código Python es una aplicación web simple basada en Flask, un framework popular para desarrollar aplicaciones web rápidas. La aplicación se conecta a una base de datos MySQL y proporciona dos endpoints (puntos de entrada) que permiten acceder a información almacenada en la base de datos.
 
-La aplicación establece una conexión con una base de datos MySQL llamada "tiendaclase" usando credenciales específicas. Luego, se define el comportamiento del servidor cuando recibe peticiones HTTP a la ruta raíz (`/`) y a `/clientes`. La función `raiz()` simplemente muestra un archivo HTML llamado "index.html", mientras que la función `clientes()` ejecuta una consulta SQL para obtener todos los registros de la tabla "clientes" y devuelve estos datos en formato JSON.
+Primero, el código establece una conexión con la base de datos MySQL utilizando los detalles proporcionados como host, usuario, contraseña y nombre de la base de datos. Luego, se crea una instancia de la aplicación Flask.
 
-Además, hay otra ruta definida (`/tablas`) que muestra las tablas existentes en la base de datos. Esta función ejecuta un comando SQL especial llamado `SHOW TABLES;` que lista todas las tablas disponibles y luego convierte estas tablas a una lista de nombres antes de devolverla en formato JSON.
+La función `raiz()` define un endpoint principal que devuelve una página HTML llamada "index.html" cuando alguien accede a la URL raíz del servidor (`http://127.0.0.1:5000/`).
 
-El bloque final del código ejecuta la aplicación Flask si el script es ejecutado directamente (no importado como módulo), con depuración habilitada pero sin un reloader, para evitar problemas conocidos relacionados con las conexiones a la base de datos que podrían surgir al reiniciar la aplicación.
+Las funciones `clientes()` y `tablas()` son otros dos endpoints importantes:
 
-Esta estructura permite interactuar fácilmente con una base de datos desde una interfaz web y es común en aplicaciones web que necesitan mostrar o gestionar datos almacenados en bases de datos MySQL.
+- El endpoint `/clientes` ejecuta una consulta SQL que selecciona todos los registros de la tabla "clientes" en la base de datos y devuelve esos datos como un JSON.
+  
+- El endpoint `/tablas` muestra todas las tablas disponibles en la base de datos, también devolviendo estos nombres como un JSON.
+
+Finalmente, se ejecuta la aplicación Flask con `app.run()`, activando el modo depuración para facilitar la identificación y solución de errores durante el desarrollo. La opción `use_reloader=False` evita que Flask intente reiniciar el servidor automáticamente cuando los cambios en el código ocurren, lo cual es útil al evitar problemas en entornos de producción o complicaciones específicas del proyecto.
+
+Este tipo de aplicación es fundamental para aprender a interactuar con bases de datos desde aplicaciones web y entender cómo estructurar endpoints que proporcionan acceso seguro y controlado a la información almacenada.
+
+`007-endpoint principal.py`
 
 ```python
 import mysql.connector 
@@ -4711,6 +5384,44 @@ if __name__ == "__main__":
     app.run(debug=True, use_reloader=False)
 ```
 
+### Actividades propuestas
+
+### Actividades Propuestas para Estudiantes de Formación Profesional
+
+1. **Configuración y Uso del Servidor MySQL**
+   - Crear una base de datos y tablas con esquemas similares a los presentados en el archivo `001-creo base de datos.sql`.
+   - Los estudiantes deben aprender cómo definir estructuras de tabla básicas, incluyendo campos y restricciones.
+
+2. **Gestión de Usuarios y Privilegios**
+   - Crear un nuevo usuario con privilegios específicos en MySQL utilizando el archivo `002-creamos usuario con permisos.sql` como guía.
+   - Aprenderán a gestionar usuarios y sus niveles de acceso, así como a configurar los límites de consulta y conexión.
+
+3. **Consulta de Información del Sistema**
+   - Ejecutar una consulta SQL para listar todos los usuarios existentes en MySQL usando el archivo `003-ver los usuarios del sistema.sql`.
+   - Aprenderán a consultar información del sistema y comprender la estructura de las tablas de usuario.
+
+4. **Interacción con Base de Datos desde Python**
+   - Desarrollar un script similar al encontrado en `004-nos conectamos a mysql.py` para realizar consultas sobre una tabla determinada.
+   - Aprenderán cómo interactuar con bases de datos MySQL utilizando la biblioteca `mysql.connector` en Python.
+
+5. **Desarrollo Básico de Aplicaciones Web con Flask**
+   - Crear un endpoint en Flask para recuperar y mostrar datos de clientes, como se muestra en el archivo `005-ahora ponemos flask.py`.
+   - Aprenderán a integrar Flask con MySQL para crear endpoints que devuelvan JSON.
+
+6. **Desarrollo de Endpoints Adicionales**
+   - Extender la aplicación Flask creando un nuevo endpoint que muestre las tablas disponibles en la base de datos, similar al código en `006-creamos segundo endpoint.py`.
+   - Aprenderán a manejar múltiples endpoints y diferentes tipos de consultas.
+
+7. **Optimización y Cierre de Conexiones**
+   - Mejorar el código proporcionado en `007-endpoint principal.py` para garantizar que los recursos se cierren correctamente después del uso.
+   - Aprenderán la importancia de la gestión adecuada de conexiones y cómo prevenir fugas de memoria.
+
+8. **Manejo de Errores y Excepciones**
+   - Implementar manejo de excepciones en las consultas y endpoints basándose en los ejemplos anteriores.
+   - Aprenderán a tratar errores comunes que pueden ocurrir durante la interacción con una base de datos.
+
+Estas actividades permiten a los estudiantes comprender y practicar conceptos esenciales del manejo de bases de datos, programación en Python, así como el desarrollo básico de aplicaciones web utilizando Flask.
+
 
 <a id="composiciones-externas"></a>
 ## Composiciones externas
@@ -4722,16 +5433,21 @@ Este conjunto de ejercicios se centra en la realización de consultas SQL que in
 Además, los estudiantes explorarán cómo utilizar un lenguaje de programación, en este caso Python, junto con Flask, para interactuar con la base de datos creada y mostrar los resultados de las consultas SQL en una página web. Esto incluye establecer conexiones seguras a la base de datos y manejar resultados mediante plantillas HTML para presentar información de manera estructurada.
 
 ### creamos una base de datos
+<small>Creado: 2025-11-26 13:01</small>
 
 #### Explicación
 
-Este código SQL crea una base de datos llamada `composiciones` y dentro de ella establece cuatro tablas: `alumnos`, `profesores`, `asignaturas` y `matriculas`. Cada tabla tiene sus propias columnas que almacenan información específica. Por ejemplo, la tabla `alumnos` contiene el identificador único del alumno (que es también su clave primaria), su nombre y apellidos.
+Este fragmento de código SQL tiene varias partes importantes que crean una base de datos y sus tablas para gestionar información relacionada con alumnos, profesores y asignaturas. 
 
-La tabla `asignaturas`, por otro lado, no solo almacena información sobre cada asignatura como su identificador y nombre, sino que también incluye un campo para el identificador del profesor que imparte la asignatura. Esto sugiere una relación entre las tablas `profesores` y `asignaturas`.
+Primero, se inicia sesión en MySQL como usuario `root`, solicitando la contraseña (`sudo mysql -u root -p`). Luego, crea una nueva base de datos llamada `composiciones` (`CREATE DATABASE composiciones;`). Después, selecciona esta base de datos recién creada para trabajar con ella (`USE composiciones;`).
 
-Finalmente, la tabla `matriculas` registra cuándo un alumno está inscrito en una asignatura, vinculando cada matrícula a un identificador de asignatura y a un identificador del alumno. Aunque no se implementan claves foráneas reales debido a su ausencia explícita en el código proporcionado, las relaciones entre estas tablas son claras e importantes para entender cómo están relacionados los datos.
+A continuación, se crean cuatro tablas en la base de datos: `alumnos`, `profesores`, `asignaturas` y `matriculas`. Cada tabla tiene un campo `Identificador` que funciona como clave primaria (Primary Key) para identificar únicamente a cada registro. Las tablas `alumnos` y `profesores` contienen campos adicionales para el nombre y los apellidos de las personas involucradas. La tabla `asignaturas` incluye un campo adicional llamado `id_profesor`, que aunque no se ha establecido como clave foránea (Foreign Key), sugiere una relación con la tabla `profesores`. Finalmente, la tabla `matriculas` contiene campos para identificar a qué asignatura y a qué alumno está asociada cada matrícula.
 
-Este tipo de estructura es crucial porque permite organizar y gestionar grandes cantidades de información de manera eficiente y permitir consultas complejas que conectan múltiples registros.
+El último comando en el código invita al usuario a crear datos de muestra en español. Aunque no se proporcionan detalles específicos sobre cómo hacerlo ni cuántos registros deben crearse, la idea es llenar las tablas con información realista para poder experimentar y practicar consultas en la base de datos recién creada.
+
+Este código es importante porque establece una estructura básica que permite organizar y gestionar datos relacionados con estudiantes, cursos y profesores en un entorno educativo.
+
+`001-creamos una base de datos.sql`
 
 ```sql
 sudo mysql -u root -p
@@ -4768,14 +5484,15 @@ crea datos de muestra, en español, tantos como puedas, no hay foreign key reale
 ```
 
 ### datos de muestra
+<small>Creado: 2025-11-26 13:02</small>
 
 #### Explicación
 
-Este código SQL está insertando datos en varias tablas relacionadas con una escuela o universidad. La primera parte del código agrega registros a la tabla `alumnos`, donde cada registro contiene un identificador único para el estudiante y sus nombres completos (nombre y apellidos). Luego, se añaden registros similares pero diferentes a la tabla `profesores` que almacena los datos de profesores.
+Este fragmento de código SQL está insertando datos en varias tablas relacionadas con una base de datos escolar. Primero, se agregan registros a la tabla `alumnos`, incluyendo identificadores únicos, nombres y apellidos para cada estudiante. Luego, se añaden detalles sobre los profesores en la tabla `profesores`. Después, se insertan asignaturas con sus respectivos identificadores y el identificador del profesor responsable de impartirla. Finalmente, se registran las matrículas de estudiantes en diferentes cursos mediante registros en la tabla `matriculas`, que vincula a los alumnos y las asignaturas por medio de sus IDs correspondientes.
 
-La tercera parte del código inserta información en la tabla `asignaturas`, donde cada asignatura tiene un identificador único y también se le asigna un profesor (referenciado por su ID). Finalmente, se insertan registros en la tabla `matriculas` que representan las inscripciones de los estudiantes a diferentes cursos. Cada registro en esta tabla incluye el identificador de una matrícula, el identificador del curso y el identificador del estudiante.
+Este código es importante porque establece una base de datos inicial para un sistema educativo, permitiendo a los desarrolladores y usuarios interactuar con datos como los nombres de los estudiantes, los cursos en los que están inscritos, así como el personal docente responsable. Esto facilita la gestión de información en contextos escolares o académicos.
 
-Este código es importante porque establece una base de datos inicial con información ficticia necesaria para realizar consultas más adelante. Permite entender cómo se relacionan las tablas entre sí (por ejemplo, un estudiante puede estar matriculado en varias asignaturas impartidas por diferentes profesores) y cómo acceder a esa información a través de consultas SQL.
+`002-datos de muestra.sql`
 
 ```sql
 INSERT INTO alumnos (Identificador, nombre, apellidos) VALUES
@@ -4852,24 +5569,34 @@ INSERT INTO matriculas (Identificador, id_asignatura, id_alumno) VALUES
 ```
 
 ### consulta poco productiva
+<small>Creado: 2025-11-26 13:03</small>
 
 #### Explicación
 
-El fragmento de código SQL que has proporcionado es una consulta muy simple pero fundamental en el manejo de bases de datos. La instrucción `SELECT * FROM matriculas;` se encarga de extraer toda la información de la tabla llamada "matriculas". Aquí, el asterisco (*) funciona como un atajo para seleccionar todas las columnas que contiene esa tabla sin tener que nombrarlas una por una. Esto es muy útil cuando quieres obtener rápidamente todos los datos disponibles en la tabla sin especificar cada campo individualmente, lo cual puede ahorrar tiempo y simplificar el código cuando trabajamos con tablas grandes o desconocidas. Sin embargo, debes usar esta consulta con cuidado, especialmente en entornos de producción, ya que podría consumir muchos recursos del servidor si la tabla es muy grande.
+Este fragmento de código SQL es muy sencillo pero muy útil. La instrucción `SELECT * FROM matriculas;` se utiliza para recuperar todas las filas y columnas de la tabla llamada `matriculas`. En otras palabras, esta consulta te permite ver toda la información que hay en esa tabla sin especificar columnas particulares.
+
+Es importante entender que el uso del asterisco (`*`) es conveniente cuando quieres obtener rápidamente una visión general del contenido de una tabla completa. Sin embargo, en situaciones reales y complejas, es mejor especificar las columnas exactas que necesitas para mejorar la eficiencia de tu consulta.
+
+En este contexto, el archivo `003-consulta poco productiva.sql` probablemente está utilizando esta consulta como ejemplo de cómo una consulta puede no ser tan eficiente si se hace sin considerar cuidadosamente qué datos específicos se necesitan.
+
+`003-consulta poco productiva.sql`
 
 ```sql
 SELECT * FROM matriculas;
 ```
 
 ### composicion
+<small>Creado: 2025-11-26 13:06</small>
 
 #### Explicación
 
-Este fragmento de código SQL realiza una consulta que combina dos tablas, `matriculas` y `asignaturas`, utilizando un tipo especial de combinación llamada "izquierda" (LEFT JOIN en inglés). La finalidad es obtener información tanto de las matrículas como de las asignaturas a las que están asociadas, incluso si no hay una correspondencia directa en la tabla `asignaturas`. 
+Este código SQL realiza una consulta que combina dos tablas, `matriculas` y `asignaturas`, utilizando un tipo de unión llamada "JOIN izquierdo" o en inglés "LEFT JOIN". La función principal es recuperar toda la información de la tabla `matriculas` junto con cualquier información correspondiente de la tabla `asignaturas` basándose en el ID de asignatura.
 
-El comando `SELECT *` indica que se van a recuperar todas las columnas o campos de ambas tablas resultantes de esta combinación. La cláusula `FROM matriculas` especifica que el proceso comienza con la tabla `matriculas`, y la instrucción `LEFT JOIN asignaturas ON matriculas.id_asignatura = asignaturas.Identificador` une las filas de ambas tablas basándose en la correspondencia entre los campos `id_asignatura` (en la tabla `matriculas`) e `Identificador` (en la tabla `asignaturas`). 
+El comando `LEFT JOIN` asegura que se incluyan todas las filas de la tabla izquierda (`matriculas`) incluso si no hay coincidencias en la tabla derecha (`asignaturas`). Esto significa que si una matrícula no tiene un registro correspondiente en `asignaturas`, el resultado de esa consulta aún mostrará los datos de la matrícula, pero con valores nulos donde esperarías ver información de `asignaturas`.
 
-Este tipo de consulta es útil cuando se quiere mantener todas las entradas de una tabla principal (`matriculas`, en este caso) y agregar información adicional de otra tabla (`asignaturas`) donde sea posible, sin perder datos incluso si no hay coincidencias en la segunda tabla. Esto facilita el análisis y presentación de datos relacionados entre diferentes entidades en un sistema de gestión de bases de datos.
+Esta operación es útil cuando necesitas consultar todos los registros de inscripciones estudiantiles y obtener detalles sobre las asignaturas a las que están asociadas, sin perder ninguna inscripción incluso si no hay datos correspondientes en la tabla de asignaturas.
+
+`004-composicion.sql`
 
 ```sql
 SELECT 
@@ -4880,14 +5607,19 @@ ON matriculas.id_asignatura = asignaturas.Identificador;
 ```
 
 ### mas composiciones
+<small>Creado: 2025-11-26 13:10</small>
 
 #### Explicación
 
-Este fragmento de código SQL está realizando una consulta que combina información de tres tablas diferentes: `matriculas`, `asignaturas` y `alumnos`. La finalidad es obtener un conjunto de datos completo que incluye detalles tanto sobre las matrículas como sobre los alumnos y asignaturas relacionadas con ellas.
+Este fragmento de código SQL realiza una consulta que combina datos de tres tablas diferentes: `matriculas`, `asignaturas` y `alumnos`. La consulta selecciona todos los campos (`*`) de la tabla `matriculas` e incorpora información adicional cruzando o "uniendo" las filas con las tablas correspondientes `asignaturas` y `alumnos`.
 
-La consulta utiliza operaciones llamadas "JOIN" para cruzar información entre tablas. En este caso, se usan dos tipos específicos: `LEFT JOIN`. Esto significa que todas las filas de la tabla izquierda (en este caso, `matriculas`) serán incluidas en el resultado, incluso si no hay coincidencias en las otras tablas (`asignaturas` y `alumnos`). Cuando no haya un registro correspondiente en una de las tablas derechas, se mostrará NULL para esas columnas.
+Las uniones se realizan utilizando lo que se llama un "LEFT JOIN", que asegura que todas las filas de la tabla `matriculas` aparezcan en el resultado, incluso si no hay coincidencias en las otras tablas. Esto es importante porque puede haber matrículas sin información asociada en `asignaturas` o `alumnos`, y queremos mantener esos registros también.
 
-Esta técnica es útil cuando necesitas recuperar información completa sobre los registros de matrícula, incluyendo detalles adicionales de asignaturas y alumnos que pueden o no estar presentes. Por ejemplo, si un alumno aún no ha sido registrado en la tabla `alumnos`, su matrícula aparecerá con valores NULL para las columnas provenientes de esta tabla.
+La consulta une la tabla `matriculas` con `asignaturas` basándose en el campo `id_asignatura` de `matriculas` que coincide con el campo `Identificador` de `asignaturas`. Luego, se realiza otra unión entre `matriculas` y `alumnos`, usando el campo `id_alumno` de `matriculas` que coincide con el campo `Identificador` en la tabla `alumnos`.
+
+Esta consulta es útil para obtener una vista completa de las matrículas, incluyendo detalles sobre los alumnos y las asignaturas relacionados.
+
+`005-mas composiciones.sql`
 
 ```sql
 -- Seleccionamos los datos que nos interesan
@@ -4903,16 +5635,17 @@ ON matriculas.id_alumno = alumnos.Identificador;
 ```
 
 ### proyeccion
+<small>Creado: 2025-11-26 13:10</small>
 
 #### Explicación
 
-Este código SQL es una consulta que combina información de varias tablas para obtener un resumen útil. En concreto, el objetivo es seleccionar los nombres de las asignaturas y los nombres completos de los alumnos que están matriculados en estas asignaturas.
+Este fragmento de código SQL realiza una consulta compleja que combina información de varias tablas en una base de datos para proporcionar detalles sobre las matrículas de los estudiantes. La consulta selecciona específicamente el nombre de la asignatura, el nombre y apellidos del alumno.
 
-La consulta comienza seleccionando columnas específicas: el nombre de la asignatura desde la tabla `asignaturas`, y tanto el nombre como los apellidos del alumno desde la tabla `alumnos`. Estos elementos son relevantes porque nos permiten identificar claramente a cada estudiante junto con la materia en la que está inscrito.
+La consulta utiliza dos operaciones `LEFT JOIN` para unir las tablas `matriculas`, `asignaturas` y `alumnos`. Primero, se une la tabla `matriculas` con la tabla `asignaturas` basándose en el campo `id_asignatura` de la tabla `matriculas` que coincide con el campo `Identificador` de la tabla `asignaturas`. Luego, esta combinación resultante se une a la tabla `alumnos` mediante el campo `id_alumno` de las matrículas y el campo `Identificador` en los alumnos.
 
-Para unir esta información, se utilizan operaciones `LEFT JOIN` entre las tablas `matriculas`, `asignaturas` y `alumnos`. Un `LEFT JOIN` asegura que obtenemos todas las filas de la tabla inicial (en este caso, `matriculas`) junto con los datos correspondientes de las otras tablas. Esto significa que incluso si un estudiante no está matriculado en ninguna asignatura (aunque es poco probable), su información se mostraría en el resultado, pero sin detalles sobre la asignatura.
+Esta consulta es importante porque permite obtener una vista completa del registro académico, mostrando qué estudiantes están inscritos en qué asignaturas. Esto facilita la gestión y análisis de datos relacionados con la asistencia y rendimiento académico de los estudiantes.
 
-Este tipo de consulta es muy útil para generar informes detallados o para hacer análisis más complejos en sistemas educativos.
+`006-proyeccion.sql`
 
 ```sql
 -- Seleccionamos los datos que nos interesan
@@ -4930,18 +5663,23 @@ ON matriculas.id_alumno = alumnos.Identificador;
 ```
 
 ### varias consultas para mas adelante
+<small>Creado: 2025-11-26 13:12</small>
 
 #### Explicación
 
-Este código SQL está formado por cuatro consultas diferentes que buscan recuperar información relacionada con las matrículas de estudiantes en ciertas asignaturas. Cada consulta se enfoca en combinar datos de tres tablas: `matriculas`, `asignaturas` y `alumnos`. La idea principal es obtener el nombre de la asignatura, el nombre del alumno y los apellidos del mismo.
+Este fragmento de código SQL contiene cuatro consultas que combinan información desde tres tablas: `matriculas`, `asignaturas` y `alumnos`. Cada consulta tiene como objetivo obtener el nombre de la asignatura, el nombre del alumno y los apellidos del mismo. La clave para entender estas consultas es comprender cómo se unen las tablas entre sí.
 
-La primera consulta utiliza un JOIN interno (INNER JOIN), lo que significa que sólo mostrará las combinaciones donde hay una matrícula válida en ambas tablas `asignaturas` y `alumnos`. Esto garantiza que se obtengan sólo aquellos registros para los cuales existen datos completos tanto de la asignatura como del alumno.
+En la primera consulta, se utiliza una combinación interna (`INNER JOIN`) entre las tres tablas a través de sus respectivas identificadores. Esto significa que solo se mostrarán aquellas filas donde hay coincidencia en los datos entre las tablas, es decir, aquellos alumnos y asignaturas para los cuales realmente existen registros de matriculación.
 
-Las siguientes dos consultas usan un JOIN izquierdo (LEFT JOIN) y uno derecho (RIGHT JOIN), respectivamente. Estos tipos de joins permiten incluir todas las filas de una tabla, incluso cuando no hay correspondencia en la otra tabla. Es decir, si algunos alumnos no están matriculados en ninguna asignatura o viceversa, estos registros aún se mostrarán con información nula para los datos que faltan.
+La segunda consulta usa un `LEFT JOIN` (o unión izquierda) desde la tabla `matriculas` hacia `asignaturas` y luego a `alumnos`. Este tipo de unión asegura que todos los registros de la tabla inicial (`matriculas`) sean mostrados, incluso si no hay una correspondencia en las tablas con las que se une. Esto puede ser útil para ver matrículas sin asignación o alumnos sin datos registrados.
 
-La cuarta consulta combina dos consultas mediante el uso de `UNION`, lo cual permite unir los resultados de una consulta LEFT JOIN y una RIGHT JOIN. Esto resulta en una lista completa de todas las asignaturas y alumnos, incluso aquellos que no tienen coincidencias exactas en ambas tablas debido a la combinación de LEFT y RIGHT JOIN.
+La tercera consulta utiliza un `RIGHT JOIN`, lo cual es similar al `LEFT JOIN` pero desde la perspectiva de la tabla derecha (`asignaturas` en este caso). Aquí, se asegura que todos los registros de `asignaturas` sean mostrados, incluyendo aquellos sin matrículas asociadas.
 
-Estos ejemplos son útiles para estudiantes de Formación Profesional ya que enseñan cómo combinar datos desde múltiples tablas y cómo manejar situaciones donde los registros pueden no tener información completa en todas las tablas relacionadas.
+Finalmente, la cuarta consulta combina resultados de las dos consultas anteriores usando el operador `UNION`, lo cual elimina duplicados y junta resultados de ambas consultas en un solo conjunto. Esto permite obtener una vista completa que incluye tanto los registros con coincidencias como aquellos sin ellas, creando así una lista exhaustiva de asignaturas y alumnos vinculados a través de las matrículas.
+
+Este tipo de consulta es fundamental para entender cómo se pueden combinar datos dispersos en distintas tablas mediante diversas técnicas de unión en SQL.
+
+`007-varias consultas para mas adelante.sql`
 
 ```sql
 SELECT 
@@ -5002,14 +5740,15 @@ RIGHT JOIN alumnos
 ```
 
 ### creamos vista
+<small>Creado: 2025-11-26 13:13</small>
 
 #### Explicación
 
-Este fragmento de código SQL crea una vista llamada `matriculas_join`. Una vista en SQL es como un alias para una consulta compleja que se puede utilizar como si fuera una tabla real. En este caso, la vista combina información de tres tablas: `matriculas`, `asignaturas` y `alumnos`.
+Este código SQL crea una vista llamada `matriculas_join` que combina información de varias tablas en la base de datos para facilitar consultas más complejas. La vista selecciona el nombre de la asignatura, el nombre y los apellidos del alumno a partir de las tablas `matriculas`, `asignaturas` y `alumnos`. Utiliza un tipo especial de combinación llamada "LEFT JOIN" que asegura que se incluyen todos los registros de la tabla `matriculas`, incluso si no hay correspondencia en otras tablas. Esto es importante porque permite obtener información completa sobre las matrículas, sin perder ningún registro por falta de datos en otra tabla.
 
-La consulta selecciona específicamente el nombre de la asignatura, el nombre del alumno y los apellidos del alumno. Utiliza dos operaciones `LEFT JOIN` para unir las tablas `matriculas` con `asignaturas` basándose en el identificador de asignatura, y luego une nuevamente `matriculas` con `alumnos` usando el identificador de alumno.
+La creación de esta vista facilita a los desarrolladores y administradores de bases de datos realizar consultas más rápidas y manejables que obtengan una visión consolidada del estado actual de las matriculas en la base de datos, mostrando así qué alumnos están inscritos en qué asignaturas.
 
-La importancia de esta vista radica en que permite a los usuarios acceder fácilmente a la información combinada sin necesidad de escribir una consulta compleja cada vez. Simplifica la visualización de datos relacionados entre estudiantes, asignaturas y matrículas en un solo conjunto de resultados.
+`008-creamos vista.sql`
 
 ```sql
 CREATE VIEW matriculas_join AS 
@@ -5025,26 +5764,32 @@ ON matriculas.id_alumno = alumnos.Identificador;
 ```
 
 ### llamar a la vista
+<small>Creado: 2025-11-26 13:15</small>
 
 #### Explicación
 
-Este fragmento de código SQL es una consulta que selecciona todos los datos de una tabla llamada `matriculas_join`. La instrucción `SELECT *` indica que se deben recuperar todas las columnas y filas disponibles en la tabla especificada. En este caso, estás accediendo a una vista o tabla denominada `matriculas_join`, que probablemente contiene información relacionada con las matrículas de estudiantes combinadas desde diferentes tablas originales mediante técnicas de unión (join). Esta consulta es útil cuando necesitas ver todos los datos de esta tabla en particular, lo cual puede ser crucial para el análisis o la gestión de registros en sistemas educativos.
+Este fragmento de código SQL está realizando una consulta que selecciona todos los datos de una tabla llamada `matriculas_join`. La instrucción `SELECT *` indica que se recuperan todas las columnas y filas disponibles en esa tabla específica. Es importante entender que esta consulta es útil cuando ya conoces la estructura y el contenido de la tabla, ya que devuelve toda la información sin hacer filtros o modificaciones.
+
+La tabla `matriculas_join`, probablemente fue creada mediante una operación de combinación (join) entre dos o más tablas relacionadas, como por ejemplo 'estudiantes' y 'cursos', para obtener un conjunto de datos amplio que incluye detalles tanto de los estudiantes como de las matrículas en cursos. Este tipo de consulta es común en el análisis de bases de datos cuando se necesita una visión completa del resultado de dicha combinación.
+
+`009-llamar a la vista.sql`
 
 ```sql
 SELECT * FROM matriculas_join;
 ```
 
 ### creamos un usuario
+<small>Creado: 2025-11-26 13:21</small>
 
 #### Explicación
 
-Este fragmento de código SQL está diseñado para crear un nuevo usuario en una base de datos MySQL y configurar sus permisos. Primero, el comando `CREATE USER` crea un nuevo usuario llamado 'composiciones' que puede conectarse desde el localhost (el mismo servidor donde se ejecuta la base de datos) y le asigna una contraseña también llamada 'composiciones'. A continuación, el comando `GRANT USAGE` establece inicialmente los permisos del usuario en un nivel bajo para evitar problemas de seguridad.
+Este fragmento de código SQL se utiliza para crear un nuevo usuario en la base de datos y otorgarle permisos específicos. Primero, el comando `CREATE USER` crea un usuario llamado `'composiciones'` que puede conectarse desde el localhost (la misma máquina donde está corriendo la base de datos) y le asigna una contraseña 'composiciones'. 
 
-Luego, el código utiliza `ALTER USER` para configurar las restricciones y características adicionales del usuario. Aquí se desactivan varias limitaciones por defecto que podrían afectar la capacidad del usuario para realizar consultas o conexiones sin limitaciones horarias innecesarias.
+A continuación, se utiliza `GRANT USAGE ON *.* TO` para dar al usuario acceso básico a todas las bases de datos existentes sin otorgarle ninguna permiso específico. Luego, el comando `ALTER USER` ajusta la configuración del usuario permitiéndole conectarse sin verificar ciertos límites (como cuántas consultas puede hacer por hora), estableciendo estos valores en 0 para desactivarlos.
 
-Finalmente, con otro comando `GRANT`, se otorgan todos los privilegios disponibles al usuario 'composiciones' en todas las tablas y vistas de la base de datos 'composiciones'. Esto significa que el usuario tiene acceso completo a realizar cualquier tipo de operación dentro del esquema 'composiciones', como leer, escribir, actualizar o eliminar registros. El comando `FLUSH PRIVILEGES` actualiza la configuración de MySQL para aplicar los cambios recién hechos.
+Finalmente, se otorgan todos los privilegios disponibles al usuario `'composiciones'` para cualquier objeto dentro de la base de datos 'composiciones', usando el comando `GRANT ALL PRIVILEGES`. El último paso es ejecutar `FLUSH PRIVILEGES`, lo cual asegura que todas las nuevas reglas y cambios sean aplicados inmediatamente. Este código es importante porque permite gestionar los accesos a la base de datos de manera segura y controlada, permitiendo al usuario realizar operaciones necesarias mientras mantiene ciertos niveles de seguridad.
 
-Este proceso es importante porque permite administrar y controlar el acceso a bases de datos de manera segura, garantizando que cada usuario tenga solo los niveles de permiso necesarios para realizar sus tareas.
+`010-creamos un usuario.sql`
 
 ```sql
 CREATE USER 
@@ -5068,16 +5813,17 @@ FLUSH PRIVILEGES;
 ```
 
 ### Plantilla de conexion
+<small>Creado: 2025-11-26 13:33</small>
 
 #### Explicación
 
-Este código es un fragmento de Python que se utiliza para conectarse a una base de datos MySQL y realizar consultas SQL. Comenzamos importando el módulo `mysql.connector`, que nos proporciona las herramientas necesarias para establecer la conexión con la base de datos.
+Este fragmento de código es una plantilla para conectarse a una base de datos MySQL y realizar consultas en Python. La conexión se establece usando el módulo `mysql.connector`, que permite interactuar con bases de datos MySQL desde programas Python. En primer lugar, el código crea una conexión con la base de datos especificando detalles como el host (en este caso, "localhost"), el usuario ("composiciones") y la contraseña también es "composiciones". Además, se indica que la base de datos a la cual se quiere conectar es llamada "composiciones".
 
-El programa crea una conexión a la base de datos usando los detalles proporcionados: el servidor local (`localhost`), un usuario llamado "composiciones", y la misma contraseña "composiciones". También especificamos que queremos acceder a la base de datos "composiciones".
+Una vez establecida la conexión, se crea un objeto `cursor` que actúa como una interfaz entre tu programa Python y la base de datos MySQL. Este cursor ejecuta una consulta SQL simple ("SELECT * FROM matriculas_join;") para obtener todos los registros de la tabla llamada "matriculas_join". La función `fetchall()` recupera todas las filas resultantes de esta consulta y las almacena en la variable `filas`.
 
-Una vez establecida la conexión, creamos un objeto `cursor`, que es una herramienta para ejecutar comandos SQL en la base de datos. Aquí se utiliza para ejecutar una consulta que selecciona todos los registros de una tabla llamada `matriculas_join`.
+Finalmente, el código imprime todas las filas recuperadas. Este tipo de plantilla es útil porque proporciona un enfoque estructurado para conectarse a una base de datos MySQL desde Python, ejecutar consultas y procesar los resultados, lo cual es crucial cuando se trabaja con bases de datos en aplicaciones web o scripts de automatización.
 
-Finalmente, el código recoge todas las filas resultantes de esta consulta y las imprime por pantalla con el comando `print(filas)`. Este fragmento es importante porque demuestra cómo realizar consultas a bases de datos desde un programa Python, lo que es crucial para la interacción con sistemas que almacenan información en bases de datos.
+`011-Plantilla de conexion.py`
 
 ```python
 import mysql.connector 
@@ -5098,14 +5844,23 @@ print(filas)
 ```
 
 ### plantilla diccionario
+<small>Creado: 2025-11-26 13:33</small>
 
 #### Explicación
 
-Este código es una parte de un programa en Python que se conecta a una base de datos MySQL y ejecuta una consulta SQL para obtener información de una tabla llamada `matriculas_join`. La conexión a la base de datos se establece usando el módulo `mysql.connector`, proporcionando los detalles necesarios como el host (localhost), usuario, contraseña y nombre de la base de datos. Luego, se crea un objeto cursor con la opción `dictionary=True`, lo que significa que cada fila de resultado será un diccionario en lugar de una tupla, facilitando la lectura y manipulación de los datos.
+Este código Python se utiliza para conectarse a una base de datos MySQL y ejecutar una consulta que recupera todos los registros de una tabla llamada `matriculas_join`. 
 
-Después de establecer la conexión y crear el cursor, se ejecuta una consulta SQL que selecciona todos los campos (`*`) de la tabla `matriculas_join`. La función `fetchall()` del objeto cursor recupera todas las filas resultantes de esta consulta y las almacena en la variable `filas`. Finalmente, estas filas son impresas en la consola.
+Primero, el código importa el módulo `mysql.connector`, que proporciona las funciones necesarias para establecer la conexión con la base de datos. Luego, se crea un objeto de conexión usando la función `connect()`, pasando los detalles del servidor (como host, usuario, contraseña y nombre de la base de datos).
 
-Este código es importante porque demuestra cómo interactuar con una base de datos desde Python para realizar consultas SQL y manejar los resultados obtenidos, lo cual es fundamental en el desarrollo web y aplicaciones que requieren almacenamiento y recuperación de datos.
+Una vez establecida la conexión, se crea un cursor utilizando el método `cursor()` del objeto de conexión. Aquí es donde se especifica que queremos usar un diccionario para representar cada fila en lugar del formato predeterminado (una tupla). Esto facilita acceder a los datos por nombre de columna.
+
+El código ejecuta una consulta SQL simple que selecciona todos los registros (`SELECT *`) de la tabla `matriculas_join`. Los resultados se almacenan en la variable `filas` utilizando el método `fetchall()` del cursor, lo que recupera todas las filas resultantes de la última consulta.
+
+Finalmente, se imprime la variable `filas`, mostrando todos los registros recuperados desde la base de datos en formato de lista de diccionarios. Cada diccionario representa una fila de resultados y sus claves son los nombres de las columnas correspondientes.
+
+Este tipo de código es fundamental para interactuar con bases de datos MySQL desde aplicaciones Python, permitiendo realizar consultas y manipular los datos obtenidos de manera eficiente.
+
+`012-plantilla diccionario.py`
 
 ```python
 import mysql.connector 
@@ -5126,18 +5881,19 @@ print(filas)
 ```
 
 ### flask para lanzar web
+<small>Creado: 2025-11-26 13:49</small>
 
 #### Explicación
 
-Este fragmento de código es una pequeña aplicación web creada con Flask, un framework ligero para Python. La función principal del código es establecer una conexión a una base de datos MySQL y luego utilizar esa conexión para ejecutar una consulta SQL que recupera todos los registros de la tabla `matriculas_join`. Los resultados se envían como respuesta al usuario cuando accede a la URL raíz ("/") de la aplicación.
+Este fragmento de código es una pequeña aplicación web creada con Flask, un framework muy popular para desarrollar aplicaciones web en Python. La función principal del código es conectar a una base de datos MySQL y mostrar los resultados de una consulta SQL específica en la página web.
 
-Primero, el código importa las bibliotecas necesarias: `mysql.connector` para gestionar la conexión con MySQL y `Flask`, junto con `render_template`, para crear la aplicación web. Establece una conexión a la base de datos usando credenciales específicas (localhost como host, "composiciones" como usuario y contraseña). Luego, se crea un objeto Flask llamado `app`.
+Primero, el programa importa las bibliotecas necesarias: `mysql.connector` para conectarse a la base de datos MySQL y `Flask` junto con `render_template` para crear la aplicación web. Luego, se establece una conexión con la base de datos usando los detalles proporcionados (host, usuario, contraseña y nombre de la base de datos). 
 
-La función `inicio()` es la ruta principal ("/") del servidor web. Aquí, el código ejecuta una consulta SQL para seleccionar todos los registros de la tabla `matriculas_join`. El resultado de esta consulta, que es una lista de tuplas, se convierte a una cadena y se devuelve al usuario.
+Una vez que se ha establecido la conexión, el código define la ruta raíz ("/") donde Flask responderá a las solicitudes entrantes. En esta función `inicio()`, se crea un objeto cursor con la opción `dictionary=True` para que los resultados de la consulta SQL se devuelvan como diccionarios en lugar de tuplas. Se ejecuta una consulta SQL simple que selecciona todos los registros de la tabla `matriculas_join`. Los datos obtenidos son almacenados en la variable `filas`, que luego es convertida a un string y devuelta al usuario que visita el sitio web.
 
-Finalmente, si este archivo está siendo ejecutado directamente (no importado como un módulo), la aplicación Flask comienza a funcionar en modo depuración. Esto significa que puedes ver mensajes de error más detallados mientras pruebas tu aplicación.
+Finalmente, si el archivo está siendo ejecutado directamente (no importado), se inicia la aplicación Flask con modo de depuración activo (`debug=True`). Esto permite que cualquier cambio en el código se refleje automáticamente en el servidor y proporciona un seguimiento detallado de errores para facilitar la depuración.
 
-Este tipo de código es importante porque permite a los desarrolladores crear aplicaciones web interactivas que pueden interactuar con bases de datos y mostrar información en el navegador del usuario, lo cual es fundamental para muchas aplicaciones web modernas.
+`013-flask para lanzar web.py`
 
 ```python
 import mysql.connector 
@@ -5164,18 +5920,17 @@ if __name__ == "__main__":
 ```
 
 ### uso de plantilla
+<small>Creado: 2025-11-26 13:50</small>
 
 #### Explicación
 
-Este fragmento de código es una aplicación web simple desarrollada con Flask, un framework popular para Python. La aplicación se conecta a una base de datos MySQL y utiliza plantillas HTML para presentar los datos recuperados.
+Este fragmento de código es una aplicación sencilla en Python que utiliza Flask y MySQL para mostrar datos en un sitio web. En primer lugar, el programa establece una conexión a una base de datos MySQL local (en este caso, la base de datos se llama "composiciones" y se conecta con un usuario llamado "composiciones"). Luego, crea una aplicación web básica usando Flask.
 
-El código inicia importando las bibliotecas necesarias: `mysql.connector` para gestionar la conexión a la base de datos MySQL, y `Flask`, junto con `render_template` de Flask, para crear la aplicación web. Establece una conexión a la base de datos MySQL utilizando credenciales específicas (host local, usuario 'composiciones', contraseña 'composiciones' y la base de datos 'composiciones').
+Cuando alguien accede al sitio web en su navegador (específicamente, a la URL raíz), el servidor ejecuta una consulta SQL que selecciona todos los registros de una tabla llamada `matriculas_join`. Esta consulta es realizada mediante un cursor configurado para devolver resultados como diccionarios. Los datos obtenidos se pasan al archivo HTML "index.html" utilizando la función `render_template` de Flask, lo cual permite mostrar esos datos en el sitio web.
 
-La función principal es `inicio()`, que se ejecuta cuando un usuario accede a la página raíz del sitio web ("/"). Dentro de esta función, el código crea un objeto cursor para ejecutar consultas SQL en la base de datos. En este caso, se utiliza una consulta SELECT simple para obtener todos los registros de una tabla llamada `matriculas_join`. Los resultados obtenidos se almacenan en la variable `filas`.
+Esta práctica es importante porque combina varias tecnologías (Python, Flask, SQL y MySQL) para crear una aplicación funcional que interactúa con una base de datos y muestra sus datos de forma amigable al usuario. Es un ejemplo básico pero fundamental del desarrollo web moderno.
 
-Finalmente, la función `inicio()` devuelve el contenido HTML generado por el archivo "index.html", pasándole como parámetro los datos recuperados desde la base de datos (`filas`). Esto permite que la plantilla HTML acceda a estos datos y genere una página web dinámica basada en ellos.
-
-Este código es importante porque demuestra cómo integrar bases de datos con aplicaciones web, permitiendo a los usuarios interactuar con información almacenada y visualizarla de manera organizada.
+`014-uso de plantilla.py`
 
 ```python
 import mysql.connector 
@@ -5201,14 +5956,22 @@ if __name__ == "__main__":
 ```
 
 ### diagrama
+<small>Creado: 2025-11-26 13:36</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo JSON que describe el diseño de una página o diagrama, probablemente para representar la estructura de un sistema web sencillo. En él, se definen varias formas con diferentes tipos (como círculos, rectángulos y "pill" que podría ser un tipo especial) y sus posiciones en un espacio 2D. Cada forma tiene un identificador único (`id`), coordenadas de posición (`left`, `top`), y texto dentro de ellas (`texto`). Por ejemplo, una forma circular (con id "forma-5") representa la tecnología Flask, que es un marco web para Python.
+Este archivo `diagrama.json` es una representación en formato JSON de un diagrama que muestra cómo diferentes archivos y tecnologías se relacionan entre sí. En este caso, el archivo contiene información sobre varias formas y sus posiciones en una interfaz gráfica, aunque no hay flechas que conecten estas formas.
 
-Este tipo de descripción JSON es útil en proyectos de diseño y desarrollo web porque permite a diseñadores e ingenieros compartir visualizaciones de sistemas o interfaces sin tener que crearlas manualmente. Es importante entender cómo se estructuran estos datos ya que te permitirán trabajar con herramientas de diagramación y prototipado más eficientemente.
+Cada elemento del array `formas` representa una forma diferente en el diagrama:
+- Hay un ícono de tipo "pill" representando SQL.
+- Otros tres rectángulos simbolizan archivos o tecnologías HTML, CSS y Python (Py).
+- Además, hay un círculo que representa la tecnología Flask.
 
-Cada forma también tiene propiedades como `width` (ancho) y `height` (altura), aunque en este caso están vacías, lo cual podría indicar que estas dimensiones se determinan automáticamente o no son relevantes para la visualización específica.
+Estas formas están posicionadas en coordenadas específicas (`left` y `top`) para visualizar cómo se relacionan entre sí. Aunque el archivo menciona las posiciones de estas formas, no proporciona detalles sobre sus dimensiones (ancho y alto), lo cual es común cuando el diseño del diagrama aún está en una fase inicial o conceptual.
+
+Este tipo de representación es útil para diseñar interfaces web o entender la arquitectura de un proyecto que utiliza varias tecnologías, como HTML, CSS, Python (para backend) y Flask (marco de aplicaciones web).
+
+`diagrama.json`
 
 ```json
 {
@@ -5262,6 +6025,50 @@ Cada forma también tiene propiedades como `width` (ancho) y `height` (altura), 
   "flechas": []
 }
 ```
+
+### Actividades propuestas
+
+### Actividad 1: Crear una Base de Datos y Tablas
+
+**Descripción:** El objetivo es que los estudiantes creen una base de datos llamada `composiciones` en MySQL, siguiendo el diseño proporcionado en el archivo `001-creamos una base de datos.sql`. Se espera que aprendan a crear tablas relacionales con claves primarias y valores únicos.
+
+### Actividad 2: Inserción de Datos
+
+**Descripción:** Los estudiantes deben insertar los datos de muestra proporcionados en el archivo `002-datos de muestra.sql` en las diferentes tablas creadas. Esto les permitirá familiarizarse con la inserción de registros y manipulación de datos.
+
+### Actividad 3: Consulta Básica
+
+**Descripción:** Los estudiantes deben ejecutar una consulta SQL básica para seleccionar todos los registros de la tabla `matriculas`, utilizando el archivo `003-consulta poco productiva.sql` como punto de partida. El objetivo es que entiendan cómo obtener datos completos desde una única tabla.
+
+### Actividad 4: Consulta con JOINs Simples
+
+**Descripción:** Se les pide a los estudiantes que realicen un `JOIN` entre la tabla `matriculas` y las tablas `asignaturas` e `alumnos`, utilizando el archivo `004-composicion.sql` como base. Esto les enseñará cómo combinar datos de múltiples tablas en una sola consulta.
+
+### Actividad 5: Consulta con JOINs Complejos
+
+**Descripción:** Los estudiantes deben expandir su conocimiento sobre las consultas JOIN creando una consulta más compleja que combine `matriculas`, `asignaturas` y `alumnos`. Basándose en el ejemplo del archivo `005-mas composiciones.sql`, este ejercicio permitirá a los alumnos entender cómo seleccionar datos específicos de múltiples tablas relacionadas.
+
+### Actividad 6: Proyección de Datos
+
+**Descripción:** En esta actividad, los estudiantes deben realizar una consulta que seleccione solo ciertos campos relevantes para cada estudiante en relación con sus asignaturas matriculadas (usando `006-proyeccion.sql` como modelo). Esto les permitirá entender cómo seleccionar y proyectar datos específicos de tablas relacionales.
+
+### Actividad 7: Creación de Vistas
+
+**Descripción:** Se requiere que los estudiantes creen una vista en MySQL basada en la consulta proporcionada en `006-proyeccion.sql`. Esta actividad enseñará a los alumnos cómo crear y utilizar vistas para simplificar consultas complejas.
+
+### Actividad 8: Llamado a Vistas
+
+**Descripción:** Los estudiantes deben realizar consultas utilizando la vista que crearon anteriormente. Basándose en `009-llamar a la vista.sql`, esta actividad permitirá a los alumnos entender cómo se pueden usar las vistas para acceder rápidamente a datos específicos.
+
+### Actividad 9: Conexión y Consulta con Python
+
+**Descripción:** Los estudiantes deben utilizar el archivo `011-Plantilla de conexion.py` como guía para conectarse a la base de datos MySQL desde un script Python, realizar una consulta SQL y mostrar los resultados. Esto les permitirá familiarizarse con cómo interactuar con bases de datos desde aplicaciones Python.
+
+### Actividad 10: Desarrollo Básico con Flask
+
+**Descripción:** Basándose en `014-uso de plantilla.py`, se espera que los estudiantes desarrollen un servidor web básico utilizando Flask para conectar a la base de datos y mostrar información estructurada. Esto les permitirá entender cómo integrar bases de datos en aplicaciones web usando Python.
+
+Estas actividades están diseñadas para cubrir una gama completa desde el manejo básico de bases de datos hasta la implementación de soluciones simples en un entorno de desarrollo web, adaptadas al nivel y necesidades del alumnado de ciclos formativos.
 
 
 <a id="subconsultas"></a>
@@ -5431,14 +6238,22 @@ if (isset($_GET['operacion']) && $_GET['operacion'] === 'eliminar') {
 Este diseño es más robusto, seguro y fácil de mantener.
 
 ### Creamos una base de datos
+<small>Creado: 2025-12-03 12:52</small>
 
 #### Explicación
 
-Este fragmento de código SQL te permite crear una base de datos y una tabla para almacenar información sobre equipos de fútbol. En primer lugar, se crea una nueva base de datos llamada `futbol2526` con un conjunto de caracteres (`utf8mb4`) que soporta muchos más símbolos y letras acentuadas necesarios para manejar nombres en diferentes idiomas correctamente. Luego, se selecciona esta base de datos recién creada.
+Este fragmento de código SQL crea una base de datos llamada `futbol2526` con un conjunto específico de características y luego establece esta base de datos como la actual para trabajar en ella. A continuación, se define una tabla llamada `equipos` que almacena información sobre diferentes equipos de fútbol, incluyendo detalles como el nombre del equipo, su ciudad, estadio, año de fundación, presupuesto y sitio web oficial.
 
-A continuación, se define una tabla llamada `equipos` con varias columnas: `id`, que es un número entero que se incrementará automáticamente y servirá como clave principal para identificar únicamente cada equipo; `nombre`, `ciudad`, `estadio`, `fundado`, `presupuesto` y `web`. Estas columnas almacenan información básica sobre el equipo, desde su nombre hasta la URL de su sitio web oficial.
+La tabla `equipos` tiene varias columnas:
+- `id`: es una columna automática que incrementa automáticamente para cada nuevo registro. Se utiliza como clave primaria.
+- `nombre`, `ciudad`, `estadio`, `fundado` y `web`: son campos donde se almacenan datos de texto, algunos obligatorios (como `nombre`) y otros permiten valores nulos (como `ciudad`).
+- `presupuesto`: es un campo numérico con dos decimales para almacenar cantidades monetarias.
 
-Finalmente, se insertan cuatro registros en esta tabla con detalles específicos para equipos conocidos como Real Madrid CF, FC Barcelona, Atlético de Madrid y Valencia CF. Este código es fundamental porque establece las bases para almacenar y gestionar datos sobre equipos de fútbol en una base de datos relacional.
+Finalmente, el código inserta cuatro registros en la tabla `equipos`, cada uno representando información sobre un equipo de fútbol específico como el Real Madrid CF o el FC Barcelona. Estos datos incluyen detalles como el nombre del equipo, su ciudad y estadio, año de fundación, presupuesto y sitio web oficial.
+
+Este código es importante porque establece la estructura básica para almacenar y administrar información sobre equipos de fútbol en una base de datos, permitiendo a los desarrolladores realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) en esta tabla.
+
+`001-Creamos una base de datos.sql`
 
 ```sql
 CREATE DATABASE futbol2526
@@ -5465,14 +6280,17 @@ INSERT INTO equipos (nombre, ciudad, estadio, fundado, presupuesto, web) VALUES
 ```
 
 ### creamos usuario
+<small>Creado: 2025-12-03 12:53</small>
 
 #### Explicación
 
-Este código SQL se utiliza para crear un nuevo usuario en una base de datos y asignarle permisos específicos. Primero, el comando `CREATE USER` crea un usuario llamado `futbol2526` que puede acceder desde el localhost con la contraseña `Futbol2526$`. Luego, `GRANT USAGE ON *.* TO 'futbol2526'@'localhost';` establece que este usuario tiene permiso para conectarse al sistema pero no a ninguna base de datos en particular. El comando `ALTER USER` configura restricciones adicionales sobre el número máximo de consultas y conexiones por hora, todas configuradas inicialmente a 0, lo cual significa que no hay límites establecidos.
+Este fragmento de código SQL sirve para crear un nuevo usuario en la base de datos y concederle ciertos privilegios. Comenzamos creando el usuario `'futbol2526'` que se conectará desde el localhost con una contraseña `'Futbol2526$'`. Luego, le otorgamos al usuario los permisos necesarios para acceder a la base de datos y realizar operaciones limitadas inicialmente. Posteriormente, ajustamos las restricciones del usuario eliminando cualquier límite en el número de consultas, conexiones o actualizaciones por hora que pudiera existir.
 
-Finalmente, se le otorgan todos los privilegios (`GRANT ALL PRIVILEGES ON futbol2526.* TO 'futbol2526'@'localhost';`) al usuario sobre una base de datos específica llamada `futbol2526`, lo que significa que el usuario tendrá acceso completo para realizar operaciones como insertar, actualizar y eliminar registros. El último comando `FLUSH PRIVILEGES` actualiza la caché del servidor SQL para aplicar los cambios recién hechos.
+Finalmente, se le concede al usuario `'futbol2526'` todos los privilegios sobre la base de datos `futbol2526`, lo que significa que puede realizar cualquier operación dentro de esta base de datos. El comando `FLUSH PRIVILEGES;` asegura que estos cambios en los permisos se aplican inmediatamente sin necesidad de reiniciar el servidor MySQL.
 
-Este proceso es importante porque permite controlar quién tiene acceso a la base de datos y qué acciones pueden realizar en ella, lo que ayuda a mantener la seguridad y el rendimiento del sistema.
+Este proceso es importante porque permite gestionar de manera segura quién tiene acceso a qué partes del sistema, protegiendo así la base de datos contra posibles amenazas y garantizando que solo las personas autorizadas puedan realizar cambios críticos.
+
+`002-creamos usuario.sql`
 
 ```sql
 CREATE USER 
@@ -5496,26 +6314,32 @@ FLUSH PRIVILEGES;
 ```
 
 ### repaso select
+<small>Creado: 2025-12-03 12:55</small>
 
 #### Explicación
 
-Este fragmento de código SQL es una consulta que selecciona todos los datos de la tabla llamada "equipos". La sentencia `SELECT *` indica que se deben recuperar todas las columnas y filas disponibles en esa tabla. Es como pedirle a un sistema que te muestre toda la información almacenada sobre los equipos, sin ningún tipo de restricción o filtro adicional. Esta consulta es muy útil cuando necesitas ver el contenido completo de una tabla para revisarlo, verificar su integridad o simplemente tener una visión general del conjunto de datos disponible en ella. Es una herramienta básica pero poderosa para la administración y análisis de bases de datos.
+Este fragmento de código SQL selecciona todos los registros de la tabla llamada `equipos`. La instrucción `SELECT *` indica que se deben recuperar todas las columnas y filas disponibles en esa tabla. Esto es útil cuando necesitas ver toda la información almacenada en la tabla `equipos`, ya sea para comprobar datos, realizar análisis o simplemente revisar el contenido actual de tu base de datos. Es una consulta básica pero fundamental para entender cómo se accede a los datos almacenados en una base de datos relacional.
+
+`003-repaso select.sql`
 
 ```sql
 SELECT * FROM equipos;
 ```
 
 ### insercion parte 1
+<small>Creado: 2025-12-03 13:00</small>
 
 #### Explicación
 
-Este fragmento de código SQL realiza dos acciones principales en una base de datos: inserta un nuevo registro en la tabla llamada `equipos` y luego selecciona todos los registros existentes en esa misma tabla para mostrarlos.
+Este fragmento de código SQL se utiliza para insertar un nuevo registro en una tabla llamada `equipos` y luego mostrar todos los registros que hay en esa misma tabla.
 
-En primer lugar, el comando `INSERT INTO equipos VALUES(...)` agrega una nueva fila a la tabla `equipos`. El valor `NULL` en la primera posición indica que la base de datos debe asignar automáticamente un identificador único (usualmente un número) al nuevo registro. Los siguientes valores ("Levante", "Valencia", "Ciutat de Valencia", 1909, 10000000.00, y "https://levantecf.es") proporcionan información sobre el equipo como su nombre, ciudad, estadio, año de fundación, presupuesto y página web.
+En la primera parte, el comando `INSERT INTO equipos VALUES(...)` añade una nueva fila a la tabla `equipos`. Aquí, `NULL` indica que el campo por el cual generalmente se identifica cada registro (usualmente una columna de tipo ID) será asignado automáticamente por el sistema. Los valores restantes representan los datos específicos del equipo: nombre ("Levante"), ciudad ("Valencia"), estadio ("Ciutat de Valencia"), año de fundación (1909), presupuesto (10,000,000 euros) y página web oficial.
 
-Después del `INSERT`, se ejecuta un comando `SELECT * FROM equipos;` que recupera todos los registros en la tabla `equipos`. Esto es útil para verificar que el nuevo registro se ha añadido correctamente a la base de datos. El uso de este comando después de una inserción permite a los desarrolladores y administradores comprobar rápidamente si la operación fue exitosa.
+Después de insertar el nuevo registro, la consulta `SELECT * FROM equipos;` se encarga de recuperar todos los registros existentes en la tabla `equipos`, incluyendo el recién añadido. Esto es útil para verificar que la inserción ha tenido éxito y para visualizar cómo ahora se ve la tabla completa.
 
-Este tipo de código es fundamental en aplicaciones web o sistemas gestionados por bases de datos, ya que permite introducir nuevos datos y verificar inmediatamente su integridad y correcta incorporación.
+Este tipo de operación es crucial cuando necesitas mantener actualizada una base de datos, ya sea por agregar nuevos equipos a un sistema o por actualizar información existente en el contexto de gestionar datos sobre deportes, empresas u otro tipo de entidades.
+
+`004-insercion parte 1.sql`
 
 ```sql
 INSERT INTO equipos VALUES(
@@ -5532,14 +6356,13 @@ SELECT * FROM equipos;
 ```
 
 ### Insercion solo de unos campos
+<small>Creado: 2025-12-03 13:01</small>
 
 #### Explicación
 
-Este fragmento de código SQL se utiliza para insertar una nueva fila en la tabla llamada `equipos`. Específicamente, el código añade información sobre un equipo de fútbol al almacenar solo dos campos: el nombre del equipo y su ciudad. Aquí, se introduce "Real Sociedad" como el nombre del equipo y "San Sebastian" como la ciudad donde se encuentra este equipo en España.
+Este fragmento de código SQL se utiliza para insertar datos en una tabla llamada `equipos`. Específicamente, el código agrega una nueva fila a la tabla con los valores especificados para las columnas `nombre` y `ciudad`. En este caso, se está añadiendo un equipo llamado "Real Sociedad" que juega en la ciudad de "San Sebastián". La importancia de esta operación radica en permitir que el sistema de gestión de bases de datos (DBMS) registre nuevos equipos sin tener que proporcionar valores para todas las columnas de la tabla, lo cual puede ser útil cuando ciertas columnas tienen un valor predeterminado o pueden estar vacías inicialmente.
 
-Es importante destacar que estamos especificando explícitamente los nombres de las columnas (`nombre` y `ciudad`) antes de proporcionar sus valores correspondientes. Esto ayuda a mantener clara la relación entre cada valor y su ubicación correcta dentro de la tabla, haciéndolo más fácil de leer y depurar.
-
-Esta operación es crucial en el manejo de bases de datos ya que permite almacenar nuevas entradas de manera eficiente, asegurando así que toda la información relevante esté disponible para consultas futuras.
+`005-Insercion solo de unos campos.sql`
 
 ```sql
 INSERT INTO equipos
@@ -5554,12 +6377,13 @@ VALUES(
 ```
 
 ### eliminar registros
+<small>Creado: 2025-12-03 13:04</small>
 
 #### Explicación
 
-Este código SQL es una instrucción `DELETE` que se utiliza para eliminar todos los registros de la tabla llamada "equipos". Cuando ejecutas esta sentencia, todas las filas contenidas en esa tabla serán borradas completamente. La línea de comentario ("-- CUIDADO - esto elimina toda la tabla") es crucial porque advierte sobre el impacto significativo que tiene este comando: una vez que se eliminan los registros, ya no se pueden recuperar fácilmente a menos que exista un sistema de respaldo activo.
+Este fragmento de código SQL es una instrucción `DELETE` que se utiliza para eliminar todos los registros de una tabla llamada `equipos`. La línea `DELETE FROM equipos;` indica que se van a borrar todos los datos existentes en esta tabla sin hacer ninguna excepción. Es importante tener mucho cuidado con este tipo de consulta porque, al ejecutarla, no se puede deshacer el borrado y perderás toda la información almacenada en esa tabla. Normalmente, antes de realizar una operación tan drástica, es recomendable hacer una copia de seguridad o verificar que realmente quieres eliminar todos los registros sin excepción alguna.
 
-Es importante tener mucho cuidado al usar comandos como `DELETE FROM`, especialmente cuando afectan toda la tabla, porque podrías perder datos importantes si no te has asegurado previamente de que es lo que realmente deseas hacer.
+`006-eliminar registros.sql`
 
 ```sql
 DELETE FROM equipos;
@@ -5567,14 +6391,15 @@ DELETE FROM equipos;
 ```
 
 ### actualizacion
+<small>Creado: 2025-12-03 13:09</small>
 
 #### Explicación
 
-Este fragmento de código SQL está compuesto por dos partes. La primera parte es una instrucción `UPDATE` que modifica el registro de un equipo específico en la tabla llamada "equipos". En concreto, esta consulta cambia el valor del campo "presupuesto" a 10 para aquellos equipos cuyo nombre coincide exactamente con 'Valencia CF'. Esto significa que solo se actualizará el presupuesto del equipo 'Valencia CF' si está presente en la tabla.
+Este fragmento de código SQL se utiliza para modificar datos en una base de datos. En primer lugar, la consulta `UPDATE equipos SET presupuesto = 10 WHERE nombre = 'Valencia CF';` actualiza el campo "presupuesto" del registro correspondiente al equipo "Valencia CF", estableciéndolo en 10 unidades (que pueden ser millones de euros o cualquier otra medida según el contexto). Esta operación es importante cuando necesitas cambiar información específica que ya existe en la base de datos, como ajustar un presupuesto para mantener actualizados los datos financieros del equipo.
 
-La segunda parte es una instrucción `SELECT` que se encarga de devolver todos los registros existentes en la tabla "equipos". Esta sentencia permite ver cómo ha cambiado el registro correspondiente a 'Valencia CF' después de aplicar la actualización del presupuesto. Es importante para verificar visualmente si la modificación se ha realizado correctamente y para entender cuál es el estado completo de la tabla tras realizar cambios en ella.
+Después, se ejecuta una consulta `SELECT * FROM equipos;` que recupera todos los registros de la tabla "equipos". Esto sirve para verificar que el cambio realizado por la consulta anterior se ha efectuado correctamente y para revisar cualquier otro dato asociado a los equipos en la base de datos. Es una forma práctica de comprobar el estado actual del conjunto de datos después de realizar modificaciones.
 
-Este tipo de consultas son fundamentales para mantener los datos de una base de datos actualizados y coherentes, asegurando que siempre reflejen la realidad del sistema o proceso que están modelando.
+`007-actualizacion.sql`
 
 ```sql
 UPDATE 
@@ -5586,16 +6411,21 @@ SELECT * FROM equipos;
 ```
 
 ### select como tabla
+<small>Creado: 2025-12-03 13:14</small>
 
 #### Explicación
 
-Este código PHP está diseñado para conectarse a una base de datos MySQL y recuperar todos los registros de una tabla llamada "equipos". Comenzamos estableciendo las credenciales necesarias para la conexión, como el host (localhost en este caso), usuario ("futbol2526"), contraseña ("Futbol2526$") y nombre de la base de datos ("futbol2526"). A continuación, creamos una nueva instancia de la clase mysqli que se encarga de establecer la conexión a la base de datos.
+Este fragmento de código es una pequeña aplicación PHP que conecta a una base de datos y recupera información. En concreto, el código realiza lo siguiente:
 
-Una vez conectados, ejecutamos una consulta SQL utilizando la sentencia "SELECT * FROM equipos" para seleccionar todos los registros de la tabla "equipos". El resultado de esta consulta es almacenado en la variable $resultado. Luego, el código itera sobre cada fila del conjunto de resultados usando un bucle while y la función fetch_assoc(), que devuelve una matriz asociativa con los datos de cada fila.
+1. Establece las credenciales para conectar a la base de datos MySQL (nombre del host, usuario, contraseña y nombre de la base de datos).
+2. Crea una nueva conexión a la base de datos utilizando estas credenciales.
+3. Ejecuta una consulta SQL que selecciona todos los registros de la tabla llamada "equipos".
+4. Itera sobre cada fila devuelta por la consulta utilizando un bucle `while`, y muestra los detalles de cada equipo con la función `var_dump()`. Esta función imprime toda la información del array asociativo que representa cada registro, lo cual es útil para entender el contenido y estructura de los datos.
+5. Finalmente, cierra la conexión a la base de datos.
 
-Por último, para cada fila recuperada, se imprime su contenido utilizando var_dump(), lo cual muestra toda la información estructurada del array. Al finalizar todas las operaciones sobre la base de datos, se cierra la conexión usando el método close() para liberar recursos y garantizar que no haya conexiones abiertas sin usar.
+Este tipo de script es muy común en aplicaciones web donde se necesita recuperar datos almacenados en una base de datos y presentarlos en una página del sitio web o realizar operaciones con ellos. Es importante asegurarse de manejar correctamente las conexiones y consultas para evitar errores y problemas de seguridad, como la inyección SQL.
 
-Este tipo de código es importante porque permite a los desarrolladores acceder y manipular datos en una base de datos, lo cual es fundamental en aplicaciones web que requieren interacción con bases de datos para almacenar o recuperar información.
+`008-select como tabla.php`
 
 ```
 <?php
@@ -5621,14 +6451,19 @@ Este tipo de código es importante porque permite a los desarrolladores acceder 
 ```
 
 ### crear como tabla
+<small>Creado: 2025-12-03 13:19</small>
 
 #### Explicación
 
-Este fragmento de código es un ejemplo típico de cómo interactuar con una base de datos desde un archivo PHP y mostrar los resultados en una tabla HTML. Lo que hace el código es conectarse a una base de datos MySQL llamada "futbol2526" utilizando las credenciales proporcionadas, realizar una consulta SQL para obtener todos los registros de la tabla "equipos", y luego generar filas y columnas HTML para mostrar esos datos en una página web.
+Este fragmento de código PHP crea una tabla HTML que muestra los registros de la tabla "equipos" en una base de datos MySQL. En primer lugar, el código establece las credenciales para conectarse a la base de datos (host, usuario, contraseña y nombre de la base de datos). Luego, se crea un objeto `mysqli` para abrir la conexión con la base de datos usando estas credenciales.
 
-Primero, se establece la conexión con la base de datos usando `mysqli`, un método común en PHP. Luego, se ejecuta la consulta SELECT * FROM equipos que recupera todos los registros de la tabla "equipos". Cada fila del resultado es iterada utilizando un bucle while, y dentro de este bucle, cada columna de la fila se imprime como una celda (`<td>`) en una fila (`<tr>`). Finalmente, cuando se han procesado todas las filas, la conexión a la base de datos se cierra para liberar recursos.
+Una vez que la conexión está abierta, el código ejecuta una consulta SQL simple (`SELECT * FROM equipos`) para obtener todos los registros de la tabla "equipos". La respuesta de esta consulta es almacenada en `$resultado`. A continuación, se recorre cada fila del resultado con un bucle `while` y dentro de este bucle, otro bucle `foreach` itera sobre las claves (nombres de columna) y valores de cada fila para imprimirlos dentro de celdas (`<td>`) en filas (`<tr>`).
 
-Este código es importante porque demuestra cómo integrar bases de datos con páginas web dinámicas y mostrar datos de manera estructurada. Es una habilidad fundamental en el desarrollo web que permite crear sitios interactivos que muestren información actualizada desde una base de datos.
+Finalmente, se cierra la conexión a la base de datos. Este código es importante porque permite visualizar los datos almacenados en una tabla SQL directamente en un formato HTML, facilitando su presentación en una página web.
+
+Este tipo de script es útil para mostrar datos tabulares desde una base de datos en una interfaz web fácilmente legible y manejable por parte del usuario.
+
+`009-crear como tabla.php`
 
 ```
 <table>
@@ -5651,14 +6486,19 @@ Este código es importante porque demuestra cómo integrar bases de datos con p�
 ```
 
 ### tambien puedo crear un formulario
+<small>Creado: 2025-12-03 13:26</small>
 
 #### Explicación
 
-Este código crea un formulario en una página web que permite a los usuarios enviar datos al servidor para su procesamiento. En particular, el fragmento de código utiliza PHP para establecer una conexión con una base de datos MySQL y extraer información de la tabla "equipos". Luego, por cada campo (clave) del primer registro obtenido, genera un campo de entrada (input text) en el formulario donde los usuarios pueden introducir o modificar los valores.
+Este fragmento de código PHP crea un formulario HTML que permite a los usuarios insertar nuevos registros en una base de datos. La parte del servidor (PHP) se encarga de establecer una conexión con la base de datos y extraer información específica para personalizar el formulario.
 
-La parte PHP se encarga de conectarse a la base de datos con las credenciales proporcionadas y ejecuta una consulta SQL que selecciona todos los campos del primer registro de la tabla "equipos". Cada clave-valor obtenido de ese registro es transformado en un campo de entrada en el formulario, donde el nombre del campo HTML coincide con la clave (nombre del campo) en la base de datos. Esto permite a los usuarios modificar o confirmar esos valores antes de enviarlos al archivo "insertar.php" mediante un método POST.
+Primero, se establece una conexión con la base de datos utilizando las credenciales proporcionadas (`$host`, `$user`, `$pass`, `$db`). Luego, se ejecuta una consulta SQL que selecciona todos los campos del primer registro (o fila) en la tabla `equipos`. El resultado de esta consulta se utiliza para generar entradas de texto HTML personalizadas dentro del formulario. Cada entrada tiene un atributo `name` y `placeholder` basados en las claves (nombres de columna) obtenidas desde el resultado de la base de datos.
 
-Este tipo de código es importante porque facilita la interacción entre bases de datos y sitios web, permitiendo que los visitantes interactúen directamente con los registros almacenados en tu base de datos a través del formulario creado.
+Este código es importante porque proporciona una forma interactiva para que los usuarios ingresen nuevos datos de manera estructurada, asegurando que se cumplan con el formato existente en la base de datos. Cuando el usuario envía el formulario (haciendo clic en "Enviar"), los datos enviados son recibidos por `insertar.php`, que probablemente maneja la lógica para insertar estos nuevos registros en la base de datos.
+
+En resumen, este código combina PHP y HTML para permitir una interacción eficiente entre el usuario y la base de datos.
+
+`010-tambien puedo crear un formulario.php`
 
 ```
 <form action="insertar.php" method="POST">
@@ -5685,18 +6525,19 @@ Este tipo de código es importante porque facilita la interacción entre bases d
 ```
 
 ### frankenstein
+<small>Creado: 2025-12-03 13:31</small>
 
 #### Explicación
 
-Este código es un ejemplo de cómo se integran formularios, bases de datos y consultas SQL en una página web para manejar información sobre equipos de fútbol. La página comienza insertando un nuevo registro en la base de datos si el formulario fue enviado (esto significa que alguien ha introducido datos). Luego, muestra los registros existentes en una tabla HTML y por último proporciona un formulario prellenado con los datos del primer equipo de la lista para permitir a los usuarios realizar modificaciones o crear nuevos equipos.
+Este código PHP combina varias partes para realizar operaciones en una base de datos y mostrar información en la página web. Primero, verifica si se ha enviado un formulario con un campo `id`, lo que significa que el usuario está tratando de insertar nuevos registros en la tabla `equipos` de la base de datos llamada `futbol2526`. Si esto es cierto, establece una conexión a la base de datos y ejecuta una consulta SQL para insertar los valores enviados desde el formulario en la tabla correspondiente.
 
-El código PHP verifica primero si el formulario fue enviado (es decir, si se recibió un dato llamado 'id' vía POST). Si es así, establece una conexión con la base de datos y ejecuta una consulta SQL que inserta en la tabla 'equipos' los valores enviados a través del formulario. Después, cierra la conexión.
+Después de intentar insertar el nuevo registro, se genera una tabla que muestra todos los registros existentes en la tabla `equipos`. Esto se hace consultando la tabla con una sentencia SQL "SELECT * FROM equipos" y luego iterando sobre cada fila para mostrar sus valores en las celdas de la tabla.
 
-Después de esta inserción (o si no se envió un formulario), el código muestra todos los registros existentes en la tabla 'equipos'. Para cada registro, crea una fila en una tabla HTML con columnas que muestran los datos del equipo.
+Finalmente, el código genera un formulario basado en los datos del primer registro de la tabla `equipos` (obtenido por "SELECT * FROM equipos LIMIT 1"). Este formulario permite al usuario ingresar nuevos detalles que luego se enviarán a través de POST cuando se haga clic en el botón de envío. Los campos del formulario están predefinidos basándose en los nombres de las columnas de la tabla, facilitando así el proceso de inserción de datos nuevos sin necesidad de codificar manualmente cada campo.
 
-Finalmente, el código genera un formulario que permite a los usuarios ingresar nuevos datos o modificar el primer registro de la tabla. Este formulario usa los nombres de las claves de la base de datos (como 'nombre', 'ciudad', etc.) como etiquetas para cada campo de entrada y los llena con los valores actuales del primer equipo.
+Este tipo de archivo es útil para estudiantes que quieren entender cómo interactuar con bases de datos desde un entorno web y ver cómo se integran formularios en PHP con consultas SQL.
 
-Este código es importante porque demuestra cómo se integran diferentes partes del desarrollo web: el manejo de formularios, consultas a bases de datos y generación dinámica de contenido HTML.
+`011-frankenstein.php`
 
 ```
 <!-- Primero pongo el insert -->
@@ -5764,20 +6605,25 @@ Este código es importante porque demuestra cómo se integran diferentes partes 
 ```
 
 ### lo mismo pero con estilo
+<small>Creado: 2025-12-03 13:39</small>
 
 #### Explicación
 
-Este código es una página web simple que permite gestionar un conjunto de datos relacionados con equipos de fútbol almacenados en una base de datos. En primer lugar, el código establece la apariencia visual básica de la página usando CSS directamente dentro del documento HTML.
+Este código es una página web simple que permite a los usuarios insertar registros en una base de datos y ver la lista actualizada de equipos de fútbol. La página utiliza HTML, CSS y PHP para manejar tanto el diseño como la interacción con la base de datos.
 
-En cuanto a su funcionamiento principal:
+En resumen, lo que hace este código es:
 
-1. **Inserción de Datos**: Cuando se envía un formulario con información sobre un nuevo equipo (como ID, nombre, ciudad, estadio, año fundado y presupuesto), el código PHP conecta a una base de datos MySQL (`futbol2526`) y ejecuta una consulta SQL `INSERT` para añadir los nuevos detalles del equipo en la tabla llamada `equipos`.
+1. **Establecer Estilo:** Utiliza hojas de estilo en línea (CSS) para dar una apariencia limpia a la página web, ajustando tamaños y colores para hacerla más amigable.
 
-2. **Visualización de Datos**: Luego, el mismo código realiza otra conexión a la misma base de datos para seleccionar todos los registros existentes en la tabla `equipos`. Estos datos se muestran en una tabla HTML dentro de la página web.
+2. **Inserción de Datos:** Cuando el usuario completa un formulario (que aparece al final del código) con información sobre un equipo de fútbol y envía los datos usando el botón "submit", PHP se encarga de conectarse a la base de datos (`futbol2526`) utilizando MySQLi. El script inserta los valores proporcionados por el usuario en una tabla llamada `equipos` dentro de esa base de datos.
 
-3. **Formulario de Entrada Inicial**: Finalmente, utiliza un tercer llamado a la base de datos para obtener una fila de datos desde la misma tabla (mediante el uso de `LIMIT 1`), lo que inicializa los campos del formulario con los valores de uno de los equipos existentes en caso de ser necesario editar o simplemente visualizar estos detalles.
+3. **Visualización de Datos:** Después de que se envían y procesan los datos del formulario, o cuando la página carga inicialmente, el código muestra todos los registros existentes en la tabla `equipos`. Esto se hace realizando una consulta SELECT a la base de datos y mostrando los resultados en una tabla HTML.
 
-Este código es importante porque demuestra cómo interactuar con una base de datos para insertar, seleccionar y mostrar datos a través de un interfaz web sencilla. Es útil para estudiantes que están aprendiendo tanto PHP como la manipulación básica de bases de datos MySQL en proyectos web.
+4. **Formulario Inicial:** En lugar de empezar con un formulario vacío para nuevo registro, este script busca el primer equipo registrado en la base de datos para prellenar automáticamente el formulario, facilitando pruebas y demostraciones si ya hay datos presentes.
+
+Este código es importante porque combina conceptos básicos del manejo de bases de datos con PHP (como conectarse a una base de datos y ejecutar consultas) junto con HTML para crear una interfaz web interactiva. Es un ejemplo útil de cómo las aplicaciones web pueden realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) en una base de datos MySQL desde una página web simple.
+
+`012-lo mismo pero con estilo.php`
 
 ```
 <!doctype html>
@@ -5869,18 +6715,25 @@ Este código es importante porque demuestra cómo interactuar con una base de da
 ```
 
 ### boton de eliminar
+<small>Creado: 2025-12-03 13:45</small>
 
 #### Explicación
 
-Este fragmento de código es una página web simple que permite gestionar un registro de equipos de fútbol en una base de datos. La página está dividida principalmente en tres secciones: inserción de nuevos registros, visualización de todos los registros existentes y la inclusión de campos para formular el nuevo registro.
+Este código PHP crea una página web simple para gestionar un registro de equipos de fútbol. La página tiene tres partes principales: la cabecera, el cuerpo y el pie, aunque solo se define la cabecera y el cuerpo en este fragmento.
 
-Primero, hay código PHP que inserta nuevos equipos basándose en un formulario enviado por POST. Si se envían datos a través del formulario (por ejemplo, al hacer clic en el botón enviar), estos son tomados y se utiliza una conexión a la base de datos para ejecutar una consulta SQL `INSERT` que agrega un nuevo registro.
+En el cuerpo de la página, hay varias secciones:
 
-Luego, el código genera una tabla HTML que muestra todos los equipos existentes en la base de datos. Para cada equipo, se recogen sus datos (como nombre, ciudad, estadio, etc.) y se muestran en una fila de la tabla. En esta versión del código, hay un símbolo "❌" que representa un botón potencial para eliminar el registro del equipo correspondiente.
+1. **Inserción de datos**: El código PHP comienza comprobando si se ha enviado un formulario con los campos necesarios (como 'id', 'nombre', etc.) para insertar una nueva fila en la tabla `equipos` de la base de datos.
 
-Finalmente, el formulario HTML es donde los usuarios introducen datos para nuevos equipos. Los campos del formulario son generados dinámicamente a partir de una consulta SQL que recupera información sobre uno (en este caso, solo uno) de los equipos existentes, lo cual podría ser útil si se desea prellenar el formulario con un equipo específico o simplemente mostrar cómo deben ser los datos para nuevos registros.
+2. **Visualización de datos**: Se crea una tabla HTML que muestra todos los equipos almacenados en la base de datos. Cada fila de la tabla representa un equipo y contiene sus detalles, como el nombre del equipo, la ciudad donde está ubicado, etc., junto con un enlace de eliminación (mostrado como '❌').
 
-Este tipo de código es crucial en aplicaciones web que interactúan directamente con bases de datos y necesitan proporcionar una interfaz simple a los usuarios para realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar).
+3. **Formulario para añadir o modificar registros**: Por último, se muestra un formulario que permite a los usuarios ingresar nuevos datos o modificar existentes. Este formulario prellena sus campos con la información del primer equipo en la base de datos, lo cual podría ser útil si el usuario quiere actualizar esa entrada específica.
+
+La parte crítica es el botón de eliminación (mostrado como '❌') dentro de la tabla para cada fila, aunque en este código no está implementada completamente. Esta funcionalidad debería vincularse a un archivo PHP que maneje la lógica para eliminar registros específicos según sea necesario.
+
+Este tipo de interfaz web es útil para los estudiantes de Formación Profesional que están aprendiendo cómo interactuar con bases de datos desde el lado del cliente, permitiéndoles entender conceptos como inserción y visualización de datos en tiempo real.
+
+`013-boton de eliminar.php`
 
 ```
 <!doctype html>
@@ -5973,18 +6826,21 @@ Este tipo de código es crucial en aplicaciones web que interactúan directament
 ```
 
 ### id al eliminar
+<small>Creado: 2025-12-03 13:47</small>
 
 #### Explicación
 
-Este fragmento de código es una página web simple que se utiliza para gestionar un conjunto de datos de equipos de fútbol almacenados en una base de datos. La página tiene tres partes principales: la inserción de nuevos registros, la visualización de todos los registros existentes y un formulario para introducir nueva información.
+Este código es una página web que permite gestionar un conjunto de equipos de fútbol almacenados en una base de datos. La estructura principal de la página incluye tres secciones: encabezado (header), contenido principal (main) y pie de página (footer).
 
-En primer lugar, el código PHP verifica si se ha enviado alguna información a través del método POST (generalmente cuando se envía un formulario). Si lo hace, intenta insertar esta nueva información en una tabla llamada "equipos" dentro de la base de datos. Esta inserción incluye campos como ID, nombre del equipo, ciudad, estadio, año de fundación, presupuesto y página web.
+1. **Inserción de Datos**: Cuando el usuario envía información desde un formulario, el código PHP verifica si los datos del formulario han sido enviados correctamente. Si es así, utiliza una conexión a la base de datos para insertar nuevos registros en la tabla "equipos". Los valores se obtienen directamente desde los campos del formulario enviado por el método POST.
 
-Después de la inserción (si se ha realizado), el código muestra todos los registros actuales en una tabla HTML. Cada fila de esta tabla representa un equipo diferente y contiene información sobre él. Además, añade un enlace con un ícono de "eliminar" que permite a cualquier persona que visite la página borrar ese registro específico si lo desea.
+2. **Visualización de Datos**: Después de posiblemente realizar la inserción, el código muestra todos los equipos almacenados en la tabla "equipos" en una tabla HTML visualmente atractiva. Para cada equipo, se incluye un enlace que permite eliminar ese registro específico mediante un enlace con una URL modificada.
 
-Por último, se proporciona un formulario para introducir nueva información que luego será utilizada por el código PHP mencionado al principio para insertarla en la base de datos. El formulario incluye campos prellenos con los valores del primer equipo de la tabla "equipos", aunque estos podrían ser vacíos si no existen registros.
+3. **Formulario de Datos**: Al final del contenido principal, hay un formulario prellenado con los datos del primer equipo de la base de datos (si existe alguno). Este formulario está diseñado para permitir a los usuarios añadir nuevos equipos al hacer clic en el botón "Enviar" y enviar esos datos nuevamente a la misma página.
 
-Este tipo de página es útil porque permite a los administradores introducir, visualizar y eliminar fácilmente información sobre equipos de fútbol sin necesidad de interactuar directamente con una base de datos o escribir SQL manualmente.
+Esta estructura facilita tanto la inserción como la visualización de datos, proporcionando una interfaz sencilla para manipular registros de una base de datos desde un navegador web.
+
+`014-id al eliminar.php`
 
 ```
 <!doctype html>
@@ -6084,32 +6940,21 @@ Este tipo de página es útil porque permite a los administradores introducir, v
 ```
 
 ### procesar eliminar
+<small>Creado: 2025-12-03 13:49</small>
 
 #### Explicación
 
-Este código es una página web en PHP que permite gestionar datos de un equipo de fútbol desde una base de datos. En concreto, el código realiza varias funciones importantes:
+Este código es una página web en PHP que permite gestionar los datos de un equipo de fútbol almacenados en una base de datos. La estructura principal de la página está compuesta por HTML, CSS y PHP.
 
-1. **Conexión a la Base de Datos**: El script se conecta a una base de datos MySQL llamada `futbol2526` utilizando las credenciales proporcionadas.
+En la parte superior del archivo, hay un bloque de código PHP que verifica si se ha enviado un parámetro 'operación' a través de la URL (por ejemplo, '?operacion=eliminar&id=x'). Si este parámetro existe y su valor es "eliminar", el código realiza una consulta SQL para eliminar registros específicos en la tabla 'equipos' basándose en el ID proporcionado. Esto significa que cuando un usuario hace clic en un botón de eliminación en la página, se ejecuta esta parte del código para borrar el equipo correspondiente.
 
-2. **Borrado de Registros**: Si existe un parámetro GET llamado `operacion` con el valor "eliminar" y otro parámetro GET llamado `id`, se ejecuta una consulta SQL que borra del registro la fila correspondiente en la tabla `equipos`.
+La estructura HTML y CSS establece cómo se ve la interfaz del usuario: hay un encabezado con el título "Gestor de equipos de fútbol", una tabla que muestra los datos de todos los equipos almacenados en la base de datos, y un formulario para ingresar nuevos registros. Cada fila de la tabla incluye un botón de eliminación (representado por un icono '❌') que, al ser clicado, envía una solicitud a esta misma página con el parámetro necesario para eliminar ese registro específico.
 
-3. **Visualización de Datos e Interacción**: La página muestra una tabla HTML que representa los datos almacenados en la base de datos para equipos. Para cada equipo, hay un botón de eliminación (mostrado como un ícono de "❌") que al ser clicado, llama a esta misma página con los parámetros necesarios para eliminar ese registro específico.
+Además, hay otro bloque PHP dentro del formulario que prellena los campos del formulario con datos existentes desde la base de datos, aunque este bloque parece estar destinado a mostrar un solo registro al formulario en lugar de permitir insertar nuevos registros. Esto probablemente es una parte incompleta o errónea del código, ya que típicamente el formulario debería recibir datos directamente por POST para insertar nuevos registros.
 
-4. **Formulario de Inserción**: El código también incluye un formulario HTML para insertar nuevos equipos en la base de datos si se envían valores POST.
+En resumen, este archivo PHP combina HTML y SQL (mediante la biblioteca mysqli) para proporcionar un simple interfaz web de gestión de datos para una base de datos de equipos de fútbol.
 
-5. **Estilo y Diseño Web**: Además del manejo de la base de datos, el código proporciona estilos CSS básicos para dar una apariencia整洁的回复应该是这样的：
-
-这个PHP代码是一个用于管理足球队数据的网页应用。它执行了以下几个关键功能：
-
-1. **数据库连接**：脚本使用提供的凭据连接到名为`futbol2526`的MySQL数据库。
-   
-2. **删除记录**：如果URL中存在名为`operacion`且值为"eliminar"以及另一个名为`id`的参数，则会执行SQL查询从`equipos`表中删除对应的记录。
-
-3. **数据显示与交互**：页面显示一个HTML表格，代表存储在数据库中的球队数据。对于每个团队，在每条记录旁边提供了一个带有“❌”图标的删除按钮，该按钮点击后将调用此网页并传入必要的参数以删除特定记录。
-
-4. **插入表单**：代码还包括用于向数据库添加新队列的HTML表单，如果提交POST请求的话。
-
-5. **样式和网页设计**：除了数据库管理外，代码还提供了基本CSS样式，使页面看起来更美观。
+`015-procesar eliminar.php`
 
 ```
 <?php
@@ -6222,22 +7067,21 @@ Este código es una página web en PHP que permite gestionar datos de un equipo 
 ```
 
 ### twist
+<small>Creado: 2025-12-03 14:23</small>
 
 #### Explicación
 
-Este fragmento de código es una página web en PHP que gestiona un registro de equipos de fútbol. La página permite insertar nuevos equipos, mostrar todos los equipos existentes y eliminar registros específicos.
+Este fragmento de código es una página web dinámica que gestiona un registro de equipos de fútbol en una base de datos. La página permite insertar nuevos equipos, mostrar la lista actual de equipos y eliminar equipos existentes.
 
-1. **Conexión a la base de datos:** En el código se establece una conexión con una base de datos MySQL utilizando las credenciales proporcionadas (`localhost`, `futbol2526` como usuario, `Futbol2526$` como contraseña y `futbol2526` como nombre de la base de datos). Esta conexión se utiliza para realizar operaciones en la tabla llamada `equipos`.
+La parte principal del código PHP se ejecuta cuando el usuario hace clic en el botón "Eliminar" asociado a cada equipo en la tabla. Al hacer clic en este botón, se envía una solicitud GET con dos parámetros: 'operacion' establecido en 'eliminar' y 'id' que contiene el identificador del equipo que se desea eliminar. El código verifica si esta variable de consulta está presente y luego procede a conectar a la base de datos y ejecutar un comando SQL para borrar el registro correspondiente al ID proporcionado.
 
-2. **Inserción de registros:** Cuando el formulario (que no se muestra en este fragmento) es enviado con un método POST, el código captura los datos enviados y los inserta en la tabla `equipos`. Primero, recoge todos los nombres de las columnas y sus valores correspondientes del formulario utilizando una estructura de bucle. Luego construye una consulta SQL para realizar la inserción.
+Además, el código también maneja la inserción de nuevos equipos cuando el formulario es enviado mediante método POST. Recoge los valores ingresados por el usuario, escapa cualquier caracter especial que pueda causar problemas en las consultas SQL y luego inserta un nuevo registro en la tabla 'equipos' con estos datos.
 
-3. **Muestra los registros:** En el cuerpo principal del documento HTML, se genera una tabla que muestra todos los equipos en la base de datos. Para cada equipo, se incluye un enlace (botón "❌") con un parámetro URL (`operacion=eliminar&id=<id_equipo>`), lo que permite a un usuario eliminar registros específicos.
+Finalmente, la página muestra una tabla que lista todos los equipos existentes en la base de datos. Cada fila del equipo incluye un botón "Eliminar" que vincula a la misma página pero añade parámetros para eliminar el equipo correspondiente al ID mostrado.
 
-4. **Eliminación de registros:** En el código PHP inicial, hay una condición para verificar si la página ha sido solicitada con una operación de eliminación (`$_GET['operacion'] == 'eliminar'`). Si esto es cierto, se ejecuta una consulta SQL DELETE que elimina un registro específico basado en el ID proporcionado.
+Este código es importante porque demuestra cómo se pueden combinar HTML y PHP para crear una interfaz web interactiva que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) en una base de datos.
 
-5. **Estilo CSS:** El código también incluye estilos CSS para mejorar la apariencia del sitio web y hacer que sea más atractivo e interactivo para los usuarios. Estos estilos afectan desde la fuente hasta las sombras, colores de fondo y efectos hover en elementos interactivos como botones.
-
-Este script es importante porque combina varias características clave de desarrollo web: manejo de bases de datos MySQL con PHP, creación de formularios para inserción de datos, generación dinámica de contenido HTML basado en datos de la base de datos y un diseño visual agradable. Este tipo de habilidades son fundamentales para el trabajo como desarrollador web.
+`016-twist.php`
 
 ```
 <?php
@@ -6613,14 +7457,21 @@ Este script es importante porque combina varias características clave de desarr
 ```
 
 ### insertar
+<small>Creado: 2025-12-03 13:25</small>
 
 #### Explicación
 
-Este código es un ejemplo de cómo insertar datos en una base de datos usando PHP y MySQL. Primero, establece la conexión a la base de datos con los detalles del host (localhost), usuario (`futbol2526`), contraseña (`Futbol2526$`) y el nombre de la base de datos (`futbol2526`). Luego, construye una consulta SQL para insertar nuevos registros en la tabla llamada `equipos`. Esta consulta toma valores específicos desde los campos del formulario enviado por POST (como `id`, `nombre` del equipo, ciudad, estadio, año de fundación, presupuesto y página web).
+Este fragmento de código PHP se utiliza para insertar nuevos registros en una base de datos llamada `futbol2526`. La inserción se realiza en la tabla `equipos`, que contiene información sobre diferentes equipos de fútbol. El código recoge los valores enviados por un formulario web a través del método POST, y luego construye una consulta SQL para insertar estos datos en la base de datos.
 
-Es importante notar que este código es susceptible a ataques SQL injection debido a la forma directa en que se integran las variables del POST en la consulta SQL sin ningún tipo de validación o escape. En un entorno real, sería crucial usar métodos seguros como `prepared statements` para proteger contra estos riesgos.
+El proceso funciona de la siguiente manera:
+1. Se establece la conexión con la base de datos usando las credenciales proporcionadas.
+2. Se crea una consulta `INSERT INTO` que toma los valores enviados por el formulario y los añade a la tabla `equipos`.
+3. La consulta SQL se ejecuta usando el método `query()` del objeto de conexión.
+4. Finalmente, la conexión con la base de datos se cierra para liberar recursos.
 
-Finalmente, el código ejecuta la inserción y cierra la conexión a la base de datos. La línea "todo ok" al final del script probablemente indica que la operación fue exitosa, aunque esto no es lo más recomendable para una implementación real donde se deben proporcionar mensajes o devoluciones claras sobre el estado de las operaciones en lugar de simplemente imprimir un texto estático.
+Es importante destacar que este código puede ser vulnerable a inyecciones SQL si los valores enviados por el formulario no son correctamente validados o escapados, lo que podría permitir a usuarios malintencionados manipular las consultas.
+
+`insertar.php`
 
 ```
 <?php
@@ -6645,6 +7496,197 @@ Finalmente, el código ejecuta la inserción y cierra la conexión a la base de 
 todo ok
 ```
 
+### Actividades propuestas
+
+Based on the provided code snippets, it looks like you are building a basic CRUD (Create, Read, Update, Delete) application for managing football teams in PHP and MySQL. Here's an analysis of each step:
+
+1. **Initial Setup**:
+   - You have a database setup with tables and columns.
+   - The initial page lists all the data from the `equipos` table.
+
+2. **Insert Functionality**:
+   - You added functionality to insert new records into the `equipos` table when form data is submitted via POST request.
+   
+3. **Delete Functionality**:
+   - Added a delete button for each record in the list view.
+   - When clicked, this sends a GET request with an operation and ID parameter to delete the corresponding row from the database.
+
+4. **Refactoring for Better Security/Performance**:
+   - Refactored insert functionality to handle form data more securely by escaping values before inserting them into the query.
+   
+5. **Final Twisting**:
+   - Combined both functionalities (insert and delete) in one file (`twist.php`).
+   - Ensured all database operations are handled within conditional blocks to avoid unnecessary queries.
+
+### Key Points for Final Twist
+
+- The `INSERT INTO equipos` statement now uses `$conexion->real_escape_string()` to sanitize input values.
+- The query structure is dynamic, meaning it will only include columns and values that have been provided via the form (not hard-coded).
+- Both CRUD operations are handled within a single PHP file.
+
+### Example Final Code (`twist.php`)
+Here’s your final twisted version in one consolidated script:
+
+```php
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Handle insert operation
+    $host = "localhost";
+    $user = "futbol2526";
+    $pass = "Futbol2526$";
+    $db   = "futbol2526";
+
+    $conexion = new mysqli($host, $user, $pass, $db);
+
+    if ($conexion->connect_error) {
+        die("Connection failed: " . $conexion->connect_error);
+    }
+
+    $campos  = [];
+    $valores = [];
+
+    foreach ($_POST as $clave => $valor) {
+        $campos[]  = $clave;
+        $valores[] = "'".$conexion->real_escape_string($valor)."'";
+    }
+
+    $sql = "
+      INSERT INTO equipos (".implode(",", $campos).")
+      VALUES (".implode(",", $valores).")
+    ";
+
+    if ($conexion->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conexion->error;
+    }
+
+    $conexion->close();
+}
+
+if (isset($_GET['operacion']) && $_GET['operacion'] == 'eliminar') {
+    // Handle delete operation
+    $id = intval($_GET['id']);
+    $host = "localhost";
+    $user = "futbol2526";
+    $pass = "Futbol2526$";
+    $db   = "futbol2526";
+
+    $conexion = new mysqli($host, $user, $pass, $db);
+
+    if ($conexion->connect_error) {
+        die("Connection failed: " . $conexion->connect_error);
+    }
+
+    $sql = "
+      DELETE FROM equipos
+      WHERE id = ".$id."
+    ";
+
+    if ($conexion->query($sql) === TRUE) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error deleting record: " . $conexion->error;
+    }
+
+    $conexion->close();
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+     body,html{width:100%;height:100%;font-family:sans-serif;}
+      body{display:flex;flex-direction:column;background:lightgrey;
+      justify-content:center;align-items:center;}
+      header,main,footer{background:white;width:1200px;padding:20px;}
+      table{border:2px solid lightgray;padding:10px;width:100%;}
+      table td{padding:3px;}
+      form{columns:2;}
+      form input{padding:10px;margin:10px;width:100%;box-sizing:border-box;}
+   </style>
+</head>
+<body>
+  <header>
+     <h1>Gestor de Equipos de Fútbol</h1>
+  </header>
+
+  <!-- Display table with data -->
+  <main>
+    <table>
+      <?php
+        $conexion = new mysqli($host, $user, $pass, $db);
+        
+        if ($conexion->connect_error) {
+            die("Connection failed: " . $conexion->connect_error);
+        }
+
+        $sql = "SELECT * FROM equipos";
+        $resultado = $conexion->query($sql);
+
+        while ($fila = $resultado->fetch_assoc()) {
+          echo "<tr>";
+          
+          foreach ($fila as $clave => $valor) {
+            echo "<td>" . htmlspecialchars($valor, ENT_QUOTES, 'UTF-8') . "</td>";
+          }
+          
+          echo '<td><a href="?operacion=eliminar&id=' . htmlspecialchars($fila['id'], ENT_QUOTES, 'UTF-8') . '">Eliminar</a></td>';
+          
+          echo '</tr>';
+        }
+
+        $conexion->close();
+      ?>
+    </table>
+  </main>
+
+  <!-- Form for adding new records -->
+  <form action="" method="POST">
+    <?php
+      // Initial values from the database or form submission
+      $conexion = new mysqli($host, $user, $pass, $db);
+      
+      if ($conexion->connect_error) {
+          die("Connection failed: " . $conexion->connect_error);
+      }
+
+      $sql = "SELECT * FROM equipos LIMIT 1";
+      $resultado = $conexion->query($sql);
+
+      while ($fila = $resultado->fetch_assoc()) {
+        foreach ($fila as $clave => $valor) {
+          echo "<input type='text' name='$clave' placeholder='$clave' value='" . htmlspecialchars($valor, ENT_QUOTES, 'UTF-8') . "'>";
+        }
+      }
+
+      $conexion->close();
+    ?>
+    
+    <input type="submit" value="Añadir">
+  </form>
+</body>
+</html>
+```
+
+### Important Points to Note:
+1. **Security**:
+   - Always use `htmlspecialchars()` when outputting data in HTML context.
+   - Use prepared statements for better security but since your code doesn't cover this, using `$conexion->real_escape_string()` is a step forward.
+
+2. **Maintainability**: 
+   - Consolidating similar operations into single functions or classes improves readability and maintainability.
+
+3. **Testing**:
+   - Ensure all functionalities work as expected by testing extensively with different inputs and scenarios.
+
+4. **User Experience**:
+   - Consider enhancing the UI/UX, such as adding confirmation dialogs before deleting records to prevent accidental deletions.
+   
+This consolidated file now handles both insert and delete operations efficiently while maintaining a clean user interface for managing football teams.
+
 
 <a id="integridad-referencial"></a>
 ## Integridad referencial
@@ -6660,6 +7702,288 @@ todo ok
 
 <a id="politicas-de-bloqueo-concurrencia"></a>
 ## Políticas de bloqueo. Concurrencia
+
+### codificar
+<small>Creado: 2025-12-05 13:41</small>
+
+`001-codificar.php`
+
+```
+<?php
+	
+  // Original
+  
+	$contrasena = "contraseñasegura1234";
+  echo $contrasena;
+  echo "<br>";
+  
+  // Codificar
+  
+  $codificado = base64_encode($contrasena);
+  echo $codificado;
+  echo "<br>";
+  
+?>
+```
+
+### descodificar
+<small>Creado: 2025-12-05 13:43</small>
+
+`002-descodificar.php`
+
+```
+<?php
+	
+  // Original
+  
+	$contrasena = "contraseñasegura1234";
+  echo $contrasena;
+  echo "<br>";
+  
+  // Codificar
+  
+  $codificado = base64_encode($contrasena);
+  echo $codificado;
+  echo "<br>";
+  
+  // Descodificamos
+  
+  $descodificado = base64_decode($codificado);
+  echo $descodificado;
+  echo "<br>";
+  
+?>
+```
+
+### funciones codificacion
+<small>Creado: 2025-12-05 13:47</small>
+
+`003-funciones codificacion.php`
+
+```
+<?php
+	function codificar($cadena){
+  	for($i = 0;$i<9;$i++){
+    	$cadena = base64_encode($cadena);
+    }
+    return $cadena;
+  }
+  
+  $contrasena = "contraseñasegura1234";
+  echo $contrasena;
+  echo "<br>";
+  
+  echo codificar($contrasena);
+  echo "<br>";
+  
+?>
+```
+
+### funcion descodificar
+<small>Creado: 2025-12-05 13:49</small>
+
+`004-funcion descodificar.php`
+
+```
+<?php
+	function codificar($cadena){
+  	for($i = 0;$i<9;$i++){
+    	$cadena = base64_encode($cadena);
+    }
+    return $cadena;
+  }
+  function descodificar($cadena){
+  	for($i = 0;$i<9;$i++){
+    	$cadena = base64_decode($cadena);
+    }
+    return $cadena;
+  }
+  
+  $contrasena = "contraseñasegura1234";
+  echo $contrasena;
+  echo "<br>";
+  
+  $codificado = codificar($contrasena);
+  echo $codificado;
+  echo "<br>";
+  
+  $descodificado = descodificar($codificado);
+  echo $descodificado;
+  echo "<br>";
+  
+  
+  
+?>
+```
+
+### codificacion ascii
+<small>Creado: 2025-12-05 13:53</small>
+
+`005-codificacion ascii.php`
+
+```
+<?php
+	$letra = "a";
+  echo $letra;
+  echo "<br>";
+  
+  $ascii = ord($letra);
+  echo $ascii;
+  echo "<br>";
+  
+  $volvemos = chr($ascii);
+  echo $volvemos;
+  echo "<br>";
+?>
+```
+
+### codificaromana
+<small>Creado: 2025-12-05 13:59</small>
+
+`006-codificaromana.php`
+
+```
+<?php
+	function codificaRomana($cadena){
+  	for($i = 0;$i<strlen($cadena);$i++){
+    	$cadena[$i] = chr(ord($cadena[$i])+10);
+    }
+    return $cadena;
+  }
+  function descodificaRomana($cadena){
+  	for($i = 0;$i<strlen($cadena);$i++){
+    	$cadena[$i] = chr(ord($cadena[$i])-10);
+    }
+    return $cadena;
+  }
+  $original = "Hola esto es un texto que estoy escribiendo para hacer una prueba con algo más largo";
+  echo $original;
+  echo "<br>";
+  
+  $codificado =  codificaRomana($original);
+  
+  echo $codificado;
+  echo "<br>";
+  
+  $descodificado =  descodificaRomana($codificado);
+  
+  echo $descodificado;
+  echo "<br>";
+?>
+```
+
+### hasheo
+<small>Creado: 2025-12-05 14:05</small>
+
+`007-hasheo.php`
+
+```
+<?php
+
+	$cadena = "Hola";
+  echo $cadena;
+  echo "<br>";
+  
+  // Hash mediante md5
+  
+  $picadillo1 = md5($cadena);
+  echo $picadillo1;
+  echo "<br>";
+  
+  // Hash mediante sha1 
+  
+  $picadillo2 = sha1($cadena);
+  echo $picadillo2;
+  echo "<br>";
+  
+?>
+```
+
+### condicion del picadillo
+<small>Creado: 2025-12-05 14:07</small>
+
+`008-condicion del picadillo.php`
+
+```
+<?php
+
+	// Primera ronda //////////////////////////////////
+
+	$cadena = "Hola";
+  echo $cadena;
+  echo "<br>";
+  
+  // Hash mediante md5
+  
+  $picadillo1 = md5($cadena);
+  echo $picadillo1;
+  echo "<br>";
+  
+  // Segunda ronda //////////////////////////////////
+  
+  $cadena2 = "Hola";
+  echo $cadena2;
+  echo "<br>";
+  
+  // Hash mediante md5
+  
+  $picadillo2 = md5($cadena2);
+  echo $picadillo2;
+  echo "<br>";
+  
+?>
+```
+
+### comprobador de picadillo
+<small>Creado: 2025-12-05 14:13</small>
+
+`009-comprobador de picadillo.php`
+
+```
+<?php
+	// Tengo este picadillo (imagina que viene de la base de datos)
+	$picadillo = "f688ae26e9cfa3ba6235477831d5122e";
+  // Cojo lo que envia el usuario
+  $contrasena = $_POST['contrasena'];
+  // Pico la contraseña
+  $picadillo2 = md5($contrasena);
+  // Y comparo
+  if($picadillo == $picadillo2){
+  	echo "Las contraseñas coinciden";
+  }else{
+  	echo "Las contraseñas no coinciden";
+  }
+?>
+<form method="POST" action="?">
+	<input type="text" name="contrasena" placeholder="Prueba una contraseña">
+  <input type="submit">
+</form>
+```
+
+### fuerza bruta
+<small>Creado: 2025-12-05 14:19</small>
+
+`010-fuerza bruta.php`
+
+```
+<?php
+$caracteres = "abcdefghijklmnopqrstuvwxyz";
+$len = strlen($caracteres);
+
+for ($i = 0; $i < $len; $i++) {
+    for ($j = 0; $j < $len; $j++) {
+        for ($k = 0; $k < $len; $k++) {
+            for ($l = 0; $l < $len; $l++) {
+
+                $combo = $caracteres[$i] . $caracteres[$j] . $caracteres[$k] . $caracteres[$l];
+                echo $combo." = ".md5($combo). "<br>";
+
+            }
+        }
+    }
+}
+?>
+```
 
 
 
@@ -6783,12 +8107,17 @@ El diagrama y el código presentan una estructura básica que permite modelar pe
 Si tienes alguna pregunta específica sobre cómo implementar o modificar este sistema, por favor déjame saber para proporcionarte más detalles.
 
 ### una entidad
+<small>Creado: 2025-11-28 10:42</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo JSON que describe una entidad en un diagrama de entidades-relación (ER) utilizado en la modelización de bases de datos. En este caso, el bloque de código especifica detalles sobre una entidad llamada "Cliente". Dentro del objeto principal que contiene información sobre las formas del diagrama ER, se encuentra una subestructura para la entidad "Cliente", que incluye sus características geométricas (posición y dimensiones) en el diagrama visual y los atributos que definen a esta entidad. Los atributos de la entidad Cliente son: un identificador único (id), nombre, apellidos y email del cliente. Este tipo de estructura JSON es común cuando se trabajan con herramientas que generan o manipulan modelos ER para facilitar la creación de bases de datos relacionales.
+Este fragmento de código en formato JSON describe una entidad llamada "Cliente" en un diagrama ER (Entidad Relación). La entidad "Cliente" contiene cuatro propiedades o atributos: 'id', 'nombre', 'apellidos' y 'email'. Cada uno de estos atributos es crucial para identificar y describir a los clientes en el sistema. El atributo 'id' probablemente será utilizado como clave principal, única para cada cliente.
 
-Es importante destacar que este código no contiene información sobre las relaciones entre entidades ni sus cardinalidades (por ejemplo, cuántos clientes pueden tener pedidos), ya que solo describe una entidad en particular y sus atributos. Esto es útil cuando se necesita definir claramente cada componente individual del modelo ER antes de vincularlos con relaciones más complejas.
+El formato JSON permite una representación clara y estructurada de la información del modelo ER, facilitando su manipulación y visualización en herramientas específicas. Este archivo es parte de un conjunto de ejercicios que buscan familiarizarte con el modelo ER, cardinalidades (número mínimo y máximo de relaciones) y debilidad de entidades, conceptos fundamentales para diseñar bases de datos eficientes.
+
+Este tipo de descripción de entidades en JSON puede ser importada o exportada por software especializado que ayuda a crear diagramas ER visualmente.
+
+`001-una entidad.json`
 
 ```json
 {
@@ -6826,12 +8155,17 @@ Es importante destacar que este código no contiene información sobre las relac
 ```
 
 ### una entidad
+<small>Creado: 2025-11-28 10:42</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo SVG (Scalable Vector Graphics) que representa una entidad en un diagrama ER (Entidad Relación). En este caso, el diagrama muestra la entidad "Cliente", que incluye atributos como identificador (`id`), nombre, apellidos y correo electrónico (`email`). El rectángulo blanco con bordes oscuros dibuja la forma de la entidad "Cliente". Dentro del rectángulo, se colocan varios textos que describen los diferentes campos o atributos asociados a esta entidad. La línea horizontal en el medio del rectángulo es un elemento decorativo común en diagramas ER para separar visualmente los detalles de la entidad.
+Este código SVG representa un diagrama simple de una entidad llamada "Cliente". En el centro del diagrama, hay un rectángulo blanco con borde negro que contiene los detalles de la entidad. Dentro del rectángulo, se encuentran cuatro atributos de la entidad: "id", "nombre", "apellidos" y "email". Estos atributos están alineados verticalmente en el interior del rectángulo, lo cual indica que son parte esencial de esta entidad.
 
-El uso de este tipo de representación gráfica es importante porque facilita la comprensión y comunicación de las estructuras de datos y sus relaciones en sistemas de gestión de bases de datos, permitiendo a diseñadores y programadores visualizar fácilmente cómo se organiza la información.
+El archivo SVG utiliza varios elementos para dibujar las formas y texto. Los estilos CSS incorporados definen cómo se verán los textos, rectángulos y líneas dentro del diagrama. Además, incluye definiciones adicionales para flechas (marcadores) que podrían ser utilizadas en relaciones entre entidades.
+
+En comparación con el archivo JSON anterior, este SVG proporciona una representación visual gráfica de la misma entidad "Cliente". Mientras que antes se describía la estructura de forma textual y abstracta, ahora se tiene un dibujo preciso mostrando exactamente cómo está organizada la información en el diagrama ER. Esto facilita mucho más la comprensión visual de los atributos y su relación con la entidad.
+
+`001-una entidad.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="300.0000277432527" height="230.40002996271298" viewBox="0 0 300.0000277432527 230.40002996271298">
@@ -6867,16 +8201,19 @@ El uso de este tipo de representación gráfica es importante porque facilita la
 ```
 
 ### dos entidades y relacion
+<small>Creado: 2025-11-28 10:50</small>
 
 #### Explicación
 
-Este código HTML crea una página web que muestra un diagrama simple de un modelo entidad-relación (ER) en formato visual, específicamente representando dos entidades: "Cliente" y "Pedido". La página utiliza estilos CSS para diseñar cada componente del diagrama con precisión.
+Este código HTML es una representación visual de un diagrama de entidad-relación (ER) que muestra dos entidades: "Cliente" y "Pedido", junto con una relación entre ellas. El archivo está diseñado para ser claro y fácil de entender mediante el uso de estilos CSS para dar forma a los elementos del diagrama.
 
-La estructura principal se compone de dos elementos `div` con la clase `.shape entity`, que representan las entidades "Cliente" y "Pedido". Estos contenedores tienen propiedades como el título, los atributos (o campos) de la entidad, y puertos (`port`) en cada extremo que indicarán posibles relaciones. Por ejemplo, dentro del div para la entidad "Cliente", se ven los atributos `id`, `nombre`, `apellidos` e `email`.
+En la página, se pueden ver dos cuadrados representando las entidades "Cliente" y "Pedidos". Cada entidad tiene atributos (propiedades) como "id", "nombre", "apellidos", "email" en el caso de la entidad "Cliente", y "id", "fecha", "cliente_id" para la entidad "Pedido". Los atributos están representados dentro del cuadrado con etiquetas de propiedad.
 
-Además, hay una flecha horizontal representada por un elemento `div` con la clase `.arrow`. Esta flecha conecta visualmente a las dos entidades, indicando que existe una relación entre ellas. En este caso, dado el atributo `cliente_id` en la entidad "Pedido", se puede inferir que cada pedido está asociado con un cliente específico.
+Además, hay una línea con una flecha que conecta las dos entidades, indicando que existe una relación entre ellas. Esta relación sugiere que un cliente puede realizar uno o más pedidos, ya que el atributo "cliente_id" en la entidad "Pedido" hace referencia al atributo "id" de la entidad "Cliente".
 
-Este tipo de diagramas son fundamentales para entender cómo están organizados y relacionados los datos en un sistema de gestión de bases de datos, facilitando así su diseño y mantenimiento.
+Este tipo de diagrama es crucial para estudiantes de bases de datos porque ayuda a visualizar cómo las entidades y sus relaciones se estructuran en una base de datos.
+
+`002-dos entidades y relacion.html`
 
 ```html
 <!DOCTYPE html>
@@ -7138,14 +8475,19 @@ body {
 ```
 
 ### dos entidades y relacion
+<small>Creado: 2025-11-28 10:50</small>
 
 #### Explicación
 
-Este fragmento de código en formato JSON describe una parte del diseño de una base de datos utilizando el modelo Entidad-Relación (ER). En este caso, se presentan dos entidades: "Cliente" y "Pedido". Cada entidad tiene sus propias características o propiedades. Por ejemplo, la entidad "Cliente" incluye propiedades como 'id', 'nombre', 'apellidos' y 'email'. La entidad "Pedido", por su parte, cuenta con 'id', 'fecha' y 'cliente_id'.
+Este archivo JSON representa un diagrama de entidades y relaciones en formato de datos estructurados, sustituyendo la representación visual del HTML por información codificada. La estructura incluye dos entidades: "Cliente" y "Pedido", cada una con sus propias características (atributos). 
 
-Además de definir las entidades, el código también especifica una relación entre ellas. Se indica que existe un vínculo simple entre la propiedad 'id' de la entidad "Cliente" y la propiedad 'cliente_id' de la entidad "Pedido". Esto sugiere que cada pedido está asociado a un cliente específico mediante su identificador único.
+En el caso de la entidad "Cliente", se describen cuatro atributos: `id`, `nombre`, `apellidos` y `email`. Para la entidad "Pedido", los atributos son tres: `id`, `fecha` y un campo clave que es `cliente_id`, que actúa como una referencia a la entidad "Cliente".
 
-Este tipo de descripción es crucial en el diseño de bases de datos ya que ayuda a visualizar cómo las diferentes partes del sistema se conectan entre sí, facilitando así la creación de una estructura coherente y funcional.
+Además, el archivo JSON incluye información sobre una relación entre las dos entidades, especificada por una flecha que va desde el atributo `id` de la entidad "Cliente" hasta el atributo `cliente_id` en la entidad "Pedido". Esto sugiere que cada pedido está asociado a un cliente específico, identificado por su ID.
+
+En comparación con el código HTML anterior, este archivo JSON elimina toda la representación gráfica y los estilos CSS para concentrarse solo en la información de datos. Esto facilita la manipulación y análisis del modelo ER (Entidad Relación) desde un punto de vista estructural, permitiendo a los estudiantes centrarse en cómo se relacionan las entidades sin distracciones visuales innecesarias.
+
+`002-dos entidades y relacion.json`
 
 ```json
 {
@@ -7221,17 +8563,19 @@ Este tipo de descripción es crucial en el diseño de bases de datos ya que ayud
 ```
 
 ### dos entidades y relacion
+<small>Creado: 2025-11-28 10:50</small>
 
 #### Explicación
 
-Este fragmento de código SVG (Scalable Vector Graphics) representa un diagrama de entidades y relaciones en el contexto de una base de datos, específicamente mostrando dos entidades: "Cliente" y "Pedido". En este diagrama:
+Este archivo SVG es una representación visual de un diagrama de entidad-relación que muestra la relación entre dos entidades: "Cliente" y "Pedido". En el diagrama, cada entidad se representa con un rectángulo (clase `shape-entity`), dentro del cual están listados los atributos de dicha entidad. La entidad "Cliente" contiene los atributos `id`, `nombre`, `apellidos`, y `email`. Por otro lado, la entidad "Pedido" incluye los atributos `id`, `fecha`, y `cliente_id`.
 
-1. **Entidad Cliente**: Se dibuja como un rectángulo con los atributos id, nombre, apellidos y email dentro del rectángulo.
-2. **Entidad Pedido**: Otro rectángulo que contiene los atributos id, fecha y cliente_id.
+La relación entre estas dos entidades se indica mediante una línea que conecta el rectángulo de "Cliente" con el de "Pedido", especificando que cada pedido está asociado a un cliente a través del atributo `cliente_id` en la entidad "Pedido". Esta línea incluye una flecha al final, indicada por un marcador SVG (`marker-end="url(#arrow-end)"`), para señalar la dirección de la relación.
 
-Además, hay una línea de conexión entre la entidad "Cliente" y "Pedido", que representa la relación entre estas dos entidades en el modelo ER (Entidad Relación). La línea está decorada con una flecha en su extremo para indicar un tipo específico de relación, probablemente 1:N (uno a muchos), donde cada cliente puede tener varios pedidos pero un pedido pertenece a solo un cliente.
+El archivo actual representa gráficamente la estructura descrita anteriormente en el formato JSON, proporcionando una visualización más directa y fácil de entender. Esta versión utiliza elementos SVG como rectángulos, líneas y texto para dibujar las entidades y sus atributos, así como una línea con flecha para mostrar la relación entre ellas.
 
-El uso del SVG permite visualizar estos datos estructurados de forma gráfica y clara, facilitando la comprensión de cómo están relacionadas las entidades en una base de datos.
+En comparación con el archivo anterior en formato JSON, este código SVG ofrece una representación visual directa del modelo ER, mostrando gráficamente cómo se relacionan las entidades y qué atributos tienen. Este cambio permite a los estudiantes visualizar fácilmente las relaciones y propiedades de cada entidad sin necesidad de interpretar un formato no gráfico como JSON.
+
+`002-dos entidades y relacion.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="579.1125210848719" height="230.4000022194602" viewBox="0 0 579.1125210848719 230.4000022194602">
@@ -7273,47 +8617,20 @@ El uso del SVG permite visualizar estos datos estructurados de forma gráfica y 
 </svg>
 ```
 
-### Definición de cardinalidad y ejemplos
-
-#### Explicación
-
-Este fragmento de texto explica los tres tipos básicos de cardinalidad que existen en la modelación de bases de datos, especialmente cuando se trabaja con diagramas de entidades y relaciones. La cardinalidad define cómo las entidades pueden relacionarse entre sí: cuántos elementos de una lista pueden conectarse a un elemento de otra lista o viceversa.
-
-El primer tipo es 1-1 (uno a uno), donde cada elemento en una tabla tiene exactamente un correspondiente en la otra tabla. Por ejemplo, una persona tiene un DNI único y no puede haber más de un DNI para una misma persona, ni una persona sin DNI. En este caso, se suele recomendar combinar estos datos en una sola tabla porque están fuertemente relacionados.
-
-El segundo tipo es 1-n (uno a muchos), donde un elemento de la primera lista puede conectarse con varios elementos en la segunda lista, pero no al revés. Por ejemplo, un cliente puede tener muchos pedidos, pero cada pedido sólo pertenece a un cliente específico. Este tipo de relación es común cuando se registra información detallada sobre una entidad principal.
-
-El último tipo es n-n (de muchos a muchos), donde los elementos pueden conectarse entre sí sin restricciones. Por ejemplo, varios estudiantes pueden inscribirse en múltiples cursos y cada curso puede ser tomado por múltiples estudiantes. Este tipo de relación requiere la creación de una tabla intermedia para gestionar las conexiones complejas.
-
-Entender estos tipos de cardinalidad es crucial porque permite diseñar bases de datos que sean eficientes, claras y capaces de manejar adecuadamente los datos de diferentes entidades y sus relaciones.
-
-```markdown
-3 tipos de cardinalidad
-
-1-1
-Un solo elemento de una lista se puede conectar con un solo elemento de otra lista
-Una persona tiene un DNI
-(Cuando esto ocurre, esos dos datos deberían estar en una sola tabla)
-
-1-n (uno a muchos)
-
-Una persona con muchos hobbies
-Un cliente con muchos pedidos
-
-
-
-n-n (de muchos a muchos)
-```
-
 ### ejemplo tienda online
+<small>Creado: 2025-11-28 11:01</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web que muestra un diagrama ER (Diagrama Entidad-Relación) para representar la estructura de datos de una tienda online. El diagrama incluye entidades como Cliente, Pedido, LineaPedido y Producto, cada una con sus propias características y relaciones.
+Este fragmento de código HTML es una página web que representa un diagrama ER (Entidad Relación) para una tienda online. El diagrama muestra las entidades principales como "Cliente", "Pedido", "LineaPedido" y "Producto". Cada entidad se dibuja con un rectángulo que contiene los atributos relevantes de esa entidad, como el ID del cliente, la fecha del pedido, etc.
 
-El CSS utilizado estiliza las diferentes partes del diagrama: entidades (rectángulos), bases de datos (iconos específicos para representar la base de datos), y flechas que muestran cómo se relacionan entre sí estas entidades. Las clases como `.shape`, `.entity` y `.arrow` son responsables de dar formato a las formas básicas, a las entidades y a las relaciones respectivamente.
+Además de mostrar las entidades, el código también incluye flechas (divs `arrow`) que representan las relaciones entre estas entidades. Estas flechas conectan visualmente a "Cliente" con "Pedido", "Pedido" con "LineaPedido", y "Producto" con "LineaPedido". Esto ayuda a los estudiantes a entender cómo se relacionan estos elementos en una base de datos real.
 
-Este código es importante porque ayuda a visualizar la estructura de datos de una aplicación, facilitando su comprensión tanto para el desarrollo de software como para la comunicación entre desarrolladores y otros miembros del equipo que no tienen conocimientos técnicos avanzados.
+El estilo CSS aplicado proporciona un diseño limpio y profesional, con colores neutros y sombras sutiles para dar profundidad a las entidades. La estructura del código también es modular, permitiendo que cada entidad tenga sus propios atributos dentro del bloque `entity-properties`, lo cual facilita su modificación o expansión en el futuro.
+
+Este tipo de representación gráfica es muy útil para comprender y enseñar la estructura de una base de datos, especialmente en un contexto educativo donde los estudiantes están aprendiendo conceptos como entidades, atributos y relaciones.
+
+`004-ejemplo tienda online.html`
 
 ```html
 <!DOCTYPE html>
@@ -7617,14 +8934,45 @@ body {
 ```
 
 ### ejemplo tienda online
+<small>Creado: 2025-11-28 11:01</small>
 
 #### Explicación
 
-Este código JSON describe el diseño de una base de datos para una tienda online, mostrando las entidades principales y cómo se relacionan entre sí. Hay cuatro tipos de entidades: Cliente, Pedido, LineaPedido y Producto. Cada entidad tiene sus propias características o atributos que la definen, como el nombre del cliente, la fecha en que fue realizado un pedido o el precio de un producto.
+El archivo JSON proporcionado contiene la descripción de un diagrama de entidades para una base de datos, similar al que se muestra en el código HTML anterior. Sin embargo, este formato es significativamente diferente y está estructurado de forma más moderna y flexible. A continuación se presenta una explicación detallada del contenido:
 
-Las flechas en el JSON representan las relaciones entre estas entidades. Por ejemplo, hay una relación directa entre Cliente y Pedido a través del identificador único del cliente (cliente_id) dentro del pedido. De manera similar, cada pedido puede tener varias líneas de pedidos asociadas que incluyen información sobre los productos comprados (pedido_id y producto_id). También existe una relación entre Producto y LineaPedido por el ID del producto.
+### Formas (Entidades)
+El archivo JSON define cuatro entidades principales:
+1. **Cliente**: Esta entidad contiene propiedades como `id`, `nombre`, `apellidos` e `email`.
+2. **Pedido**: Incluye campos `id`, `fecha` y una relación con el cliente (`cliente_id`).
+3. **LineaPedido**: Tiene propiedades de identificación para la línea del pedido, el ID del pedido al que pertenece (`pedido_id`) y el ID del producto asociado (`producto_id`).
+4. **Producto**: Define un conjunto de campos como `id`, `nombre` y `precio`.
 
-Este tipo de modelo es importante porque ayuda a organizar los datos de forma coherente y permite hacer consultas más eficientes, mejorando así la gestión y comprensión de las transacciones en una tienda online.
+Cada entidad es representada en JSON con sus atributos específicos (propiedades), pero no se proporciona información explícita sobre su tamaño o posición, lo que sugiere que esta descripción podría ser utilizada por una herramienta gráfica para generar la visualización.
+
+### Flechas (Relaciones)
+El archivo también describe tres relaciones entre las entidades:
+1. **Cliente -> Pedido**: Relación con clave foránea `cliente_id`.
+2. **Pedido -> LineaPedido**: Relación en la que cada pedido tiene una o más líneas de pedidos.
+3. **Producto -> LineaPedido**: Relación que vincula cada línea del pedido a un producto específico.
+
+### Diferencias Notables
+Comparado con el código HTML, este JSON tiene algunas diferencias notables:
+
+- **Simplificación y Abstracción**: El formato JSON es más abstracto y no contiene detalles de estilo (como color o tamaño) que son relevantes para la visualización.
+- **Relaciones Explicitas**: Mientras que en el código HTML las relaciones se representan a través de líneas, este JSON explícitamente define cada relación entre propiedades de entidades.
+- **Ninguna Información Visual Directa**: No hay información directa sobre cómo deben ser posicionadas visualmente las formas; esto parece estar destinado a ser procesado por un motor gráfico.
+
+### Conclusión
+Este archivo JSON es una descripción estructurada del modelo de datos que podría ser utilizado para generar automáticamente diagramas de bases de datos o plantillas de modelos de datos en herramientas de desarrollo. Este formato es muy útil para la manipulación programática y la intercambiabilidad de información, ya que permite a diferentes sistemas entender e interpretar la estructura del modelo sin necesidad de preocuparse por detalles visuales específicos.
+
+### Cambios desde el Código HTML
+- **Simplificación**: La representación en JSON simplifica la descripción removiendo los elementos gráficos no esenciales.
+- **Flexibilidad**: Permite una fácil manipulación y expansión del modelo sin necesidad de recargar o redibujar visualmente cada cambio.
+- **Interoperabilidad**: Este formato es más amigable para ser procesado por sistemas automatizados, permitiendo fácil integración con bases de datos y otros sistemas.
+
+En resumen, este JSON representa una versión moderna y flexible del diagrama que describe cómo se relacionan las entidades en el modelo.
+
+`004-ejemplo tienda online.json`
 
 ```json
 {
@@ -7774,16 +9122,19 @@ Este tipo de modelo es importante porque ayuda a organizar los datos de forma co
 ```
 
 ### ejemplo tienda online
+<small>Creado: 2025-11-28 11:03</small>
 
 #### Explicación
 
-Este código Python crea cuatro clases que representan las entidades de una tienda online: Cliente, Pedido, Lineapedido y Producto. Cada clase tiene un método `__init__` que inicializa los atributos correspondientes a cada entidad, como el ID del cliente, el nombre y apellidos del mismo, la fecha de un pedido, etc. Además, incluye un método llamado `__repr__`, que devuelve una representación en cadena de texto legible para entender fácilmente el objeto.
+El código actual representa la estructura de una base de datos para una tienda en línea mediante clases Python que modelan las entidades Cliente, Pedido, LineaPedido y Producto. Cada clase tiene un constructor (`__init__`) que inicializa los atributos correspondientes a cada entidad, como el ID del cliente, el nombre del producto o la fecha del pedido. Además, se utiliza el método `__repr__` para proporcionar una representación en cadena de texto legible y útil de los objetos creados a partir de estas clases.
 
-Las clases están diseñadas para modelar cómo funcionan las tablas de una base de datos relacionada con ventas online. Por ejemplo, la clase `Cliente` tiene atributos como ID, nombre y correo electrónico, mientras que la clase `Pedido` tiene un campo `cliente_id`, que es la clave externa (FK) que vincula cada pedido a un cliente específico.
+Este código es importante porque permite establecer un modelo lógico para la base de datos antes de comenzar con su implementación física. A través de las clases, se pueden manipular fácilmente los datos relacionados entre sí siguiendo las relaciones definidas en el diagrama ER (Entidad Relación).
 
-El código también incluye comentarios para indicar las relaciones entre entidades. Por ejemplo, en la clase `Lineapedido` se indica que `pedido_id` y `producto_id` son claves foráneas que conectan con los IDs de la clase `Pedido` y `Producto`, respectivamente.
+Cada clase también contiene comentarios que indican las restricciones clave (Foreign Key o FK) que conectan una entidad con otra. Por ejemplo, `Pedido.cliente_id` es una clave foránea que vincula un pedido a su cliente.
 
-Este tipo de estructura es importante porque ayuda a organizar el código y facilita el trabajo con bases de datos relacionales, permitiendo crear objetos en Python que representen las entidades de una base de datos, lo cual es útil para aplicaciones web y sistemas de gestión de información.
+El código actual muestra una mejora significativa en relación con el archivo anterior, ya que pasa de ser simplemente una descripción JSON del modelo ER a implementar las entidades y sus propiedades como clases Python completas. Esto facilita la manipulación de datos y permite trabajar directamente con estos objetos en programas más grandes.
+
+`004-ejemplo tienda online.py`
 
 ```python
 from typing import Optional
@@ -7832,14 +9183,21 @@ class Producto:
 ```
 
 ### ejemplo tienda online
+<small>Creado: 2025-11-28 11:02</small>
 
 #### Explicación
 
-Este código SQL crea cuatro tablas en una base de datos para gestionar una tienda online: `cliente`, `pedido`, `lineapedido` y `producto`. Cada tabla contiene campos que almacenan información relevante sobre los clientes, pedidos, líneas de pedido y productos. Por ejemplo, la tabla `cliente` guarda el nombre, apellidos y correo electrónico de cada cliente, mientras que la tabla `pedido` registra detalles como la fecha del pedido y una referencia a qué cliente lo realizó.
+Este fragmento de código SQL se encarga de crear las tablas en una base de datos que representan diferentes entidades y relaciones de una tienda online. Las tablas creadas son `cliente`, `pedido`, `lineapedido` y `producto`. Cada tabla define sus columnas con nombres y tipos específicos, asegurando así la estructura adecuada para almacenar información relevante sobre cada entidad.
 
-Lo interesante es cómo las tablas se relacionan entre sí mediante claves foráneas (FOREIGN KEY). Por ejemplo, en la tabla `pedido`, hay un campo llamado `cliente_id` que hace referencia al identificador de la tabla `cliente`. Esto permite vincular cada pedido a un cliente específico. De manera similar, la tabla `lineapedido` tiene dos claves foráneas: una para relacionarse con los pedidos y otra para conectarse con los productos.
+En el caso de las relaciones entre entidades, se utilizan claves foráneas (foreign keys) que establecen conexiones entre tablas. Por ejemplo, en la tabla `pedido`, existe una clave foránea (`cliente_id`) que referencia la columna `id` en la tabla `cliente`. Esto indica que cada pedido está asociado a un cliente específico.
 
-Estas relaciones son cruciales porque permiten construir consultas más complejas que pueden combinar datos de varias tablas en un solo resultado, ayudando a entender mejor cómo se integran todos estos elementos en la operación de una tienda online.
+El código también incorpora restricciones (constraints) para garantizar la integridad referencial de los datos, lo cual es crucial para mantener la consistencia y la coherencia entre las diferentes tablas. Por ejemplo, en la tabla `lineapedido`, existen dos claves foráneas que relacionan esta tabla con `pedido` y `producto`.
+
+En resumen, este código SQL crea una estructura de base de datos que refleja las entidades y relaciones clave de un sistema de tienda online, garantizando referencias adecuadas entre ellas mediante el uso de claves foráneas.
+
+**ÚLTIMO PÁRRAFO:** A diferencia del archivo anterior (004-ejemplo tienda online.py) que estaba escrito en Python y definía las entidades como clases, este nuevo código utiliza SQL para crear tablas con sus respectivas relaciones a través de claves foráneas. Esto proporciona una representación más directa y adecuada del modelo relacional en un contexto real de base de datos.
+
+`004-ejemplo tienda online.sql`
 
 ```sql
 CREATE TABLE cliente (
@@ -7872,14 +9230,17 @@ CREATE TABLE producto (
 ```
 
 ### ejemplo tienda online
+<small>Creado: 2025-11-28 11:01</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo SVG que representa una parte de la estructura de datos en una tienda online, específicamente un diagrama entidad-relación (ER) utilizado para modelar las interacciones entre diferentes tablas o entidades. En este caso, el diagrama incluye cuatro entidades principales: Cliente, Pedido, LineaPedido y Producto.
+Este fragmento de código es una representación gráfica en formato SVG (Scalable Vector Graphics) que muestra un diagrama entidad-relación para una tienda online. El diagrama incluye cuatro entidades principales: Cliente, Pedido, LineaPedido y Producto. Cada entidad se representa con un rectángulo donde se detallan sus atributos como el identificador único (`id`), nombre, apellidos, email (para Cliente), fecha del pedido (para Pedido), id del cliente que realiza el pedido, id de la línea del pedido y producto (para LineaPedido) y el nombre y precio del producto (para Producto). Además, se muestran las relaciones entre estas entidades con líneas de conexión. Las flechas en los extremos de cada línea indican la dirección cardinalidad o dependencia entre las entidades.
 
-Cada rectángulo representado en el SVG corresponde a una entidad diferente y contiene los atributos relevantes de dicha entidad (por ejemplo, `id`, `nombre`, `apellidos` para la entidad `Cliente`). Las líneas conectadas con flechas entre estas entidades indican las relaciones existentes entre ellas. Por ejemplo, hay una relación de un cliente a muchos pedidos, representada por una línea que va desde el rectángulo del Cliente hasta el rectángulo del Pedido.
+Este diagrama es importante porque proporciona una visualización clara de cómo están estructurados y relacionados los datos en un sistema de gestión de pedidos para una tienda online, ayudando a comprender mejor el diseño de la base de datos y facilitar su implementación.
 
-Este tipo de diagrama es crucial en la programación y en el diseño de bases de datos ya que ayuda a visualizar claramente cómo se relacionan las distintas partes de un sistema. Esto facilita tanto la comprensión como la implementación correcta de los modelos de datos, asegurando que no haya ambigüedad sobre qué información está relacionada con qué y cómo se interrelacionan diferentes conjuntos de datos en una aplicación real.
+En comparación con el archivo `004-ejemplo tienda online.sql`, que contiene las declaraciones SQL para crear tablas, este SVG ofrece una representación visual gráfica equivalente del mismo modelo de datos. El cambio principal es la conversión de estructuras de datos abstractas en un diseño visual interactivo y comprensible para usuarios no técnicos o con conocimientos básicos de programación.
+
+`004-ejemplo tienda online.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="852.8625488281248" height="385.687510172526" viewBox="0 0 852.8625488281248 385.687510172526">
@@ -7934,6 +9295,111 @@ Este tipo de diagrama es crucial en la programación y en el diseño de bases de
 <path class="conn" d="M 476.4375406901041 260.22971032784835 L 646.050048828125 205.2828018791828" marker-end="url(#arrow-end)" />
 </svg>
 ```
+
+### Actividades propuestas
+
+Tengo claro que estás trabajando con un modelo de base de datos y sus relaciones, representado tanto en formato SVG como en código. Voy a resumir lo que se ve en estos archivos:
+
+1. **Entidades**:
+   - **Cliente**: Tiene atributos `id`, `nombre`, `apellidos` y `email`.
+   - **Pedido**: Tiene atributos `id`, `fecha` (que posiblemente representa la fecha del pedido) y `cliente_id`.
+   - **LineaPedido**: Tiene atributos `id`, `pedido_id` y `producto_id`.
+   - **Producto**: Tiene atributos `id`, `nombre` y `precio`.
+
+2. **Relaciones**:
+   - Una línea de conexión va desde el `Cliente` hasta el `Pedido` (`cliente_id`).
+   - Otra línea de conexión va desde el `Pedido` hasta la `LineaPedido` (implicando que un pedido tiene varias líneas de pedidos).
+   - Finalmente, hay una línea de conexión desde la `LineaPedido` hasta el `Producto` (`producto_id`).
+
+**Diagrama en lenguaje natural y código:**
+
+### Diagrama en Lenguaje Natural
+```plaintext
+Cliente (id, nombre, apellidos, email)
+     |
+     v
+Pedido (id, fecha, cliente_id)  ---->  LineaPedido (id, pedido_id, producto_id)
+                                 |
+                                 v
+Producto (id, nombre, precio)
+```
+
+### Código en SQL
+
+Si quisieras definir las tablas correspondientes usando lenguaje SQL, podrías hacerlo así:
+
+```sql
+CREATE TABLE Cliente (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(100),
+    apellidos VARCHAR(200),
+    email VARCHAR(255)
+);
+
+CREATE TABLE Pedido (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    fecha DATE NOT NULL,
+    cliente_id INT,
+    FOREIGN KEY (cliente_id) REFERENCES Cliente(id)
+);
+
+CREATE TABLE LineaPedido (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    pedido_id INT,
+    producto_id INT,
+    FOREIGN KEY (pedido_id) REFERENCES Pedido(id),
+    FOREIGN KEY (producto_id) REFERENCES Producto(id)
+);
+
+CREATE TABLE Producto (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL
+);
+```
+
+### Resumen en Código Python
+
+Si deseas crear objetos y relaciones usando una clase de modelo similar a la que se usa en frameworks como Django o SQLAlchemy:
+
+```python
+class Cliente(Base):
+    __tablename__ = 'cliente'
+    id = Column(Integer, primary_key=True)
+    nombre = Column(String(100))
+    apellidos = Column(String(200))
+    email = Column(String(255))
+
+class Pedido(Base):
+    __tablename__ = 'pedido'
+    id = Column(Integer, primary_key=True)
+    fecha = Column(Date, nullable=False)
+    cliente_id = Column(Integer, ForeignKey('cliente.id'))
+
+class LineaPedido(Base):
+    __tablename__ = 'lineapedido'
+    id = Column(Integer, primary_key=True)
+    pedido_id = Column(Integer, ForeignKey('pedido.id'))
+    producto_id = Column(Integer, ForeignKey('producto.id'))
+
+class Producto(Base):
+    __tablename__ = 'producto'
+    id = Column(Integer, primary_key=True)
+    nombre = Column(String(255), nullable=False)
+    precio = Column(Numeric(precision=10, scale=2), nullable=False)
+
+# Relaciones
+Cliente.pedidos = relationship(Pedido, back_populates='cliente')
+Pedido.lineas_pedidos = relationship(LineaPedido, back_populates='pedido')
+LineaPedido.producto = relationship(Producto)
+```
+
+### Diagrama SVG (Resumen Visual)
+El diagrama SVG proporcionado en tu pregunta ya da una representación visual clara de las relaciones entre las tablas. Es un resumen visual que muestra cómo `Cliente` está conectado a `Pedido`, luego `LineaPedido` y finalmente a `Producto`.
+
+Este modelo es común para sistemas de e-commerce o cualquier sistema que maneje pedidos con productos asociados.
+
+Si tienes alguna otra pregunta específica sobre cómo implementar este diseño en un lenguaje específico, no dudes en preguntar.
 
 
 <a id="el-modelo-er-ampliado-generalizacion-y-especializacion-agregacion"></a>
@@ -8056,14 +9522,19 @@ parser.parse(svgData, {
 This should give you a starting point to convert your SVG diagrams into interactive HTML representations using DiagramJS.
 
 ### Problema de duplicidad
+<small>Creado: 2025-11-28 13:45</small>
 
 #### Explicación
 
-Este código HTML es una página web que representa un diagrama en el modelo entidad-relación (ER) ampliado, con dos entidades principales: "Alumno" y "Profesor". En la parte de la cabecera del documento (`<!DOCTYPE html>`), se especifica que esta página está escrita en HTML5. Las etiquetas `<head>` contienen metadatos como el conjunto de caracteres (UTF-8) para asegurar una representación correcta de texto, además de un título que aparecerá en la barra superior del navegador.
+Este fragmento de código HTML se utiliza para representar visualmente dos entidades en un diagrama de entidad-relación (ER), específicamente las entidades "Alumno" y "Profesor". Cada entidad está dibujada como una caja rectangular con detalles sobre sus propiedades, como el identificador (id), nombre, apellidos y correo electrónico. Estas entidades están estilizadas con CSS para que tengan un aspecto profesional y legible.
 
-El estilo CSS incorporado dentro del bloque `<style>...</style>` define cómo se deben visualizar las diferentes partes del diagrama. Aquí, tenemos estilos específicos para entidades (como Alumno y Profesor), bases de datos, formas básicas, puertos y flechas que representan relaciones entre objetos en un diagrama ER. Por ejemplo, la entidad "Alumno" tiene propiedades como `id`, `nombre`, `apellidos` y `email`, cada una con bordes rectangulares alrededor del nombre de la propiedad.
+La estructura de cada entidad ("Alumno" y "Profesor") incluye una sección superior para el título de la entidad y otra parte inferior para listar las propiedades. Las propiedades se muestran en cajas pequeñas dentro del contenedor principal de la entidad, con bordes redondeados para distinguirlas claramente.
 
-Este código es importante porque ayuda a visualizar las entidades y sus atributos en un modelo ER, facilitando así el entendimiento de cómo se relacionan diferentes elementos en un sistema de gestión de bases de datos. Es especialmente útil para estudiantes que estudian diseño de bases de datos y necesitan comprender y representar gráficamente la estructura del mismo.
+Este tipo de representación es útil cuando estás trabajando con bases de datos o modelos ER, ya que te permite visualizar las entidades y sus respectivas propiedades de manera gráfica. Es importante porque ayuda a los estudiantes a entender cómo se organizan los datos en una base de datos relacional y cómo se relacionan diferentes elementos del modelo ER.
+
+Este archivo HTML es parte de una serie de ejercicios que probablemente ayudan a los estudiantes a comprender problemas comunes en la modelización de bases de datos, como el problema de duplicidad entre entidades similares pero no idénticas (en este caso, Alumno y Profesor).
+
+`001-Problema de duplicidad.html`
 
 ```html
 <!DOCTYPE html>
@@ -8329,16 +9800,19 @@ body {
 ```
 
 ### Problema de duplicidad
+<small>Creado: 2025-11-28 13:44</small>
 
 #### Explicación
 
-Este fragmento de código en formato JSON representa la estructura básica de un diagrama entidad-relación (ER) para una base de datos. En este caso, se está describiendo información sobre dos entidades principales: Alumno y Profesor.
+Este código JSON representa los detalles de dos entidades, "Alumno" y "Profesor", en un modelo de base de datos ER (Entidad Relación). El archivo JSON contiene información sobre las posiciones, nombres y propiedades de estas entidades. Cada entidad tiene un conjunto de propiedades que incluyen campos como id, nombre, apellidos y email.
 
-Cada entidad tiene atributos específicos que son campos o propiedades que contienen detalles importantes sobre los elementos de esas entidades. Por ejemplo, la entidad "Alumno" incluye cuatro propiedades: un identificador único (id), el nombre del alumno, sus apellidos y su correo electrónico (email). La entidad "Profesor" tiene las mismas propiedades.
+En este formato, cada entidad es un objeto dentro del array "formas", donde se especifican sus identificadores únicos, tipo (en este caso, siempre 'entity'), posición en la pantalla (left y top), nombre de la entidad, y una lista de propiedades que incluyen el nombre de cada propiedad. No hay información sobre ancho y alto explícito para las entidades, lo cual puede ser debido a ajustes dinámicos basados en contenido o diseño.
 
-El código no contiene información sobre relaciones entre estas dos entidades a través de flechas o líneas conectando los elementos en una representación visual, por lo que se puede deducir que, al menos en esta parte del diagrama, no hay relaciones explícitas definidas entre Alumnos y Profesores. Esto es importante porque las relaciones son fundamentales para entender cómo interactúan diferentes partes de la base de datos.
+Este archivo JSON actúa como un modelo o plantilla para representar gráficamente los datos de una base de datos ER utilizando CSS y HTML (ver el código anterior). Las propiedades proporcionadas aquí son cruciales porque se utilizan para generar la visualización de las entidades, incluyendo sus títulos y detalles de las columnas.
 
-Este tipo de descripción JSON ayuda a los desarrolladores a representar visualmente la estructura de una base de datos antes de codificarla, facilitando el proceso de diseño y comprensión del sistema.
+En comparación con el código HTML previo, este archivo JSON representa exactamente la misma información pero en un formato estructurado. La principal diferencia es que ahora la información está separada del estilo y la presentación (que antes estaba en el CSS/HTML), lo que facilita la manipulación de datos sin alterar su visualización y permite una mayor flexibilidad para representar y manipular los datos en diferentes formatos o plataformas.
+
+`001-Problema de duplicidad.json`
 
 ```json
 {
@@ -8403,14 +9877,19 @@ Este tipo de descripción JSON ayuda a los desarrolladores a representar visualm
 ```
 
 ### Problema de duplicidad
+<small>Creado: 2025-11-28 13:44</small>
 
 #### Explicación
 
-Este fragmento de código es una representación gráfica en formato SVG (Scalable Vector Graphics) que muestra un diagrama básico para el diseño de bases de datos, específicamente para representar entidades como "Alumno" y "Profesor". Cada entidad está dibujada con rectángulos y contiene atributos como "id", "nombre", "apellidos" y "email".
+Este código SVG representa un diagrama visual de entidad-relación (ER) para dos entidades: Alumno y Profesor. Cada entidad está dibujada como una caja rectangular que contiene sus atributos, como ID, nombre, apellidos y correo electrónico. Las coordenadas X e Y dentro del SVG definen la posición exacta de cada elemento en el diagrama.
 
-El código SVG define estilos (como colores y tipos de letra) en la sección `<defs>`, lo que permite un manejo uniforme del diseño. Además, incluye marcadores para las flechas que podrían ser utilizadas en relaciones entre entidades.
+El código define dos rectángulos para las entidades "Alumno" y "Profesor", ubicados a la izquierda y derecha respectivamente. Dentro de cada rectángulo, se muestran los nombres de las propiedades asociadas a cada entidad, organizadas verticalmente debajo del nombre de la entidad.
 
-Este tipo de diagrama es crucial en el proceso de modelado de bases de datos ER (Entidad-Relación) ya que ayuda a visualizar y definir claramente los elementos y sus atributos. Es especialmente útil en la etapa inicial del diseño para discutir y validar las necesidades de negocio antes de pasar a una implementación técnica más detallada.
+Este tipo de representación visual es crucial en el diseño de bases de datos para ayudar a los desarrolladores a entender y comunicar claramente las relaciones entre diferentes entidades. Es especialmente útil durante la fase inicial de planificación cuando se buscan posibles redundancias o ineficiencias que podrían ser resueltas mediante técnicas como la generalización, especialización u agregación.
+
+En comparación con el archivo anterior en formato JSON, este código SVG proporciona una representación gráfica más visual y detallada de las entidades "Alumno" y "Profesor". Mientras que el archivo JSON simplemente enumera los atributos, el SVG incluye la posición exacta de cada elemento y define estilos específicos para representar diferentes elementos del diagrama ER. Esto facilita una comprensión más rápida y precisa del diseño de las entidades en un contexto visual.
+
+`001-Problema de duplicidad.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="554.4625006781682" height="230.83750406901035" viewBox="0 0 554.4625006781682 230.83750406901035">
@@ -8453,16 +9932,19 @@ Este tipo de diagrama es crucial en el proceso de modelado de bases de datos ER 
 ```
 
 ### Solucion con generalizacion
+<small>Creado: 2025-11-28 13:51</small>
 
 #### Explicación
 
-Este fragmento de código HTML es una representación gráfica de un modelo entidad-relación (ER) en el contexto de una base de datos. Cada sección del código corresponde a diferentes elementos del diagrama, como entidades y relaciones entre ellas.
+Este código HTML es una representación visual de un diagrama en entidad-relación (ER) que muestra diferentes entidades y sus propiedades, así como las relaciones entre ellas. El archivo contiene CSS personalizado para dibujar formas geométricas y flechas que representan entidades y conexiones.
 
-En la parte central del código, hay tres bloques que describen entidades específicas: Persona, Alumno y Profesor. Cada entidad tiene propiedades o atributos asociados con ella. Por ejemplo, la entidad "Persona" incluye atributos como id, nombre, apellidos, email y NUSS.
+La página se estructura con varias clases "shape" que definen la apariencia de las distintas partes del diagrama. Por ejemplo, hay una clase específica para dibujar entidades (clases `entity`) que incluyen encabezados y propiedades con puertos (pequeños círculos) a ambos lados de cada propiedad para conectarlas con flechas o líneas. En el código se ven tres entidades: "Persona", "Alumno" e "Profesor". Cada entidad tiene sus propias propiedades listadas, como "id", "nombre", y "email".
 
-Además de las entidades, el código también muestra flechas que representan relaciones entre ellas. Estas flechas indican cómo estas entidades se conectan o interactúan en términos de datos. Por ejemplo, hay una flecha que conecta la entidad "Persona" con dos "Objeto" rectángulos a los lados, sugiriendo un vínculo indirecto entre ellas.
+Las relaciones entre las entidades están representadas por flechas (clases `arrow`), que conectan una entidad con otra o con formas adicionales en el diagrama. En este caso, hay cuatro flechas que conectan diferentes puntos del diagrama, probablemente indicando cómo se relacionan los objetos y entidades entre sí.
 
-Este tipo de representación gráfica es útil para estudiantes y desarrolladores porque proporciona una vista visual clara de cómo están estructuradas las bases de datos y qué relaciones existen entre diferentes tablas o entidades.
+Este tipo de representación es útil para estudiantes de bases de datos porque permite visualizar fácilmente cómo las tablas (entidades) están interconectadas en un sistema de gestión de base de datos.
+
+`002-Solucion con generalizacion.html`
 
 ```html
 <!DOCTYPE html>
@@ -8749,16 +10231,46 @@ body {
 ```
 
 ### Solucion con generalizacion
+<small>Creado: 2025-11-28 13:51</small>
 
 #### Explicación
 
-Este fragmento de código JSON describe una representación gráfica de un modelo ER (Entidad Relación) en el contexto del diseño de bases de datos para un escenario educativo. El código define varias formas y flechas que simbolizan entidades, sus propiedades y las relaciones entre ellas.
+El archivo JSON proporcionado describe una representación de entidades y relaciones en un diagrama, pero está estructurado de manera diferente al código HTML anterior. La nueva estructura define los elementos (entidades y rectángulos) y las conexiones entre ellos como objetos en un formato más legible y modular.
 
-Las entidades mencionadas son "Persona", "Alumno" y "Profesor". Cada entidad tiene una lista de propiedades únicas: por ejemplo, la entidad "Persona" incluye propiedades como id, nombre, apellidos y email. La entidad "Alumno" agrega propiedades específicas para estudiantes, tales como matrícula y NIA (Número de Identificación Académica). De manera similar, "Profesor" tiene sus propias características, como la asignatura que imparte.
+### Descripción del JSON:
 
-El código también representa relaciones entre estas entidades. La entidad "Persona" es el conjunto base desde el cual derivan tanto "Alumno" como "Profesor", lo que indica una relación de generalización: todos los Alumnos y Profesores son Personas, pero no todas las Personas son necesariamente Alumnos o Profesores. Además, hay flechas adicionales que conectan a la entidad "Profesor" con un objeto genérico (representado por otra forma rectangular), así como a la entidad "Alumno".
+1. **Entidades:**
+   - Hay tres entidades definidas:
+     - **Persona:** con propiedades `id`, `nombre`, `apellidos`, `email` e `NUSS`.
+     - **Alumno:** con propiedades `id`, `matricula` y `NIA`.
+     - **Profesor:** con propiedades `id` y `asignatura`.
 
-Esta representación es importante porque ayuda a visualizar y comprender cómo se relacionan diferentes tipos de datos en el diseño del sistema, permitiendo una implementación más estructurada y eficiente de las bases de datos.
+2. **Rectángulos:**
+   - Dos rectángulos etiquetados como "Objeto", uno en la posición (869.375px, 350.575px) y otro en (173.45px, 365.408px).
+
+3. **Flechas:**
+   - Las flechas conectan las entidades de la siguiente manera:
+     - De `Persona` a `Alumno`.
+     - De `Persona` a `Profesor`.
+     - De `Profesor` al rectángulo "Objeto" en (869.375px, 350.575px).
+     - De `Alumno` al rectángulo "Objeto" en (173.45px, 365.408px).
+
+### Diferencias con el Código HTML Anterior:
+
+- **Estructura:** En lugar de definir las entidades directamente dentro del cuerpo del HTML, este JSON utiliza un formato más modular que permite fácilmente la manipulación y renderización programática.
+  
+- **Propiedades Estilísticas:** El código anterior especifica estilos como tamaño y posición directamente en los elementos. En el nuevo JSON, estas propiedades están ausentes para `width` e `height`, lo cual sugiere que podrían ser calculadas dinámicamente o establecidas por otro medio.
+
+- **Conexiones:** Las flechas de conexión son definidas como objetos separados con detalles sobre su estilo y las entidades entre las cuales van dirigidas. Esto es más flexible para manipulaciones programáticas en comparación con la representación directa del código HTML.
+
+### Conclusión:
+Este JSON proporciona una descripción estructurada y modular de un diagrama, facilitando tanto el renderizado visual como la manipulación lógica de los componentes. Es particularmente útil para aplicaciones que requieren dinamismo en la representación gráfica de datos.
+
+### Diferencias Específicas:
+- **Estilo del Código:** El JSON es más limpio y permite una mejor manipulación programática.
+- **Dinámico vs Estático:** El JSON sugiere un sistema más flexible para renderizar diagramas en tiempo real, mientras que el HTML proporciona un resultado estático directamente definido.
+
+`002-Solucion con generalizacion.json`
 
 ```json
 {
@@ -8917,14 +10429,23 @@ Esta representación es importante porque ayuda a visualizar y comprender cómo 
 ```
 
 ### Solucion con generalizacion
+<small>Creado: 2025-11-28 13:51</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo SVG (Scalable Vector Graphics) que representa un diagrama entidades-relaciones en el contexto de una base de datos. El objetivo principal del código es visualizar cómo diferentes entidades (como Persona, Alumno y Profesor) se relacionan entre sí y con otras elementos del sistema.
+Este archivo SVG representa un diagrama de entidad-relación (ER) que visualiza las relaciones entre diferentes entidades y objetos en una base de datos. En este caso, el diagrama muestra tres entidades principales: Persona, Alumno, y Profesor, junto con dos elementos no relacionados denominados "Objeto".
 
-El código comienza estableciendo estilos y marcadores para los distintos elementos del diagrama, como rectángulos y líneas con flechas. Luego, define las entidades principales mediante rectángulos coloreados, cada uno correspondiente a una entidad diferente (Persona, Alumno, Profesor). Dentro de estos rectángulos se muestran atributos específicos para cada entidad, como "id", "nombre" y "email". Además, hay flechas que representan las relaciones entre estas entidades. Por ejemplo, la flecha desde el rectángulo de Persona hasta los rectángulos de Alumno y Profesor sugiere una relación jerárquica o de herencia.
+El rectángulo grande representa la entidad "Persona" con atributos como ID, nombre, apellidos, email y NUSS. Dos líneas horizontales dentro del rectángulo indican que los campos se alinean correctamente para mejorar la legibilidad.
 
-Este tipo de diagrama es crucial en la modelación de bases de datos para entender cómo se estructuran los datos y cómo las diferentes entidades están relacionadas. Permite a los desarrolladores visualizar claramente el modelo lógico de la base de datos antes de implementarla, facilitando así un diseño más eficiente y coherente del sistema.
+Por otro lado, las entidades "Alumno" y "Profesor" también tienen sus propios rectángulos individuales con atributos específicos de cada entidad (como matrícula y NIA para Alumno, o asignatura para Profesor). Estas entidades están conectadas a la entidad principal "Persona", lo que sugiere una relación jerárquica entre estas entidades.
+
+Además, se incluyen dos elementos circundantes etiquetados como "Objeto" que no son parte del modelo de datos pero pueden representar aspectos adicionales del sistema o objetos relacionados con las entidades mencionadas. Las líneas de conexión (path) indican cómo estas entidades y objetos están interconectados.
+
+En comparación con el archivo JSON anterior, este SVG proporciona una visualización gráfica detallada que facilita la comprensión del modelo de datos y sus relaciones. Mientras que el JSON era más abstracto y basado en texto, este SVG presenta un esquema visual claro para la misma estructura de datos.
+
+Este cambio representa una transición desde una descripción textual de las entidades hasta una representación gráfica detallada que puede ser útil tanto para análisis como para presentaciones. El uso del formato SVG permite una mayor flexibilidad en términos de diseño y facilidad visual, aunque se pierde un poco de la estructura jerárquica explícita proporcionada por el JSON original.
+
+`002-Solucion con generalizacion.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="895.9249877929685" height="418.1500040690103" viewBox="0 0 895.9249877929685 418.1500040690103">
@@ -8980,16 +10501,21 @@ Este tipo de diagrama es crucial en la modelación de bases de datos para entend
 ```
 
 ### especializacion
+<small>Creado: 2025-11-28 13:55</small>
 
 #### Explicación
 
-Este código HTML crea una página web que representa un diagrama de entidad-relación ampliado, enfocándose en la especialización y agregación. La página tiene estilos CSS integrados que definen los elementos visuales del diagrama como entidades, atributos y relaciones.
+Este fragmento de código HTML está diseñado para representar un diagrama en el que se muestran relaciones entre diferentes entidades, típicamente asociadas a la modelización de bases de datos. En concreto, muestra una estructura de especialización y generalización.
 
-El contenido principal se encuentra dentro de una clase `page` que simula el lienzo sobre el cual dibujar el diagrama. Dentro de esta clase, hay varias instancias de la clase `shape entity`, cada una representando diferentes tipos de entidades (por ejemplo, "Alumno", "Alumno Presencial", y "Alumno Distancia"). Estas entidades tienen propiedades específicas que se muestran en la etiqueta `<div class="entity-property">` con nombres como ID, nombre, apellidos, email, etc.
+El documento comienza definiendo estilos CSS dentro del bloque `<style>`, lo cual permite dar formato visual a las distintas partes del diagrama como entidades (alumno, alumno presencial, alumno distancia) y sus propiedades (como id, nombre, apellidos, etc.). Estos elementos son representados gráficamente con diferentes formas y colores para distinguir entre ellos.
 
-Además, hay dos líneas de flechas (`<div class="arrow">`) que conectan las entidades "Alumno Presencial" y "Alumno Distancia" con "Alumno", representando una relación de especialización. Esto indica que "Alumno Presencial" y "Alumno Distancia" son tipos específicos de "Alumno".
+El cuerpo (`<body>`) contiene un contenedor principal llamado `.page` que encapsula el diagrama completo. Dentro de este contenedor se encuentran varias entidades (clases) definidas como `div` con la clase `shape entity`. Cada entidad tiene sus propiedades listadas en divs con la clase `entity-property`, donde cada propiedad está representada por un nombre y dos puntos de conexión (`port`) a los lados. Estos puntos de conexión sugieren conexiones o relaciones entre entidades.
 
-El código es importante porque proporciona una visualización gráfica clara y organizada del modelo ER ampliado, facilitando la comprensión de las relaciones entre diferentes entidades en un sistema de bases de datos.
+Además, hay flechas (`div` con clase `arrow`) que conectan visualmente al "Alumno" tanto con el "Alumno Presencial" como con el "Alumno Distancia", indicando una relación de especialización donde "Alumno Presencial" y "Alumno Distancia" son casos particulares o subclases del concepto más general "Alumno".
+
+Este tipo de diagrama es útil para estudiantes y profesionales que trabajan en la modelación de bases de datos, ya que ayuda a visualizar claramente cómo se relacionan diferentes entidades y sus atributos específicos.
+
+`003-especializacion.html`
 
 ```html
 <!DOCTYPE html>
@@ -9262,14 +10788,19 @@ body {
 ```
 
 ### especializacion
+<small>Creado: 2025-11-28 13:55</small>
 
 #### Explicación
 
-Este código JSON representa una parte de un diagrama ER (Diagrama Entidad Relación) utilizado en el diseño de bases de datos, específicamente para ilustrar la relación entre diferentes tipos de entidades. En este caso, se describen tres entidades: "Alumno", "Alumno Presencial" y "Alumno Distancia". La entidad principal es "Alumno", que tiene propiedades básicas como ID, nombre, apellidos y email.
+El código JSON proporcionado representa la configuración de un diagrama entidad-relación (ER) que muestra una estructura de generalización, donde hay una entidad principal y dos entidades especializadas. La entidad principal se llama "Alumno" y tiene propiedades como id, nombre, apellidos y email. Las entidades especializadas son "Alumno Presencial" y "Alumno Distancia", cada una con un id (que hereda de Alumno) y otra propiedad específica: "asistencia" para los alumnos presenciales y "virtualización" para los alumnos a distancia.
 
-Las otras dos entidades, "Alumno Presencial" y "Alumno Distancia", son subconjuntos o tipos especiales del Alumno. Cada una incluye el ID de la entidad padre (Alumno) y características adicionales específicas: para los alumnos presenciales se añade un campo llamado "asistencia", mientras que para los alumnos a distancia se agrega otro campo llamado "virtualización". Las flechas en el JSON indican estas relaciones jerárquicas, sugiriendo una especialización donde ambos tipos de alumnos heredan del tipo base Alumno.
+El JSON describe las formas geométricas en el diagrama, especificando la posición (left y top), el tipo de entidad y sus propiedades. También incluye información sobre las flechas que conectan la entidad principal con cada una de las especializadas, indicando así la relación entre ellas.
 
-Este modelo es importante porque ayuda a organizar la información de manera estructurada y permite que las bases de datos sean más flexibles al manejar diferentes tipos de entidades con propiedades comunes y específicas.
+Este archivo es importante porque ayuda a visualizar y entender cómo se pueden estructurar datos complejos en un modelo relacional, mostrando cómo una misma entidad puede tener diferentes subcategorías (especialización) que comparten ciertas propiedades pero también tienen sus propias características específicas.
+
+ÚLTIMO PÁRRAFO: Este archivo JSON es una representación más simplificada y abstracta del diagrama anterior, utilizando objetos para describir las formas y relaciones en lugar de código HTML y CSS directamente. Esto facilita la manipulación del diseño del diagrama mediante programación, permitiendo ajustes y actualizaciones sin necesidad de editar códigos complejos.
+
+`003-especializacion.json`
 
 ```json
 {
@@ -9374,14 +10905,25 @@ Este modelo es importante porque ayuda a organizar la información de manera est
 ```
 
 ### especializacion
+<small>Creado: 2025-11-28 13:55</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo SVG (Scalable Vector Graphics) que representa un diagrama ER (Entidad-Relación) en el contexto de una base de datos. El objetivo principal del código es visualizar las entidades "Alumno", "Alumno Presencial" y "Alumno Distancia", así como mostrar la relación entre ellas.
+Este fragmento de código es un archivo SVG que representa gráficamente el modelo ER ampliado (Entidad Relación) con especialización para dos tipos de alumnos: Alumno Presencial y Alumno Distancia. El diagrama incluye tres entidades principales:
 
-El archivo SVG incluye definiciones CSS para establecer estilos consistentes, como colores de relleno y trazo para diferentes formas (rectángulos, círculos) que representan las entidades. Las entidades "Alumno Presencial" y "Alumno Distancia" se especializan desde la entidad base "Alumno", lo cual se refleja mediante flechas punteadas que conectan estas entidades.
+1. **Alumno**: Una entidad cuadrada donde se listan las propiedades básicas como `id`, `nombre`, `apellidos` y `email`. Esta entidad es el padre o la superclase para los tipos específicos de alumnos.
 
-Esta visualización es crucial para entender cómo las diferentes entidades en una base de datos están relacionadas y cómo ciertas entidades pueden ser versiones más específicas (especializaciones) de otras. Esto ayuda a diseñar bases de datos eficientes y bien estructuradas, permitiendo manejar información compleja de manera organizada y coherente.
+2. **Alumno Presencial**: Una entidad que hereda del tipo Alumno, pero añade una propiedad adicional llamada `asistencia`.
+
+3. **Alumno Distancia**: Otra entidad derivada de Alumno, con una propiedad específica llamada `virtualización` para representar las características propias de los alumnos que estudian a distancia.
+
+El diagrama también incluye flechas que conectan la entidad principal (Alumno) con sus dos subtipos (Alumno Presencial y Alumno Distancia), mostrando claramente la relación de especialización entre ellas. Las líneas horizontales dentro de cada entidad representan las propiedades asociadas a cada una.
+
+En resumen, este SVG proporciona una visualización directa del modelo ER que demuestra cómo se pueden agrupar entidades relacionadas y cómo agregar atributos específicos para diferentes tipos de subentidades en el contexto de especialización.
+
+**ÚLTIMO PÁRRAFO**: Este archivo SVG es una representación gráfica más detallada e interactiva del modelo ER, mostrando las relaciones de forma visual clara con flechas y entidades estilizadas, a diferencia del formato JSON anterior que era principalmente un conjunto de datos estructurados.
+
+`003-especializacion.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="598.3500162760414" height="372.9250038994682" viewBox="0 0 598.3500162760414 372.9250038994682">
@@ -9429,14 +10971,19 @@ Esta visualización es crucial para entender cómo las diferentes entidades en u
 ```
 
 ### Agregacion
+<small>Creado: 2025-11-28 14:05</small>
 
 #### Explicación
 
-Este código HTML crea una página web que representa un diagrama de entidades relacionales (ER) para un sistema de gestión de datos relacionados con coches. La página incluye varias cajas estilizadas que representan diferentes entidades, como "Rueda", "Llanta", "Neumático", "Chasis", "Motor" y "Coche". Cada una de estas cajas tiene propiedades específicas, por ejemplo, la entidad "Rueda" tiene las propiedades "id" y "color".
+Este código HTML crea una representación visual de un diagrama ER (Entidad Relacional) en formato web. La página incluye estilos CSS para definir la apariencia y disposición de las entidades, atributos y relaciones.
 
-Además, el código define flechas que conectan algunas de estas entidades para indicar relaciones entre ellas. Por ejemplo, hay flechas dobles que vinculan "Chasis" con varias ruedas y neumáticos, sugiriendo que un chasis puede estar asociado con múltiples partes del vehículo.
+En el cuerpo del documento, se definen varias áreas "shape" que representan diferentes entidades del modelo ER, como 'Rueda', 'Llanta', 'Neumático', 'Chasis', 'Motor' y 'Coche'. Cada entidad tiene un encabezado que muestra su nombre y una serie de propiedades (atributos) con sus respectivos nombres. Los atributos se representan con pequeños círculos "port" en los extremos izquierdo y derecho, simbolizando las conexiones posibles.
 
-El estilo CSS proporciona una presentación visual atractiva para estas entidades y sus relaciones, utilizando clases específicas como `.shape`, `.entity` y `.arrow`. Esto ayuda a los usuarios de la página a entender fácilmente la estructura y las interconexiones entre las distintas partes del sistema.
+Además, hay líneas rectas definidas como elementos 'arrow', que conectan estas entidades entre sí para mostrar sus relaciones, es decir, cómo una entidad se relaciona con otra. Por ejemplo, hay flechas dobles que conectan a la entidad "Chasis" con otras entidades como "Rueda", "Motor" y "Coche".
+
+Este diagrama visual ayuda a entender la estructura y las relaciones entre diferentes componentes de un sistema, en este caso, partes de un coche. Es una herramienta gráfica útil para modelar bases de datos y diseñar sistemas de gestión de información.
+
+`004-Agregacion.html`
 
 ```html
 <!DOCTYPE html>
@@ -9748,10 +11295,88 @@ body {
 ```
 
 ### Agregacion
+<small>Creado: 2025-11-28 14:05</small>
 
 #### Explicación
 
-Este código JSON representa un diagrama de entidades en una base de datos, donde cada entidad es un objeto con propiedades específicas. En este caso, tienes varias entidades como 'Rueda', 'Llanta', 'Neumático', 'Chasis', 'Motor' y 'Chapa'. Cada entidad tiene un ID único para identificarla y algunas pueden tener atributos adicionales como el color de la rueda o la cilindrada del motor. Además, hay flechas que representan relaciones entre estas entidades. Por ejemplo, una flecha conecta a la entidad 'Llanta' con 'Rueda', indicando que una llanta puede estar asociada a una rueda. Otra flecha conecta al 'Chasis' y al 'Coche', sugiriendo que un chasis forma parte de un coche. Estas relaciones ayudan a entender cómo las diferentes partes interactúan en el sistema representado por la base de datos, permitiendo así modelar complejas asociaciones entre elementos del mundo real.
+El archivo JSON proporcionado contiene la estructura y el layout de un diagrama entitativo, probablemente generado por una herramienta de modelado UML o similar. El contenido específico del archivo puede explicarse en términos de dos tipos principales de elementos: formas (entidades) y flechas (relaciones entre esas entidades).
+
+### Formas
+
+Las entradas bajo la clave `"formas"` representan las distintas entidades presentes en el diagrama. Cada entrada tiene las siguientes propiedades:
+
+- **id**: Un identificador único para cada entidad.
+- **tipo**: El tipo de forma, en este caso, siempre es `"entity"`.
+- **left** y **top**: Posición horizontal y vertical respectivamente del centro de la forma en píxeles desde el borde izquierdo y superior del contenedor (diagrama).
+- **width** y **height**: Ancho y alto de la forma (opcional, ya que no se especifican explícitamente en este ejemplo). 
+- **entityName**: El nombre de la entidad.
+- **properties**: Una lista de propiedades asociadas con cada entidad. Cada propiedad tiene un `"id"` único y un nombre.
+
+### Ejemplo de Forma
+
+```json
+{
+  "id": "forma-1",
+  "tipo": "entity",
+  "left": "452.35px",
+  "top": "193.925px",
+  "width": "",
+  "height": "",
+  "entityName": "Rueda",
+  "properties": [
+    {
+      "id": "prop-1",
+      "name": "id"
+    },
+    {
+      "id": "prop-2",
+      "name": "color"
+    }
+  ]
+}
+```
+
+### Flechas
+
+Las entradas bajo la clave `"flechas"` representan las relaciones entre entidades. Cada flecha tiene:
+
+- **desde**: Un objeto que contiene información sobre el punto de origen de la flecha (`shapeId`: Identificador del elemento desde donde parte, `propId` y `side`: Opcionalmente pueden especificar una propiedad o un lado específico en la entidad desde donde parte).
+- **hasta**: Un objeto similar al anterior pero para el extremo final de la flecha.
+- **tipo**: Tipo de conexión (en este caso siempre es `"doble"`, lo que sugiere una relación bidireccional).
+- **estilo**: Estilo de dibujar la flecha. En este caso, `straight` indica que las flechas son líneas rectas entre sus puntos finales.
+
+### Ejemplo de Flecha
+
+```json
+{
+  "desde": {
+    "shapeId": "forma-2",
+    "propId": null,
+    "side": null
+  },
+  "hasta": {
+    "shapeId": "forma-1",
+    "propId": null,
+    "side": null
+  },
+  "tipo": "doble",
+  "estilo": "straight"
+}
+```
+
+### Explicación del Diagrama
+
+Este diagrama representa las entidades de un coche y sus componentes relacionados. Cada entidad tiene una posición, nombre y atributos definidos:
+
+- **Rueda**: Con propiedades `id` y `color`.
+- **Llanta**, **Neumático**, **Chasis**, **Motor** y **Chapa** cada uno con diferentes atributos.
+- **Coche**: Unida a todas las entidades anteriores, sugiriendo una relación de composición (es decir, un coche tiene componentes como ruedas, chasis, motor).
+
+Las flechas indican relaciones entre estas entidades. En este caso, todas las flechas son dobles (`tipo: "doble"`) y rectas (`estilo: "straight"`), lo que significa que la relación es bidireccional y directa sin curvatura.
+
+En resumen, el archivo JSON proporciona una estructura para renderizar un diagrama de entidades con relaciones claras entre ellas. Esto es útil para entender los componentes y las relaciones dentro de un sistema o entidad compleja como un coche en este ejemplo.
+
+`004-Agregacion.json`
 
 ```json
 {
@@ -9968,14 +11593,127 @@ Este código JSON representa un diagrama de entidades en una base de datos, dond
 ```
 
 ### Agregacion
+<small>Creado: 2025-11-28 14:05</small>
 
 #### Explicación
 
-Este fragmento de código SVG representa un diagrama de entidades relacionales (ER) en el contexto de una base de datos para un sistema que gestiona coches y sus componentes. Cada rectángulo dentro del dibujo corresponde a una entidad, como 'Rueda', 'Llanta', 'Neumático', 'Chasis', 'Motor' o 'Coche'. Estas entidades tienen atributos específicos asociados, por ejemplo, la entidad 'Chasis' tiene los atributos 'id' y 'grosor'.
+El archivo SVG proporcionado representa una representación gráfica de objetos relacionados con componentes de un automóvil y sus relaciones, utilizando elementos rectangulares para los diferentes componentes (como chasis, motor, neumático) y líneas curvas para indicar las relaciones entre ellos. Aquí está la interpretación detallada del SVG:
 
-Las líneas que conectan las entidades (representadas como elementos `<line>` y `<path>`) indican relaciones entre ellas. Por ejemplo, hay una línea que vincula la entidad 'Coche' con la entidad 'Rueda', lo que sugiere que un coche tiene varias ruedas. Las flechas en estas líneas, definidas por los marcadores de inicio (`<marker id="arrow-start">`) y fin (`<marker id="arrow-end">`), indican el sentido de las relaciones.
+### Elementos Rectangulares
+Cada elemento rectangular dentro de la etiqueta `<rect class="shape-entity">` representa un objeto relacionado con partes de un automóvil, como por ejemplo:
 
-Este tipo de diagrama es crucial para diseñar una base de datos porque ayuda a visualizar cómo las diferentes partes del sistema están relacionadas entre sí, facilitando la creación de tablas en SQL o cualquier otro lenguaje de modelado de bases de datos.
+1. **Chasis**:
+   - Coordenadas: (311.3749694824218, 40) 
+   - Altura y Ancho: 102.4 px y 219.99999999999997 px respectivamente.
+   
+2. **Motor**:
+   - Coordenadas: (313.2125345865885, 297.9999796549479) 
+   - Altura y Ancho: 102.4 px y 219.99997456868488 px respectivamente.
+   
+3. **Neumático**:
+   - Coordenadas: (311.3749694824218, 40)
+   - Altura y Ancho: 102.4 px y 219.99999999999997 px respectivamente.
+   
+4. **Chapa**:
+   - Coordenadas: (313.8749694824218, 418.67497762044263)
+   - Altura y Ancho: 102.4 px y 219.99999999999997 px respectivamente.
+
+5. **Coche**:
+   - Coordenadas: (638.2125854492186, 218.6750030517578)
+   - Altura y Ancho: 80 px y 219.99999999999997 px respectivamente.
+
+### Líneas de Conexión (Relaciones)
+Las líneas curvas dentro de la etiqueta `<path class="conn">` indican las relaciones entre los componentes del automóvil, como por ejemplo:
+
+1. **Neumático a Chasis**:
+   - Coordenadas: `(259.99997456868493, 189.13140793028094) -- (312.11247762044275, 198.10608346564447)`
+   
+2. **Neumático a Motor**:
+   - Coordenadas: `(261.2000274658203, 259.7634915211494) -- (312.11247762044275, 246.24900880240727)`
+   
+3. **Chasis a Coche**:
+   - Coordenadas: `(521.294863659771, 142.40000406901038) -- (670.1501277981833, 218.6750030517578)`
+   
+4. **Chasis a Motor**:
+   - Coordenadas: `(532.1125284830729, 231.09094187764543) -- (638.2125854492186, 244.634079551924)`
+   
+5. **Motor a Coche**:
+   - Coordenadas: `(533.2125091552733, 318.5607815266541) -- (638.2125854492186, 289.3142385454983)`
+   
+6. **Chapa a Coche**:
+   - Coordenadas: `(502.50230153695827, 418.67497762044263) -- (686.784961991522, 298.6750475565592)`
+   
+### Texto de Información
+El texto dentro del SVG proporciona detalles sobre cada componente y las relaciones:
+
+- **Chasis**: `id` y `grosor`.
+- **Motor**: `id` y `cilindrada`.
+- **Neumático** (y similares): `id`.
+- **Coche**: `id`.
+
+### Interpretación del JSON
+El archivo JSON proporcionado parece ser una representación estructurada de estos elementos:
+
+```json
+[
+    {
+        "name": "Chasis",
+        "position": [311.3749694824218, 40],
+        "size": [219.99999999999997, 102.4],
+        "attributes": ["id", "grosor"],
+        "connections": [
+            {"to": "Coche", "path": "(521.294863659771, 142.4) -- (670.1501277981833, 218.6750030517578)"}
+        ]
+    },
+    {
+        "name": "Motor",
+        "position": [313.2125345865885, 297.9999796549479],
+        "size": [219.99997456868488, 102.4],
+        "attributes": ["id", "cilindrada"],
+        "connections": [
+            {"to": "Coche", "path": "(533.2125091552733, 318.5607815266541) -- (638.2125854492186, 289.3142385454983)"}
+        ]
+    },
+    {
+        "name": "Neumatico",
+        "position": [311.3749694824218, 40],
+        "size": [219.99999999999997, 102.4],
+        "attributes": ["id"],
+        "connections": [
+            {"to": "Chasis", "path": "(259.99997456868493, 189.13140793028094) -- (312.11247762044275, 198.10608346564447)"}
+        ]
+    },
+    {
+        "name": "Chapa",
+        "position": [313.8749694824218, 418.67497762044263],
+        "size": [219.99999999999997, 102.4],
+        "attributes": ["id", "color"],
+        "connections": [
+            {"to": "Coche", "path": "(502.50230153695827, 418.67497762044263) -- (686.784961991522, 298.6750475565592)"}
+        ]
+    },
+    {
+        "name": "Coche",
+        "position": [638.2125854492186, 218.6750030517578],
+        "size": [219.99999999999997, 80],
+        "attributes": ["id"],
+        "connections": []
+    }
+]
+```
+
+Este JSON proporciona un esquema estructurado para los elementos y sus relaciones en el SVG, facilitando la manipulación de datos y potencialmente su uso en aplicaciones que requieran gestión de componentes del automóvil. 
+
+### Conclusión
+El archivo SVG junto con el JSON describe una serie de objetos relacionados con componentes del automóvil, sus atributos y las relaciones entre ellos, proporcionando una representación visual y estructurada útil para diagramas técnicos o aplicaciones de gestión de vehículos. La interpretación de este SVG permite entender cómo los diferentes elementos se conectan y dependen unos de otros en el contexto de un automóvil. 
+
+### Ejemplo de Uso
+Podrías utilizar esta representación para visualizar componentes del automóvil, permitiendo a los usuarios interactuar con ellos o para integrar estos datos en aplicaciones que requieran diagramas de componentes técnicos.
+
+---
+Si tienes preguntas específicas sobre cómo usar estos elementos o necesitas más detalles, por favor no dudes en preguntar. ¡Estoy aquí para ayudarte! 🚗💡
+
+`004-Agregacion.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="898.2125854492186" height="561.0750007629393" viewBox="0 0 898.2125854492186 561.0750007629393">
@@ -10042,14 +11780,19 @@ Este tipo de diagrama es crucial para diseñar una base de datos porque ayuda a 
 ```
 
 ### Esquema para el futuro
+<small>Creado: 2025-11-28 14:10</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web simple que representa un diagrama en forma de ER (Entidad Relación) con algunas entidades y relaciones básicas. La estructura del documento está bien definida usando etiquetas como `<!DOCTYPE html>`, `<html>`, `<head>` y `<body>`. Dentro del cuerpo (`<body>`), se encuentra una clase llamada "page" que contiene varios elementos rectangulares para representar entidades como "Entidades", "Python" y "SQL". Estos elementos están estilizados con CSS para darles un aspecto visual atractivo, incluyendo bordes redondeados y sombras.
+Este código HTML crea una página visual que representa un diagrama sencillo, probablemente relacionado con la interpretación de diagramas de entidad-relación (ER) en el contexto de bases de datos. La estructura del documento incluye varios elementos rectangulares y líneas para representar relaciones entre diferentes componentes.
 
-Además de los rectángulos que representan las entidades, hay flechas (`<div class="arrow">`) dibujadas en la página para mostrar las relaciones entre estas entidades. Estas flechas están rotadas según su posición relativa a las entidades, lo cual se logra con el uso de transformaciones CSS (como `rotate`).
+En el cuerpo del HTML, se utiliza CSS para estilizar los elementos que son dibujados dentro de la página. Los elementos principales son "div" con clase "shape rectangle", que crean recuadros rectangulares etiquetados como "Entidades", "Python", y "SQL". Estos elementos están posicionados específicamente en el área visual para formar un diagrama sencillo.
 
-Este tipo de diagrama visual es importante porque ayuda a los estudiantes y desarrolladores a entender cómo se relacionan diferentes componentes en un sistema, especialmente cuando se trata de modelar bases de datos y sus relaciones. En este caso específico, el código está diseñado para ayudar a interpretar conceptos de ER como generalización y especialización, mostrando visualmente la interacción entre los diferentes elementos del modelo.
+Además, se utilizan líneas de flecha (clase "arrow") para representar conexiones entre los diferentes componentes del diagrama. En este caso, las líneas conectan "Entidades" con tanto "Python" como "SQL", y hay una línea doble que conecta "Python" con "SQL". Estas líneas ayudan a visualizar relaciones y dependencias en el modelo de datos.
+
+Este tipo de representación es útil para estudiantes ya que proporciona una vista simplificada del modelo ER, permitiendo entender la estructura básica de cómo las entidades pueden relacionarse entre sí utilizando herramientas visuales como diagramas.
+
+`005-Esquema para el futuro.html`
 
 ```html
 <!DOCTYPE html>
@@ -10271,12 +12014,17 @@ body {
 ```
 
 ### Esquema para el futuro
+<small>Creado: 2025-11-28 14:10</small>
 
 #### Explicación
 
-Este código JSON describe una representación gráfica de un modelo de entidad-relación (ER) básico, donde las entidades y sus relaciones se muestran mediante rectángulos y flechas. El fragmento incluye dos elementos principales: formas y flechas. Las "formas" son rectángulos que contienen etiquetas como "Entidades", "Python", y "SQL". Estos rectángulos representan diferentes entidades o conceptos en un diagrama de modelo ER. Cada forma tiene atributos específicos, como posición (left y top) y texto interno.
+Este archivo JSON describe la disposición y las relaciones entre diferentes elementos en una representación visual, probablemente un diagrama de entidades-relaciones. En lugar del código HTML que especificaba los estilos para formas geométricas y flechas, este nuevo formato utiliza objetos JSON para definir la posición, el tamaño y el contenido textual de varias formas rectangulares ("rectangle"). Cada forma tiene un ID único, coordenadas (left y top) para posicionarla en una página o canvas, y texto que representa su contenido. Además, define las conexiones entre estas formas mediante flechas simples y dobles.
 
-Las "flechas" describen las relaciones entre estas formas. Hay dos tipos de flechas: una simple que conecta "Entidades" con "Python" y otra que conecta "Entidades" con "SQL". Además, hay una flecha doble que va desde "Python" hasta "SQL", lo cual podría indicar una relación más específica o fuerte entre estos dos conceptos. Este código es importante porque proporciona un formato estructurado para representar visualmente la arquitectura de datos y las relaciones en sistemas basados en bases de datos, facilitando su comprensión y diseño.
+Las flechas son especificadas por pares de elementos (delineados por "shapeId" y opcionalmente un identificador de propiedad), indicando desde dónde hasta adónde se dibuja la línea, el tipo de flecha que es (simple o doble) y si la línea es recta ("straight") o puede ser ortogonal. Esta estructura simplifica la representación visual permitiendo una mayor flexibilidad en cómo los datos pueden ser renderizados por un sistema de visualización.
+
+En comparación con la versión anterior, el código JSON actual elimina completamente el uso de HTML y CSS para definir las formas y relaciones del diagrama, reemplazándolo con datos estructurados que describen estas mismas características. Esto permite una mayor facilidad en manipular y renderizar el contenido utilizando lógica programática en lugar de estar ligado a especificaciones estilísticas de HTML/CSS.
+
+`005-Esquema para el futuro.json`
 
 ```json
 {
@@ -10357,16 +12105,19 @@ Las "flechas" describen las relaciones entre estas formas. Hay dos tipos de flec
 ```
 
 ### Esquema para el futuro
+<small>Creado: 2025-11-28 14:10</small>
 
 #### Explicación
 
-Este código SVG (Scalable Vector Graphics) es una representación gráfica simplificada que muestra la relación entre diferentes elementos en un modelo de base de datos. El objetivo principal del código es dibujar un diagrama con tres rectángulos y tres líneas conectando esos rectángulos, simbolizando conexiones o relaciones.
+Este archivo SVG (Scalable Vector Graphics) es una representación visual de un diagrama en el que se muestran tres entidades: "Entidades", "Python", y "SQL". Cada entidad está dibujada como un rectángulo con bordes redondeados, y cada uno lleva escrito su nombre dentro del rectángulo. Las conexiones entre las entidades están representadas por líneas que incluyen flechas para indicar relaciones específicas.
 
-Cada rectángulo representa una entidad o concepto importante: "Entidades", "Python" y "SQL". Estos rectángulos están estilizados con colores de fondo blanco y contornos que varían para destacar la naturaleza de cada ente. Las etiquetas dentro de estos rectángulos proporcionan información sobre su contenido o propósito.
+El SVG utiliza estilos CSS integrados en la definición de marcadores personalizados para las puntas de las líneas (flechas), lo que permite una apariencia más detallada y visualmente distintiva. Además, cada rectángulo tiene un estilo específico aplicado para diferenciar entre diferentes tipos de entidades o elementos del diagrama.
 
-Las líneas curvas, denominadas `path` en SVG y etiquetadas como `.conn`, representan las conexiones entre estas entidades. Estas líneas tienen flechas en sus extremos para indicar la dirección o naturaleza de la relación entre los elementos conectados (por ejemplo, de "Entidades" a "Python", de "Entidades" a "SQL", y directamente entre "Python" y "SQL").
+En comparación con el archivo anterior en formato JSON, este SVG proporciona una representación gráfica directamente renderizable en cualquier navegador web sin necesidad de interpretar datos estructurados. El cambio a SVG permite mayor flexibilidad visual y la posibilidad de interactuar directamente con el elemento HTML generado por este código.
 
-Este tipo de representación es útil en el contexto de diagramas ER (Diagrama Entidad Relación) para visualizar cómo diferentes componentes se relacionan y interactúan en un sistema basado en bases de datos.
+En resumen, mientras que el archivo anterior describía las entidades y sus relaciones mediante un formato JSON abstracto, este archivo SVG proporciona una representación gráfica completa del mismo diagrama, permitiendo a los estudiantes visualizar directamente la estructura de forma interactiva en un navegador web.
+
+`005-Esquema para el futuro.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="387.3375122070311" height="201.9374938964843" viewBox="0 0 387.3375122070311 201.9374938964843">
@@ -10403,33 +12154,22 @@ Este tipo de representación es útil en el contexto de diagramas ER (Diagrama E
 </svg>
 ```
 
-### Propuesta de ejercicios
-
-#### Explicación
-
-Este fragmento de código en formato Markdown contiene simplemente subtítulos que describen diferentes esquemas o diagramas ER (Entidad-Relación). Cada uno de estos títulos representa un escenario distinto donde se aplicaría la teoría del modelo ER ampliado, incluyendo conceptos como generalización, especialización y agregación. Estos esquemas pueden ser utilizados para ejercicios prácticos que ayudan a entender cómo diseñar bases de datos complejas en contextos específicos como una tienda online, un centro de formación, un concesionario de coches o incluso un sistema de administración de un videojuego. Es importante porque permite a los estudiantes aplicar conceptos teóricos a problemas del mundo real, mejorando así su comprensión y habilidades en el diseño de bases de datos.
-
-```markdown
-Esquema de una tienda online
-
-Esquema de un centro de formación
-
-Esquema de un concesionario de coches
-
-Esquema de un videojuego
-```
-
 ### Ejemplo videojuego
+<small>Creado: 2025-11-28 14:14</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una representación visual sencilla del modelo entidad-relación (ER) para un videojuego, mostrando diferentes entidades y las relaciones entre ellas. El documento está estructurado con una serie de estilos CSS que definen cómo se deben dibujar los elementos en la página, como rectángulos, círculos y flechas.
+Este fragmento de código HTML crea una página web que visualiza un diagrama entidad-relación (ER) para un videojuego, representando diferentes entidades y sus relaciones. La estructura del documento incluye estilos CSS específicos para dar forma a los elementos del diagrama.
 
-En el código HTML, hay varias "div" con la clase "shape entity", cada uno representando diferentes entidades del modelo ER. Estas entidades incluyen a un NPC (Non-Player Character), un soldado, un francotirador e ingeniero. Cada entidad tiene propiedades que se muestran en el contenido de las divs anidadas con la clase "entity-property". Por ejemplo, el NPC tiene propiedades como id, posx, posy y posz.
+1. **Estructura general**: El código comienza con la definición básica de una página HTML, estableciendo el idioma como español e incluyendo metadatos que especifican la codificación UTF-8 y un título descriptivo "Diagrama exportado".
 
-Además, hay varias flechas dibujadas mediante elementos "div" con la clase "arrow", que representan relaciones entre las entidades. Estas flechas tienen transformaciones CSS para inclinarse en distintos ángulos, lo cual permite simular conexiones más naturales entre los diferentes elementos del modelo ER.
+2. **Estilos CSS personalizados**: En la sección `<style>`, hay una serie de reglas CSS que definen cómo deben verse los diferentes elementos del diagrama, como entidades (objetos en el juego), relaciones entre ellos y atributos de cada entidad. Estos estilos incluyen configuraciones para formas geométricas básicas (rectángulos, círculos, etc.), entidades específicas del ER (como "Soldado", "Francotirador"), bases de datos, y líneas que representan las relaciones entre elementos.
 
-Este tipo de representación es útil para visualizar cómo se relacionan diferentes componentes en un sistema de bases de datos o en este caso, el diseño conceptual de personajes y sus propiedades en un videojuego.
+3. **Representación gráfica**: En la sección `<body>`, el contenido principal es un contenedor `div` con la clase `.page`. Dentro de este, hay varios `divs` que representan diferentes entidades del juego (como "Npc", "Soldado", "Francotirador", etc.), cada uno con sus propios atributos y estilos definidos en CSS. Además, hay líneas (`divs` con clase `.arrow`) que conectan estas entidades entre sí, simbolizando las relaciones existentes en el diagrama ER.
+
+Este código es importante porque proporciona una representación visual clara de cómo se organiza la información en un sistema basado en entidades y sus relaciones. Es particularmente útil para estudiantes de Formación Profesional que están aprendiendo a interpretar y crear diagramas entidad-relación, ya que les permite visualizar fácilmente cómo diferentes elementos del juego (o cualquier otro sistema) interconectan entre sí.
+
+`007-Ejemplo videojuego.html`
 
 ```html
 <!DOCTYPE html>
@@ -10703,16 +12443,21 @@ body {
 ```
 
 ### Ejemplo videojuego
+<small>Creado: 2025-11-28 14:14</small>
 
 #### Explicación
 
-Este fragmento de código JSON describe una representación gráfica de un modelo ER (Entidad Relación) en el contexto de la creación de videojuegos. El archivo contiene información sobre diferentes entidades y sus relaciones entre sí, específicamente para definir cómo se estructuran los personajes no jugadores (NPCs) del juego.
+Este código JSON representa una representación estructurada de un diagrama entidad-relación (ER) que muestra la relación entre diferentes entidades en un sistema, específicamente para un ejemplo relacionado con personajes de un videojuego. En este caso, las entidades son "Npc", "Soldado", "Francotirador" y "Ingeniero". Cada entidad tiene sus propias características o atributos que se especifican dentro del JSON.
 
-Las entidades aquí son 'Npc', 'Soldado', 'Francotirador' e 'Ingeniero'. Cada entidad tiene un identificador único y posiciones en el espacio 3D, como coordenadas X, Y y Z para algunos NPCs. Las propiedades de cada entidad indican qué datos se necesitan almacenar para cada uno.
+La estructura del código incluye una lista de objetos llamados "formas" donde cada objeto describe la posición, el nombre de la entidad y los atributos asociados a ella. También hay una lista de flechas que conectan estas entidades, indicando relaciones entre ellas. En este ejemplo, las flechas simples conectan la entidad principal "Npc" con otras tres subentidades: "Soldado", "Francotirador" e "Ingeniero". Estas conexiones sugieren una relación de generalización o herencia en la que los Soldados, Francotiradores e Ingenieros son tipos específicos de Npcs.
 
-Las flechas en la lista "flechas" representan relaciones simples entre las entidades 'Npc' y sus especializaciones ('Soldado', 'Francotirador' e 'Ingeniero'). Esto sugiere una relación de generalización, donde 'Npc' es la entidad más general que se divide en subclases o tipos específicos de NPCs como soldados, francotiradores e ingenieros.
+En comparación con el código HTML anterior, este JSON ofrece una representación más abstracta y fácilmente manipulable del mismo diagrama. Mientras que el archivo HTML describe visualmente cómo se colocan las entidades en un espacio bidimensional y cómo están conectadas por líneas, el archivo JSON proporciona los datos detrás de esta representación gráfica.
 
-Esta representación ayuda a los desarrolladores a visualizar y comprender mejor cómo están estructuradas las entidades del juego y sus relaciones. Es importante para diseñar una base de datos coherente que respalde la lógica del juego y permita un manejo eficiente de los personajes no jugadores durante el desarrollo y mantenimiento del videojuego.
+La principal diferencia entre los dos archivos es que el código actualizado en formato JSON no contiene detalles sobre estilos específicos como colores o tamaños, lo cual se puede inferir desde la estructura y la posición de las entidades. Además, proporciona una forma más sencilla de manipular los datos del diagrama ER sin tener que modificar directamente el HTML.
+
+En resumen, este JSON es útil para automatizar la generación o modificación de diagramas entidad-relación en aplicaciones gráficas, al permitir una fácil manipulación de datos estructurados.
+
+`007-Ejemplo videojuego.json`
 
 ```json
 {
@@ -10838,10 +12583,18 @@ Esta representación ayuda a los desarrolladores a visualizar y comprender mejor
 ```
 
 ### Ejemplo videojuego
+<small>Creado: 2025-11-28 14:14</small>
 
 #### Explicación
 
-Este código SVG (Scalable Vector Graphics) representa un diagrama visual que incluye entidades y relaciones para un modelo de datos, probablemente relacionado con un videojuego. En el centro del diagrama se encuentra una entidad llamada "Npc" que es un tipo de objeto no jugador en juegos, seguida de tres subentidades: "Soldado", "Francotirador" y "Ingeniero". Cada una de estas entidades tiene atributos como "id", lo cual indica la identificación única del personaje. Las líneas con flechas conectan la entidad principal "Npc" a las tres subentidades, representando relaciones jerárquicas o herencia (generalización y especialización). Esto sugiere que tanto los soldados como los francotiradores e ingenieros son tipos específicos de Npcs. Este tipo de diagrama es útil para entender la estructura lógica de datos en un sistema complejo, permitiendo visualizar cómo diferentes partes se relacionan entre sí y ayudando a diseñar bases de datos más eficientes y bien organizadas.
+Este fragmento de código es un archivo SVG (Scalable Vector Graphics) que representa gráficamente las entidades y sus relaciones en el modelo ER del videojuego previo. El archivo contiene varias formas rectangulares que representan entidades, como "Npc", "Soldado", "Francotirador" y "Ingeniero". Cada entidad tiene un nombre central y atributos asociados (por ejemplo, "id", "posx", etc.), mostrados en texto alineado verticalmente dentro del rectángulo. Además, hay líneas con flechas que representan las relaciones entre estas entidades; por ejemplo, la línea conecta la entidad "Npc" con cada una de las tres otras entidades (Soldado, Francotirador e Ingeniero), sugiriendo que un Npc puede ser cualquier tipo de personaje específico.
+
+En comparación con el archivo anterior en formato JSON, este archivo SVG proporciona una representación visual más detallada y directa del modelo ER. Mientras que el archivo JSON describe las entidades y relaciones mediante estructuras de datos, el SVG ofrece un dibujo gráfico preciso donde cada entidad y relación se muestra claramente. Esto es especialmente útil para estudiantes ya que facilita la comprensión visual de cómo las diferentes partes del sistema interactúan entre sí.
+
+ÚLTIMO PÁRRAFO:
+Este archivo SVG representa gráficamente el modelo ER, incluyendo entidades como "Npc", "Soldado", "Francotirador" e "Ingeniero", y sus relaciones, proporcionando una visión más clara y directa en comparación con la descripción estructurada del JSON anterior. La versión SVG mejora la comprensibilidad al presentar un diseño visual que permite ver de inmediato cómo las entidades están relacionadas entre sí.
+
+`007-Ejemplo videojuego.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="774.3874931335446" height="352.38752365112293" viewBox="0 0 774.3874931335446 352.38752365112293">
@@ -10891,6 +12644,65 @@ Este código SVG (Scalable Vector Graphics) representa un diagrama visual que in
 </svg>
 ```
 
+### Actividades propuestas
+
+Para convertir el archivo SVG en un archivo HTML con gráficos vectoriales, podemos usar la etiqueta `<object>` o `<iframe>` para incrustar el SVG dentro del HTML. Aquí tienes cómo hacerlo:
+
+### Usando la etiqueta `<object>`
+
+El archivo `007-Ejemplo videojuego.html` quedaría así:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Videojuego</title>
+</head>
+<body style="background-color: #f5f6f7; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <object data="007-Ejemplo videojuego.svg" type="image/svg+xml" width="800" height="400"></object>
+</body>
+</html>
+```
+
+### Usando la etiqueta `<iframe>`
+
+Alternativamente, puedes usar la etiqueta `<iframe>` para incrustar el SVG:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Videojuego</title>
+</head>
+<body style="background-color: #f5f6f7; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <iframe src="007-Ejemplo videojuego.svg" width="800" height="400"></iframe>
+</body>
+</html>
+```
+
+### Explicación:
+
+- **Meta etiqueta `charset`**: Define el conjunto de caracteres UTF-8 para asegurar que todos los caracteres sean correctamente renderizados.
+  
+- **Título del documento (`<title>`)**: Muestra un título en la pestaña del navegador.
+
+- **Estilo CSS básico**:
+  - Fondo y configuración de caja flexible (`flexbox`).
+  - Centra el contenido SVG horizontalmente y verticalmente dentro de la ventana.
+  
+- **Etiqueta `<object>` o `<iframe>`**: 
+  - `data`: Ruta al archivo SVG.
+  - `type`: Tipo MIME para indicar que es un documento SVG.
+  - `width` y `height`: Tamaño del contenedor.
+
+### Ejecución:
+Guarda estos archivos en tu sistema de archivos local y abre el HTML con un navegador web. Asegúrate de tener ambos archivos (`007-Ejemplo videojuego.html` y `007-Ejemplo videojuego.svg`) en la misma carpeta para que se puedan acceder correctamente.
+
+### Nota:
+Si deseas estilos adicionales o interactividad, puedes agregar más CSS y JavaScript según sea necesario.
+
 
 <a id="paso-del-diagrama-er-al-modelo-relacional"></a>
 ## Paso del diagrama ER al modelo relacional
@@ -10934,16 +12746,21 @@ En base a los archivos proporcionados, se presentan dos diagramas de entidad-rel
 Estos archivos representan una base sólida para entender y comunicar un modelo ER básico. Se pueden expandir o ajustar según las necesidades específicas del proyecto.
 
 ### entidad sencilla
+<small>Creado: 2025-12-01 10:29</small>
 
 #### Explicación
 
-Este código HTML crea una página simple que representa visualmente la entidad "Cliente" de un diagrama ER (Entidad Relación) utilizando CSS para darle estilos. La página tiene como objetivo mostrar de manera gráfica cómo se ve una tabla en un modelo relacional, con sus atributos y posibles relaciones.
+Este fragmento de código HTML es una representación visual de un diagrama de entidad-relación (ER) simplificado, específicamente para la entidad "Cliente". El archivo HTML crea una página web que muestra gráficamente los detalles de la tabla "Cliente" en un modelo relacional.
 
-El código comienza definiendo el tipo de documento HTML y establece algunas características básicas para la visualización del contenido, como la codificación UTF-8 y el idioma español. Luego, dentro de la etiqueta `<style>`, se proporcionan reglas CSS que definen cómo deben verse los diferentes elementos en la página, incluyendo estilos específicos para formas rectangulares, circulares y otras representaciones gráficas.
+El documento comienza estableciendo las propiedades básicas del cuerpo y define varias clases CSS para diferentes elementos del diagrama. Por ejemplo, se definen estilos específicos para entidades (shape.entity), bases de datos (shape.db) y líneas rectas o ortogonales que pueden representar relaciones entre entidades.
 
-En la parte central del código, vemos una estructura HTML que representa visualmente una entidad llamada "Cliente". Esta entidad contiene cinco atributos: id, nombre, apellidos, email y dirección. Cada atributo está rodeado por pequeñas formas redondas (puertos) en ambos lados, lo cual simboliza que estos atributos podrían estar conectados a otras entidades mediante relaciones.
+En el cuerpo del documento, hay una div con la clase "page" que representa el lienzo donde se dibuja el diagrama. Dentro de esta div, existe otra div con la clase "shape entity", que representa visualmente a la entidad "Cliente". Esta entidad tiene un encabezado (entity-header) que dice simplemente "Cliente".
 
-Este tipo de representación es útil para estudiantes de formación profesional porque ayuda a visualizar cómo se traducen los conceptos abstractos del diagrama ER al modelo relacional de una base de datos.
+Bajo este encabezado, hay varias propiedades de la entidad representadas por divs con la clase "entity-property". Cada propiedad tiene un nombre y dos divs vacíos en cada extremo para simular los puertos o conectores que se usarían si hubiera relaciones entre esta entidad y otras.
+
+Este código es útil porque proporciona una visión gráfica de cómo puede ser representada la tabla "Cliente" y sus atributos (id, nombre, apellidos, email, dirección) en un diagrama ER. Esto ayuda a los estudiantes a entender mejor el concepto de entidad y atributo en bases de datos relacionales antes de pasar al modelo relacional más formal.
+
+`001-entidad sencilla.html`
 
 ```html
 <!DOCTYPE html>
@@ -11189,14 +13006,17 @@ body {
 ```
 
 ### entidad sencilla
+<small>Creado: 2025-12-01 10:29</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo JSON que describe una entidad simple en el contexto de un diagrama de Entidad Relación (ER) utilizado para la modelización de bases de datos. En particular, se representa una única entidad llamada "Cliente", que incluye propiedades como identificador (`id`), nombre, apellidos, email y dirección. Cada propiedad tiene un identificador único que permite distinguirla del resto.
+El archivo actual es una representación en formato JSON de un diagrama de entidad, específicamente para la entidad "Cliente". En este formato, cada entidad y sus propiedades se describen mediante objetos anidados. La estructura JSON contiene un array llamado `"formas"` que incluye detalles sobre la entidad "Cliente", como su posición (`"left"` e `"top"`), nombre (`"entityName"`), y una lista de propiedades (`"properties"`). Cada propiedad tiene un identificador único (`"id"`) y su nombre (`"name"`).
 
-El archivo JSON es importante porque actúa como un modelo digital de la estructura conceptual de los datos, antes de implementarlos en una base de datos real. Esto ayuda a visualizar y organizar claramente qué tipo de información se manejará en cada entidad. La ausencia de flechas indica que no hay relaciones explícitas definidas entre entidades en este ejemplo.
+Este enfoque JSON es más estructurado y fácilmente procesable por programas, lo que permite manipular y visualizar los datos del diagrama de entidad de manera más flexible. En lugar de tener códigos HTML y CSS para representar gráficamente la entidad, el JSON contiene solo información descriptiva, haciendo que sea más sencillo integrarlo con otros sistemas o herramientas de desarrollo.
 
-Este tipo de archivo es fundamental para diseñadores de bases de datos y desarrolladores, ya que les permite planificar cuidadosamente la estructura antes de empezar a codificar las tablas en SQL o cualquier otro lenguaje de consulta de base de datos.
+**ÚLTIMO PÁRRAFO:** Este archivo JSON es una versión simplificada y estructurada del código anterior en HTML, eliminando toda la representación visual directa para concentrarse únicamente en los datos esenciales de la entidad "Cliente" y sus propiedades. Esto permite un manejo más fácil de los datos y su integración con otros sistemas o herramientas de desarrollo.
+
+`001-entidad sencilla.json`
 
 ```json
 {
@@ -11238,14 +13058,18 @@ Este tipo de archivo es fundamental para diseñadores de bases de datos y desarr
 ```
 
 ### entidad sencilla
+<small>Creado: 2025-12-01 10:29</small>
 
 #### Explicación
 
-Este código SVG (Scalable Vector Graphics) representa una entidad sencilla del modelo ER (Entidad Relación), en este caso, la entidad "Cliente". La gráfica se compone principalmente de un rectángulo que actúa como el contenedor para los atributos de la entidad y texto dentro del rectángulo que detalla estos atributos. El rectángulo es definido con ciertos estilos específicos, como color de relleno blanco (#ffffff) y borde negro (#111827), lo cual ayuda a identificar fácilmente la entidad "Cliente" en el diagrama.
+Este archivo SVG representa visualmente una entidad simple en un diagrama de entidades-relaciones (ER) para una base de datos, específicamente la entidad "Cliente". En este caso, el código crea una representación gráfica de la entidad "Cliente" con atributos como id, nombre, apellidos, email y dirección. El rectángulo grande dentro del SVG representa la entidad en sí, mientras que las líneas horizontales cortas e interrumpidas y los textos pequeños dentro del rectángulo representan cada uno de los atributos asociados a esta entidad.
 
-El SVG también incluye texto que describe los atributos del cliente, tales como 'id', 'nombre', 'apellidos', 'email' y 'dirección'. Cada uno de estos atributos está alineado verticalmente dentro del rectángulo para mostrar claramente la estructura de datos asociada con cada entidad.
+El archivo SVG proporciona una vista visual clara de cómo se estructuran las entidades y sus atributos en un diagrama ER, facilitando la comprensión y el diseño de esquemas de base de datos. A diferencia del archivo anterior que era un JSON descriptivo, este archivo SVG ofrece una representación gráfica directa.
 
-Este tipo de representación es crucial en el campo de las bases de datos, ya que ayuda a los estudiantes y profesionales a visualizar y entender cómo se relacionan diferentes entidades y atributos en un sistema de gestión de base de datos. Permite una comprensión rápida y clara del diseño de la base de datos antes de implementarla con código SQL o similar.
+**ÚLTIMO PÁRRAFO:**
+Este nuevo archivo utiliza etiquetas SVG para dibujar visualmente la entidad "Cliente", mostrando cada atributo en su lugar dentro de un rectángulo. En contraste con el JSON anterior, que listaba los detalles textualmente, este SVG proporciona una representación gráfica más intuitiva del diagrama ER, permitiendo a los estudiantes ver directamente cómo se visualizarían las entidades y sus atributos en la base de datos.
+
+`001-entidad sencilla.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="299.9999847412109" height="254.40000915527338" viewBox="0 0 299.9999847412109 254.40000915527338">
@@ -11282,16 +13106,19 @@ Este tipo de representación es crucial en el campo de las bases de datos, ya qu
 ```
 
 ### solucion
+<small>Creado: 2025-12-01 10:30</small>
 
 #### Explicación
 
-Este código SQL crea una tabla llamada "Clientes" en una base de datos. La tabla almacena información básica sobre los clientes, como su nombre y dirección. Cada cliente tiene un identificador único generado automáticamente (columna `id`), lo que asegura que no haya duplicados y facilita la búsqueda rápida de registros específicos.
+Este fragmento de código SQL crea una tabla llamada `Clientes` en una base de datos. La tabla almacena información básica sobre los clientes, como su nombre, apellidos, dirección de correo electrónico y dirección residencial.
 
-La columna `id` es de tipo INT y se configura como clave primaria (`PRIMARY KEY`), garantizando así que cada registro tenga un valor exclusivo. Además, la opción `AUTO_INCREMENTAL` (que debería ser correctamente escrita como `AUTO_INCREMENT`) asegura que el sistema administrará automáticamente el incremento del identificador único para cada nuevo cliente añadido.
+La columna `id`, que es del tipo `INT` (número entero), se utiliza para identificar únicamente a cada cliente dentro de la tabla. Específicamente, `id` está configurado como clave primaria (`PRIMARY KEY`), lo que significa que debe ser única y no puede contener valores nulos. Además, el atributo `AUTO_INCREMENTAL` indica que cada vez que se inserta un nuevo registro en esta tabla, el valor de `id` se incrementará automáticamente.
 
-Las demás columnas (`nombre`, `apellidos`, `email` y `direccion`) son de tipo VARCHAR, lo que significa que pueden contener texto de longitud variable. Estos campos permiten almacenar la información personal de los clientes de manera estructurada y ordenada.
+Las otras columnas (`nombre`, `apellidos`, `email` y `direccion`) son del tipo `VARCHAR(255)`, lo que significa que pueden almacenar texto variable hasta un máximo de 255 caracteres. Este tamaño es adecuado para nombres, apellidos, direcciones de correo electrónico y direcciones residenciales.
 
-Este enfoque es importante porque proporciona una base sólida para gestionar datos de clientes de forma eficiente y segura, asegurando integridad y facilidad de acceso a la información.
+Crear esta tabla es fundamental para organizar la información sobre los clientes en una estructura coherente y accesible para consultas futuras, lo que facilita el manejo y análisis de datos en un sistema.
+
+`002-solucion.sql`
 
 ```sql
 CREATE TABLE Clientes(
@@ -11304,18 +13131,17 @@ CREATE TABLE Clientes(
 ```
 
 ### relacion de 1 a 1
+<small>Creado: 2025-12-01 10:33</small>
 
 #### Explicación
 
-Este fragmento de código HTML crea una página web que visualiza un diagrama basado en el modelo entidad-relación (ER) utilizado en la gestión de bases de datos. El objetivo principal es representar dos entidades: "Cliente" y "DNINIE", así como la relación entre ellas.
+Este fragmento de código HTML representa una visualización gráfica simple de dos entidades y su relación en un diagrama ER (Entidad Relación). El archivo muestra dos entidades: "Cliente" y "DNINIE". Cada entidad es representada por un cuadro con propiedades específicas. Por ejemplo, la entidad "Cliente" incluye atributos como "id", "nombre", "apellidos", "email" y "direccion".
 
-En la parte superior del archivo, se definen estilos CSS que determinan cómo se ven las diferentes partes del diagrama. Por ejemplo, el estilo `.shape.entity` define cómo debe ser dibujada una entidad (con bordes, sombreado y texto). Las entidades tienen un encabezado que muestra su nombre ("Cliente" y "DNINIE") y propiedades internas que representan las columnas o campos de la base de datos.
+Además, hay una flecha que conecta visualmente estas dos entidades, sugiriendo una relación entre ellas. Esta representación es útil para estudiantes de formación profesional ya que permite entender la estructura básica de las bases de datos y cómo se relacionan diferentes tipos de información. En este caso, la flecha podría indicar una relación 1 a 1 entre "Cliente" y "DNINIE", sugiriendo que cada cliente tiene un único identificador DNINIE asociado.
 
-El fragmento incluye dos divs con la clase `shape entity`, cada uno representando una entidad diferente. Por ejemplo, la entidad "Cliente" tiene un encabezado que dice "Cliente" y contiene propiedades como "id", "nombre", "apellidos", etc., que son similares a las columnas en una tabla de base de datos.
+El código utiliza CSS para definir estilos específicos para estas entidades y las líneas de conexión (flechas), asegurando que la visualización sea clara y atractiva. Estos estilos incluyen propiedades básicas como el tamaño, el color y las formas geométricas que definen cada elemento del diagrama.
 
-Además, hay una flecha (`<div class="arrow">`) que representa la relación entre las dos entidades. En este caso, la flecha conecta visualmente a la entidad "Cliente" con "DNINIE", indicando que existe una conexión o relación entre estas dos tablas en el modelo de base de datos.
-
-Este tipo de representación es importante porque ayuda a los desarrolladores y diseñadores de bases de datos a visualizar claramente cómo están relacionados diferentes componentes del sistema, lo cual facilita la creación de esquemas de bases de datos precisos y eficientes.
+`003-relacion de 1 a 1.html`
 
 ```html
 <!DOCTYPE html>
@@ -11582,14 +13408,15 @@ body {
 ```
 
 ### relacion de 1 a 1
+<small>Creado: 2025-12-01 10:32</small>
 
 #### Explicación
 
-Este código JSON representa la estructura de un diagrama de entidades y relación (ER) en formato digital. En él, se describen dos entidades principales: "Cliente" y "DNINIE". La entidad "Cliente" tiene propiedades como ID, nombre, apellidos, email y dirección, que son datos asociados a cada cliente individual.
+Este archivo JSON describe una representación simplificada de dos entidades en un modelo relacional, especificando sus propiedades y la relación entre ellas. En concreto, contiene dos entidades: "Cliente" y "DNINIE", cada una con sus respectivos atributos. La entidad "Cliente" tiene cinco propiedades (id, nombre, apellidos, email, dirección), mientras que "DNINIE" posee tres (id, id_cliente y DNINIE). Además, se establece una relación simple entre estas entidades, indicando que la propiedad "id" de la entidad "Cliente" está relacionada con la propiedad "id_cliente" en la entidad "DNINIE". Esta representación es más abstracta y menos visual que el código HTML anterior, ya que no incluye estilo ni posicionamiento detallado.
 
-La segunda entidad es "DNINIE", la cual contiene un identificador único (id), el id del cliente al que pertenece este dato (id_cliente) y finalmente, el DNI o NIE del cliente. La relación entre estas dos entidades se establece mediante una flecha que conecta el ID de la entidad "Cliente" con el campo "id_cliente" en "DNINIE", indicando que cada cliente puede tener asociado un único documento identificativo (DNI/NIE). Esta relación es 1 a 1, ya que implica que un cliente tiene exactamente una entrada en "DNINIE" y viceversa.
+El principal cambio respecto al archivo anterior radica en la forma de describir las entidades y sus relaciones. En lugar de un HTML que muestra una interfaz gráfica con estilos específicos para cada elemento, este JSON utiliza una estructura simplificada para representar los mismos datos. Esto facilita el manejo y la manipulación programática del diagrama ER, eliminando la necesidad de CSS y permitiendo una mayor flexibilidad en términos de presentación visual.
 
-Esta representación es crucial para entender cómo se estructuran las bases de datos relacionales basadas en diagramas ER, permitiendo a los desarrolladores crear modelos de datos precisos y eficientes.
+`003-relacion de 1 a 1.json`
 
 ```json
 {
@@ -11669,14 +13496,18 @@ Esta representación es crucial para entender cómo se estructuran las bases de 
 ```
 
 ### relacion de 1 a 1
+<small>Creado: 2025-12-01 10:33</small>
 
 #### Explicación
 
-Este fragmento de código SVG representa un diagrama de entidad-relación simplificado, que es una representación gráfica de cómo se organizan los datos en una base de datos. En este caso, el diagrama muestra dos entidades: "Cliente" y "DNINIE". La entidad "Cliente" incluye atributos como 'id', 'nombre', 'apellidos', 'email' y 'dirección'. Por otro lado, la entidad "DNINIE" tiene sus propios atributos, incluyendo 'id', 'id_cliente' (que parece ser una clave foránea que se relaciona con el 'id' de la entidad 'Cliente') y 'DNINIE'.
+El archivo actual es un archivo SVG que representa gráficamente una relación de tipo uno a uno en una base de datos, especificamente entre las entidades "Cliente" y "DNINIE". En este diagrama, cada entidad está dibujada como un rectángulo con los atributos correspondientes dentro. La entidad "Cliente" contiene cinco atributos: id, nombre, apellidos, email y dirección. Por otro lado, la entidad "DNINIE" tiene tres atributos: id, id_cliente (que se relaciona con el atributo 'id' de la entidad Cliente) y DNINIE.
 
-La línea entre las dos entidades está decorada con una flecha en su extremo, indicando una relación 1 a 1 entre ellas. Esto significa que cada registro en "Cliente" puede estar vinculado a un único registro en "DNINIE", y viceversa, reflejando la dependencia bidireccional de las dos entidades.
+Las líneas y flechas en este diagrama SVG indican las relaciones entre estos atributos y entidades. En particular, hay una línea que conecta la entidad "Cliente" con la entidad "DNINIE", representando la relación uno a uno basada en el atributo 'id_cliente' de la entidad "DNINIE". Esta flecha sugiere que cada registro en la entidad DNINIE está vinculado directamente a un único registro en la entidad Cliente, reflejando una relación de tipo 1:1.
 
-Este tipo de diagramas son esenciales para entender cómo se estructuran los datos en una base de datos y para diseñar modelos de bases de datos relacionales. Ayudan a visualizar las relaciones entre diferentes tablas o entidades, lo que facilita la creación de consultas SQL efectivas y la comprensión del flujo de datos dentro del sistema.
+ÚLTIMO PÁRRAFO:
+Este archivo SVG proporciona una representación visual gráfica detallada del diagrama ER, incluyendo el estilo y ubicación exacta de cada elemento. En contraste con el JSON anterior que describía la estructura lógica sin detalles visuales, este archivo ofrece un despliegue físico con elementos como rectángulos para las entidades, texto para los atributos y líneas flechadas para indicar relaciones, permitiendo una mejor comprensión visual de cómo están organizados estos datos.
+
+`003-relacion de 1 a 1.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="581.9124908447263" height="254.40000915527332" viewBox="0 0 581.9124908447263 254.40000915527332">
@@ -11720,12 +13551,13 @@ Este tipo de diagramas son esenciales para entender cómo se estructuran los dat
 ```
 
 ### solucion 1 a 1
+<small>Creado: 2025-12-01 10:34</small>
 
 #### Explicación
 
-Este fragmento de código SQL está creando una tabla llamada `Clientes` en una base de datos. La tabla tiene varias columnas que almacenan información sobre los clientes, como su nombre, apellidos, dirección y email. Es importante destacar que cada cliente tendrá un identificador único generado automáticamente por la base de datos gracias a la columna `id`, que es del tipo `INT` (número entero) y se configura con la propiedad `AUTO_INCREMENTAL`. Esto garantiza que cada vez que se añade un nuevo cliente, se genera automáticamente un número de identificación único. Además, la columna `id` está marcada como clave primaria (`PRIMARY KEY`), lo que significa que no puede haber dos clientes con el mismo ID y también ayuda a mejorar la velocidad en las consultas a la base de datos.
+Este fragmento de código SQL está creando una tabla llamada `Clientes` en una base de datos. La tabla contiene información básica sobre los clientes, como su nombre, apellidos, correo electrónico y dirección. Cada cliente se identifica de forma única mediante un campo `id`, que es un número entero generado automáticamente por el sistema cada vez que se agrega un nuevo cliente (esto se logra con la opción `AUTO_INCREMENTAL`). Además, hay un campo `DNINIE` que almacena el número de identificación del cliente, ya sea su DNI en España o otro tipo similar de identificación. Esta tabla ayuda a organizar y gestionar los datos de los clientes de manera eficiente dentro de una base de datos relacional.
 
-Es relevante notar que hay una columna llamada `DNINIE`, probablemente para almacenar el número de identificación único del cliente, ya sea un DNI (Documento Nacional de Identidad) si es español o NIE (Número de Identidad de Extranjero) para extranjeros residentes en España. Esto puede ser útil para garantizar la unicidad y autenticidad de los datos personales de cada cliente en el sistema.
+`004-solucion 1 a 1.sql`
 
 ```sql
 -- la solución recomendada es unir tablas
@@ -11740,16 +13572,23 @@ CREATE TABLE Clientes(
 ```
 
 ### diagrama 1 a n
+<small>Creado: 2025-12-01 10:37</small>
 
 #### Explicación
 
-Este código HTML crea una página visual que representa un diagrama de entidades y relación (ER) en formato web. La estructura principal del documento está formada por elementos div, los cuales contienen diferentes clases para definir las formas y estilos necesarios.
+Este fragmento de código HTML representa una visualización gráfica de un diagrama entidades-relaciones (ER) básico que incluye dos entidades y su relación. El archivo muestra dos entidades: "Cliente" y "Teléfono", con la entidad "Teléfono" relacionada a través del atributo "id_cliente" con la entidad "Cliente".
 
-El código comienza definiendo estilos CSS para varias partes del diseño, incluyendo el cuerpo de la página, un elemento que simboliza una base de datos (shape.db), entidades en el diagrama ER (entity) con sus propiedades y puertos (ports). También se definen flechas (arrow y ortho-arrow) que conectan las diferentes entidades representando las relaciones entre ellas.
+El código utiliza clases CSS para estilizar diferentes componentes del diagrama:
 
-En la parte HTML, hay dos "entidades" principales: 'Cliente' y 'Telefono'. Cada entidad tiene un encabezado con su nombre y una lista de propiedades que incluyen atributos como ID, nombre, apellidos para el cliente y ID, tipo, número para los teléfonos. Además, hay flechas CSS que se utilizan para conectar visualmente las entidades en la página web, simbolizando relaciones o conexiones entre ellas.
+1. **Entidades**: La clase `shape entity` se aplica a ambas entidades, donde cada una tiene un encabezado que muestra el nombre de la entidad (por ejemplo, "Cliente" y "Teléfono"). Dentro del bloque de las propiedades de la entidad (`entity-properties`), se listan los atributos correspondientes con sus nombres.
 
-Este código es importante porque proporciona una representación gráfica de un modelo de base de datos ER, lo cual ayuda a entender cómo están relacionadas diferentes tablas y campos en una base de datos. Esto facilita el análisis y diseño de sistemas de gestión de bases de datos para estudiantes o desarrolladores de software que trabajan con modelos de datos complejos.
+2. **Relación entre Entidades**: Una flecha dibujada mediante una clase CSS `arrow` que conecta visualmente las dos entidades, sugiriendo una relación existente entre ellas.
+
+Este código es importante porque ayuda a estudiantes y desarrolladores de bases de datos a entender gráficamente cómo se relacionan diferentes elementos en un modelo ER. La representación visual facilita la comprensión del diseño de la base de datos antes de implementarlo con SQL o cualquier otro lenguaje de consulta de datos.
+
+Esta página HTML es particularmente útil para ejercicios y prácticas en el contexto de las bases de datos en Formación Profesional, proporcionando una herramienta visual para interpretar y diseñar modelos ER.
+
+`005-diagrama 1 a n.html`
 
 ```html
 <!DOCTYPE html>
@@ -12011,14 +13850,22 @@ body {
 ```
 
 ### diagrama 1 a n
+<small>Creado: 2025-12-01 10:37</small>
 
 #### Explicación
 
-Este código JSON representa una parte de un diagrama ER (Entidad Relación) que describe las relaciones entre diferentes entidades en un sistema. En este caso, hay dos entidades principales: "Cliente" y "Telefono". La entidad "Cliente" tiene propiedades como id, nombre y apellidos. Por otro lado, la entidad "Telefono" incluye id, id_cliente (que hace referencia al id de una entidad Cliente), tipo del teléfono y el número telefónico.
+Este archivo JSON representa la estructura de un diagrama entidad-relación (ER) en formato descriptivo. El código no es HTML como en el ejemplo anterior, sino una descripción estructurada que permite definir las entidades y sus relaciones de manera más abstracta. 
 
-La estructura JSON también incluye flechas que representan las relaciones entre estas entidades. En este caso, hay una relación simple desde el cliente hacia el teléfono, indicada por la propiedad "id_cliente" en la entidad Telefono, lo cual sugiere que un Cliente puede tener múltiples teléfonos asociados a él.
+El archivo define dos entidades: "Cliente" y "Telefono". Cada entidad tiene un conjunto de propiedades (atributos) asociadas a ella. Por ejemplo, la entidad "Cliente" tiene tres propiedades: id, nombre y apellidos; mientras que la entidad "Telefono" incluye cuatro propiedades: id, id_cliente, tipo y número.
 
-Este fragmento de código es importante porque ayuda a visualizar y definir claramente las relaciones entre diferentes elementos en una base de datos, facilitando así el paso del diagrama ER al modelo relacional, lo que es fundamental para la estructura y diseño correcto de bases de datos.
+Además, el archivo especifica una relación entre estas dos entidades. La relación se define mediante un objeto de flecha (arrow) que conecta a las entidades "Cliente" y "Telefono". Esta relación se establece entre la propiedad 'id' en "Cliente" y la propiedad 'id_cliente' en "Telefono", indicando que cada teléfono está asociado con un cliente específico.
+
+Esta representación JSON es útil porque permite una mayor flexibilidad al manipular el diagrama ER, ya que no depende de formato HTML específico. También facilita la conversión a otros formatos o lenguajes como SQL para crear los modelos relacionales en bases de datos.
+
+**ÚLTIMO PÁRRAFO:**
+En comparación con la versión anterior en HTML, este archivo JSON ofrece una representación más abstracta y flexible del mismo diagrama ER. Elimina el formato visual específico (como CSS) y se centra en estructurar los datos para las entidades y sus relaciones de manera clara y modular.
+
+`005-diagrama 1 a n.json`
 
 ```json
 {
@@ -12094,16 +13941,17 @@ Este fragmento de código es importante porque ayuda a visualizar y definir clar
 ```
 
 ### diagrama 1 a n
+<small>Creado: 2025-12-01 10:37</small>
 
 #### Explicación
 
-Este fragmento de código es un archivo SVG (Scalable Vector Graphics), que se utiliza para representar gráficamente información estructurada en formato visual. En este caso, el archivo SVG contiene una representación de dos entidades y la relación entre ellas en un diagrama entidad-relación (ER). 
+Este archivo SVG representa un diagrama de entidad-relación (ER) que ilustra la relación entre dos entidades: "Cliente" y "Telefono". En el diagrama, cada entidad se muestra como un rectángulo con atributos internos. La entidad "Cliente" tiene tres atributos: `id`, `nombre` y `apellidos`. Por otro lado, la entidad "Telefono" incluye cuatro atributos: `id`, `id_cliente`, `tipo` y `numero`.
 
-En el centro del diagrama, hay dos rectángulos grandes que representan las entidades "Cliente" y "Teléfono". Dentro de cada rectángulo se listan los atributos clave de cada entidad. Por ejemplo, la entidad "Cliente" tiene atributos como 'id', 'nombre' y 'apellidos'. La entidad "Teléfono", por su parte, incluye atributos tales como 'id', 'id_cliente', 'tipo' y 'número'.
+Las líneas en el diagrama conectan los atributos relevantes para representar una relación. En este caso, hay una línea que conecta al atributo `id` de la entidad "Cliente" con el atributo `id_cliente` en la entidad "Telefono". Esta conexión se indica mediante un flechita en la parte derecha del rectángulo del "Cliente", lo cual sugiere que cada cliente puede tener uno o más teléfonos asociados, pero no necesariamente. Esto corresponde a una relación 1:N (uno a muchos) entre las entidades "Cliente" y "Telefono".
 
-Entre ambos rectángulos hay una línea curva que conecta a ambas entidades con flechas en los extremos, lo cual indica la relación entre ellas. Esta línea representa la asociación entre los teléfonos de un cliente y el propio cliente, sugiriendo que cada teléfono está vinculado a un cliente específico (es decir, hay una relación "uno a muchos" entre Cliente y Teléfono).
+**ÚLTIMO PÁRRAFO**: Este archivo SVG es una representación visual gráfica del diagrama ER definido en el archivo JSON anterior (`005-diagrama 1 a n.json`), proporcionando un dibujo más detallado con rectángulos para las entidades y líneas de conexión marcadas, facilitando la comprensión visual de la relación entre "Cliente" y "Telefono".
 
-Este tipo de diagrama es crucial en la modelización de bases de datos, ya que permite visualizar las relaciones complejas entre diferentes entidades antes de crear el modelo relacional correspondiente.
+`005-diagrama 1 a n.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="594.5749865080179" height="230.40000513980254" viewBox="0 0 594.5749865080179 230.40000513980254">
@@ -12146,14 +13994,17 @@ Este tipo de diagrama es crucial en la modelización de bases de datos, ya que p
 ```
 
 ### solucion 1 a n
+<small>Creado: 2025-12-01 10:37</small>
 
 #### Explicación
 
-Este fragmento de código SQL está creando dos tablas en una base de datos: `cliente` y `telefono`. La tabla `cliente` almacena información básica sobre los clientes, como su nombre y apellidos. Cada cliente tiene un identificador único (`id`) que es la clave primaria de esta tabla.
+Este fragmento de código SQL sirve para crear dos tablas en una base de datos: `cliente` y `telefono`. La tabla `cliente` almacena información básica sobre los clientes, como su nombre y apellidos. Cada cliente tiene un identificador único (ID) que se utiliza para distinguirlo de otros.
 
-La segunda tabla, `telefono`, registra detalles de contacto telefónico para cada cliente. Esta tabla incluye el número de teléfono del cliente (como el número de móvil o casa), su tipo (por ejemplo, "móvil", "trabajo"), y un campo llamado `id_cliente` que actúa como una clave foránea que se refiere a la tabla `cliente`. Esto significa que cada entrada en la tabla `telefono` está vinculada a un cliente específico en la tabla `cliente`, lo cual permite que varias líneas de teléfono estén asociadas con un solo cliente. La restricción `FOREIGN KEY` garantiza que el valor del campo `id_cliente` en la tabla `telefono` coincida con el valor del campo `id` en la tabla `cliente`.
+La tabla `telefono`, por otro lado, contiene detalles sobre los teléfonos asociados a cada cliente. Esta tabla incluye el ID del cliente al que pertenece el teléfono, el tipo de teléfono y el número telefónico en sí mismo. Es importante notar la existencia de una clave foránea (foreign key) llamada `fk_telefono_1` que vincula la columna `id_cliente` de la tabla `telefono` con la columna `id` de la tabla `cliente`. Esto garantiza que cada teléfono registrado está relacionado con un cliente real y previene la inserción de datos inconsistentes.
 
-Este diseño es importante porque permite una relación uno a muchos entre los clientes y sus teléfonos, donde un cliente puede tener varios números telefónicos pero cada número pertenece a exactamente un cliente. Esto mejora la eficiencia y el mantenimiento de la base de datos al evitar duplicar información en diferentes registros.
+Esta estructura es útil cuando se desea representar una relación de uno a muchos (1:N) entre clientes y sus teléfonos, donde un solo cliente puede tener varios números telefónicos asociados, pero cada número telefónico está ligado únicamente a un cliente.
+
+`006-solucion 1 a n.sql`
 
 ```sql
 CREATE TABLE cliente (
@@ -12172,16 +14023,17 @@ CREATE TABLE telefono (
 ```
 
 ### diagrama relacion n a n
+<small>Creado: 2025-12-01 10:40</small>
 
 #### Explicación
 
-Este código HTML crea una página web que representa un diagrama de entidad-relación (ER) en formato visual con CSS para estilizar los elementos. El archivo se encuentra en la ruta `/var/www/html/basesdedatosdamdaw2526/006-Interpretación de Diagramas EntidadRelación/003-Paso del diagrama ER al modelo relacional/101-Ejercicios/007-diagrama relacion n a n.html`, lo que indica que es parte de una colección de ejercicios o material didáctico para estudiantes de Formación Profesional en el área de bases de datos.
+Este código HTML es una representación gráfica de un diagrama entidad-relación en formato web, mostrando tres entidades y sus relaciones. El objetivo principal del código es visualizar cómo los alumnos se matriculan en asignaturas a través de una tabla intermedia llamada "Matriculas". Cada entidad (Alumno, Asignatura y Matriculas) está representada por un cuadro con propiedades específicas como ID, nombre o descripción. Las relaciones entre estas entidades están indicadas mediante flechas que conectan los bordes de cada entidad.
 
-El código contiene varios bloques `<div>` con clases específicas que representan entidades, atributos y relaciones entre ellas. Por ejemplo, se definen tres entidades: "Alumno", "Asignatura" y "Matriculas". Cada entidad tiene sus propios atributos (como `id`, `nombre`, etc.), que están listados dentro de la estructura HTML del bloque.
+El diseño utiliza CSS para dar formato a estos elementos gráficos, incluyendo colores y estilos consistentes. Por ejemplo, las entidades aparecen en forma de cuadrados con un encabezado superior que indica el nombre de la entidad (por ejemplo, "Alumno" o "Asignatura"). Cada propiedad dentro de una entidad se muestra en un formato vertical, proporcionando un aspecto visual clara y ordenada.
 
-Además, el código incluye dos flechas (`<div class="arrow">`) que representan relaciones entre las entidades. En este caso, una relación "n a n" entre "Alumno" y "Asignatura" se representa a través de la entidad intermedia "Matriculas", indicando que un alumno puede matricularse en varias asignaturas y una asignatura puede ser cursada por múltiples alumnos.
+Este tipo de diagrama es útil para estudiantes de Formación Profesional ya que ayuda a entender cómo las entidades pueden estar relacionadas entre sí en un sistema de base de datos. La tabla "Matriculas" actúa como puente entre "Alumno" e "Asignatura", permitiendo una relación muchos a muchos, donde un alumno puede matricularse en varias asignaturas y cada asignatura puede tener varios alumnos inscritos. Esto es crucial para comprender cómo se estructuran las bases de datos para manejar relaciones complejas entre diferentes tipos de información.
 
-Este tipo de diagramas son muy útiles para comprender cómo están estructuradas las bases de datos, especialmente cuando se trata de relaciones complejas como la relación "n a n" entre entidades. El uso del CSS permite que el diseño sea visualmente claro y fácil de entender, lo cual es crucial para la enseñanza y el aprendizaje en este campo.
+`007-diagrama relacion n a n.html`
 
 ```html
 <!DOCTYPE html>
@@ -12469,16 +14321,25 @@ body {
 ```
 
 ### diagrama relacion n a n
+<small>Creado: 2025-12-01 10:40</small>
 
 #### Explicación
 
-Este fragmento de código JSON describe una parte del diseño de una base de datos, específicamente un diagrama entidad-relación (ER) que representa las relaciones entre tres entidades: Alumno, Asignatura y Matriculas. En este contexto:
+Este archivo JSON representa la estructura de un diagrama ER (Entidad Relación) que ilustra las relaciones entre diferentes entidades en una base de datos. En este caso, se especifican tres entidades: Alumno, Asignatura y Matriculas. Cada entidad tiene sus propias características o atributos.
 
-- "Alumno" es una entidad que tiene atributos como ID, nombre, apellidos y email.
-- "Asignatura" también es una entidad con un ID, título y descripción.
-- "Matriculas" actúa como una tabla intermedia para manejar la relación muchos a muchos entre Alumnos y Asignaturas. Esta entidades incluye un atributo de id único además de los ids que vinculan al alumno y asignatura.
+La entidad "Alumno" incluye atributos como id, nombre, apellidos y email, mientras que la entidad "Asignatura" incluye id, título y descripción. La entidad "Matriculas", por su parte, incluye un identificador único para cada matrícula, el ID del alumno y el ID de la asignatura, además de otro atributo no especificado.
 
-Las flechas en el JSON representan las relaciones entre estas entidades, con "Matriculas" sirviendo como puente para conectar alumnos con sus respectivas asignaturas. Esto es importante porque permite modelar situaciones donde un estudiante puede matricularse en múltiples cursos y cada curso puede tener varios estudiantes inscritos.
+El archivo también define dos flechas que representan las relaciones entre estas entidades:
+- Una relación va desde "Alumno" hasta "Matriculas", conectando el id del Alumno con el id_alumno en Matriculas.
+- Otra relación va desde "Asignatura" hasta "Matriculas", conectando el id de la Asignatura con el id_asignatura en Matriculas.
+
+Estas relaciones son representaciones de cómo las entidades pueden estar relacionadas entre sí, permitiendo a una aplicación o base de datos entender que un Alumno puede estar matriculado en varias Asignaturas y viceversa. La diferencia principal entre este archivo JSON y el anterior es que este utiliza una estructura más simplificada y abstracta para representar las entidades y sus relaciones en lugar de HTML.
+
+En resumen, la estructura JSON describe cómo se vinculan las entidades a través de atributos específicos, facilitando la comprensión de las interrelaciones entre Alumnos, Asignaturas y Matriculas en el contexto del diagrama ER. 
+
+La principal diferencia con respecto al código anterior es que este archivo JSON usa una representación estructurada (en lugar de HTML) para definir las entidades y sus relaciones, lo cual facilita su uso en herramientas automatizadas de generación de diagramas o bases de datos. Esto hace que la información sea más fácil de procesar por programas y permite una mayor flexibilidad en cómo se visualiza el diagrama ER.
+
+`007-diagrama relacion n a n.json`
 
 ```json
 {
@@ -12595,16 +14456,20 @@ Las flechas en el JSON representan las relaciones entre estas entidades, con "Ma
 ```
 
 ### diagrama relacion n a n
+<small>Creado: 2025-12-01 10:40</small>
 
 #### Explicación
 
-Este fragmento de código SVG (Scalable Vector Graphics) representa un diagrama de entidad-relación (ER) que muestra las relaciones entre tres entidades: Alumno, Asignatura y Matrículas. En el diagrama, cada entidad se dibuja como un rectángulo con atributos específicos dentro de él, mientras que las líneas con flechas representan las relaciones entre estas entidades.
+Este archivo SVG representa un diagrama de entidades y relaciones en una base de datos, similar al formato JSON anterior pero con una visualización gráfica. En este caso, el código describe tres entidades: "Alumno", "Asignatura" y "Matriculas". Cada entidad tiene sus propias características como atributos (campos) que se muestran dentro del rectángulo correspondiente.
 
-En la parte superior del código, se definen estilos para distintos elementos SVG como texto y formas geométricas. Estos estilos determinan cómo aparecerán los diferentes componentes en el diagrama, por ejemplo, qué colores tienen los bordes y rellenos de las formas y cuál es el tamaño de la fuente del texto.
+La entidad "Alumno" contiene los atributos de identificación (`id`), nombre, apellidos y correo electrónico. La entidad "Asignatura", por su parte, incluye un identificador único (`id`), el título de la asignatura y una descripción detallada. Finalmente, la entidad "Matriculas" registra las relaciones entre los alumnos y sus respectivas asignaturas a través de dos atributos clave: `id_alumno` que vincula a cada estudiante con su matrícula, y `id_asignatura` que conecta las matrículas con las diferentes materias. Además, la entidad "Matriculas" tiene un campo adicional llamado `atributo`.
 
-El código dibuja tres rectángulos representando a "Alumno", "Asignatura" y "Matrículas". Cada uno tiene sus propios atributos listados debajo. Por ejemplo, para la entidad "Alumno", se encuentran los atributos 'id', 'nombre', 'apellidos' y 'email'. De manera similar, la entidad "Asignatura" incluye 'id', 'titulo' y 'descripcion'.
+El diagrama también incluye flechas (con punteros en forma de línea) que representan relaciones entre estas entidades: una flecha va desde el identificador único del alumno hasta el campo `id_alumno` en la entidad "Matriculas", y otra flecha conecta el identificador único de la asignatura con el campo `id_asignatura`.
 
-Además de las entidades, el diagrama muestra dos líneas que conectan "Alumno" con "Matrículas", y otra línea que conecta "Asignatura" con "Matrículas". Estos conectores se representan como líneas rectas con flechas en un extremo para indicar la relación entre las entidades. Esta visualización es crucial porque permite entender cómo los alumnos pueden estar matriculados en asignaturas, estableciendo una relación n:n (muchos a muchos) entre "Alumno" y "Asignatura", que se resuelve a través de la tabla intermedia "Matrículas".
+ÚLTIMO PÁRRAFO:
+Este archivo SVG es una versión gráfica del diagrama ER anteriormente representado en formato JSON, ofreciendo una vista visual directa de las entidades y sus relaciones. En lugar de describir las entidades y atributos con texto estructurado, este archivo utiliza elementos SVG para dibujar rectángulos, líneas y textos, proporcionando una representación más intuitiva y fácil de entender.
+
+`007-diagrama relacion n a n.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="608.9000244140624" height="401.1749928792317" viewBox="0 0 608.9000244140624 401.1749928792317">
@@ -12655,14 +14520,23 @@ Además de las entidades, el diagrama muestra dos líneas que conectan "Alumno" 
 ```
 
 ### solucion n a n
+<small>Creado: 2025-12-01 10:42</small>
 
 #### Explicación
 
-Este fragmento de código SQL crea tres tablas en una base de datos: `alumno`, `asignatura` y `matriculas`. La tabla `alumno` almacena información básica sobre los estudiantes, incluyendo su identificador único (`id`), nombre, apellidos y correo electrónico. De manera similar, la tabla `asignatura` contiene detalles de cada asignatura ofertada en el sistema, con campos para el identificador único (`id`), título y descripción.
+Este código SQL crea tres tablas en una base de datos: `alumno`, `asignatura` y `matriculas`. Cada tabla tiene un propósito específico:
 
-La tabla `matriculas`, por otro lado, gestiona las matrículas o inscripciones que los alumnos realizan en diferentes asignaturas. Cada registro en esta tabla tiene un identificador único (`id`) y contiene dos claves foráneas: una relacionada con el alumno (`id_alumno`) y otra con la asignatura (`id_asignatura`). Estas referencias se establecen mediante las restricciones de clave foránea `fk_matriculas_1` y `fk_matriculas_2`, lo que asegura que cada matrícula esté correctamente vinculada a un alumno existente y a una asignatura válida en las tablas correspondientes.
+1. **Tabla `alumno`:** Almacena información sobre los estudiantes, como su identificador único (id), nombre, apellidos y correo electrónico.
 
-Esta estructura es importante porque permite organizar información de manera eficiente, manteniendo relaciones claras entre los diferentes elementos (alumnos, asignaturas y matriculas) del sistema educativo.
+2. **Tabla `asignatura`:** Guarda datos sobre las asignaturas o cursos disponibles, incluyendo un identificador único para cada una, el título de la asignatura y una descripción opcional.
+
+3. **Tabla `matriculas`:** Esta tabla es crucial porque establece la relación muchos-a-muchos entre estudiantes y asignaturas. Significa que un estudiante puede estar matriculado en varias asignaturas y una asignatura puede tener varios estudiantes inscritos. La tabla incluye campos para el identificador único de la matrícula, los identificadores únicos del estudiante y la asignatura involucrados, así como un campo adicional llamado `atributo` que podría almacenar información extra sobre la matrícula.
+
+Además, se definen dos restricciones de clave foránea (`FOREIGN KEY`) en la tabla `matriculas`. Estas restricciones aseguran que los valores introducidos para `id_alumno` y `id_asignatura` existan realmente como claves primarias en las tablas `alumno` e `asignatura`, respectivamente. Esto es importante para mantener la integridad de los datos y garantizar que no haya referencias a registros inexistentes.
+
+Este diseño es común en bases de datos cuando se necesita representar relaciones complejas entre entidades, como matrículas universitarias o inscripciones en cursos online.
+
+`008-solucion n a n.sql`
 
 ```sql
 CREATE TABLE alumno (
@@ -12689,20 +14563,19 @@ CREATE TABLE matriculas (
 ```
 
 ### diagrama problema generalizacion
+<small>Creado: 2025-12-01 10:46</small>
 
 #### Explicación
 
-Este código HTML está diseñado para representar visualmente un diagrama de entidad-relación (ER) en formato web. La página se estructura con estilos CSS que definen cómo deben aparecer los elementos del diagrama, como entidades y relaciones entre ellas.
+Este código HTML representa una página web que visualiza un diagrama de entidad-relación (ER) para una base de datos, específicamente centrado en las entidades "Persona", "Alumno" y "Profesor". En este contexto, el diseño del diagrama se logra mediante estilos CSS muy detallados.
 
-En el cuerpo de la página (`<body>`), hay varias divisiones (`<div>`) que representan diferentes partes del diagrama ER:
+En la parte principal del código, tienes tres bloques que representan cada entidad (Persona, Alumno, Profesor). Cada uno de estos bloques incluye propiedades específicas para las entidades. Por ejemplo, en "Persona", puedes ver propiedades como 'id', 'nombre' y 'apellidos'. En la entidad "Alumno" se encuentran las propiedades 'id' y 'NIA', mientras que en "Profesor" están 'id' y 'asignaturas'.
 
-- **Entidades**: Los bloques rectangulares con detalles de atributos dentro. En este caso, existen tres entidades: "Persona", "Alumno" y "Profesor". Cada entidad tiene propiedades específicas definidas en su interior.
+Además de estas entidades, el código también incluye dos flechas rectas (representadas por la clase CSS ".arrow") que conectan visualmente a las entidades. Estas flechas sugieren una relación entre "Persona" con "Alumno" y "Profesor", aunque no se especifica en detalle qué tipo de relaciones son.
 
-- **Relaciones**: Las líneas que conectan las entidades a través del uso de clases CSS como `.arrow`. Estas líneas representan la relación entre diferentes entidades. En el ejemplo, hay dos líneas diagonales que conectan la entidad "Persona" con tanto "Alumno" como "Profesor".
+Este diagrama es útil para estudiantes de bases de datos porque permite ver gráficamente cómo están relacionadas diferentes partes de la base de datos, facilitando así la comprensión del modelo ER antes de pasar a un diseño relacional.
 
-El código utiliza estilos específicos para cada elemento (por ejemplo, `body`, `page`, `shape.entity`) para controlar aspectos como tamaño, posición y estilo visual. Esto permite a los usuarios visualizar claramente las estructuras de datos en forma de diagramas ER directamente desde un navegador web.
-
-Esta representación es útil porque facilita la comprensión y análisis del modelo lógico de una base de datos sin necesidad de herramientas adicionales de diseño.
+`009-diagrama problema generalizacion.html`
 
 ```html
 <!DOCTYPE html>
@@ -12970,14 +14843,19 @@ body {
 ```
 
 ### diagrama problema generalizacion
+<small>Creado: 2025-12-01 10:46</small>
 
 #### Explicación
 
-Este fragmento de código describe una representación en JSON de un diagrama de entidad-relación (ER) simplificado. En este caso, el archivo contiene tres entidades: Persona, Alumno y Profesor, cada una con sus propios atributos o características. La entidad "Persona" incluye campos como ID, nombre y apellidos, mientras que "Alumno" añade un campo específico para el número de identificación académica (NIA) y la entidad "Profesor" tiene un campo adicional llamado asignaturas.
+Este código JSON representa un diagrama de entidades relacionales (ER) en formato digital, donde cada entidad y relación está definida como un objeto dentro del archivo. En este caso, el diagrama incluye tres entidades: Persona, Alumno y Profesor, junto con sus respectivas propiedades.
 
-Además, las flechas en el JSON indican relaciones simples entre estas entidades. Hay dos líneas que conectan directamente a "Persona" con tanto "Alumno" como "Profesor", lo que sugiere una relación generalizada, es decir, que todos los alumnos y profesores son personas pero tienen características adicionales específicas de su rol.
+Cada entidad es identificada por su nombre y una lista de propiedades asociadas, que son atributos específicos de esa entidad (como ID, nombre, apellidos, NIA, etc.). Las flechas en el diagrama representan las relaciones entre estas entidades. En este ejemplo, hay dos flechas simples que conectan la entidad Persona con tanto Alumno como Profesor.
 
-Este tipo de representación es importante en el diseño de bases de datos porque ayuda a visualizar claramente cómo las diferentes entidades se relacionan entre sí y qué atributos son comunes o únicos para cada entidad. Esto permite la creación de un modelo relacional más eficiente, donde la redundancia de datos se minimiza al aprovechar relaciones generalizadas como en este caso.
+Este código es importante porque proporciona una descripción estructurada de cómo los datos se relacionan entre sí, lo cual es fundamental para diseñar un modelo relacional eficaz en bases de datos. Permite a desarrolladores y administradores de bases de datos entender claramente la jerarquía y las relaciones entre diferentes tipos de datos.
+
+**ÚLTIMO PÁRRAFO:** Comparado con el archivo anterior, este código JSON proporciona una representación más estructurada del diagrama ER utilizando objetos para definir entidades y propiedades en lugar de HTML y estilos CSS. Esto simplifica la manipulación y análisis del modelo relacional en formatos no visuales o en aplicaciones basadas en datos puros.
+
+`009-diagrama problema generalizacion.json`
 
 ```json
 {
@@ -13078,14 +14956,17 @@ Este tipo de representación es importante en el diseño de bases de datos porqu
 ```
 
 ### diagrama problema generalizacion
+<small>Creado: 2025-12-01 10:46</small>
 
 #### Explicación
 
-Este fragmento de código SVG es una representación gráfica de un diagrama entidad-relación (ER) simplificado en formato vectorial, que se utiliza comúnmente en la modelización de bases de datos. En este caso, el diagrama muestra tres entidades: "Persona", "Alumno" y "Profesor". Cada entidad está dibujada como un rectángulo con sus atributos listados dentro (por ejemplo, "id", "nombre", "apellidos"). Las líneas que conectan las entidades representan relaciones entre ellas. En el diagrama, hay flechas indicando que la entidad "Persona" es una superclase de "Alumno" y "Profesor", lo cual sugiere que tanto Alumno como Profesor son tipos específicos de Persona y comparten algunos atributos comunes con ella.
+El código SVG que has proporcionado representa un diagrama visual de entidades para una base de datos, mostrando tres entidades: "Persona", "Alumno", y "Profesor". Cada entidad tiene sus propios atributos. La entidad "Persona" contiene los atributos "id", "nombre" y "apellidos"; la entidad "Alumno" tiene los atributos "id" y "NIA"; y la entidad "Profesor" incluye los atributos "id" y "asignaturas". Además, el diagrama muestra las relaciones entre estas entidades mediante líneas de conexión con flechas que indican una relación hacia las otras dos entidades desde la entidad "Persona".
 
-El estilo y diseño del SVG incluye colores y líneas para hacer el diagrama fácil de leer. Los estilos están definidos en la sección `<defs>` dentro del código, especificando cómo deben aparecer los textos, rectángulos y conexiones entre las entidades. Las flechas al final de algunas líneas representan relaciones con dirección específica (por ejemplo, desde "Persona" hasta "Alumno" y "Profesor"), indicando una relación jerárquica o de generalización en el modelo relacional.
+Este diagrama es importante porque proporciona una representación visual del modelo conceptual de la base de datos antes de pasar al diseño relacional. Ayuda a entender claramente cómo los datos están organizados y relacionados entre sí, lo que facilita el proceso de creación de tablas en SQL.
 
-Este tipo de diagrama es importante porque ayuda a visualizar la estructura de datos antes de diseñar una base de datos real. Permite identificar relaciones entre diferentes tipos de información (entidades) y cómo se relacionan entre sí, lo que facilita la creación de modelos de bases de datos coherentes y eficientes.
+ÚLTIMO PÁRRAFO: En comparación con el archivo anterior (009-diagrama problema generalizacion.json), este archivo SVG ofrece una representación visual más detallada del diagrama ER. Mientras que el archivo JSON describía las entidades y sus propiedades de forma textual, el SVG proporciona un dibujo gráfico de estas entidades y relaciones, incluyendo atributos específicos dentro de cada entidad y líneas con flechas para representar la relación entre ellas, lo cual es más fácil de entender visualmente.
+
+`009-diagrama problema generalizacion.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="640.0000381469724" height="392.1999979019164" viewBox="0 0 640.0000381469724 392.1999979019164">
@@ -13132,19 +15013,19 @@ Este tipo de diagrama es importante porque ayuda a visualizar la estructura de d
 ```
 
 ### solucion poco elegante y sin embargo practica
+<small>Creado: 2025-12-01 10:51</small>
 
 #### Explicación
 
-Este código SQL está creando una tabla llamada `Persona` en una base de datos. La tabla almacena información básica sobre las personas, como su nombre y apellidos, y tiene algunos campos adicionales útiles:
+Este fragmento de código SQL está creando una tabla llamada `Persona` en una base de datos. La tabla almacena información sobre personas, incluyendo detalles como su nombre y apellidos, si son alumnos o no (indicado por el campo `es_alumno`) y su número de identificación (DNINIA). 
 
-- `id`: Es el identificador único para cada persona registrada en la tabla. El valor se genera automáticamente (AUTO_INCREMENTAL) cada vez que se añade una nueva persona.
-- `nombre` y `apellidos`: Estos son campos de texto donde se guardan el nombre y los apellidos de las personas, respectivamente.
-- `es_alumno`: Este campo es de tipo booleano (`TINYINT`) y indica si la persona es un alumno (1) o no (0).
-- `DNINIA`: Es una cadena de caracteres que almacena el número de identificación personal del individuo.
+La columna `id` es la clave principal (PRIMARY KEY) de la tabla, lo que significa que cada persona tiene un ID único. El valor de esta columna se incrementa automáticamente con cada nuevo registro insertado en la tabla (`AUTO_INCREMENTAL`). Las columnas `nombre`, `apellidos` y `DNINIA` almacenan cadenas de texto para el nombre completo de la persona y su identificación.
 
-El último campo, `asignaturas`, está mal definido en este ejemplo. No se especifica claramente qué tipo de dato debe ser ni cuántos valores puede contener. Normalmente, para almacenar asignaturas relacionadas con un alumno, sería más apropiado crear una tabla separada y vincularla a la tabla `Persona` mediante relaciones (FOREIGN KEY), permitiendo así registrar múltiples asignaturas por cada persona.
+El problema principal del código es que hay un error sintáctico: la palabra clave correcta debería ser `AUTO_INCREMENT` en lugar de `AUTO_INCREMENTAL`. Además, la columna `asignaturas` está definida con tipo de dato `SET`, pero no se han especificado los valores permitidos dentro del conjunto. Esto podría causar problemas a la hora de usar esta tabla ya que SQL necesitaría conocer qué asignaturas específicas pueden almacenarse en esta columna.
 
-Es importante notar que este ejemplo no es el diseño óptimo debido a la falta de definición del tipo de datos para las asignaturas, pero puede servir como introducción al concepto de crear tablas y vincular información básica en SQL.
+Es importante corregir estos errores para que la base de datos funcione correctamente y evitar posibles fallos al intentar insertar o consultar datos desde esta tabla.
+
+`010-solucion poco elegante y sin embargo practica.sql`
 
 ```sql
 CREATE TABLE Persona(
@@ -13158,32 +15039,34 @@ CREATE TABLE Persona(
 ```
 
 ### solución elegante
+<small>Creado: 2025-12-01 10:48</small>
 
 #### Explicación
 
-Para poder explicarte el fragmento de código SQL, necesitaría que me proporciones el código en cuestión. Sin embargo, dado el contexto del nombre del archivo y la ruta proporcionada, puedo darte una idea general sobre lo que podría contener este script SQL.
+Lo siento, pero no has proporcionado el código SQL dentro del archivo `011-solución elegante.sql` para analizar. Sin embargo, basándome en el nombre y la ruta del archivo, puedo suponer que este archivo contiene una solución bien estructurada a un ejercicio relacionado con la conversión de un Diagrama Entidad Relación (ER) al modelo relacional SQL.
 
-Este tipo de archivos suele incluir instrucciones SQL para crear tablas (CREATE TABLE), definir las relaciones entre ellas, y posiblemente añadir datos iniciales basados en un diagrama entidad-relación. El objetivo es transformar el modelo conceptual representado por el diagrama ER en un modelo relacional implementable en una base de datos.
+Para poder explicarte detalladamente qué hace el código SQL dentro de este archivo, necesitaría ver exactamente las líneas de código que están dentro del mismo. ¿Podrías proporcionar el contenido del archivo `011-solución elegante.sql`?
 
-En este caso concreto, dado que se trata de "una solución elegante", probablemente contiene las consultas SQL necesarias para crear tablas, definir claves primarias y foráneas que reflejen la estructura del diagrama ER, asegurando así que la integridad de los datos esté bien gestionada en la base de datos.
+`011-solución elegante.sql`
 
 ```sql
 
 ```
 
 ### ejercicio propuesto tienda online
+<small>Creado: 2025-12-01 11:03</small>
 
 #### Explicación
 
-Este código HTML es una plantilla que representa visualmente un diagrama de entidad-relación (ER) para una tienda online sencilla. El objetivo principal del código es dibujar las entidades y sus relaciones en forma gráfica, ayudando a los estudiantes a entender cómo se estructura la base de datos de la tienda.
+Este fragmento de código HTML es una representación visual de un diagrama entidad-relación (ER) para una tienda online, utilizando CSS para darle estilo. El documento define cuatro entidades principales: Pedido, Cliente, Producto y LineaPedido.
 
-El fragmento comienza con la definición básica de un documento HTML, estableciendo el idioma como español y proporcionando una meta etiqueta para especificar el juego de caracteres (UTF-8). Luego, en la sección `<head>`, se incluye CSS que define estilos específicos para representar diferentes partes del diagrama ER.
+Cada entidad se representa con un rectángulo que contiene las propiedades específicas de la entidad, como identificadores únicos y datos relacionados. Por ejemplo, la entidad "Cliente" incluye propiedades como 'id', 'nombre', 'apellidos' y 'email'. Estas entidades son visualmente diferenciadas por su estilo CSS específico, que define bordes, sombreado y colores.
 
-En la parte central del código, dentro del cuerpo (`<body>`), hay varias divs con clase `shape entity` que representan entidades como "Pedido", "Cliente", "Producto" y "LineaPedido". Cada entidad tiene un encabezado (`entity-header`) que muestra el nombre de la entidad, seguido por una lista de propiedades (`entity-property`). Por ejemplo, la entidad "Pedido" incluye propiedades como `id`, `cliente_id` y `fecha`.
+Además de las entidades individuales, el código también incluye flechas (clase "arrow") para representar las relaciones entre las entidades. Por ejemplo, hay una flecha que conecta la entidad "Cliente" con la entidad "Pedido", indicando probablemente una relación uno-a-muchos donde un cliente puede hacer múltiples pedidos.
 
-Además, hay divs con clase `arrow` que representan las relaciones entre entidades, dibujando líneas (flechas) que conectan diferentes elementos del diagrama. Estas flechas ayudan a visualizar cómo una entidad se relaciona con otra, proporcionando una visión clara de la estructura de datos.
+Este diagrama es importante porque proporciona una visualización clara de cómo se estructuran los datos en una base de datos y cómo las diferentes tablas (entidades) están relacionadas entre sí. Esto ayuda a entender la lógica del diseño de bases de datos y facilita el paso al modelo relacional, donde cada entidad se convierte en una tabla en una base de datos SQL con sus respectivas columnas para las propiedades definidas.
 
-Este tipo de representación es crucial en el diseño de bases de datos ya que ayuda a los desarrolladores y diseñadores a comprender fácilmente las relaciones entre diferentes tablas antes de crear un modelo relacional.
+`012-ejercicio propuesto tienda online.html`
 
 ```html
 <!DOCTYPE html>
@@ -13487,18 +15370,55 @@ body {
 ```
 
 ### ejercicio propuesto tienda online
+<small>Creado: 2025-12-01 11:03</small>
 
 #### Explicación
 
-Este fragmento de código describe la estructura de una base de datos para una tienda online, representada en formato JSON. El código contiene información sobre cuatro entidades (también conocidas como tablas) y sus relaciones entre sí: Pedido, Cliente, Producto y LineaPedido. Cada entidad tiene un conjunto de propiedades (o columnas), que son los atributos específicos de cada tabla.
+Este archivo JSON representa un modelo de entidad-relación para una aplicación de comercio electrónico básica. La estructura incluye cuatro entidades principales: Cliente, Pedido, Producto y LineaPedido, con sus respectivas propiedades y relaciones entre ellas.
 
-Por ejemplo, la entidad "Cliente" contiene información básica sobre los clientes como su ID único, nombre, apellidos y correo electrónico. Mientras tanto, la entidad "Producto" incluye el ID y el nombre del producto. La entidad "Pedido", por otro lado, almacena detalles sobre un pedido, que incluyen un ID de pedido, un ID de cliente (que vincula cada pedido a un cliente específico) y la fecha en que se hizo el pedido.
+### Entidades:
+1. **Cliente** (`forma-2`):
+   - `id`: Identificador único del cliente.
+   - `nombre`: Nombre del cliente.
+   - `apellidos`: Apellidos del cliente.
+   - `email`: Correo electrónico del cliente.
 
-Además, hay una entidad llamada "LineaPedido" que registra los productos comprados en cada pedido. Esta tabla tiene un ID único para cada línea del pedido, un ID de pedido (que conecta esta línea con el pedido correcto), un ID de producto (para saber qué producto se ha vendido) y la cantidad de ese producto.
+2. **Pedido** (`forma-1`):
+   - `id`: Identificador único del pedido.
+   - `cliente_id`: Relación con el Cliente que realizó el pedido.
+   - `fecha`: Fecha y hora en la cual se realizó el pedido.
 
-Las flechas en el JSON representan las relaciones entre estas entidades. Por ejemplo, hay una relación que vincula "Cliente" con "Pedido", indicando que cada pedido pertenece a un cliente específico. De manera similar, hay dos relaciones desde "Pedido" y "Producto" hacia "LineaPedido", lo que sugiere que cada línea del pedido está asociada con exactamente uno de los pedidos y uno de los productos.
+3. **Producto** (`forma-3`):
+   - `id`: Identificador único del producto.
+   - `nombre`: Nombre del producto.
 
-Este tipo de representación es crucial para la comprensión estructural de una base de datos y ayuda a diseñar el modelo relacional adecuado, asegurando que todas las relaciones y dependencias entre tablas estén correctamente definidas.
+4. **LineaPedido** (`forma-4`):
+   - `id`: Identificador único de una línea dentro de un pedido.
+   - `pedido_id`: Relación con el Pedido que contiene la línea.
+   - `producto_id`: Relación con el Producto asociado a esta línea.
+   - `cantidad`: Cantidad del producto en la línea del pedido.
+
+### Relaciones:
+1. **Relación entre Cliente y Pedido**:
+   - El atributo `cliente_id` de la entidad Pedido se relaciona con el atributo `id` de la entidad Cliente.
+   
+2. **Relación entre Pedido y LineaPedido**:
+   - El atributo `pedido_id` de la entidad LineaPedido se relaciona con el atributo `id` del Pedido.
+
+3. **Relación entre Producto y LineaPedido**:
+   - El atributo `producto_id` de la entidad LineaPedido se relaciona con el atributo `id` del Producto.
+
+### Explicaciones sobre las diferencias con respecto al código anterior (HTML):
+- En lugar de especificar dimensiones explícitas para cada entidad, este JSON utiliza un formato más flexible que permite calcular automáticamente estas dimensiones basadas en la ubicación relativa y las propiedades.
+  
+- Las relaciones se definen usando atributos específicos dentro de los objetos de propiedades (`propId`) e indican claramente el sentido (de izquierda a derecha o viceversa) entre los campos que tienen una relación.
+
+### Visualización:
+La representación visual sería similar al HTML, pero con entidades y relaciones más claras debido a la naturaleza estructurada del JSON. Las flechas conectando las propiedades indicarían claramente qué atributos en qué entidad se relacionan entre sí.
+
+Este modelo es una simplificación de un sistema de comercio electrónico básico, donde los clientes pueden realizar pedidos que incluyen varias líneas con productos y cantidades específicas para cada uno.
+
+`012-ejercicio propuesto tienda online.json`
 
 ```json
 {
@@ -13648,16 +15568,19 @@ Este tipo de representación es crucial para la comprensión estructural de una 
 ```
 
 ### ejercicio propuesto tienda online
+<small>Creado: 2025-12-01 11:03</small>
 
 #### Explicación
 
-Este código SVG es un dibujo de una base de datos en formato de diagrama entidad-relación (ER) para una tienda online sencilla. En este diagrama, se representan cuatro entidades principales: Pedido, Cliente, Producto y LineaPedido. Cada entidad está dibujada como un rectángulo con atributos específicos listados dentro.
+Este archivo SVG contiene un diagrama de entidades para una tienda online que representa las relaciones entre diferentes tablas en la base de datos. En este caso, se muestran cuatro entidades principales: Pedido, Cliente, Producto y LineaPedido.
 
-Para cada entidad, el código define un rectángulo que representa la tabla de esa entidad en la base de datos. Por ejemplo, para "Cliente", se muestra un rectángulo con los atributos `id`, `nombre`, `apellidos` y `email`. Las entidades están conectadas entre sí mediante líneas onduladas (definidas por las etiquetas `<path>`), que representan relaciones entre ellas. Por ejemplo, la línea que une "Cliente" y "Pedido" indica que un pedido está relacionado con un cliente.
+Cada entidad está representada por un rectángulo con sus atributos listados dentro (por ejemplo, "id", "nombre", "email", etc.). Las líneas con flechas conectan las diferentes entidades para mostrar las relaciones entre ellas. Por ejemplo, hay una relación de la entidad Cliente hacia la entidad Pedido, indicando que un cliente puede realizar varios pedidos.
 
-El código también incluye flechas en las líneas de conexión para indicar el tipo de relación: si es una relación uno-a-muchos o muchos-a-muchos. Esto ayuda a entender cómo se relacionan los datos entre diferentes tablas en la base de datos. La representación gráfica permite visualizar fácilmente la estructura y las relaciones de la base de datos, facilitando su interpretación y diseño.
+Las entidades y sus atributos en este diagrama son similares a los del archivo JSON anterior, pero aquí se visualizan gráficamente con rectángulos y texto, lo que hace más fácil entender las relaciones y estructura de los datos.
 
-Esta visualización es importante porque proporciona una comprensión clara y rápida del modelo relacional subyacente, lo que ayuda a los desarrolladores y diseñadores de bases de datos a entender cómo se almacenan y relacionan los datos en el sistema.
+ÚLTIMO PÁRRAFO: En comparación con el archivo JSON anterior, este SVG proporciona una representación visual mucho más detallada y clara del modelo de base de datos. Las entidades son dibujadas como rectángulos con sus atributos listados dentro y las relaciones entre ellas se muestran mediante líneas con flechas, lo que facilita la comprensión rápida de cómo interactúan los diferentes componentes del sistema. Además, el uso de estilos CSS para colorear los elementos y añadir marcadores a las conexiones ayuda a mejorar su legibilidad visual.
+
+`012-ejercicio propuesto tienda online.svg`
 
 ```
 <svg xmlns="http://www.w3.org/2000/svg" width="869.2874799455914" height="359.56251961844305" viewBox="0 0 869.2874799455914 359.56251961844305">
@@ -13713,35 +15636,87 @@ Esta visualización es importante porque proporciona una comprensión clara y r�
 </svg>
 ```
 
-### prueba
+### Actividades propuestas
 
-#### Explicación
+The provided files include a variety of file types, including HTML (index.html), CSS (style.css), Markdown (.md) files, and an SVG-like representation in multiple formats. Here is a summary and analysis based on the content:
 
-Parece que no has proporcionado un fragmento de código real en el formato Markdown para analizar. Si tienes una sección específica del archivo .md con algún contenido relevante, como descripciones o pasos relacionados con la conversión de diagramas ER a modelos relacional, por favor compártelo y estaré encantado de explicarlo detalladamente.
+### index.html
+This is an HTML5 webpage that includes links to an external stylesheet (`style.css`) and references Google Fonts for styling purposes.
 
-```markdown
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+</head>
+<body>
 
+</body>
+</html>
 ```
 
-### prueba2
+### style.css
+This is a basic CSS file that defines some styling rules. It uses the Google Font `Roboto` for text and sets a background color, font size, margin, padding, border radius, and box shadow.
 
-#### Explicación
+```css
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;  
+}
 
-Parece que no has proporcionado un fragmento de código para analizar en tu solicitud. Si tienes una porción específica del archivo `prueba2.md` (que está escrito en Markdown) que quieras discutir, por favor compártela y estaré encantado de ayudarte a entenderlo.
+h1 { 
+  font-size: 36px;
+  margin-top: -40px;
+  color: #fff;
+}
 
-```markdown
-
+p {   
+   font-size: 18px; 
+   margin: 2rem auto;
+   padding: .5rem;
+   border-radius: 5px;  
+   box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+}
 ```
 
-### prueba3
+### HTML File (Without extension)
+This is another version of an HTML file with slightly different content. The `head` section uses `utf-8` for character encoding and links to a Google Font (`Roboto`) but does not include a specific stylesheet.
 
-#### Explicación
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+</head>
+<body>
 
-Parece que no has proporcionado un fragmento de código en el bloque de texto entre las etiquetas ```markdown```. Por favor, asegúrate de incluir el código real dentro de estas etiquetas para poder ayudarte con la explicación. Sin el código, no puedo dar una descripción detallada de lo que hace ni cómo funciona.
-
-```markdown
-
+</body>
+</html>
 ```
+
+### SVG-like Representation
+This file appears to represent an SVG diagram of interconnected rectangles, each labeled with text. It includes paths for connecting these shapes using arrowheads at the end.
+
+```svg
+<svg width="800" height="500">
+    <rect x="321.38748168945307" y="59.77500915527344" width="219.99999999999994" height="126.39997209821425" fill="#eef1f5"/>
+    <text x="431.387481689453" y="77.7750094277518" text-anchor="middle">Pedido</text>
+    <!-- Other elements omitted for brevity -->
+    
+    <path d="M 198.0875246865408 83.4238531104607 L 381.4874921526227 125.15116808835694" stroke="#111827"/>
+</svg>
+```
+
+### Markdown Files
+There are several Markdown files provided (`prueba.md`, `prueba2.md`, `prueba3.md`), but they currently do not contain any content. They could be used for documentation or notes related to the project.
+
+To summarize, this set of files seems to represent a basic HTML web page styled with Google Fonts and custom CSS, possibly in the context of developing a document layout or wireframe design using SVG representations. The Markdown files are empty placeholders that can potentially contain more detailed explanations or additional content.
 
 
 <a id="restricciones-semanticas-del-modelo-relacional"></a>
@@ -13782,6 +15757,649 @@ Parece que no has proporcionado un fragmento de código en el bloque de texto en
 
 <a id="herramientas-de-los-sistemas-gestores-de-bases-de-datos-no-relacionales-para-la-gestion-de-la-informacion-almacenada"></a>
 ## Herramientas de los sistemas gestores de bases de datos no relacionales para la gestión de la información almacenada
+
+
+
+<a id="proyectos"></a>
+# Proyectos
+
+<a id="login"></a>
+## Login
+
+### creamos base de datos
+<small>Creado: 2025-12-05 10:27</small>
+
+`001-creamos base de datos.sql`
+
+```sql
+CREATE DATABASE IF NOT EXISTS superaplicacion
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE superaplicacion;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL UNIQUE,
+    contrasena VARCHAR(255) NOT NULL,
+    nombrecompleto VARCHAR(150) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+```
+
+### creamos usuario
+<small>Creado: 2025-12-05 10:31</small>
+
+`002-creamos usuario.sql`
+
+```sql
+CREATE USER 
+'superaplicacion'@'localhost' 
+IDENTIFIED  BY 'Superaplicacion123$';
+
+GRANT USAGE ON *.* TO 'superaplicacion'@'localhost';
+
+ALTER USER 'superaplicacion'@'localhost' 
+REQUIRE NONE 
+WITH MAX_QUERIES_PER_HOUR 0 
+MAX_CONNECTIONS_PER_HOUR 0 
+MAX_UPDATES_PER_HOUR 0 
+MAX_USER_CONNECTIONS 0;
+
+GRANT ALL PRIVILEGES ON superaplicacion.* 
+TO 'superaplicacion'@'localhost';
+
+FLUSH PRIVILEGES;
+```
+
+### comprobacion exitosa
+<small>Creado: 2025-12-05 10:33</small>
+
+`003-comprobacion exitosa.sql`
+
+```sql
+SELECT 
+*
+FROM usuarios
+WHERE
+usuario = 'jlopez'
+AND
+contrasena = '1234segura';
+```
+
+### comprobacion fallida
+<small>Creado: 2025-12-05 10:35</small>
+
+`004-comprobacion fallida.sql`
+
+```sql
+SELECT 
+*
+FROM usuarios
+WHERE
+usuario = 'jlopez'
+AND
+contrasena = '1234seguraZ';
+```
+
+### diagrama
+<small>Creado: 2025-12-05 10:38</small>
+
+`diagrama.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Diagrama exportado</title>
+<style>
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f3f3f7;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.page {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  width: 664.1374569847468px;
+  height: 310.9374782017298px;
+  overflow: visible;
+}
+
+/* formas básicas */
+.shape {
+  position: absolute;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 6px 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #9ca3af;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.shape.rectangle {
+  border-radius: 4px;
+}
+
+.shape.pill {
+  border-radius: 999px;
+}
+
+.shape.circle {
+  border-radius: 999px;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  justify-content: center;
+}
+
+/* base de datos */
+.shape.db {
+  min-width: 120px;
+  min-height: 60px;
+  padding-top: 20px;
+  border-radius: 60px / 16px;
+  background: linear-gradient(180deg, #e5e7eb 0%, #ffffff 40%, #e5e7eb 100%);
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+.shape.db::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid #9ca3af;
+  background: radial-gradient(circle at 50% 30%, #ffffff 0%, #e5e7eb 70%);
+}
+.shape.db::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  right: 8px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(156, 163, 175, 0.6);
+  border-top: none;
+  background: radial-gradient(circle at 50% 70%, #e5e7eb 0%, #d1d5db 70%);
+}
+
+/* entidades ER */
+.shape.entity {
+  width: 220px;
+  min-height: 80px;
+  background: #ffffff;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  overflow: hidden;
+  padding: 0;
+}
+.entity-header {
+  background: #f3f4f6;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+.entity-properties {
+  flex: 1;
+  padding: 4px 4px 0 4px;
+}
+.entity-property {
+  display: grid;
+  grid-template-columns: 14px 1fr 14px;
+  align-items: center;
+  column-gap: 4px;
+  padding: 2px 0;
+}
+.entity-property .property-name {
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* puertos */
+.port {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #111827;
+  background: #ffffff;
+}
+.port-left { justify-self: start; }
+.port-right { justify-self: end; }
+
+/* flechas rectas */
+.arrow {
+  position: absolute;
+  height: 2px;
+  background: #111827;
+  transform-origin: 0 50%;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #111827;
+}
+.arrow-double::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #111827;
+}
+
+/* flechas ortogonales */
+.ortho-arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ortho-arrow .ortho-seg {
+  position: absolute;
+  background: #111827;
+}
+.ortho-seg.seg-horizontal { height: 2px; }
+.ortho-seg.seg-vertical { width: 2px; }
+.ortho-arrowhead {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.ortho-arrowhead.dir-right {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #111827;
+}
+.ortho-arrowhead.dir-left {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #111827;
+}
+.ortho-arrowhead.dir-down {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #111827;
+}
+.ortho-arrowhead.dir-up {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid #111827;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="shape rectangle" style="left:40px;top:142.89999825613833px;width:119.99999273390992px;height:39.99999999999998px;">Login</div>
+<div class="shape rectangle" style="left:208.88750348772314px;top:142.37499418712792px;width:119.99997820172986px;height:39.99999999999998px;">Comprobación</div>
+<div class="shape pill" style="left:364.137486049107px;top:94.77499825613836px;width:119.99999999999994px;height:39.99999636695497px;">exito</div>
+<div class="shape rectangle" style="left:504.1374569847468px;top:40px;width:119.99999999999994px;height:39.99999636695497px;">Panel</div>
+<div class="shape pill" style="left:342.2125244140624px;top:230.93749999999991px;width:119.99990554082956px;height:39.999978201729895px;">no exito</div>
+<div class="arrow" style="left:159.99999273390992px;top:162.71348212594523px;width:48.88774696323901px;transform:rotate(-0.0031085923449398274rad);"></div>
+<div class="arrow" style="left:328.887481689453px;top:143.97886235876672px;width:36.86963318641043px;transform:rotate(-0.2975028468781133rad);"></div>
+<div class="arrow" style="left:298.99617114958664px;top:182.37499418712792px;width:87.76699017726521px;transform:rotate(0.5863348100070882rad);"></div>
+<div class="arrow" style="left:475.2556832840273px;top:94.77499825613836px;width:40.551059028262515px;transform:rotate(-0.37294064942234467rad);"></div>
+<div class="arrow" style="left:342.2125244140624px;top:233.45890820830778px;width:189.7865292535696px;transform:rotate(-2.858127362062493rad);"></div>
+</div>
+</body>
+</html>
+```
+
+### diagrama
+<small>Creado: 2025-12-05 10:38</small>
+
+`diagrama.json`
+
+```json
+{
+  "formas": [
+    {
+      "id": "forma-1",
+      "tipo": "rectangle",
+      "left": "145.417px",
+      "top": "158.715px",
+      "width": "",
+      "height": "",
+      "texto": "Login"
+    },
+    {
+      "id": "forma-2",
+      "tipo": "rectangle",
+      "left": "314.305px",
+      "top": "158.198px",
+      "width": "",
+      "height": "",
+      "texto": "Comprobación"
+    },
+    {
+      "id": "forma-3",
+      "tipo": "pill",
+      "left": "469.554px",
+      "top": "110.588px",
+      "width": "",
+      "height": "",
+      "texto": "exito"
+    },
+    {
+      "id": "forma-4",
+      "tipo": "rectangle",
+      "left": "609.558px",
+      "top": "55.8232px",
+      "width": "",
+      "height": "",
+      "texto": "Panel"
+    },
+    {
+      "id": "forma-5",
+      "tipo": "pill",
+      "left": "447.632px",
+      "top": "246.76px",
+      "width": "",
+      "height": "",
+      "texto": "no exito"
+    }
+  ],
+  "flechas": [
+    {
+      "desde": {
+        "shapeId": "forma-1",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-2",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-2",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-3",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-2",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-5",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-3",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-4",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-5",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-1",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    }
+  ]
+}
+```
+
+### diagrama
+<small>Creado: 2025-12-05 10:38</small>
+
+`diagrama.svg`
+
+```
+<svg xmlns="http://www.w3.org/2000/svg" width="664.1374569847468" height="310.9374782017298" viewBox="0 0 664.1374569847468 310.9374782017298">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<rect class="shape-rect" x="40" y="142.89999825613833" width="119.99999273390992" height="39.99999999999998" rx="4" ry="4" />
+<text x="99.99999636695496" y="166.89999825613833" text-anchor="middle">Login</text>
+<rect class="shape-rect" x="208.88750348772314" y="142.37499418712792" width="119.99997820172986" height="39.99999999999998" rx="4" ry="4" />
+<text x="268.8874925885881" y="166.37499418712792" text-anchor="middle">Comprobación</text>
+<rect class="shape-rect" x="364.137486049107" y="94.77499825613836" width="119.99999999999994" height="39.99999636695497" rx="19.999998183477484" ry="19.999998183477484" />
+<text x="424.137486049107" y="118.77499643961585" text-anchor="middle">exito</text>
+<rect class="shape-rect" x="504.1374569847468" y="40" width="119.99999999999994" height="39.99999636695497" rx="4" ry="4" />
+<text x="564.1374569847468" y="63.99999818347749" text-anchor="middle">Panel</text>
+<rect class="shape-rect" x="342.2125244140624" y="230.93749999999991" width="119.99990554082956" height="39.999978201729895" rx="19.999989100864948" ry="19.999989100864948" />
+<text x="402.21247718447717" y="254.93748910086487" text-anchor="middle">no exito</text>
+<path class="conn" d="M 159.99999273390992 162.71348212594523 L 208.88750348772314 162.56151029473364" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 328.887481689453 143.97886235876672 L 364.137486049107 133.1711316096764" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 298.99617114958664 182.37499418712792 L 372.10381503140616 230.93749999999991" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 475.2556832840273 94.77499825613836 L 513.0192597498265 79.99999636695497" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 342.2125244140624 233.45890820830778 L 159.99999273390992 180.37859184879966" marker-end="url(#arrow-end)" />
+</svg>
+```
+
+### exito
+<small>Creado: 2025-12-05 11:01</small>
+
+`exito.php`
+
+```
+<?php
+	session_start();
+  if(!isset($_SESSION['usuario'])){
+  	die("Te has intentado colar, pero no ha colado");
+  }
+?>
+
+Si estas viendo esto es que has entrado correctamente
+```
+
+### login
+<small>Creado: 2025-12-05 10:45</small>
+
+`login.html`
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+    <style>
+      body,html{margin:0px;padding:0px;width:100%;height:100%;}
+      body{display:flex;justify-content:center;align-items:center;
+      background:lightgray;}
+      form{display:flex;flex-direction:column;width:200px;height:200px;
+      background:white;padding:20px;align-items:center;justify-content:center;gap:10px;}
+      input{width:100%;padding:10px;box-sizing:border-box;border:1px solid lightgray;}
+    </style>
+  </head>
+  <body>
+    <form action="procesa.php" method="POST">
+      <input type="text" name="usuario" placeholder="usuario">
+      <input type="text" name="contrasena" placeholder="contraseña">
+      <input type="submit">
+    </form>
+  </body>
+</html>
+```
+
+### procesa
+<small>Creado: 2025-12-05 11:02</small>
+
+`procesa.php`
+
+```
+<?php
+	session_start(); // Arranco una sesion
+  $host = "localhost";
+  $user = "superaplicacion";
+  $pass = "Superaplicacion123$";
+  $db   = "superaplicacion";
+
+  $conexion = new mysqli($host, $user, $pass, $db);
+  
+	// Comprobacion exitosa pero mirando los datos que vienen del formulario en POST
+  $sql = "
+  	SELECT 
+    *
+    FROM usuarios
+    WHERE
+    usuario = '".$_POST['usuario']."'
+    AND
+    contrasena = '".$_POST['contrasena']."';
+  ";
+	
+  $resultado = $conexion->query($sql);
+
+  if ($fila = $resultado->fetch_assoc()) {	// Si es cierto que hay un resultado
+    $_SESSION['usuario'] = 'si';
+    header("Location: exito.php");					// En ese caso vamos a la pagina de exito
+  }else{																		// Si no hay ningun resultado
+  	header("Location: login.html");					// En ese caso volvemos al login
+  }
+
+  $conexion->close();
+  
+?>
+```
+
+
+<a id="crud"></a>
+## CRUD
+
+### Creamos base de datos de clientes
+<small>Creado: 2025-12-10 12:50</small>
+
+`001-Creamos base de datos de clientes.sql`
+
+```sql
+-- 1. Create database
+CREATE DATABASE IF NOT EXISTS empleados
+    DEFAULT CHARACTER SET utf8mb4
+    COLLATE utf8mb4_spanish_ci;
+
+-- 2. Use database
+USE empleados;
+
+-- 3. Create table empleados
+DROP TABLE IF EXISTS empleados;
+
+CREATE TABLE empleados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    puesto VARCHAR(100) NOT NULL,
+    salario DECIMAL(10,2) NOT NULL,
+    fecha_contratacion DATE NOT NULL,
+    departamento VARCHAR(100)
+);
+
+-- 4. Insert sample data
+INSERT INTO empleados (nombre, puesto, salario, fecha_contratacion, departamento) VALUES
+('Ana Torres', 'Administrativa', 21000.00, '2021-03-15', 'Administración'),
+('Luis Martínez', 'Desarrollador Backend', 32000.00, '2020-11-02', 'IT'),
+('Marta López', 'Desarrolladora Frontend', 30000.00, '2022-01-10', 'IT'),
+('Carlos Pérez', 'Comercial', 25000.00, '2019-07-08', 'Ventas'),
+('Elena García', 'Marketing Specialist', 27000.00, '2021-09-23', 'Marketing'),
+('Javier Ruiz', 'Técnico de Soporte', 24000.00, '2020-02-14', 'Soporte'),
+('Patricia Sánchez', 'Recursos Humanos', 26000.00, '2018-06-20', 'RRHH'),
+('Sergio Gómez', 'Data Analyst', 35000.00, '2022-05-01', 'Datos'),
+('Raquel Navarro', 'Diseñadora UX/UI', 29000.00, '2021-12-01', 'IT'),
+('David Fernández', 'Contable', 23000.00, '2019-10-30', 'Finanzas');
+```
+
+### usuario con permisos
+<small>Creado: 2025-12-10 12:53</small>
+
+`002-usuario con permisos.sql`
+
+```sql
+CREATE USER 
+'empleados'@'localhost' 
+IDENTIFIED  BY 'Empleados123$';
+
+GRANT USAGE ON *.* TO 'empleados'@'localhost';
+
+ALTER USER 'empleados'@'localhost' 
+REQUIRE NONE 
+WITH MAX_QUERIES_PER_HOUR 0 
+MAX_CONNECTIONS_PER_HOUR 0 
+MAX_UPDATES_PER_HOUR 0 
+MAX_USER_CONNECTIONS 0;
+
+GRANT ALL PRIVILEGES ON empleados.* 
+TO 'empleados'@'localhost';
+
+FLUSH PRIVILEGES;
+```
 
 
 
