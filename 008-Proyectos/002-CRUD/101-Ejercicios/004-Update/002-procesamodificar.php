@@ -22,7 +22,8 @@
   	// 3.-Pintar un formulario en pantalla
     echo '
     	<form action="003-procesaractualizacion.php" method="POST">
-      	<input type="text" name="nombre" placeholder="nombre" value="'.$fila['nombre'].'">
+      	<input type="hidden" name="id" value="'.$id.'">
+        <input type="text" name="nombre" placeholder="nombre" value="'.$fila['nombre'].'">
         <input type="text" name="puesto" placeholder="puesto" value="'.$fila['puesto'].'">
         <input type="text" name="salario" placeholder="salario" value="'.$fila['salario'].'">
         <input type="text" name="fecha_contratacion" placeholder="fecha_contratacion" value="'.$fila['fecha_contratacion'].'">
