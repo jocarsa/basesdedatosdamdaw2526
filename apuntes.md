@@ -87,25 +87,37 @@
 <a id="ficheros-planos-indexados-acceso-directo-entre-otros"></a>
 ## Ficheros (planos, indexados, acceso directo, entre otros)
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/001-Almacenamiento%20de%20la%20informaci%C3%B3n/001-Ficheros%20%28planos%2C%20indexados%2C%20acceso%20directo%2C%20entre%20otros%29)
+
 
 <a id="bases-de-datos-conceptos-usos-y-tipos-segun-el-modelo-de-datos-la-ubicacion-de-la-informacion"></a>
 ## Bases de datos. Conceptos, usos y tipos según el modelo de datos, la ubicación de la información
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/001-Almacenamiento%20de%20la%20informaci%C3%B3n/002-Bases%20de%20datos.%20Conceptos%2C%20usos%20y%20tipos%20seg%C3%BAn%20el%20modelo%20de%20datos%2C%20la%20ubicaci%C3%B3n%20de%20la%20informaci%C3%B3n)
 
 
 <a id="sistemas-gestores-de-base-de-datos-funciones-componentes-y-tipos"></a>
 ## Sistemas gestores de base de datos Funciones, componentes y tipos
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/001-Almacenamiento%20de%20la%20informaci%C3%B3n/003-Sistemas%20gestores%20de%20base%20de%20datos%20Funciones%2C%20componentes%20y%20tipos)
+
 
 <a id="bases-de-datos-centralizadas-y-bases-de-datos-distribuidas-tecnicas-de-fragmentacion"></a>
 ## Bases de datos centralizadas y bases de datos distribuidas. Técnicas de fragmentación
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/001-Almacenamiento%20de%20la%20informaci%C3%B3n/004-Bases%20de%20datos%20centralizadas%20y%20bases%20de%20datos%20distribuidas.%20T%C3%A9cnicas%20de%20fragmentaci%C3%B3n)
 
 
 <a id="legislacion-sobre-proteccion-de-datos"></a>
 ## Legislación sobre protección de datos
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/001-Almacenamiento%20de%20la%20informaci%C3%B3n/005-Legislaci%C3%B3n%20sobre%20protecci%C3%B3n%20de%20datos)
+
 
 <a id="big-data-introduccion-analisis-de-datos-inteligencia-de-negocios"></a>
 ## Big Data introducción, análisis de datos, inteligencia de negocios
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/001-Almacenamiento%20de%20la%20informaci%C3%B3n/006-Big%20Data%20introducci%C3%B3n%2C%20an%C3%A1lisis%20de%20datos%2C%20inteligencia%20de%20negocios)
 
 
 
@@ -114,6 +126,8 @@
 
 <a id="modelo-de-datos"></a>
 ## Modelo de datos
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/001-Modelo%20de%20datos)
 
 ### Introducción a los ejercicios
 
@@ -156,6 +170,8 @@ Estas actividades están diseñadas para que los estudiantes se familiaricen con
 
 <a id="terminologia-del-modelo-relacional"></a>
 ## Terminología del modelo relacional
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/002-Terminolog%C3%ADa%20del%20modelo%20relacional)
 
 ### Introducción a los ejercicios
 
@@ -253,6 +269,8 @@ Estas actividades proporcionan una secuencia lógica desde la instalación hasta
 
 <a id="tipos-de-datos"></a>
 ## Tipos de datos
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/003-Tipos%20de%20datos)
 
 ### Introducción a los ejercicios
 
@@ -409,6 +427,8 @@ WHERE dni = '11111111A';
 
 <a id="claves-primarias"></a>
 ## Claves primarias
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/004-Claves%20primarias)
 
 ### Introducción a los ejercicios
 
@@ -574,6 +594,8 @@ SELECT * FROM clientes;
 
 <a id="restricciones-de-validacion"></a>
 ## Restricciones de validación
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/005-Restricciones%20de%20validaci%C3%B3n)
 
 ### Introducción a los ejercicios
 
@@ -998,6 +1020,8 @@ Los estudiantes deben diseñar pruebas unitarias que inyecten datos incorrectos 
 
 <a id="indices-caracteristicas"></a>
 ## Índices. Características
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/006-%C3%8Dndices.%20Caracter%C3%ADsticas)
 
 ### Introducción a los ejercicios
 
@@ -2037,6 +2061,8 @@ Este script proporcionará una interfaz interactiva para gestionar una base de d
 <a id="el-valor-null"></a>
 ## El valor NULL
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/007-El%20valor%20NULL)
+
 ### Introducción a los ejercicios
 
 Esta carpeta contiene ejercicios que te introducirán al concepto del valor NULL en bases de datos relacionales, específicamente enfocados en MySQL y SQL. Los problemas trabajan con la creación y manipulación de una tabla llamada "pedidos", permitiéndote entender cómo manejar campos vacíos o sin información desde un punto de vista práctico y conceptual. A través de estos ejercicios, practicarás habilidades esenciales como el uso del comando SQL para crear tablas, así como la importancia de considerar NULL en tus estructuras de datos para evitar errores y asegurar una gestión eficiente de información.
@@ -2101,6 +2127,8 @@ CREATE TABLE pedidos (
 
 <a id="claves-ajenas"></a>
 ## Claves ajenas
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/008-Claves%20ajenas)
 
 ### Introducción a los ejercicios
 
@@ -2346,6 +2374,8 @@ Estas actividades están diseñadas para proporcionar una comprensión sólida d
 <a id="vistas"></a>
 ## Vistas
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/009-Vistas)
+
 ### Introducción a los ejercicios
 
 En esta sesión de ejercicios, te centrarás en la creación y utilización de vistas en SQL, un concepto clave para gestionar bases de datos relacionales. Las vistas permiten simplificar consultas complejas y proteger ciertos aspectos de los datos al proporcionar una representación virtual de uno o varios conjuntos de resultados que se pueden tratar como tablas. En el ejercicio propuesto, aprenderás a crear una vista que combina información desde dos tablas diferentes (personas y emails), mostrando cómo unir datos para obtener información más completa sobre los registros en tu base de datos.
@@ -2419,6 +2449,8 @@ SELECT * FROM personas_correos; -- se comporta como una tabla
 
 <a id="usuarios-privilegios"></a>
 ## Usuarios. Privilegios
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/010-Usuarios.%20Privilegios)
 
 ### Introducción a los ejercicios
 
@@ -2512,13 +2544,19 @@ Estas actividades están diseñadas para permitir que los estudiantes exploren d
 <a id="lenguaje-de-descripcion-de-datos-ddl"></a>
 ## Lenguaje de descripción de datos (DDL)
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/011-Lenguaje%20de%20descripci%C3%B3n%20de%20datos%20%28DDL%29)
+
 
 <a id="lenguaje-de-control-de-datos-dcl"></a>
 ## Lenguaje de control de datos (DCL)
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/012-Lenguaje%20de%20control%20de%20datos%20%28DCL%29)
+
 
 <a id="ejercicio-de-final-de-unidad"></a>
 ## Ejercicio de final de unidad
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/101-Ejercicio%20de%20final%20de%20unidad)
 
 ### Introducción a los ejercicios
 
@@ -3085,6 +3123,8 @@ print("El total de la factura es: ",total_factura)
 <a id="simulacro-examen"></a>
 ## Simulacro examen
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/102-Simulacro%20examen)
+
 ### Introducción a los ejercicios
 
 Este conjunto de ejercicios está diseñado para que los estudiantes practiquen la creación y gestión de una base de datos relacional en MySQL, utilizando un modelo de datos comúnmente usado en aplicaciones web como blogs. Los alumnos aprenderán a crear tablas con claves primarias, establecer relaciones entre tablas mediante claves foráneas, realizar operaciones JOIN para combinar datos de diferentes tablas y crear vistas para simplificar consultas complejas. Además, se practicarán los permisos de acceso necesarios para gestionar usuarios en la base de datos.
@@ -3126,6 +3166,8 @@ Este conjunto de ejercicios está diseñado para que los estudiantes practiquen 
 
 <a id="simulacro-examen-miercoles"></a>
 ## Simulacro examen miercoles
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/103-Simulacro%20examen%20miercoles)
 
 ### Introducción a los ejercicios
 
@@ -3375,6 +3417,8 @@ FLUSH PRIVILEGES;
 <a id="examen-final"></a>
 ## Examen final
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/002-Bases%20de%20datos%20relacionales/104-Examen%20final)
+
 ### Introducción a los ejercicios
 
 En esta carpeta, encontrarás una serie de ejercicios que te ayudarán a familiarizarte con el manejo básico y avanzado de bases de datos relacionales utilizando SQL. Los ejercicios inician con la creación de una base de datos y dos tablas interrelacionadas: "Piezas" y "Categorias". A continuación, trabajas con inserción de datos y definición de relaciones entre las tablas mediante claves foráneas. También practicas consultas que involucran unir múltiples tablas para obtener información completa sobre registros relacionados, además de la creación de vistas para facilitar ciertas consultas frecuentes. Por último, aprendes a gestionar usuarios y privilegios en el sistema de bases de datos, lo cual es fundamental para la seguridad y administración adecuada del entorno de desarrollo.
@@ -3604,6 +3648,8 @@ FLUSH PRIVILEGES;
 
 <a id="proyeccion-seleccion-y-ordenacion-de-registros"></a>
 ## Proyección, selección y ordenación de registros
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/001-Proyecci%C3%B3n%2C%20selecci%C3%B3n%20y%20ordenaci%C3%B3n%20de%20registros)
 
 ### Introducción a los ejercicios
 
@@ -3926,6 +3972,8 @@ Estas actividades están diseñadas para ayudar a los estudiantes a dominar conc
 <a id="operadores-operadores-de-comparacion-operadores-logicos"></a>
 ## Operadores. Operadores de comparación. Operadores lógicos
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/002-Operadores.%20Operadores%20de%20comparaci%C3%B3n.%20Operadores%20l%C3%B3gicos)
+
 ### Introducción a los ejercicios
 
 En esta carpeta, trabajaremos con diferentes tipos de operadores en SQL para realizar consultas más avanzadas en una base de datos. Iniciamos mostrando cómo conectarse y visualizar información básica sobre los clientes. Luego, nos adentraremos en el uso de operadores aritméticos para realizar cálculos sencillos basados en los datos existentes en la tabla de clientes. Seguidamente, exploraremos los operadores de comparación para filtrar registros según ciertas condiciones y luego les daremos un alias descriptivo a estos resultados. Finalmente, aprenderemos a combinar condiciones utilizando el operador lógico AND para refinar aún más nuestros criterios de búsqueda en las consultas SQL. Estos ejercicios te ayudarán a desarrollar habilidades cruciales en la manipulación y análisis de datos mediante la utilización de diferentes tipos de operadores en SQL.
@@ -4121,6 +4169,8 @@ FROM clientes;
 
 <a id="consultas-de-resumen"></a>
 ## Consultas de resumen
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/003-Consultas%20de%20resumen)
 
 ### Introducción a los ejercicios
 
@@ -4384,6 +4434,8 @@ Estas actividades están diseñadas para ayudar a los alumnos a familiarizarse c
 
 <a id="agrupamiento-de-registros"></a>
 ## Agrupamiento de registros
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/004-Agrupamiento%20de%20registros)
 
 ### Introducción a los ejercicios
 
@@ -5069,6 +5121,8 @@ Estas actividades te permitirán adquirir una comprensión sólida tanto de SQL 
 <a id="composiciones-internas"></a>
 ## Composiciones internas
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/005-Composiciones%20internas)
+
 ### Introducción a los ejercicios
 
 En esta carpeta de ejercicios, los estudiantes trabajarán con la base de datos de una tienda ficticia, utilizando tanto SQL como Python para realizar consultas y operaciones básicas. Se crean primero las tablas necesarias en la base de datos y se insertan algunos registros de prueba para clientes y productos. Luego, se procede a crear un usuario con los permisos adecuados para interactuar con dicha base de datos.
@@ -5426,6 +5480,8 @@ Estas actividades permiten a los estudiantes comprender y practicar conceptos es
 
 <a id="composiciones-externas"></a>
 ## Composiciones externas
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/006-Composiciones%20externas)
 
 ### Introducción a los ejercicios
 
@@ -6075,13 +6131,19 @@ Estas actividades están diseñadas para cubrir una gama completa desde el manej
 <a id="subconsultas"></a>
 ## Subconsultas
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/007-Subconsultas)
+
 
 <a id="combinacion-de-multiples-selecciones"></a>
 ## Combinación de múltiples selecciones
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/008-Combinaci%C3%B3n%20de%20m%C3%BAltiples%20selecciones)
+
 
 <a id="optimizacion-de-consultas"></a>
 ## Optimización de consultas
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/003-Realizaci%C3%B3n%20de%20consultas/009-Optimizaci%C3%B3n%20de%20consultas)
 
 
 
@@ -6090,6 +6152,8 @@ Estas actividades están diseñadas para cubrir una gama completa desde el manej
 
 <a id="insercion-borrado-y-modificacion-de-registros"></a>
 ## Inserción, borrado y modificación de registros
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/004-Tratamiento%20de%20datos/001-Inserci%C3%B3n%2C%20borrado%20y%20modificaci%C3%B3n%20de%20registros)
 
 ### Introducción a los ejercicios
 
@@ -7692,20 +7756,51 @@ This consolidated file now handles both insert and delete operations efficiently
 <a id="integridad-referencial"></a>
 ## Integridad referencial
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/004-Tratamiento%20de%20datos/002-Integridad%20referencial)
+
 
 <a id="subconsultas-y-composiciones-en-ordenes-de-edicion"></a>
 ## Subconsultas y composiciones en órdenes de edición
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/004-Tratamiento%20de%20datos/003-Subconsultas%20y%20composiciones%20en%20%C3%B3rdenes%20de%20edici%C3%B3n)
 
 
 <a id="transacciones"></a>
 ## Transacciones
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/004-Tratamiento%20de%20datos/004-Transacciones)
+
 
 <a id="politicas-de-bloqueo-concurrencia"></a>
 ## Políticas de bloqueo. Concurrencia
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/004-Tratamiento%20de%20datos/005-Pol%C3%ADticas%20de%20bloqueo.%20Concurrencia)
+
+### Introducción a los ejercicios
+
+**Introducción**
+
+En este conjunto de ejercicios, se exploran diversas técnicas para tratar y manipular datos en PHP. Los archivos proporcionados contienen ejemplos prácticos de codificación, descodificación, cifrado, descifrado, hash y fuerza bruta.
+
+**Competencias y tipos de problemas**
+
+Los estudiantes podrán practicar y mejorar sus habilidades en las siguientes competencias:
+
+*   Comprender el uso de funciones de codificación y descodificación.
+*   Aprender sobre diferentes algoritmos de cifrado y descifrado.
+*   Familiarizarse con técnicas de hash para la autenticación.
+*   Practicar el análisis de seguridad en aplicaciones web.
+
+Los problemas incluyen ejercicios prácticos, como codificar y descodificar strings, calcular el valor ASCII de caracteres, realizar hash con MD5 y SHA1, y ejecutar una fuerza bruta con diferentes combinaciones de caracteres.
+
 ### codificar
 <small>Creado: 2025-12-05 13:41</small>
+
+#### Explicación
+
+Este código es utilizado para codificar una contraseña utilizando la función `base64_encode()` en PHP. Esta función convierte un string en un formato binario que puede ser almacenado o enviado a través de canales inseguros.
+
+En este caso, se define una contraseña original y luego se codifica utilizando `base64_encode()`. La contraseña es imprimida tanto antes como después de la codificación para comparar los resultados.
 
 `001-codificar.php`
 
@@ -7729,6 +7824,16 @@ This consolidated file now handles both insert and delete operations efficiently
 
 ### descodificar
 <small>Creado: 2025-12-05 13:43</small>
+
+#### Explicación
+
+El código que se encuentra en el archivo `002-descodificar.php` es un ejemplo de cómo codificar y descodificar una contraseña utilizando la función `base64_encode()` y `base64_decode()`, respectivamente.
+
+La primera parte del código muestra una contraseña original (`$contrasena`) y la imprime en pantalla. Luego, se codifica esta contraseña utilizando la función `base64_encode()` para convertirla en un formato de texto que no es legible para los humanos. Esta función utiliza algoritmos para codificar los caracteres en un formato binario más compacto.
+
+La segunda parte del código muestra el resultado de la codificación, que es una cadena de texto con caracteres que no son legibles para los humanos. Luego, se utiliza la función `base64_decode()` para descodificar este string y recuperar la contraseña original.
+
+Es importante destacar que las contraseñas codificadas con base64 pueden ser útiles en ciertas situaciones, como cuando se deben enviar contraseñas en un formato que no sea legible para los humanos. Sin embargo, es importante recordar que no hay forma de "desbloquear" una contraseña que se haya codificado con algoritmos fuertes, y que cualquier intento de hacerlo puede resultar en una contraseña inaccesible.
 
 `002-descodificar.php`
 
@@ -7759,6 +7864,16 @@ This consolidated file now handles both insert and delete operations efficiently
 ### funciones codificacion
 <small>Creado: 2025-12-05 13:47</small>
 
+#### Explicación
+
+Este código es una función llamada `codificar` que se encarga de codificar un string utilizando la base64. La función toma como parámetro un cadena de texto (`$cadena`) y lo convierte en una cadena de texto codificada utilizando el algoritmo de base64.
+
+La base64 es un conjunto de caracteres que se utiliza para codificar datos binarios en formato texto. Es utilizado comúnmente para enviar datos binarios por medios no binarios, como correos electrónicos o archivos.
+
+En este código, la función `codificar` llama a la función `base64_encode()` para codificar la cadena de texto `$cadena`. La función `base64_encode()` convierte la cadena de texto en una cadena de caracteres base64 que puede ser almacenada o enviada como texto.
+
+La función `codificar` también tiene un ciclo `for` que lo ejecuta 9 veces. En cada iteración, llama a la función `base64_encode()` para codificar la cadena de texto nuevamente, lo que significa que se codificará la cadena 9 veces en total. Sin embargo, es importante mencionar que el código no tiene sentido desde el punto de vista de la seguridad, ya que no hay un límite de iteraciones y se puede generar una cadena muy larga.
+
 `003-funciones codificacion.php`
 
 ```
@@ -7782,6 +7897,18 @@ This consolidated file now handles both insert and delete operations efficiently
 
 ### funcion descodificar
 <small>Creado: 2025-12-05 13:49</small>
+
+#### Explicación
+
+Este fragmento de código es una implementación básica de codificación y descodificación utilizando la función `base64_encode` y `base64_decode` del lenguaje PHP. La función `base64_encode` convierte un string en un formato binario que puede almacenarse o transmitirse de manera segura, mientras que `base64_decode` lo conversa nuevamente a texto.
+
+La primera función, `codificar`, recibe una cadena como entrada y la codifica utilizando `base64_encode`. Se repite este proceso 9 veces. La función devuelve el resultado finalmente codificado.
+
+La segunda función, `descodificar`, hace lo contrario. Recibe una cadena codificada y la descodifica con `base64_decode` nueve veces. Al hacerlo se convierte nuevamente la cadena en texto.
+
+El código también muestra cómo utilizar estas funciones para codificar y descodificar una contraseña específica, `"contraseñasegura1234"`. Primero la contraseña se imprime como texto; luego es codificada con `codificar` y se imprime en formato codificado. Finalmente, se descodifica con `descodificar` nuevamente y se imprime como texto original.
+
+En resumen, este código utiliza funciones de base64 para asegurar la seguridad al almacenar o transmitir datos sensibles, como contraseñas.
 
 `004-funcion descodificar.php`
 
@@ -7820,6 +7947,16 @@ This consolidated file now handles both insert and delete operations efficiently
 ### codificacion ascii
 <small>Creado: 2025-12-05 13:53</small>
 
+#### Explicación
+
+Este código se encarga de convertir una letra del alfabeto a su equivalente en ASCII y luego convertirlo nuevamente a la letra original. Es importante por varias razones:
+
+Primero, el código utiliza la función `ord()` para obtener un valor numérico que corresponde al ASCII de cada letra. En este caso se aplica a la letra 'a'. Este valor numérico es único para cada letra del alfabeto.
+
+Luego, se utiliza la función `chr()` para convertir ese valor numérico nuevamente en una letra. Esto es importante porque si simplemente imprimimos el valor numérico, no podemos leerlo y obtener la letra original. La función `chr()` permite realizar este proceso correctamente, lo que hace que el código funcione.
+
+Finalmente, se imprimen los valores para poder ver el resultado del trabajo del código.
+
 `005-codificacion ascii.php`
 
 ```
@@ -7840,6 +7977,14 @@ This consolidated file now handles both insert and delete operations efficiently
 
 ### codificaromana
 <small>Creado: 2025-12-05 13:59</small>
+
+#### Explicación
+
+Este código PHP se encarga de codificar y decodificar un texto en romano. La función `codificaRomana` toma una cadena como entrada, suma 10 a cada carácter utilizando el código ASCII, y devuelve la nueva cadena con estos cambios.
+
+La función `descodificaRomana` realiza lo contrario, restando 10 a cada carácter de la cadena original. El código utiliza un bucle for para recorrer cada caracter de la cadena.
+
+El código también incluye una variable `$original` que contiene el texto "Hola esto es un texto que estoy escribiendo para hacer una prueba con algo más largo". Luego, se llama a las funciones `codificaRomana` y `descodificaRomana` con esta variable como entrada. Finalmente, se imprimen los resultados en pantalla.
 
 `006-codificaromana.php`
 
@@ -7876,6 +8021,24 @@ This consolidated file now handles both insert and delete operations efficiently
 ### hasheo
 <small>Creado: 2025-12-05 14:05</small>
 
+#### Explicación
+
+**Introducción a la Hashing de datos**
+
+En este ejercicio, vamos a explorar el concepto de hashing, que es una técnica para convertir un valor de entrada en un valor de salida único y no reversible.
+
+El código proporcionado utiliza dos funciones de hashing: `md5` y `sha1`, ambas desarrolladas por la comunidad de seguridad informática. Estas funciones toman como entrada un string (cadena de texto) y devuelven una cadena de caracteres única, que se conoce como "hash".
+
+**Cómo funciona el código**
+
+El código establece una cadena de texto llamada `$cadena` y la imprime en pantalla utilizando `echo`. Luego, utiliza las funciones `md5` y `sha1` para hashing esta cadena y almacena los resultados en variables llamadas `$picadillo1` y `$picadillo2`, respectivamente.
+
+Cada vez que se ejecuta el código, se obtiene un hash diferente debido a la naturaleza aleatoria de las funciones `md5` y `sha1`. Esto significa que si se modifica la cadena original, los hashes resultantes también cambiarán.
+
+**Importancia del hashing**
+
+El hashing es una herramienta valiosa en la seguridad informática, ya que ayuda a proteger la integridad de datos. Una vez que se crea un hash, no es posible determinar el valor original sin utilizar técnicas complejas y poderosas de criptografía. En resumen, el hashing ofrece una forma segura de almacenar y comparar datos.
+
 `007-hasheo.php`
 
 ```
@@ -7902,6 +8065,18 @@ This consolidated file now handles both insert and delete operations efficiently
 
 ### condicion del picadillo
 <small>Creado: 2025-12-05 14:07</small>
+
+#### Explicación
+
+Este código de PHP es una pequeña aplicación que simula un sistema de autenticación. A continuación, te explicaré cómo funciona:
+
+El código comienza creando una variable `$cadena` y asignándole el valor "Hola". Luego, utiliza la función `echo` para imprimir el valor de esta variable en la pantalla, seguido de una línea de salto (`<br>`). Esto es solo para visualizar los valores de las variables.
+
+Luego, se crea un hash mediante la función `md5`, que comparte el mismo nombre que un alimento picado. Este código crea un nuevo valor llamado `$picadillo1` que representa el hash de la primera cadena ("Hola"). De manera similar, se repite el proceso con otra cadena ("Hola") para crear otro hash ($picadillo2).
+
+En resumen, este código está simulando cómo se generan los hashes de autenticación en un sistema. El objetivo es calcular un valor único que represente una cadena específica.
+
+Este tipo de cálculo es importante debido a su uso común en la seguridad y el acceso control de sistemas, ya que permite identificar y verificar credenciales o contraseñas de manera segura.
 
 `008-condicion del picadillo.php`
 
@@ -7938,6 +8113,14 @@ This consolidated file now handles both insert and delete operations efficiently
 ### comprobador de picadillo
 <small>Creado: 2025-12-05 14:13</small>
 
+#### Explicación
+
+Este fragmento de código es un ejemplo de cómo se puede utilizar el algoritmo MD5 para comparar contraseñas en una base de datos. En este caso, tenemos un "picadillo" predefinido que se utiliza como contraseña y una entrada del usuario que también se convierte a MD5 antes de ser comparada con el picadillo.
+
+El código funciona de la siguiente manera: se envía una solicitud HTTP POST a un servidor que contiene una contraseña proporcionada por el usuario. La contraseña se procesa utilizando el algoritmo MD5, lo que significa que se convierte a una cadena hexadecimal y se reduce su tamaño para crear una "firma" única que representa la contraseña original. Luego, esta firma se compara con la "firma" predefinida del picadillo.
+
+La importancia de este código radica en la seguridad de la base de datos. En lugar de almacenar contraseñas en su forma original, se almacenan "firmas" que son más fáciles de procesar y comparar. Sin embargo, como se ve en este ejemplo, esta técnica no es segura porque permitiría a un atacante hacer una "firma" para cualquier contraseña utilizando el picadillo conocido, lo que haría que la base de datos sea vulnerable al ataque.
+
 `009-comprobador de picadillo.php`
 
 ```
@@ -7964,6 +8147,14 @@ This consolidated file now handles both insert and delete operations efficiently
 ### fuerza bruta
 <small>Creado: 2025-12-05 14:19</small>
 
+#### Explicación
+
+Este código PHP se utiliza para realizar una fuerza bruta contra la función `md5()`, que es utilizada para generar un hash de una cadena de caracteres. El objetivo es encontrar todas las combinaciones posibles de 4 caracteres del alfabeto mayúsculo y minúsculo, y luego calcular el hash para cada combinación.
+
+El código funciona iterando sobre todos los posibles caracteres en el alfabeto (de 0 a 25, correspondientes a letras minúsculas y mayúsculas), y luego combina cada caracter con todos los otros caracteres para formar una secuencia de 4 caracteres. Luego, calcula el hash utilizando la función `md5()` y lo imprime en pantalla.
+
+Este código es importante porque muestra cómo se puede utilizar una fuerza bruta para intentar adivinar un valor secreto que se utiliza como entrada para una función hash. Sin embargo, es importante destacar que esta técnica debe usarse con precaución y solo para propósitos educativos o de investigación, ya que puede ser utilizada para realizar ataques cibernéticos maliciosos.
+
 `010-fuerza bruta.php`
 
 ```
@@ -7986,6 +8177,70 @@ for ($i = 0; $i < $len; $i++) {
 ?>
 ```
 
+### Actividades propuestas
+
+A continuación, te propongo una lista de actividades para el alumnado basadas en los ejercicios proporcionados:
+
+**Actividad 1: Identificación de Funciones**
+
+* Título: "Análisis de código: identificar funciones"
+* Descripción: Se proporciona un fragmento de código y se pide al alumnado que identifique la función que realiza un determinado proceso (por ejemplo, codificar una cadena).
+* Objetivo: Aprender a reconocer patrones en el código y utilizar lenguajes como `function` para definir funciones.
+
+**Actividad 2: Codificación de Cadenas**
+
+* Título: "Codificación de cadenas"
+* Descripción: Se proporciona una cadena de texto y se pide al alumnado que codificarla utilizando diferentes métodos (base64, ASCII, romana).
+* Objetivo: Aprender a utilizar funciones de codificación para proteger información sensible.
+
+**Actividad 3: Descodificación de Cadenas**
+
+* Título: "Descodificación de cadenas"
+* Descripción: Se proporciona una cadena codificada y se pide al alumnado que descodificarla utilizando diferentes métodos (base64, ASCII, romana).
+* Objetivo: Aprender a utilizar funciones de descodificación para recuperar información sensible.
+
+**Actividad 4: Hashing de Cadenas**
+
+* Título: "Hashing de cadenas"
+* Descripción: Se proporciona una cadena de texto y se pide al alumnado que calcular su hash utilizando diferentes algoritmos (md5, sha1).
+* Objetivo: Aprender a utilizar algoritmos de hashing para proteger información sensible.
+
+**Actividad 5: Comprobación de Picadillos**
+
+* Título: "Comprobación de picadillos"
+* Descripción: Se proporciona un picadillo y se pide al alumnado que comprobar si coincide con la contraseña proporcionada.
+* Objetivo: Aprender a utilizar comparaciones para determinar si una contraseña es válida.
+
+**Actividad 6: Fuerza Bruta**
+
+* Título: "Fuerza bruta"
+* Descripción: Se proporciona un conjunto de caracteres y se pide al alumnado que realizar una fuerza bruta para encontrar la contraseña correcta.
+* Objetivo: Aprender a utilizar técnicas de ingeniería social para obtener información sensible.
+
+**Actividad 7: Condición del Picadillo**
+
+* Título: "Condición del picadillo"
+* Descripción: Se proporciona un fragmento de código que utiliza una condición para comparar dos picadillos.
+* Objetivo: Aprender a utilizar condiciones en el lenguaje de programación.
+
+**Actividad 8: Comprobador de Picadillos**
+
+* Título: "Comprobador de picadillos"
+* Descripción: Se proporciona un comprobador de picadillos y se pide al alumnado que completarlo utilizando la información proporcionada.
+* Objetivo: Aprender a utilizar estructuras condicionales para determinar si una contraseña es válida.
+
+**Actividad 9: Hasheo**
+
+* Título: "Hasheo"
+* Descripción: Se proporciona un fragmento de código que utiliza hashing para proteger información sensible.
+* Objetivo: Aprender a utilizar algoritmos de hashing para proteger información sensible.
+
+**Actividad 10: Análisis de Código**
+
+* Título: "Análisis de código"
+* Descripción: Se proporciona un fragmento de código y se pide al alumnado que analizarlo para identificar patrones y procesos.
+* Objetivo: Aprender a reconocer patrones en el código y utilizar habilidades de análisis para mejorar la eficiencia del programa.
+
 
 
 <a id="programacion-de-bases-de-datos"></a>
@@ -7994,33 +8249,49 @@ for ($i = 0; $i < $len; $i++) {
 <a id="introduccion-lenguaje-de-programacion"></a>
 ## Introducción. Lenguaje de programación
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/005-Programaci%C3%B3n%20de%20bases%20de%20datos/001-Introducci%C3%B3n.%20Lenguaje%20de%20programaci%C3%B3n)
+
 
 <a id="variables-del-sistema-y-variables-de-usuario"></a>
 ## Variables del sistema y variables de usuario
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/005-Programaci%C3%B3n%20de%20bases%20de%20datos/002-Variables%20del%20sistema%20y%20variables%20de%20usuario)
 
 
 <a id="funciones"></a>
 ## Funciones
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/005-Programaci%C3%B3n%20de%20bases%20de%20datos/003-Funciones)
+
 
 <a id="estructuras-de-control-de-flujo"></a>
 ## Estructuras de control de flujo
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/005-Programaci%C3%B3n%20de%20bases%20de%20datos/004-Estructuras%20de%20control%20de%20flujo)
 
 
 <a id="procedimientos-almacenados-funciones-de-usuario"></a>
 ## Procedimientos almacenados. Funciones de usuario
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/005-Programaci%C3%B3n%20de%20bases%20de%20datos/005-Procedimientos%20almacenados.%20Funciones%20de%20usuario)
+
 
 <a id="eventos-y-disparadores"></a>
 ## Eventos y disparadores
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/005-Programaci%C3%B3n%20de%20bases%20de%20datos/006-Eventos%20y%20disparadores)
 
 
 <a id="excepciones"></a>
 ## Excepciones
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/005-Programaci%C3%B3n%20de%20bases%20de%20datos/007-Excepciones)
+
 
 <a id="cursores"></a>
 ## Cursores
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/005-Programaci%C3%B3n%20de%20bases%20de%20datos/008-Cursores)
 
 
 
@@ -8029,6 +8300,8 @@ for ($i = 0; $i < $len; $i++) {
 
 <a id="el-modelo-er-entidades-y-relaciones-cardinalidades-debilidad"></a>
 ## El modelo ER. Entidades y relaciones. Cardinalidades. Debilidad
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/006-Interpretaci%C3%B3n%20de%20Diagramas%20EntidadRelaci%C3%B3n/001-El%20modelo%20ER.%20Entidades%20y%20relaciones.%20Cardinalidades.%20Debilidad)
 
 ### Introducción a los ejercicios
 
@@ -9405,6 +9678,8 @@ Si tienes alguna otra pregunta específica sobre cómo implementar este diseño 
 
 <a id="el-modelo-er-ampliado-generalizacion-y-especializacion-agregacion"></a>
 ## El modelo ER ampliado. Generalización y especialización. Agregación
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/006-Interpretaci%C3%B3n%20de%20Diagramas%20EntidadRelaci%C3%B3n/002-El%20modelo%20ER%20ampliado.%20Generalizaci%C3%B3n%20y%20especializaci%C3%B3n.%20Agregaci%C3%B3n)
 
 ### Introducción a los ejercicios
 
@@ -12708,6 +12983,8 @@ Si deseas estilos adicionales o interactividad, puedes agregar más CSS y JavaSc
 <a id="paso-del-diagrama-er-al-modelo-relacional"></a>
 ## Paso del diagrama ER al modelo relacional
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/006-Interpretaci%C3%B3n%20de%20Diagramas%20EntidadRelaci%C3%B3n/003-Paso%20del%20diagrama%20ER%20al%20modelo%20relacional)
+
 ### Introducción a los ejercicios
 
 En base a los archivos proporcionados, se presentan dos diagramas de entidad-relación (ER) y sus representaciones en diferentes formatos. Los detalles son:
@@ -15723,17 +16000,25 @@ To summarize, this set of files seems to represent a basic HTML web page styled 
 <a id="restricciones-semanticas-del-modelo-relacional"></a>
 ## Restricciones semánticas del modelo relacional
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/006-Interpretaci%C3%B3n%20de%20Diagramas%20EntidadRelaci%C3%B3n/004-Restricciones%20sem%C3%A1nticas%20del%20modelo%20relacional)
+
 
 <a id="normalizacion-de-modelos-relacionales"></a>
 ## Normalización de modelos relacionales
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/006-Interpretaci%C3%B3n%20de%20Diagramas%20EntidadRelaci%C3%B3n/005-Normalizaci%C3%B3n%20de%20modelos%20relacionales)
 
 
 <a id="ejercicios"></a>
 ## Ejercicios
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/006-Interpretaci%C3%B3n%20de%20Diagramas%20EntidadRelaci%C3%B3n/101-Ejercicios)
+
 
 <a id="criterios-de-evaluacion"></a>
 ## Criterios de evaluación
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/006-Interpretaci%C3%B3n%20de%20Diagramas%20EntidadRelaci%C3%B3n/201-Criterios%20de%20evaluaci%C3%B3n)
 
 
 
@@ -15743,21 +16028,31 @@ To summarize, this set of files seems to represent a basic HTML web page styled 
 <a id="caracteristicas-de-las-bases-de-datos-no-relacionales"></a>
 ## Características de las bases de datos no relacionales
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/007-Uso%20de%20bases%20de%20datos%20no%20relacionales/001-Caracter%C3%ADsticas%20de%20las%20bases%20de%20datos%20no%20relacionales)
+
 
 <a id="tipos-de-bases-de-datos-no-relacionales"></a>
 ## Tipos de bases de datos no relacionales
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/007-Uso%20de%20bases%20de%20datos%20no%20relacionales/002-Tipos%20de%20bases%20de%20datos%20no%20relacionales)
 
 
 <a id="elementos-de-las-bases-de-datos-no-relacionales"></a>
 ## Elementos de las bases de datos no relacionales
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/007-Uso%20de%20bases%20de%20datos%20no%20relacionales/003-Elementos%20de%20las%20bases%20de%20datos%20no%20relacionales)
+
 
 <a id="sistemas-gestores-de-bases-de-datos-no-relacionales"></a>
 ## Sistemas gestores de bases de datos no relacionales
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/007-Uso%20de%20bases%20de%20datos%20no%20relacionales/004-Sistemas%20gestores%20de%20bases%20de%20datos%20no%20relacionales)
+
 
 <a id="herramientas-de-los-sistemas-gestores-de-bases-de-datos-no-relacionales-para-la-gestion-de-la-informacion-almacenada"></a>
 ## Herramientas de los sistemas gestores de bases de datos no relacionales para la gestión de la información almacenada
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/007-Uso%20de%20bases%20de%20datos%20no%20relacionales/005-Herramientas%20de%20los%20sistemas%20gestores%20de%20bases%20de%20datos%20no%20relacionales%20para%20la%20gesti%C3%B3n%20de%20la%20informaci%C3%B3n%20almacenada)
 
 
 
@@ -15767,8 +16062,84 @@ To summarize, this set of files seems to represent a basic HTML web page styled 
 <a id="login"></a>
 ## Login
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/001-Login)
+
+### Introducción a los ejercicios
+
+El problema es con el archivo `procesa.php` y cómo maneja la información del formulario de inicio de sesión. Aquí hay algunas sugerencias para mejorar la seguridad:
+
+1. **Usar prepared statements**: En lugar de concatenar las variables de entrada en la consulta SQL, usa un statement preparado con parámetros. Esto ayuda a evitar inyecciones de código.
+2. **Validar y limpiar los datos del formulario**: Antes de procesar los datos del formulario, valida que sean correctos y limpia cualquier información potencialmente maliciosa.
+3. **No utilizar `die()`**: En lugar de usar `die()` para mostrar un mensaje de error, puedes utilizar una respuesta HTTP más adecuada, como una códigos HTTP 401 (Unauthorized) o 403 (Forbidden).
+4. **Usar HTTPS**: Asegúrate de que la comunicación entre el cliente y el servidor sea segura mediante el uso de HTTPS.
+
+Aquí te muestro un ejemplo de cómo podrías modificar el archivo `procesa.php` para mejorar su seguridad:
+```php
+<?php
+
+session_start();
+
+$host = "localhost";
+$user = "superaplicacion";
+$pass = "Superaplicacion123$";
+$db   = "superaplicacion";
+
+$conexion = new mysqli($host, $user, $pass, $db);
+
+if ($conexion->connect_error) {
+    die("Conexión fallida: " . $conexion->connect_error);
+}
+
+$username = $_POST['usuario'];
+$password = $_POST['contrasena'];
+
+$stmt = $conexion->prepare("SELECT * FROM usuarios WHERE usuario = ? AND contrasena = ?");
+$stmt->bind_param("ss", $username, $password);
+$stmt->execute();
+$resultado = $stmt->get_result();
+
+if ($resultado->num_rows > 0) {
+    $_SESSION['usuario'] = 'si';
+    header("Location: exito.php");
+} else {
+    // No se encontró el usuario o la contraseña
+    http_response_code(401);
+    echo "Error de autenticación";
+}
+
+$conexion->close();
+
+?>
+```
+Recuerda que es importante seguir las mejores prácticas de seguridad y auditoría para proteger tus aplicaciones contra ataques maliciosos.
+
 ### creamos base de datos
 <small>Creado: 2025-12-05 10:27</small>
+
+#### Explicación
+
+**Creación de una base de datos y tabla**
+
+El código que se encuentra en el archivo `001-creamos base de datos.sql` es una instrucción SQL que crea una base de datos llamada "superaplicacion" y una tabla dentro de ella llamada "usuarios". Esta base de datos y tabla son fundamentales para cualquier aplicación que requiera almacenar información de usuarios.
+
+La primera línea, `CREATE DATABASE IF NOT EXISTS superaplicacion`, crea la base de datos con el nombre especificado. El "IF NOT EXISTS" significa que si ya existe una base de datos con ese nombre, no se creará nuevamente. Esto es importante para evitar errores y mejorar la eficiencia del sistema.
+
+La segunda línea, `CHARACTER SET utf8mb4`, establece el conjunto de caracteres utilizado para almacenar y manipular las données en la base de datos. En este caso, se utiliza un conjunto que puede manejar caracteres más complejos y extensos, como los caracteres cuneiformes.
+
+La tercera línea, `COLLATE utf8mb4_unicode_ci`, establece el orden alfabético utilizado para comparar las cadenas de texto almacenadas en la base de datos. En este caso, se utiliza un orden que es compatible con el idioma español y otros lenguas que utilizan caracteres cúrimenes.
+
+La siguiente línea, `USE superaplicacion;`, especifica que la base de datos "superaplicacion" debe ser utilizada para las siguientes instrucciones SQL. Esto evita tener que escribir el nombre completo de la base de datos en cada una de las instrucciones que se van a ejecutar.
+
+Finalmente, se crea la tabla "usuarios" con sus columnas correspondientes:
+
+- `id`: un campo de identificación único para cada usuario, autoincrementable y primario.
+- `usuario`: el nombre del usuario, de tipo cadena de texto (VARCHAR) con una longitud máxima de 50 caracteres. Este campo es único, lo que significa que no puede haber dos usuarios con el mismo nombre.
+- `contrasena`: la contraseña del usuario, de tipo cadena de texto (VARCHAR) con una longitud máxima de 255 caracteres. Esta columna es importante para la autenticación del usuario.
+- `nombrecompleto`: el nombre completo del usuario, de tipo cadena de texto (VARCHAR) con una longitud máxima de 150 caracteres.
+- `email`: el correo electrónico del usuario, de tipo cadena de texto (VARCHAR) con una longitud máxima de 100 caracteres. Este campo también es único, lo que significa que no puede haber dos usuarios con el mismo correo electrónico.
+- `creado_en`: la fecha y hora en que se creó el registro del usuario, autoactualizada automáticamente cuando se crea un nuevo usuario.
+
+La tabla "usuarios" utiliza el motor de base de datos InnoDB, que es recomendado para aplicaciones que requieren alta disponibilidad y escalabilidad. El conjunto de caracteres utf8mb4 y el orden alfabético utf8mb4_unicode_ci se seleccionan porque son compatibles con la mayoría de los lenguajes y caracteres utilizados en las aplicaciones web y móviles actuales.
 
 `001-creamos base de datos.sql`
 
@@ -15791,6 +16162,24 @@ CREATE TABLE IF NOT EXISTS usuarios (
 
 ### creamos usuario
 <small>Creado: 2025-12-05 10:31</small>
+
+#### Explicación
+
+**Creación de un usuario en la base de datos**
+
+Este fragmento de código es utilizado para crear un nuevo usuario en la base de datos y asignarle permisos específicos. 
+
+El comando `CREATE USER` se utiliza para crear un nuevo usuario, en este caso, `'superaplicacion'@'localhost'`. La opción `'@'` indica que el usuario es accesible desde la misma máquina que la base de datos.
+
+Luego, se asigna una contraseña utilizando la palabra clave `'IDENTIFIED BY'`, en este caso `'Superaplicacion123$'`.
+
+A continuación, se otorgan permisos al nuevo usuario. El comando `GRANT USAGE ON *.* TO 'superaplicacion'@'localhost';` le da el permiso de "usar" cualquier tabla o procedimiento almacenado (`*.*`) en la base de datos.
+
+Sin embargo, debido a las restricciones previas, este usuario puede realizar ninguna operación que requiera más que "uso", ya que se han establecido límites muy estrictos para este tipo de usuarios. El comando `ALTER USER 'superaplicacion'@'localhost' REQUIRE NONE ...` elimina la restricción de requisitos previos, lo que permite al usuario realizar operaciones con mayor libertad.
+
+Finalmente, el comando `GRANT ALL PRIVILEGES ON superaplicacion.* TO 'superaplicacion'@'localhost';` le otorga todos los permisos disponibles en la base de datos (`*`) a este usuario. El comando `FLUSH PRIVILEGES;` finaliza la creación del usuario y aplica las nuevas reglas.
+
+La importancia de esto es que estamos creando un nuevo usuario con un conjunto completo de permisos, lo cual puede ser útil para futuras aplicaciones o necesidades específicas en el desarrollo.
 
 `002-creamos usuario.sql`
 
@@ -15817,6 +16206,14 @@ FLUSH PRIVILEGES;
 ### comprobacion exitosa
 <small>Creado: 2025-12-05 10:33</small>
 
+#### Explicación
+
+Este fragmento de código es utilizado para seleccionar todos los registros de la tabla "usuarios" donde el campo "usuario" sea igual a "jlopez" y el campo "contrasena" sea igual a "1234segura".
+
+El código utiliza una consulta SQL, que es una solicitud que se envía al servidor base de datos para obtener información. En este caso, se está buscando un usuario específico con la condición de coincidir en ambos campos: nombre de usuario y contraseña.
+
+La importancia de este código radica en el hecho de que permite verificar si un usuario existe correctamente en la base de datos y si su contraseña es correcta. Este tipo de consultas son fundamentales para cualquier sistema de autenticación, como por ejemplo, los sistemas de login.
+
 `003-comprobacion exitosa.sql`
 
 ```sql
@@ -15832,6 +16229,16 @@ contrasena = '1234segura';
 ### comprobacion fallida
 <small>Creado: 2025-12-05 10:35</small>
 
+#### Explicación
+
+Este código SQL está diseñado para verificar la autenticidad de un usuario específico en una base de datos. Se utiliza el comando `SELECT` para buscar registros que coincidan con las condiciones especificadas.
+
+El primer paso es seleccionar todos los campos (`*`) del conjunto de datos `usuarios`, lo cual permite obtener toda la información del registro elegido. 
+
+Luego, se aplica un filtro utilizando las palabras clave `WHERE`. Esta palabra claves indica el lugar donde se deben aplicar las condiciones para filtrar los resultados.
+
+En este caso, se requiere que el campo `usuario` tenga como valor `'jlopez'`, y el campo `contrasena` tenga como valor `'1234seguraZ'`. El código busca un registro exacto en ambas columnas.
+
 `004-comprobacion fallida.sql`
 
 ```sql
@@ -15846,6 +16253,14 @@ contrasena = '1234seguraZ';
 
 ### diagrama
 <small>Creado: 2025-12-05 10:38</small>
+
+#### Explicación
+
+Este código es una representación visual de un diagrama ER (Entidades Relacionales) en formato SVG, que se utiliza para modelar y visualizar las relaciones entre tablas en una base de datos. El diagrama se exportó desde una herramienta de diseño de bases de datos y se guardó como archivo HTML.
+
+El código muestra cómo se representa cada componente del diagrama, como entidades, atributos, llaves y relaciones, utilizando diferentes elementos y estilos CSS. Por ejemplo, las entidades se representan con rectángulos, mientras que los atributos se muestran en forma de texto dentro de los rectángulos.
+
+El código también muestra cómo se utilizan flechas para indicar las relaciones entre las entidades. Por ejemplo, una flecha apuntando desde una entidad hacia otra indica una relación "uno a uno" o "uno a muchos".
 
 `diagrama.html`
 
@@ -16075,6 +16490,37 @@ body {
 ### diagrama
 <small>Creado: 2025-12-05 10:38</small>
 
+#### Explicación
+
+**Análisis del archivo JSON**
+
+El archivo `diagrama.json` contiene un diagrama de flujo en formato JSON. Este archivo es importante porque define la estructura y el comportamiento del sistema de login que se está desarrollando.
+
+**Estructura del archivo**
+
+El archivo se compone de dos secciones principales: "formas" y "flechas". La sección "formas" contiene información sobre las formas geométricas que se utilizarán en el diagrama, mientras que la sección "flechas" define las relaciones entre estas formas.
+
+**Formas**
+
+Las formas se definen como un arreglo de objetos, cada uno con las siguientes propiedades:
+
+* `id`: una identificación única para cada forma
+* `tipo`: el tipo de forma (rectángulo o pill)
+* `left` y `top`: las coordenadas x e y de la posición de la forma en el diagrama
+* `width` y `height`: las dimensiones de la forma, que se consideran vacías porque no se proporcionan valores explícitos
+
+**Flechas**
+
+Las flechas se definen como un arreglo de objetos, cada uno con las siguientes propiedades:
+
+* `desde` y `hasta`: las coordenadas de las formas que se relacionan mediante la flecha
+* `tipo`: el tipo de relación (simple o compleja)
+* `estilo`: el estilo de la flecha (recta o curva)
+
+**Importancia del archivo**
+
+El archivo `diagrama.json` es importante porque define la estructura y el comportamiento del sistema de login. El diagrama de flujo se utilizará para visualizar cómo funciona el sistema y como las diferentes formas y flechas interactúan entre sí. Este archivo puede ser utilizado en el desarrollo del código PHP que se encuentra en los archivos `procesa.php` y `exito.php`.
+
 `diagrama.json`
 
 ```json
@@ -16204,6 +16650,16 @@ body {
 ### diagrama
 <small>Creado: 2025-12-05 10:38</small>
 
+#### Explicación
+
+Este fragmento de código es una representación gráfica en formato SVG (Scalable Vector Graphics) que muestra un diagrama con varias formas geométricas y conexiones entre ellas. A continuación, te explico qué hace este código:
+
+El diagrama representa diferentes escenarios relacionados con la autenticación de acceso a un sistema. Hay dos secciones principales: "Login" y "Comprobación" que están conectadas por una línea. En la sección "Login", hay una forma rectangular con el texto "Login" en el centro, mientras que en la sección "Comprobación", hay otra forma rectangular con el texto "Comprobación". Ambas formas tienen bordes y colores diferentes.
+
+En las esquinas superiores izquierda y derecha de cada forma, hay un texto que indica si se ha obtenido acceso exitosamente o no. La conexión entre las dos secciones está marcada por una línea con un marker en la punta, lo que indica el inicio y final de la conexión.
+
+En resumen, este código representa un diagrama gráfico que muestra los diferentes pasos de autenticación en un sistema, incluyendo la verificación de acceso exitoso o no. Es importante para visualizar cómo se relacionan estas etapas y entender mejor el flujo de datos y procesos involucrados en el acceso a un sistema.
+
 `diagrama.svg`
 
 ```
@@ -16250,6 +16706,16 @@ body {
 ### exito
 <small>Creado: 2025-12-05 11:01</small>
 
+#### Explicación
+
+Este fragmento de código es parte de un script PHP que verifica si el usuario está autenticado antes de mostrar un mensaje de bienvenida.
+
+Primero, se utiliza la función `session_start()` para iniciar la sesión actual. Esto permite acceder a los datos almacenados en la sesión, como el usuario y su nivel de acceso.
+
+Luego, se utiliza una condición `if` para verificar si existe un elemento de la sesión llamado "usuario". Si no existe este elemento, significa que el usuario no está autenticado, por lo que se hace un `die` con un mensaje de error. Esto es un bloqueador de ejecución, lo cual significa que si llega a esa parte del código, es porque algo ha salido mal en la sesión y el programa no continuará.
+
+Si la condición anterior se cumple, entonces el usuario está autenticado y se muestra un mensaje de bienvenida personalizado.
+
 `exito.php`
 
 ```
@@ -16265,6 +16731,14 @@ Si estas viendo esto es que has entrado correctamente
 
 ### login
 <small>Creado: 2025-12-05 10:45</small>
+
+#### Explicación
+
+Este fragmento de código es el inicio del archivo HTML que contiene la interfaz de usuario para realizar una autenticación de acceso a un sistema. 
+
+Se comienza con las instrucciones básicas de estructuración HTML: `<!doctype html>` define el tipo de documento y `<html lang="es">` establece el idioma como español. La etiqueta `<head>` contiene información adicional sobre la página, como el título (`<title>Jose Vicente Carratala</title>`), las metas para la velocidad de carga y la velocidad de renderizado del navegador, y en este caso, un estilo (`<style>...</style>`) que define la apariencia del documento. 
+
+En este estilo se definen algunas propiedades visuales como el color de fondo y los bordes, lo cual ayuda a mejorar el aspecto general de la página web. También se definen las propiedades de las formaciones (en este caso, los input).
 
 `login.html`
 
@@ -16295,6 +16769,20 @@ Si estas viendo esto es que has entrado correctamente
 
 ### procesa
 <small>Creado: 2025-12-05 11:02</small>
+
+#### Explicación
+
+Este fragmento de código es responsable de verificar la autenticación del usuario en una aplicación web. Al iniciar sesión, se verifica si los datos introducidos por el usuario (usuario y contraseña) coinciden con los almacenados en la base de datos.
+
+En este caso, se utiliza un objeto `mysqli` para conectarse a la base de datos y realizar la consulta SQL para verificar los datos del usuario. La consulta se realiza utilizando los datos del formulario POST (`$_POST['usuario']` y `$_POST['contrasena']`) pero como es una práctica de seguridad no se reutilizan estos datos directamente en la consulta.
+
+Si la consulta devuelve resultados, se establece una variable de sesión llamada `usuario` con el valor "si", lo que indica que la autenticación ha sido exitosa. En este caso, se redirige al archivo `exito.php`.
+
+Si no se encuentran resultados en la consulta, se redirige al archivo `login.html`, indicando que la autenticación ha fallado.
+
+Es importante destacar que se utiliza una práctica de seguridad defensiva y vulnerable, ya que las variables de datos provenientes del formulario POST se reutilizan directamente dentro de la consulta SQL. Esto puede ser riesgoso si no se validan adecuadamente los datos de entrada, ya que podría permitir ataques de inyección de código SQL.
+
+En resumen, este fragmento de código es crucial para verificar la autenticación del usuario en una aplicación web, pero requiere una mayor atención a la seguridad para evitar vulnerabilidades.
 
 `procesa.php`
 
@@ -16333,12 +16821,103 @@ Si estas viendo esto es que has entrado correctamente
 ?>
 ```
 
+### Actividades propuestas
+
+El problema aquí es que no has configurado correctamente la conexión a tu base de datos. La sintaxis `$_POST['usuario']` y `$_POST['contrasena']` no son seguras, ya que permiten que cualquier usuario inyecte código SQL para intentar acceder a la base de datos.
+
+Además, el script `procesa.php` no comprueba si la sesión está iniciada correctamente, lo cual puede generar problemas si hay un error en la conexión a la base de datos o si el usuario intenta acceder a la página de exito varias veces.
+
+Aquí te dejo algunas sugerencias para mejorar la seguridad y la estabilidad del script:
+
+1. Utiliza prepared statements (consultas preparadas) para ejecutar consultas SQL. Esto te permite separar la lógica de la consulta de la información sensible que se utiliza en la consulta.
+2. Verifica si la sesión está iniciada correctamente antes de intentar acceder a la base de datos.
+3. Utiliza un método seguro para verificar las credenciales del usuario, como el método `password_verify()` (si estás utilizando PHP 7 o superior).
+4. Asegúrate de que la conexión a la base de datos sea segura y no permita acceso directo a la base de datos.
+
+Aquí te dejo un ejemplo de cómo podrías modificar el script `procesa.php` para utilizar prepared statements:
+```php
+<?php
+  session_start();
+
+  $host = "localhost";
+  $user = "superaplicacion";
+  $pass = "Superaplicacion123$";
+  $db   = "superaplicacion";
+
+  $conexion = new mysqli($host, $user, $pass, $db);
+
+  if ($conexion->connect_error) {
+    die("Error de conexión: " . $conexion->connect_error);
+  }
+
+  $usuario = $_POST['usuario'];
+  $contrasena = $_POST['contrasena'];
+
+  $sql = "
+    SELECT *
+    FROM usuarios
+    WHERE usuario = ? AND contrasena = ?";
+  ";
+
+  $stmt = $conexion->prepare($sql);
+  $stmt->bind_param("ss", $usuario, $contrasena);
+
+  $stmt->execute();
+  $resultado = $stmt->get_result();
+
+  if ($fila = $resultado->fetch_assoc()) {
+    $_SESSION['usuario'] = 'si';
+    header("Location: exito.php");
+  } else {
+    header("Location: login.html");
+  }
+
+  $conexion->close();
+
+?>
+```
+Recuerda que es importante utilizar un método seguro para verificar las credenciales del usuario, como el método `password_verify()` (si estás utilizando PHP 7 o superior).
+
 
 <a id="crud"></a>
 ## CRUD
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/002-CRUD)
+
+### Introducción a los ejercicios
+
+**Introducción global**
+
+En este conjunto de ejercicios, se abordan dos problemas fundamentales en la administración de bases de datos: la creación y configuración de una base de datos y la asignación de permisos a un usuario. Estos ejercicios están diseñados para ayudar a los estudiantes de Formación Profesional a practicar habilidades prácticas en la gestión de datos.
+
+**Resumen de los problemas**
+
+Este conjunto de ejercicios consta de dos archivos de ejercicio: uno que se enfoca en crear y configurar una base de datos llamada "empleados", y otro que se centra en asignar permisos a un usuario llamado "empleados". Los problemas abordados incluyen:
+
+* Creación de la estructura básica de una base de datos (tabelas, campos y tipos de datos)
+* Asignación de datos de ejemplo a las tablas
+* Configuración de permisos para un usuario en la base de datos
+* Verificación de que los cambios se hayan aplicado correctamente
+
+**Competencias practicadas**
+
+Al trabajar en este conjunto de ejercicios, los estudiantes practican habilidades como:
+
+* Crear y administrar bases de datos estructuradas
+* Asignar permisos a usuarios y grupos
+* Comprender las implicaciones de la seguridad en la gestión de datos
+* Utilizar herramientas y comandos para gestionar bases de datos
+
+Espero que esta explicación global te haya proporcionado una visión clara de lo que se espera que los estudiantes aborden en este conjunto de ejercicios.
+
 ### Creamos base de datos de clientes
 <small>Creado: 2025-12-10 12:50</small>
+
+#### Explicación
+
+Este fragmento de código es el encargado de crear una base de datos llamada "empleados" y definir la estructura de la misma. La base de datos se utiliza para almacenar información relativa a los empleados de una empresa.
+
+ Primero, crea la base de datos llamada "empleados" con un conjunto de caractéristicas como el conjunto de caracteres utilizado (utf8mb4) y su configuración (utf8mb4_spanish_ci). Luego, selecciona esta base de datos para poder realizar operaciones sobre ella. La estructura de la base de datos es definida mediante una tabla llamada "empleados". Esta tabla tiene 7 columnas: id, nombre, puesto, salario, fecha_contratación y departamento, donde el id es el identificador único del empleado, el nombre, puesto y salario son características personales del empleado, la fecha_contratación indica la fecha en que el empleado comenzó a trabajar y el departamento es la división en la que trabaja.
 
 `001-Creamos base de datos de clientes.sql`
 
@@ -16380,6 +16959,18 @@ INSERT INTO empleados (nombre, puesto, salario, fecha_contratacion, departamento
 ### usuario con permisos
 <small>Creado: 2025-12-10 12:53</small>
 
+#### Explicación
+
+**Crear un usuario de base de datos con permisos específicos**
+
+Este código SQL se utiliza para crear un usuario de base de datos llamado "empleados" en la base de datos local. El usuario tiene permisos de ejecución y lectura sobre todos los tablas de la base de datos.
+
+El código comienza creando el usuario con la sentencia `CREATE USER`, específicoamente `'empleados'@'localhost'`. La clave de autenticación se establece como 'Empleados123$'. Luego, se le da permiso para utilizar la base de datos con la sentencia `GRANT USAGE ON *.* TO 'empleados'@'localhost';`.
+
+Para evitar limitaciones en el uso de la base de datos, se modifica el comportamiento del usuario con las sentencias `ALTER USER` y se establecen límites de concurrentes. 
+
+Finalmente, se otorgan todos los privilegios al usuario sobre sus tablas específicas mediante `GRANT ALL PRIVILEGES ON empleados.* TO 'empleados'@'localhost';`, y finaliza con la sentencia `FLUSH PRIVILEGES;` para refrescar las permisos del nuevo usuario.
+
 `002-usuario con permisos.sql`
 
 ```sql
@@ -16402,12 +16993,91 @@ TO 'empleados'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+### Actividades propuestas
+
+**Actividades para estudiantes de Formación Profesional**
+
+A continuación, te presento una lista de actividades basadas en el contenido y conceptos observados en los ejercicios proporcionados:
+
+1. **Crear una base de datos**: En este ejercicio, se crea una base de datos llamada "empleados" con una estructura básica para almacenar información sobre empleados. El alumnado deberá crear su propia base de datos utilizando SQL y realizar preguntas relacionadas con la creación de tablas, índices y la secuencia de creación de los objetos en la base de datos.
+
+2. **Insertar datos**: En este ejercicio se insertan sample datos en la tabla "empleados". El alumnado deberá utilizar consultas SQL para insertar nuevos datos y realizar preguntas relacionadas con el manejo de datos, como actualizaciones y eliminaciones.
+
+3. **Crear un usuario con permisos**: En este ejercicio, se crea un usuario llamado "empleados" y se le asignan permisos básicos. El alumnado deberá crear su propio usuario con permisos adecuados y realizar preguntas relacionadas con el manejo de usuarios y permisos.
+
+4. **Realizar consultas de información**: En este ejercicio, se requiere que el alumnado realice consultas para obtener información sobre los empleados, como sus nombres, puestos y salarios. El alumnado deberá utilizar consultas SQL para obtener la información deseada.
+
+5. **Crear índices y secuencias**: En este ejercicio, se crean índices y secuencias en la base de datos "empleados". El alumnado deberá crear su propio índice y secuencia y realizar preguntas relacionadas con el manejo de estos objetos.
+
+6. **Optimizar consultas**: En este ejercicio, se requiere que el alumnado optimice una consulta para obtener información sobre los empleados más rápidamente. El alumnado deberá utilizar técnicas de optimización de consultas SQL para mejorar la velocidad y la eficiencia de las consultas.
+
+7. **Crear un sistema de autenticación**: En este ejercicio, se crea un sistema de autenticación para el usuario "empleados". El alumnado deberá crear su propio sistema de autenticación y realizar preguntas relacionadas con el manejo de usuarios y contraseñas.
+
+8. **Realizar una consultas de análisis**: En este ejercicio, se requiere que el alumnado realice una consulta para obtener información sobre los empleados más rentables o con un salario alto. El alumnado deberá utilizar técnicas de análisis de datos SQL para obtener la información deseada.
+
+9. **Crear un sistema de alertas**: En este ejercicio, se crea un sistema de alertas que envía notificaciones a los empleados cuando su salario cambia. El alumnado deberá crear su propio sistema de alertas y realizar preguntas relacionadas con el manejo de estos sistemas.
+
+10. **Realizar una evaluación de seguridad**: En este ejercicio, se requiere que el alumnado evalúe la seguridad del sistema de autenticación creado en el ejercicio anterior. El alumnado deberá utilizar técnicas de evaluación de seguridad para detectar posibles vulnerabilidades y realizar preguntas relacionadas con el manejo de usuarios y contraseñas.
+
 
 <a id="panel-de-control"></a>
 ## Panel de control
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/003-Panel%20de%20control)
+
+### Introducción a los ejercicios
+
+**Introductoria global sobre el conjunto de ejercicios**
+
+En este conjunto de ejercicios, se presentan tres archivos que cubren diferentes aspectos de la gestión de bases de datos. El objetivo es familiarizarse con las técnicas básicas para crear y gestionar una base de datos de noticias, así como con las prácticas de seguridad en entornos MySQL.
+
+**Problemas de trabajo y competencias**
+
+Se trabajan los siguientes problemas:
+
+* Creación de tablas para almacenar información sobre autores y noticias.
+* Insertar registros de autores y noticias de prueba.
+* Crear un usuario y asignar privilegios para acceder a la base de datos.
+
+En cuanto a las competencias, se practican:
+
+* Creación de estructuras de datos (tablas) en una base de datos.
+* Insersión de datos de manera efectiva.
+* Gestión de seguridad y acceso a la base de datos.
+* Uso de consultas SQL para realizar tareas básicas.
+
+En general, este conjunto de ejercicios proporciona un buen punto de partida para entender las principias fundamentales de la gestión de bases de datos y la seguridad en entornos MySQL.
+
 ### crear periodico
 <small>Creado: 2025-12-10 13:51</small>
+
+#### Explicación
+
+**Creación de la base de datos y estructura de las tablas**
+
+El código proporcionado es un conjunto de instrucciones SQL que se utiliza para crear una base de datos llamada `periodico` y definir dos tablas relacionadas: `autores` y `noticias`.
+
+La primera instrucción, `CREATE DATABASE periodico`, crea una nueva base de datos con el nombre especificado. La cláusula `DEFAULT CHARACTER SET utf8mb4` establece el conjunto de caracteres por defecto para la base de datos, y `DEFAULT COLLATE utf8mb4_unicode_ci` define el conjunto de colaciones por defecto.
+
+La segunda instrucción, `USE periodico`, selecciona la base de datos recientemente creada como el contexto actual para las siguientes instrucciones.
+
+Las siguientes dos instrucciones crean las tablas `autores` y `noticias`. La tabla `autores` tiene los siguientes campos:
+
+*   `id`: un campo autoincrementable que servirá como clave primaria.
+*   `nombre`: un campo de texto con una longitud máxima de 100 caracteres.
+*   `email`: un campo de texto con una longitud máxima de 150 caracteres, y se marca como único para evitar la duplicación de correos electrónicos.
+*   `bio`: un campo de texto que almacena una breve descripción del autor.
+*   `fecha_registro`: un campo de fecha y hora que se establece automáticamente cuando se inserta un nuevo registro.
+
+La tabla `noticias` tiene los siguientes campos:
+
+*   `id`: un campo autoincrementable que servirá como clave primaria.
+*   `titulo`: un campo de texto con una longitud máxima de 200 caracteres.
+*   `contenido`: un campo de texto que almacena el contenido de la noticia.
+*   `fecha_publicacion`: un campo de fecha y hora que se establece automáticamente cuando se inserta un nuevo registro.
+*   `autor_id`: un campo que reference a la clave primaria de la tabla `autores`, permitiendo la relación entre una noticia y su autor. La cláusula `FOREIGN KEY (autor_id) REFERENCES autores(id)` establece esta relación, y `ON UPDATE CASCADE` y `ON DELETE SET NULL` especifican las acciones que se deben realizar en caso de que el registro de un autor cambie o se elimine.
+
+En resumen, este código crea una base de datos llamada `periodico`, define dos tablas relacionadas (`autores` y `noticias`) y establece la relación entre ellas.
 
 `001-crear periodico.sql`
 
@@ -16448,6 +17118,16 @@ CREATE TABLE noticias (
 ### insertar noticias de prueba
 <small>Creado: 2025-12-10 13:51</small>
 
+#### Explicación
+
+Este código SQL se utiliza para crear y insertar datos en dos tablas: `autores` y `noticias`.
+
+Primero, se inserta información sobre cuatro autores, cada uno con su nombre, dirección de correo electrónico y una breve descripción. Esto se hace utilizando la sentencia `INSERT INTO` seguida del nombre de la tabla (`autores`) y luego los valores que se desean insertar.
+
+Luego, se procede a insertar cinco noticias con sus respectivos títulos, contenidos y autoría. Cada noticia tiene un ID único asignado por el sistema, lo cual es posible gracias al campo `autor_id` en la tabla `noticias`. Esta sentencia `INSERT INTO` es similar a la anterior, pero ahora se refiere a la tabla `noticias`.
+
+En resumen, este código crea y popula las tablas de autores y noticias con algunos datos de ejemplo.
+
 `002-insertar noticias de prueba.sql`
 
 ```sql
@@ -16483,6 +17163,20 @@ INSERT INTO noticias (titulo, contenido, autor_id) VALUES
 ### crear usuario
 <small>Creado: 2025-12-10 13:51</small>
 
+#### Explicación
+
+¡Hola a todos! Hoy vamos a analizar un código importante para la seguridad y el control de acceso en una base de datos MySQL.
+
+El código crea un nuevo usuario llamado "periodico" en la base de datos, y le asigna diferentes privilegios de acceso. Esto significa que podemos controlar quién puede realizar operaciones en nuestra base de datos y qué operaciones pueden realizar esos usuarios.
+
+Primero, el código crea al usuario "periodico" con una contraseña fija llamada "Periodico123$". Luego, le otorga la permiso de utilizar cualquier tabla de la base de datos (GRANT USAGE ON *.*), lo cual es importante porque permite que el usuario ejecute consultas y realice cambios en la base de datos. 
+
+El código luego establece algunas restricciones para evitar que este usuario abusa del sistema: se le niega la posibilidad de realizar acciones que consuman recursos como conexiones a la base de datos o actualizaciones (ALTER USER...REQUIRE NONE), lo cual ayuda a prevenir ataques como los "brute force".
+
+Finalmente, el código otorga todos los privilegios de acceso posible en toda la base de datos al usuario "periodico", lo que le permite realizar cualquier acción imaginable, aunque esto es un poco extremo. Por último, se ejecuta una instrucción llamada FLUSH PRIVILEGES para actualizar las tablas de permisos en la base de datos.
+
+Es importante recordar que debemos gestionar los privilegios de acceso en nuestros sistemas de bases de datos de manera estricta, ya que un usuario con demasiado poder puede causar daños significativos.
+
 `003-crear usuario.sql`
 
 ```sql
@@ -16505,6 +17199,39 @@ TO 'periodico'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+### Actividades propuestas
+
+**Actividades para estudiantes de Formación Profesional**
+
+A continuación, se presentan las actividades propuestas basadas en el contenido de la carpeta de ejercicios proporcionada:
+
+1. **Crear y gestionar una base de datos**
+ * Descripción: El alumnado debe crear una nueva base de datos utilizando SQL, seleccionarla y crear tablas para almacenar información de autores y noticias. Deben establecer las columnas adecuadas y agregar restricciones para garantizar la integridad de la información.
+ * Objetivo: Aprender a crear y gestionar una base de datos estructurada utilizando SQL.
+2. **Insertar datos de prueba**
+ * Descripción: El alumnado debe insertar datos de prueba en las tablas de autores y noticias, utilizando consultas SQL para realizar las inserciones. Deben verificar la integridad de los datos insertados.
+ * Objetivo: Aprender a utilizar consultas SQL para insertar datos en una base de datos estructurada.
+3. **Crear un usuario y gestionar privilegios**
+ * Descripción: El alumnado debe crear un nuevo usuario con acceso limitado a la base de datos, utilizando SQL para establecer los privilegios adecuados. Deben entender las instrucciones `GRANT` y `REVOKE` para gestionar los accesos.
+ * Objetivo: Aprender a crear y gestionar usuarios y privilegios en una base de datos utilizando SQL.
+4. **Buscar y ordenar noticias**
+ * Descripción: El alumnado debe escribir una consulta SQL para buscar y ordenar las noticias por fecha de publicación en orden cronológico.
+ * Objetivo: Aprender a utilizar consultas SQL para filtrar y ordenar datos en una base de datos estructurada.
+5. **Agregar un nuevo autor**
+ * Descripción: El alumnado debe agregar un nuevo autor a la base de datos, utilizando una consulta SQL para insertar los datos adecuados en las tablas correspondientes.
+ * Objetivo: Aprender a utilizar consultas SQL para agregar nuevos datos a una base de datos estructurada.
+6. **Eliminar un usuario**
+ * Descripción: El alumnado debe eliminar el usuario creado anteriormente, utilizando una consulta SQL para revoke los privilegios y eliminar la cuenta del sistema.
+ * Objetivo: Aprender a utilizar consultas SQL para eliminar usuarios y privilegios en una base de datos.
+7. **Crear un índice**
+ * Descripción: El alumnado debe crear un índice en una tabla, utilizando una consulta SQL para definir el índice adecuado y agregarlo a la base de datos.
+ * Objetivo: Aprender a utilizar consultas SQL para crear índices en una base de datos estructurada.
+8. **Actualizar información**
+ * Descripción: El alumnado debe actualizar la información de un autor existente, utilizando una consulta SQL para modificar los datos adecuados en las tablas correspondientes.
+ * Objetivo: Aprender a utilizar consultas SQL para actualizar información en una base de datos estructurada.
+
+Estas actividades están diseñadas para que los estudiantes de Formación Profesional puedan practicar y aplicar sus conocimientos de bases de datos estructuradas utilizando SQL.
+
 
 
 <a id="git"></a>
@@ -16513,22 +17240,34 @@ FLUSH PRIVILEGES;
 <a id="branches"></a>
 ## branches
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/.git/branches)
+
 
 <a id="hooks"></a>
 ## hooks
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/.git/hooks)
 
 
 <a id="info"></a>
 ## info
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/.git/info)
+
 
 <a id="logs"></a>
 ## logs
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/.git/logs)
 
 
 <a id="objects"></a>
 ## objects
 
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/.git/objects)
+
 
 <a id="refs"></a>
 ## refs
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/.git/refs)
