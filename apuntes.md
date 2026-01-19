@@ -71,6 +71,7 @@
   - [Login](#login)
   - [CRUD](#crud)
   - [Panel de control](#panel-de-control)
+  - [supercrud poco a poco](#supercrud-poco-a-poco)
 - [.git](#git)
   - [branches](#branches)
   - [hooks](#hooks)
@@ -17231,6 +17232,360 @@ A continuación, se presentan las actividades propuestas basadas en el contenido
  * Objetivo: Aprender a utilizar consultas SQL para actualizar información en una base de datos estructurada.
 
 Estas actividades están diseñadas para que los estudiantes de Formación Profesional puedan practicar y aplicar sus conocimientos de bases de datos estructuradas utilizando SQL.
+
+
+<a id="supercrud-poco-a-poco"></a>
+## supercrud poco a poco
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/004-supercrud%20poco%20a%20poco)
+
+### tabla
+<small>Creado: 2025-12-15 10:06</small>
+
+`001-tabla.php`
+
+```
+<table>
+<?php
+	$host = "localhost";
+  $user = "tiendaonlinedamdaw";
+  $pass = "Tiendaonlinedamdaw123$";
+  $db   = "tiendaonlinedamdaw";
+
+  $conexion = new mysqli($host, $user, $pass, $db);
+	$resultado = $conexion->query("
+  	SELECT * FROM cliente;
+  ");
+  while ($fila = $resultado->fetch_assoc()) {
+  	echo '
+    <tr>
+    	<td>'.$fila['nombre_cliente'].'</td>
+      <td>'.$fila['apellidos'].'</td>
+      <td>'.$fila['email'].'</td>
+      <td>'.$fila['direccion'].'</td>
+      <td>'.$fila['telefono'].'</td>
+    </tr>
+    ';
+   }
+?>
+</table>
+```
+
+### vomito el array
+<small>Creado: 2025-12-15 10:08</small>
+
+`002-vomito el array.php`
+
+```
+<table>
+<?php
+	$host = "localhost";
+  $user = "tiendaonlinedamdaw";
+  $pass = "Tiendaonlinedamdaw123$";
+  $db   = "tiendaonlinedamdaw";
+
+  $conexion = new mysqli($host, $user, $pass, $db);
+	$resultado = $conexion->query("
+  	SELECT * FROM cliente;
+  ");
+  while ($fila = $resultado->fetch_assoc()) {
+  var_dump($fila);echo "<br><br>";
+  	echo '
+    <tr>
+    	<td>'.$fila['nombre_cliente'].'</td>
+      <td>'.$fila['apellidos'].'</td>
+      <td>'.$fila['email'].'</td>
+      <td>'.$fila['direccion'].'</td>
+      <td>'.$fila['telefono'].'</td>
+    </tr>
+    ';
+   }
+?>
+</table>
+```
+
+### recorrer dinamicamente el array
+<small>Creado: 2025-12-15 10:13</small>
+
+`003-recorrer dinamicamente el array.php`
+
+```
+<table>
+<?php
+	$host = "localhost";
+  $user = "tiendaonlinedamdaw";
+  $pass = "Tiendaonlinedamdaw123$";
+  $db   = "tiendaonlinedamdaw";
+
+  $conexion = new mysqli($host, $user, $pass, $db);
+	$resultado = $conexion->query("
+  	SELECT * FROM cliente;
+  ");
+  while ($fila = $resultado->fetch_assoc()) {
+  	echo "<tr>";
+    foreach($fila as $clave=>$valor){
+    	echo "<td>".$valor."</td>";
+    }
+    echo "</tr>";
+   }
+?>
+</table>
+```
+
+### parametro get
+<small>Creado: 2025-12-15 10:15</small>
+
+`004-parametro get.php`
+
+```
+<table>
+<?php
+	$host = "localhost";
+  $user = "tiendaonlinedamdaw";
+  $pass = "Tiendaonlinedamdaw123$";
+  $db   = "tiendaonlinedamdaw";
+
+  $conexion = new mysqli($host, $user, $pass, $db);
+	$resultado = $conexion->query("
+  	SELECT * FROM ".$_GET['tabla'].";
+  ");
+  while ($fila = $resultado->fetch_assoc()) {
+  	echo "<tr>";
+    foreach($fila as $clave=>$valor){
+    	echo "<td>".$valor."</td>";
+    }
+    echo "</tr>";
+   }
+?>
+</table>
+```
+
+### botones
+<small>Creado: 2025-12-15 10:20</small>
+
+`005-botones.php`
+
+```
+<nav>
+	<a href="?tabla=cliente">Clientes</a>
+  <a href="?tabla=producto">Productos</a>
+  <a href="?tabla=pedido">Pedidos</a>
+  <a href="?tabla=lineaspedido">Lineas de pedido</a>
+</nav>
+<main>
+  <table>
+  <?php
+    $host = "localhost";
+    $user = "tiendaonlinedamdaw";
+    $pass = "Tiendaonlinedamdaw123$";
+    $db   = "tiendaonlinedamdaw";
+
+    $conexion = new mysqli($host, $user, $pass, $db);
+    $resultado = $conexion->query("
+      SELECT * FROM ".$_GET['tabla'].";
+    ");
+    while ($fila = $resultado->fetch_assoc()) {
+      echo "<tr>";
+      foreach($fila as $clave=>$valor){
+        echo "<td>".$valor."</td>";
+      }
+      echo "</tr>";
+     }
+  ?>
+  </table>
+</main>
+```
+
+### menu abstracto
+<small>Creado: 2025-12-15 10:25</small>
+
+`006-menu abstracto.php`
+
+```
+<?php
+	// Primero me conecto a la base de datos
+  // Esto es común para todo el archivo
+    $host = "localhost";
+    $user = "tiendaonlinedamdaw";
+    $pass = "Tiendaonlinedamdaw123$";
+    $db   = "tiendaonlinedamdaw";
+
+    $conexion = new mysqli($host, $user, $pass, $db);
+?>
+
+<nav>
+<?php
+	// Ahora lo que quiero es un listado de las tablas en la base de datos
+    $resultado = $conexion->query("
+      SHOW TABLES;
+    ");
+    while ($fila = $resultado->fetch_assoc()) {
+			echo '<a href="?tabla='.$fila['Tables_in_'.$db].'">'.$fila['Tables_in_'.$db].'</a>';
+    }
+?>
+</nav>
+<main>
+  <table>
+  <?php
+	// Y ahora creo los registros de la tabla
+    $resultado = $conexion->query("
+      SELECT * FROM ".$_GET['tabla'].";
+    ");
+    while ($fila = $resultado->fetch_assoc()) {
+      echo "<tr>";
+      foreach($fila as $clave=>$valor){
+        echo "<td>".$valor."</td>";
+      }
+      echo "</tr>";
+     }
+  ?>
+  </table>
+</main>
+```
+
+### un poco de estilo
+<small>Creado: 2025-12-15 10:32</small>
+
+`007-un poco de estilo.php`
+
+```
+<!doctype html>
+<html>
+	<head>
+  	<style>
+    	html,body{width:100%;height:100%;padding:0px;margin:0px;}
+      body{display:flex;font-family:sans-serif;}
+      nav{background:plum;padding:20px;gap:20px;flex:1;
+      display:flex;flex-direction:column;gap:20px;}
+      nav a{background:white;color:plum;text-decoration:none;
+      padding:10px;}
+      main{padding:20px;flex:4;}
+      table td{padding:10px;}
+      table{border:2px solid plum;width:100%;}
+    </style>
+  </head>
+  <body>
+    <?php
+      // Primero me conecto a la base de datos
+      // Esto es común para todo el archivo
+        $host = "localhost";
+        $user = "tiendaonlinedamdaw";
+        $pass = "Tiendaonlinedamdaw123$";
+        $db   = "tiendaonlinedamdaw";
+
+        $conexion = new mysqli($host, $user, $pass, $db);
+    ?>
+
+    <nav>
+    <?php
+      // Ahora lo que quiero es un listado de las tablas en la base de datos
+        $resultado = $conexion->query("
+          SHOW TABLES;
+        ");
+        while ($fila = $resultado->fetch_assoc()) {
+          echo '<a href="?tabla='.$fila['Tables_in_'.$db].'">'.$fila['Tables_in_'.$db].'</a>';
+        }
+    ?>
+    </nav>
+    <main>
+      <table>
+      <?php
+      // Y ahora creo los registros de la tabla
+        $resultado = $conexion->query("
+          SELECT * FROM ".$_GET['tabla'].";
+        ");
+        while ($fila = $resultado->fetch_assoc()) {
+          echo "<tr>";
+          foreach($fila as $clave=>$valor){
+            echo "<td>".$valor."</td>";
+          }
+          echo "</tr>";
+         }
+      ?>
+      </table>
+    </main>
+  </body>
+</html>
+```
+
+### cabeceras de columna
+<small>Creado: 2025-12-15 10:50</small>
+
+`008-cabeceras de columna.php`
+
+```
+<!doctype html>
+<html>
+	<head>
+  	<style>
+    	html,body{width:100%;height:100%;padding:0px;margin:0px;}
+      body{display:flex;font-family:sans-serif;}
+      nav{background:plum;padding:20px;gap:20px;flex:1;
+      display:flex;flex-direction:column;gap:20px;}
+      nav a{background:white;color:plum;text-decoration:none;
+      padding:10px;}
+      main{padding:20px;flex:4;}
+      table td{padding:10px;}
+      table{border:2px solid plum;width:100%;}
+      th{background:plum;color:white;padding:10px;}
+    </style>
+  </head>
+  <body>
+    <?php
+      // Primero me conecto a la base de datos
+      // Esto es común para todo el archivo
+        $host = "localhost";
+        $user = "tiendaonlinedamdaw";
+        $pass = "Tiendaonlinedamdaw123$";
+        $db   = "tiendaonlinedamdaw";
+
+        $conexion = new mysqli($host, $user, $pass, $db);
+    ?>
+
+    <nav>
+    <?php
+      // Ahora lo que quiero es un listado de las tablas en la base de datos
+        $resultado = $conexion->query("
+          SHOW TABLES;
+        ");
+        while ($fila = $resultado->fetch_assoc()) {
+          echo '<a href="?tabla='.$fila['Tables_in_'.$db].'">'.$fila['Tables_in_'.$db].'</a>';
+        }
+    ?>
+    </nav>
+    <main>
+      <table>
+      <?php
+      // PRIMERO CREO LAS CABECERAS //////////////////
+        $resultado = $conexion->query("
+          SELECT * FROM ".$_GET['tabla']." LIMIT 1;
+        ");	// SOLO QUIERO UN ELEMENTO !!!!!!!!!!!!!!!!
+        while ($fila = $resultado->fetch_assoc()) {
+          echo "<tr>";
+          foreach($fila as $clave=>$valor){
+            echo "<th>".$clave."</th>";		// En lugar de enseñarme el valor, enseñame la clave
+          }
+          echo "</tr>";
+         }
+      ?>
+      <?php
+      // Y LUEGO EL RESTO DE DATOS //////////////
+        $resultado = $conexion->query("
+          SELECT * FROM ".$_GET['tabla'].";
+        ");
+        while ($fila = $resultado->fetch_assoc()) {
+          echo "<tr>";
+          foreach($fila as $clave=>$valor){
+            echo "<td>".$valor."</td>";
+          }
+          echo "</tr>";
+         }
+      ?>
+      </table>
+    </main>
+  </body>
+</html>
+```
 
 
 
