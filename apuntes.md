@@ -75,6 +75,7 @@
   - [graficos SVG](#graficos-svg)
   - [Repaso mysqldump](#repaso-mysqldump)
   - [Leer ODS](#leer-ods)
+  - [descarga y carga](#descarga-y-carga)
 - [.git](#git)
   - [branches](#branches)
   - [hooks](#hooks)
@@ -182,7 +183,7 @@ Estas actividades están diseñadas para que los estudiantes se familiaricen con
 Esta carpeta contiene ejercicios que te guiarán a través del manejo básico de bases de datos relacionales utilizando MySQL. Los temas principales incluyen la instalación y configuración inicial de MySQL, cómo ingresar al gestor de bases de datos como superusuario, listar las bases de datos existentes, crear una nueva base de datos y seleccionarla para su uso posterior. A través de estos ejercicios, practicarás competencias esenciales en administración de bases de datos, como la creación y gestión de estructuras de datos y el uso eficiente del comando line interface de MySQL.
 
 ### Listar bases de datos
-<small>Creado: 2025-10-08 13:21</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -197,7 +198,7 @@ SHOW DATABASES;
 ```
 
 ### crear nueva base de datos
-<small>Creado: 2025-10-08 13:27</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -218,7 +219,7 @@ Pegar = Control + Mayusculas + V
 ```
 
 ### uso la base de datos
-<small>Creado: 2025-10-08 13:27</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -281,7 +282,7 @@ Estas actividades proporcionan una secuencia lógica desde la instalación hasta
 Esta carpeta contiene ejercicios fundamentales para comprender los tipos de datos y cómo trabajar con tablas en una base de datos relacional utilizando SQL. En estos ejercicios, se exploran diferentes tipos de datos como VARCHAR, TEXT e INT, así como DATE, que son esenciales para la definición correcta de columnas en una tabla. Además, se practican operaciones básicas CRUD (Crear, Leer, Actualizar y Borrar) sobre un conjunto de registros, lo que ayuda a familiarizarse con los comandos INSERT, SELECT, UPDATE y DELETE en SQL. Estos ejercicios son clave para desarrollar las habilidades necesarias para gestionar datos eficazmente en bases de datos relacionales.
 
 ### Tipos de datos
-<small>Creado: 2025-10-08 13:33</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -307,7 +308,7 @@ DATE = Fecha
 ```
 
 ### Crear una tabla en la base de datos
-<small>Creado: 2025-10-08 14:08</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -347,7 +348,7 @@ mysql>
 ```
 
 ### comandos basicos CRUD
-<small>Creado: 2025-10-08 13:53</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -439,7 +440,7 @@ WHERE dni = '11111111A';
 En esta carpeta de ejercicios, trabajaremos con conceptos fundamentales de bases de datos relacionales y la creación de claves primarias en SQL. Los archivos proporcionan una guía práctica para iniciar sesión en MySQL, explorar estructuras de base de datos existentes y modificar tablas añadiendo columnas clave primarias. A través de estos ejercicios, los estudiantes aprenderán a manipular bases de datos y entenderán la importancia de las claves primarias para garantizar la integridad de los datos en un sistema de gestión de bases de datos relacionales.
 
 ### entrar en la base de datos
-<small>Creado: 2025-10-13 10:34</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -470,7 +471,7 @@ DESCRIBE clientes;
 ```
 
 ### crear clave primaria
-<small>Creado: 2025-10-13 10:57</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -606,7 +607,7 @@ SELECT * FROM clientes;
 Este conjunto de ejercicios se centra en la implementación y manejo de restricciones de validación en bases de datos relacionales utilizando SQL. Los estudiantes aprenderán a crear tablas con restricciones que aseguran la integridad de los datos, como comprobar formatos válidos para correos electrónicos y DNI/NIE, así como establecer límites numéricos. Se practicarán conceptos clave tales como el uso del comando `ALTER TABLE` para añadir restricciones `CHECK`, cómo lidiar con inserciones fallidas debido a violaciones de estas restricciones, y la importancia de mantener una estructura de datos consistente. Además, se explorará cómo manejar tablas existentes modificando o eliminando restricciones, así como técnicas para vaciar y restaurar bases de datos.
 
 ### situacion
-<small>Creado: 2025-10-15 13:01</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -641,7 +642,7 @@ INSERT INTO clientes VALUES(
 ```
 
 ### intento sanear parte 1
-<small>Creado: 2025-10-15 13:28</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -684,7 +685,7 @@ ERROR 3819 (HY000): Check constraint 'comprobar_email' is violated.
 ```
 
 ### comprobar dni
-<small>Creado: 2025-10-15 13:17</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -734,7 +735,7 @@ ALTER TABLE clientes
 ```
 
 ### mucho peligro
-<small>Creado: 2025-10-15 13:28</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -786,7 +787,7 @@ ALTER TABLE clientes
 ```
 
 ### inserciones fallidas
-<small>Creado: 2025-10-15 13:32</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -823,7 +824,7 @@ ERROR 3819 (HY000): Check constraint 'comprobar_email' is violated.
 ```
 
 ### insercion correcta
-<small>Creado: 2025-10-15 13:36</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -844,7 +845,7 @@ INSERT INTO clientes VALUES(
 ```
 
 ### Revisar estructura de tabla
-<small>Creado: 2025-10-15 13:51</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -879,7 +880,7 @@ DROP CONSTRAINT comprobar_dni_nie_letra;
 ```
 
 ### nueva restriccion
-<small>Creado: 2025-10-15 13:47</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -927,7 +928,7 @@ ALTER TABLE clientes
 ```
 
 ### Vaciar y truncar
-<small>Creado: 2025-10-15 14:02</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1091,7 +1092,7 @@ El programa mostrará un menú con opciones CRUD y permitirá al usuario interac
 Este código es una excelente base para proyectos más complejos y puede ser ampliado para incluir características adicionales como autenticación, manejo de errores mejorado, y más funcionalidades CRUD.
 
 ### crear clientes
-<small>Creado: 2025-10-17 10:53</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1116,7 +1117,7 @@ CREATE TABLE "clientes" (
 ```
 
 ### productos
-<small>Creado: 2025-10-17 11:01</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1147,7 +1148,7 @@ CREATE TABLE "productos" (
 ```
 
 ### ciclo crud
-<small>Creado: 2025-10-17 11:10</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1185,7 +1186,7 @@ WHERE Identificador = 1;
 ```
 
 ### insertar
-<small>Creado: 2025-10-17 12:06</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1235,7 +1236,7 @@ conexion.commit()
 ```
 
 ### ahora leer
-<small>Creado: 2025-10-17 12:13</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1273,7 +1274,7 @@ conexion.commit()
 ```
 
 ### insercion interactiva
-<small>Creado: 2025-10-17 12:19</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1323,7 +1324,7 @@ for fila in filas:
 ```
 
 ### crud
-<small>Creado: 2025-10-17 12:29</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1366,7 +1367,7 @@ while True:
 ```
 
 ### crud completo
-<small>Creado: 2025-10-17 12:46</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1436,7 +1437,7 @@ while True:
 ```
 
 ### conia
-<small>Creado: 2025-10-17 13:20</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1897,7 +1898,7 @@ if __name__ == "__main__":
 ```
 
 ### print formato
-<small>Creado: 2025-10-17 13:15</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1914,7 +1915,7 @@ print("Mi nombre es: ",nombre)
 ```
 
 ### encadeno mas
-<small>Creado: 2025-10-17 13:15</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1929,7 +1930,7 @@ print("Mi nombre es: "+nombre)
 ```
 
 ### impresion con formato no me gusta demasiado
-<small>Creado: 2025-10-17 13:17</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -1944,7 +1945,7 @@ print(f"Mi nombre es: {nombre}")
 ```
 
 ### demotkinter
-<small>Creado: 2025-10-17 12:31</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2072,7 +2073,7 @@ Este script proporcionará una interfaz interactiva para gestionar una base de d
 Esta carpeta contiene ejercicios que te introducirán al concepto del valor NULL en bases de datos relacionales, específicamente enfocados en MySQL y SQL. Los problemas trabajan con la creación y manipulación de una tabla llamada "pedidos", permitiéndote entender cómo manejar campos vacíos o sin información desde un punto de vista práctico y conceptual. A través de estos ejercicios, practicarás habilidades esenciales como el uso del comando SQL para crear tablas, así como la importancia de considerar NULL en tus estructuras de datos para evitar errores y asegurar una gestión eficiente de información.
 
 ### Tabla de pedidos
-<small>Creado: 2025-10-20 10:29</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2139,7 +2140,7 @@ CREATE TABLE pedidos (
 En esta carpeta de ejercicios, trabajaremos con la creación y manejo de bases de datos relacionales en SQL, centrándonos específicamente en el concepto de claves ajenas (foreign keys). Los estudiantes aprenderán cómo crear tablas para almacenar información sobre personas y sus correos electrónicos, añadir identificadores únicos para cada registro y establecer relaciones entre estas tablas utilizando claves foráneas. Además, se practicará la inserción de datos en las tablas relacionadas y la realización de consultas que combinan registros de múltiples tablas mediante el uso de joins. Este conjunto de ejercicios es fundamental para entender cómo mantener la integridad referencial en bases de datos relacional avanzadas.
 
 ### crear tabla personas
-<small>Creado: 2025-10-22 12:55</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2173,7 +2174,7 @@ SHOW TABLES;
 ```
 
 ### tabla emails
-<small>Creado: 2025-10-22 12:57</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2202,7 +2203,7 @@ SHOW TABLES;
 ```
 
 ### crear clave ajena
-<small>Creado: 2025-10-22 13:06</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2241,7 +2242,7 @@ SHOW TABLES;
 ```
 
 ### inserto una persona
-<small>Creado: 2025-10-22 13:12</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2271,7 +2272,7 @@ DESCRIBE personas;
 ```
 
 ### inserto un email
-<small>Creado: 2025-10-22 13:20</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2307,7 +2308,7 @@ INSERT INTO emails VALUES(
 ```
 
 ### Selecciono los emails
-<small>Creado: 2025-10-22 13:22</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2320,7 +2321,7 @@ SELECT * FROM emails;
 ```
 
 ### peticion cruzada
-<small>Creado: 2025-10-22 13:25</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2387,7 +2388,7 @@ En esta sesión de ejercicios, te centrarás en la creación y utilización de v
 Al completar este ejercicio, mejorarás tus habilidades en la manipulación de relaciones entre tablas mediante JOINs y comprenderás mejor cómo las vistas pueden ser utilizadas para presentar datos de manera más accesible y segura.
 
 ### crear vista
-<small>Creado: 2025-10-22 13:33</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2461,7 +2462,7 @@ SELECT * FROM personas_correos; -- se comporta como una tabla
 En esta carpeta, encontrarás dos ejercicios fundamentales relacionados con la gestión de usuarios y privilegios en bases de datos MySQL. El primer ejercicio te enseñará cómo crear un nuevo usuario en una base de datos y concederle los permisos necesarios para acceder a ella. Aprenderás a utilizar comandos SQL como `CREATE USER`, `GRANT` y `ALTER USER`. En el segundo ejercicio, aprenderás a consultar la lista de usuarios existentes en tu sistema utilizando consultas SQL sobre la base de datos `mysql.user`. Estos ejercicios te ayudarán a dominar aspectos importantes de seguridad y administración de bases de datos relacionales.
 
 ### crear usuario
-<small>Creado: 2025-10-24 10:57</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2498,7 +2499,7 @@ FLUSH PRIVILEGES;
 ```
 
 ### Mostrar usuarios en el sistema
-<small>Creado: 2025-10-24 10:54</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2567,7 +2568,7 @@ Estas actividades están diseñadas para permitir que los estudiantes exploren d
 Esta carpeta contiene ejercicios básicos que te ayudarán a familiarizarte con los fundamentos del lenguaje Python. Los problemas abordan conceptos como la impresión en pantalla, el uso y manipulación de variables, entrada de datos por parte del usuario, tipos de datos y operaciones aritméticas y de comparación. También exploras cómo realizar cálculos más complejos, como calcular impuestos e IVA a partir de una base imponible proporcionada por el usuario. A través de estos ejercicios, mejorarás tus habilidades en la sintaxis básica del lenguaje, manejo de datos y capacidad para resolver problemas mediante programación.
 
 ### Holamundo
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2584,7 +2585,7 @@ print("Hola mundo desde Python")
 ```
 
 ### variables
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2602,7 +2603,7 @@ edad = 47
 ```
 
 ### salidas
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2616,7 +2617,7 @@ print("Mi nombre es",nombre)
 ```
 
 ### variar una variable
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2635,7 +2636,7 @@ print("Mi nombre es",nombre)
 ```
 
 ### identificadores permitidos
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2662,7 +2663,7 @@ nombreCompleto = "Jose Vicente" # Es legal pero no se recomienda
 ```
 
 ### comentarios
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2687,7 +2688,7 @@ El uso correcto de comentarios es importante porque facilita el trabajo en equip
 ```
 
 ### Explicacion del codigo
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2705,7 +2706,7 @@ edad = 47
 ```
 
 ### Tipos de datos
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2729,7 +2730,7 @@ vivo = True # Booleano
 ```
 
 ### Entradas
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2747,7 +2748,7 @@ print("Tu nombre es: ",nombre)
 ```
 
 ### Entrada y problema
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2763,7 +2764,7 @@ print("El doble de tu edad es: "+edad)
 ```
 
 ### Cambio de tipo de dato
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2787,7 +2788,7 @@ print("El doble de tu edad es: "+doble)
 ```
 
 ### literales
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2808,7 +2809,7 @@ edad = 47
 ```
 
 ### constantes
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2829,7 +2830,7 @@ print("PI vale",PI)
 ```
 
 ### Diferencia
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2848,7 +2849,7 @@ PI = "unnumero"
 ```
 
 ### operadores aritmeticos
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2875,7 +2876,7 @@ print(4%3)
 ```
 
 ### operadores de comparacion
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2897,7 +2898,7 @@ print(4 != 3)
 ```
 
 ### operadores arimeticos abreviados
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2930,7 +2931,7 @@ edad /= 2
 ```
 
 ### operadores booleanos
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2954,7 +2955,7 @@ print(4 == 3 or 3 == 2 or 2 == 1)
 ```
 
 ### Ejercicio1-Calculadora de impuestos
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -2975,7 +2976,7 @@ Es importante destacar que este código es una plantilla o guía, ya que no cont
 ```
 
 ### Calculadora
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3008,7 +3009,7 @@ base_imponible = input("Introduce la base imponible de la factura: ")
 ```
 
 ### Calculadora
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3046,7 +3047,7 @@ base_imponible = input("Introduce la base imponible de la factura: ")
 ```
 
 ### Calculo de IVA
-<small>Creado: 2025-10-31 10:18</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3178,7 +3179,7 @@ Este conjunto de ejercicios está diseñado para que los estudiantes practiquen 
 Esta carpeta contiene una serie de ejercicios diseñados para practicar los fundamentos del manejo de bases de datos relacionales utilizando SQL. Los estudiantes aprenderán a crear y gestionar tablas, insertar registros, establecer relaciones entre tablas mediante claves foráneas, realizar consultas complejas incluyendo joins y la creación de vistas para facilitar el acceso a los datos combinados. Asimismo, se incluye un ejercicio sobre la administración de usuarios y privilegios en una base de datos MySQL, lo cual es crucial para entender cómo controlar el acceso a las bases de datos y asegurar sus datos.
 
 ### crear tablas
-<small>Creado: 2025-11-05 12:53</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3217,7 +3218,7 @@ CREATE TABLE Categorias(
 ```
 
 ### insertar
-<small>Creado: 2025-11-05 12:54</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3249,7 +3250,7 @@ INSERT INTO Piezas VALUES(
 ```
 
 ### fk
-<small>Creado: 2025-11-05 12:55</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3270,7 +3271,7 @@ ON UPDATE CASCADE;
 ```
 
 ### selecciones
-<small>Creado: 2025-11-05 12:55</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3287,7 +3288,7 @@ SELECT * FROM Piezas;
 ```
 
 ### left join
-<small>Creado: 2025-11-05 12:57</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3306,7 +3307,7 @@ ON Piezas.id_categoria = Categorias.Identificador;
 ```
 
 ### ahora creo la vista
-<small>Creado: 2025-11-05 12:59</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3335,7 +3336,7 @@ SELECT * FROM piezas_y_categorias;
 ```
 
 ### usuario
-<small>Creado: 2025-11-05 13:02</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3428,7 +3429,7 @@ FLUSH PRIVILEGES;
 En esta carpeta, encontrarás una serie de ejercicios que te ayudarán a familiarizarte con el manejo básico y avanzado de bases de datos relacionales utilizando SQL. Los ejercicios inician con la creación de una base de datos y dos tablas interrelacionadas: "Piezas" y "Categorias". A continuación, trabajas con inserción de datos y definición de relaciones entre las tablas mediante claves foráneas. También practicas consultas que involucran unir múltiples tablas para obtener información completa sobre registros relacionados, además de la creación de vistas para facilitar ciertas consultas frecuentes. Por último, aprendes a gestionar usuarios y privilegios en el sistema de bases de datos, lo cual es fundamental para la seguridad y administración adecuada del entorno de desarrollo.
 
 ### crear tablas
-<small>Creado: 2025-11-10 08:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3459,7 +3460,7 @@ CREATE TABLE Categorias(
 ```
 
 ### insertar
-<small>Creado: 2025-11-10 08:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3489,7 +3490,7 @@ INSERT INTO Piezas VALUES(
 ```
 
 ### fk
-<small>Creado: 2025-11-10 08:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3510,7 +3511,7 @@ ON UPDATE CASCADE;
 ```
 
 ### selecciones
-<small>Creado: 2025-11-10 08:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3529,7 +3530,7 @@ SELECT * FROM Piezas;
 ```
 
 ### left join
-<small>Creado: 2025-11-10 08:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3550,7 +3551,7 @@ ON Piezas.id_categoria = Categorias.Identificador;
 ```
 
 ### ahora creo la vista
-<small>Creado: 2025-11-10 08:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3581,7 +3582,7 @@ SELECT * FROM piezas_y_categorias;
 ```
 
 ### usuario
-<small>Creado: 2025-11-10 08:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3660,7 +3661,7 @@ FLUSH PRIVILEGES;
 Esta carpeta contiene una serie de ejercicios SQL diseñados para familiarizarte con las operaciones básicas sobre bases de datos relacionales. En concreto, trabajaremos con la tabla `clientes`, donde aprenderás a realizar selecciones (proyección) y ordenación de registros. Los ejercicios te guiarán desde consultas simples que recuperan todos los campos hasta aquellas más complejas que requieren especificar columnas individuales, alias para las columnas y ordenaciones ascendentes o descendentes según uno o dos criterios. A través de estos ejercicios, desarrollarás competencias esenciales en SQL como la capacidad para formular consultas precisas y comprender los resultados obtenidos.
 
 ### creo una base de datos
-<small>Creado: 2025-11-14 10:25</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3724,7 +3725,7 @@ INSERT INTO clientes VALUES ("Irene","Serrano",27);
 ```
 
 ### select super sencillo
-<small>Creado: 2025-11-14 10:26</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3737,7 +3738,7 @@ SELECT * FROM clientes;
 ```
 
 ### select nombrando columnas
-<small>Creado: 2025-11-14 10:27</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3762,7 +3763,7 @@ clientes;
 ```
 
 ### solo algunas columnas
-<small>Creado: 2025-11-14 10:28</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3784,7 +3785,7 @@ clientes;
 ```
 
 ### proyeccion
-<small>Creado: 2025-11-14 10:30</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3805,7 +3806,7 @@ clientes;
 ```
 
 ### ordenacion alfabetica ascendiente por defecto
-<small>Creado: 2025-11-14 10:32</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3831,7 +3832,7 @@ apellidos;
 ```
 
 ### ascendiente explicito
-<small>Creado: 2025-11-14 10:33</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3855,7 +3856,7 @@ apellidos ASC;
 ```
 
 ### descendiente
-<small>Creado: 2025-11-14 10:35</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3883,7 +3884,7 @@ apellidos DESC;
 ```
 
 ### descendiente por edad
-<small>Creado: 2025-11-14 10:36</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3913,7 +3914,7 @@ edad DESC;
 ```
 
 ### ordenacion por dos columnas
-<small>Creado: 2025-11-14 10:37</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -3983,7 +3984,7 @@ Estas actividades están diseñadas para ayudar a los estudiantes a dominar conc
 En esta carpeta, trabajaremos con diferentes tipos de operadores en SQL para realizar consultas más avanzadas en una base de datos. Iniciamos mostrando cómo conectarse y visualizar información básica sobre los clientes. Luego, nos adentraremos en el uso de operadores aritméticos para realizar cálculos sencillos basados en los datos existentes en la tabla de clientes. Seguidamente, exploraremos los operadores de comparación para filtrar registros según ciertas condiciones y luego les daremos un alias descriptivo a estos resultados. Finalmente, aprenderemos a combinar condiciones utilizando el operador lógico AND para refinar aún más nuestros criterios de búsqueda en las consultas SQL. Estos ejercicios te ayudarán a desarrollar habilidades cruciales en la manipulación y análisis de datos mediante la utilización de diferentes tipos de operadores en SQL.
 
 ### login en la base de datos
-<small>Creado: 2025-11-17 10:25</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4014,7 +4015,7 @@ FROM clientes;
 ```
 
 ### operadores aritmeticos
-<small>Creado: 2025-11-17 10:26</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4061,7 +4062,7 @@ FROM clientes;
 ```
 
 ### comparacion
-<small>Creado: 2025-11-17 10:29</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4083,7 +4084,7 @@ FROM clientes;
 ```
 
 ### ponemos alias
-<small>Creado: 2025-11-17 10:30</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4109,7 +4110,7 @@ FROM clientes;
 ```
 
 ### operador logico and
-<small>Creado: 2025-11-17 10:32</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4183,7 +4184,7 @@ Esta carpeta contiene una serie de ejercicios que te ayudarán a familiarizarte 
 A través de estos ejercicios, adquirirás competencias esenciales en el manejo de datos y obtendrás una visión práctica de cómo se integran diferentes lenguajes para trabajar con información almacenada en bases de datos.
 
 ### entramos y pedimos
-<small>Creado: 2025-11-17 10:37</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4210,7 +4211,7 @@ FROM clientes;
 ```
 
 ### resumen con conteo
-<small>Creado: 2025-11-17 10:38</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4229,7 +4230,7 @@ FROM clientes;
 ```
 
 ### cliente mas joven
-<small>Creado: 2025-11-17 10:40</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4248,7 +4249,7 @@ FROM clientes;
 ```
 
 ### cliente joven identificado
-<small>Creado: 2025-11-17 10:43</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4271,7 +4272,7 @@ LIMIT 1;
 ```
 
 ### cliente mas viejo identificado
-<small>Creado: 2025-11-17 10:44</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4298,7 +4299,7 @@ LIMIT 1;
 ```
 
 ### funcion de promedio
-<small>Creado: 2025-11-17 10:45</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4317,7 +4318,7 @@ FROM clientes;
 ```
 
 ### redondeos
-<small>Creado: 2025-11-17 10:47</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4350,7 +4351,7 @@ FROM clientes;
 ```
 
 ### conecto a bases de datos
-<small>Creado: 2025-11-17 10:49</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4383,7 +4384,7 @@ print(filas)
 ```
 
 ### graficas
-<small>Creado: 2025-11-17 10:59</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4446,7 +4447,7 @@ Estas actividades están diseñadas para ayudar a los alumnos a familiarizarse c
 Este conjunto de ejercicios se centra en el agrupamiento y resumen de registros utilizando SQL y Python. Los estudiantes aprenderán a crear consultas que permitan contar, clasificar e incluso ordenar datos según diferentes criterios como color o categoría de productos. Además, se practicará la conexión entre un programa Python y una base de datos MySQL para visualizar los resultados en gráficos. Estos ejercicios refuerzan habilidades esenciales como la manipulación de bases de datos y el análisis de datos mediante técnicas de agrupamiento y representación gráfica.
 
 ### Ir conectando poco a poco
-<small>Creado: 2025-11-19 12:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4469,7 +4470,7 @@ SELECT * FROM clientes;
 ```
 
 ### tabla de productos
-<small>Creado: 2025-11-19 12:54</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4498,7 +4499,7 @@ CREATE TABLE productos(
 ```
 
 ### inserciones
-<small>Creado: 2025-11-19 12:57</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4562,7 +4563,7 @@ INSERT INTO productos (nombre, precio, categoria, peso, stock, color) VALUES
 ```
 
 ### agrupamiento
-<small>Creado: 2025-11-19 13:00</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4580,7 +4581,7 @@ GROUP BY color;
 ```
 
 ### ademas ordenamos
-<small>Creado: 2025-11-19 13:03</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4607,7 +4608,7 @@ ORDER BY color ASC;
 ```
 
 ### proyecciones
-<small>Creado: 2025-11-19 13:04</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4632,7 +4633,7 @@ ORDER BY color ASC;
 ```
 
 ### plantilla python mysql
-<small>Creado: 2025-11-19 13:07</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4671,7 +4672,7 @@ print(filas)
 ```
 
 ### adapto a mi peticion
-<small>Creado: 2025-11-19 13:09</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4706,7 +4707,7 @@ print(filas)
 ```
 
 ### creo dos listas
-<small>Creado: 2025-11-19 13:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4743,7 +4744,7 @@ print(etiquetas)
 ```
 
 ### grafica
-<small>Creado: 2025-11-19 13:19</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4781,7 +4782,7 @@ pt.show()
 ```
 
 ### etiquetas
-<small>Creado: 2025-11-19 13:21</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4823,7 +4824,7 @@ pt.show()
 ```
 
 ### ordeno por numero
-<small>Creado: 2025-11-19 13:23</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4859,7 +4860,7 @@ pt.show()
 ```
 
 ### descendiente
-<small>Creado: 2025-11-19 13:24</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4897,7 +4898,7 @@ pt.show()
 ```
 
 ### categorias
-<small>Creado: 2025-11-19 13:48</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4937,7 +4938,7 @@ pt.show()
 ```
 
 ### por stock
-<small>Creado: 2025-11-19 13:49</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -4975,7 +4976,7 @@ pt.show()
 ```
 
 ### grafico de barra
-<small>Creado: 2025-11-19 13:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5013,7 +5014,7 @@ pt.show()
 ```
 
 ### colores
-<small>Creado: 2025-11-19 14:02</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5136,7 +5137,7 @@ A continuación, se exploran diferentes aspectos del uso de SQL mediante conexio
 Estos problemas practican competencias clave como la creación y manejo de una base de datos SQL, el uso de un framework web (Flask), y la integración entre estos elementos para crear servicios web básicos.
 
 ### creo base de datos
-<small>Creado: 2025-11-24 10:32</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5183,7 +5184,7 @@ VALUES
 ```
 
 ### creamos usuario con permisos
-<small>Creado: 2025-11-24 10:35</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5222,7 +5223,7 @@ FLUSH PRIVILEGES;
 ```
 
 ### ver los usuarios del sistema
-<small>Creado: 2025-11-24 10:37</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5238,7 +5239,7 @@ FROM mysql.user;
 ```
 
 ### nos conectamos a mysql
-<small>Creado: 2025-11-24 10:40</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5269,7 +5270,7 @@ print(filas)
 ```
 
 ### ahora ponemos flask
-<small>Creado: 2025-11-24 10:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5318,7 +5319,7 @@ if __name__ == "__main__":
 ```
 
 ### creamos segundo endpoint
-<small>Creado: 2025-11-24 10:58</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5375,7 +5376,7 @@ if __name__ == "__main__":
 ```
 
 ### endpoint principal
-<small>Creado: 2025-11-24 11:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5494,7 +5495,7 @@ Este conjunto de ejercicios se centra en la realización de consultas SQL que in
 Además, los estudiantes explorarán cómo utilizar un lenguaje de programación, en este caso Python, junto con Flask, para interactuar con la base de datos creada y mostrar los resultados de las consultas SQL en una página web. Esto incluye establecer conexiones seguras a la base de datos y manejar resultados mediante plantillas HTML para presentar información de manera estructurada.
 
 ### creamos una base de datos
-<small>Creado: 2025-11-26 13:01</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5545,7 +5546,7 @@ crea datos de muestra, en español, tantos como puedas, no hay foreign key reale
 ```
 
 ### datos de muestra
-<small>Creado: 2025-11-26 13:02</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5630,7 +5631,7 @@ INSERT INTO matriculas (Identificador, id_asignatura, id_alumno) VALUES
 ```
 
 ### consulta poco productiva
-<small>Creado: 2025-11-26 13:03</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5647,7 +5648,7 @@ SELECT * FROM matriculas;
 ```
 
 ### composicion
-<small>Creado: 2025-11-26 13:06</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5668,7 +5669,7 @@ ON matriculas.id_asignatura = asignaturas.Identificador;
 ```
 
 ### mas composiciones
-<small>Creado: 2025-11-26 13:10</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5696,7 +5697,7 @@ ON matriculas.id_alumno = alumnos.Identificador;
 ```
 
 ### proyeccion
-<small>Creado: 2025-11-26 13:10</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5724,7 +5725,7 @@ ON matriculas.id_alumno = alumnos.Identificador;
 ```
 
 ### varias consultas para mas adelante
-<small>Creado: 2025-11-26 13:12</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5801,7 +5802,7 @@ RIGHT JOIN alumnos
 ```
 
 ### creamos vista
-<small>Creado: 2025-11-26 13:13</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5825,7 +5826,7 @@ ON matriculas.id_alumno = alumnos.Identificador;
 ```
 
 ### llamar a la vista
-<small>Creado: 2025-11-26 13:15</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5840,7 +5841,7 @@ SELECT * FROM matriculas_join;
 ```
 
 ### creamos un usuario
-<small>Creado: 2025-11-26 13:21</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5874,7 +5875,7 @@ FLUSH PRIVILEGES;
 ```
 
 ### Plantilla de conexion
-<small>Creado: 2025-11-26 13:33</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5905,7 +5906,7 @@ print(filas)
 ```
 
 ### plantilla diccionario
-<small>Creado: 2025-11-26 13:33</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5942,7 +5943,7 @@ print(filas)
 ```
 
 ### flask para lanzar web
-<small>Creado: 2025-11-26 13:49</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -5981,7 +5982,7 @@ if __name__ == "__main__":
 ```
 
 ### uso de plantilla
-<small>Creado: 2025-11-26 13:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6017,7 +6018,7 @@ if __name__ == "__main__":
 ```
 
 ### diagrama
-<small>Creado: 2025-11-26 13:36</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6307,7 +6308,7 @@ if (isset($_GET['operacion']) && $_GET['operacion'] === 'eliminar') {
 Este diseño es más robusto, seguro y fácil de mantener.
 
 ### Creamos una base de datos
-<small>Creado: 2025-12-03 12:52</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6349,7 +6350,7 @@ INSERT INTO equipos (nombre, ciudad, estadio, fundado, presupuesto, web) VALUES
 ```
 
 ### creamos usuario
-<small>Creado: 2025-12-03 12:53</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6383,7 +6384,7 @@ FLUSH PRIVILEGES;
 ```
 
 ### repaso select
-<small>Creado: 2025-12-03 12:55</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6396,7 +6397,7 @@ SELECT * FROM equipos;
 ```
 
 ### insercion parte 1
-<small>Creado: 2025-12-03 13:00</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6425,7 +6426,7 @@ SELECT * FROM equipos;
 ```
 
 ### Insercion solo de unos campos
-<small>Creado: 2025-12-03 13:01</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6446,7 +6447,7 @@ VALUES(
 ```
 
 ### eliminar registros
-<small>Creado: 2025-12-03 13:04</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6460,7 +6461,7 @@ DELETE FROM equipos;
 ```
 
 ### actualizacion
-<small>Creado: 2025-12-03 13:09</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6480,7 +6481,7 @@ SELECT * FROM equipos;
 ```
 
 ### select como tabla
-<small>Creado: 2025-12-03 13:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6520,7 +6521,7 @@ Este tipo de script es muy común en aplicaciones web donde se necesita recupera
 ```
 
 ### crear como tabla
-<small>Creado: 2025-12-03 13:19</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6555,7 +6556,7 @@ Este tipo de script es útil para mostrar datos tabulares desde una base de dato
 ```
 
 ### tambien puedo crear un formulario
-<small>Creado: 2025-12-03 13:26</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6594,7 +6595,7 @@ En resumen, este código combina PHP y HTML para permitir una interacción efici
 ```
 
 ### frankenstein
-<small>Creado: 2025-12-03 13:31</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6674,7 +6675,7 @@ Este tipo de archivo es útil para estudiantes que quieren entender cómo intera
 ```
 
 ### lo mismo pero con estilo
-<small>Creado: 2025-12-03 13:39</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6784,7 +6785,7 @@ Este código es importante porque combina conceptos básicos del manejo de bases
 ```
 
 ### boton de eliminar
-<small>Creado: 2025-12-03 13:45</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -6895,7 +6896,7 @@ Este tipo de interfaz web es útil para los estudiantes de Formación Profesiona
 ```
 
 ### id al eliminar
-<small>Creado: 2025-12-03 13:47</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7009,7 +7010,7 @@ Esta estructura facilita tanto la inserción como la visualización de datos, pr
 ```
 
 ### procesar eliminar
-<small>Creado: 2025-12-03 13:49</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7136,7 +7137,7 @@ En resumen, este archivo PHP combina HTML y SQL (mediante la biblioteca mysqli) 
 ```
 
 ### twist
-<small>Creado: 2025-12-03 14:23</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7526,7 +7527,7 @@ Este código es importante porque demuestra cómo se pueden combinar HTML y PHP 
 ```
 
 ### insertar
-<small>Creado: 2025-12-03 13:25</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7798,7 +7799,7 @@ Los estudiantes podrán practicar y mejorar sus habilidades en las siguientes co
 Los problemas incluyen ejercicios prácticos, como codificar y descodificar strings, calcular el valor ASCII de caracteres, realizar hash con MD5 y SHA1, y ejecutar una fuerza bruta con diferentes combinaciones de caracteres.
 
 ### codificar
-<small>Creado: 2025-12-05 13:41</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7827,7 +7828,7 @@ En este caso, se define una contraseña original y luego se codifica utilizando 
 ```
 
 ### descodificar
-<small>Creado: 2025-12-05 13:43</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7866,7 +7867,7 @@ Es importante destacar que las contraseñas codificadas con base64 pueden ser ú
 ```
 
 ### funciones codificacion
-<small>Creado: 2025-12-05 13:47</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7900,7 +7901,7 @@ La función `codificar` también tiene un ciclo `for` que lo ejecuta 9 veces. En
 ```
 
 ### funcion descodificar
-<small>Creado: 2025-12-05 13:49</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7949,7 +7950,7 @@ En resumen, este código utiliza funciones de base64 para asegurar la seguridad 
 ```
 
 ### codificacion ascii
-<small>Creado: 2025-12-05 13:53</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -7980,7 +7981,7 @@ Finalmente, se imprimen los valores para poder ver el resultado del trabajo del 
 ```
 
 ### codificaromana
-<small>Creado: 2025-12-05 13:59</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8023,7 +8024,7 @@ El código también incluye una variable `$original` que contiene el texto "Hola
 ```
 
 ### hasheo
-<small>Creado: 2025-12-05 14:05</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8068,7 +8069,7 @@ El hashing es una herramienta valiosa en la seguridad informática, ya que ayuda
 ```
 
 ### condicion del picadillo
-<small>Creado: 2025-12-05 14:07</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8115,7 +8116,7 @@ Este tipo de cálculo es importante debido a su uso común en la seguridad y el 
 ```
 
 ### comprobador de picadillo
-<small>Creado: 2025-12-05 14:13</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8149,7 +8150,7 @@ La importancia de este código radica en la seguridad de la base de datos. En lu
 ```
 
 ### fuerza bruta
-<small>Creado: 2025-12-05 14:19</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8385,7 +8386,7 @@ El diagrama y el código presentan una estructura básica que permite modelar pe
 Si tienes alguna pregunta específica sobre cómo implementar o modificar este sistema, por favor déjame saber para proporcionarte más detalles.
 
 ### una entidad
-<small>Creado: 2025-11-28 10:42</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8433,7 +8434,7 @@ Este tipo de descripción de entidades en JSON puede ser importada o exportada p
 ```
 
 ### una entidad
-<small>Creado: 2025-11-28 10:42</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8479,7 +8480,7 @@ En comparación con el archivo JSON anterior, este SVG proporciona una represent
 ```
 
 ### dos entidades y relacion
-<small>Creado: 2025-11-28 10:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8753,7 +8754,7 @@ body {
 ```
 
 ### dos entidades y relacion
-<small>Creado: 2025-11-28 10:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8841,7 +8842,7 @@ En comparación con el código HTML anterior, este archivo JSON elimina toda la 
 ```
 
 ### dos entidades y relacion
-<small>Creado: 2025-11-28 10:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -8896,7 +8897,7 @@ En comparación con el archivo anterior en formato JSON, este código SVG ofrece
 ```
 
 ### ejemplo tienda online
-<small>Creado: 2025-11-28 11:01</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -9212,7 +9213,7 @@ body {
 ```
 
 ### ejemplo tienda online
-<small>Creado: 2025-11-28 11:01</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -9400,7 +9401,7 @@ En resumen, este JSON representa una versión moderna y flexible del diagrama qu
 ```
 
 ### ejemplo tienda online
-<small>Creado: 2025-11-28 11:03</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -9461,7 +9462,7 @@ class Producto:
 ```
 
 ### ejemplo tienda online
-<small>Creado: 2025-11-28 11:02</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -9508,7 +9509,7 @@ CREATE TABLE producto (
 ```
 
 ### ejemplo tienda online
-<small>Creado: 2025-11-28 11:01</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -9802,7 +9803,7 @@ parser.parse(svgData, {
 This should give you a starting point to convert your SVG diagrams into interactive HTML representations using DiagramJS.
 
 ### Problema de duplicidad
-<small>Creado: 2025-11-28 13:45</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -10080,7 +10081,7 @@ body {
 ```
 
 ### Problema de duplicidad
-<small>Creado: 2025-11-28 13:44</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -10157,7 +10158,7 @@ En comparación con el código HTML previo, este archivo JSON representa exactam
 ```
 
 ### Problema de duplicidad
-<small>Creado: 2025-11-28 13:44</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -10212,7 +10213,7 @@ En comparación con el archivo anterior en formato JSON, este código SVG propor
 ```
 
 ### Solucion con generalizacion
-<small>Creado: 2025-11-28 13:51</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -10511,7 +10512,7 @@ body {
 ```
 
 ### Solucion con generalizacion
-<small>Creado: 2025-11-28 13:51</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -10709,7 +10710,7 @@ Este JSON proporciona una descripción estructurada y modular de un diagrama, fa
 ```
 
 ### Solucion con generalizacion
-<small>Creado: 2025-11-28 13:51</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -10781,7 +10782,7 @@ Este cambio representa una transición desde una descripción textual de las ent
 ```
 
 ### especializacion
-<small>Creado: 2025-11-28 13:55</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -11068,7 +11069,7 @@ body {
 ```
 
 ### especializacion
-<small>Creado: 2025-11-28 13:55</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -11185,7 +11186,7 @@ Este archivo es importante porque ayuda a visualizar y entender cómo se pueden 
 ```
 
 ### especializacion
-<small>Creado: 2025-11-28 13:55</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -11251,7 +11252,7 @@ En resumen, este SVG proporciona una visualización directa del modelo ER que de
 ```
 
 ### Agregacion
-<small>Creado: 2025-11-28 14:05</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -11575,7 +11576,7 @@ body {
 ```
 
 ### Agregacion
-<small>Creado: 2025-11-28 14:05</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -11873,7 +11874,7 @@ En resumen, el archivo JSON proporciona una estructura para renderizar un diagra
 ```
 
 ### Agregacion
-<small>Creado: 2025-11-28 14:05</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -12060,7 +12061,7 @@ Si tienes preguntas específicas sobre cómo usar estos elementos o necesitas m�
 ```
 
 ### Esquema para el futuro
-<small>Creado: 2025-11-28 14:10</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -12294,7 +12295,7 @@ body {
 ```
 
 ### Esquema para el futuro
-<small>Creado: 2025-11-28 14:10</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -12385,7 +12386,7 @@ En comparación con la versión anterior, el código JSON actual elimina complet
 ```
 
 ### Esquema para el futuro
-<small>Creado: 2025-11-28 14:10</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -12435,7 +12436,7 @@ En resumen, mientras que el archivo anterior describía las entidades y sus rela
 ```
 
 ### Ejemplo videojuego
-<small>Creado: 2025-11-28 14:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -12723,7 +12724,7 @@ body {
 ```
 
 ### Ejemplo videojuego
-<small>Creado: 2025-11-28 14:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -12863,7 +12864,7 @@ En resumen, este JSON es útil para automatizar la generación o modificación d
 ```
 
 ### Ejemplo videojuego
-<small>Creado: 2025-11-28 14:14</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13028,7 +13029,7 @@ En base a los archivos proporcionados, se presentan dos diagramas de entidad-rel
 Estos archivos representan una base sólida para entender y comunicar un modelo ER básico. Se pueden expandir o ajustar según las necesidades específicas del proyecto.
 
 ### entidad sencilla
-<small>Creado: 2025-12-01 10:29</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13288,7 +13289,7 @@ body {
 ```
 
 ### entidad sencilla
-<small>Creado: 2025-12-01 10:29</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13340,7 +13341,7 @@ Este enfoque JSON es más estructurado y fácilmente procesable por programas, l
 ```
 
 ### entidad sencilla
-<small>Creado: 2025-12-01 10:29</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13388,7 +13389,7 @@ Este nuevo archivo utiliza etiquetas SVG para dibujar visualmente la entidad "Cl
 ```
 
 ### solucion
-<small>Creado: 2025-12-01 10:30</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13413,7 +13414,7 @@ CREATE TABLE Clientes(
 ```
 
 ### relacion de 1 a 1
-<small>Creado: 2025-12-01 10:33</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13690,7 +13691,7 @@ body {
 ```
 
 ### relacion de 1 a 1
-<small>Creado: 2025-12-01 10:32</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13778,7 +13779,7 @@ El principal cambio respecto al archivo anterior radica en la forma de describir
 ```
 
 ### relacion de 1 a 1
-<small>Creado: 2025-12-01 10:33</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13833,7 +13834,7 @@ Este archivo SVG proporciona una representación visual gráfica detallada del d
 ```
 
 ### solucion 1 a 1
-<small>Creado: 2025-12-01 10:34</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -13854,7 +13855,7 @@ CREATE TABLE Clientes(
 ```
 
 ### diagrama 1 a n
-<small>Creado: 2025-12-01 10:37</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -14132,7 +14133,7 @@ body {
 ```
 
 ### diagrama 1 a n
-<small>Creado: 2025-12-01 10:37</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -14223,7 +14224,7 @@ En comparación con la versión anterior en HTML, este archivo JSON ofrece una r
 ```
 
 ### diagrama 1 a n
-<small>Creado: 2025-12-01 10:37</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -14276,7 +14277,7 @@ Las líneas en el diagrama conectan los atributos relevantes para representar un
 ```
 
 ### solucion 1 a n
-<small>Creado: 2025-12-01 10:37</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -14305,7 +14306,7 @@ CREATE TABLE telefono (
 ```
 
 ### diagrama relacion n a n
-<small>Creado: 2025-12-01 10:40</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -14603,7 +14604,7 @@ body {
 ```
 
 ### diagrama relacion n a n
-<small>Creado: 2025-12-01 10:40</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -14738,7 +14739,7 @@ La principal diferencia con respecto al código anterior es que este archivo JSO
 ```
 
 ### diagrama relacion n a n
-<small>Creado: 2025-12-01 10:40</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -14802,7 +14803,7 @@ Este archivo SVG es una versión gráfica del diagrama ER anteriormente represen
 ```
 
 ### solucion n a n
-<small>Creado: 2025-12-01 10:42</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -14845,7 +14846,7 @@ CREATE TABLE matriculas (
 ```
 
 ### diagrama problema generalizacion
-<small>Creado: 2025-12-01 10:46</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -15125,7 +15126,7 @@ body {
 ```
 
 ### diagrama problema generalizacion
-<small>Creado: 2025-12-01 10:46</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -15238,7 +15239,7 @@ Este código es importante porque proporciona una descripción estructurada de c
 ```
 
 ### diagrama problema generalizacion
-<small>Creado: 2025-12-01 10:46</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -15295,7 +15296,7 @@ Este diagrama es importante porque proporciona una representación visual del mo
 ```
 
 ### solucion poco elegante y sin embargo practica
-<small>Creado: 2025-12-01 10:51</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -15321,7 +15322,7 @@ CREATE TABLE Persona(
 ```
 
 ### solución elegante
-<small>Creado: 2025-12-01 10:48</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -15336,7 +15337,7 @@ Para poder explicarte detalladamente qué hace el código SQL dentro de este arc
 ```
 
 ### ejercicio propuesto tienda online
-<small>Creado: 2025-12-01 11:03</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -15652,7 +15653,7 @@ body {
 ```
 
 ### ejercicio propuesto tienda online
-<small>Creado: 2025-12-01 11:03</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -15850,7 +15851,7 @@ Este modelo es una simplificación de un sistema de comercio electrónico básic
 ```
 
 ### ejercicio propuesto tienda online
-<small>Creado: 2025-12-01 11:03</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16035,7 +16036,7 @@ To summarize, this set of files seems to represent a basic HTML web page styled 
 [📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/007-Uso%20de%20bases%20de%20datos%20no%20relacionales/001-Caracter%C3%ADsticas%20de%20las%20bases%20de%20datos%20no%20relacionales)
 
 ### pedido pero en json
-<small>Creado: 2026-01-23 13:46</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `002-pedido pero en json.json`
 
@@ -16071,7 +16072,7 @@ To summarize, this set of files seems to represent a basic HTML web page styled 
 ```
 
 ### curriculum
-<small>Creado: 2026-01-23 14:09</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `003-curriculum.json`
 
@@ -16236,6 +16237,161 @@ To summarize, this set of files seems to represent a basic HTML web page styled 
 
 [📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/007-Uso%20de%20bases%20de%20datos%20no%20relacionales/002-Tipos%20de%20bases%20de%20datos%20no%20relacionales)
 
+### conexion con mongo
+<small>Creado: 2026-01-28 13:33</small>
+
+`002-conexion con mongo.py`
+
+```python
+# pip install pymongo
+from pymongo import MongoClient # Primero importo la libreria
+
+# Connect to MongoDB (adjust host/port if needed)
+client = MongoClient("mongodb://localhost:27017/")
+
+# Select database and collection
+db = client["empresa2026"]
+collection = db["facturas"]
+
+# Get all documents
+facturas = collection.find()
+
+# Iterate and print
+for factura in facturas:
+    print(factura)
+```
+
+### operaciones mongodb
+<small>Creado: 2026-01-28 13:46</small>
+
+`003-operaciones mongodb.js`
+
+```javascript
+Listado de facturas:
+db["facturas"].find()
+
+Insertar un elemento:
+db.facturas.insertOne({
+    nombre:"Jose Vicente",
+    apellidos:"Carratala",
+    telefono:"+34 620891718",
+    email:"info@josevicentecarratala.com"
+})
+
+Insertar muchos elementos:
+db.facturas.insertMany(
+    [
+        {
+            nombre:"Jorge",
+            apellidos:"Garcia",
+            telefono:"+34 4353254325",
+            email:"info@juan.com"
+        },
+        {
+            nombre:"Jose",
+            apellidos:"Lopez",
+            telefono:"+34 3425325",
+            email:"info@jose.com"
+        },
+        {
+            nombre:"Julia",
+            apellidos:"Martinez",
+            telefono:"+34 234535245",
+            email:"info@julia.com"
+        }
+    ]
+)
+
+Borrar pantalla: cls
+```
+
+### mas comandos
+<small>Creado: 2026-01-28 13:46</small>
+
+`004-mas comandos.js`
+
+```javascript
+
+```
+
+### encontrar registros
+<small>Creado: 2026-01-28 13:52</small>
+
+`005-encontrar registros.js`
+
+```javascript
+// Dame todos
+db.facturas.find()
+
+// Dame la primera
+db.facturas.findOne()
+
+// Select con where 
+db.facturas.findOne({nombre:'Jose Vicente'})
+```
+
+### actualizar y eliminar
+<small>Creado: 2026-01-28 13:56</small>
+
+`006-actualizar y eliminar.js`
+
+```javascript
+// Actualizacion de un elemento
+db.facturas.updateOne(
+    {nombre:'Jose Vicente'},
+    {
+        $set:
+        {email:"prueba@prueba.com"}
+    }
+)
+
+// Actualizar muchos
+db.facturas.updateMany(
+    {email:'info@juan.com'},
+    {
+        $set:
+        {telefono:"11111111"}
+    }
+)
+
+// Eliminar uno
+db.facturas.deleteOne(
+    {nombre:'Jose Vicente'}
+)
+
+// Eliminar muchos
+db.facturas.deleteMany(
+    {email:'info@juan.com'}
+)
+```
+
+### conexion mongo con php
+<small>Creado: 2026-01-28 13:58</small>
+
+`007-conexion mongo con php.php`
+
+```
+<?php
+	// sudo apt install php-mongodb
+
+
+  // Crear conexión
+  $client = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+
+  // Consulta (equivalente a find())
+  $query = new MongoDB\Driver\Query([]);
+
+  // Ejecutar consulta
+  $cursor = $client->executeQuery("empresa2026.facturas", $query);
+
+  // Iterar resultados
+  foreach ($cursor as $factura) {
+      var_dump($factura);
+  }
+
+?>
+```
+
 
 <a id="elementos-de-las-bases-de-datos-no-relacionales"></a>
 ## Elementos de las bases de datos no relacionales
@@ -16314,7 +16470,7 @@ $conexion->close();
 Recuerda que es importante seguir las mejores prácticas de seguridad y auditoría para proteger tus aplicaciones contra ataques maliciosos.
 
 ### creamos base de datos
-<small>Creado: 2025-12-05 10:27</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16361,7 +16517,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 ```
 
 ### creamos usuario
-<small>Creado: 2025-12-05 10:31</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16404,7 +16560,7 @@ FLUSH PRIVILEGES;
 ```
 
 ### comprobacion exitosa
-<small>Creado: 2025-12-05 10:33</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16427,7 +16583,7 @@ contrasena = '1234segura';
 ```
 
 ### comprobacion fallida
-<small>Creado: 2025-12-05 10:35</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16452,7 +16608,7 @@ contrasena = '1234seguraZ';
 ```
 
 ### diagrama
-<small>Creado: 2025-12-05 10:38</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16688,7 +16844,7 @@ body {
 ```
 
 ### diagrama
-<small>Creado: 2025-12-05 10:38</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16848,7 +17004,7 @@ El archivo `diagrama.json` es importante porque define la estructura y el compor
 ```
 
 ### diagrama
-<small>Creado: 2025-12-05 10:38</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16904,7 +17060,7 @@ En resumen, este código representa un diagrama gráfico que muestra los diferen
 ```
 
 ### exito
-<small>Creado: 2025-12-05 11:01</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16930,7 +17086,7 @@ Si estas viendo esto es que has entrado correctamente
 ```
 
 ### login
-<small>Creado: 2025-12-05 10:45</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -16968,7 +17124,7 @@ En este estilo se definen algunas propiedades visuales como el color de fondo y 
 ```
 
 ### procesa
-<small>Creado: 2025-12-05 11:02</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -17111,7 +17267,7 @@ Al trabajar en este conjunto de ejercicios, los estudiantes practican habilidade
 Espero que esta explicación global te haya proporcionado una visión clara de lo que se espera que los estudiantes aborden en este conjunto de ejercicios.
 
 ### Creamos base de datos de clientes
-<small>Creado: 2025-12-10 12:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -17157,7 +17313,7 @@ INSERT INTO empleados (nombre, puesto, salario, fecha_contratacion, departamento
 ```
 
 ### usuario con permisos
-<small>Creado: 2025-12-10 12:53</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -17249,7 +17405,7 @@ En cuanto a las competencias, se practican:
 En general, este conjunto de ejercicios proporciona un buen punto de partida para entender las principias fundamentales de la gestión de bases de datos y la seguridad en entornos MySQL.
 
 ### crear periodico
-<small>Creado: 2025-12-10 13:51</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -17316,7 +17472,7 @@ CREATE TABLE noticias (
 ```
 
 ### insertar noticias de prueba
-<small>Creado: 2025-12-10 13:51</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -17361,7 +17517,7 @@ INSERT INTO noticias (titulo, contenido, autor_id) VALUES
 ```
 
 ### crear usuario
-<small>Creado: 2025-12-10 13:51</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 #### Explicación
 
@@ -17439,7 +17595,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 [📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/004-supercrud%20poco%20a%20poco)
 
 ### tabla
-<small>Creado: 2025-12-15 10:06</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `001-tabla.php`
 
@@ -17471,7 +17627,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 ```
 
 ### vomito el array
-<small>Creado: 2025-12-15 10:08</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `002-vomito el array.php`
 
@@ -17504,7 +17660,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 ```
 
 ### recorrer dinamicamente el array
-<small>Creado: 2025-12-15 10:13</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `003-recorrer dinamicamente el array.php`
 
@@ -17532,7 +17688,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 ```
 
 ### parametro get
-<small>Creado: 2025-12-15 10:15</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `004-parametro get.php`
 
@@ -17560,7 +17716,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 ```
 
 ### botones
-<small>Creado: 2025-12-15 10:20</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `005-botones.php`
 
@@ -17596,7 +17752,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 ```
 
 ### menu abstracto
-<small>Creado: 2025-12-15 10:25</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `006-menu abstracto.php`
 
@@ -17643,7 +17799,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 ```
 
 ### un poco de estilo
-<small>Creado: 2025-12-15 10:32</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `007-un poco de estilo.php`
 
@@ -17708,7 +17864,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 ```
 
 ### cabeceras de columna
-<small>Creado: 2025-12-15 10:50</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `008-cabeceras de columna.php`
 
@@ -17799,7 +17955,7 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
 [📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/006-Repaso%20mysqldump)
 
 ### dump
-<small>Creado: 2026-01-21 09:37</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `001-dump.sql`
 
@@ -17824,7 +17980,7 @@ josevicente@josevicenteportatil:~/Escritorio/copia$
 ```
 
 ### dump absoluto
-<small>Creado: 2026-01-21 09:38</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `002-dump absoluto.sh`
 
@@ -17833,7 +17989,7 @@ sudo mysqldump -u root -p blog2526 > /home/josevicente/Escritorio/copia/backupbl
 ```
 
 ### Entrar en cron
-<small>Creado: 2026-01-21 09:40</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `003-Entrar en cron.sh`
 
@@ -17842,7 +17998,7 @@ crontab e
 ```
 
 ### escribe
-<small>Creado: 2026-01-21 10:26</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `004-escribe.py`
 
@@ -17855,7 +18011,7 @@ archivo.close()
 ```
 
 ### configuro cron
-<small>Creado: 2026-01-21 10:29</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `005-configuro cron.sh`
 
@@ -17872,7 +18028,7 @@ En el cron, añado esta linea:
 [📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/007-Leer%20ODS)
 
 ### leer ods
-<small>Creado: 2026-01-26 10:45</small>
+<small>Creado: 2026-01-28 13:17</small>
 
 `001-leer ods.py`
 
@@ -17904,6 +18060,178 @@ for fila in hoja.getElementsByType(TableRow):
             texto_celda += extraer_texto(p)
         valores.append(texto_celda.strip())
     print(valores)
+```
+
+
+<a id="descarga-y-carga"></a>
+## descarga y carga
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/008-descarga%20y%20carga)
+
+### descarga
+<small>Creado: 2026-01-28 13:17</small>
+
+`001-descarga.html`
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <a href="Icosphere.pdf">Pulsa aqui para abrir el PDF</a>
+  </body>
+</html>
+```
+
+### pestaña nueva
+<small>Creado: 2026-01-28 13:17</small>
+
+`002-pestaña nueva.html`
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <a href="Icosphere.pdf" target="_blank">Pulsa aqui para abrir el PDF</a>
+  </body>
+</html>
+```
+
+### tipo no compatible
+<small>Creado: 2026-01-28 13:17</small>
+
+`003-tipo no compatible.html`
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <a href="Cursos.ods" target="_blank">Pulsa aqui para abrir el PDF</a>
+  </body>
+</html>
+```
+
+### marco
+<small>Creado: 2026-01-28 13:17</small>
+
+`004-marco.html`
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+    <style>
+      iframe{border:none;width:500px;height:500px;}
+    </style>
+  </head>
+  <body>
+    <h1>Puedes poner lo que quieras</h1>
+    <p>Fuera del marco</p>
+    <p>Y ahora viene el marco:</p>
+    <iframe src="Icosphere.pdf"></iframe>
+  </body>
+</html>
+```
+
+### insertar youtube
+<small>Creado: 2026-01-28 13:17</small>
+
+`005-insertar youtube.html`
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+    <style>
+      iframe{border:none;width:500px;height:500px;}
+    </style>
+  </head>
+  <body>
+    <h1>Puedes poner lo que quieras</h1>
+    <p>Fuera del marco</p>
+    <p>Y ahora viene el marco:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_LbSL3G6S6Q?si=RVOMtHYJbE9XTkGL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </body>
+</html>
+```
+
+### mapa de google
+<small>Creado: 2026-01-28 13:17</small>
+
+`006-mapa de google.html`
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+    <style>
+      iframe{border:none;width:500px;height:500px;}
+    </style>
+  </head>
+  <body>
+    <h1>Puedes poner lo que quieras</h1>
+    <p>Fuera del marco</p>
+    <p>Y ahora viene el marco:</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13469.815422970418!2d-0.40309514999999996!3d39.49609285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1769601612815!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </body>
+</html>
+```
+
+### subida de archivos
+<small>Creado: 2026-01-28 13:17</small>
+
+`007-subida de archivos.html`
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Jose Vicente Carratala</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form action="subearchivo.php" method="POST" enctype="multipart/form-data">
+      <input type="file" name="archivo">
+      <input type="submit">
+    </form>
+  </body>
+</html>
+```
+
+### subearchivo
+<small>Creado: 2026-01-28 13:17</small>
+
+`subearchivo.php`
+
+```
+<?php
+// subearchivo.php (ultra-minimal)
+
+mkdir('uploads');
+
+move_uploaded_file(
+  $_FILES['archivo']['tmp_name'],
+  'uploads/' . $_FILES['archivo']['name']
+);
+
+echo 'OK';
+?>
 ```
 
 

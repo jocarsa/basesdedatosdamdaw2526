@@ -1,6 +1,6 @@
 # basesdedatosdamdaw2526 — Estado de ejercicios
 
-Generado: 2026-01-28 10:00
+Generado: 2026-01-28 14:00
 
 ---
 
@@ -82,7 +82,7 @@ Generado: 2026-01-28 10:00
 ## Uso de bases de datos no relacionales
 
 - 🟢 Características de las bases de datos no relacionales — 2026-01-23
-- 🔴 Tipos de bases de datos no relacionales
+- 🟢 Tipos de bases de datos no relacionales — 2026-01-28
 - 🔴 Elementos de las bases de datos no relacionales
 - 🔴 Sistemas gestores de bases de datos no relacionales
 - 🔴 Herramientas de los sistemas gestores de bases de datos no relacionales para la gestión de la información almacenada
@@ -97,3 +97,4 @@ Generado: 2026-01-28 10:00
 - 🔴 graficos SVG
 - 🟢 Repaso mysqldump — 2026-01-21
 - 🟢 Leer ODS — 2026-01-26
+- 🟢 descarga y carga — 2026-01-11
