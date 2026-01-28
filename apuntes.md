@@ -72,6 +72,9 @@
   - [CRUD](#crud)
   - [Panel de control](#panel-de-control)
   - [supercrud poco a poco](#supercrud-poco-a-poco)
+  - [graficos SVG](#graficos-svg)
+  - [Repaso mysqldump](#repaso-mysqldump)
+  - [Leer ODS](#leer-ods)
 - [.git](#git)
   - [branches](#branches)
   - [hooks](#hooks)
@@ -16031,6 +16034,202 @@ To summarize, this set of files seems to represent a basic HTML web page styled 
 
 [📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/007-Uso%20de%20bases%20de%20datos%20no%20relacionales/001-Caracter%C3%ADsticas%20de%20las%20bases%20de%20datos%20no%20relacionales)
 
+### pedido pero en json
+<small>Creado: 2026-01-23 13:46</small>
+
+`002-pedido pero en json.json`
+
+```json
+{	
+  "cliente":{
+  	"nombre":"Jose Vicente",
+    "apellidos":"Carratala Sanchis",
+    "email":"info@jocarsa.com"
+  },
+	"datos_factura":{
+  	"fecha":"2026-01-23",
+    "numero_de_factura":"202600001"
+  },
+  "lineas_factura":[
+    {
+    	"nombre":"Zapatillas deporte",
+      "precio":"45",
+      "cantidad":1
+    },
+    {
+    	"nombre":"Zapatos",
+      "precio":"35",
+      "cantidad":1
+    },
+  ],
+  "totales":{
+  	"base_imponible":"80",
+    "iva":"16.80",
+    "total":"96.80"
+  }
+}
+```
+
+### curriculum
+<small>Creado: 2026-01-23 14:09</small>
+
+`003-curriculum.json`
+
+```json
+{
+  "personal": {
+    "full_name": "José Vicente Carratalá Sanchis",
+    "professional_name": "Jose Vicente Carratalá",
+    "role": "Desarrollador de software, docente y creador de contenido técnico",
+    "summary": "Profesional multidisciplinar con amplia experiencia en desarrollo de software, inteligencia artificial, sistemas y formación técnica. Especializado en la creación de plataformas educativas, soluciones empresariales SaaS y contenidos didácticos orientados a la programación y la tecnología.",
+    "location": "España",
+    "languages": [
+      {
+        "language": "Español",
+        "level": "Nativo"
+      },
+      {
+        "language": "Inglés",
+        "level": "Técnico / Profesional"
+      }
+    ]
+  },
+  "professional_profiles": {
+    "brand": "Jocarsa",
+    "areas": [
+      "Desarrollo de software",
+      "Formación técnica",
+      "Inteligencia artificial",
+      "Visualización 3D y simulación",
+      "Sistemas y administración de servidores"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Desarrollador de software y arquitecto de soluciones",
+      "company": "Jocarsa",
+      "type": "Autónomo / Proyecto propio",
+      "description": "Diseño y desarrollo de soluciones empresariales SaaS, aplicaciones web, sistemas de gestión (CRM, ERP), plataformas educativas y herramientas de productividad. Integración de IA, bases de datos, APIs y arquitecturas modulares.",
+      "technologies": [
+        "Python",
+        "PHP",
+        "Java",
+        "JavaScript",
+        "SQL",
+        "SQLite",
+        "MySQL",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "React",
+        "Flask",
+        "Apache",
+        "Linux"
+      ]
+    },
+    {
+      "title": "Docente y formador en programación",
+      "company": "Formación profesional y proyectos educativos",
+      "type": "Docencia",
+      "description": "Impartición de formación en programación, bases de datos, sistemas, inteligencia artificial y desarrollo web. Creación de materiales didácticos, ejercicios prácticos y libros técnicos orientados a un aprendizaje progresivo y aplicado.",
+      "subjects": [
+        "Programación",
+        "Bases de datos",
+        "Lenguajes de marcas",
+        "Inteligencia artificial",
+        "Desarrollo web",
+        "Sistemas"
+      ]
+    },
+    {
+      "title": "Creador de contenido técnico",
+      "company": "Proyectos propios",
+      "type": "Contenido digital",
+      "description": "Creación de libros técnicos, videotutoriales, cursos online y contenido educativo para plataformas digitales. Enfoque didáctico, claro y orientado a estudiantes y desarrolladores.",
+      "formats": [
+        "Libros",
+        "Cursos online",
+        "Vídeos",
+        "Material didáctico"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Aprende programación con Python",
+      "type": "Libro",
+      "topic": "Programación"
+    },
+    {
+      "title": "Libros técnicos sobre SQL, Java, Ubuntu Server y Markdown",
+      "type": "Libro",
+      "topic": "Tecnologías de la información"
+    }
+  ],
+  "technical_skills": {
+    "programming_languages": [
+      "Python",
+      "PHP",
+      "Java",
+      "C",
+      "C++",
+      "JavaScript",
+      "SQL"
+    ],
+    "web_technologies": [
+      "HTML",
+      "CSS",
+      "React",
+      "Flask",
+      "Next.js"
+    ],
+    "databases": [
+      "SQLite",
+      "MySQL",
+      "PostgreSQL",
+      "ChromaDB"
+    ],
+    "ai_and_data": [
+      "Modelos de lenguaje (LLM)",
+      "Fine-tuning",
+      "QLoRA",
+      "Embeddings",
+      "Ollama",
+      "CUDA",
+      "OpenMP"
+    ],
+    "systems": [
+      "Linux",
+      "Apache",
+      "Moodle",
+      "Docker",
+      "Bash",
+      "Administración de servidores"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Ecosistema Jocarsa",
+      "description": "Conjunto de plataformas y módulos orientados a la gestión empresarial, educación, productividad e inteligencia artificial.",
+      "modules": [
+        "Gestión empresarial",
+        "LMS y formación",
+        "Inteligencia artificial",
+        "Infraestructura",
+        "Herramientas educativas"
+      ]
+    }
+  ],
+  "interests": [
+    "Educación tecnológica",
+    "Inteligencia artificial aplicada",
+    "Optimización y rendimiento",
+    "Divulgación técnica",
+    "Creatividad digital"
+  ]
+}
+```
+
 
 <a id="tipos-de-bases-de-datos-no-relacionales"></a>
 ## Tipos de bases de datos no relacionales
@@ -17585,6 +17784,126 @@ Estas actividades están diseñadas para que los estudiantes de Formación Profe
     </main>
   </body>
 </html>
+```
+
+
+<a id="graficos-svg"></a>
+## graficos SVG
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/005-graficos%20SVG)
+
+
+<a id="repaso-mysqldump"></a>
+## Repaso mysqldump
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/006-Repaso%20mysqldump)
+
+### dump
+<small>Creado: 2026-01-21 09:37</small>
+
+`001-dump.sql`
+
+```sql
+sudo mysql -u root -p
+
+SHOW DATABASES;
+
+Una vez que conozco el nombre de la base de datos
+Me voy a la terminal y escribo:
+
+sudo mysqldump -u root -p blog2526 > backupblog2526.sql
+
+Creo carpeta
+josevicente@josevicenteportatil:~$ cd Escritorio/
+josevicente@josevicenteportatil:~/Escritorio$ mkdir copia
+josevicente@josevicenteportatil:~/Escritorio$ cd copia
+josevicente@josevicenteportatil:~/Escritorio/copia$ sudo mysqldump -u root -p blog2526 > backupblog2526.sql
+[sudo] contraseña para josevicente: 
+Enter password: 
+josevicente@josevicenteportatil:~/Escritorio/copia$ 
+```
+
+### dump absoluto
+<small>Creado: 2026-01-21 09:38</small>
+
+`002-dump absoluto.sh`
+
+```bash
+sudo mysqldump -u root -p blog2526 > /home/josevicente/Escritorio/copia/backupblog2526.sql
+```
+
+### Entrar en cron
+<small>Creado: 2026-01-21 09:40</small>
+
+`003-Entrar en cron.sh`
+
+```bash
+crontab e
+```
+
+### escribe
+<small>Creado: 2026-01-21 10:26</small>
+
+`004-escribe.py`
+
+```python
+#!/usr/bin/env python3
+
+archivo = open("/home/josevicente/Escritorio/lineas.txt",'a')
+archivo.write("Esta es una linea\n")
+archivo.close()
+```
+
+### configuro cron
+<small>Creado: 2026-01-21 10:29</small>
+
+`005-configuro cron.sh`
+
+```bash
+En el cron, añado esta linea:
+
+* * * * * /usr/bin/python3 /var/www/html/004-escribe.py
+```
+
+
+<a id="leer-ods"></a>
+## Leer ODS
+
+[📁 Ver carpeta en GitHub](https://github.com/jocarsa/basesdedatosdamdaw2526/tree/main/008-Proyectos/007-Leer%20ODS)
+
+### leer ods
+<small>Creado: 2026-01-26 10:45</small>
+
+`001-leer ods.py`
+
+```python
+from odf.opendocument import load
+from odf.table import Table, TableRow, TableCell
+from odf.text import P
+
+def extraer_texto(nodo):
+    if nodo is None:
+        return ""
+
+    if hasattr(nodo, "data"):
+        return nodo.data
+
+    txt = ""
+    for child in getattr(nodo, "childNodes", []) or []:
+        txt += extraer_texto(child)
+    return txt
+
+documento = load("alumnosynotas.ods")
+hoja = documento.spreadsheet.getElementsByType(Table)[0]
+
+for fila in hoja.getElementsByType(TableRow):
+    valores = []
+    for celda in fila.getElementsByType(TableCell):
+        texto_celda = ""
+        for p in celda.getElementsByType(P):
+            texto_celda += extraer_texto(p)
+        valores.append(texto_celda.strip())
+    print(valores)
 ```
 
 

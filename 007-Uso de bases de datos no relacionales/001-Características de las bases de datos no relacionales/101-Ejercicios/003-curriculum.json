@@ -1,0 +1,152 @@
+{
+  "personal": {
+    "full_name": "José Vicente Carratalá Sanchis",
+    "professional_name": "Jose Vicente Carratalá",
+    "role": "Desarrollador de software, docente y creador de contenido técnico",
+    "summary": "Profesional multidisciplinar con amplia experiencia en desarrollo de software, inteligencia artificial, sistemas y formación técnica. Especializado en la creación de plataformas educativas, soluciones empresariales SaaS y contenidos didácticos orientados a la programación y la tecnología.",
+    "location": "España",
+    "languages": [
+      {
+        "language": "Español",
+        "level": "Nativo"
+      },
+      {
+        "language": "Inglés",
+        "level": "Técnico / Profesional"
+      }
+    ]
+  },
+  "professional_profiles": {
+    "brand": "Jocarsa",
+    "areas": [
+      "Desarrollo de software",
+      "Formación técnica",
+      "Inteligencia artificial",
+      "Visualización 3D y simulación",
+      "Sistemas y administración de servidores"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Desarrollador de software y arquitecto de soluciones",
+      "company": "Jocarsa",
+      "type": "Autónomo / Proyecto propio",
+      "description": "Diseño y desarrollo de soluciones empresariales SaaS, aplicaciones web, sistemas de gestión (CRM, ERP), plataformas educativas y herramientas de productividad. Integración de IA, bases de datos, APIs y arquitecturas modulares.",
+      "technologies": [
+        "Python",
+        "PHP",
+        "Java",
+        "JavaScript",
+        "SQL",
+        "SQLite",
+        "MySQL",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "React",
+        "Flask",
+        "Apache",
+        "Linux"
+      ]
+    },
+    {
+      "title": "Docente y formador en programación",
+      "company": "Formación profesional y proyectos educativos",
+      "type": "Docencia",
+      "description": "Impartición de formación en programación, bases de datos, sistemas, inteligencia artificial y desarrollo web. Creación de materiales didácticos, ejercicios prácticos y libros técnicos orientados a un aprendizaje progresivo y aplicado.",
+      "subjects": [
+        "Programación",
+        "Bases de datos",
+        "Lenguajes de marcas",
+        "Inteligencia artificial",
+        "Desarrollo web",
+        "Sistemas"
+      ]
+    },
+    {
+      "title": "Creador de contenido técnico",
+      "company": "Proyectos propios",
+      "type": "Contenido digital",
+      "description": "Creación de libros técnicos, videotutoriales, cursos online y contenido educativo para plataformas digitales. Enfoque didáctico, claro y orientado a estudiantes y desarrolladores.",
+      "formats": [
+        "Libros",
+        "Cursos online",
+        "Vídeos",
+        "Material didáctico"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Aprende programación con Python",
+      "type": "Libro",
+      "topic": "Programación"
+    },
+    {
+      "title": "Libros técnicos sobre SQL, Java, Ubuntu Server y Markdown",
+      "type": "Libro",
+      "topic": "Tecnologías de la información"
+    }
+  ],
+  "technical_skills": {
+    "programming_languages": [
+      "Python",
+      "PHP",
+      "Java",
+      "C",
+      "C++",
+      "JavaScript",
+      "SQL"
+    ],
+    "web_technologies": [
+      "HTML",
+      "CSS",
+      "React",
+      "Flask",
+      "Next.js"
+    ],
+    "databases": [
+      "SQLite",
+      "MySQL",
+      "PostgreSQL",
+      "ChromaDB"
+    ],
+    "ai_and_data": [
+      "Modelos de lenguaje (LLM)",
+      "Fine-tuning",
+      "QLoRA",
+      "Embeddings",
+      "Ollama",
+      "CUDA",
+      "OpenMP"
+    ],
+    "systems": [
+      "Linux",
+      "Apache",
+      "Moodle",
+      "Docker",
+      "Bash",
+      "Administración de servidores"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Ecosistema Jocarsa",
+      "description": "Conjunto de plataformas y módulos orientados a la gestión empresarial, educación, productividad e inteligencia artificial.",
+      "modules": [
+        "Gestión empresarial",
+        "LMS y formación",
+        "Inteligencia artificial",
+        "Infraestructura",
+        "Herramientas educativas"
+      ]
+    }
+  ],
+  "interests": [
+    "Educación tecnológica",
+    "Inteligencia artificial aplicada",
+    "Optimización y rendimiento",
+    "Divulgación técnica",
+    "Creatividad digital"
+  ]
+}

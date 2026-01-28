@@ -1,0 +1,28 @@
+{	
+  "cliente":{
+  	"nombre":"Jose Vicente",
+    "apellidos":"Carratala Sanchis",
+    "email":"info@jocarsa.com"
+  },
+	"datos_factura":{
+  	"fecha":"2026-01-23",
+    "numero_de_factura":"202600001"
+  },
+  "lineas_factura":[
+    {
+    	"nombre":"Zapatillas deporte",
+      "precio":"45",
+      "cantidad":1
+    },
+    {
+    	"nombre":"Zapatos",
+      "precio":"35",
+      "cantidad":1
+    },
+  ],
+  "totales":{
+  	"base_imponible":"80",
+    "iva":"16.80",
+    "total":"96.80"
+  }
+}
